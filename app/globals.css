@@ -1,0 +1,99 @@
+/* app/globals.css */
+@import 'tailwindcss';
+
+/* Custom properties */
+:root {
+  --gradient-start: #0b2d4f;
+  --gradient-mid: #081f38;
+  --gradient-end: #06172b;
+}
+
+/* Smooth scrolling and base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-blue-900 antialiased;
+  font-feature-settings: "ss01", "ss02", "cv01", "cv02";
+}
+
+/* Main background gradient */
+.bg-devsign {
+  background: linear-gradient(
+    135deg,
+    var(--gradient-start),
+    var(--gradient-mid),
+    var(--gradient-end)
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated gradient overlay */
+.bg-devsign::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(14, 165, 233, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-blue-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-600;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-cyan-500/30 text-white;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Glass effect utility */
+.glass-effect {
+  @apply backdrop-blur-md bg-white/5 border border-white/10;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
