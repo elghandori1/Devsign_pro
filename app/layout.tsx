@@ -10,11 +10,10 @@ const roboto = Roboto({
 import Sidebar from "./components/Sidebar";
 
 export const metadata = {
-  title: "Devsign - Digital Agency & Software Development",
-  description:
-    "Web development, landing pages, software solutions, product design, and digital branding services.",
+  title: "Devsign | Professional Web Development & Creative Ad Design",
+  description: "Boost your business with Devsign. We build high-performing websites, custom software, and high-converting product designs for social media ads.",
+  keywords: ["Web Development", "Software Solutions", "Product Redesign", "Ads Design", "Social Media Content", "UI/UX Design"],
 };
-
 
 export default function RootLayout({
   children,
@@ -23,9 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} antialiased flex min-h-screen`}>
+      <body className={`${roboto.className} antialiased flex min-h-screen bg-blue-950`}>
         <Sidebar />
-        <main className="flex-1 overflow-y-auto bg-gray-50">
+        <main className="flex-1 overflow-y-auto bg-devsign">
           {children}
         </main>
         

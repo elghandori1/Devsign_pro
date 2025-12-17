@@ -3,28 +3,57 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaEnvelope, FaMoon, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaEnvelope,
+  FaMoon,
+  FaLinkedinIn,
+} from "react-icons/fa";
 import { HiOutlineGlobeAlt, HiOutlineLightBulb } from "react-icons/hi";
 import { usePathname } from "next/navigation";
-import { Sparkles, Palette, Code, Home, Briefcase, Cpu, DollarSign, User, Mail, ChevronRight, Zap } from 'lucide-react';
-import { useState } from 'react';
+import {
+  Sparkles,
+  Palette,
+  Code,
+  Home,
+  Briefcase,
+  Cpu,
+  DollarSign,
+  User,
+  Mail,
+  ChevronRight,
+} from "lucide-react";
+import { useState } from "react";
 
 export default function Sidebar() {
   const pathname = usePathname();
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   const menu = [
     { name: "Home", href: "/", icon: <Home className="w-4 h-4" /> },
-    { name: "Services", href: "/services", icon: <Palette className="w-4 h-4" /> },
-    { name: "Project", href: "/project", icon: <Briefcase className="w-4 h-4" /> },
+    {
+      name: "Services",
+      href: "/services",
+      icon: <Palette className="w-4 h-4" />,
+    },
+    {
+      name: "Project",
+      href: "/project",
+      icon: <Briefcase className="w-4 h-4" />,
+    },
     { name: "Process", href: "/process", icon: <Cpu className="w-4 h-4" /> },
-    { name: "Pricing", href: "/pricing", icon: <DollarSign className="w-4 h-4" /> },
+    {
+      name: "Pricing",
+      href: "/pricing",
+      icon: <DollarSign className="w-4 h-4" />,
+    },
     { name: "About", href: "/about", icon: <User className="w-4 h-4" /> },
     { name: "Contact", href: "/contact", icon: <Mail className="w-4 h-4" /> },
   ];
 
   return (
-<aside className="w-80 h-screen sticky top-0 bg-gradient-to-br from-white via-gray-50 to-blue-50 shadow-2xl flex flex-col items-center px-8 py-10 border-r border-blue-100 overflow-hidden">      {/* Background decorative elements */}
+    <aside className="w-80 h-auto sticky top-0 bg-gradient-to-br from-white via-gray-50 to-blue-50 shadow-2xl flex flex-col items-center px-8 py-10 border-r border-blue-100 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-r from-blue-100/30 to-cyan-100/20 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-gradient-to-r from-indigo-100/20 to-purple-100/10 rounded-full blur-3xl"></div>
@@ -33,9 +62,8 @@ export default function Sidebar() {
       {/* Logo Section */}
       <div className="relative z-10 flex flex-col items-center mb-3">
         {/* Logo container with gradient border */}
-        <div className="relative mb-4">
-         
-          <div className="relative w-32 h-32 rounded-full bg-blue-500 shadow-xl p-1">
+        <div className="relative mb-2">
+          <div className="relative w-22 h-22 rounded-full bg-blue-500 shadow-xl p-1">
             <div className="w-full h-full rounded-full bg-gradient-to-br from-white to-gray-50 p-1">
               <div className="relative w-full h-full rounded-full overflow-hidden bg-white">
                 <Image
@@ -48,7 +76,7 @@ export default function Sidebar() {
               </div>
             </div>
           </div>
-          
+
           {/* Badge on logo */}
           <div className="absolute -bottom-2 -right-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white text-xs font-bold shadow-lg">
             PRO
@@ -60,7 +88,7 @@ export default function Sidebar() {
           <h1 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent mb-1">
             Devsign
           </h1>
-          
+
           {/* Tagline */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200">
             <Sparkles className="w-4 h-4 text-blue-500" />
@@ -69,14 +97,11 @@ export default function Sidebar() {
             </p>
           </div>
         </div>
-
-    
       </div>
 
       {/* Navigation Menu */}
       <nav className="relative z-10 w-full flex-1">
         <div className="mb-4">
- 
           <ul className="space-y-2">
             {menu.map((item) => {
               const isActive = pathname === item.href;
@@ -92,7 +117,9 @@ export default function Sidebar() {
                           : "text-gray-700 hover:text-blue-600 hover:bg-gradient-to-r hover:from-blue-100 hover:to-cyan-100 border border-transparent hover:border-blue-200"
                       }`}
                   >
-                    <div className={`${isActive ? 'text-white' : 'text-blue-500'}`}>
+                    <div
+                      className={`${isActive ? "text-white" : "text-blue-500"}`}
+                    >
                       {item.icon}
                     </div>
                     <span className="font-medium">{item.name}</span>
@@ -146,17 +173,19 @@ export default function Sidebar() {
             <div className="w-full border-t border-gray-200"></div>
           </div>
           <div className="relative flex justify-center text-xs">
-            <span className="px-2 bg-gradient-to-b from-white to-gray-50 text-gray-500">Options</span>
+            <span className="px-2 bg-gradient-to-b from-white to-gray-50 text-gray-500">
+              Options
+            </span>
           </div>
         </div>
 
         {/* Theme & Language */}
         <div className="flex justify-between items-center px-4">
-          <button 
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+          <button
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             className="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-br from-white to-gray-50 shadow border border-gray-200 hover:border-blue-300 transition-colors group"
           >
-            {theme === 'light' ? (
+            {theme === "light" ? (
               <>
                 <FaMoon className="text-blue-600" />
                 <span className="text-sm font-medium text-gray-700">Dark</span>
@@ -175,6 +204,15 @@ export default function Sidebar() {
           </button>
         </div>
 
+        {/* Copyright */}
+        <div className="text-center pt-4 border-t border-gray-200">
+          <p className="text-xs text-gray-500">
+            © {new Date().getFullYear()} Devsign pro
+          </p>
+          <p className="text-xs text-gray-400 mt-1">
+            Crafting Digital Excellence
+          </p>
+        </div>
       </div>
     </aside>
   );

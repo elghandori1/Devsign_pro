@@ -7,164 +7,121 @@ import {
   CheckCircle,
   ArrowLeft,
 } from "lucide-react";
-
 export default function Home() {
   const services = [
-    { icon: <Code className="w-5 h-5" />, label: "Web Development" },
-    { icon: <Palette className="w-5 h-5" />, label: "Design" },
-    { icon: <Rocket className="w-5 h-5" />, label: "Landing Pages" },
-    { icon: <Sparkles className="w-5 h-5" />, label: "Branding" },
-    { icon: <Plus className="w-5 h-5" />, label: "And more" },
+    { icon: <Code className="w-5 h-5" />, label: "Websites" },
+    { icon: <Rocket className="w-5 h-5" />, label: "Software" },
+    { icon: <Palette className="w-5 h-5" />, label: "Product Design" },
+    { icon: <Sparkles className="w-5 h-5" />, label: "Ads & Media" },
+    { icon: <Plus className="w-5 h-5" />, label: "Custom Work" },
   ];
 
   return (
-    <section className="flex-1 min-h-screen text-white bg-devsign overflow-hidden relative">
-      {/* Background decorative elements */}
-
-      <div className="absolute inset-0 overflow-hidden">
+    <section className="flex-1 text-white overflow-hidden relative">
+      {/* Background Decor */}
+      <div className="absolute inset-0 overflow-hidden opacity-50">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-96 h-96 bg-indigo-500/5 rounded-full blur-3xl"></div>
       </div>
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-20">
+
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
           {/* Left Column - Content */}
-
           <div className="space-y-8">
-            {/* Main Headline */}
-
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-              Building
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+              Grow Your Business 
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                Digital Experiences
+                With Better Design
               </span>
             </h1>
 
-            {/* Description */}
-
-            <div className="space-y-4">
-              <p className="text-xl text-blue-100 leading-relaxed">
-                Devsign transforms ideas into powerful digital solutions. We
-                specialize in creating high-performance websites, custom
-                software, and stunning visual designs that drive business
-                growth.
+            <div className="space-y-6">
+              <p className="text-xl text-blue-100 leading-relaxed max-w-lg">
+               We help brands stand out. From building powerful websites to designing engaging social media posts and premium packaging for your products, we handle the tech and design so you can focus on sales.
               </p>
 
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-
-                  <span className="text-blue-100">
-                    Full-stack web development & landing pages
-                  </span>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400 mt-1" />
+                  <div>
+                    <span className="block font-bold text-white">Custom Web & Software</span>
+                    <span className="text-blue-200 text-sm">Fast, modern websites built for your specific needs.</span>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-
-                  <span className="text-blue-100">
-                    Custom software & UI/UX design
-                  </span>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400 mt-1" />
+                  <div>
+                    <span className="block font-bold text-white">Product & Ad Design</span>
+                    <span className="text-blue-200 text-sm">We redesign product images and social media posts to boost engagement.</span>
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-400" />
-
-                  <span className="text-blue-100">
-                    Product design for e-commerce & advertising
-                  </span>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-green-400 mt-1" />
+                  <div>
+                    <span className="block font-bold text-white">E-commerce Support</span>
+                    <span className="text-blue-200 text-sm">Tools and designs that help you sell more online.</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             {/* Service Tags */}
-
-            <div className="flex flex-wrap gap-3 pt-2">
+            <div className="flex flex-wrap gap-3 pt-4">
               {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors"
-                >
+                <div key={index} className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
                   {service.icon}
-
                   <span className="text-sm font-medium">{service.label}</span>
                 </div>
               ))}
             </div>
 
-            {/* Trust Indicator */}
-
             <div className="pt-8">
-              <p className="text-sm flex items-center justify-center gap-2 text-white p-3 rounded-full bg-cyan-800 backdrop-blur-sm border border-white/10 hover:bg-cyan-900 transition-colors">
-                <ArrowLeft className="w-5 h-5" /> To explore everything we offer, click on<span className="font-semibold">services</span>in the menu
-              </p>
+               <p className="inline-flex items-center gap-2 text-sm text-cyan-200 bg-cyan-950/50 px-6 py-3 rounded-full border border-cyan-500/30">
+                 <ArrowLeft className="w-4 h-4 " /> 
+                 Ready to start? Click <strong>Service</strong> in the menu to see more.
+               </p>
             </div>
           </div>
 
-          {/* Right Column - Visual/Stats */}
-
+          {/* Right Column - Stats & Social Proof */}
           <div className="relative">
-            {/* Stats Card */}
-
-            <div className="relative p-8 rounded-2xl bg-gradient-to-br from-blue-900/40 to-cyan-900/20 backdrop-blur-sm border border-white/10">
+            <div className="relative p-8 rounded-3xl bg-gradient-to-br from-blue-900/40 to-cyan-900/20 backdrop-blur-md border border-white/10 shadow-2xl">
               <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-4 rounded-xl bg-white/5">
-                  <div className="text-3xl font-bold text-cyan-300">100+</div>
-
-                  <div className="text-sm text-blue-200 mt-2">
-                    Projects Delivered
-                  </div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="text-4xl font-bold text-cyan-300">10+</div>
+                  <div className="text-xs uppercase tracking-wider text-blue-300 mt-2">Projects</div>
                 </div>
-
-                <div className="text-center p-4 rounded-xl bg-white/5">
-                  <div className="text-3xl font-bold text-cyan-300">24/7</div>
-
-                  <div className="text-sm text-blue-200 mt-2">Support</div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="text-4xl font-bold text-cyan-300">24/7</div>
+                  <div className="text-xs uppercase tracking-wider text-blue-300 mt-2">Support</div>
                 </div>
-
-                <div className="text-center p-4 rounded-xl bg-white/5">
-                  <div className="text-3xl font-bold text-cyan-300">99%</div>
-
-                  <div className="text-sm text-blue-200 mt-2">
-                    Client Satisfaction
-                  </div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="text-4xl font-bold text-cyan-300">98%</div>
+                  <div className="text-xs uppercase tracking-wider text-blue-300 mt-2">Happy Clients</div>
                 </div>
-
-                <div className="text-center p-4 rounded-xl bg-white/5">
-                  <div className="text-3xl font-bold text-cyan-300">48h</div>
-
-                  <div className="text-sm text-blue-200 mt-2">Quick Start</div>
+                <div className="text-center p-6 rounded-2xl bg-white/5 border border-white/5">
+                  <div className="text-4xl font-bold text-cyan-300">48h</div>
+                  <div className="text-xs uppercase tracking-wider text-blue-300 mt-2">Response</div>
                 </div>
               </div>
 
-              {/* Testimonial */}
-
-              <div className="mt-8 p-6 rounded-xl bg-blue-900/30 border-l-4 border-cyan-500">
-                <p className="text-blue-100 italic">
-                  "Devsign transformed our online presence with a stunning
-                  e-commerce platform. Sales increased by 200% in the first
-                  month."
+              {/* Owner Info / Small Bio */}
+              <div className="mt-8 p-6 rounded-2xl bg-blue-600/20 border border-blue-500/30">
+                <p className="text-blue-100 italic text-sm leading-relaxed">
+                  "At Devsign, we don't just build code; we build tools that help your business grow and look professional in a crowded market."
                 </p>
-
-                <div className="flex items-center gap-3 mt-4">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"></div>
-
+                <div className="flex items-center gap-4 mt-6">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 shadow-lg flex items-center justify-center font-bold text-white">MD</div>
                   <div>
-                    <div className="font-semibold text-white">SMohammed elghandori</div>
-
-                    <div className="text-sm text-blue-300">
-                     owner of website
-                    </div>
+                    <div className="font-bold text-white">Mohammed</div>
+                    <div className="text-xs text-cyan-400">Founder of Devsign</div>
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Floating Elements */}
-
-            <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full bg-gradient-to-r from-cyan-500/20 to-blue-500/20 blur-xl"></div>
-
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-full bg-gradient-to-r from-blue-500/20 to-indigo-500/20 blur-xl"></div>
           </div>
         </div>
       </div>
