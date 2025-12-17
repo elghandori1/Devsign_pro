@@ -7,7 +7,7 @@ const roboto = Roboto({
   preload: true,
 });
 
-import Sidebar from "./components/Sidebar";
+import Sidebar from "@/app/components/Sidebar/Sidebar";
 
 export const metadata = {
   title: "Devsign | Professional Web Development & Creative Ad Design",

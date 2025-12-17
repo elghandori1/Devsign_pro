@@ -24,11 +24,11 @@ export default function Home() {
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-40">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
               Grow Your Business 
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
