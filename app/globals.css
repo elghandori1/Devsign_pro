@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+}
+/* 1. Define the Variables */
+:root {
+  /* LIGHT MODE COLORS */
+  --background: #ffffff;
+  --foreground: #09090b;       
+  
+  --card: #f4f4f5;             
+  --card-foreground: #09090b;
+  
+  --popover: #ffffff;
+  --popover-foreground: #09090b;
+  
+  --muted: #71717a;            
+  --muted-foreground: #71717a;
+           
+  --input: #e4e4e7;
+  --border: #e4e4e7;
+
+  --primary: #2563eb;          
+  --primary-foreground: #ffffff;
+  /* Light theme: light blue lighting for accents and glows */
+  --lighting: #93c5fd;
+  --glow-color: rgba(147, 197, 253, 0.35);
+}
+
+/* DARK MODE COLORS */
+.dark {
+  --background: #151515;       
+  --foreground: #ffffff;
+  
+  --card: #4a4a60;             
+  --card-foreground: #ffffff;
+  
+  --popover: #050505;
+  --popover-foreground: #ffffff;
+  
+  --muted: #a1a1aa;            
+  --muted-foreground: #a1a1aa;
+          
+  --input: #27272a;
+  --border: #27272a;
+
+  --primary: #3b82f6;          
+  --primary-foreground: #ffffff;
+  --lighting: #3b82f6;
+  --glow-color: rgba(255, 255, 255, 0.12);
+}
+
+/* 2. Apply defaults */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light: clean white background */
+:root body {
+  background-color: #ffffff;
+}
+
+/* Dark: subtle gradient, not too harsh */
+.dark body {
+  background: linear-gradient(180deg,
+    #0c0f14 0%,
+    #131922 25%,
+    #161d28 50%,
+    #11161e 75%,
+    #0a0d12 100%
+  );
+  background-attachment: fixed;
+  background-color: #0a0d12;
+}
+
+/* Hero section: light blue tint (light mode) */
+.hero-section-light {
+  background: linear-gradient(135deg,
+    rgba(224, 242, 254, 0.6) 0%,
+    rgba(186, 230, 253, 0.25) 40%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-color: transparent;
+}
+
+/* Hero section: subtle blue glow (dark mode) */
+.dark .hero-section-light {
+  background: linear-gradient(135deg,
+    rgba(59, 130, 246, 0.08) 0%,
+    rgba(30, 64, 175, 0.05) 40%,
+    transparent 70%
+  );
+  background-color: transparent;
+}
+
+/* 3. White text light-up effect (dark theme) */
+.dark .hero-headline,
+.dark .hero-text,
+.dark .mission-text {
+  text-shadow: 0 0 24px var(--glow-color), 0 0 48px var(--glow-color);
+}
+
+/* Light theme: light blue lighting on interactive elements */
+:root .hero-headline,
+:root .mission-text {
+  text-shadow: 0 0 20px var(--glow-color);
+}
+
+/* 3. Helper for Wave Gradient Text */
+.text-gradient-wave {
+  background: linear-gradient(135deg, #ffffff 0%, #d4d4da 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent; 
+  background-size: 200% auto;
+  animation: shine 5s linear infinite;
+}

@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "Services": "Services",
+    "portfolio": "My Work",
+    "Contact": "Contact Us"
+  },
+  "homepage": {
+    "banner": "Building a best-in-class revenue-generating website in 2026 — Read now →",
+    "hero": {
+      "title_line1": "Modern Websites & Advanced SEO",
+      "title_highlight": "& Intelligent Business Solutions",
+      "description": "I’m a professional web developer in Morocco creating modern, SEO-optimized websites and automated AI business systems. I also design high-converting social media ads. My focus is simple: performance, scalability, and real results for growing businesses.",
+      "cta_primary": "Let's Work Together",
+      "cta_secondary": "See My Work",
+      "profile_name": "mohammed devsign",
+      "profile_role": "full-stack developer and SEO specialist",
+      "cta_more_about": "more about me",
+      "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
+    },
+    "goal": {
+      "title": "Why me?",
+      "description": "My goal is to help startups, enterprises, and entrepreneurs build a powerful digital presence and create lasting connections with their customers. I achieve this by designing modern, SEO-optimized websites and smart business systems that enhance visibility, streamline operations, and drive measurable growth."
+    },
+    "stats": {
+  "years": "Years of Experience",
+  "projects": "Projects Completed",
+  "systems": "Systems Delivered",
+  "satisfaction": "Client Satisfaction"
+},
+    "services_section": {
+      "title": "How do you want to build?",
+      "cta": "Talk to Sales",
+      "cards": {
+        "web": {
+          "title": "Custom Web & Software",
+          "description": "Fast, modern websites and custom software built to convert visitors into clients.",
+          "badge": "AI Site Builder"
+        },
+        "design": {
+          "title": "Product & Ad Design",
+          "description": "Product visuals, social media ads, and premium packaging design to boost engagement.",
+          "badge": "Template"
+        },
+        "ecommerce": {
+          "title": "E-commerce Support",
+          "description": "E-commerce tools, design, and optimization to help you sell more online.",
+          "badge": "Blank Site"
+        }
+      }
+    },
+    "footer_tags": {
+      "title": "Popular Searches",
+      "tags": ["Websites", "Software", "Product Design", "Ads & Media", "Custom Work"]
+    }
+  }
+}

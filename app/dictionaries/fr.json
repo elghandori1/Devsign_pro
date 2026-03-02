@@ -1,0 +1,58 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À Propos de Moi",
+    "Services": "Services",
+    "portfolio": "Mes Projets",
+    "Contact": "Contactez-nous"
+  },
+  "homepage": {
+    "banner": "Créer un site web générateur de revenus en 2026 — Lire maintenant →",
+    "hero": {
+    "title_line1": "Sites Web Modernes & SEO Avancé",
+    "title_highlight": "& Solutions Business Intelligentes",
+      "description": "Développeur web professionnel au Maroc, je crée des sites modernes optimisés pour le SEO et des systèmes business automatisés par l'IA. Je conçois également des publicités réseaux sociaux à fort taux de conversion. Mon focus : performance, évolutivité et résultats concrets pour booster votre croissance.",
+      "cta_primary": "Démarrer un projet",
+      "cta_secondary": "Voir mon portfolio",
+      "profile_name": "mohammed devsign",
+      "profile_role": "développeur full-stack et spécialiste SEO",
+      "cta_more_about": "en savoir plus",
+      "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
+    },
+    "goal": {
+      "title": "Mon Objectif",
+      "description": "Mon objectif est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés. J'y parviens en créant des sites web modernes et optimisés SEO ainsi que des systèmes business intelligents qui génèrent de la croissance et des résultats concrets."
+    },
+    "stats": {
+  "years": "Années d'expérience",
+  "projects": "Projets réalisés",
+  "systems": "Systèmes livrés",
+  "satisfaction": "Satisfaction client"
+},
+    "services_section": {
+      "title": "Comment voulez-vous construire ?",
+      "cta": "Parler aux Ventes",
+      "cards": {
+        "web": {
+          "title": "Web & Logiciels Sur Mesure",
+          "description": "Des sites web modernes et rapides et des logiciels personnalisés conçus pour convertir les visiteurs en clients.",
+          "badge": "Constructeur IA"
+        },
+        "design": {
+          "title": "Design Produit & Publicité",
+          "description": "Visuels de produits, publicités pour les réseaux sociaux et design d'emballage premium pour booster l'engagement.",
+          "badge": "Modèle"
+        },
+        "ecommerce": {
+          "title": "Support E-commerce",
+          "description": "Outils e-commerce, design et optimisation pour vous aider à vendre plus en ligne.",
+          "badge": "Site Vierge"
+        }
+      }
+    },
+    "footer_tags": {
+      "title": "Recherches Populaires",
+      "tags": ["Sites Web", "Logiciels", "Design Produit", "Publicités & Médias", "Travail Sur Mesure"]
+    }
+  }
+}
