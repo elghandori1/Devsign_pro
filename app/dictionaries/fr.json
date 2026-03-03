@@ -9,13 +9,13 @@
   "homepage": {
     "banner": "Créer un site web générateur de revenus en 2026 — Lire maintenant →",
     "hero": {
-    "title_line1": "Sites Web Modernes & SEO Avancé",
-    "title_highlight": "& Solutions Business Intelligentes",
+      "title_line1": "Sites Web Modernes & SEO Avancé",
+      "title_highlight": "& Solutions Business Intelligentes",
       "description": "Développeur web professionnel au Maroc, je crée des sites modernes optimisés pour le SEO et des systèmes business automatisés par l'IA. Je conçois également des publicités réseaux sociaux à fort taux de conversion. Mon focus : performance, évolutivité et résultats concrets pour booster votre croissance.",
       "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mon portfolio",
       "profile_name": "mohammed devsign",
-      "profile_role": "développeur full-stack et spécialiste SEO",
+      "profile_role": "développeur full-stack et spécialiste SEO et automatisation IA",
       "cta_more_about": "en savoir plus",
       "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
     },
@@ -24,35 +24,45 @@
       "description": "Mon objectif est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés. J'y parviens en créant des sites web modernes et optimisés SEO ainsi que des systèmes business intelligents qui génèrent de la croissance et des résultats concrets."
     },
     "stats": {
-  "years": "Années d'expérience",
-  "projects": "Projets réalisés",
-  "systems": "Systèmes livrés",
-  "satisfaction": "Satisfaction client"
-},
+      "years": "Années d'expérience",
+      "projects": "Projets réalisés",
+      "systems": "Systèmes livrés",
+      "satisfaction": "Satisfaction client"
+    },
     "services_section": {
-      "title": "Comment voulez-vous construire ?",
-      "cta": "Parler aux Ventes",
-      "cards": {
+      "services": {
+        "sectionLabel": "Nos Services",
+        "heading": "Des solutions digitales intelligentes pour",
+        "highlight": "Élever Votre Entreprise",
+        "viewAll": "Voir Tous les Services",
+        "cta": "En savoir plus",
         "web": {
-          "title": "Web & Logiciels Sur Mesure",
-          "description": "Des sites web modernes et rapides et des logiciels personnalisés conçus pour convertir les visiteurs en clients.",
-          "badge": "Constructeur IA"
+          "title": "Développement Web Moderne",
+          "description": "Sites web haute performance, légers et optimisés SEO, conçus pour être premiers sur les moteurs de recherche et convertir les visiteurs en clients fidèles.",
+          "link": "/services/web-development"
+        },
+        "systems": {
+          "title": "Systèmes d'Entreprise Intelligents",
+          "description": "Automatisation personnalisée des flux de travail et intégration de modèles d'IA pour simplifier vos opérations et développer votre entreprise sans effort.",
+          "link": "/services/systems"
         },
         "design": {
-          "title": "Design Produit & Publicité",
-          "description": "Visuels de produits, publicités pour les réseaux sociaux et design d'emballage premium pour booster l'engagement.",
-          "badge": "Modèle"
-        },
-        "ecommerce": {
-          "title": "Support E-commerce",
-          "description": "Outils e-commerce, design et optimisation pour vous aider à vendre plus en ligne.",
-          "badge": "Site Vierge"
+          "title": "Design Publicitaire à Haut Taux de Conversion",
+          "description": "Contenu visuel stratégique pour Instagram, Facebook et TikTok, spécialement conçu pour présenter vos produits et générer des ventes.",
+          "link": "/services/social-design" 
+        
         }
       }
     },
     "footer_tags": {
       "title": "Recherches Populaires",
-      "tags": ["Sites Web", "Logiciels", "Design Produit", "Publicités & Médias", "Travail Sur Mesure"]
+      "tags": [
+        "Sites Web",
+        "Logiciels",
+        "Design Produit",
+        "Publicités & Médias",
+        "Travail Sur Mesure"
+      ]
     }
   }
 }

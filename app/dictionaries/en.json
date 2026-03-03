@@ -15,7 +15,7 @@
       "cta_primary": "Let's Work Together",
       "cta_secondary": "See My Work",
       "profile_name": "mohammed devsign",
-      "profile_role": "full-stack developer and SEO specialist",
+      "profile_role": "Full-Stack Developer, SEO Specialist & AI Automation",
       "cta_more_about": "more about me",
       "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
     },
@@ -24,35 +24,45 @@
       "description": "My goal is to help startups, enterprises, and entrepreneurs build a powerful digital presence and create lasting connections with their customers. I achieve this by designing modern, SEO-optimized websites and smart business systems that enhance visibility, streamline operations, and drive measurable growth."
     },
     "stats": {
-  "years": "Years of Experience",
-  "projects": "Projects Completed",
-  "systems": "Systems Delivered",
-  "satisfaction": "Client Satisfaction"
-},
-    "services_section": {
-      "title": "How do you want to build?",
-      "cta": "Talk to Sales",
-      "cards": {
-        "web": {
-          "title": "Custom Web & Software",
-          "description": "Fast, modern websites and custom software built to convert visitors into clients.",
-          "badge": "AI Site Builder"
-        },
-        "design": {
-          "title": "Product & Ad Design",
-          "description": "Product visuals, social media ads, and premium packaging design to boost engagement.",
-          "badge": "Template"
-        },
-        "ecommerce": {
-          "title": "E-commerce Support",
-          "description": "E-commerce tools, design, and optimization to help you sell more online.",
-          "badge": "Blank Site"
-        }
-      }
+      "years": "Years of Experience",
+      "projects": "Projects Completed",
+      "systems": "Systems Delivered",
+      "satisfaction": "Client Satisfaction"
+    },
+  "services_section": {
+
+   "services": {
+    "sectionLabel": "Our Services",
+    "heading": "Smart Digital Solutions to",
+    "highlight": "Elevate Your Business",
+    "viewAll": "View All Services",
+    "cta": "Learn More",
+    "web": {
+      "title": "Modern Web Development",
+      "description": "High-performance, lightweight, and SEO-optimized websites designed to rank first and convert visitors into loyal customers.",
+      "link": "/services/web-development"
+    },
+    "systems": {
+      "title": "Smart Business Systems",
+      "description": "Custom workflow automation and AI model integration to simplify your operations and scale your business growth effortlessly.",
+      "link": "/services/business-systems"
+    },
+    "design": {
+      "title": "High-Converting Ad Design",
+      "description": "Strategic visual content for Instagram, Facebook, and TikTok designed specifically to explain your products and drive sales.",
+      "link": "/services/social-design"
+    }
+    }
     },
     "footer_tags": {
       "title": "Popular Searches",
-      "tags": ["Websites", "Software", "Product Design", "Ads & Media", "Custom Work"]
+      "tags": [
+        "Websites",
+        "Software",
+        "Product Design",
+        "Ads & Media",
+        "Custom Work"
+      ]
     }
   }
 }

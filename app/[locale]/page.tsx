@@ -9,6 +9,8 @@ import Goalcomponent from "../components/Goalcomponent";
 import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
+import SubTitle from "../components/SubTitles";
+import ServicesGrid from "../components/ServicesGrid";
 export const revalidate = 600;
 
 type Props = {
@@ -236,7 +238,7 @@ export default async function Home({ params }: Props) {
                 <p className="hero-text text-lg font-medium">
                   {t.hero.profile_name}
                 </p>
-                <p className="hero-text text-sm text-gray-500 mt-0.5 mb-4">
+                <p className="hero-text text-center text-sm text-gray-500 mt-0.5 mb-4" dir="rtl">
                   {t.hero.profile_role}
                 </p>
                 <button
@@ -279,7 +281,9 @@ export default async function Home({ params }: Props) {
         </div>
       </section>
       <Statistics translations={t.stats} />
-      <Goalcomponent translations={t.goal} />
+       <SubTitle translations={t.services_section.services} />
+      <ServicesGrid t={t.services_section} locale={locale} />
+      <Goalcomponent translations={t.goal} /> 
     </div>
   );
 }

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "^0.8.0",
+    "framer-motion": "^12.34.4",
     "locale-matcher": "^2.2.1",
     "lucide-react": "^0.561.0",
     "negotiator": "^1.0.0",

@@ -25,8 +25,8 @@ export default function MobileMenu({ lang, t }: MobileMenuProps) {
 
   const navItems = [
     { href: "", label: t.home },
-    { href: "/about", label: t.about },
     { href: "/services", label: t.Services },
+    { href: "/about", label: t.about },
     { href: "/portfolio", label: t.portfolio },
     { href: "/contact", label: t.Contact },
   ];
