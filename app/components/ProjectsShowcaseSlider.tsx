@@ -142,7 +142,7 @@ export default function ProjectsShowcaseSlider({
             </p>
             <Link
               href={`/${locale}/portfolio`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               {project.linkLabel}
             </Link>

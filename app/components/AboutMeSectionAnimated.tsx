@@ -37,13 +37,13 @@ export default function AboutMeSectionAnimated({
   const isRtl = locale === "ar";
 
   return (
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
       <motion.div
         variants={imageVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-80px" }}
-        className="relative group w-full h-[360px] lg:h-[520px] rounded-3xl overflow-hidden border border-border shadow-xl"
+        viewport={{ once: true, margin: "-60px" }}
+        className="relative group w-full h-[280px] sm:h-[360px] lg:h-[520px] rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-xl"
       >
         <Image
           src={imageSrc}
@@ -62,7 +62,7 @@ export default function AboutMeSectionAnimated({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-20px" }}
-          className="text-xl sm:text-2xl font-semibold text-foreground leading-tight mb-6"
+          className="text-lg sm:text-xl lg:text-2xl font-semibold text-foreground leading-tight mb-4 sm:mb-6"
         >
           {paragraph1}
         </motion.p>
@@ -72,7 +72,7 @@ export default function AboutMeSectionAnimated({
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-10 max-w-xl"
+          className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-10 max-w-xl"
         >
           {paragraph2}
         </motion.p>
@@ -85,7 +85,7 @@ export default function AboutMeSectionAnimated({
         >
           <Link
             href="/about"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-primary/40 hover:-translate-y-1 transition-all"
+            className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-primary/40 hover:-translate-y-1 transition-all"
           >
             {cta}
           </Link>

@@ -16,6 +16,7 @@ import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import HomeFooter from "../components/HomeFooter";
+import ScrollReveal from "../components/ScrollReveal";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -258,7 +259,7 @@ export default async function Home({ params }: Props) {
                     href="https://www.facebook.com/yourpage"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-[#1877f2] hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-10 h-10 hidden flex items-center justify-center rounded-full border border-border hover:bg-[#1877f2] hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="Facebook"
                   >
                     <FaFacebookF size={18} />
@@ -296,23 +297,37 @@ export default async function Home({ params }: Props) {
           </div>
         </div>
       </section>
-      <Statistics translations={t.stats} />
-    
-          
-      <SubTitle translations={t.services_section.services} />
-      <ServicesGrid t={t.services_section} locale={locale} />
+      <ScrollReveal>
+        <Statistics translations={t.stats} />
+      </ScrollReveal>
 
-      <SubTitle translations={t.contact_section.about_me} />
-      <AboutMeSection translations={t.contact_section.about_me} locale={locale} />
+      <ScrollReveal delay={0.05}>
+        <SubTitle translations={t.services_section.services} />
+        <ServicesGrid t={t.services_section} locale={locale} />
+      </ScrollReveal>
 
-      <SubTitle translations={t.why_we_are_section.why_we_are} />
-      <WhyWeAreSection translations={t.why_we_are_section.why_we_are} locale={locale} />
+      <ScrollReveal delay={0.05}>
+        <SubTitle translations={t.contact_section.about_me} />
+        <AboutMeSection translations={t.contact_section.about_me} locale={locale} />
+      </ScrollReveal>
 
-      <SubTitle translations={t.projects_section} />
-      <ProjectsShowcase translations={t.projects_section} locale={locale} />
+      <ScrollReveal delay={0.05}>
+        <SubTitle translations={t.why_we_are_section.why_we_are} />
+        <WhyWeAreSection translations={t.why_we_are_section.why_we_are} locale={locale} />
+      </ScrollReveal>
 
-      <ContactSection translations={t.contact} locale={locale} />
-      <HomeFooter footerTags={t.footer_tags} footer={t.footer} locale={locale} />
+      <ScrollReveal delay={0.05}>
+        <SubTitle translations={t.projects_section} />
+        <ProjectsShowcase translations={t.projects_section} locale={locale} />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+        <ContactSection translations={t.contact} locale={locale} />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05} subtle>
+        <HomeFooter footerTags={t.footer_tags} footer={t.footer} locale={locale} />
+      </ScrollReveal>
     </div>
   );
 }

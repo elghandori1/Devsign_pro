@@ -22,16 +22,16 @@ export default function AboutMeSection({ translations, locale }: AboutMeSectionP
   return (
     <section
       id="about"
-      className="relative pt-4 pb-10 overflow-hidden"
+      className="relative pt-4 pb-8 sm:pb-10 overflow-hidden"
       dir={isRtl ? "rtl" : "ltr"}
       aria-labelledby="about-subtitle"
     >
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 sm:mb-14">
           <h3
             id="about-subtitle"
-            className="text-gray-600 uppercase tracking-widest text-sm font-semibold"
+            className="text-primary font-semibold uppercase tracking-widest text-sm sm:text-base inline-block pb-2"
           >
             {translations.subtitle}
           </h3>
