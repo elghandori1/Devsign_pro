@@ -6,6 +6,8 @@ import "../globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
+import Footer from "@/app/components/Footer";
+import getTrans from "@/app/lib/translation";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -140,6 +142,10 @@ export default async function RootLayout({
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
+  const dict = await getTrans(locale);
+  const footerTags = dict?.homepage?.footer_tags ?? null;
+  const footer = dict?.homepage?.footer ?? null;
+
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
   const baseUrl = getBaseUrl();
@@ -176,9 +182,10 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar lang={locale} />
           <main>{children}</main>
+          <Footer footerTags={footerTags} footer={footer} locale={locale} />
         </ThemeProvider>
       </body>
     </html>

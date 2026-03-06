@@ -16,7 +16,7 @@ interface HomeFooterProps {
   locale: Locale;
 }
 
-export default function HomeFooter({
+export default function Footer({
   footerTags,
   footer,
   locale,

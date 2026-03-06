@@ -15,7 +15,7 @@ import AboutMeSection from "../components/AboutMeSection";
 import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
-import HomeFooter from "../components/HomeFooter";
+import HomeFooter from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
 
 type Props = {
@@ -325,9 +325,7 @@ export default async function Home({ params }: Props) {
         <ContactSection translations={t.contact} locale={locale} />
       </ScrollReveal>
 
-      <ScrollReveal delay={0.05} subtle>
-        <HomeFooter footerTags={t.footer_tags} footer={t.footer} locale={locale} />
-      </ScrollReveal>
+ 
     </div>
   );
 }

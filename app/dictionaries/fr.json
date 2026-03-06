@@ -127,5 +127,148 @@
       "copyright": "© {year} Devsign. Tous droits réservés.",
       "tagline": "Sites Web · Systèmes · Design"
     }
+  },
+  "pages": {
+    "services": {
+      "title": "Services",
+      "subtitle": "Ce que je propose",
+      "heading": "Des solutions digitales pour faire grandir votre entreprise",
+      "description": "Des sites web légers et optimisés SEO à l'automatisation et l'intégration IA, en passant par le design publicitaire à fort taux de conversion — j'accompagne les startups et PME en ligne.",
+      "web": {
+        "title": "Développement Web Moderne",
+        "description": "Sites légers et rapides pensés pour le référencement. Je crée des sites SEO, mobile-first, qui se positionnent bien et convertissent. Idéal pour se lancer en ligne ou moderniser sa présence.",
+        "features": ["Optimisé SEO", "Mobile-first", "Chargement rapide", "Structure claire"]
+      },
+      "systems": {
+        "title": "Systèmes & IA",
+        "description": "Automatisation sur mesure et intégration IA pour simplifier vos processus. De l'automatisation des flux à des outils intelligents, pour gagner du temps et scaler.",
+        "features": ["Automatisation", "Intégration IA", "Tableaux de bord", "Évolutif"]
+      },
+      "design": {
+        "title": "Design Publicitaire & Médias",
+        "description": "Contenus visuels pour les réseaux et publicités qui mettent en valeur vos produits et services. Créations pour Instagram, Facebook et TikTok conçues pour l'engagement et les ventes.",
+        "features": ["Pub réseaux sociaux", "Visuels produits", "Cohérence de marque", "Fort taux de conversion"]
+      },
+      "cta": "Discuter de votre projet",
+      "whyChooseUs": {
+        "title": "Pourquoi Nous Choisir",
+        "subtitle": "Ce qui distingue nos services",
+        "reasons": [
+          { "title": "Résultats prouvés", "text": "Sites et systèmes qui se positionnent, convertissent et évoluent — avec des résultats concrets pour startups et PME." },
+          { "title": "Expertise full-stack", "text": "Du design front-end à la logique backend, SEO et automatisation — un seul partenaire pour toute votre stack digitale." },
+          { "title": "Sans enfermement", "text": "Code propre, technologies standard et documentation claire pour que vous restiez propriétaire de votre projet." }
+        ],
+        "imageCaption": "Des solutions qui performent"
+      }
+    },
+    "about": {
+      "title": "À Propos de Moi",
+      "subtitle": "Votre partenaire pour la réussite digitale",
+      "heading": "Développeur et designer axé sur les résultats",
+      "intro": "Je suis développeur et designer au Maroc. Je ne travaille pas pour les grandes agences — j'accompagne les startups, les PME et tous ceux qui vendent ou communiquent en ligne et qui ont besoin d'une présence web solide, d'automatisation ou d'IA.",
+      "paragraph1": "Je conçois des sites légers et optimisés SEO qui se positionnent bien, et je crée des visuels et publicités qui mettent en valeur vos services ou produits. Site neuf, automatisation ou visuels pour vos réseaux : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
+      "paragraph2": "Mon approche allie technique moderne, performance et clarté. Je vous aide à toucher plus de clients, à automatiser les tâches répétitives et à présenter votre offre de façon à convertir.",
+      "whoIAm": {
+        "title": "Qui Je Suis",
+        "text": "Je suis Mohammed — développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits digitaux performants. Je travaille avec les startups et PME qui veulent se démarquer en ligne : du référencement Google à l'automatisation des processus et au design d'annonces qui convertissent. Je crois en un code propre, une communication claire et des résultats mesurables."
+      },
+      "storyMissionValues": {
+        "title": "Découvrez l'histoire, la mission et les valeurs qui me portent",
+        "story": "Mon parcours a commencé par une curiosité pour le web et la façon dont les entreprises peuvent l'utiliser pour grandir. Au fil des années j'ai créé des sites, automatisé des processus et conçu des campagnes pour des marques qui avaient besoin d'un partenaire à la fois développeur et designer — et capable de livrer dans les temps.",
+        "mission": "Ma mission est d'aider les entreprises et les créateurs à construire une présence en ligne forte et visible. Je veux que chaque projet soit rapide, trouvable et centré sur l'utilisateur — pour que vous puissiez vous concentrer sur votre métier pendant que votre présence digitale travaille pour vous.",
+        "valuesTitle": "Ce qui me guide",
+        "values": [
+          "La qualité avant la quantité — chaque ligne de code et chaque pixel compte.",
+          "La transparence — vous êtes toujours informé, du démarrage au lancement.",
+          "La performance — sites légers, SEO-friendly et durables.",
+          "Le partenariat — je réussis quand votre activité grandit."
+        ]
+      },
+      "hackathons": {
+        "title": "Hackathons & Événements",
+        "subtitle": "Où j'ai concouru et gagné",
+        "items": [
+          { "name": "Hackathon National Startups", "year": "2024", "place": "1er Prix" },
+          { "name": "Challenge IA & Automatisation", "year": "2024", "place": "2e Prix" },
+          { "name": "Concours Performance Web & SEO", "year": "2023", "place": "1er Prix" },
+          { "name": "Journée Innovation Digitale", "year": "2023", "place": "2e Prix" }
+        ]
+      },
+      "howCanIHelp": {
+        "title": "Comment Puis-Je Vous Aider ?",
+        "subtitle": "Les façons dont nous pouvons travailler ensemble",
+        "items": [
+          "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
+          "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
+          "Concevoir visuels publicitaires et contenus réseaux sociaux qui expliquent votre offre et génèrent des ventes.",
+          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant.",
+          "Former votre équipe ou vous accompagner en maintenance et évolutions."
+        ]
+      },
+      "values": [
+        { "title": "Qualité et performance", "text": "Code et designs rapides, maintenables, qui fonctionnent sur tous les appareils." },
+        { "title": "SEO et visibilité", "text": "Sites conçus pour être trouvés par la bonne audience." },
+        { "title": "Communication claire", "text": "Processus transparent et mises à jour régulières." },
+        { "title": "Résultats", "text": "Livraison et impact mesurable pour votre activité." }
+      ],
+      "cta": "Me contacter"
+    },
+    "portfolio": {
+      "title": "Mes Projets",
+      "subtitle": "Réalisations sélectionnées",
+      "heading": "Des projets qui génèrent des résultats",
+      "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
+      "projects": [
+        {
+          "title": "Plateforme E-Commerce",
+          "description": "Boutique en ligne full-stack avec panier, paiement et admin. Conçue pour un chargement rapide et un taux de conversion élevé.",
+          "tech": "Next.js, Stripe, PostgreSQL",
+          "category": "Développement Web"
+        },
+        {
+          "title": "Tableau de bord d'automatisation",
+          "description": "CRM et automatisation des processus. Réduction des tâches manuelles de 60 % et reporting amélioré.",
+          "tech": "React, Node.js, API REST",
+          "category": "Systèmes & IA"
+        },
+        {
+          "title": "Identité & Publicités réseaux",
+          "description": "Identité visuelle et créations pour Instagram et Facebook. Système de design cohérent qui a augmenté l'engagement.",
+          "tech": "Design system, Ads Manager",
+          "category": "Design"
+        }
+      ],
+      "viewCase": "Voir l'étude de cas",
+      "cta": "Démarrer votre projet",
+      "whyChooseUs": {
+        "title": "Pourquoi On Choisit Mon Travail",
+        "subtitle": "Chaque projet est livré pour performer",
+        "reasons": [
+          { "title": "Orientation résultats", "text": "Chaque projet vise à améliorer la visibilité, les conversions ou l'efficacité — avec des résultats mesurables." },
+          { "title": "Stack moderne", "text": "Next.js, React et outils éprouvés pour des produits rapides, maintenables et pérennes." },
+          { "title": "Livraison de bout en bout", "text": "Du concept au lancement et au-delà — design, développement et support pour que vous puissiez vous concentrer sur votre activité." }
+        ]
+      }
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "subtitle": "Parlons de votre projet",
+      "heading": "Prêt à renforcer votre présence en ligne ?",
+      "description": "Site web, automatisation, intégration IA ou design publicitaire — contactez-moi. Je vous répondrai au plus tôt.",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "location": "Maroc",
+      "sendMessage": "Envoyer un message",
+      "orWrite": "Ou écrivez directement à",
+      "whyReachOut": {
+        "title": "Pourquoi Nous Contacter ?",
+        "reasons": [
+          { "title": "Consultation initiale gratuite", "text": "On discute de vos objectifs et de notre adéquation — sans engagement." },
+          { "title": "Tarifs et délais clairs", "text": "Devis et planning transparents avant de commencer." },
+          { "title": "Accompagnement continu", "text": "Après le lancement, maintenance et évolutions pour que votre projet reste performant." }
+        ]
+      }
+    }
   }
 }
