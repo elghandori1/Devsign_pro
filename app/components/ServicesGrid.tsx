@@ -54,12 +54,12 @@ export default function ServicesGrid({ t, locale }: ServicesGridProps) {
                         className={`max-w-2xl lg:${locale === "ar" ? "text-right" : "text-left"
                             }`}
                     >
-                        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
+                        <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-snug">
                             {data.heading}
                             <span className="block text-primary mt-2">
                                 {data.highlight}
                             </span>
-                        </h2>
+                        </h3>
                     </div>
 
                     {/* Desktop Button */}
@@ -72,7 +72,7 @@ export default function ServicesGrid({ t, locale }: ServicesGridProps) {
                 </div>
 
                 {/* Cards */}
-                <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 fade-in-section">
                     {services.map((service) => (
                         <Link
                             key={service.link}

@@ -21,7 +21,7 @@
     },
     "goal": {
       "title": "Why me?",
-      "description": "My goal is to help startups, enterprises, and entrepreneurs build a powerful digital presence and create lasting connections with their customers. I achieve this by designing modern, SEO-optimized websites and smart business systems that enhance visibility, streamline operations, and drive measurable growth."
+      "description": "We help startups, enterprises, and entrepreneurs build a strong digital presence and connect effectively with their customers. By combining modern design, SEO-optimized development, and smart business solutions, we create websites and systems that increase visibility, improve efficiency, and support long-term growth."
     },
     "stats": {
       "years": "Years of Experience",
@@ -29,8 +29,66 @@
       "systems": "Systems Delivered",
       "satisfaction": "Client Satisfaction"
     },
+    "contact_section": {
+      "about_me": {
+        "sectionLabel": "About Me",
+        "subtitle": "Your partner for digital success",
+        "paragraph1": "I'm a professional developer and designer based in Morocco, specializing in website creation, operating systems, and media image design. I help businesses and startups build a strong online presence with modern, fast, and SEO-friendly solutions.",
+        "paragraph2": "Whether you need a custom website, a business system, or eye-catching visuals for social media and ads, I focus on quality, clear communication, and results that grow your brand.",
+        "cta": "Learn More"
+      }
+    },
+    "why_we_are_section": {
+      "why_we_are": {
+        "sectionLabel": "Why Choose Us",
+        "subtitle": "What makes us different",
+        "description": "We help startups and businesses build a strong digital presence through modern, SEO-optimized websites and smart solutions that drive growth.",
+        "reasons": [
+          { "title": "Quality & Performance", "description": "Lightweight, fast websites and systems built with best practices and modern tech." },
+          { "title": "Mobile-First & SEO", "description": "Every project is responsive and optimized for search engines and all devices." },
+          { "title": "Clear Communication", "description": "Transparent process, regular updates, and support so you're always in the loop." },
+          { "title": "Trusted Results", "description": "Focused on delivery and client satisfaction with measurable outcomes." }
+        ]
+      }
+    },
+    "projects_section": {
+      "sectionLabel": "Selected Work",
+      "subtitle": "Recent projects that drive results",
+      "projects": [
+        {
+          "title": "E-Commerce Platform",
+          "description": "A full-stack online store with cart, checkout, and admin dashboard. Built for fast loading and high conversion.",
+          "tech": "Next.js, Stripe, PostgreSQL",
+          "image": "/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg",
+          "linkLabel": "View case study"
+        },
+        {
+          "title": "Business Automation Dashboard",
+          "description": "Custom CRM and workflow automation for a growing agency. Reduced manual tasks by 60% and improved reporting.",
+          "tech": "React, Node.js, REST API",
+          "image": "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+          "linkLabel": "View case study"
+        },
+        {
+          "title": "Brand & Social Ads",
+          "description": "Visual identity and ad creatives for Instagram and Facebook. Consistent design system that increased engagement.",
+          "tech": "Design system, Ads Manager",
+          "image": "/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+          "linkLabel": "View case study"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss your project",
+      "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "location": "Morocco",
+      "cta": "Send a message"
+    },
   "services_section": {
-
    "services": {
     "sectionLabel": "Our Services",
     "heading": "Smart Digital Solutions to",
@@ -63,6 +121,10 @@
         "Ads & Media",
         "Custom Work"
       ]
+    },
+    "footer": {
+      "copyright": "© {year} Devsign. All rights reserved.",
+      "tagline": "Websites · Systems · Design"
     }
   }
 }

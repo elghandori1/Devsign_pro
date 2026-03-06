@@ -29,6 +29,65 @@
       "systems": "Systèmes livrés",
       "satisfaction": "Satisfaction client"
     },
+    "contact_section": {
+      "about_me": {
+        "sectionLabel": "À Propos de Moi",
+        "subtitle": "Votre partenaire pour la réussite digitale",
+        "paragraph1": "Je suis développeur et designer professionnel au Maroc, spécialisé en création de sites web, systèmes d'exploitation et design d'images médias. J'accompagne entreprises et startups pour une présence en ligne moderne, rapide et optimisée SEO.",
+        "paragraph2": "Site sur mesure, système métier ou visuels percutants pour les réseaux sociaux et publicités : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
+        "cta": "En savoir plus"
+      }
+    },
+    "why_we_are_section": {
+      "why_we_are": {
+        "sectionLabel": "Pourquoi Nous Choisir",
+        "subtitle": "Ce qui nous différencie",
+        "description": "Nous aidons les startups et les entreprises à bâtir une présence digitale solide grâce à des sites web modernes, optimisés SEO, et des solutions intelligentes qui génèrent de la croissance.",
+        "reasons": [
+          { "title": "Qualité & Performance", "description": "Sites et systèmes légers et rapides, conçus avec les bonnes pratiques et les technologies modernes." },
+          { "title": "Mobile-First & SEO", "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils." },
+          { "title": "Communication Claire", "description": "Processus transparent, mises à jour régulières et accompagnement pour que vous soyez toujours informé." },
+          { "title": "Résultats de Confiance", "description": "Concentration sur la livraison et la satisfaction client avec des résultats mesurables." }
+        ]
+      }
+    },
+    "projects_section": {
+      "sectionLabel": "Réalisations",
+      "subtitle": "Projets récents qui génèrent des résultats",
+      "projects": [
+        {
+          "title": "Plateforme E-Commerce",
+          "description": "Boutique en ligne full-stack avec panier, paiement et tableau de bord admin. Conçue pour un chargement rapide et un taux de conversion élevé.",
+          "tech": "Next.js, Stripe, PostgreSQL",
+          "image": "/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg",
+          "linkLabel": "Voir l'étude de cas"
+        },
+        {
+          "title": "Tableau de bord d'automatisation",
+          "description": "CRM et automatisation des processus pour une agence en croissance. Réduction des tâches manuelles de 60 % et reporting amélioré.",
+          "tech": "React, Node.js, API REST",
+          "image": "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+          "linkLabel": "Voir l'étude de cas"
+        },
+        {
+          "title": "Identité & Publicités réseaux",
+          "description": "Identité visuelle et créations publicitaires pour Instagram et Facebook. Système de design cohérent qui a augmenté l'engagement.",
+          "tech": "Design system, Ads Manager",
+          "image": "/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+          "linkLabel": "Voir l'étude de cas"
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contactez-nous",
+      "subtitle": "Parlons de votre projet",
+      "description": "Prêt à lancer votre site, système ou projet de design ? Contactez-nous via le canal de votre choix.",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "facebook": "Facebook",
+      "location": "Maroc",
+      "cta": "Envoyer un message"
+    },
     "services_section": {
       "services": {
         "sectionLabel": "Nos Services",
@@ -63,6 +122,10 @@
         "Publicités & Médias",
         "Travail Sur Mesure"
       ]
+    },
+    "footer": {
+      "copyright": "© {year} Devsign. Tous droits réservés.",
+      "tagline": "Sites Web · Systèmes · Design"
     }
   }
 }

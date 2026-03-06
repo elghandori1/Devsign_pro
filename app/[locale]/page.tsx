@@ -1,17 +1,21 @@
 //app/[locale]/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRight, InstagramIcon, ArrowLeft } from "lucide-react";
+import { MdEmail } from "react-icons/md";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
 import getTrans from "../lib/translation";
 import { Locale, i18n } from "@/i18n-config";
 import Statistics from "../components/Statistics";
-import Goalcomponent from "../components/Goalcomponent";
-import Link from "next/link";
-import { MdEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
 import SubTitle from "../components/SubTitles";
 import ServicesGrid from "../components/ServicesGrid";
-export const revalidate = 600;
+import AboutMeSection from "../components/AboutMeSection";
+import WhyWeAreSection from "../components/WhyWeAreSection";
+import ProjectsShowcase from "../components/ProjectsShowcase";
+import ContactSection from "../components/ContactSection";
+import HomeFooter from "../components/HomeFooter";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -163,13 +167,14 @@ export default async function Home({ params }: Props) {
     description: jsonLdDescription,
     serviceType: jsonLdServices,
     sameAs: [
-      "https://www.linkedin.com/in/yourprofile",
+      "https://www.facebook.com/yourpage",
       "https://www.instagram.com/yourprofile",
+      "https://www.linkedin.com/in/yourprofile",
     ],
   };
 
   return (
-    <div dir="ltr" className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
+    <div dir={isArabic ? "rtl" : "ltr"} className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -204,20 +209,20 @@ export default async function Home({ params }: Props) {
               {t.hero.description}
             </p>
 
-            <div className={`flex flex-col sm:flex-row gap-4 px-2}`}>
-              <button
-                type="button"
-                className="px-8 py-3.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md transition-all shadow-lg shadow-primary/30 transform hover:scale-[1.02] active:scale-95"
+            <div className="flex flex-col sm:flex-row gap-4 px-2">
+              <Link
+                href={`/${locale}/contact`}
+                className="px-8 py-3.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md transition-all shadow-lg shadow-primary/30 transform hover:scale-[1.02] active:scale-95 text-center"
               >
                 {t.hero.cta_primary}
-              </button>
-              <button
-                type="button"
+              </Link>
+              <Link
+                href={`/${locale}/services`}
                 className="px-8 py-3.5 bg-card hover:bg-card/80 border border-input text-foreground font-semibold rounded-md transition-all flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-95"
               >
                 {t.hero.cta_secondary} {!isArabic && <ArrowRight size={16} />}
                 {isArabic && <ArrowLeft size={16} />}
-              </button>
+              </Link>
             </div>
           </div>
           <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end">
@@ -238,39 +243,50 @@ export default async function Home({ params }: Props) {
                 <p className="hero-text text-lg font-medium">
                   {t.hero.profile_name}
                 </p>
-                <p className="hero-text text-center text-sm text-gray-500 mt-0.5 mb-4" dir="rtl">
+                <p className="hero-text text-center text-sm text-muted-foreground mt-0.5 mb-4">
                   {t.hero.profile_role}
                 </p>
-                <button
-                  type="button"
-                  className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md text-sm transition-all"
+                <Link
+                  href="#about"
+                  className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md text-sm transition-all inline-block"
                 >
                   {t.hero.cta_more_about}
-                </button>
+                </Link>
                 {/* Social Icons */}
-                <div className="flex items-center gap-4 mt-5">
-                  {/* Instagram */}
+                <div className="flex items-center justify-center gap-4 mt-5">
+                  <Link
+                    href="https://www.facebook.com/yourpage"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-[#1877f2] hover:text-white transition-all duration-300 hover:scale-110"
+                    aria-label="Facebook"
+                  >
+                    <FaFacebookF size={18} />
+                  </Link>
                   <Link
                     href="https://instagram.com/yourusername"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    aria-label="Instagram"
                   >
                     <InstagramIcon size={18} />
                   </Link>
-                  {/* WhatsApp */}
                   <Link
                     href="https://wa.me/212XXXXXXXXX"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    aria-label="WhatsApp"
                   >
                     <BsWhatsapp size={18} />
                   </Link>
-
-                  {/* Email */}
                   <Link
-                    href="https://email.com/yourusername"
+                    href="mailto:contact@devsign.com"
                     target="_blank"
-                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-blue-600 hover:text-white transition-all duration-300 hover:scale-110"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+                    aria-label="Email"
                   >
                     <MdEmail size={18} />
                   </Link>
@@ -281,9 +297,22 @@ export default async function Home({ params }: Props) {
         </div>
       </section>
       <Statistics translations={t.stats} />
-       <SubTitle translations={t.services_section.services} />
+    
+          
+      <SubTitle translations={t.services_section.services} />
       <ServicesGrid t={t.services_section} locale={locale} />
-      <Goalcomponent translations={t.goal} /> 
+
+      <SubTitle translations={t.contact_section.about_me} />
+      <AboutMeSection translations={t.contact_section.about_me} locale={locale} />
+
+      <SubTitle translations={t.why_we_are_section.why_we_are} />
+      <WhyWeAreSection translations={t.why_we_are_section.why_we_are} locale={locale} />
+
+      <SubTitle translations={t.projects_section} />
+      <ProjectsShowcase translations={t.projects_section} locale={locale} />
+
+      <ContactSection translations={t.contact} locale={locale} />
+      <HomeFooter footerTags={t.footer_tags} footer={t.footer} locale={locale} />
     </div>
   );
 }

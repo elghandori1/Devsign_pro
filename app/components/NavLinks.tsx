@@ -29,16 +29,16 @@ const locale = lang;
   const navItems = [
     { href: "", label: t.home },
     { href: "/services", label: t.Services },
-    { href: "/about", label: t.about },
+    { href: "/about", label: t.about, hashOnly: true },
     { href: "/portfolio", label: t.portfolio },
-    { href: "/contact", label: t.Contact },
+    { href: "/contact", label: t.Contact, hashOnly: true },
   ];
 
   return (
    <div dir={locale === "ar" ? "rtl" : "ltr"}  className="hidden md:flex items-center gap-8 text-sm font-medium">
   {navItems.map((item) => {
-    const fullHref = `/${lang}${item.href}`;
-    const active = isActive(item.href);
+    const fullHref = item.hashOnly ? `/${lang}${item.href}` : `/${lang}${item.href}`;
+    const active = item.hashOnly ? false : isActive(item.href);
 
     return (
       <Link

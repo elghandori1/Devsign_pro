@@ -1,0 +1,37 @@
+import { Locale } from "@/i18n-config";
+import ProjectsShowcaseSlider, { type ProjectItem } from "./ProjectsShowcaseSlider";
+
+interface ProjectsSectionTranslations {
+  sectionLabel: string;
+  subtitle: string;
+  projects: ProjectItem[];
+}
+
+interface ProjectsShowcaseProps {
+  translations: ProjectsSectionTranslations;
+  locale: Locale;
+}
+
+export default function ProjectsShowcase({
+  translations,
+  locale,
+}: ProjectsShowcaseProps) {
+  const isRtl = locale === "ar";
+
+  return (
+    <section
+      id="projects"
+      className="py-12 md:py-16 bg-muted/10 transition-colors duration-300"
+      dir={isRtl ? "rtl" : "ltr"}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <header className="text-center mb-12">
+          <p id="projects-heading" className="text-muted-foreground max-w-xl mx-auto">
+            {translations.subtitle}
+          </p>
+        </header>
+        <ProjectsShowcaseSlider projects={translations.projects} locale={locale} />
+      </div>
+    </section>
+  );
+}
