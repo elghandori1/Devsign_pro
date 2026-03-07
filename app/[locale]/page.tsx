@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, InstagramIcon, ArrowLeft } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import getTrans from "../lib/translation";
 import { Locale, i18n } from "@/i18n-config";
 import Statistics from "../components/Statistics";
@@ -15,7 +15,6 @@ import AboutMeSection from "../components/AboutMeSection";
 import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
-import HomeFooter from "../components/Footer";
 import ScrollReveal from "../components/ScrollReveal";
 
 type Props = {
@@ -262,7 +261,7 @@ export default async function Home({ params }: Props) {
                     className="w-10 h-10 hidden flex items-center justify-center rounded-full border border-border hover:bg-[#1877f2] hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="Facebook"
                   >
-                    <FaFacebookF size={18} />
+                    <FaInstagram size={18} />
                   </Link>
                   <Link
                     href="https://instagram.com/yourusername"
