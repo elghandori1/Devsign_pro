@@ -42,7 +42,7 @@ export async function generateMetadata({
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
 
-const title = isEnglish
+  const title = isEnglish
     ? "Full-Stack Web Developer Morocco | Website Design, SEO & AI Automation"
     : isArabic
       ? "مطور ويب في المغرب | تصميم مواقع، خبير سيو (SEO) وأتمتة ذكية"
@@ -53,39 +53,39 @@ const title = isEnglish
     : isArabic
       ? "مطور ويب (Full-Stack) في المغرب متخصص في تصميم مواقع احترافية، تحسين محركات البحث (SEO)، وحلول الأتمتة بالذكاء الاصطناعي لتطوير ونمو الشركات."
       : "Développeur Web Full-Stack au Maroc spécialisé en création de sites modernes, optimisation SEO avancée et automatisation d'entreprise par l'IA.";
-      
-      const keywords = isEnglish
+
+  const keywords = isEnglish
     ? [
-      "Full-Stack Developer Morocco",
-      "SEO Specialist Morocco",
-      "Web Design Agency Morocco",
-      "AI Automation Agency Morocco",
-      "Business Automation Systems",
-      "Next.js Developer Morocco",
-      "Social Media Ads Expert",
-      "Social Media Ads Design",
-      "Facebook Instagram TikTok Ads",
-    ]
+        "Full-Stack Developer Morocco",
+        "SEO Specialist Morocco",
+        "Web Design Agency Morocco",
+        "AI Automation Agency Morocco",
+        "Business Automation Systems",
+        "Next.js Developer Morocco",
+        "Social Media Ads Expert",
+        "Social Media Ads Design",
+        "Facebook Instagram TikTok Ads",
+      ]
     : isArabic
       ? [
-        "مطور ويب المغرب",
-        "تصميم مواقع المغرب",
-        "خبير سيو المغرب",
-        "تحسين محركات البحث",
-        "أتمتة الأعمال بالذكاء الاصطناعي",
-        "انشاء موقع الكتروني",
-        "وكالة ويب المغرب",
-      ]
+          "مطور ويب المغرب",
+          "تصميم مواقع المغرب",
+          "خبير سيو المغرب",
+          "تحسين محركات البحث",
+          "أتمتة الأعمال بالذكاء الاصطناعي",
+          "انشاء موقع الكتروني",
+          "وكالة ويب المغرب",
+        ]
       : [
-        "Création site web Maroc",
-        "Développeur Web Freelance Maroc",
-        "Expert SEO Maroc",
-        "Référencement Naturel Maroc",
-        "Automatisation IA Maroc",
-        "Agence Web Maroc",
-        "Développeur Next.js",
-        "Site Web Responsive",
-      ];
+          "Création site web Maroc",
+          "Développeur Web Freelance Maroc",
+          "Expert SEO Maroc",
+          "Référencement Naturel Maroc",
+          "Automatisation IA Maroc",
+          "Agence Web Maroc",
+          "Développeur Next.js",
+          "Site Web Responsive",
+        ];
 
   return {
     metadataBase: new URL(baseUrl),
@@ -141,44 +141,44 @@ export default async function Home({ params }: Props) {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
- 
+
   const dict = await getTrans(locale);
   const t = dict.homepage;
   const baseUrl = getBaseUrl();
- 
+
   const isEnglish = locale === "en";
-  const isArabic  = locale === "ar";
-  
+  const isArabic = locale === "ar";
+
   const orgDescription = isEnglish
     ? "Web developer in Morocco specialising in professional website design, SEO optimisation, AI-powered business automation, and social-media advertising design."
     : isArabic
       ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الاحترافية، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات منصات التواصل الاجتماعي."
       : "Développeur web au Maroc spécialisé en création de sites web professionnels, optimisation SEO, automatisation d'entreprise par IA et conception publicitaire pour les réseaux sociaux.";
- 
+
   const jobTitle = isEnglish
     ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer"
     : isArabic
       ? "مطور Full-Stack وخبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
       : "Développeur Full-Stack, Expert SEO & Automatisation IA";
- 
+
   const webPageName = isEnglish
     ? "Full-Stack Web Developer Morocco — Website Design, SEO & AI Automation"
     : isArabic
       ? "مطور ويب في المغرب — تطوير مواقع، خبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
       : "Développeur Web Full-Stack Maroc — Création Site Web, SEO & Automatisation IA";
- 
+
   const webPageDescription = isEnglish
     ? "Professional Full-Stack Web Developer in Morocco. I build modern websites, provide SEO optimisation, AI business automation and high-converting digital solutions."
     : isArabic
       ? "مطور ويب محترف في المغرب متخصص في تطوير مواقع الويب الحديثة، تحسين محركات البحث وأتمتة الأعمال بالذكاء الاصطناعي."
       : "Développeur web full-stack au Maroc spécialisé en création de sites modernes, optimisation SEO et automatisation IA.";
- 
+
   const catalogName = isEnglish
     ? "Digital Services"
     : isArabic
       ? "الخدمات الرقمية"
       : "Services Digitaux";
- 
+
   const services: Array<{ name: string; description: string }> = isEnglish
     ? [
         {
@@ -213,71 +213,71 @@ export default async function Home({ params }: Props) {
         },
       ]
     : isArabic
-    ? [
-        {
-          name: "تصميم وتطوير المواقع الاحترافية",
-          description:
-            "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
-        },
-        {
-          name: "تحسين محركات البحث (SEO)",
-          description:
-            "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
-        },
-        {
-          name: "أتمتة الأعمال بالذكاء الاصطناعي",
-          description:
-            "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
-        },
-        {
-          name: "تصميم إعلانات منصات التواصل الاجتماعي",
-          description:
-            "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
-        },
-        {
-          name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
-          description:
-            "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
-        },
-        {
-          name: "تطوير مواقع باستخدام Next.js",
-          description:
-            "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
-        },
-      ]
-    : [
-        {
-          name: "Création de Sites Web Professionnels",
-          description:
-            "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
-        },
-        {
-          name: "Optimisation SEO",
-          description:
-            "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
-        },
-        {
-          name: "Automatisation d'Entreprise par IA",
-          description:
-            "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
-        },
-        {
-          name: "Design Publicitaire pour Réseaux Sociaux",
-          description:
-            "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
-        },
-        {
-          name: "Développement Web Responsive",
-          description:
-            "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
-        },
-        {
-          name: "Développement Web Sur-Mesure Next.js",
-          description:
-            "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
-        },
-      ];
- 
+      ? [
+          {
+            name: "تصميم وتطوير المواقع الاحترافية",
+            description:
+              "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
+          },
+          {
+            name: "تحسين محركات البحث (SEO)",
+            description:
+              "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
+          },
+          {
+            name: "أتمتة الأعمال بالذكاء الاصطناعي",
+            description:
+              "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
+          },
+          {
+            name: "تصميم إعلانات منصات التواصل الاجتماعي",
+            description:
+              "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
+          },
+          {
+            name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
+            description:
+              "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
+          },
+          {
+            name: "تطوير مواقع باستخدام Next.js",
+            description:
+              "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
+          },
+        ]
+      : [
+          {
+            name: "Création de Sites Web Professionnels",
+            description:
+              "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
+          },
+          {
+            name: "Optimisation SEO",
+            description:
+              "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
+          },
+          {
+            name: "Automatisation d'Entreprise par IA",
+            description:
+              "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
+          },
+          {
+            name: "Design Publicitaire pour Réseaux Sociaux",
+            description:
+              "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
+          },
+          {
+            name: "Développement Web Responsive",
+            description:
+              "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
+          },
+          {
+            name: "Développement Web Sur-Mesure Next.js",
+            description:
+              "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
+          },
+        ];
+
   // ── JSON-LD graph
   const jsonLd = {
     "@context": "https://schema.org",
@@ -285,20 +285,20 @@ export default async function Home({ params }: Props) {
       {
         "@type": "WebSite",
         "@id": `${baseUrl}/#website`,
-        "url": baseUrl,
-        "name": "Devsign",
-        "description": orgDescription,
-        "inLanguage": locale,
-        "publisher": { "@id": `${baseUrl}/#organization` }
+        url: baseUrl,
+        name: "Devsign",
+        description: orgDescription,
+        inLanguage: locale,
+        publisher: { "@id": `${baseUrl}/#organization` },
       },
-       {
+      {
         "@type": "Person",
         "@id": `${baseUrl}/#person`,
-        "name": "Mohammed Devsign",
-        "url": `${baseUrl}/${locale}`,
-        "jobTitle": jobTitle,
-        "worksFor": { "@id": `${baseUrl}/#organization` },
-        "knowsAbout": [
+        name: "Mohammed Devsign",
+        url: `${baseUrl}/${locale}`,
+        jobTitle: jobTitle,
+        worksFor: { "@id": `${baseUrl}/#organization` },
+        knowsAbout: [
           "Web Development",
           "Next.js Development",
           "React.js",
@@ -313,50 +313,46 @@ export default async function Home({ params }: Props) {
           "TypeScript",
           "Node.js",
         ],
-        "knowsLanguage": [
-          { "@type": "Language", "name": "English" },
-          { "@type": "Language", "name": "French" },
-          { "@type": "Language", "name": "Arabic" },
+        knowsLanguage: [
+          { "@type": "Language", name: "English" },
+          { "@type": "Language", name: "French" },
+          { "@type": "Language", name: "Arabic" },
         ],
-        "sameAs": [
+        sameAs: [
           // "https://www.linkedin.com/in/YOUR_HANDLE",
           // "https://github.com/YOUR_HANDLE",
         ],
       },
- 
+
       {
-       "@type": ["Organization", "ProfessionalService"],
+        "@type": ["Organization", "ProfessionalService"],
         "@id": `${baseUrl}/#organization`,
-        "name": "Devsignpro",
-        "url": `${baseUrl}/${locale}`,
-        "logo": {
+        name: "Devsignpro",
+        url: `${baseUrl}/${locale}`,
+        logo: {
           "@type": "ImageObject",
-          "url": `${baseUrl}/logo.png`,
-          "width": 512,
-          "height": 512,
+          url: `${baseUrl}/logo.png`,
+          width: 512,
+          height: 512,
         },
-        "email": "devsignprofessional@gmail.com",
-        "description": orgDescription,
-        "foundingDate": "2021",
-        "priceRange": "$$",
-        "founder": { "@id": `${baseUrl}/#person` },
-        "address": {
+        email: "devsignprofessional@gmail.com",
+        description: orgDescription,
+        foundingDate: "2021",
+        priceRange: "$$",
+        founder: { "@id": `${baseUrl}/#person` },
+        address: {
           "@type": "PostalAddress",
-          "addressLocality": "Casablanca",
-          "addressRegion": "Casablanca-Settat",
-          "addressCountry": "MA",
+          addressLocality: "Casablanca",
+          addressRegion: "Casablanca-Settat",
+          addressCountry: "MA",
         },
-        "contactPoint": {
+        contactPoint: {
           "@type": "ContactPoint",
-          "email": "devsignprofessional@gmail.com",
-          "contactType": "customer service",
-         "availableLanguage": [
-          "English",
-          "French",
-          "Arabic"
-        ]
+          email: "devsignprofessional@gmail.com",
+          contactType: "customer service",
+          availableLanguage: ["English", "French", "Arabic"],
         },
-        "knowsAbout": [
+        knowsAbout: [
           "Web Development",
           "Next.js",
           "React",
@@ -370,39 +366,39 @@ export default async function Home({ params }: Props) {
           "Digital Marketing",
           "Full-Stack Development",
         ],
-        "areaServed": [
+        areaServed: [
           {
             "@type": "Country",
-            "name": "Morocco",
+            name: "Morocco",
           },
           {
             "@type": "Place",
-            "name": "Worldwide (Remote)",
+            name: "Worldwide (Remote)",
           },
         ],
-        "sameAs": [
+        sameAs: [
           // Uncomment and fill in your actual profiles:
           // "https://www.facebook.com/YOUR_REAL_PAGE",
           // "https://www.instagram.com/YOUR_REAL_PROFILE",
           // "https://www.linkedin.com/company/YOUR_COMPANY",
           // "https://github.com/YOUR_HANDLE",
         ],
-        "hasOfferCatalog": {
+        hasOfferCatalog: {
           "@type": "OfferCatalog",
-          "name": catalogName,
-          "itemListElement": services.map((svc, index) => ({
+          name: catalogName,
+          itemListElement: services.map((svc, index) => ({
             "@type": "Offer",
-            "position": index + 1,
-            "itemOffered": {
+            position: index + 1,
+            itemOffered: {
               "@type": "Service",
               "@id": `${baseUrl}/#service-${index + 1}`,
-              "name": svc.name,
-              "serviceType": svc.name,
-              "description": svc.description,
-              "provider": { "@id": `${baseUrl}/#organization` },
-              "areaServed": {
+              name: svc.name,
+              serviceType: svc.name,
+              description: svc.description,
+              provider: { "@id": `${baseUrl}/#organization` },
+              areaServed: {
                 "@type": "Country",
-                "name": "Morocco",
+                name: "Morocco",
               },
             },
           })),
@@ -411,42 +407,38 @@ export default async function Home({ params }: Props) {
       {
         "@type": "WebPage",
         "@id": `${baseUrl}/${locale}#webpage`,
-        "url": `${baseUrl}/${locale}`,
-        "name": webPageName,
-        "description": webPageDescription,
-        "inLanguage": locale,
-        "image": {
-        "@type": "ImageObject",
-        "url": `${baseUrl}/og-image.jpg`,
-        "width": 1200,
-        "height": 630
+        url: `${baseUrl}/${locale}`,
+        name: webPageName,
+        description: webPageDescription,
+        inLanguage: locale,
+        image: {
+          "@type": "ImageObject",
+          url: `${baseUrl}/og-image.jpg`,
+          width: 1200,
+          height: 630,
         },
-        "isPartOf": { "@id": `${baseUrl}/#website` },
-        "about": { "@id": `${baseUrl}/#organization` },
-        "mainEntity": { "@id": `${baseUrl}/#organization` },
-        "breadcrumb": {
+        isPartOf: { "@id": `${baseUrl}/#website` },
+        about: { "@id": `${baseUrl}/#organization` },
+        mainEntity: { "@id": `${baseUrl}/#organization` },
+        breadcrumb: {
           "@type": "BreadcrumbList",
-          "itemListElement": [
+          itemListElement: [
             {
               "@type": "ListItem",
-              "position": 1,
-              "name": isEnglish
-              ? "Home"
-              : isArabic
-              ? "الرئيسية"
-              : "Accueil",
-              "item": `${baseUrl}/${locale}`,
+              position: 1,
+              name: isEnglish ? "Home" : isArabic ? "الرئيسية" : "Accueil",
+              item: `${baseUrl}/${locale}`,
             },
           ],
         },
-        "speakable": {
+        speakable: {
           "@type": "SpeakableSpecification",
-          "cssSelector": [".hero-headline", ".hero-text"],
+          cssSelector: [".hero-headline", ".hero-text"],
         },
       },
     ],
   };
- 
+
   return (
     <div className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
       {/* JSON-LD structured data */}
@@ -456,16 +448,19 @@ export default async function Home({ params }: Props) {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <section className="relative px-6 py-6 md:py-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 md:mt-8">
+
+      <section className="relative px-4 sm:px-6 py-6 md:py-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-14 md:mt-8">
+          {/* TEXT CONTENT */}
           <div className="text-left order-2 lg:order-1">
-            <h1 className="hero-headline text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight my-8 leading-[1.30]"
-              style={{ textAlign: isArabic ? 'right' : 'left' }}>
+            <h1
+              className="hero-headline text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-8 sm:my-8 leading-[1.30]"
+              style={{ textAlign: isArabic ? "right" : "left" }}
+            >
               {isArabic ? (
                 <>
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground dark:from-foreground dark:to-muted hero-headline-highlight">
-                    {t.hero.title_line1} {" "}
-
+                    {t.hero.title_line1}{" "}
                   </span>
                   {t.hero.title_highlight}
                 </>
@@ -479,35 +474,45 @@ export default async function Home({ params }: Props) {
               )}
             </h1>
 
-            <p className="hero-text text-base md:text-lg text-muted-foreground mb-8 max-w-xl leading-relaxed font-light"
-              style={{ textAlign: isArabic ? 'right' : 'left' }}>
+            <p
+              className="hero-text text-sm sm:text-base md:text-lg text-muted-foreground mb-6 max-w-xl leading-relaxed font-light"
+              style={{ textAlign: isArabic ? "right" : "left" }}
+            >
               {t.hero.description}
             </p>
-            <p className="hero-text text-sm md:text-base text-muted-foreground italic mb-8" style={{ textAlign: isArabic ? 'right' : 'left' }}>
-             {t.hero.focus}
+
+            <p
+              className="hero-text text-xs sm:text-sm md:text-base text-muted-foreground italic mb-6"
+              style={{ textAlign: isArabic ? "right" : "left" }}
+            >
+              {t.hero.focus}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 px-2">
+            {/* CTA BUTTONS */}
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href={`/${locale}/contact`}
-                className="px-8 py-3.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md transition-all shadow-lg shadow-primary/30 transform hover:scale-[1.02] active:scale-95 text-center"
+                className="w-full sm:w-auto px-6 py-3.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md transition-all shadow-lg shadow-primary/30 transform hover:scale-[1.02] active:scale-95 text-center"
               >
                 {t.hero.cta_primary}
               </Link>
+
               <Link
                 href={`/${locale}/services`}
-                className="px-8 py-3.5 bg-card hover:bg-card/80 border border-input text-foreground font-semibold rounded-md transition-all flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-95"
+                className="px-8 py-3.5 bg-card hover:bg-card/80 border border-input text-foreground font-semibold rounded-md transition-all flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-95 shadow-sm"
               >
-                {t.hero.cta_secondary} {!isArabic && <ArrowRight size={16} />}
+                {t.hero.cta_secondary}
+                {!isArabic && <ArrowRight size={16} />}
                 {isArabic && <ArrowLeft size={16} />}
               </Link>
             </div>
           </div>
-          <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end">
-            <div className="w-full max-w-sm flex flex-col">
+
+          {/* PROFILE */}
+          <div className="order-1 lg:order-2 flex flex-col items-center">
+            <div className="w-full max-w-[260px] sm:max-w-sm flex flex-col">
               <div className="aspect-square overflow-hidden border-2 border-primary/20 rounded-lg">
                 <Image
-                //  src="/images/profile3.png"
                   src="/images/profile3.png"
                   alt={t.hero.profile_name}
                   width={480}
@@ -517,56 +522,53 @@ export default async function Home({ params }: Props) {
                   sizes="(max-width: 768px) 100vw, 480px"
                 />
               </div>
-              <div className="flex flex-col items-center px-4 py-5">
-                <p className="hero-text text-lg font-medium">
+
+              <div className="flex flex-col items-center px-4 py-4">
+                <p className="hero-text text-base sm:text-lg font-medium">
                   {t.hero.profile_name}
                 </p>
-                <p className="hero-text text-center text-sm text-muted-foreground mt-0.5 mb-4">
+
+                <p className="hero-text text-center text-xs sm:text-sm text-muted-foreground mt-1 mb-3">
                   {t.hero.profile_role}
                 </p>
+
                 <Link
                   href="#about"
-                  className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md text-sm transition-all inline-block"
+                  className="px-5 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md text-sm transition-all"
                 >
                   {t.hero.cta_more_about}
                 </Link>
-                {/* Social Icons */}
-                <div className="flex items-center justify-center gap-4 mt-5">
-                  <Link
-                    href="https://www.facebook.com/yourpage"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 hidden flex items-center justify-center rounded-full border border-border hover:bg-[#1877f2] hover:text-white transition-all duration-300 hover:scale-110"
-                    aria-label="Facebook"
-                  >
-                    <FaInstagram size={18} />
-                  </Link>
+
+                {/* SOCIAL */}
+                <div className="flex items-center justify-center gap-3 mt-4">
                   <Link
                     href="https://instagram.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="Instagram"
                   >
-                    <InstagramIcon size={18} />
+                    <InstagramIcon size={17} />
                   </Link>
+
                   <Link
                     href="https://wa.me/212XXXXXXXXX"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="WhatsApp"
                   >
-                    <BsWhatsapp size={18} />
+                    <BsWhatsapp size={17} />
                   </Link>
+
                   <Link
                     href="mailto:contact@devsign.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-10 h-10 flex items-center justify-center rounded-full border border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
                     aria-label="Email"
                   >
-                    <MdEmail size={18} />
+                    <MdEmail size={17} />
                   </Link>
                 </div>
               </div>
@@ -574,6 +576,7 @@ export default async function Home({ params }: Props) {
           </div>
         </div>
       </section>
+
       <ScrollReveal>
         <Statistics translations={t.stats} />
       </ScrollReveal>
@@ -585,12 +588,18 @@ export default async function Home({ params }: Props) {
 
       <ScrollReveal delay={0.05}>
         <SubTitle translations={t.contact_section.about_me} />
-        <AboutMeSection translations={t.contact_section.about_me} locale={locale} />
+        <AboutMeSection
+          translations={t.contact_section.about_me}
+          locale={locale}
+        />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
         <SubTitle translations={t.why_we_are_section.why_we_are} />
-        <WhyWeAreSection translations={t.why_we_are_section.why_we_are} locale={locale} />
+        <WhyWeAreSection
+          translations={t.why_we_are_section.why_we_are}
+          locale={locale}
+        />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
@@ -601,8 +610,6 @@ export default async function Home({ params }: Props) {
       <ScrollReveal delay={0.05}>
         <ContactSection translations={t.contact} locale={locale} />
       </ScrollReveal>
-
- 
     </div>
   );
 }

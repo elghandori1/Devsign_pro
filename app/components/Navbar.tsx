@@ -20,7 +20,7 @@ export default async function Navbar({ lang }: NavbarProps) {
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
         {/* Logo */}
         <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity">
-          <span>Mohammed Devsign</span>
+          <span>Devsign</span>
         </Link>
 
         {/* Desktop Navigation - hidden on mobile */}

@@ -62,7 +62,7 @@ export default function MobileMenu({ lang, t }: MobileMenuProps) {
 
           {/* Header row */}
           <div className="flex items-center justify-between h-16 border-b border-border">
-            <span className="font-bold text-lg text-foreground tracking-tight">Mohammed devsign</span>
+            <span className="font-bold text-lg text-foreground tracking-tight">Devsign</span>
             <button
               type="button"
               onClick={() => setOpen(false)}
