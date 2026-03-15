@@ -7,12 +7,12 @@
     "Contact": "Contactez-nous"
   },
   "homepage": {
-    "banner": "Créer un site web générateur de revenus en 2026 — Lire maintenant →",
     "hero": {
-      "title_line1": "Sites Web Modernes & SEO Avancé",
-      "title_highlight": "& Solutions Business Intelligentes",
-      "description": "Développeur web professionnel au Maroc, je crée des sites modernes optimisés pour le SEO et des systèmes business automatisés par l'IA. Je conçois également des publicités réseaux sociaux à fort taux de conversion. Mon focus : performance, évolutivité et résultats concrets pour booster votre croissance.",
-      "cta_primary": "Démarrer un projet",
+      "title_line1": "Développeur Full-Stack au Maroc, Sites Web optimisés SEO",
+      "title_highlight": "& Automatisation Business via l'IA.",
+      "description": "Je suis développeur web full-stack au Maroc et j’aide les startups et les entreprises à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
+      "focus":"Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
+    "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mon portfolio",
       "profile_name": "mohammed devsign",
       "profile_role": "développeur full-stack et spécialiste SEO et automatisation IA",

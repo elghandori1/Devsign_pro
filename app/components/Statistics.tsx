@@ -18,8 +18,8 @@ export default function Statistics({ translations }: { translations: StatsTransl
   ];
 
   return (
-<section aria-labelledby="stats-title" className="transition-colors py-2 sm:py-10 border border-border bg-muted/5 backdrop-blur-md transition-colors duration-300 max-w-7xl mx-auto rounded-xl duration-300 fade-in-section">
-  <div className="max-w-screen-xl px-4 mx-auto">
+<section aria-labelledby="stats-title" className="transition-colors py-2 sm:py-10 border border-border bg-muted/5 backdrop-blur-md duration-300 max-w-7xl mx-auto rounded-xl fade-in-section">
+  <div className="px-4 mx-auto">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
       {stats.map((stat, index) => (
         <div

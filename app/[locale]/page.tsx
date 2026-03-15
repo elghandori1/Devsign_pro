@@ -42,47 +42,49 @@ export async function generateMetadata({
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
 
-  const title = isEnglish
-    ? "Web Developer in Morocco | Website Design, SEO & Business Automation"
+const title = isEnglish
+    ? "Full-Stack Web Developer Morocco | Website Design, SEO & AI Automation"
     : isArabic
-      ? "مطور ويب في المغرب | تصميم مواقع، سيو وأتمتة الأعمال"
-      : "Développeur Web au Maroc | Création Site Web & SEO";
+      ? "مطور ويب في المغرب | تصميم مواقع، خبير سيو (SEO) وأتمتة ذكية"
+      : "Développeur Web Full-Stack Maroc | Création Site Web, Expert SEO & IA";
 
   const description = isEnglish
-    ? "Professional web developer in Morocco offering modern website design, SEO optimization, responsive web development, business automation systems, and high-converting social media ads."
+    ? "Expert Full-Stack Web Developer in Morocco. Specialized in high-performance Next.js websites, SEO optimization, and AI-driven business automation for growth."
     : isArabic
-      ? "مطور ويب محترف في المغرب يقدم تصميم مواقع حديثة، تحسين السيو، تطوير ويب متجاوب، أنظمة أتمتة الأعمال وإعلانات سوشيال ميديا ذات تحويل عالٍ."
-      : "Développeur web au Maroc spécialisé en création de sites web modernes, optimisation SEO, développement responsive, systèmes d'automatisation et design publicitaire.";
-
-  const keywords = isEnglish
+      ? "مطور ويب (Full-Stack) في المغرب متخصص في تصميم مواقع احترافية، تحسين محركات البحث (SEO)، وحلول الأتمتة بالذكاء الاصطناعي لتطوير ونمو الشركات."
+      : "Développeur Web Full-Stack au Maroc spécialisé en création de sites modernes, optimisation SEO avancée et automatisation d'entreprise par l'IA.";
+      
+      const keywords = isEnglish
     ? [
-      "Web Developer Morocco",
-      "Website Design Morocco",
-      "SEO Expert Morocco",
-      "Responsive Web Design",
-      "Business Automation Morocco",
-      "Startup Website Development",
+      "Full-Stack Developer Morocco",
+      "SEO Specialist Morocco",
+      "Web Design Agency Morocco",
+      "AI Automation Agency Morocco",
+      "Business Automation Systems",
+      "Next.js Developer Morocco",
+      "Social Media Ads Expert",
       "Social Media Ads Design",
       "Facebook Instagram TikTok Ads",
-      "Professional Portfolio Morocco",
-      "Small Business Website Morocco",
     ]
     : isArabic
       ? [
         "مطور ويب المغرب",
         "تصميم مواقع المغرب",
         "خبير سيو المغرب",
-        "موقع ويب متجاوب",
-        "أتمتة الأعمال المغرب",
+        "تحسين محركات البحث",
+        "أتمتة الأعمال بالذكاء الاصطناعي",
+        "انشاء موقع الكتروني",
         "وكالة ويب المغرب",
       ]
       : [
-        "Développeur Web Maroc",
-        "Création Site Web Maroc",
+        "Création site web Maroc",
+        "Développeur Web Freelance Maroc",
         "Expert SEO Maroc",
-        "Site Web Responsive",
-        "Automatisation Entreprise Maroc",
+        "Référencement Naturel Maroc",
+        "Automatisation IA Maroc",
         "Agence Web Maroc",
+        "Développeur Next.js",
+        "Site Web Responsive",
       ];
 
   return {
@@ -139,52 +141,325 @@ export default async function Home({ params }: Props) {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-
+ 
   const dict = await getTrans(locale);
   const t = dict.homepage;
   const baseUrl = getBaseUrl();
+ 
   const isEnglish = locale === "en";
-  const isArabic = locale === "ar";
-
-  const jsonLdDescription = isEnglish
-    ? "Web developer in Morocco specializing in website design, SEO optimization, business automation systems and social media ads."
+  const isArabic  = locale === "ar";
+  
+  const orgDescription = isEnglish
+    ? "Web developer in Morocco specialising in professional website design, SEO optimisation, AI-powered business automation, and social-media advertising design."
     : isArabic
-      ? "مطور ويب في المغرب متخصص في تصميم المواقع، تحسين السيو، أنظمة أتمتة الأعمال وإعلانات السوشيال ميديا."
-      : "Développeur web au Maroc spécialisé en création de sites web, optimisation SEO, systèmes d'automatisation d'entreprise et design publicitaire pour les réseaux sociaux.";
-  const jsonLdServices = isEnglish
-    ? ["Website Design", "SEO Optimization", "Business Automation Systems", "Social Media Advertising Design", "Responsive Web Development"]
+      ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الاحترافية، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات منصات التواصل الاجتماعي."
+      : "Développeur web au Maroc spécialisé en création de sites web professionnels, optimisation SEO, automatisation d'entreprise par IA et conception publicitaire pour les réseaux sociaux.";
+ 
+  const jobTitle = isEnglish
+    ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer"
     : isArabic
-      ? ["تصميم المواقع", "تحسين السيو", "أنظمة أتمتة الأعمال", "تصميم إعلانات السوشيال ميديا", "تطوير ويب متجاوب"]
-      : ["Création de Sites Web", "Optimisation SEO", "Systèmes d'Automatisation d'Entreprise", "Design Publicitaire pour Réseaux Sociaux", "Développement Web Responsive"];
-
+      ? "مطور Full-Stack وخبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
+      : "Développeur Full-Stack, Expert SEO & Automatisation IA";
+ 
+  const webPageName = isEnglish
+    ? "Full-Stack Web Developer Morocco — Website Design, SEO & AI Automation"
+    : isArabic
+      ? "مطور ويب في المغرب — تطوير مواقع، خبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
+      : "Développeur Web Full-Stack Maroc — Création Site Web, SEO & Automatisation IA";
+ 
+  const webPageDescription = isEnglish
+    ? "Professional Full-Stack Web Developer in Morocco. I build modern websites, provide SEO optimisation, AI business automation and high-converting digital solutions."
+    : isArabic
+      ? "مطور ويب محترف في المغرب متخصص في تطوير مواقع الويب الحديثة، تحسين محركات البحث وأتمتة الأعمال بالذكاء الاصطناعي."
+      : "Développeur web full-stack au Maroc spécialisé en création de sites modernes, optimisation SEO et automatisation IA.";
+ 
+  const catalogName = isEnglish
+    ? "Digital Services"
+    : isArabic
+      ? "الخدمات الرقمية"
+      : "Services Digitaux";
+ 
+  const services: Array<{ name: string; description: string }> = isEnglish
+    ? [
+        {
+          name: "Website Design & Development",
+          description:
+            "Custom, responsive websites built with Next.js and modern front-end technologies, optimised for speed, accessibility and conversion.",
+        },
+        {
+          name: "SEO Optimisation",
+          description:
+            "Technical and on-page SEO audits, keyword strategy, structured data implementation and Core Web Vitals improvements to rank higher on Google.",
+        },
+        {
+          name: "AI Business Automation",
+          description:
+            "End-to-end workflow automation using AI tools and APIs to reduce manual tasks, increase efficiency and scale business operations.",
+        },
+        {
+          name: "Social Media Advertising Design",
+          description:
+            "High-converting ad creatives and campaigns for Facebook, Instagram and other platforms, designed to maximise ROI.",
+        },
+        {
+          name: "Responsive Web Development",
+          description:
+            "Mobile-first development ensuring flawless performance on every screen size and device.",
+        },
+        {
+          name: "Next.js Web Development",
+          description:
+            "Server-side rendered and statically generated web applications built with Next.js for outstanding performance and SEO.",
+        },
+      ]
+    : isArabic
+    ? [
+        {
+          name: "تصميم وتطوير المواقع الاحترافية",
+          description:
+            "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
+        },
+        {
+          name: "تحسين محركات البحث (SEO)",
+          description:
+            "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
+        },
+        {
+          name: "أتمتة الأعمال بالذكاء الاصطناعي",
+          description:
+            "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
+        },
+        {
+          name: "تصميم إعلانات منصات التواصل الاجتماعي",
+          description:
+            "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
+        },
+        {
+          name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
+          description:
+            "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
+        },
+        {
+          name: "تطوير مواقع باستخدام Next.js",
+          description:
+            "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
+        },
+      ]
+    : [
+        {
+          name: "Création de Sites Web Professionnels",
+          description:
+            "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
+        },
+        {
+          name: "Optimisation SEO",
+          description:
+            "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
+        },
+        {
+          name: "Automatisation d'Entreprise par IA",
+          description:
+            "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
+        },
+        {
+          name: "Design Publicitaire pour Réseaux Sociaux",
+          description:
+            "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
+        },
+        {
+          name: "Développement Web Responsive",
+          description:
+            "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
+        },
+        {
+          name: "Développement Web Sur-Mesure Next.js",
+          description:
+            "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
+        },
+      ];
+ 
+  // ── JSON-LD graph
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["ProfessionalService", "LocalBusiness"],
-    "@id": `${baseUrl}/#devsign`,
-    name: "Devsign",
-    url: `${baseUrl}/${locale}`,
-    logo: `${baseUrl}/logo.png`,
-    description: jsonLdDescription,
-    serviceType: jsonLdServices,
-    sameAs: [
-      "https://www.facebook.com/yourpage",
-      "https://www.instagram.com/yourprofile",
-      "https://www.linkedin.com/in/yourprofile",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${baseUrl}/#website`,
+        "url": baseUrl,
+        "name": "Devsign",
+        "description": orgDescription,
+        "inLanguage": locale,
+        "publisher": { "@id": `${baseUrl}/#organization` }
+      },
+       {
+        "@type": "Person",
+        "@id": `${baseUrl}/#person`,
+        "name": "Mohammed Devsign",
+        "url": `${baseUrl}/${locale}`,
+        "jobTitle": jobTitle,
+        "worksFor": { "@id": `${baseUrl}/#organization` },
+        "knowsAbout": [
+          "Web Development",
+          "Next.js Development",
+          "React.js",
+          "SEO Optimisation",
+          "Technical SEO",
+          "AI Automation",
+          "Business Process Automation",
+          "Digital Marketing",
+          "Social Media Advertising Design",
+          "Full-Stack Development",
+          "JavaScript",
+          "TypeScript",
+          "Node.js",
+        ],
+        "knowsLanguage": [
+          { "@type": "Language", "name": "English" },
+          { "@type": "Language", "name": "French" },
+          { "@type": "Language", "name": "Arabic" },
+        ],
+        "sameAs": [
+          // "https://www.linkedin.com/in/YOUR_HANDLE",
+          // "https://github.com/YOUR_HANDLE",
+        ],
+      },
+ 
+      {
+       "@type": ["Organization", "ProfessionalService"],
+        "@id": `${baseUrl}/#organization`,
+        "name": "Devsignpro",
+        "url": `${baseUrl}/${locale}`,
+        "logo": {
+          "@type": "ImageObject",
+          "url": `${baseUrl}/logo.png`,
+          "width": 512,
+          "height": 512,
+        },
+        "email": "devsignprofessional@gmail.com",
+        "description": orgDescription,
+        "foundingDate": "2021",
+        "priceRange": "$$",
+        "founder": { "@id": `${baseUrl}/#person` },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Casablanca",
+          "addressRegion": "Casablanca-Settat",
+          "addressCountry": "MA",
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "devsignprofessional@gmail.com",
+          "contactType": "customer service",
+         "availableLanguage": [
+          "English",
+          "French",
+          "Arabic"
+        ]
+        },
+        "knowsAbout": [
+          "Web Development",
+          "Next.js",
+          "React",
+          "javascript",
+          "typescript",
+          "SEO",
+          "Technical SEO",
+          "AI Automation",
+          "Business Automation",
+          "Social Media Advertising",
+          "Digital Marketing",
+          "Full-Stack Development",
+        ],
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Morocco",
+          },
+          {
+            "@type": "Place",
+            "name": "Worldwide (Remote)",
+          },
+        ],
+        "sameAs": [
+          // Uncomment and fill in your actual profiles:
+          // "https://www.facebook.com/YOUR_REAL_PAGE",
+          // "https://www.instagram.com/YOUR_REAL_PROFILE",
+          // "https://www.linkedin.com/company/YOUR_COMPANY",
+          // "https://github.com/YOUR_HANDLE",
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": catalogName,
+          "itemListElement": services.map((svc, index) => ({
+            "@type": "Offer",
+            "position": index + 1,
+            "itemOffered": {
+              "@type": "Service",
+              "@id": `${baseUrl}/#service-${index + 1}`,
+              "name": svc.name,
+              "serviceType": svc.name,
+              "description": svc.description,
+              "provider": { "@id": `${baseUrl}/#organization` },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Morocco",
+              },
+            },
+          })),
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${baseUrl}/${locale}#webpage`,
+        "url": `${baseUrl}/${locale}`,
+        "name": webPageName,
+        "description": webPageDescription,
+        "inLanguage": locale,
+        "image": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/og-image.jpg`,
+        "width": 1200,
+        "height": 630
+        },
+        "isPartOf": { "@id": `${baseUrl}/#website` },
+        "about": { "@id": `${baseUrl}/#organization` },
+        "mainEntity": { "@id": `${baseUrl}/#organization` },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": isEnglish
+              ? "Home"
+              : isArabic
+              ? "الرئيسية"
+              : "Accueil",
+              "item": `${baseUrl}/${locale}`,
+            },
+          ],
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".hero-headline", ".hero-text"],
+        },
+      },
     ],
   };
-
+ 
   return (
-    <div dir={isArabic ? "rtl" : "ltr"} className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
+    <div className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
+      {/* JSON-LD structured data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <section className="relative px-6 py-8 md:py-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="text-left order-2 lg:order-1" dir={isArabic ? "rtl" : "ltr"}>
-            <h1 className="hero-headline text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 leading-[1.15]"
+      <section className="relative px-6 py-6 md:py-12 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-14 md:mt-8">
+          <div className="text-left order-2 lg:order-1">
+            <h1 className="hero-headline text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight my-8 leading-[1.30]"
               style={{ textAlign: isArabic ? 'right' : 'left' }}>
               {isArabic ? (
                 <>
@@ -208,6 +483,9 @@ export default async function Home({ params }: Props) {
               style={{ textAlign: isArabic ? 'right' : 'left' }}>
               {t.hero.description}
             </p>
+            <p className="hero-text text-sm md:text-base text-muted-foreground italic mb-8" style={{ textAlign: isArabic ? 'right' : 'left' }}>
+             {t.hero.focus}
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 px-2">
               <Link
@@ -230,7 +508,7 @@ export default async function Home({ params }: Props) {
               <div className="aspect-square overflow-hidden border-2 border-primary/20 rounded-lg">
                 <Image
                 //  src="/images/profile3.png"
-                  src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
+                  src="/images/profile3.png"
                   alt={t.hero.profile_name}
                   width={480}
                   height={480}

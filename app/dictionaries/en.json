@@ -7,13 +7,13 @@
     "Contact": "Contact Us"
   },
   "homepage": {
-    "banner": "Building a best-in-class revenue-generating website in 2026 — Read now →",
     "hero": {
-      "title_line1": "Modern Websites & Advanced SEO",
-      "title_highlight": "& Intelligent Business Solutions",
-      "description": "I’m a professional web developer in Morocco creating modern, SEO-optimized websites and automated AI business systems. I also design high-converting social media ads. My focus is simple: performance, scalability, and real results for growing businesses.",
-      "cta_primary": "Let's Work Together",
-      "cta_secondary": "See My Work",
+      "title_line1": "Full-Stack Web Developer in Morocco",
+      "title_highlight": "Building SEO-Optimized Websites & AI Business Automation",
+      "description": "I’m a Full-Stack Web Developer in Morocco helping startups and businesses build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
+      "focus":"My focus is simple: performance, scalability, and real results for growing businesses.",
+      "cta_primary": "Start Your Project",
+      "cta_secondary": "View Portfolio",
       "profile_name": "mohammed devsign",
       "profile_role": "Full-Stack Developer, SEO Specialist & AI Automation",
       "cta_more_about": "more about me",
