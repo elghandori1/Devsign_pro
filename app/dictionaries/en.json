@@ -11,7 +11,7 @@
       "title_line1": "Full-Stack Web Developer in Morocco",
       "title_highlight": "Building SEO-Optimized Websites & AI Business Automation",
       "description": "I’m a Full-Stack Web Developer in Morocco helping startups and businesses build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
-      "focus":"My focus is simple: performance, scalability, and real results for growing businesses.",
+      "focus": "My focus is simple: performance, scalability, and real results for growing businesses.",
       "cta_primary": "Start Your Project",
       "cta_secondary": "View Portfolio",
       "profile_name": "mohammed devsign",
@@ -19,16 +19,36 @@
       "cta_more_about": "more about me",
       "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
     },
-    "goal": {
-      "title": "Why me?",
-      "description": "We help startups, enterprises, and entrepreneurs build a strong digital presence and connect effectively with their customers. By combining modern design, SEO-optimized development, and smart business solutions, we create websites and systems that increase visibility, improve efficiency, and support long-term growth."
-    },
     "stats": {
-      "title":"Professional Statistics",
+      "title": "Professional Statistics",
       "years": "Years of Experience",
       "projects": "Projects Completed",
       "systems": "Systems Delivered",
       "satisfaction": "Client Satisfaction"
+    },
+    "services_section": {
+      "services": {
+        "sectionLabel": "Our Services",
+        "heading": "Smart Digital Solutions to",
+        "highlight": "Elevate Your Business",
+        "viewAll": "View All Services",
+        "cta": "Learn More",
+        "web": {
+          "title": "Secure & SEO-Optimized Website Development",
+          "description": "Build fast websites with modern technologies, focusing on performance, security, mobile-first design, and search engine optimization to help your business rank higher and convert visitors into clients.",
+          "link": "/services/web-development"
+        },
+        "systems": {
+          "title": "Business Automation & AI-Powered Systems",
+          "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
+          "link": "/services/business-systems"
+        },
+        "design": {
+          "title": "Social Media Advertising Design",
+          "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
+          "link": "/services/social-design"
+        }
+      }
     },
     "contact_section": {
       "about_me": {
@@ -45,10 +65,22 @@
         "subtitle": "What makes us different",
         "description": "We help startups and businesses build a strong digital presence through modern, SEO-optimized websites and smart solutions that drive growth.",
         "reasons": [
-          { "title": "Quality & Performance", "description": "Lightweight, fast websites and systems built with best practices and modern tech." },
-          { "title": "Mobile-First & SEO", "description": "Every project is responsive and optimized for search engines and all devices." },
-          { "title": "Clear Communication", "description": "Transparent process, regular updates, and support so you're always in the loop." },
-          { "title": "Trusted Results", "description": "Focused on delivery and client satisfaction with measurable outcomes." }
+          {
+            "title": "Quality & Performance",
+            "description": "Lightweight, fast websites and systems built with best practices and modern tech."
+          },
+          {
+            "title": "Mobile-First & SEO",
+            "description": "Every project is responsive and optimized for search engines and all devices."
+          },
+          {
+            "title": "Clear Communication",
+            "description": "Transparent process, regular updates, and support so you're always in the loop."
+          },
+          {
+            "title": "Trusted Results",
+            "description": "Focused on delivery and client satisfaction with measurable outcomes."
+          }
         ]
       }
     },
@@ -89,30 +121,6 @@
       "location": "Morocco",
       "cta": "Send a message"
     },
-  "services_section": {
-   "services": {
-    "sectionLabel": "Our Services",
-    "heading": "Smart Digital Solutions to",
-    "highlight": "Elevate Your Business",
-    "viewAll": "View All Services",
-    "cta": "Learn More",
-    "web": {
-      "title": "Modern Web Development",
-      "description": "High-performance, lightweight, and SEO-optimized websites designed to rank first and convert visitors into loyal customers.",
-      "link": "/services/web-development"
-    },
-    "systems": {
-      "title": "Smart Business Systems",
-      "description": "Custom workflow automation and AI model integration to simplify your operations and scale your business growth effortlessly.",
-      "link": "/services/business-systems"
-    },
-    "design": {
-      "title": "High-Converting Ad Design",
-      "description": "Strategic visual content for Instagram, Facebook, and TikTok designed specifically to explain your products and drive sales.",
-      "link": "/services/social-design"
-    }
-    }
-    },
     "footer_tags": {
       "title": "Popular Searches",
       "tags": [
@@ -137,26 +145,50 @@
       "web": {
         "title": "Modern Web Development",
         "description": "Lightweight, fast websites built for search engines. I create SEO-optimized, mobile-first sites that rank well and convert visitors into customers. Ideal for businesses going online or refreshing their presence.",
-        "features": ["SEO-optimized", "Mobile-first", "Fast loading", "Clear structure"]
+        "features": [
+          "SEO-optimized",
+          "Mobile-first",
+          "Fast loading",
+          "Clear structure"
+        ]
       },
       "systems": {
         "title": "Business Systems & AI",
         "description": "Custom automation and AI integration to streamline operations. From workflow automation to intelligent tools, I help you save time and scale without extra overhead.",
-        "features": ["Workflow automation", "AI integration", "Custom dashboards", "Scalable"]
+        "features": [
+          "Workflow automation",
+          "AI integration",
+          "Custom dashboards",
+          "Scalable"
+        ]
       },
       "design": {
         "title": "Ad & Media Design",
         "description": "Visual content for social media and ads that showcase your products and services. Professional creatives for Instagram, Facebook, and TikTok designed to drive engagement and sales.",
-        "features": ["Social ads", "Product visuals", "Brand consistency", "High conversion"]
+        "features": [
+          "Social ads",
+          "Product visuals",
+          "Brand consistency",
+          "High conversion"
+        ]
       },
       "cta": "Discuss your project",
       "whyChooseUs": {
         "title": "Why We're the Best Choice",
         "subtitle": "What sets our services apart",
         "reasons": [
-          { "title": "Proven track record", "text": "Websites and systems that rank, convert, and scale — with real results for startups and SMBs." },
-          { "title": "Full-stack expertise", "text": "From front-end design to backend logic, SEO, and automation — one partner for your whole digital stack." },
-          { "title": "No lock-in", "text": "Clean code, standard tech, and clear documentation so you own your project and can maintain or extend it." }
+          {
+            "title": "Proven track record",
+            "text": "Websites and systems that rank, convert, and scale — with real results for startups and SMBs."
+          },
+          {
+            "title": "Full-stack expertise",
+            "text": "From front-end design to backend logic, SEO, and automation — one partner for your whole digital stack."
+          },
+          {
+            "title": "No lock-in",
+            "text": "Clean code, standard tech, and clear documentation so you own your project and can maintain or extend it."
+          }
         ],
         "imageCaption": "Building solutions that perform"
       }
@@ -188,10 +220,26 @@
         "title": "Hackathons & Events",
         "subtitle": "Where I've competed and won",
         "items": [
-          { "name": "National Startup Hackathon", "year": "2024", "place": "1st Place" },
-          { "name": "AI & Automation Challenge", "year": "2024", "place": "2nd Place" },
-          { "name": "Web Performance & SEO Contest", "year": "2023", "place": "1st Place" },
-          { "name": "Digital Innovation Day", "year": "2023", "place": "2nd Place" }
+          {
+            "name": "National Startup Hackathon",
+            "year": "2024",
+            "place": "1st Place"
+          },
+          {
+            "name": "AI & Automation Challenge",
+            "year": "2024",
+            "place": "2nd Place"
+          },
+          {
+            "name": "Web Performance & SEO Contest",
+            "year": "2023",
+            "place": "1st Place"
+          },
+          {
+            "name": "Digital Innovation Day",
+            "year": "2023",
+            "place": "2nd Place"
+          }
         ]
       },
       "howCanIHelp": {
@@ -206,10 +254,22 @@
         ]
       },
       "values": [
-        { "title": "Quality & performance", "text": "Fast, maintainable code and designs that work across devices." },
-        { "title": "SEO & visibility", "text": "Sites built to rank and be found by the right audience." },
-        { "title": "Clear communication", "text": "Transparent process and regular updates so you're always in the loop." },
-        { "title": "Results-oriented", "text": "Focused on delivery and measurable impact for your business." }
+        {
+          "title": "Quality & performance",
+          "text": "Fast, maintainable code and designs that work across devices."
+        },
+        {
+          "title": "SEO & visibility",
+          "text": "Sites built to rank and be found by the right audience."
+        },
+        {
+          "title": "Clear communication",
+          "text": "Transparent process and regular updates so you're always in the loop."
+        },
+        {
+          "title": "Results-oriented",
+          "text": "Focused on delivery and measurable impact for your business."
+        }
       ],
       "cta": "Get in touch"
     },
@@ -244,9 +304,18 @@
         "title": "Why Clients Choose My Work",
         "subtitle": "Every project is built to deliver",
         "reasons": [
-          { "title": "Results-focused", "text": "Each project is designed to improve visibility, conversions, or efficiency — with measurable outcomes." },
-          { "title": "Modern stack", "text": "Next.js, React, and proven tools so your product is fast, maintainable, and future-proof." },
-          { "title": "End-to-end delivery", "text": "From concept to launch and beyond — I handle design, development, and support so you can focus on your business." }
+          {
+            "title": "Results-focused",
+            "text": "Each project is designed to improve visibility, conversions, or efficiency — with measurable outcomes."
+          },
+          {
+            "title": "Modern stack",
+            "text": "Next.js, React, and proven tools so your product is fast, maintainable, and future-proof."
+          },
+          {
+            "title": "End-to-end delivery",
+            "text": "From concept to launch and beyond — I handle design, development, and support so you can focus on your business."
+          }
         ]
       }
     },
@@ -264,9 +333,18 @@
       "whyReachOut": {
         "title": "Why Reach Out?",
         "reasons": [
-          { "title": "Free initial consultation", "text": "We'll discuss your goals and see if we're a good fit — no commitment." },
-          { "title": "Clear pricing & timeline", "text": "You get a transparent quote and delivery plan before we start." },
-          { "title": "Ongoing support", "text": "After launch, I offer maintenance and updates so your project keeps performing." }
+          {
+            "title": "Free initial consultation",
+            "text": "We'll discuss your goals and see if we're a good fit — no commitment."
+          },
+          {
+            "title": "Clear pricing & timeline",
+            "text": "You get a transparent quote and delivery plan before we start."
+          },
+          {
+            "title": "Ongoing support",
+            "text": "After launch, I offer maintenance and updates so your project keeps performing."
+          }
         ]
       }
     }

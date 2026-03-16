@@ -581,7 +581,7 @@ export default async function Home({ params }: Props) {
         <Statistics translations={t.stats} />
       </ScrollReveal>
 
-      <ScrollReveal delay={0.05}>
+      <ScrollReveal delay={0.04}>
         <SubTitle translations={t.services_section.services} />
         <ServicesGrid t={t.services_section} locale={locale} />
       </ScrollReveal>

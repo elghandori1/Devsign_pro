@@ -11,17 +11,13 @@
       "title_line1": "Développeur Full-Stack au Maroc, Sites Web optimisés SEO",
       "title_highlight": "& Automatisation Business via l'IA.",
       "description": "Je suis développeur web full-stack au Maroc et j’aide les startups et les entreprises à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
-      "focus":"Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
-    "cta_primary": "Démarrer un projet",
+      "focus": "Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
+      "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mon portfolio",
       "profile_name": "mohammed devsign",
       "profile_role": "développeur full-stack et spécialiste SEO et automatisation IA",
       "cta_more_about": "en savoir plus",
       "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
-    },
-    "goal": {
-      "title": "Mon Objectif",
-      "description": "Mon objectif est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés. J'y parviens en créant des sites web modernes et optimisés SEO ainsi que des systèmes business intelligents qui génèrent de la croissance et des résultats concrets."
     },
     "stats": {
       "title": "Statistiques Professionnelles",
@@ -29,6 +25,30 @@
       "projects": "Projets réalisés",
       "systems": "Systèmes livrés",
       "satisfaction": "Satisfaction client"
+    },
+    "services_section": {
+      "services": {
+        "sectionLabel": "Nos Services",
+        "heading": "Des solutions digitales pour",
+        "highlight": "Élever Votre Entreprise",
+        "viewAll": "Voir Tous les Services",
+        "cta": "En savoir plus",
+        "web": {
+          "title": "Développement de Sites Web Sécurisés et Optimisés SEO",
+          "description": "Création de sites web rapides avec des technologies modernes, en mettant l’accent sur la performance, la sécurité, le design mobile-first et l’optimisation pour les moteurs de recherche afin d’aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
+          "link": "/services/web-development"
+        },
+        "systems": {
+          "title": "Systèmes d’Automatisation et Solutions IA pour Entreprises",
+          "description": "Outils logiciels sur mesure, automatisation des workflows et intégrations d’intelligence artificielle pour simplifier les opérations, réduire les tâches répétitives et permettre à votre entreprise de fonctionner plus rapidement et plus efficacement.",
+          "link": "/services/business-systems"
+        },
+        "design": {
+          "title": "Design Publicitaire pour les Réseaux Sociaux",
+          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l’attention et augmenter l’engagement ainsi que les ventes.",
+          "link": "/services/social-design"
+        }
+      }
     },
     "contact_section": {
       "about_me": {
@@ -45,10 +65,22 @@
         "subtitle": "Ce qui nous différencie",
         "description": "Nous aidons les startups et les entreprises à bâtir une présence digitale solide grâce à des sites web modernes, optimisés SEO, et des solutions intelligentes qui génèrent de la croissance.",
         "reasons": [
-          { "title": "Qualité & Performance", "description": "Sites et systèmes légers et rapides, conçus avec les bonnes pratiques et les technologies modernes." },
-          { "title": "Mobile-First & SEO", "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils." },
-          { "title": "Communication Claire", "description": "Processus transparent, mises à jour régulières et accompagnement pour que vous soyez toujours informé." },
-          { "title": "Résultats de Confiance", "description": "Concentration sur la livraison et la satisfaction client avec des résultats mesurables." }
+          {
+            "title": "Qualité & Performance",
+            "description": "Sites et systèmes légers et rapides, conçus avec les bonnes pratiques et les technologies modernes."
+          },
+          {
+            "title": "Mobile-First & SEO",
+            "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils."
+          },
+          {
+            "title": "Communication Claire",
+            "description": "Processus transparent, mises à jour régulières et accompagnement pour que vous soyez toujours informé."
+          },
+          {
+            "title": "Résultats de Confiance",
+            "description": "Concentration sur la livraison et la satisfaction client avec des résultats mesurables."
+          }
         ]
       }
     },
@@ -89,31 +121,6 @@
       "location": "Maroc",
       "cta": "Envoyer un message"
     },
-    "services_section": {
-      "services": {
-        "sectionLabel": "Nos Services",
-        "heading": "Des solutions digitales intelligentes pour",
-        "highlight": "Élever Votre Entreprise",
-        "viewAll": "Voir Tous les Services",
-        "cta": "En savoir plus",
-        "web": {
-          "title": "Développement Web Moderne",
-          "description": "Sites web haute performance, légers et optimisés SEO, conçus pour être premiers sur les moteurs de recherche et convertir les visiteurs en clients fidèles.",
-          "link": "/services/web-development"
-        },
-        "systems": {
-          "title": "Systèmes d'Entreprise Intelligents",
-          "description": "Automatisation personnalisée des flux de travail et intégration de modèles d'IA pour simplifier vos opérations et développer votre entreprise sans effort.",
-          "link": "/services/systems"
-        },
-        "design": {
-          "title": "Design Publicitaire à Haut Taux de Conversion",
-          "description": "Contenu visuel stratégique pour Instagram, Facebook et TikTok, spécialement conçu pour présenter vos produits et générer des ventes.",
-          "link": "/services/social-design" 
-        
-        }
-      }
-    },
     "footer_tags": {
       "title": "Recherches Populaires",
       "tags": [
@@ -138,26 +145,50 @@
       "web": {
         "title": "Développement Web Moderne",
         "description": "Sites légers et rapides pensés pour le référencement. Je crée des sites SEO, mobile-first, qui se positionnent bien et convertissent. Idéal pour se lancer en ligne ou moderniser sa présence.",
-        "features": ["Optimisé SEO", "Mobile-first", "Chargement rapide", "Structure claire"]
+        "features": [
+          "Optimisé SEO",
+          "Mobile-first",
+          "Chargement rapide",
+          "Structure claire"
+        ]
       },
       "systems": {
         "title": "Systèmes & IA",
         "description": "Automatisation sur mesure et intégration IA pour simplifier vos processus. De l'automatisation des flux à des outils intelligents, pour gagner du temps et scaler.",
-        "features": ["Automatisation", "Intégration IA", "Tableaux de bord", "Évolutif"]
+        "features": [
+          "Automatisation",
+          "Intégration IA",
+          "Tableaux de bord",
+          "Évolutif"
+        ]
       },
       "design": {
         "title": "Design Publicitaire & Médias",
         "description": "Contenus visuels pour les réseaux et publicités qui mettent en valeur vos produits et services. Créations pour Instagram, Facebook et TikTok conçues pour l'engagement et les ventes.",
-        "features": ["Pub réseaux sociaux", "Visuels produits", "Cohérence de marque", "Fort taux de conversion"]
+        "features": [
+          "Pub réseaux sociaux",
+          "Visuels produits",
+          "Cohérence de marque",
+          "Fort taux de conversion"
+        ]
       },
       "cta": "Discuter de votre projet",
       "whyChooseUs": {
         "title": "Pourquoi Nous Choisir",
         "subtitle": "Ce qui distingue nos services",
         "reasons": [
-          { "title": "Résultats prouvés", "text": "Sites et systèmes qui se positionnent, convertissent et évoluent — avec des résultats concrets pour startups et PME." },
-          { "title": "Expertise full-stack", "text": "Du design front-end à la logique backend, SEO et automatisation — un seul partenaire pour toute votre stack digitale." },
-          { "title": "Sans enfermement", "text": "Code propre, technologies standard et documentation claire pour que vous restiez propriétaire de votre projet." }
+          {
+            "title": "Résultats prouvés",
+            "text": "Sites et systèmes qui se positionnent, convertissent et évoluent — avec des résultats concrets pour startups et PME."
+          },
+          {
+            "title": "Expertise full-stack",
+            "text": "Du design front-end à la logique backend, SEO et automatisation — un seul partenaire pour toute votre stack digitale."
+          },
+          {
+            "title": "Sans enfermement",
+            "text": "Code propre, technologies standard et documentation claire pour que vous restiez propriétaire de votre projet."
+          }
         ],
         "imageCaption": "Des solutions qui performent"
       }
@@ -189,10 +220,26 @@
         "title": "Hackathons & Événements",
         "subtitle": "Où j'ai concouru et gagné",
         "items": [
-          { "name": "Hackathon National Startups", "year": "2024", "place": "1er Prix" },
-          { "name": "Challenge IA & Automatisation", "year": "2024", "place": "2e Prix" },
-          { "name": "Concours Performance Web & SEO", "year": "2023", "place": "1er Prix" },
-          { "name": "Journée Innovation Digitale", "year": "2023", "place": "2e Prix" }
+          {
+            "name": "Hackathon National Startups",
+            "year": "2024",
+            "place": "1er Prix"
+          },
+          {
+            "name": "Challenge IA & Automatisation",
+            "year": "2024",
+            "place": "2e Prix"
+          },
+          {
+            "name": "Concours Performance Web & SEO",
+            "year": "2023",
+            "place": "1er Prix"
+          },
+          {
+            "name": "Journée Innovation Digitale",
+            "year": "2023",
+            "place": "2e Prix"
+          }
         ]
       },
       "howCanIHelp": {
@@ -207,10 +254,22 @@
         ]
       },
       "values": [
-        { "title": "Qualité et performance", "text": "Code et designs rapides, maintenables, qui fonctionnent sur tous les appareils." },
-        { "title": "SEO et visibilité", "text": "Sites conçus pour être trouvés par la bonne audience." },
-        { "title": "Communication claire", "text": "Processus transparent et mises à jour régulières." },
-        { "title": "Résultats", "text": "Livraison et impact mesurable pour votre activité." }
+        {
+          "title": "Qualité et performance",
+          "text": "Code et designs rapides, maintenables, qui fonctionnent sur tous les appareils."
+        },
+        {
+          "title": "SEO et visibilité",
+          "text": "Sites conçus pour être trouvés par la bonne audience."
+        },
+        {
+          "title": "Communication claire",
+          "text": "Processus transparent et mises à jour régulières."
+        },
+        {
+          "title": "Résultats",
+          "text": "Livraison et impact mesurable pour votre activité."
+        }
       ],
       "cta": "Me contacter"
     },
@@ -245,9 +304,18 @@
         "title": "Pourquoi On Choisit Mon Travail",
         "subtitle": "Chaque projet est livré pour performer",
         "reasons": [
-          { "title": "Orientation résultats", "text": "Chaque projet vise à améliorer la visibilité, les conversions ou l'efficacité — avec des résultats mesurables." },
-          { "title": "Stack moderne", "text": "Next.js, React et outils éprouvés pour des produits rapides, maintenables et pérennes." },
-          { "title": "Livraison de bout en bout", "text": "Du concept au lancement et au-delà — design, développement et support pour que vous puissiez vous concentrer sur votre activité." }
+          {
+            "title": "Orientation résultats",
+            "text": "Chaque projet vise à améliorer la visibilité, les conversions ou l'efficacité — avec des résultats mesurables."
+          },
+          {
+            "title": "Stack moderne",
+            "text": "Next.js, React et outils éprouvés pour des produits rapides, maintenables et pérennes."
+          },
+          {
+            "title": "Livraison de bout en bout",
+            "text": "Du concept au lancement et au-delà — design, développement et support pour que vous puissiez vous concentrer sur votre activité."
+          }
         ]
       }
     },
@@ -265,9 +333,18 @@
       "whyReachOut": {
         "title": "Pourquoi Nous Contacter ?",
         "reasons": [
-          { "title": "Consultation initiale gratuite", "text": "On discute de vos objectifs et de notre adéquation — sans engagement." },
-          { "title": "Tarifs et délais clairs", "text": "Devis et planning transparents avant de commencer." },
-          { "title": "Accompagnement continu", "text": "Après le lancement, maintenance et évolutions pour que votre projet reste performant." }
+          {
+            "title": "Consultation initiale gratuite",
+            "text": "On discute de vos objectifs et de notre adéquation — sans engagement."
+          },
+          {
+            "title": "Tarifs et délais clairs",
+            "text": "Devis et planning transparents avant de commencer."
+          },
+          {
+            "title": "Accompagnement continu",
+            "text": "Après le lancement, maintenance et évolutions pour que votre projet reste performant."
+          }
         ]
       }
     }
