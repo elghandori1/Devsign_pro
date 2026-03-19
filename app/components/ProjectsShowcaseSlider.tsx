@@ -29,7 +29,8 @@ export default function ProjectsShowcaseSlider({
   const project = projects[index];
 
   const goNext = () => setIndex((i) => (i + 1) % projects.length);
-  const goPrev = () => setIndex((i) => (i - 1 + projects.length) % projects.length);
+  const goPrev = () =>
+    setIndex((i) => (i - 1 + projects.length) % projects.length);
 
   const slideVariant = {
     initial: (dir: number) => ({ opacity: 0, x: dir > 0 ? 60 : -60 }),
@@ -48,9 +49,9 @@ export default function ProjectsShowcaseSlider({
   };
 
   return (
-    <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
+    <div className="grid lg:grid-cols-2 gap-8 items-stretch">
       {/* Image swipe area */}
-      <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[420px] rounded-2xl overflow-hidden border border-border bg-muted/30">
+      <div className="relative aspect-square w-full max-w-[510px] mx-auto lg:mx-0 rounded-2xl overflow-hidden border border-border bg-muted/30">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={project.image + index}
@@ -67,7 +68,7 @@ export default function ProjectsShowcaseSlider({
               alt={project.title}
               fill
               className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 540px"
               priority={index === 0}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
@@ -89,7 +90,9 @@ export default function ProjectsShowcaseSlider({
                   setIndex(i);
                 }}
                 className={`h-2 rounded-full transition-all duration-300 ${
-                  i === index ? "w-8 bg-primary" : "w-2 bg-background/60 hover:bg-background/80"
+                  i === index
+                    ? "w-8 bg-primary"
+                    : "w-2 bg-background/60 hover:bg-background/80"
                 }`}
                 aria-label={`Project ${i + 1}`}
                 aria-current={i === index ? "true" : undefined}
@@ -103,7 +106,11 @@ export default function ProjectsShowcaseSlider({
               className="w-10 h-10 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
               aria-label={isRtl ? "Next project" : "Previous project"}
             >
-              {isRtl ? <ChevronRight className="w-5 h-5" /> : <ChevronLeft className="w-5 h-5" />}
+              {isRtl ? (
+                <ChevronRight className="w-5 h-5" />
+              ) : (
+                <ChevronLeft className="w-5 h-5" />
+              )}
             </button>
             <button
               type="button"
@@ -111,7 +118,11 @@ export default function ProjectsShowcaseSlider({
               className="w-10 h-10 rounded-full bg-background/90 border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors"
               aria-label={isRtl ? "Previous project" : "Next project"}
             >
-              {isRtl ? <ChevronLeft className="w-5 h-5" /> : <ChevronRight className="w-5 h-5" />}
+              {isRtl ? (
+                <ChevronLeft className="w-5 h-5" />
+              ) : (
+                <ChevronRight className="w-5 h-5" />
+              )}
             </button>
           </div>
         </div>
@@ -137,9 +148,7 @@ export default function ProjectsShowcaseSlider({
             <p className="text-muted-foreground leading-relaxed">
               {project.description}
             </p>
-            <p className="text-sm text-primary font-medium">
-              {project.tech}
-            </p>
+            <p className="text-sm text-primary font-medium">{project.tech}</p>
             <Link
               href={`/${locale}/portfolio`}
               className="inline-flex items-center gap-2 px-5 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-primary-foreground transition-colors"

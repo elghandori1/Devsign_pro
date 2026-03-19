@@ -29,7 +29,7 @@ export default function WhyWeAreSection({
   return (
     <section
       id="why-us"
-      className="py-8 sm:py-12 transition-colors duration-300"
+      className="py-4 sm:py-6 transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">

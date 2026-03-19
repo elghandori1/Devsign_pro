@@ -185,7 +185,7 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar lang={locale} />
           <main>{children}</main>
-          <Footer footerTags={footerTags} footer={footer} locale={locale} />
+         <Footer footer={footer} locale={locale} />
         </ThemeProvider>
       </body>
     </html>

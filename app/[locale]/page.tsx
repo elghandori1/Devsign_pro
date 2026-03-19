@@ -545,7 +545,7 @@ export default async function Home({ params }: Props) {
                     href="https://instagram.com/yourusername"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-pink-500/50 hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="Instagram"
                   >
                     <InstagramIcon size={17} />
@@ -555,7 +555,7 @@ export default async function Home({ params }: Props) {
                     href="https://wa.me/212XXXXXXXXX"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-green-500/60 hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
                     aria-label="WhatsApp"
                   >
                     <BsWhatsapp size={17} />
@@ -565,7 +565,7 @@ export default async function Home({ params }: Props) {
                     href="mailto:contact@devsign.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-border hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
+                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-blue-500/60 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
                     aria-label="Email"
                   >
                     <MdEmail size={17} />

@@ -53,17 +53,18 @@
     "contact_section": {
       "about_me": {
         "sectionLabel": "About Me",
-        "subtitle": "Your partner for digital success",
-        "paragraph1": "I'm a professional developer and designer based in Morocco, specializing in website creation, operating systems, and media image design. I help businesses and startups build a strong online presence with modern, fast, and SEO-friendly solutions.",
+        "subtitle": "Your partner for ",
+        "highlight": "digital success",
+        "paragraph1": "I’m a developer and designer focused on building high-performance, SEO-optimized digital solutions that deliver real business results. My expertise is backed by a proven track record of excellence, including 1st place wins at Al Akhawayn and UM6P Ben Guerir, and 2nd place at UM6P Rabat and more. I bring this same level of precision, creativity, and commitment to every project I work on.",
         "paragraph2": "Whether you need a custom website, a business system, or eye-catching visuals for social media and ads, I focus on quality, clear communication, and results that grow your brand.",
-        "cta": "Read More"
+        "cta": "More About Me"
       }
     },
     "why_we_are_section": {
       "why_we_are": {
-        "sectionLabel": "Why Choose Us",
-        "subtitle": "What makes us different",
-        "description": "We help startups and businesses build a strong digital presence through modern, SEO-optimized websites and smart solutions that drive growth.",
+        "sectionLabel": "Why Work With Me",
+        "description": "I help businesses and startups build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real results and long-term value.",
+        "subtitle": "What makes me the right partner for your success",
         "reasons": [
           {
             "title": "Quality & Performance",
@@ -89,51 +90,82 @@
       "subtitle": "Recent projects that drive results",
       "projects": [
         {
-          "title": "E-Commerce Platform",
-          "description": "A full-stack online store with cart, checkout, and admin dashboard. Built for fast loading and high conversion.",
-          "tech": "Next.js, Stripe, PostgreSQL",
-          "image": "/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg",
+          "title": "Corporate Website & SEO Growth",
+          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. The platform achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
+          "tech": "Next.js, SEO Optimization, MySQL",
+          "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "View case study"
         },
         {
           "title": "Business Automation Dashboard",
-          "description": "Custom CRM and workflow automation for a growing agency. Reduced manual tasks by 60% and improved reporting.",
+          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services. This solution significantly improved organization, reduced manual work, and enhanced client management.",
           "tech": "React, Node.js, REST API",
-          "image": "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "View case study"
         },
         {
-          "title": "Brand & Social Ads",
-          "description": "Visual identity and ad creatives for Instagram and Facebook. Consistent design system that increased engagement.",
-          "tech": "Design system, Ads Manager",
-          "image": "/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+          "title": "Social Media Design & Ads",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and call-to-action elements to increase engagement and encourage purchases across platforms like Instagram and Facebook.",
+          "tech": "Photoshop, Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "View case study"
         }
       ]
     },
     "contact": {
       "title": "Get in Touch",
-      "subtitle": "Let's discuss your project",
       "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
-      "email": "Email",
+      "cta": "Let's discuss your project",
       "whatsapp": "WhatsApp",
+      "phoneNumber": "+212 6 12 34 56 78",
+      "whatsappNumber": "212612345678",
+      "whatsappCta": "Chat now",
+      "email": "Email",
+      "emailAddress": "contact@devsign.com",
+      "emailHref": "mailto:contact@devsign.com",
+      "emailCta": "Send email",
       "instagram": "Instagram",
-      "location": "Morocco",
-      "cta": "Send a message"
-    },
-    "footer_tags": {
-      "title": "Popular Searches",
-      "tags": [
-        "Websites",
-        "Software",
-        "Product Design",
-        "Ads & Media",
-        "Custom Work"
-      ]
+      "instagramUrl": "https://www.instagram.com/devsignpro",
+      "instagramHandle": "@devsignpro",
+      "instagramFollowers": "+2K",
+      "instagramLabel": "followers",
+      "instagramCta": "Visit Instagram",
+      "brandName": "Instagram"
     },
     "footer": {
+      "brandName": "Devsign",
+      "brandTagline": "Freelance",
+      "email": "devsignprofessional@gmail.com",
+      "phone": "+212 6 12 34 56 78",
+      "address": "Casablanca, Morocco",
+      "aboutTitle": "Explore",
+      "links": [
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        },
+        {
+          "label": "Projects",
+          "href": "/projects"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "followTitle": "Follow us",
       "copyright": "© {year} Devsign. All rights reserved.",
-      "tagline": "Websites · Systems · Design"
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "cookiePolicy": "Cookie Policy"
     }
   },
   "pages": {

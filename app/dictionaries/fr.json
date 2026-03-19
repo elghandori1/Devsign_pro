@@ -52,34 +52,35 @@
     },
     "contact_section": {
       "about_me": {
-        "sectionLabel": "À Propos de Moi",
-        "subtitle": "Votre partenaire pour la réussite digitale",
-        "paragraph1": "Je suis développeur et designer professionnel au Maroc, spécialisé en création de sites web, systèmes d'exploitation et design d'images médias. J'accompagne entreprises et startups pour une présence en ligne moderne, rapide et optimisée SEO.",
-        "paragraph2": "Site sur mesure, système métier ou visuels percutants pour les réseaux sociaux et publicités : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
-        "cta": "En savoir plus"
+        "sectionLabel": "À propos de moi",
+        "subtitle": "Votre partenaire pour ",
+        "highlight": "la réussite digitale",
+        "paragraph1": "Je suis un développeur et designer concentré sur la création de solutions digitales performantes et optimisées pour le référencement (SEO) qui génèrent de réels résultats commerciaux. Mon expertise est soutenue par un historique avéré d'excellence, comprenant des premières places à Al Akhawayn et à l'UM6P Ben Guerir, et une deuxième place à l'UM6P Rabat, entre autres. J'apporte ce même niveau de précision, de créativité et d'engagement à chaque projet sur lequel je travaille.",
+        "paragraph2": "Que vous ayez besoin d'un site web sur mesure, d'un système d'entreprise, ou de visuels percutants pour les réseaux sociaux et les publicités, je me concentre sur la qualité, une communication claire et des résultats qui développent votre marque.",
+        "cta": "Plus sur moi"
       }
     },
     "why_we_are_section": {
       "why_we_are": {
-        "sectionLabel": "Pourquoi Nous Choisir",
-        "subtitle": "Ce qui nous différencie",
-        "description": "Nous aidons les startups et les entreprises à bâtir une présence digitale solide grâce à des sites web modernes, optimisés SEO, et des solutions intelligentes qui génèrent de la croissance.",
+        "sectionLabel": "Pourquoi me choisir",
+        "description": "J'aide les entreprises et les startups à construire des solutions digitales puissantes qui ne sont pas seulement esthétiques : elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
+        "subtitle": "Ce qui fait de moi le bon partenaire pour votre réussite",
         "reasons": [
           {
-            "title": "Qualité & Performance",
-            "description": "Sites et systèmes légers et rapides, conçus avec les bonnes pratiques et les technologies modernes."
+            "title": "Qualité et Performance",
+            "description": "Des sites web et systèmes légers et rapides, construits selon les meilleures pratiques et avec des technologies modernes."
           },
           {
-            "title": "Mobile-First & SEO",
+            "title": "Mobile-First et SEO",
             "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils."
           },
           {
             "title": "Communication Claire",
-            "description": "Processus transparent, mises à jour régulières et accompagnement pour que vous soyez toujours informé."
+            "description": "Processus transparent, mises à jour régulières et assistance pour que vous soyez toujours informé."
           },
           {
-            "title": "Résultats de Confiance",
-            "description": "Concentration sur la livraison et la satisfaction client avec des résultats mesurables."
+            "title": "Résultats Fiables",
+            "description": "Axé sur la livraison et la satisfaction client avec des résultats mesurables."
           }
         ]
       }
@@ -89,37 +90,47 @@
       "subtitle": "Projets récents qui génèrent des résultats",
       "projects": [
         {
-          "title": "Plateforme E-Commerce",
-          "description": "Boutique en ligne full-stack avec panier, paiement et tableau de bord admin. Conçue pour un chargement rapide et un taux de conversion élevé.",
-          "tech": "Next.js, Stripe, PostgreSQL",
-          "image": "/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg",
+          "title": "Site Web d'Entreprise & Croissance SEO",
+          "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
+          "tech": "Next.js, Optimisation SEO, MySQL",
+          "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir l'étude de cas"
         },
         {
-          "title": "Tableau de bord d'automatisation",
-          "description": "CRM et automatisation des processus pour une agence en croissance. Réduction des tâches manuelles de 60 % et reporting amélioré.",
-          "tech": "React, Node.js, API REST",
-          "image": "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg",
+          "title": "Dashboard d'Automatisation d'Entreprise",
+          "description": "Création d'un tableau de bord personnalisé pour gérer les clients, les abonnements et les opérations commerciales en un seul endroit. Fonctionnalités incluant le suivi des dates de début/fin d'abonnement, la gestion des prix, la gestion des stocks et des alertes automatisées pour les services expirés. Cette solution a considérablement amélioré l'organisation, réduit le travail manuel et optimisé la gestion client.",
+          "tech": "React, Node.js, REST API",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "Voir l'étude de cas"
         },
         {
-          "title": "Identité & Publicités réseaux",
-          "description": "Identité visuelle et créations publicitaires pour Instagram et Facebook. Système de design cohérent qui a augmenté l'engagement.",
-          "tech": "Design system, Ads Manager",
-          "image": "/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg",
+          "title": "Design pour Réseaux Sociaux & Publicités",
+          "description": "Création de visuels à fort taux de conversion pour les réseaux sociaux, en transformant des images de produits simples en contenu marketing professionnel. Chaque design intègre un message clair, une identité de marque et des éléments d'appel à l'action pour augmenter l'engagement et encourager les achats sur des plateformes comme Instagram et Facebook.",
+          "tech": "Photoshop, Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "Voir l'étude de cas"
         }
       ]
     },
     "contact": {
-      "title": "Contactez-nous",
-      "subtitle": "Parlons de votre projet",
-      "description": "Prêt à lancer votre site, système ou projet de design ? Contactez-nous via le canal de votre choix.",
-      "email": "E-mail",
+      "title": "Prenez Contact",
+      "description": "Prêt à commencer votre projet de site web, système ou design ? Contactez-moi via le canal de votre choix.",
+      "cta": "Discutons de votre projet",
       "whatsapp": "WhatsApp",
+      "phoneNumber": "+212 6 12 34 56 78",
+      "whatsappNumber": "212612345678",
+      "whatsappCta": "Discuter maintenant",
+      "email": "Email",
+      "emailAddress": "contact@devsign.com",
+      "emailHref": "mailto:contact@devsign.com",
+      "emailCta": "Envoyer un email",
       "instagram": "Instagram",
-      "location": "Maroc",
-      "cta": "Envoyer un message"
+      "instagramUrl": "https://www.instagram.com/devsignpro",
+      "instagramHandle": "@devsignpro",
+      "instagramFollowers": "+2K",
+      "instagramLabel": "abonnés",
+      "instagramCta": "Visiter Instagram",
+      "brandName": "Instagram"
     },
     "footer_tags": {
       "title": "Recherches Populaires",
@@ -132,8 +143,39 @@
       ]
     },
     "footer": {
+      "brandName": "Devsign",
+      "brandTagline": "Freelance",
+      "email": "devsignprofessional@gmail.com",
+      "phone": "+212 6 12 34 56 78",
+      "address": "Casablanca, Maroc",
+      "aboutTitle": "Explorer",
+      "links": [
+        {
+          "label": "À propos",
+          "href": "/about"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        },
+        {
+          "label": "Projets",
+          "href": "/projects"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "followTitle": "Suivez-moi",
       "copyright": "© {year} Devsign. Tous droits réservés.",
-      "tagline": "Sites Web · Systèmes · Design"
+      "privacyPolicy": "Politique de confidentialité",
+      "termsOfService": "Conditions d'utilisation",
+      "cookiePolicy": "Politique des cookies"
     }
   },
   "pages": {

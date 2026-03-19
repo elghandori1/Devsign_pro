@@ -25,11 +25,11 @@ export default function ProjectsShowcase({
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <header className="text-center mb-12">
+        <h3 className="text-center mb-12">
           <p id="projects-heading" className="text-muted-foreground max-w-xl mx-auto">
             {translations.subtitle}
           </p>
-        </header>
+        </h3>
         <ProjectsShowcaseSlider projects={translations.projects} locale={locale} />
       </div>
     </section>
