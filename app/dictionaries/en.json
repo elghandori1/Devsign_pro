@@ -4,7 +4,7 @@
     "about": "About Me",
     "Services": "Services",
     "portfolio": "My Work",
-    "Contact": "Contact Us"
+    "Contact": "Contact"
   },
   "homepage": {
     "hero": {
@@ -161,7 +161,7 @@
           "href": "/contact"
         }
       ],
-      "followTitle": "Follow us",
+      "followTitle": "Follow me",
       "copyright": "© {year} Devsign. All rights reserved.",
       "privacyPolicy": "Privacy Policy",
       "termsOfService": "Terms of Service",
@@ -172,7 +172,7 @@
     "services": {
       "title": "Services",
       "subtitle": "What I offer",
-      "heading": "Digital solutions to grow your business",
+      "heading": "Web Development, SEO & AI Automation Services in Morocco",
       "description": "From lightweight SEO-optimized websites to business automation and AI integration, and high-converting ad design — I help startups and SMBs succeed online.",
       "web": {
         "title": "Modern Web Development",

@@ -1,5 +1,6 @@
 import { Locale } from "@/i18n-config";
 import ProjectsShowcaseSlider, { type ProjectItem } from "./ProjectsShowcaseSlider";
+import TechnologySlider from "./TechnologySlider";
 
 interface ProjectsSectionTranslations {
   sectionLabel: string;
@@ -21,17 +22,18 @@ export default function ProjectsShowcase({
   return (
     <section
       id="projects"
-      className="py-12 md:py-16 bg-muted/10 transition-colors duration-300"
+      className="pt-8 md:pt-10 bg-muted/10 transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h3 className="text-center mb-12">
+        <h3 className="text-center mb-8">
           <p id="projects-heading" className="text-muted-foreground max-w-xl mx-auto">
             {translations.subtitle}
           </p>
         </h3>
         <ProjectsShowcaseSlider projects={translations.projects} locale={locale} />
       </div>
+      <TechnologySlider/>
     </section>
   );
 }

@@ -150,3 +150,61 @@ body {
     transform: translateY(0);
   }
 }
+
+/* slider technology */
+.slider {
+  overflow: hidden;
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 20); /* adjust based on items */
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  padding: 10px;
+}
+
+.slide img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.slide span {
+  font-size: 14px;
+  color: #333;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Mobile slower, desktop faster feels smoother */
+.animate-scroll {
+  animation: scroll 35s linear infinite;
+}
+
+@media (min-width: 640px) {
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+}
+
+@media (min-width: 1024px) {
+  .animate-scroll {
+    animation: scroll 25s linear infinite;
+  }
+}

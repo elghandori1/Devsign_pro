@@ -5,7 +5,6 @@ import Link from "next/link";
 import { ArrowRight, InstagramIcon, ArrowLeft } from "lucide-react";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
 import getTrans from "../lib/translation";
 import { Locale, i18n } from "@/i18n-config";
 import Statistics from "../components/Statistics";
