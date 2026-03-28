@@ -194,17 +194,17 @@ body {
 
 /* ✅ Mobile slower, desktop faster feels smoother */
 .animate-scroll {
-  animation: scroll 35s linear infinite;
+  animation: scroll 45s linear infinite;
 }
 
 @media (min-width: 640px) {
   .animate-scroll {
-    animation: scroll 30s linear infinite;
+    animation: scroll 50s linear infinite;
   }
 }
 
 @media (min-width: 1024px) {
   .animate-scroll {
-    animation: scroll 25s linear infinite;
+    animation: scroll 55s linear infinite;
   }
 }

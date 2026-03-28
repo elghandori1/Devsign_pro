@@ -92,7 +92,7 @@
         {
           "title": "Corporate Website & SEO Growth",
           "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. The platform achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
-          "tech": "Next.js, SEO Optimization, MySQL",
+          "tech": "Next.js, SEO Optimization, Mongodb",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "View case study"
         },
@@ -116,6 +116,7 @@
       "title": "Get in Touch",
       "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
       "cta": "Let's discuss your project",
+      "cta_message":"",
       "whatsapp": "WhatsApp",
       "phoneNumber": "+212 6 12 34 56 78",
       "whatsappNumber": "212612345678",

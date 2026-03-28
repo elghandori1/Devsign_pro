@@ -92,7 +92,7 @@
         {
           "title": "Site Web d'Entreprise & Croissance SEO",
           "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
-          "tech": "Next.js, Optimisation SEO, MySQL",
+          "tech": "Next.js, SEO Optimization, Mongodb",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir l'étude de cas"
         },

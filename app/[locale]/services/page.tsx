@@ -221,7 +221,7 @@ export default async function ServicesPage({ params }: Props) {
             </Link>
           </div>
 
-          {/* ── Service cards grid ────────────────────────────────────────── */}
+          {/*  Service cards grid  */}
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article
@@ -296,7 +296,7 @@ export default async function ServicesPage({ params }: Props) {
             </Link>
           </div>
 
-          {/* ── Why choose us ─────────────────────────────────────────────── */}
+          {/* ── Why choose us  */}
           {t.whyChooseUs && (
             <div className="mt-20 pt-14 border-t border-border">
               <div className="mb-10">
