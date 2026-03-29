@@ -11,8 +11,8 @@ import {
   HelpCircle,
 } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
-import getTrans from "@/app/lib/translation";
-import { getBaseUrl, buildPageMetadata } from "@/app/lib/seo";
+import { getDictionary } from "@/app/lib/dictionary";
+import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -28,7 +28,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const baseUrl = getBaseUrl();
 
   const title =
     locale === "en"
@@ -53,10 +52,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildPageMetadata({
     locale,
-    baseUrl,
     title,
     description,
-    path: "/about",
+    route: "/about",
     keywords,
   });
 }
@@ -68,7 +66,7 @@ export default async function AboutPage({ params }: Props) {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const dict = await getTrans(locale);
+  const dict = await getDictionary(locale);
   const t = dict.pages?.about;
   const isRtl = locale === "ar";
 

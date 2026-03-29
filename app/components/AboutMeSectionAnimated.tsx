@@ -14,11 +14,11 @@ interface AboutMeSectionAnimatedProps {
 }
 
 const ABOUT_IMAGES = [
-  "/images/about/profile1.png",
-  "/images/about/profile2.jpg",
-  "/images/about/profile3.jpg",
-  "/images/about/profile4.jpg",
-  "/images/about/profile5.jpg",
+  "/images/about/profile.png",
+  "/images/about/profile.jpg",
+  "/images/about/profile.jpg",
+  "/images/about/profile.jpg",
+  "/images/about/profile.jpg",
 ];
 
 const imageVariant = {

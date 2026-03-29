@@ -25,14 +25,11 @@ export default function TechnologySlider() {
   const duplicated = [...technologies, ...technologies];
 
   return (
-    <div className="w-full overflow-hidden py-4 sm:py-6 mt-10 sm:mt-14 bg-card border-y border-border">
+    <div className="w-full overflow-hidden py-4 sm:py-6 mt-10 sm:mt-14 bg-card border-y border-border" dir="ltr">
       <div className="relative">
-
-        {/* ✅ Responsive gradient edges */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-10 sm:w-16 md:w-24 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-10 sm:w-16 md:w-24 bg-gradient-to-l from-background to-transparent z-10" />
 
-        {/* ✅ Responsive gap + smooth animation */}
         <div className="flex animate-scroll gap-4 sm:gap-6 md:gap-10 w-max">
 
           {duplicated.map((tech, index) => (

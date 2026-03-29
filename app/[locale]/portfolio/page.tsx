@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
-import getTrans from "@/app/lib/translation";
-import { getBaseUrl, buildPageMetadata } from "@/app/lib/seo";
+import { getDictionary } from "@/app/lib/dictionary";
+import { getBaseUrl, buildPageMetadata } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -58,10 +58,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildPageMetadata({
     locale,
-    baseUrl,
     title,
     description,
-    path: "/portfolio",
+    route: "/portfolio",
     keywords,
   });
 }
@@ -71,7 +70,7 @@ export default async function PortfolioPage({ params }: Props) {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const dict = await getTrans(locale);
+  const dict = await getDictionary(locale);
   const t = dict.pages?.portfolio;
   const isRtl = locale === "ar";
 

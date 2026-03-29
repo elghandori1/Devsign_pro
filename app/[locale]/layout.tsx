@@ -1,13 +1,14 @@
 // app/[locale]/layout.tsx
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Almarai } from "next/font/google";
+import { Roboto, Almarai } from "next/font/google";
 import "../globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
 import Footer from "@/app/components/Footer";
-import getTrans from "@/app/lib/translation";
+import { getDictionary } from "@/app/lib/dictionary";
+import { I18nProvider } from "@/app/providers/i18n-provider";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -21,15 +22,11 @@ const almarai = Almarai({
   preload: true,
 });
 
-const getBaseUrl = () =>
-  (process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com").trim();
-
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const baseUrl = getBaseUrl();
   const { locale: rawLocale } = await params;
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
@@ -51,83 +48,40 @@ export async function generateMetadata({
 
   const keywords = isEnglish
     ? [
-        "Web Developer Morocco",
-        "Website Design Morocco",
-        "SEO Optimization Morocco",
-        "Business Automation Systems",
-        "Responsive Web Design",
-        "Social Media Ads Design",
-        "Facebook Instagram TikTok Ads",
-        "Portfolio Web Developer",
-      ]
+      "Web Developer Morocco",
+      "Website Design Morocco",
+      "SEO Optimization Morocco",
+      "Business Automation Systems",
+      "Responsive Web Design",
+      "Social Media Ads Design",
+      "Facebook Instagram TikTok Ads",
+      "Portfolio Web Developer",
+    ]
     : isArabic
       ? [
-          "مطور ويب المغرب",
-          "تصميم مواقع المغرب",
-          "تحسين محركات البحث المغرب",
-          "أتمتة الأعمال",
-          "موقع ويب متجاوب",
-          "تصميم إعلانات السوشيال ميديا",
-        ]
+        "مطور ويب المغرب",
+        "تصميم مواقع المغرب",
+        "تحسين محركات البحث المغرب",
+        "أتمتة الأعمال",
+        "موقع ويب متجاوب",
+        "تصميم إعلانات السوشيال ميديا",
+      ]
       : [
-          "Développeur web Maroc",
-          "Création site web Maroc",
-          "Optimisation SEO Maroc",
-          "Automatisation entreprise",
-          "Site web responsive",
-          "Design publicité réseaux sociaux",
-        ];
+        "Développeur web Maroc",
+        "Création site web Maroc",
+        "Optimisation SEO Maroc",
+        "Automatisation entreprise",
+        "Site web responsive",
+        "Design publicité réseaux sociaux",
+      ];
 
-  return {
-    metadataBase: new URL(baseUrl),
+  return buildPageMetadata({
+    locale,
     title,
     description,
     keywords,
-    alternates: {
-      canonical: `${baseUrl}/${locale}`,
-      languages: {
-        en: `${baseUrl}/en`,
-        fr: `${baseUrl}/fr`,
-        ar: `${baseUrl}/ar`,
-        "x-default": `${baseUrl}/fr`,
-      },
-    },
-    openGraph: {
-      title,
-      description,
-      url: `${baseUrl}/${locale}`,
-      siteName: "Devsign",
-      images: [
-        {
-          url: `${baseUrl}/og-image.jpg`,
-          width: 1200,
-          height: 630,
-          alt: "Devsign - Web Developer in Morocco",
-        },
-      ],
-      locale: isEnglish ? "en_US" : isArabic ? "ar_MA" : "fr_FR",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [`${baseUrl}/og-image.jpg`],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
-    },
-    icons: {
-      icon: "/favicon.ico",
-    },
-  };
+    route: "",
+  });
 }
 
 export default async function RootLayout({
@@ -142,13 +96,15 @@ export default async function RootLayout({
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const dict = await getTrans(locale);
-  const footerTags = dict?.homepage?.footer_tags ?? null;
+  const dict = await getDictionary(locale as Locale);
   const footer = dict?.homepage?.footer ?? null;
 
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
   const baseUrl = getBaseUrl();
+  const fontClassName = isArabic ? almarai.className : roboto.className;
+  const dir = isArabic ? "rtl" : "ltr";
+
   const jsonLdDescription = isEnglish
     ? "Web developer in Morocco offering website design, SEO optimization, business automation systems, and social media advertising design."
     : isArabic
@@ -172,12 +128,10 @@ export default async function RootLayout({
     serviceType: jsonLdServices,
   };
 
-  const fontClassName = isArabic ? almarai.className : roboto.className;
-  const dir = isArabic ? "rtl" : "ltr";
-
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <body className={`${fontClassName} antialiased`}>
+        <I18nProvider dictionary={dict}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -185,8 +139,9 @@ export default async function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <Navbar lang={locale} />
           <main>{children}</main>
-         <Footer footer={footer} locale={locale} />
+          <Footer footer={footer} locale={locale} />
         </ThemeProvider>
+        </I18nProvider>
       </body>
     </html>
   );

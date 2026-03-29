@@ -6,8 +6,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import { MapPin, ArrowRight, MessageCircle, Calendar, Headphones } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
-import getTrans from "@/app/lib/translation";
-import { getBaseUrl, buildPageMetadata } from "@/app/lib/seo";
+import { getDictionary } from "@/app/lib/dictionary";
+import { getBaseUrl, buildPageMetadata } from "@/app/lib/buildPageMetadata";
 
 const CONTACT_IMAGE = "/images/christopher-campbell-rDEOVtE7vOs-unsplash.jpg";
 
@@ -25,7 +25,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const baseUrl = getBaseUrl();
 
   const title =
     locale === "en"
@@ -50,10 +49,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return buildPageMetadata({
     locale,
-    baseUrl,
     title,
     description,
-    path: "/contact",
+    route: "/contact",
     keywords,
   });
 }
@@ -63,7 +61,7 @@ export default async function ContactPage({ params }: Props) {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const dict = await getTrans(locale);
+  const dict = await getDictionary(locale);
   const t = dict.pages?.contact;
   const isRtl = locale === "ar";
   const waLink = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, "")}`;
@@ -82,12 +80,6 @@ export default async function ContactPage({ params }: Props) {
       href: waLink,
       icon: BsWhatsapp,
       className: "hover:bg-green-500 hover:text-white hover:border-green-500",
-    },
-    {
-      label: t.facebook,
-      href: "https://www.facebook.com/yourpage",
-      icon: FaFacebookF,
-      className: "hover:bg-[#1877f2] hover:text-white hover:border-[#1877f2]",
     },
   ];
 

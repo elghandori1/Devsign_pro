@@ -8,7 +8,7 @@ interface Reason {
 }
 
 interface WhyWeAreTranslations {
-  title: string;
+  sectionLabel: string;
   subtitle: string;
   description: string;
   reasons: Reason[];

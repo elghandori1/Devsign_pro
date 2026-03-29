@@ -1,3 +1,4 @@
+// /app/[locale]/services/page.tsx
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,8 +12,8 @@ import {
 } from "lucide-react";
 
 import { Locale, i18n } from "@/i18n-config";
-import getTrans from "@/app/lib/translation";
-import { getBaseUrl, buildPageMetadata } from "@/app/lib/seo";
+import { getDictionary } from "@/app/lib/dictionary";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 const SERVICE_IMAGES = {
   web: "/images/service-web.jpg",
@@ -35,39 +36,36 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const baseUrl = getBaseUrl();
-
   const title =
     locale === "en"
       ? "Web Development, SEO & AI Automation Services in Morocco | Devsign"
       : locale === "ar"
-      ? "خدمات تطوير الويب، SEO وأتمتة الذكاء الاصطناعي في المغرب | Devsign"
-      : "Services Développement Web, SEO & Automatisation IA au Maroc | Devsign";
+        ? "خدمات تطوير الويب، SEO وأتمتة الذكاء الاصطناعي في المغرب | Devsign"
+        : "Services Développement Web, SEO & Automatisation IA au Maroc | Devsign";
 
   const description =
     locale === "en"
       ? "Expert web development, SEO optimization, AI business automation, and high-converting ad design services in Morocco."
       : locale === "ar"
-      ? "خدمات احترافية في تطوير الويب، تحسين SEO، أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات عالية التحويل."
-      : "Services professionnels au Maroc : développement web, SEO, automatisation IA et design publicitaire.";
+        ? "خدمات احترافية في تطوير الويب، تحسين SEO، أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات عالية التحويل."
+        : "Services professionnels au Maroc : développement web, SEO, automatisation IA et design publicitaire.";
 
   const keywords =
     locale === "en"
       ? [
-          "web development services Morocco",
-          "SEO services Morocco",
-          "AI automation services",
-        ]
+        "web development services Morocco",
+        "SEO services Morocco",
+        "AI automation services",
+      ]
       : locale === "ar"
-      ? ["تطوير الويب المغرب", "SEO المغرب", "أتمتة الأعمال"]
-      : ["développement web Maroc", "SEO Maroc", "automatisation IA"];
+        ? ["تطوير الويب المغرب", "SEO المغرب", "أتمتة الأعمال"]
+        : ["développement web Maroc", "SEO Maroc", "automatisation IA"];
 
   return buildPageMetadata({
     locale,
-    baseUrl,
     title,
     description,
-    path: "/services",
+    route: "/services",
     keywords,
   });
 }
@@ -79,7 +77,7 @@ export default async function ServicesPage({ params }: Props) {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const dict = await getTrans(locale);
+  const dict = await getDictionary(locale);
   const t = dict.pages?.services;
 
   if (!t) return null;
@@ -91,15 +89,15 @@ export default async function ServicesPage({ params }: Props) {
     locale === "en"
       ? "Web Development, SEO & AI Automation Services in Morocco"
       : locale === "ar"
-      ? "خدمات تطوير الويب وSEO وأتمتة الذكاء الاصطناعي"
-      : "Services Développement Web, SEO & Automatisation IA";
+        ? "خدمات تطوير الويب وSEO وأتمتة الذكاء الاصطناعي"
+        : "Services Développement Web, SEO & Automatisation IA";
 
   const description =
     locale === "en"
       ? "Professional services including web development, SEO optimization, and AI automation."
       : locale === "ar"
-      ? "خدمات تشمل تطوير الويب وتحسين SEO وأتمتة الأعمال."
-      : "Services incluant développement web, SEO et automatisation IA.";
+        ? "خدمات تشمل تطوير الويب وتحسين SEO وأتمتة الأعمال."
+        : "Services incluant développement web, SEO et automatisation IA.";
 
   const services = [
     {
@@ -159,8 +157,8 @@ export default async function ServicesPage({ params }: Props) {
           locale === "en"
             ? "Web Development and Digital Services"
             : locale === "ar"
-            ? "الخدمات الرقمية"
-            : "Services Digitaux",
+              ? "الخدمات الرقمية"
+              : "Services Digitaux",
 
         "itemListElement": services.map((svc, index) => ({
           "@type": "ListItem",
@@ -191,7 +189,7 @@ export default async function ServicesPage({ params }: Props) {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd),
         }}
-      
+
       />
       <section className="px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <div className="max-w-6xl mx-auto">
