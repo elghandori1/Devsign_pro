@@ -71,7 +71,7 @@ export default async function PortfolioPage({ params }: Props) {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
   const dict = await getDictionary(locale);
-  const t = dict.pages?.portfolio;
+  const t = dict.pages?.portfolio_page;
   const isRtl = locale === "ar";
 
   if (!t || !t.projects?.length) return null;

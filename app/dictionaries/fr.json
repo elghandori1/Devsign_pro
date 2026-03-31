@@ -10,7 +10,7 @@
     "hero": {
       "title_line1": "Développeur Full-Stack au Maroc, Sites Web optimisés SEO",
       "title_highlight": "& Automatisation Business via l'IA.",
-      "description": "Je suis développeur web full-stack au Maroc et j’aide les startups et les entreprises à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
+      "description": "Je suis un développeur web full-stack au Maroc, aidant les entreprises, les start-ups et les personnes individuelles à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
       "focus": "Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
       "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mon portfolio",
@@ -20,100 +20,81 @@
       "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
     },
     "stats": {
-      "title": "Statistiques Professionnelles",
-      "years": "Années d'expérience",
-      "projects": "Projets réalisés",
-      "systems": "Systèmes livrés",
-      "satisfaction": "Satisfaction client"
-    },
-    "services_section": {
-      "services": {
-        "sectionLabel": "Nos Services",
-        "heading": "Des solutions digitales pour",
-        "highlight": "Élever Votre Entreprise",
-        "viewAll": "Voir Tous les Services",
-        "cta": "En savoir plus",
-        "web": {
-          "title": "Développement de Sites Web Sécurisés et Optimisés SEO",
-          "description": "Création de sites web rapides avec des technologies modernes, en mettant l’accent sur la performance, la sécurité, le design mobile-first et l’optimisation pour les moteurs de recherche afin d’aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
-          "link": "/services/web-development"
-        },
-        "systems": {
-          "title": "Systèmes d’Automatisation et Solutions IA pour Entreprises",
-          "description": "Outils logiciels sur mesure, automatisation des workflows et intégrations d’intelligence artificielle pour simplifier les opérations, réduire les tâches répétitives et permettre à votre entreprise de fonctionner plus rapidement et plus efficacement.",
-          "link": "/services/business-systems"
-        },
-        "design": {
-          "title": "Design Publicitaire pour les Réseaux Sociaux",
-          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l’attention et augmenter l’engagement ainsi que les ventes.",
-          "link": "/services/social-design"
-        }
-      }
-    },
-    "contact_section": {
-      "about_me": {
-        "sectionLabel": "À propos de moi",
-        "subtitle": "Votre partenaire pour ",
-        "highlight": "la réussite digitale",
-        "paragraph1": "Je suis un développeur et designer concentré sur la création de solutions digitales performantes et optimisées pour le référencement (SEO) qui génèrent de réels résultats commerciaux. Mon expertise est soutenue par un historique avéré d'excellence, comprenant des premières places à Al Akhawayn et à l'UM6P Ben Guerir, et une deuxième place à l'UM6P Rabat, entre autres. J'apporte ce même niveau de précision, de créativité et d'engagement à chaque projet sur lequel je travaille.",
-        "paragraph2": "Que vous ayez besoin d'un site web sur mesure, d'un système d'entreprise, ou de visuels percutants pour les réseaux sociaux et les publicités, je me concentre sur la qualité, une communication claire et des résultats qui développent votre marque.",
-        "cta": "Plus sur moi"
-      }
-    },
-    "why_we_are_section": {
-      "why_we_are": {
-        "sectionLabel": "Pourquoi me choisir",
-        "description": "J'aide les entreprises et les startups à construire des solutions digitales puissantes qui ne sont pas seulement esthétiques : elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
-        "subtitle": "Ce qui fait de moi le bon partenaire pour votre réussite",
-        "reasons": [
-          {
-            "title": "Qualité et Performance",
-            "description": "Des sites web et systèmes légers et rapides, construits selon les meilleures pratiques et avec des technologies modernes."
-          },
-          {
-            "title": "Mobile-First et SEO",
-            "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils."
-          },
-          {
-            "title": "Communication Claire",
-            "description": "Processus transparent, mises à jour régulières et assistance pour que vous soyez toujours informé."
-          },
-          {
-            "title": "Résultats Fiables",
-            "description": "Axé sur la livraison et la satisfaction client avec des résultats mesurables."
-          }
-        ]
-      }
-    },
-    "projects_section": {
-      "sectionLabel": "Réalisations",
-      "subtitle": "Projets récents qui génèrent des résultats",
-      "projects": [
+      "items": [
         {
-          "title": "Site Web d'Entreprise & Croissance SEO",
-          "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
-          "tech": "Next.js, SEO Optimization, Mongodb",
-          "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "Voir l'étude de cas"
+          "value": 20,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Clients satisfaits",
+          "subtext": "À travers le Maroc"
         },
         {
-          "title": "Dashboard d'Automatisation d'Entreprise",
-          "description": "Création d'un tableau de bord personnalisé pour gérer les clients, les abonnements et les opérations commerciales en un seul endroit. Fonctionnalités incluant le suivi des dates de début/fin d'abonnement, la gestion des prix, la gestion des stocks et des alertes automatisées pour les services expirés. Cette solution a considérablement amélioré l'organisation, réduit le travail manuel et optimisé la gestion client.",
-          "tech": "React, Node.js, REST API",
-          "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "Voir l'étude de cas"
+          "value": 4,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Ans d'expérience",
+          "subtext": "Excellence digitale"
         },
         {
-          "title": "Design pour Réseaux Sociaux & Publicités",
-          "description": "Création de visuels à fort taux de conversion pour les réseaux sociaux, en transformant des images de produits simples en contenu marketing professionnel. Chaque design intègre un message clair, une identité de marque et des éléments d'appel à l'action pour augmenter l'engagement et encourager les achats sur des plateformes comme Instagram et Facebook.",
-          "tech": "Photoshop, Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "Voir l'étude de cas"
+          "value": 95,
+          "prefix": "",
+          "suffix": "%",
+          "text": "Taux de réussite",
+          "subtext": "Satisfaction client"
+        },
+        {
+          "value": 24,
+          "prefix": "",
+          "suffix": "/7",
+          "text": "Support",
+          "subtext": "Assistance dédiée"
         }
       ]
     },
-    "contact": {
-      "title": "Prenez Contact",
+    "services_section": {
+      "sectionLabel": "Nos Services",
+      "heading": "Des solutions digitales pour",
+      "highlight": "Élever Votre Entreprise",
+      "viewAll": "Voir Tous les Services",
+      "cta": "En savoir plus"
+    },
+    "about_section": {
+      "sectionLabel": "À propos de moi",
+      "subtitle": "Votre partenaire pour ",
+      "highlight": "la réussite digitale",
+      "paragraph1": "Je suis un développeur et designer concentré sur la création de solutions digitales performantes et optimisées pour le référencement (SEO) qui génèrent de réels résultats commerciaux. Mon expertise est soutenue par un historique avéré d'excellence, comprenant des premières places à Al Akhawayn et à l'UM6P Ben Guerir, et une deuxième place à l'UM6P Rabat, entre autres. J'apporte ce même niveau de précision, de créativité et d'engagement à chaque projet sur lequel je travaille.",
+      "paragraph2": "Que vous ayez besoin d'un site web sur mesure, d'un système d'entreprise, ou de visuels percutants pour les réseaux sociaux et les publicités, je me concentre sur la qualité, une communication claire et des résultats qui développent votre marque.",
+      "cta": "Plus sur moi"
+    },
+    "why_we_are_section": {
+      "sectionLabel": "Pourquoi me choisir",
+      "description": "J’aide les entreprises, les start-ups et les personnes individuelles à créer des solutions numériques puissantes qui ne se contentent pas d’être belles — elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
+      "subtitle": "Ce qui fait de moi le bon partenaire pour votre réussite",
+      "reasons": [
+        {
+          "title": "Qualité et Performance",
+          "description": "Des sites web et systèmes légers et rapides, construits selon les meilleures pratiques et avec des technologies modernes."
+        },
+        {
+          "title": "Mobile-First et SEO",
+          "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils."
+        },
+        {
+          "title": "Communication Claire",
+          "description": "Processus transparent, mises à jour régulières et assistance pour que vous soyez toujours informé."
+        },
+        {
+          "title": "Résultats Fiables",
+          "description": "Axé sur la livraison et la satisfaction client avec des résultats mesurables."
+        }
+      ]
+    },
+    "projects_section": {
+      "sectionLabel": "Réalisations",
+      "subtitle": "Projets récents qui génèrent des résultats"
+    },
+    "contact_section": {
+      "sectionLabel": "Prenez Contact",
       "description": "Prêt à commencer votre projet de site web, système ou design ? Contactez-moi via le canal de votre choix.",
       "cta": "Discutons de votre projet",
       "whatsapp": "WhatsApp",
@@ -131,111 +112,80 @@
       "instagramLabel": "abonnés",
       "instagramCta": "Visiter Instagram",
       "brandName": "Instagram"
-    },
-    "footer_tags": {
-      "title": "Recherches Populaires",
-      "tags": [
-        "Sites Web",
-        "Logiciels",
-        "Design Produit",
-        "Publicités & Médias",
-        "Travail Sur Mesure"
-      ]
-    },
-    "footer": {
-      "brandName": "Devsign",
-      "brandTagline": "Freelance",
-      "email": "devsignprofessional@gmail.com",
-      "phone": "+212 6 12 34 56 78",
-      "address": "Casablanca, Maroc",
-      "aboutTitle": "Explorer",
-      "links": [
-        {
-          "label": "À propos",
-          "href": "/about"
-        },
-        {
-          "label": "Services",
-          "href": "/services"
-        },
-        {
-          "label": "Projets",
-          "href": "/projects"
-        },
-        {
-          "label": "Blog",
-          "href": "/blog"
-        },
-        {
-          "label": "Contact",
-          "href": "/contact"
-        }
-      ],
-      "followTitle": "Suivez-moi",
-      "copyright": "© {year} Devsign. Tous droits réservés.",
-      "privacyPolicy": "Politique de confidentialité",
-      "termsOfService": "Conditions d'utilisation",
-      "cookiePolicy": "Politique des cookies"
     }
   },
   "pages": {
-    "services": {
+    "services_page": {
       "title": "Services",
-      "subtitle": "Ce que je propose",
+      "subtitle": "Services que nous proposons",
       "heading": "Des solutions digitales pour faire grandir votre entreprise",
-      "description": "Des sites web légers et optimisés SEO à l'automatisation et l'intégration IA, en passant par le design publicitaire à fort taux de conversion — j'accompagne les startups et PME en ligne.",
-      "web": {
-        "title": "Développement Web Moderne",
-        "description": "Sites légers et rapides pensés pour le référencement. Je crée des sites SEO, mobile-first, qui se positionnent bien et convertissent. Idéal pour se lancer en ligne ou moderniser sa présence.",
-        "features": [
-          "Optimisé SEO",
-          "Mobile-first",
-          "Chargement rapide",
-          "Structure claire"
-        ]
+      "description": "Des sites web optimisés SEO aux systèmes d'automatisation IA, en passant par la création publicitaire performante. J'accompagne startups, entreprises et particuliers vers la réussite en ligne.",
+      "services": {
+        "web": {
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "title": "Développement de Sites Web Sécurisés et Optimisés SEO",
+          "description": "Création de sites web rapides avec des technologies modernes, en mettant l’accent sur la performance, la sécurité, le design mobile-first et l’optimisation pour les moteurs de recherche afin d’aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
+          "link": "/services/web-development",
+          "features": [
+            "Optimisé SEO",
+            "Mobile-first",
+            "Chargement rapide",
+            "Structure claire"
+          ]
+        },
+        "systems": {
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "title": "Systèmes d’Automatisation et Solutions IA pour Entreprises",
+          "description": "Outils logiciels sur mesure, automatisation des workflows et intégrations d’intelligence artificielle pour simplifier les opérations, réduire les tâches répétitives et permettre à votre entreprise de fonctionner plus rapidement et plus efficacement.",
+          "link": "/services/business-systems",
+          "features": [
+            "Automatisation",
+            "Intégration IA",
+            "Tableaux de bord",
+            "Évolutif"
+          ]
+        },
+        "design": {
+          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
+          "title": "Design Publicitaire pour les Réseaux Sociaux",
+          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l’attention et augmenter l’engagement ainsi que les ventes.",
+          "link": "/services/social-design",
+          "features": [
+            "Pub réseaux sociaux",
+            "Visuels produits",
+            "Cohérence de marque",
+            "Fort taux de conversion"
+          ]
+        }
       },
-      "systems": {
-        "title": "Systèmes & IA",
-        "description": "Automatisation sur mesure et intégration IA pour simplifier vos processus. De l'automatisation des flux à des outils intelligents, pour gagner du temps et scaler.",
-        "features": [
-          "Automatisation",
-          "Intégration IA",
-          "Tableaux de bord",
-          "Évolutif"
-        ]
-      },
-      "design": {
-        "title": "Design Publicitaire & Médias",
-        "description": "Contenus visuels pour les réseaux et publicités qui mettent en valeur vos produits et services. Créations pour Instagram, Facebook et TikTok conçues pour l'engagement et les ventes.",
-        "features": [
-          "Pub réseaux sociaux",
-          "Visuels produits",
-          "Cohérence de marque",
-          "Fort taux de conversion"
-        ]
-      },
-      "cta": "Discuter de votre projet",
+      "cta": "En savoir plus sur ce service",
+      "Success_stories": "Histoires de succès",
+      "Selected_projects": "Projets sélectionnés",
+      "Real_results": "Résultats concrets que nous avons livrés pour nos clients",
+      "View_All_Projects": "Voir tous les projets",
       "whyChooseUs": {
         "title": "Pourquoi Nous Choisir",
         "subtitle": "Ce qui distingue nos services",
         "reasons": [
           {
-            "title": "Résultats prouvés",
-            "text": "Sites et systèmes qui se positionnent, convertissent et évoluent — avec des résultats concrets pour startups et PME."
+            "title": "Résultats de confiance",
+            "text": "Des sites web et des systèmes qui se classent, convertissent et évoluent avec des résultats concrets pour les start-ups et les petites entreprises."
           },
           {
-            "title": "Expertise full-stack",
-            "text": "Du design front-end à la logique backend, SEO et automatisation — un seul partenaire pour toute votre stack digitale."
+            "title": "Expertise complète (Full-stack)",
+            "text": "Du design front-end à la logique back-end, en passant par le SEO et l'automatisation un seul partenaire pour toute votre stack numérique."
           },
           {
-            "title": "Sans enfermement",
-            "text": "Code propre, technologies standard et documentation claire pour que vous restiez propriétaire de votre projet."
+            "title": "Qualité & Performance",
+            "text": "Code propre, technologies standards et documentation claire vous possédez votre projet et pouvez le maintenir ou l'étendre à tout moment."
           }
-        ],
-        "imageCaption": "Des solutions qui performent"
-      }
+        ]
+      },
+        "ctat_title": "Prêt à Transformer Votre Présence Digitale ?",
+      "cta_desc": "Discutons de la façon dont nos services peuvent vous aider à atteindre vos objectifs.",
+      "cta_btn": "Commencer Aujourd'hui"
     },
-    "about": {
+    "about_page": {
       "title": "À Propos de Moi",
       "subtitle": "Votre partenaire pour la réussite digitale",
       "heading": "Développeur et designer axé sur les résultats",
@@ -315,29 +265,38 @@
       ],
       "cta": "Me contacter"
     },
-    "portfolio": {
+    "portfolio_page": {
       "title": "Mes Projets",
       "subtitle": "Réalisations sélectionnées",
       "heading": "Des projets qui génèrent des résultats",
       "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
       "projects": [
         {
-          "title": "Plateforme E-Commerce",
-          "description": "Boutique en ligne full-stack avec panier, paiement et admin. Conçue pour un chargement rapide et un taux de conversion élevé.",
-          "tech": "Next.js, Stripe, PostgreSQL",
-          "category": "Développement Web"
+          "title": "Site Web d'Entreprise & Croissance SEO",
+          "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
+          "tech": "Next.js, SEO Optimization, Mongodb",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "Voir l'étude de cas",
+          "href": "/portfolio/ecommerce-platform",
+          "category": "Développement Web & SEO"
         },
         {
-          "title": "Tableau de bord d'automatisation",
-          "description": "CRM et automatisation des processus. Réduction des tâches manuelles de 60 % et reporting amélioré.",
-          "tech": "React, Node.js, API REST",
-          "category": "Systèmes & IA"
+          "title": "Dashboard d'Automatisation d'Entreprise",
+          "description": "Création d'un tableau de bord personnalisé pour gérer les clients, les abonnements et les opérations commerciales en un seul endroit. Fonctionnalités incluant le suivi des dates de début/fin d'abonnement, la gestion des prix, la gestion des stocks et des alertes automatisées pour les services expirés. Cette solution a considérablement amélioré l'organisation, réduit le travail manuel et optimisé la gestion client.",
+          "tech": "React, Node.js, REST API",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "href": "/portfolio/ecommerce-platform",
+          "category": "Systèmes & Automatisation par IA"
         },
         {
-          "title": "Identité & Publicités réseaux",
-          "description": "Identité visuelle et créations pour Instagram et Facebook. Système de design cohérent qui a augmenté l'engagement.",
-          "tech": "Design system, Ads Manager",
-          "category": "Design"
+          "title": "Design pour Réseaux Sociaux & Publicités",
+          "description": "Création de visuels à fort taux de conversion pour les réseaux sociaux, en transformant des images de produits simples en contenu marketing professionnel. Chaque design intègre un message clair, une identité de marque et des éléments d'appel à l'action pour augmenter l'engagement et encourager les achats sur des plateformes comme Instagram et Facebook.",
+          "tech": "Photoshop, Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "href": "/portfolio/ecommerce-platform",
+          "category": "Création de publicités"
         }
       ],
       "viewCase": "Voir l'étude de cas",
@@ -361,7 +320,7 @@
         ]
       }
     },
-    "contact": {
+    "contact_page": {
       "title": "Contactez-nous",
       "subtitle": "Parlons de votre projet",
       "heading": "Prêt à renforcer votre présence en ligne ?",
@@ -390,5 +349,40 @@
         ]
       }
     }
+  },
+  "footer": {
+    "brandName": "Devsign",
+    "brandTagline": "Freelance",
+    "email": "devsignprofessional@gmail.com",
+    "phone": "+212 6 12 34 56 78",
+    "address": "Casablanca, Maroc",
+    "aboutTitle": "Explorer",
+    "links": [
+      {
+        "label": "À propos",
+        "href": "/about"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Projets",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "followTitle": "Suivez-moi",
+    "copyright": "© {year} Devsign. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique des cookies"
   }
 }

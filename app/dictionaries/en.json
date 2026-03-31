@@ -10,7 +10,7 @@
     "hero": {
       "title_line1": "Full-Stack Web Developer in Morocco",
       "title_highlight": "Building SEO-Optimized Websites & AI Business Automation",
-      "description": "I’m a Full-Stack Web Developer in Morocco helping startups and businesses build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
+      "description": "I'm a full-stack web developer in Morocco, helping enterprises, startups, and individual persons build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
       "focus": "My focus is simple: performance, scalability, and real results for growing businesses.",
       "cta_primary": "Start Your Project",
       "cta_secondary": "View Portfolio",
@@ -20,103 +20,84 @@
       "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
     },
     "stats": {
-      "title": "Professional Statistics",
-      "years": "Years of Experience",
-      "projects": "Projects Completed",
-      "systems": "Systems Delivered",
-      "satisfaction": "Client Satisfaction"
-    },
-    "services_section": {
-      "services": {
-        "sectionLabel": "Our Services",
-        "heading": "Smart Digital Solutions to",
-        "highlight": "Elevate Your Business",
-        "viewAll": "View All Services",
-        "cta": "Learn More",
-        "web": {
-          "title": "Secure & SEO-Optimized Website Development",
-          "description": "Build fast websites with modern technologies, focusing on performance, security, mobile-first design, and search engine optimization to help your business rank higher and convert visitors into clients.",
-          "link": "/services/web-development"
-        },
-        "systems": {
-          "title": "Business Automation & AI-Powered Systems",
-          "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
-          "link": "/services/business-systems"
-        },
-        "design": {
-          "title": "Social Media Advertising Design",
-          "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
-          "link": "/services/social-design"
-        }
-      }
-    },
-    "contact_section": {
-      "about_me": {
-        "sectionLabel": "About Me",
-        "subtitle": "Your partner for ",
-        "highlight": "digital success",
-        "paragraph1": "I’m a developer and designer focused on building high-performance, SEO-optimized digital solutions that deliver real business results. My expertise is backed by a proven track record of excellence, including 1st place wins at Al Akhawayn and UM6P Ben Guerir, and 2nd place at UM6P Rabat and more. I bring this same level of precision, creativity, and commitment to every project I work on.",
-        "paragraph2": "Whether you need a custom website, a business system, or eye-catching visuals for social media and ads, I focus on quality, clear communication, and results that grow your brand.",
-        "cta": "More About Me"
-      }
-    },
-    "why_we_are_section": {
-      "why_we_are": {
-        "sectionLabel": "Why Work With Me",
-        "description": "I help businesses and startups build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real results and long-term value.",
-        "subtitle": "What makes me the right partner for your success",
-        "reasons": [
-          {
-            "title": "Quality & Performance",
-            "description": "Lightweight, fast websites and systems built with best practices and modern tech."
-          },
-          {
-            "title": "Mobile-First & SEO",
-            "description": "Every project is responsive and optimized for search engines and all devices."
-          },
-          {
-            "title": "Clear Communication",
-            "description": "Transparent process, regular updates, and support so you're always in the loop."
-          },
-          {
-            "title": "Trusted Results",
-            "description": "Focused on delivery and client satisfaction with measurable outcomes."
-          }
-        ]
-      }
-    },
-    "projects_section": {
-      "sectionLabel": "Selected Work",
-      "subtitle": "Recent projects that drive results",
-      "projects": [
+      "items": [
         {
-          "title": "Corporate Website & SEO Growth",
-          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. The platform achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
-          "tech": "Next.js, SEO Optimization, Mongodb",
-          "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "View case study"
+          "value": 20,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Happy Clients",
+          "subtext": "Across Morocco"
         },
         {
-          "title": "Business Automation Dashboard",
-          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services. This solution significantly improved organization, reduced manual work, and enhanced client management.",
-          "tech": "React, Node.js, REST API",
-          "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "View case study"
+          "value": 4,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Years Experience",
+          "subtext": "Digital Excellence"
         },
         {
-          "title": "Social Media Design & Ads",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and call-to-action elements to increase engagement and encourage purchases across platforms like Instagram and Facebook.",
-          "tech": "Photoshop, Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study"
+          "value": 95,
+          "prefix": "",
+          "suffix": "%",
+          "text": "Success Rate",
+          "subtext": "Client Satisfaction"
+        },
+        {
+          "value": 24,
+          "prefix": "",
+          "suffix": "/7",
+          "text": "Support",
+          "subtext": "Dedicated Assistance"
         }
       ]
     },
-    "contact": {
-      "title": "Get in Touch",
+    "services_section": {
+      "sectionLabel": "Our Services",
+      "heading": "Smart Digital Solutions to",
+      "highlight": "Elevate Your Business",
+      "viewAll": "View All Services",
+      "cta": "Learn More"
+    },
+    "about_section": {
+      "sectionLabel": "About Me",
+      "subtitle": "Your partner for ",
+      "highlight": "digital success",
+      "paragraph1": "I’m a developer and designer focused on building high-performance, SEO-optimized digital solutions that deliver real business results. My expertise is backed by a proven track record of excellence, including 1st place wins at Al Akhawayn and UM6P Ben Guerir, and 2nd place at UM6P Rabat and more. I bring this same level of precision, creativity, and commitment to every project I work on.",
+      "paragraph2": "Whether you need a custom website, a business system, or eye-catching visuals for social media and ads, I focus on quality, clear communication, and results that grow your brand.",
+      "cta": "More About Me"
+    },
+    "why_we_are_section": {
+      "sectionLabel": "Why Work With Me",
+      "description": "I help businesses, startups, and individuals build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real results and long-term value.",
+      "subtitle": "What makes me the right partner for your success",
+      "reasons": [
+        {
+          "title": "Quality & Performance",
+          "description": "Lightweight, fast websites and systems built with best practices and modern tech."
+        },
+        {
+          "title": "Mobile-First & SEO",
+          "description": "Every project is responsive and optimized for search engines and all devices."
+        },
+        {
+          "title": "Clear Communication",
+          "description": "Transparent process, regular updates, and support so you're always in the loop."
+        },
+        {
+          "title": "Trusted Results",
+          "description": "Focused on delivery and client satisfaction with measurable outcomes."
+        }
+      ]
+    },
+    "projects_section": {
+      "sectionLabel": "Selected Work",
+      "subtitle": "Recent projects that drive results"
+    },
+    "contact_section": {
+      "sectionLabel": "Get in Touch",
       "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
       "cta": "Let's discuss your project",
-      "cta_message":"",
+      "cta_message": "",
       "whatsapp": "WhatsApp",
       "phoneNumber": "+212 6 12 34 56 78",
       "whatsappNumber": "212612345678",
@@ -132,101 +113,80 @@
       "instagramLabel": "followers",
       "instagramCta": "Visit Instagram",
       "brandName": "Instagram"
-    },
-    "footer": {
-      "brandName": "Devsign",
-      "brandTagline": "Freelance",
-      "email": "devsignprofessional@gmail.com",
-      "phone": "+212 6 12 34 56 78",
-      "address": "Casablanca, Morocco",
-      "aboutTitle": "Explore",
-      "links": [
-        {
-          "label": "About",
-          "href": "/about"
-        },
-        {
-          "label": "Services",
-          "href": "/services"
-        },
-        {
-          "label": "Projects",
-          "href": "/projects"
-        },
-        {
-          "label": "Blog",
-          "href": "/blog"
-        },
-        {
-          "label": "Contact",
-          "href": "/contact"
-        }
-      ],
-      "followTitle": "Follow me",
-      "copyright": "© {year} Devsign. All rights reserved.",
-      "privacyPolicy": "Privacy Policy",
-      "termsOfService": "Terms of Service",
-      "cookiePolicy": "Cookie Policy"
     }
   },
   "pages": {
-    "services": {
+    "services_page": {
       "title": "Services",
-      "subtitle": "What I offer",
+      "subtitle": "Services We Provide",
       "heading": "Web Development, SEO & AI Automation Services in Morocco",
-      "description": "From lightweight SEO-optimized websites to business automation and AI integration, and high-converting ad design — I help startups and SMBs succeed online.",
-      "web": {
-        "title": "Modern Web Development",
-        "description": "Lightweight, fast websites built for search engines. I create SEO-optimized, mobile-first sites that rank well and convert visitors into customers. Ideal for businesses going online or refreshing their presence.",
-        "features": [
-          "SEO-optimized",
-          "Mobile-first",
-          "Fast loading",
-          "Clear structure"
-        ]
+      "description": "From lightweight SEO-optimized websites to business automation and AI integration, and high-converting ad design. I help startups, enterprises, and individuals succeed online with cutting-edge digital solutions.",
+      "services": {
+        "web": {
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "title": "Secure & SEO-Optimized Website Development",
+          "description": "Build fast websites with modern technologies, focusing on performance, security, mobile-first design, and search engine optimization to help your business rank higher and convert visitors into clients.",
+          "link": "/services/web-development",
+          "features": [
+            "SEO-optimized",
+            "Mobile-first",
+            "Fast loading",
+            "Clear structure"
+          ]
+        },
+        "systems": {
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "title": "Business Automation & AI-Powered Systems",
+          "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
+          "link": "/services/business-systems",
+          "features": [
+            "Workflow automation",
+            "AI integration",
+            "Custom dashboards",
+            "Scalable"
+          ]
+        },
+        "design": {
+          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
+          "title": "Social Media Ad Design",
+          "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
+          "link": "/services/social-design",
+          "features": [
+            "Social ads",
+            "Product visuals",
+            "Brand consistency",
+            "High conversion"
+          ]
+        }
       },
-      "systems": {
-        "title": "Business Systems & AI",
-        "description": "Custom automation and AI integration to streamline operations. From workflow automation to intelligent tools, I help you save time and scale without extra overhead.",
-        "features": [
-          "Workflow automation",
-          "AI integration",
-          "Custom dashboards",
-          "Scalable"
-        ]
-      },
-      "design": {
-        "title": "Ad & Media Design",
-        "description": "Visual content for social media and ads that showcase your products and services. Professional creatives for Instagram, Facebook, and TikTok designed to drive engagement and sales.",
-        "features": [
-          "Social ads",
-          "Product visuals",
-          "Brand consistency",
-          "High conversion"
-        ]
-      },
-      "cta": "Discuss your project",
+      "cta": "Read more about this service",
+      "Success_stories": "Success Stories",
+      "Selected_projects": "Selected Projects",
+      "Real_results": "Real results we've delivered for our clients",
+      "View_All_Projects": "View All Projects",
       "whyChooseUs": {
         "title": "Why We're the Best Choice",
         "subtitle": "What sets our services apart",
         "reasons": [
           {
-            "title": "Proven track record",
-            "text": "Websites and systems that rank, convert, and scale — with real results for startups and SMBs."
+            "title": "Trusted Results",
+            "text": "Websites and systems that rank, convert, and scale with real results for startups and small businesses."
           },
           {
             "title": "Full-stack expertise",
-            "text": "From front-end design to backend logic, SEO, and automation — one partner for your whole digital stack."
+            "text": "From front-end design to backend logic, SEO, and automation one partner for your entire digital stack."
           },
           {
-            "title": "No lock-in",
-            "text": "Clean code, standard tech, and clear documentation so you own your project and can maintain or extend it."
+            "title": "Quality & Performance",
+            "text": "Clean code, standard technologies, and clear documentation so you own your project and can maintain or extend it anytime."
           }
-        ],
-        "imageCaption": "Building solutions that perform"
-      }
+        ]
+      },
+      "ctat_title": "Ready to Transform Your Digital Presence?",
+      "cta_desc": "Let's discuss how our services can help you achieve your business goals.",
+      "cta_btn": "Get Started Today"
     },
-    "about": {
+    "about_page": {
       "title": "About Me",
       "subtitle": "Your partner for digital success",
       "heading": "Developer & designer focused on real results",
@@ -235,7 +195,7 @@
       "paragraph2": "My approach combines modern tech, performance, and clarity. I help you reach more customers, automate repetitive tasks, and present your offer in a way that converts.",
       "whoIAm": {
         "title": "Who I Am",
-        "text": "I'm Mohammed — a full-stack developer, SEO specialist, and designer with a passion for turning ideas into high-performing digital products. I work with startups and SMBs who want to stand out online: from ranking on Google to automating workflows and designing ads that convert. I believe in clean code, clear communication, and results you can measure."
+        "text": "I'm Mohammed a full-stack developer, SEO specialist, and designer with a passion for turning ideas into high-performing digital products. I work with startups and SMBs who want to stand out online: from ranking on Google to automating workflows and designing ads that convert. I believe in clean code, clear communication, and results you can measure."
       },
       "storyMissionValues": {
         "title": "Discover the story, mission, and values that drive me",
@@ -306,29 +266,38 @@
       ],
       "cta": "Get in touch"
     },
-    "portfolio": {
+    "portfolio_page": {
       "title": "My Work",
       "subtitle": "Selected projects",
       "heading": "Projects that drive results",
       "description": "A selection of websites, systems, and design work delivered for startups and businesses.",
       "projects": [
         {
-          "title": "E-Commerce Platform",
-          "description": "Full-stack online store with cart, checkout, and admin. Built for fast loading and high conversion.",
-          "tech": "Next.js, Stripe, PostgreSQL",
-          "category": "Web Development"
+          "title": "Corporate Website & SEO Growth",
+          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. The platform achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
+          "tech": "Next.js, SEO Optimization, Mongodb",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "View case study",
+          "href": "/portfolio/ecommerce-platform",
+          "category": "Web Development & SEO"
         },
         {
           "title": "Business Automation Dashboard",
-          "description": "Custom CRM and workflow automation. Reduced manual tasks by 60% and improved reporting.",
+          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services. This solution significantly improved organization, reduced manual work, and enhanced client management.",
           "tech": "React, Node.js, REST API",
-          "category": "Systems & AI"
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "View case study",
+          "href": "/portfolio/business-automation-dashboard",
+          "category": "Systems & AI Automation"
         },
         {
-          "title": "Brand & Social Ads",
-          "description": "Visual identity and ad creatives for Instagram and Facebook. Consistent design system that increased engagement.",
-          "tech": "Design system, Ads Manager",
-          "category": "Design"
+          "title": "Social Media Design & Ads",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and call-to-action elements to increase engagement and encourage purchases across platforms like Instagram and Facebook.",
+          "tech": "Photoshop, Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "href": "/portfolio/social-campaign",
+          "category": "Ad Design"
         }
       ],
       "viewCase": "View case study",
@@ -352,7 +321,7 @@
         ]
       }
     },
-    "contact": {
+    "contact_page": {
       "title": "Contact Us",
       "subtitle": "Let's talk about your project",
       "heading": "Ready to grow your presence online?",
@@ -368,7 +337,7 @@
         "reasons": [
           {
             "title": "Free initial consultation",
-            "text": "We'll discuss your goals and see if we're a good fit — no commitment."
+            "text": "We'll discuss your goals and see if we're a good fit no commitment."
           },
           {
             "title": "Clear pricing & timeline",
@@ -381,5 +350,40 @@
         ]
       }
     }
+  },
+  "footer": {
+    "brandName": "Devsign",
+    "brandTagline": "Freelance",
+    "email": "devsignprofessional@gmail.com",
+    "phone": "+212 6 12 34 56 78",
+    "address": "Casablanca, Morocco",
+    "aboutTitle": "Explore",
+    "links": [
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "followTitle": "Follow me",
+    "copyright": "© {year} Devsign. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
   }
 }

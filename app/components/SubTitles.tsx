@@ -1,12 +1,8 @@
-interface Translations {
-  sectionLabel: string;
-}
 
-export default function SubTitle({ translations }: { translations: Translations }) {
-  if (!translations) {
+export default function SubTitle({ sectionLabel }: { sectionLabel: string }) {
+  if (!sectionLabel) {
     return null;
   }
-  const { sectionLabel } = translations;
 
   return (
   <div className="bg-transparent py-6 sm:py-8 mt-6 sm:mt-8 px-2">

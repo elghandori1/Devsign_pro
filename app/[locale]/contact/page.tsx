@@ -4,7 +4,13 @@ import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { MapPin, ArrowRight, MessageCircle, Calendar, Headphones } from "lucide-react";
+import {
+  MapPin,
+  ArrowRight,
+  MessageCircle,
+  Calendar,
+  Headphones,
+} from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { getBaseUrl, buildPageMetadata } from "@/app/lib/buildPageMetadata";
@@ -62,7 +68,7 @@ export default async function ContactPage({ params }: Props) {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
   const dict = await getDictionary(locale);
-  const t = dict.pages?.contact;
+  const t = dict.pages?.contact_page;
   const isRtl = locale === "ar";
   const waLink = `https://wa.me/${WHATSAPP_NUMBER.replace(/\D/g, "")}`;
 
@@ -73,7 +79,8 @@ export default async function ContactPage({ params }: Props) {
       label: t.email,
       href: `mailto:${EMAIL}`,
       icon: MdEmail,
-      className: "hover:bg-primary hover:text-primary-foreground hover:border-primary",
+      className:
+        "hover:bg-primary hover:text-primary-foreground hover:border-primary",
     },
     {
       label: t.whatsapp,
@@ -96,9 +103,7 @@ export default async function ContactPage({ params }: Props) {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
             {t.heading}
           </h1>
-          <p className="text-lg text-muted-foreground mb-12">
-            {t.description}
-          </p>
+          <p className="text-lg text-muted-foreground mb-12">{t.description}</p>
 
           <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 sm:gap-6">
             {channels.map((item) => {
@@ -108,7 +113,11 @@ export default async function ContactPage({ params }: Props) {
                   key={item.label}
                   href={item.href}
                   target={item.href.startsWith("http") ? "_blank" : undefined}
-                  rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  rel={
+                    item.href.startsWith("http")
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
                   className={`
                     inline-flex items-center gap-3 px-6 py-4 rounded-xl border-2 border-border
                     bg-card text-foreground font-medium transition-all duration-300
@@ -170,7 +179,7 @@ export default async function ContactPage({ params }: Props) {
                         </p>
                       </div>
                     );
-                  }
+                  },
                 )}
               </div>
               <div className="relative aspect-[21/9] max-w-2xl mx-auto rounded-2xl overflow-hidden border border-border bg-card">

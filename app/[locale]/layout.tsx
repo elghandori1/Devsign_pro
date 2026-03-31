@@ -97,7 +97,7 @@ export default async function RootLayout({
     : i18n.defaultLocale;
 
   const dict = await getDictionary(locale as Locale);
-  const footer = dict?.homepage?.footer ?? null;
+  const footer = dict?.footer ?? null;
 
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";

@@ -1,93 +1,64 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
-interface AnimatedCounterProps {
-  value: string | number;
-}
-
-export default function AnimatedCounter({ value }: AnimatedCounterProps) {
-  const num = typeof value === "number" ? value : parseInt(value as string) || 0;
-  const suffix = typeof value === "string" ? value.replace(/[\d.]+/, "") : "";
-  const [currentValue, setCurrentValue] = useState<number>(0);
-  const [isInView, setIsInView] = useState<boolean>(false);
-  const [key, setKey] = useState<number>(0);
-  const ref = useRef<HTMLParagraphElement>(null);
-
-  // Detect when section is in view
-useEffect(() => {
-  const observer = new IntersectionObserver(
-    ([entry]) => {
-      if (entry.isIntersecting) {
-        setIsInView(true);
-      }
-    },
-    { threshold: 0.1 }
-  );
-
-  const currentRef = ref.current;
-  if (currentRef) observer.observe(currentRef);
-
-  return () => {
-    if (currentRef) observer.unobserve(currentRef);
-  };
-}, []);
+export default function AnimatedCounter({
+  value,
+  prefix = "",
+  suffix = "",
+}: {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+}) {
+  const [count, setCount] = useState(0);
+  const ref = useRef<HTMLDivElement>(null);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) setStarted(true);
+      },
+      { threshold: 0.4 }
+    );
 
-    // Initial animation
-    const initialTimer = setTimeout(() => {
-      const step = num / 20;
-      let current = 0;
-      const interval = setInterval(() => {
-        current += step;
-        if (current >= num) {
-          current = num;
-          clearInterval(interval);
-        }
-        setCurrentValue(current);
-      }, 100);
-    }, 100);
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
 
-    // Loop every 5s after first animation
-    const loopInterval = setInterval(() => {
-      setKey((prev) => prev + 1);
-      setCurrentValue(0);
+  useEffect(() => {
+    if (!started) return;
 
-      setTimeout(() => {
-        const step = num / 20;
-        let current = 0;
-        const animateInterval = setInterval(() => {
-          current += step;
-          if (current >= num) {
-            current = num;
-            clearInterval(animateInterval);
-          }
-          setCurrentValue(current);
-        }, 100);
-      }, 50);
-    }, 5000);
+    let start = 0;
+    const duration = 1200;
+    const step = value / (duration / 16);
 
-    return () => {
-      clearTimeout(initialTimer);
-      clearInterval(loopInterval);
-    };
-  }, [isInView, num]);
+    const interval = setInterval(() => {
+      start += step;
 
-  const displayValue = Math.min(Math.round(currentValue), num) + suffix;
+      if (start >= value) {
+        setCount(value);
+        clearInterval(interval);
+      } else {
+        setCount(Math.floor(start));
+      }
+    }, 16);
+
+    return () => clearInterval(interval);
+  }, [started, value]);
 
   return (
-    <p
+    <div
       ref={ref}
-      key={key}
-      className="text-xl font-bold text-primary sm:text-4xl md:text-5xl transition-all duration-300 ease-out stats-animate"
+      className="tabular-nums"
       style={{
-        opacity: currentValue === 0 ? 0.7 : 1,
-        transform: currentValue === 0 ? "scale(0.95)" : "scale(1)",
+        fontVariantNumeric: "tabular-nums",
       }}
     >
-      {displayValue}
-    </p>
+      {prefix}
+      {count}
+      {suffix}
+    </div>
   );
 }

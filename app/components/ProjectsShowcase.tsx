@@ -1,20 +1,18 @@
+// components/ProjectsShowcase.tsx
 import { Locale } from "@/i18n-config";
-import ProjectsShowcaseSlider, { type ProjectItem } from "./ProjectsShowcaseSlider";
+import ProjectsShowcaseSlider, { ProjectItem } from "./ProjectsShowcaseSlider";
 import TechnologySlider from "./TechnologySlider";
 
-interface ProjectsSectionTranslations {
-  sectionLabel: string;
-  subtitle: string;
-  projects: ProjectItem[];
-}
 
 interface ProjectsShowcaseProps {
-  translations: ProjectsSectionTranslations;
+  translations: string;
+  projectsData: ProjectItem[];
   locale: Locale;
 }
 
 export default function ProjectsShowcase({
   translations,
+  projectsData,
   locale,
 }: ProjectsShowcaseProps) {
   const isRtl = locale === "ar";
@@ -26,14 +24,14 @@ export default function ProjectsShowcase({
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <h3 className="text-center mb-8">
+        <div className="text-center mb-8">
           <p id="projects-heading" className="text-muted-foreground max-w-xl mx-auto">
-            {translations.subtitle}
+            {translations}
           </p>
-        </h3>
-        <ProjectsShowcaseSlider projects={translations.projects} locale={locale} />
+        </div>
+        <ProjectsShowcaseSlider projects={projectsData} locale={locale} />
       </div>
-      <TechnologySlider/>
+      <TechnologySlider />
     </section>
   );
 }

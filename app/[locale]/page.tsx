@@ -26,9 +26,7 @@ export async function generateStaticParams() {
   return [{ locale: "en" }, { locale: "fr" }, { locale: "ar" }];
 }
 
-export async function generateMetadata({
-  params,
-}: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
@@ -51,36 +49,36 @@ export async function generateMetadata({
 
   const keywords = isEnglish
     ? [
-      "Full-Stack Developer Morocco",
-      "SEO Specialist Morocco",
-      "Web Design Agency Morocco",
-      "AI Automation Agency Morocco",
-      "Business Automation Systems",
-      "Next.js Developer Morocco",
-      "Social Media Ads Expert",
-      "Social Media Ads Design",
-      "Facebook Instagram TikTok Ads",
-    ]
+        "Full-Stack Developer Morocco",
+        "SEO Specialist Morocco",
+        "Web Design Agency Morocco",
+        "AI Automation Agency Morocco",
+        "Business Automation Systems",
+        "Next.js Developer Morocco",
+        "Social Media Ads Expert",
+        "Social Media Ads Design",
+        "Facebook Instagram TikTok Ads",
+      ]
     : isArabic
       ? [
-        "مطور ويب المغرب",
-        "تصميم مواقع المغرب",
-        "خبير سيو المغرب",
-        "تحسين محركات البحث",
-        "أتمتة الأعمال بالذكاء الاصطناعي",
-        "انشاء موقع الكتروني",
-        "وكالة ويب المغرب",
-      ]
+          "مطور ويب المغرب",
+          "تصميم مواقع المغرب",
+          "خبير سيو المغرب",
+          "تحسين محركات البحث",
+          "أتمتة الأعمال بالذكاء الاصطناعي",
+          "انشاء موقع الكتروني",
+          "وكالة ويب المغرب",
+        ]
       : [
-        "Création site web Maroc",
-        "Développeur Web Freelance Maroc",
-        "Expert SEO Maroc",
-        "Référencement Naturel Maroc",
-        "Automatisation IA Maroc",
-        "Agence Web Maroc",
-        "Développeur Next.js",
-        "Site Web Responsive",
-      ];
+          "Création site web Maroc",
+          "Développeur Web Freelance Maroc",
+          "Expert SEO Maroc",
+          "Référencement Naturel Maroc",
+          "Automatisation IA Maroc",
+          "Agence Web Maroc",
+          "Développeur Next.js",
+          "Site Web Responsive",
+        ];
 
   return buildPageMetadata({
     locale,
@@ -110,109 +108,125 @@ export default async function Home({ params }: Props) {
       ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الاحترافية، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات منصات التواصل الاجتماعي."
       : "Développeur web au Maroc spécialisé en création de sites web professionnels, optimisation SEO, automatisation d'entreprise par IA et conception publicitaire pour les réseaux sociaux.";
 
-  const jobTitle = isEnglish ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer" : isArabic ? "مطور Full-Stack وخبير SEO وأتمتة الأعمال بالذكاء الاصطناعي" : "Développeur Full-Stack, Expert SEO & Automatisation IA";
-  const webPageName = isEnglish ? "Full-Stack Web Developer Morocco — Website Design, SEO & AI Automation" : isArabic ? "مطور ويب في المغرب — تطوير مواقع، خبير SEO وأتمتة الأعمال بالذكاء الاصطناعي" : "Développeur Web Full-Stack Maroc — Création Site Web, SEO & Automatisation IA";
-  const webPageDescription = isEnglish ? "Professional Full-Stack Web Developer in Morocco. I build modern websites, provide SEO optimisation, AI business automation and high-converting digital solutions." : isArabic ? "مطور ويب محترف في المغرب متخصص في تطوير مواقع الويب الحديثة، تحسين محركات البحث وأتمتة الأعمال بالذكاء الاصطناعي." : "Développeur web full-stack au Maroc spécialisé en création de sites modernes, optimisation SEO et automatisation IA.";
-  const catalogName = isEnglish ? "Digital Services" : isArabic ? "الخدمات الرقمية" : "Services Digitaux";
+  const jobTitle = isEnglish
+    ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer"
+    : isArabic
+      ? "مطور Full-Stack وخبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
+      : "Développeur Full-Stack, Expert SEO & Automatisation IA";
+  const webPageName = isEnglish
+    ? "Full-Stack Web Developer Morocco — Website Design, SEO & AI Automation"
+    : isArabic
+      ? "مطور ويب في المغرب — تطوير مواقع، خبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
+      : "Développeur Web Full-Stack Maroc — Création Site Web, SEO & Automatisation IA";
+  const webPageDescription = isEnglish
+    ? "Professional Full-Stack Web Developer in Morocco. I build modern websites, provide SEO optimisation, AI business automation and high-converting digital solutions."
+    : isArabic
+      ? "مطور ويب محترف في المغرب متخصص في تطوير مواقع الويب الحديثة، تحسين محركات البحث وأتمتة الأعمال بالذكاء الاصطناعي."
+      : "Développeur web full-stack au Maroc spécialisé en création de sites modernes, optimisation SEO et automatisation IA.";
+  const catalogName = isEnglish
+    ? "Digital Services"
+    : isArabic
+      ? "الخدمات الرقمية"
+      : "Services Digitaux";
 
   const services: Array<{ name: string; description: string }> = isEnglish
     ? [
-      {
-        name: "Website Design & Development",
-        description:
-          "Custom, responsive websites built with Next.js and modern front-end technologies, optimised for speed, accessibility and conversion.",
-      },
-      {
-        name: "SEO Optimisation",
-        description:
-          "Technical and on-page SEO audits, keyword strategy, structured data implementation and Core Web Vitals improvements to rank higher on Google.",
-      },
-      {
-        name: "AI Business Automation",
-        description:
-          "End-to-end workflow automation using AI tools and APIs to reduce manual tasks, increase efficiency and scale business operations.",
-      },
-      {
-        name: "Social Media Advertising Design",
-        description:
-          "High-converting ad creatives and campaigns for Facebook, Instagram and other platforms, designed to maximise ROI.",
-      },
-      {
-        name: "Responsive Web Development",
-        description:
-          "Mobile-first development ensuring flawless performance on every screen size and device.",
-      },
-      {
-        name: "Next.js Web Development",
-        description:
-          "Server-side rendered and statically generated web applications built with Next.js for outstanding performance and SEO.",
-      },
-    ]
-    : isArabic
-      ? [
         {
-          name: "تصميم وتطوير المواقع الاحترافية",
+          name: "Website Design & Development",
           description:
-            "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
+            "Custom, responsive websites built with Next.js and modern front-end technologies, optimised for speed, accessibility and conversion.",
         },
         {
-          name: "تحسين محركات البحث (SEO)",
+          name: "SEO Optimisation",
           description:
-            "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
+            "Technical and on-page SEO audits, keyword strategy, structured data implementation and Core Web Vitals improvements to rank higher on Google.",
         },
         {
-          name: "أتمتة الأعمال بالذكاء الاصطناعي",
+          name: "AI Business Automation",
           description:
-            "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
+            "End-to-end workflow automation using AI tools and APIs to reduce manual tasks, increase efficiency and scale business operations.",
         },
         {
-          name: "تصميم إعلانات منصات التواصل الاجتماعي",
+          name: "Social Media Advertising Design",
           description:
-            "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
+            "High-converting ad creatives and campaigns for Facebook, Instagram and other platforms, designed to maximise ROI.",
         },
         {
-          name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
+          name: "Responsive Web Development",
           description:
-            "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
+            "Mobile-first development ensuring flawless performance on every screen size and device.",
         },
         {
-          name: "تطوير مواقع باستخدام Next.js",
+          name: "Next.js Web Development",
           description:
-            "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
+            "Server-side rendered and statically generated web applications built with Next.js for outstanding performance and SEO.",
         },
       ]
+    : isArabic
+      ? [
+          {
+            name: "تصميم وتطوير المواقع الاحترافية",
+            description:
+              "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
+          },
+          {
+            name: "تحسين محركات البحث (SEO)",
+            description:
+              "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
+          },
+          {
+            name: "أتمتة الأعمال بالذكاء الاصطناعي",
+            description:
+              "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
+          },
+          {
+            name: "تصميم إعلانات منصات التواصل الاجتماعي",
+            description:
+              "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
+          },
+          {
+            name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
+            description:
+              "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
+          },
+          {
+            name: "تطوير مواقع باستخدام Next.js",
+            description:
+              "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
+          },
+        ]
       : [
-        {
-          name: "Création de Sites Web Professionnels",
-          description:
-            "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
-        },
-        {
-          name: "Optimisation SEO",
-          description:
-            "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
-        },
-        {
-          name: "Automatisation d'Entreprise par IA",
-          description:
-            "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
-        },
-        {
-          name: "Design Publicitaire pour Réseaux Sociaux",
-          description:
-            "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
-        },
-        {
-          name: "Développement Web Responsive",
-          description:
-            "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
-        },
-        {
-          name: "Développement Web Sur-Mesure Next.js",
-          description:
-            "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
-        },
-      ];
+          {
+            name: "Création de Sites Web Professionnels",
+            description:
+              "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
+          },
+          {
+            name: "Optimisation SEO",
+            description:
+              "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
+          },
+          {
+            name: "Automatisation d'Entreprise par IA",
+            description:
+              "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
+          },
+          {
+            name: "Design Publicitaire pour Réseaux Sociaux",
+            description:
+              "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
+          },
+          {
+            name: "Développement Web Responsive",
+            description:
+              "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
+          },
+          {
+            name: "Développement Web Sur-Mesure Next.js",
+            description:
+              "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
+          },
+        ];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -375,7 +389,7 @@ export default async function Home({ params }: Props) {
   };
 
   return (
-    <div className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
+    <main className="bg-background text-foreground transition-colors duration-300 min-h-screen hero-section-light">
       <Script
         id="home-jsonld"
         type="application/ld+json"
@@ -515,34 +529,36 @@ export default async function Home({ params }: Props) {
       </ScrollReveal>
 
       <ScrollReveal delay={0.04}>
-        <SubTitle translations={t.services_section.services} />
-        <ServicesGrid t={t.services_section} locale={locale} />
-      </ScrollReveal>
-
-      <ScrollReveal delay={0.05}>
-        <SubTitle translations={t.contact_section.about_me} />
-        <AboutMeSection
-          translations={t.contact_section.about_me}
+        <SubTitle sectionLabel={t.services_section.sectionLabel} />
+        <ServicesGrid
+          sectionData={t.services_section}
+          servicesData={dict.pages.services_page.services}
           locale={locale}
         />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <SubTitle translations={t.why_we_are_section.why_we_are} />
-        <WhyWeAreSection
-          translations={t.why_we_are_section.why_we_are}
+        <SubTitle sectionLabel={t.about_section.sectionLabel} />
+        <AboutMeSection translations={t.about_section} locale={locale} />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={t.why_we_are_section.sectionLabel} />
+        <WhyWeAreSection translations={t.why_we_are_section} locale={locale} />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={t.projects_section.sectionLabel} />
+        <ProjectsShowcase
+          translations={t.projects_section.subtitle}
+          projectsData={dict.pages.portfolio_page.projects}
           locale={locale}
         />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <SubTitle translations={t.projects_section} />
-        <ProjectsShowcase translations={t.projects_section} locale={locale} />
+        <ContactSection translations={t.contact_section} locale={locale} />
       </ScrollReveal>
-
-      <ScrollReveal delay={0.05}>
-        <ContactSection translations={t.contact} locale={locale} />
-      </ScrollReveal>
-    </div>
+    </main>
   );
 }

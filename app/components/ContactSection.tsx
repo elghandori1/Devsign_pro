@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { Users } from "lucide-react";
 
 interface ContactTranslations {
-  title: string;
+  sectionLabel: string;
   description: string;
   cta: string;
   email: string;
@@ -46,7 +46,7 @@ export default function ContactSection({
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-4">
-            {translations.title}
+            {translations.sectionLabel}
           </h2>
           <div className="w-12 h-0.5 bg-primary rounded-full mx-auto mb-6" />
           <p className="text-muted-foreground leading-relaxed">
@@ -152,9 +152,9 @@ export default function ContactSection({
 
         {/* Bottom CTA */}
         <div className="text-center mt-10">
-          <div className="inline-flex px-6 py-3 text-primary font-semibold">
-            {translations.cta}
-          </div>
+          <i className="inline-flex px-6 py-3 text-primary font-semibold">
+           "{translations.cta}" 
+          </i>
         </div>
       </div>
     </section>

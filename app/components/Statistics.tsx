@@ -1,57 +1,66 @@
+"use client";
+
+import { Users, Clock, BarChart3, Shield } from "lucide-react";
 import AnimatedCounter from "./AnimatedCounter";
-interface StatsTranslations {
-  title: string;
-  years: string;
-  projects: string;
-  satisfaction: string;
-  systems: string;
+
+interface StatItem {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  text: string;
+  subtext: string;
 }
 
-export default function Statistics({ translations }: { translations: StatsTranslations }) {
-  if (!translations) return null;
+interface StatsTranslations {
+  items: StatItem[];
+}
 
-  const stats = [
-    { value: "3+", label: translations.years },
-    { value: "9+", label: translations.projects },
-    { value: "4+", label: translations.systems },
-    { value: "98%", label: translations.satisfaction },
-  ];
+export default function Statistics({
+  translations,
+}: {
+  translations: StatsTranslations;
+}) {
+  if (!translations?.items) return null;
+
+  const icons = [Users, Clock, BarChart3, Shield];
 
   return (
-    <section
-      aria-labelledby="stats-title"
-      className="max-w-7xl mx-auto p-4 fade-in-section"
-    >
-      <h2
-        id="stats-title"
-        className="sr-only" 
-      >
-        {translations.title || "Company Statistics"}
-      </h2>
+    <section className="max-w-7xl mx-auto p-4 fade-in-section">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-4">
+        {translations.items.map((item, idx) => {
+          const Icon = icons[idx];
 
-      {/* Stats Card */}
-      <div className="transition-colors border border-border bg-card/85 backdrop-blur-md shadow-md duration-300 rounded-xl py-6 sm:py-8">
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 px-4">
-
-          {stats.map((stat, index) => (
+          return (
             <div
-              key={index}
-              className="group flex flex-col items-center text-center p-4 sm:p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1"
+              key={idx}
+              className="text-center group p-4 rounded-xl transition hover:bg-card/50"
             >
-              <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-2">
-                <AnimatedCounter value={stat.value} />
+              {/* Icon */}
+              <div className="text-primary w-10 h-10 mx-auto mb-3 group-hover:scale-110 transition">
+                <Icon className="w-10 h-10" />
               </div>
 
-              <p className="text-xs sm:text-sm md:text-base font-medium text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                {stat.label}
-              </p>
+              {/* Counter */}
+              <div className="font-bold text-2xl md:text-3xl text-foreground">
+                <AnimatedCounter
+                  value={item.value}
+                  prefix={item.prefix}
+                  suffix={item.suffix}
+                />
+              </div>
 
-              <div className="w-12 h-0.5 bg-primary/20 rounded-full mt-3 group-hover:w-16 group-hover:bg-primary/40 transition-all duration-300"></div>
+              {/* Text */}
+              <div className="text-sm md:text-base font-medium text-foreground">
+                {item.text}
+              </div>
+
+              {/* Subtext */}
+              <div className="text-xs text-muted-foreground">
+                {item.subtext}
+              </div>
             </div>
-          ))}
-
-        </div>
+          );
+        })}
       </div>
     </section>
   );
