@@ -445,7 +445,7 @@ export default async function Home({ params }: Props) {
               </Link>
 
               <Link
-                href={`/${locale}/services`}
+                href={`/${locale}/portfolio`}
                 className="px-8 py-3.5 bg-card hover:bg-card/80 border border-input text-foreground font-semibold rounded-md transition-all flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-95 shadow-sm"
               >
                 {t.hero.cta_secondary}
@@ -460,7 +460,7 @@ export default async function Home({ params }: Props) {
             <div className="w-full max-w-[260px] sm:max-w-sm flex flex-col">
               <div className="aspect-square overflow-hidden border-2 border-primary/20 rounded-lg">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
                   alt={t.hero.profile_name}
                   width={480}
                   height={480}
@@ -557,7 +557,7 @@ export default async function Home({ params }: Props) {
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <ContactSection translations={t.contact_section} locale={locale} />
+        <ContactSection translations={t.contact_section} />
       </ScrollReveal>
     </main>
   );

@@ -29,7 +29,7 @@
           "subtext": "Across Morocco"
         },
         {
-          "value": 4,
+          "value": 5,
           "prefix": "+",
           "suffix": "",
           "text": "Years Experience",
@@ -62,8 +62,8 @@
       "sectionLabel": "About Me",
       "subtitle": "Your partner for ",
       "highlight": "digital success",
-      "paragraph1": "I’m a developer and designer focused on building high-performance, SEO-optimized digital solutions that deliver real business results. My expertise is backed by a proven track record of excellence, including 1st place wins at Al Akhawayn and UM6P Ben Guerir, and 2nd place at UM6P Rabat and more. I bring this same level of precision, creativity, and commitment to every project I work on.",
-      "paragraph2": "Whether you need a custom website, a business system, or eye-catching visuals for social media and ads, I focus on quality, clear communication, and results that grow your brand.",
+      "paragraph1": "I’m a developer and designer with experience building modern digital solutions. I’ve participated in several hackathons, winning 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat, along with participating in other hackathons. I’ve also worked on projects for clients in Morocco, helping them build websites, automate business processes, and create social media ads that convert.",
+      "paragraph2": "Through working on real projects and competing in hackathons, I’ve gained valuable experience that I now focus on using to create high-quality websites, business systems, and digital solutions.",
       "cta": "More About Me"
     },
     "why_we_are_section": {
@@ -96,7 +96,6 @@
     "contact_section": {
       "sectionLabel": "Get in Touch",
       "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
-      "cta": "Let's discuss your project",
       "cta_message": "",
       "whatsapp": "WhatsApp",
       "phoneNumber": "+212 6 12 34 56 78",
@@ -119,8 +118,8 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services We Provide",
-      "heading": "Web Development, SEO & AI Automation Services in Morocco",
-      "description": "From lightweight SEO-optimized websites to business automation and AI integration, and high-converting ad design. I help startups, enterprises, and individuals succeed online with cutting-edge digital solutions.",
+      "heading": "Expert Web Development, SEO & Custom AI Automation in Morocco",
+      "description": "Looking for professional web development, SEO optimization, or AI automation services in Morocco? We build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -159,7 +158,7 @@
           ]
         }
       },
-      "cta": "Read more about this service",
+     "cta": "Contact us to learn more",
       "Success_stories": "Success Stories",
       "Selected_projects": "Selected Projects",
       "Real_results": "Real results we've delivered for our clients",
@@ -170,7 +169,7 @@
         "reasons": [
           {
             "title": "Trusted Results",
-            "text": "Websites and systems that rank, convert, and scale with real results for startups and small businesses."
+            "text": "We deliver websites and systems that rank, convert, and scale, providing tangible results for enterprises, startups, and individuals."
           },
           {
             "title": "Full-stack expertise",
@@ -272,6 +271,32 @@
       "description": "A curated collection of work spanning client projects, personal builds, and academic research.",
       "viewCase": "View case study",
       "cta": "Start a project together",
+      "ui": {
+        "displayModes": {
+          "combined": "Combined View",
+          "byType": "By Project Type"
+        },
+        "filters": {
+          "all": "All Projects",
+          "professional": "Client Work",
+          "personal": "Personal Projects",
+          "academic": "Academic Projects"
+        },
+        "typeLabels": {
+          "professional": "Client",
+          "personal": "Personal",
+          "academic": "Academic"
+        },
+        "sections": {
+          "professional": "Client Projects",
+          "personal": "Personal Projects",
+          "academic": "Academic Projects"
+        },
+        "emptyStateTitle": "No projects found",
+        "emptyStateText": "Try selecting another project category.",
+        "ctaTitle": "Ready to bring your vision to life?",
+        "ctaDescription": "Let's discuss your next project and build a fast, SEO-focused digital experience."
+      },
       "projects": [
         {
           "title": "Corporate Website & SEO Growth",
@@ -281,6 +306,7 @@
           "linkLabel": "View case study",
           "category": "Web Development & SEO",
           "type": "professional",
+          "status": "online",
           "href": "/portfolio/ecommerce-platform"
         },
         {
@@ -291,6 +317,7 @@
           "linkLabel": "View case study",
           "category": "Systems & Automation",
           "type": "professional",
+          "status": "local enterprise",
           "href": "/portfolio/business-automation-dashboard"
         },
         {
@@ -301,27 +328,30 @@
           "linkLabel": "View case study",
           "category": "Ad Design",
           "type": "professional",
-          "href": "/portfolio/social-campaign"
-        },
-          {
-          "title": "Open Source CLI Toolkit",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
-          "category": "Ad Design",
-          "type": "personal",
+          "status": "used for campaign ads",
           "href": "/portfolio/social-campaign"
         },
         {
-          "title": "Dev Portfolio — This Site",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
+          "title": "Open Source CLI Toolkit",
+          "description": "Built a reusable command-line toolkit that automates repetitive development tasks and improves team productivity. Includes modular commands, configuration support, and clear documentation for onboarding.",
+          "tech": "Node.js, TypeScript, Commander.js",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "View case study",
-          "category": "Ad Design",
+          "category": "Developer Tools",
           "type": "personal",
-          "href": "/portfolio/social-campaign"
+          "status": "online",
+          "href": "/portfolio/business-automation-dashboard"
+        },
+        {
+          "title": "Academic Research Portal",
+          "description": "Designed and implemented a university portal prototype for managing research submissions, supervisor feedback, and project status tracking. Focused on usability, data structure, and accessible interface patterns.",
+          "tech": "React, PostgreSQL, Express",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "View case study",
+          "category": "Education Platform",
+          "type": "academic",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
         }
       ],
       "whyChooseUs": {

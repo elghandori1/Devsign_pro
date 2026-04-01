@@ -19,11 +19,49 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(locale);
   const data = dict.pages?.portfolio_page;
 
-  const title = data?.heading || (locale === "en" ? "My Work | Portfolio — Web, Systems & Design — Devsign" : locale === "ar" ? "أعمالي | معرض أعمال — ويب، أنظمة وتصميم — ديفساين" : "Mes Projets | Portfolio — Web, Systèmes & Design — Devsign");
+  const title =
+    data?.heading ||
+    (locale === "en"
+      ? "Portfolio Projects | Web Development, SEO & Automation"
+      : locale === "ar"
+        ? "معرض المشاريع | تطوير ويب، سيو وأتمتة"
+        : "Portfolio Projets | Développement Web, SEO et Automatisation");
 
-  const description = data?.description || (locale === "en" ? "Selected projects: e-commerce, business automation, and ad design. Websites and systems that drive results for startups and businesses." : locale === "ar" ? "مشاريع مختارة: تجارة إلكترونية، أتمتة أعمال، وتصميم إعلانات. مواقع وأنظمة تحقق النتائج." : "Projets sélectionnés : e-commerce, automatisation et design. Sites et systèmes qui génèrent des résultats.");
+  const description =
+    data?.description ||
+    (locale === "en"
+      ? "Browse professional, personal, and academic projects in web development, SEO, and automation. Fast, modern solutions built to deliver results."
+      : locale === "ar"
+        ? "تصفح مشاريع احترافية وشخصية وأكاديمية في تطوير الويب والسيو والأتمتة. حلول سريعة وحديثة تحقق نتائج عملية."
+        : "Découvrez des projets professionnels, personnels et académiques en développement web, SEO et automatisation.");
 
-  const keywords = locale === "en" ? ["portfolio", "projects", "web development", "e-commerce", "automation", "design"] : locale === "ar" ? ["أعمالي", "مشاريع", "تطوير ويب", "تصميم"] : ["portfolio", "projets", "développement web", "design"];
+  const keywords =
+    locale === "en"
+      ? [
+          "portfolio projects",
+          "web development portfolio",
+          "SEO case studies",
+          "business automation projects",
+          "client and personal projects",
+          "academic web projects",
+        ]
+      : locale === "ar"
+        ? [
+            "معرض المشاريع",
+            "مشاريع تطوير ويب",
+            "دراسات حالة سيو",
+            "مشاريع أتمتة الأعمال",
+            "مشاريع شخصية واحترافية",
+            "مشاريع أكاديمية",
+          ]
+        : [
+            "portfolio projets",
+            "projets développement web",
+            "études de cas SEO",
+            "projets automatisation entreprise",
+            "projets clients et personnels",
+            "projets académiques",
+          ];
 
   return buildPageMetadata({
     locale,

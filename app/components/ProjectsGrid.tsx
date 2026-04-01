@@ -58,7 +58,6 @@ export default function ProjectsGrid({
   const filtered =
     active === "all" ? projects : projects.filter((p) => p.type === active);
 
-  // Animate indicator under active tab
   useEffect(() => {
     const idx = filterKeys.indexOf(active);
     const btn = tabRefs.current[idx];

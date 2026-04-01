@@ -29,7 +29,7 @@
           "subtext": "في جميع أنحاء المغرب"
         },
         {
-          "value": 4,
+          "value": 5,
           "prefix": "+",
           "suffix": "",
           "text": "سنوات خبرة",
@@ -62,8 +62,8 @@
       "sectionLabel": "عنّي",
       "subtitle": "شريكك نحو ",
       "highlight": "النجاح الرقمي",
-      "paragraph1": "أنا مطوّر ومصمّم أركز على بناء حلول رقمية عالية الأداء ومُحسّنة لمحركات البحث (SEO) تحقق نتائج أعمال حقيقية. خبرتي مدعومة بسجل حافل من التميز، ويشمل ذلك الفوز بالمركز الأول في جامعة الأخوين وجامعة محمد السادس متعددة التخصصات التقنية ببن جرير، والمركز الثاني في جامعة محمد السادس متعددة التخصصات التقنية بالرباط وغيرها. أجلب هذا المستوى نفسه من الدقة والإبداع والالتزام إلى كل مشروع أعمل عليه.",
-      "paragraph2": "سواء كنت بحاجة إلى موقع ويب مخصص، أو نظام أعمال، أو صور مرئية جذابة لوسائل التواصل الاجتماعي والإعلانات، فأنا أركز على الجودة، والتواصل الواضح، والنتائج التي تنمي علامتك التجارية.",
+      "paragraph1": "أنا مطور ومصمم أملك خبرة في بناء حلول رقمية حديثة. شاركت في عدة هاكاثونات، حيث حصلت على المركز الأول في جامعة الأخوين و UM6P بن جرير، والمركز الثاني في UM6P الرباط، إضافة إلى مشاركتي في هاكاثونات أخرى. كما عملت على مشاريع مع عملاء في المغرب، ساعدتهم في إنشاء مواقع إلكترونية، وأتمتة العمليات التجارية، وتصميم إعلانات لوسائل التواصل الاجتماعي تحقق نتائج فعالة.",
+      "paragraph2": "من خلال العمل على مشاريع حقيقية والمشاركة في الهاكاثونات، اكتسبت خبرة قيّمة أركز اليوم على استثمارها في إنشاء مواقع إلكترونية عالية الجودة، وأنظمة للأعمال، وحلول رقمية فعالة.",
       "cta": "المزيد عنّي"
     },
     "why_we_are_section": {
@@ -96,7 +96,6 @@
     "contact_section": {
       "sectionLabel": "تواصل معي",
       "description": "مستعد لبدء مشروع موقع الويب، النظام، أو التصميم الخاص بك؟ تواصل معي عبر القناة التي تفضلها.",
-      "cta": "لنتناقش حول مشروعك",
       "whatsapp": "واتساب",
       "phoneNumber": "+212 6 12 34 56 78",
       "whatsappNumber": "212612345678",
@@ -118,8 +117,8 @@
     "services_page": {
       "title": "الخدمات",
       "subtitle": "الخدمات التي نقدمها",
-      "heading": "حلول رقمية لتنمية أعمالك",
-      "description": "من مواقع الويب المحسنة لمحركات البحث إلى أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم الإعلانات عالية الأداء. أساعد الشركات الناشئة والمؤسسات والأفراد على النجاح عبر الإنترنت.",
+      "heading": "تطوير ويب احترافي، تحسين SEO وأتمتة الذكاء الاصطناعي في المغرب",
+      "description": "هل تبحث عن خدمات تطوير ويب احترافية، تحسين SEO، أو أتمتة بالذكاء الاصطناعي في المغرب؟ نبني مواقع ويب محسنة لمحركات البحث، نطور أنظمة أتمتة أعمال تعمل بالذكاء الاصطناعي، ونصمم إعلانات عالية التحويل لوسائل التواصل الاجتماعي. موثوق من قبل الشركات الناشئة والمؤسسات لتحقيق نتائج ملموسة، زيادة الظهور عبر الإنترنت، ودفع نمو المبيعات.",
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -158,7 +157,7 @@
           ]
         }
       },
-      "cta": "اقرأ المزيد عن هذه الخدمة",
+      "cta":  "اتصل بنا لمعرفة المزيد",
       "Success_stories": "قصص النجاح",
       "Selected_projects": "مشاريع مختارة",
       "Real_results": "نتائج حقيقية حققناها لعملائنا",
@@ -169,7 +168,7 @@
         "reasons": [
           {
             "title": "نتائج موثوقة",
-            "text": "مواقع وأنظمة تظهر في المراتب الأولى، وتحول الزوار إلى عملاء، وتتوسع معك بنتائج حقيقية للشركات الناشئة والصغيرة."
+            "text": "نقدم مواقع وأنظمة تضمن الظهور، والتحويل، والتوسع، لتحقيق نتائج ملموسة للشركات الكبرى، والناشئة، والأفراد."
           },
           {
             "title": "خبرة متكاملة (Full-stack)",
@@ -271,6 +270,32 @@
       "description": "اختيار من مواقع وأنظمة وتصاميم تم تنفيذها لشركات ناشئة وأعمال.",
       "viewCase": "عرض دراسة الحالة",
       "cta": "ابدأ مشروعك",
+      "ui": {
+        "displayModes": {
+          "combined": "عرض موحد",
+          "byType": "حسب نوع المشروع"
+        },
+        "filters": {
+          "all": "كل المشاريع",
+          "professional": "مشاريع العملاء",
+          "personal": "مشاريع شخصية",
+          "academic": "مشاريع أكاديمية"
+        },
+        "typeLabels": {
+          "professional": "عميل",
+          "personal": "شخصي",
+          "academic": "أكاديمي"
+        },
+        "sections": {
+          "professional": "مشاريع العملاء",
+          "personal": "المشاريع الشخصية",
+          "academic": "المشاريع الأكاديمية"
+        },
+        "emptyStateTitle": "لا توجد مشاريع",
+        "emptyStateText": "جرّب اختيار فئة أخرى.",
+        "ctaTitle": "جاهز لتحويل فكرتك إلى واقع؟",
+        "ctaDescription": "دعنا نناقش مشروعك القادم ونبني تجربة سريعة ومحسنة لمحركات البحث."
+      },
       "projects": [
         {
           "title": "موقع لشركة ,احترافي ومحسن مع محركات البحث",
@@ -280,6 +305,7 @@
           "linkLabel": "عرض دراسة الحالة",
           "category": "تطوير الويب وSEO",
           "type": "professional",
+          "status": "أونلاين",
           "href": "/portfolio/ecommerce-platform"
         },
         {
@@ -290,6 +316,7 @@
           "linkLabel": "عرض دراسة الحالة",
           "category": "الأنظمة وأتمتة الذكاء الاصطناعي",
           "type": "professional",
+          "status": "في مقر المؤسسة",
           "href": "/portfolio/ecommerce-platform"
         },
         {
@@ -299,31 +326,33 @@
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "عرض دراسة الحالة",
           "category": "تصميم الإعلانات",
+          "status": "مستخدم لحملات الإعلانات",
           "type": "professional",
           "href": "/portfolio/ecommerce-platform"
         },
-         {
+        {
           "title": "Open Source CLI Toolkit",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
-          "category": "Ad Design",
+          "description": "تطوير مجموعة أدوات سطر أوامر مفتوحة المصدر لأتمتة المهام المتكررة في التطوير وتحسين إنتاجية الفريق.",
+          "tech": "Node.js, TypeScript, Commander.js",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "عرض دراسة الحالة",
+          "category": "أدوات المطورين",
           "type": "personal",
-          "href": "/portfolio/social-campaign"
+          "status": "online",
+          "href": "/portfolio/business-automation-dashboard"
         },
         {
-          "title": "Dev Portfolio — This Site",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
-          "category": "Ad Design",
-          "type": "personal",
-          "href": "/portfolio/social-campaign"
+          "title": "بوابة أبحاث أكاديمية",
+          "description": "تصميم نموذج بوابة جامعية لإدارة تسليم الأبحاث، ملاحظات المشرفين، وتتبع تقدم المشاريع الأكاديمية.",
+          "tech": "React, PostgreSQL, Express",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "عرض دراسة الحالة",
+          "category": "منصة تعليمية",
+          "type": "academic",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
         }
       ],
-
       "whyChooseUs": {
         "title": "لماذا يختار العملاء أعمالي",
         "subtitle": "كل مشروع يُبنى لتحقيق النتائج",

@@ -8,7 +8,6 @@ import { Users } from "lucide-react";
 interface ContactTranslations {
   sectionLabel: string;
   description: string;
-  cta: string;
   email: string;
   emailAddress: string;
   emailHref: string;
@@ -28,12 +27,10 @@ interface ContactTranslations {
 
 interface ContactSectionProps {
   translations: ContactTranslations;
-  locale: Locale;
 }
 
 export default function ContactSection({
   translations,
-  locale,
 }: ContactSectionProps) {
   if (!translations) return null;
 
@@ -148,13 +145,6 @@ export default function ContactSection({
               {translations.instagramCta} →
             </span>
           </Link>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-10">
-          <i className="inline-flex px-6 py-3 text-primary font-semibold">
-           "{translations.cta}" 
-          </i>
         </div>
       </div>
     </section>

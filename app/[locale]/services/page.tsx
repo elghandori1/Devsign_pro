@@ -9,7 +9,6 @@ import {
   Code2,
   FileCheck,
   Briefcase,
-  Layers,
 } from "lucide-react";
 
 import { Locale, i18n } from "@/i18n-config";
@@ -103,10 +102,10 @@ export default async function ServicesPage({ params }: Props) {
 
   const description =
     locale === "en"
-      ? "Professional services including web development, SEO optimization, and AI automation."
+      ? "Professional web development, SEO optimization, and AI automation services in Morocco. Boost your online presence with expert digital solutions."
       : locale === "ar"
-        ? "خدمات تشمل تطوير الويب وتحسين SEO وأتمتة الأعمال."
-        : "Services incluant développement web, SEO et automatisation IA.";
+        ? "خدمات تطوير الويب وتحسين SEO وأتمتة الأعمال في المغرب. عزز وجودك الرقمي مع حلول احترافية."
+        : "Services professionnels de développement web, optimisation SEO et automatisation IA au Maroc. Boostez votre présence en ligne.";
 
   const servicesList = Object.values(data.services) as Array<{
     title: string;
@@ -143,6 +142,7 @@ export default async function ServicesPage({ params }: Props) {
             "@type": "Service",
             "@id": `${baseUrl}/services#service-${index + 1}`,
             name: svc.title,
+            image: `${baseUrl}${svc.image}`,
             serviceType: svc.title,
             description: svc.description,
             provider: { "@id": `${baseUrl}/#organization` },
@@ -150,6 +150,27 @@ export default async function ServicesPage({ params }: Props) {
           },
         })),
       },
+    ],
+  };
+
+  const hashtags = {
+    en: [
+      "#WebDevelopment",
+      "#SEOServices",
+      "#AIAutomation",
+      "#DigitalSolutions",
+    ],
+    fr: [
+      "#DéveloppementWeb",
+      "#ServicesSEO",
+      "#AutomatisationIA",
+      "#SolutionsNumériques",
+    ],
+    ar: [
+      "#تطوير_الويب",
+      "#خدمات_SEO",
+      "#أتمتة_الذكاء_الاصطناعي",
+      "#حلول_رقمية",
     ],
   };
 
@@ -163,23 +184,33 @@ export default async function ServicesPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Hero Section */}
       <section
         aria-labelledby="hero-heading"
-        className="px-4 sm:px-6 py-10 sm:py-14 md:py-18"
+        className="px-4 sm:px-6 py-14 sm:py-16 md:py-18"
       >
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 lg:mb-12">
-            <div className="max-w-2xl">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14 lg:mb-20">
+            <div className="fade-in-section">
               <h1
                 id="hero-heading"
                 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] text-foreground"
               >
                 {data.heading}
               </h1>
-              <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-xl">
+
+              <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl">
                 {data.description}
               </p>
+              <div className="mt-6 flex flex-wrap gap-2 sm:gap-3">
+                {hashtags[locale]?.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1.5 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
 
             <Link
@@ -196,15 +227,19 @@ export default async function ServicesPage({ params }: Props) {
             </Link>
           </div>
 
-          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 mt-8">
+          <div className="w-full px-4 sm:px-6 text-center max-w-3xl mx-auto mb-12 sm:mb-14 md:mb-16 mt-6 sm:mt-8 fade-in-section">
             <h2
               id="services-heading"
-              className="flex items-center justify-center gap-3 text-3xl sm:text-4xl font-bold text-primary mb-4"
+              className="flex items-center justify-center gap-2 sm:gap-3 text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-3 sm:mb-4"
             >
-              <Award className="w-8 h-8 sm:w-10 sm:h-10" aria-hidden="true" />
+              <Award
+                className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
+                aria-hidden="true"
+              />
               <span>{data?.subtitle}</span>
             </h2>
           </div>
+
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 fade-in-section mb-8 sm:mb-12">
             {servicesList.map((service, idx) => (
               <div
@@ -295,14 +330,10 @@ export default async function ServicesPage({ params }: Props) {
         className="px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-b from-background to-primary/5"
       >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center max-w-3xl mx-auto mb-12">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-              <Briefcase className="w-4 h-4" aria-hidden="true" />
-              {data.Success_stories}
-            </div>
+          <div className="text-center max-w-3xl mx-auto mb-12 fade-in-section">
             <h2
               id="projects-heading"
-              className="text-3xl sm:text-4xl font-bold mb-4"
+              className="text-3xl sm:text-4xl font-bold mb-4 text-primary"
             >
               {data.Selected_projects}
             </h2>
@@ -310,103 +341,108 @@ export default async function ServicesPage({ params }: Props) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioProjects.filter((p) => p.type === "professional").slice(0, 3).map((project, idx) => (
-              <article
-                key={project.title || idx}
-                className="group relative rounded-2xl border border-border bg-card overflow-hidden hover:shadow-2xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-500"
-              >
-                <Link
-                  href={`/${locale}${project.href}`}
-                  className="flex flex-col h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+            {portfolioProjects
+              .filter((p) => p.type === "professional")
+              .slice(0, 3)
+              .map((project, idx) => (
+                <article
+                  key={project.title || idx}
+                  className="group relative rounded-2xl border border-border bg-card overflow-hidden hover:shadow-2xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-500"
                 >
-                  {/* Image Container */}
-                  <div className="relative w-full h-56 sm:h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
-                    <div
-                      className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                      aria-hidden="true"
-                    />
-                    <Image
-                      src={project.image}
-                      alt={`Project: ${project.title}`}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-110"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      priority={idx < 3}
-                    />
-                    <div className="absolute top-4 left-4 z-20">
-                      <span className="px-3 py-1.5 bg-primary/95 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-lg shadow-lg">
-                        {project.category}
-                      </span>
+                  <Link
+                    href={`/${locale}${project.href}`}
+                    className="flex flex-col h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                  >
+                    {/* Image Container */}
+                    <div className="relative w-full h-56 sm:h-64 overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10">
+                      <div
+                        className="absolute inset-0 z-10 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                        aria-hidden="true"
+                      />
+                      <Image
+                        src={project.image}
+                        alt={`Project: ${project.title}`}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        priority={idx < 3}
+                      />
+                      <div className="absolute top-4 left-4 z-20">
+                        <span className="px-3 py-1.5 bg-primary/95 backdrop-blur-sm text-primary-foreground text-xs font-bold rounded-lg shadow-lg">
+                          {project.category}
+                        </span>
+                      </div>
+
+                      {/* Quick View Overlay */}
+                      <div
+                        className="absolute inset-0 z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/50 backdrop-blur-sm"
+                        aria-hidden="true"
+                      >
+                        <span className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-900 text-primary rounded-full font-semibold text-sm shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                          {isRtl ? "عرض التفاصيل" : "View Details"}
+                          {isRtl ? (
+                            <ArrowLeft className="w-4 h-4" />
+                          ) : (
+                            <ArrowRight className="w-4 h-4" />
+                          )}
+                        </span>
+                      </div>
                     </div>
 
-                    {/* Quick View Overlay */}
-                    <div
-                      className="absolute inset-0 z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 bg-black/50 backdrop-blur-sm"
-                      aria-hidden="true"
-                    >
-                      <span className="inline-flex items-center gap-2 px-4 py-2 bg-white dark:bg-gray-900 text-primary rounded-full font-semibold text-sm shadow-xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                        {isRtl ? "عرض التفاصيل" : "View Details"}
+                    {/* Content Section */}
+                    <div className="p-6 flex flex-col flex-grow bg-gradient-to-br from-card to-card/80">
+                      <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4 flex-grow line-clamp-3 leading-relaxed">
+                        {project.description}
+                      </p>
+
+                      {project.status && (
+                        <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs bg-emerald-500/10 border border-emerald-500/20 w-fit mb-4">
+                          <span className=" font-medium text-emerald-600 dark:text-emerald-500 capitalize tracking-wide">
+                            {project.status}
+                          </span>
+                        </div>
+                      )}
+                      <div className="flex flex-wrap gap-2 mb-4">
+                        {project.tech
+                          .split(",")
+                          .slice(0, 3)
+                          .map((tech, idx) => (
+                            <span
+                              key={idx}
+                              className="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-lg font-medium border border-primary/20"
+                            >
+                              {tech.trim()}
+                            </span>
+                          ))}
+                      </div>
+
+                      <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link mt-2">
+                        <span className="relative">
+                          {project.linkLabel}
+                          <span
+                            className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover/link:w-full"
+                            aria-hidden="true"
+                          />
+                        </span>
                         {isRtl ? (
-                          <ArrowLeft className="w-4 h-4" />
+                          <ArrowLeft
+                            className="w-4 h-4 transition-transform duration-300 group-hover/link:-translate-x-1"
+                            aria-hidden="true"
+                          />
                         ) : (
-                          <ArrowRight className="w-4 h-4" />
+                          <ArrowRight
+                            className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1"
+                            aria-hidden="true"
+                          />
                         )}
                       </span>
                     </div>
-                  </div>
-
-                  {/* Content Section */}
-                  <div className="p-6 flex flex-col flex-grow bg-gradient-to-br from-card to-card/80">
-                    <h3 className="text-xl font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors duration-300">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-4 flex-grow line-clamp-3 leading-relaxed">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.tech
-                        .split(",")
-                        .slice(0, 3)
-                        .map((tech, idx) => (
-                          <span
-                            key={idx}
-                            className="px-2.5 py-1 bg-primary/10 text-primary text-xs rounded-lg font-medium border border-primary/20"
-                          >
-                            {tech.trim()}
-                          </span>
-                        ))}
-                      {project.tech.split(",").length > 3 && (
-                        <span className="px-2.5 py-1 bg-muted text-muted-foreground text-xs rounded-lg font-medium">
-                          +{project.tech.split(",").length - 3}
-                        </span>
-                      )}
-                    </div>
-
-                    <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm group/link mt-2">
-                      <span className="relative">
-                        {project.linkLabel}
-                        <span
-                          className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover/link:w-full"
-                          aria-hidden="true"
-                        />
-                      </span>
-                      {isRtl ? (
-                        <ArrowLeft
-                          className="w-4 h-4 transition-transform duration-300 group-hover/link:-translate-x-1"
-                          aria-hidden="true"
-                        />
-                      ) : (
-                        <ArrowRight
-                          className="w-4 h-4 transition-transform duration-300 group-hover/link:translate-x-1"
-                          aria-hidden="true"
-                        />
-                      )}
-                    </span>
-                  </div>
-                </Link>
-              </article>
-            ))}
+                  </Link>
+                </article>
+              ))}
           </div>
 
           <div className="text-center mt-16">
@@ -435,13 +471,13 @@ export default async function ServicesPage({ params }: Props) {
       {data.whyChooseUs && (
         <section
           aria-labelledby="why-choose-us-heading"
-          className="px-4 sm:px-6 py-16 sm:py-20"
+          className="px-4 sm:px-6 py-14 sm:py-16"
         >
           <div className="max-w-7xl mx-auto">
-            <div className="mb-10 text-center">
+            <div className="mb-10 text-center fade-in-section">
               <h2
                 id="why-choose-us-heading"
-                className="text-2xl sm:text-3xl font-bold text-foreground mb-2"
+                className="text-2xl sm:text-3xl font-bold text-primary mb-2"
               >
                 {data.whyChooseUs.title}
               </h2>
@@ -479,14 +515,16 @@ export default async function ServicesPage({ params }: Props) {
       )}
 
       <Statistics translations={dict.homepage.stats} />
-
-      {/* Final CTA Section */}
+      <br />
       <section
         aria-labelledby="cta-heading"
         className="bg-primary/5 px-4 sm:px-6 py-16 sm:py-20"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 id="cta-heading" className="text-3xl sm:text-4xl font-bold mb-4">
+          <h2
+            id="cta-heading"
+            className="text-3xl sm:text-4xl font-bold mb-4 text-primary"
+          >
             {data.ctat_title}
           </h2>
           <p className="text-lg text-muted-foreground mb-8">{data.cta_desc}</p>

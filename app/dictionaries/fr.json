@@ -29,7 +29,7 @@
           "subtext": "À travers le Maroc"
         },
         {
-          "value": 4,
+           "value": 5,
           "prefix": "+",
           "suffix": "",
           "text": "Ans d'expérience",
@@ -62,8 +62,8 @@
       "sectionLabel": "À propos de moi",
       "subtitle": "Votre partenaire pour ",
       "highlight": "la réussite digitale",
-      "paragraph1": "Je suis un développeur et designer concentré sur la création de solutions digitales performantes et optimisées pour le référencement (SEO) qui génèrent de réels résultats commerciaux. Mon expertise est soutenue par un historique avéré d'excellence, comprenant des premières places à Al Akhawayn et à l'UM6P Ben Guerir, et une deuxième place à l'UM6P Rabat, entre autres. J'apporte ce même niveau de précision, de créativité et d'engagement à chaque projet sur lequel je travaille.",
-      "paragraph2": "Que vous ayez besoin d'un site web sur mesure, d'un système d'entreprise, ou de visuels percutants pour les réseaux sociaux et les publicités, je me concentre sur la qualité, une communication claire et des résultats qui développent votre marque.",
+      "paragraph1": "Je suis développeur et designer avec de l’expérience dans la création de solutions digitales modernes. J’ai participé à plusieurs hackathons, remportant la 1ère place à l’Université Al Akhawayn et à l’UM6P Ben Guerir, ainsi que la 2ème place à l’UM6P Rabat, tout en participant à d’autres hackathons. J’ai également travaillé sur des projets pour des clients au Maroc, en les aidant à créer des sites web, automatiser leurs processus métiers et concevoir des publicités sur les réseaux sociaux performantes.",
+      "paragraph2": "Grâce au travail sur des projets réels et à la participation aux hackathons, j’ai acquis une expérience précieuse que j’utilise aujourd’hui pour créer des sites web de haute qualité, des systèmes pour les entreprises et des solutions digitales efficaces.",
       "cta": "Plus sur moi"
     },
     "why_we_are_section": {
@@ -96,7 +96,6 @@
     "contact_section": {
       "sectionLabel": "Prenez Contact",
       "description": "Prêt à commencer votre projet de site web, système ou design ? Contactez-moi via le canal de votre choix.",
-      "cta": "Discutons de votre projet",
       "whatsapp": "WhatsApp",
       "phoneNumber": "+212 6 12 34 56 78",
       "whatsappNumber": "212612345678",
@@ -118,8 +117,8 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services que nous proposons",
-      "heading": "Des solutions digitales pour faire grandir votre entreprise",
-      "description": "Des sites web optimisés SEO aux systèmes d'automatisation IA, en passant par la création publicitaire performante. J'accompagne startups, entreprises et particuliers vers la réussite en ligne.",
+      "heading": "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc",
+      "description": "Vous recherchez des services professionnels de développement web, d'optimisation SEO ou d'automatisation IA au Maroc ? Nous concevons des sites web optimisés pour le SEO, créons des systèmes d'automatisation d'entreprise alimentés par l'IA et réalisons des publicités sur les réseaux sociaux à fort taux de conversion. Faites confiance à notre expertise pour accompagner startups et entreprises vers des résultats mesurables, une visibilité en ligne accrue et une croissance des ventes.",
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -158,7 +157,7 @@
           ]
         }
       },
-      "cta": "En savoir plus sur ce service",
+      "cta": "Contactez-nous pour en savoir plus",
       "Success_stories": "Histoires de succès",
       "Selected_projects": "Projets sélectionnés",
       "Real_results": "Résultats concrets que nous avons livrés pour nos clients",
@@ -169,7 +168,7 @@
         "reasons": [
           {
             "title": "Résultats de confiance",
-            "text": "Des sites web et des systèmes qui se classent, convertissent et évoluent avec des résultats concrets pour les start-ups et les petites entreprises."
+            "text": "Nous concevons des sites web et des systèmes performants (référencement, conversion et évolutivité) offrant des résultats concrets aux entreprises, aux startups et aux particuliers."
           },
           {
             "title": "Expertise complète (Full-stack)",
@@ -181,7 +180,7 @@
           }
         ]
       },
-        "ctat_title": "Prêt à Transformer Votre Présence Digitale ?",
+      "ctat_title": "Prêt à Transformer Votre Présence Digitale ?",
       "cta_desc": "Discutons de la façon dont nos services peuvent vous aider à atteindre vos objectifs.",
       "cta_btn": "Commencer Aujourd'hui"
     },
@@ -269,8 +268,34 @@
       "subtitle": "Réalisations sélectionnées",
       "heading": "Des projets qui génèrent des résultats",
       "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
-           "viewCase": "Voir l'étude de cas",
+      "viewCase": "Voir l'étude de cas",
       "cta": "Démarrer votre projet",
+      "ui": {
+        "displayModes": {
+          "combined": "Vue combinée",
+          "byType": "Par type de projet"
+        },
+        "filters": {
+          "all": "Tous les projets",
+          "professional": "Projets clients",
+          "personal": "Projets personnels",
+          "academic": "Projets académiques"
+        },
+        "typeLabels": {
+          "professional": "Client",
+          "personal": "Personnel",
+          "academic": "Académique"
+        },
+        "sections": {
+          "professional": "Projets clients",
+          "personal": "Projets personnels",
+          "academic": "Projets académiques"
+        },
+        "emptyStateTitle": "Aucun projet trouvé",
+        "emptyStateText": "Essayez de sélectionner une autre catégorie.",
+        "ctaTitle": "Prêt à concrétiser votre vision ?",
+        "ctaDescription": "Parlons de votre prochain projet et créons une expérience rapide et optimisée SEO."
+      },
       "projects": [
         {
           "title": "Site Web d'Entreprise & Croissance SEO",
@@ -280,6 +305,7 @@
           "linkLabel": "Voir l'étude de cas",
           "category": "Développement Web & SEO",
           "type": "professional",
+          "status": "online",
           "href": "/portfolio/ecommerce-platform"
         },
         {
@@ -290,6 +316,7 @@
           "linkLabel": "Voir l'étude de cas",
           "category": "Systèmes & Automatisation par IA",
           "type": "professional",
+          "status": "entreprise locale",
           "href": "/portfolio/ecommerce-platform"
         },
         {
@@ -300,30 +327,32 @@
           "linkLabel": "Voir l'étude de cas",
           "category": "Création de publicités",
           "type": "professional",
-          "href": "/portfolio/ecommerce-platform"   
-        },
-         {
-          "title": "Open Source CLI Toolkit",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
-          "category": "Ad Design",
-          "type": "personal",
-          "href": "/portfolio/social-campaign"
+          "status": "Campagnes publicitaires",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
-          "title": "Dev Portfolio — This Site",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
-          "category": "Ad Design",
+          "title": "Open Source CLI Toolkit",
+          "description": "Création d'un toolkit en ligne de commande open source pour automatiser les tâches répétitives de développement et accélérer les workflows d'équipe.",
+          "tech": "Node.js, TypeScript, Commander.js",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Outils développeur",
           "type": "personal",
-          "href": "/portfolio/social-campaign"
+          "status": "online",
+          "href": "/portfolio/business-automation-dashboard"
+        },
+        {
+          "title": "Portail de Recherche Académique",
+          "description": "Conception d'un prototype de portail universitaire pour gérer les soumissions de recherche, les retours des encadrants et le suivi de progression.",
+          "tech": "React, PostgreSQL, Express",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Plateforme éducative",
+          "type": "academic",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
         }
       ],
-
       "whyChooseUs": {
         "title": "Pourquoi On Choisit Mon Travail",
         "subtitle": "Chaque projet est livré pour performer",
