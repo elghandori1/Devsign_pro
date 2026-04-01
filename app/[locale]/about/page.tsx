@@ -17,9 +17,7 @@ import {
   Coffee,
   BookOpen,
   Sparkles,
-  ChevronRight,
-  Star,
-  Briefcase,
+  ChevronRight
 } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
@@ -56,10 +54,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const keywords =
     locale === "en"
-      ? ["about", "web developer Morocco", "designer", "portfolio", "freelance"]
+      ? ["web developer Morocco", "designer", "portfolio", "freelance"]
       : locale === "ar"
-        ? ["عني", "مطور ويب المغرب", "مصمم", "أعمالي"]
-        : ["à propos", "développeur web Maroc", "designer", "portfolio"];
+        ? [ "مطور ويب المغرب", "مصمم", "أعمالي"]
+        : ["développeur web Maroc", "designer", "portfolio"];
 
   return buildPageMetadata({
     locale,
@@ -85,21 +83,15 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-background via-background to-primary/5"
+      className="min-h-screen bg-background hero-section-light "
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        {/* Background Decoration */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-radial from-primary/5 via-transparent to-transparent" />
-        </div>
-
-        <div className="relative px-4 sm:px-6 py-16 sm:py-20 md:py-28">
+  
+        <div className="relative px-4 sm:px-6 py-16">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center max-w-4xl mx-auto mb-12">
+            <div className="text-center max-w-4xl mx-auto">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Sparkles className="w-4 h-4" />
                 {t.subtitle}
@@ -123,8 +115,7 @@ export default async function AboutPage({ params }: Props) {
             <div className={`space-y-6 ${isRtl ? "lg:order-2" : ""}`}>
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 text-primary">
-                  <div className="h-px w-8 bg-primary" />
-                  <span className="text-sm font-medium uppercase tracking-wider">
+                  <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
                     {locale === "en" ? "Who I Am" : locale === "fr" ? "Qui je suis" : "من أنا"}
                   </span>
                 </div>
@@ -183,7 +174,7 @@ export default async function AboutPage({ params }: Props) {
             <div className="mb-20 p-8 rounded-3xl bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/10">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  {t.whoIAm.title}
+                  {"My experience"}
                 </h2>
                 <p className="text-muted-foreground leading-relaxed text-lg">
                   {t.whoIAm.text}

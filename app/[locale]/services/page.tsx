@@ -310,7 +310,7 @@ export default async function ServicesPage({ params }: Props) {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {portfolioProjects.map((project, idx) => (
+            {portfolioProjects.filter((p) => p.type === "professional").slice(0, 3).map((project, idx) => (
               <article
                 key={project.title || idx}
                 className="group relative rounded-2xl border border-border bg-card overflow-hidden hover:shadow-2xl hover:border-primary/30 hover:-translate-y-2 transition-all duration-500"

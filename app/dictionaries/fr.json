@@ -266,10 +266,11 @@
       "cta": "Me contacter"
     },
     "portfolio_page": {
-      "title": "Mes Projets",
       "subtitle": "Réalisations sélectionnées",
       "heading": "Des projets qui génèrent des résultats",
       "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
+           "viewCase": "Voir l'étude de cas",
+      "cta": "Démarrer votre projet",
       "projects": [
         {
           "title": "Site Web d'Entreprise & Croissance SEO",
@@ -277,8 +278,9 @@
           "tech": "Next.js, SEO Optimization, Mongodb",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir l'étude de cas",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "Développement Web & SEO"
+          "category": "Développement Web & SEO",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
           "title": "Dashboard d'Automatisation d'Entreprise",
@@ -286,8 +288,9 @@
           "tech": "React, Node.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "Voir l'étude de cas",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "Systèmes & Automatisation par IA"
+          "category": "Systèmes & Automatisation par IA",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
           "title": "Design pour Réseaux Sociaux & Publicités",
@@ -295,12 +298,32 @@
           "tech": "Photoshop, Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "Voir l'étude de cas",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "Création de publicités"
+          "category": "Création de publicités",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"   
+        },
+         {
+          "title": "Open Source CLI Toolkit",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
+        },
+        {
+          "title": "Dev Portfolio — This Site",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
         }
       ],
-      "viewCase": "Voir l'étude de cas",
-      "cta": "Démarrer votre projet",
+
       "whyChooseUs": {
         "title": "Pourquoi On Choisit Mon Travail",
         "subtitle": "Chaque projet est livré pour performer",

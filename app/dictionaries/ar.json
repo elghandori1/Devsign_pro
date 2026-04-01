@@ -266,10 +266,11 @@
       "cta": "تواصل معي"
     },
     "portfolio_page": {
-      "title": "أعمالي",
       "subtitle": "مشاريع مختارة",
       "heading": "مشاريع تحقق النتائج",
       "description": "اختيار من مواقع وأنظمة وتصاميم تم تنفيذها لشركات ناشئة وأعمال.",
+      "viewCase": "عرض دراسة الحالة",
+      "cta": "ابدأ مشروعك",
       "projects": [
         {
           "title": "موقع لشركة ,احترافي ومحسن مع محركات البحث",
@@ -277,8 +278,9 @@
           "tech": "Next.js, تحسين محركات البحث, MySQL",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "عرض دراسة الحالة",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "تطوير الويب وSEO"
+          "category": "تطوير الويب وSEO",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
           "title": "لوحة تحكم أتمتة الأعمال",
@@ -286,8 +288,9 @@
           "tech": "React, Node.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "عرض دراسة الحالة",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "الأنظمة وأتمتة الذكاء الاصطناعي"
+          "category": "الأنظمة وأتمتة الذكاء الاصطناعي",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
           "title": "تصاميم لوسائل التواصل الاجتماعي والإعلانات",
@@ -295,12 +298,32 @@
           "tech": "Photoshop, Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "عرض دراسة الحالة",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "تصميم الإعلانات"
+          "category": "تصميم الإعلانات",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
+        },
+         {
+          "title": "Open Source CLI Toolkit",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
+        },
+        {
+          "title": "Dev Portfolio — This Site",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
         }
       ],
-      "viewCase": "عرض دراسة الحالة",
-      "cta": "ابدأ مشروعك",
+
       "whyChooseUs": {
         "title": "لماذا يختار العملاء أعمالي",
         "subtitle": "كل مشروع يُبنى لتحقيق النتائج",

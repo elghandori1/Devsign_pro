@@ -12,14 +12,15 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-export interface ProjectItem {
+interface ProjectItem {
   title: string;
   description: string;
   tech: string;
   image: string;
   linkLabel: string;
-  href: string;
   category?: string;
+  type?: "professional" | "personal" | "academic";
+  href: string;
 }
 
 interface ProjectsShowcaseSliderProps {
@@ -35,28 +36,31 @@ export default function ProjectsShowcaseSlider({
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const [direction, setDirection] = useState(0);
   const isRtl = locale === "ar";
-  const project = projects[index];
 
-  // Auto-play functionality
+  const projectlist = projects
+    .filter((p) => p.type === "professional")
+    .slice(0, 3);
+  const project = projectlist[index];
+
   useEffect(() => {
     if (!isAutoPlaying) return;
-    
+
     const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % projects.length);
+      setIndex((i) => (i + 1) % projectlist.length);
     }, 5000);
-    
+
     return () => clearInterval(interval);
-  }, [isAutoPlaying, projects.length]);
+  }, [isAutoPlaying, projectlist.length]);
 
   const goNext = () => {
     setIsAutoPlaying(false);
-    setIndex((i) => (i + 1) % projects.length);
+    setIndex((i) => (i + 1) % projectlist.length);
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
   const goPrev = () => {
     setIsAutoPlaying(false);
-    setIndex((i) => (i - 1 + projects.length) % projects.length);
+    setIndex((i) => (i - 1 + projectlist.length) % projectlist.length);
     setTimeout(() => setIsAutoPlaying(true), 10000);
   };
 
@@ -77,7 +81,11 @@ export default function ProjectsShowcaseSlider({
       scale: 0.95,
     }),
     animate: { opacity: 1, x: 0, scale: 1 },
-    exit: (dir: number) => ({ opacity: 0, x: dir > 0 ? -80 : 80, scale: 0.95 }),
+    exit: (dir: number) => ({
+      opacity: 0,
+      x: dir > 0 ? -80 : 80,
+      scale: 0.95,
+    }),
   };
 
   return (
@@ -87,10 +95,6 @@ export default function ProjectsShowcaseSlider({
         {/* Image Section with Enhanced Design */}
         <div className="relative group">
           <div className="relative aspect-[4/3] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
-            {/* Gradient Border Effect */}
-            <div className="absolute inset-0 rounded-xl sm:rounded-2xl p-[2px] bg-gradient-to-r from-primary/50 via-secondary/50 to-primary/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
-              <div className="absolute inset-0 rounded-xl sm:rounded-2xl bg-background" />
-            </div>
 
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
@@ -111,8 +115,6 @@ export default function ProjectsShowcaseSlider({
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 540px"
                   priority={index === 0}
                 />
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               </motion.div>
             </AnimatePresence>
 
@@ -127,9 +129,9 @@ export default function ProjectsShowcaseSlider({
 
             {/* Navigation Controls - Bottom */}
             <div className="absolute bottom-3 sm:bottom-4 inset-x-3 sm:inset-x-4 flex items-center justify-between z-10">
-              {/* Progress Dots - Hide on very small screens, show simplified version */}
+              {/* Progress Dots */}
               <div className="hidden sm:flex gap-1.5 sm:gap-2 bg-background/20 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2">
-                {projects.map((_, i) => (
+                {projectlist.map((_, i) => (
                   <button
                     key={i}
                     type="button"
@@ -139,11 +141,10 @@ export default function ProjectsShowcaseSlider({
                       setIndex(i);
                       setTimeout(() => setIsAutoPlaying(true), 10000);
                     }}
-                    className={`relative h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
-                      i === index
-                        ? "w-6 sm:w-8 bg-primary"
-                        : "w-1.5 sm:w-2 bg-white/60 hover:bg-white/80"
-                    }`}
+                    className={`relative h-1.5 sm:h-2 rounded-full transition-all duration-300 ${i === index
+                      ? "w-6 sm:w-8 bg-primary"
+                      : "w-1.5 sm:w-2 bg-white/60 hover:bg-white/80"
+                      }`}
                     aria-label={`Project ${i + 1}`}
                     aria-current={i === index ? "true" : undefined}
                   >
@@ -162,7 +163,6 @@ export default function ProjectsShowcaseSlider({
                 ))}
               </div>
 
-              {/* Navigation Buttons - Smaller on mobile */}
               <div className="flex gap-1.5 sm:gap-2 ml-auto sm:ml-0">
                 <button
                   type="button"
@@ -192,27 +192,24 @@ export default function ProjectsShowcaseSlider({
             </div>
           </div>
 
-          {/* Simple Thumbnail Navigation for Mobile */}
           <div className="flex justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4 lg:hidden">
-            {projects.map((_, i) => (
+            {projectlist.map((_, i) => (
               <button
                 key={i}
                 onClick={() => {
                   setDirection(i > index ? 1 : -1);
                   setIndex(i);
                 }}
-                className={`h-1 rounded-full transition-all duration-300 ${
-                  i === index 
-                    ? "w-4 sm:w-6 bg-primary" 
-                    : "w-1.5 sm:w-2 bg-muted-foreground/30"
-                }`}
+                className={`h-1 rounded-full transition-all duration-300 ${i === index
+                  ? "w-4 sm:w-6 bg-primary"
+                  : "w-1.5 sm:w-2 bg-muted-foreground/30"
+                  }`}
                 aria-label={`Go to project ${i + 1}`}
               />
             ))}
           </div>
         </div>
 
-        {/* Project Details with Enhanced Design - Responsive typography */}
         <div
           className={`flex flex-col justify-center px-2 sm:px-0 ${isRtl ? "text-right" : "text-left"}`}
           dir={isRtl ? "rtl" : "ltr"}

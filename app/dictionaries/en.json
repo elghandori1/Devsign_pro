@@ -267,56 +267,78 @@
       "cta": "Get in touch"
     },
     "portfolio_page": {
-      "title": "My Work",
-      "subtitle": "Selected projects",
-      "heading": "Projects that drive results",
-      "description": "A selection of websites, systems, and design work delivered for startups and businesses.",
+      "subtitle": "Selected Work",
+      "heading": "Projects That Deliver",
+      "description": "A curated collection of work spanning client projects, personal builds, and academic research.",
+      "viewCase": "View case study",
+      "cta": "Start a project together",
       "projects": [
         {
           "title": "Corporate Website & SEO Growth",
-          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. The platform achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
-          "tech": "Next.js, SEO Optimization, Mongodb",
+          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. Achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
+          "tech": "Next.js, SEO Optimization, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "View case study",
-          "href": "/portfolio/ecommerce-platform",
-          "category": "Web Development & SEO"
+          "category": "Web Development & SEO",
+          "type": "professional",
+          "href": "/portfolio/ecommerce-platform"
         },
         {
           "title": "Business Automation Dashboard",
-          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services. This solution significantly improved organization, reduced manual work, and enhanced client management.",
+          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services.",
           "tech": "React, Node.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "View case study",
-          "href": "/portfolio/business-automation-dashboard",
-          "category": "Systems & AI Automation"
+          "category": "Systems & Automation",
+          "type": "professional",
+          "href": "/portfolio/business-automation-dashboard"
         },
         {
           "title": "Social Media Design & Ads",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and call-to-action elements to increase engagement and encourage purchases across platforms like Instagram and Facebook.",
-          "tech": "Photoshop, Illustrator",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "View case study",
-          "href": "/portfolio/social-campaign",
-          "category": "Ad Design"
+          "category": "Ad Design",
+          "type": "professional",
+          "href": "/portfolio/social-campaign"
+        },
+          {
+          "title": "Open Source CLI Toolkit",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
+        },
+        {
+          "title": "Dev Portfolio — This Site",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "personal",
+          "href": "/portfolio/social-campaign"
         }
       ],
-      "viewCase": "View case study",
-      "cta": "Start your project",
       "whyChooseUs": {
-        "title": "Why Clients Choose My Work",
-        "subtitle": "Every project is built to deliver",
+        "title": "Why clients choose my work",
+        "subtitle": "I build things that actually work — on time, on budget, and built to last.",
         "reasons": [
           {
-            "title": "Results-focused",
-            "text": "Each project is designed to improve visibility, conversions, or efficiency — with measurable outcomes."
+            "title": "Results-Driven",
+            "text": "Every project is tied to a real outcome: more users, less manual work, or stronger brand presence."
           },
           {
-            "title": "Modern stack",
-            "text": "Next.js, React, and proven tools so your product is fast, maintainable, and future-proof."
+            "title": "Full-Stack Ownership",
+            "text": "From design to deployment, I handle the entire product so nothing gets lost in handoffs."
           },
           {
-            "title": "End-to-end delivery",
-            "text": "From concept to launch and beyond — I handle design, development, and support so you can focus on your business."
+            "title": "Built to Scale",
+            "text": "Clean architecture and modern stacks mean your product grows with your business, not against it."
           }
         ]
       }
