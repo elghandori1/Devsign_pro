@@ -10,18 +10,13 @@ import {
   BarChart3,
   Trophy,
   HelpCircle,
-  Award,
-  Code2,
   Heart,
-  Globe,
-  Coffee,
   BookOpen,
-  Sparkles,
   ChevronRight,
 } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -77,14 +72,46 @@ export default async function AboutPage({ params }: Props) {
   const dict = await getDictionary(locale);
   const t = dict.pages?.about_page;
   const isRtl = locale === "ar";
+  const baseUrl = getBaseUrl();
+
+  const title =
+    locale === "en"
+      ? "About Me | Web Developer & Designer — Devsign"
+      : locale === "ar"
+        ? "عني | مطور ويب ومصمم - ديفساين"
+        : "À Propos | Développeur Web & Designer — Devsign";
+
+  const description =
+    locale === "en"
+      ? "Professional developer and designer in Morocco. SEO-optimized websites, business automation, AI integration, and ad design for startups and SMBs."
+      : locale === "ar"
+        ? "مطور ومصمم محترف من المغرب. مواقع محسّنة للسيو، أتمتة الأعمال، دمج الذكاء الاصطناعي وتصميم إعلانات للشركات الناشئة والمتوسطة."
+        : "Développeur et designer au Maroc. Sites SEO, automatisation, intégration IA et design publicitaire pour startups et PME.";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${baseUrl}/${locale}/about#webpage`,
+    url: `${baseUrl}/${locale}/about`,
+    name: title,
+    description: description,
+    inLanguage: locale,
+    isPartOf: { "@id": `${baseUrl}/#website` },
+    publisher: { "@id": `${baseUrl}/#organization` },
+    mainEntity: { "@id": `${baseUrl}/#person` },
+  };
 
   if (!t) return null;
 
   return (
     <main
-      className="min-h-screen bg-background hero-section-light "
+      className="min-h-screen bg-background hero-section-light"
       dir={isRtl ? "rtl" : "ltr"}
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="relative px-4 sm:px-6 py-12 sm:py-16 md:py-18">

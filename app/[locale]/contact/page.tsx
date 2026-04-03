@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import ContactClient from "../../components/ContactClient";
 
 
@@ -64,17 +64,65 @@ export default async function ContactPage({ params }: Props) {
   const isRtl = locale === "ar";
   if (!t) return null;
 
-  return (
-    <ContactClient 
-      data={t} 
-      locale={locale} 
-      isRtl={isRtl}
-      email={EMAIL}
+  const baseUrl = getBaseUrl();
 
-      whatsappNumber={WHATSAPP_NUMBER}
-      instagramHandle={INSTAGRAM_HANDLE}
-      githubHandle={GITHUB_HANDLE}
-      linkedinHandle={LINKEDIN_HANDLE}
-    />
+  const title =
+    locale === "en"
+      ? "Contact Us | Let's Build Something Amazing — Devsign"
+      : locale === "ar"
+        ? "اتصل بنا | لنبنِ شيئاً مذهلاً معاً — ديفساين"
+        : "Contactez-nous | Créons Quelque Chose d'Incroyable — Devsign";
+
+  const description =
+    locale === "en"
+      ? "Ready to bring your digital vision to life? Get in touch for websites, automation, AI integration, and creative design. Based in Morocco, serving worldwide."
+      : locale === "ar"
+        ? "مستعد لتحويل رؤيتك الرقمية إلى واقع؟ تواصل للحصول على مواقع ويب، أتمتة، دمج ذكاء اصطناعي، وتصميم إبداعي. من المغرب، نخدم العالم."
+        : "Prêt à concrétiser votre vision numérique ? Contactez-moi pour sites web, automatisation, intégration IA et design créatif. Basé au Maroc, servant le monde entier.";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": `${baseUrl}/${locale}/contact#webpage`,
+    url: `${baseUrl}/${locale}/contact`,
+    name: title,
+    description: description,
+    inLanguage: locale,
+    isPartOf: { "@id": `${baseUrl}/#website` },
+    publisher: { "@id": `${baseUrl}/#organization` },
+    mainEntity: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: EMAIL,
+      telephone: WHATSAPP_NUMBER,
+      availableLanguage: [
+        { "@type": "Language", name: "English" },
+        { "@type": "Language", name: "French" },
+        { "@type": "Language", name: "Arabic" },
+      ],
+      areaServed: [
+        { "@type": "Country", name: "Morocco" },
+        { "@type": "Place", name: "Worldwide" }
+      ]
+    },
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <ContactClient 
+        data={t} 
+        locale={locale} 
+        isRtl={isRtl}
+        email={EMAIL}
+        whatsappNumber={WHATSAPP_NUMBER}
+        instagramHandle={INSTAGRAM_HANDLE}
+        githubHandle={GITHUB_HANDLE}
+        linkedinHandle={LINKEDIN_HANDLE}
+      />
+    </>
   );
 }

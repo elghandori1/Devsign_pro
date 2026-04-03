@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp, BsInstagram, BsGithub, BsLinkedin } from "react-icons/bs";
 import {
@@ -17,15 +16,9 @@ import {
   Send,
   CheckCircle,
   Globe,
-  Users,
-  Rocket,
-  ChevronRight,
   Mail,
-  Phone,
-  Zap,
   Heart,
 } from "lucide-react";
-import Statistics from "./Statistics";
 
 interface ContactData {
   subtitle: string;
@@ -141,17 +134,13 @@ export default function ContactClient({
 
   return (
     <div
-      className="min-h-screen bg-gradient-to-b from-background via-background to-muted/20 text-foreground transition-colors duration-300"
+      className="min-h-screen min-h-screen bg-background hero-section-light transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
-      {/* Hero Section with Animated Background */}
       <section className="relative overflow-hidden">
         <div className="relative px-4 sm:px-6 py-16 sm:py-20 md:py-28">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
-              <MessageCircle size={14} />
-              {data.subtitle}
-            </div>
+          
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-foreground mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500 delay-100">
               {data.heading}
             </h1>
@@ -175,13 +164,19 @@ export default function ContactClient({
       {/* Main Contact Section */}
       <section className="px-4 sm:px-6 py-12">
         <div className="max-w-6xl mx-auto">
+            <h2 className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+              <MessageCircle size={14} />
+              {data.subtitle}
+            </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Contact Cards */}
+            
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
+              
+              <h3 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
                 <Mail size={24} className="text-primary" />
                 Choose your preferred way
-              </h2>
+              </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {channels.map((channel, idx) => {
                   const Icon = channel.icon;
