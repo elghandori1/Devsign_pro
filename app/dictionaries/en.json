@@ -118,6 +118,7 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services We Provide",
+      "cta_up": "Contact us to learn more",
       "heading": "Expert Web Development, SEO & Custom AI Automation in Morocco",
       "description": "Looking for professional web development, SEO optimization, or AI automation services in Morocco? We build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
       "services": {
@@ -158,7 +159,7 @@
           ]
         }
       },
-     "cta": "Contact us to learn more",
+      "cta": "Read more about this service",
       "Success_stories": "Success Stories",
       "Selected_projects": "Selected Projects",
       "Real_results": "Real results we've delivered for our clients",
@@ -187,19 +188,21 @@
     },
     "about_page": {
       "title": "About Me",
-      "subtitle": "Your partner for digital success",
       "heading": "Developer & designer focused on real results",
-      "intro": "I'm a professional developer and designer based in Morocco. I don't build for big agencies — I work with startups, medium-sized businesses, and anyone selling or promoting online who needs a strong web presence, automation, or AI in their operations.",
-      "paragraph1": "I build lightweight, SEO-optimized websites that rank well in search engines, and I design media and ad creatives that showcase your services or products. Whether you need a new site, automation, or visuals for your social pages, I focus on quality, clear communication, and outcomes that grow your brand.",
-      "paragraph2": "My approach combines modern tech, performance, and clarity. I help you reach more customers, automate repetitive tasks, and present your offer in a way that converts.",
+      "intro": "I'm a freelance full-stack developer and designer using modern technologies. I help startups, enterprises, and individuals build high-performance websites, improve SEO, automate workflows with AI, and design high-converting social media ads.",
       "whoIAm": {
         "title": "Who I Am",
-        "text": "I'm Mohammed a full-stack developer, SEO specialist, and designer with a passion for turning ideas into high-performing digital products. I work with startups and SMBs who want to stand out online: from ranking on Google to automating workflows and designing ads that convert. I believe in clean code, clear communication, and results you can measure."
+        "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. I actively participate in hackathons and speak at tech community events to gain experience and stay updated with the latest technologies.",
+        "paragraph2": "I believe in clean code, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work because your success is my success."
+      },
+      "experience": {
+        "title": "My Experience & Background",
+        "paragraph": "I've worked with enterprises, startups, and small businesses to build real digital solutions that deliver results. I've developed full-stack web applications, configured servers for optimal performance, and built automation systems that save hours of manual work daily. I've designed hundreds of social media ad visuals that helped businesses increase engagement and sales. I've also won first place in multiple hackathons I participated in, competing against talented developers and building innovative solutions under pressure. From setting up SEO-friendly architectures to deploying AI-powered workflows, every project I take on is focused on one thing: getting you measurable outcomes."
       },
       "storyMissionValues": {
         "title": "Discover the story, mission, and values that drive me",
-        "story": "My journey started with a curiosity for how the web works and how businesses can use it to grow. Over the years I've built websites, automated processes, and designed campaigns for brands that needed a partner who could both code and design — and deliver on time.",
-        "mission": "My mission is to help businesses and creators build a strong, visible online presence. I want every project to be fast, findable, and focused on the user — so you can focus on what you do best while your digital presence works for you.",
+        "story": "My journey started with a curiosity for how the web works and how businesses can use it to grow. Over the years I've built websites, automated processes, and designed campaigns for brands that needed a partner who could both code and design and deliver on time.",
+        "mission": "My mission is to help businesses and creators build a strong, visible online presence. I want every project to be fast, findable, and focused on the user so you can focus on what you do best while your digital presence works for you.",
         "valuesTitle": "What I stand for",
         "values": [
           "Quality over quantity — every line of code and every pixel matters.",
@@ -213,24 +216,34 @@
         "subtitle": "Where I've competed and won",
         "items": [
           {
-            "name": "National Startup Hackathon",
+            "name": "DyslexAI Hackathon",
+            "location": "Al Akhawayn University, Ifrane",
             "year": "2024",
-            "place": "1st Place"
+            "place": "1st Prize"
           },
           {
-            "name": "AI & Automation Challenge",
+            "name": "Attijari Business Hackathon",
+            "location": "Attijariwafa Bank Headquarters, Casablanca",
             "year": "2024",
-            "place": "2nd Place"
+            "place": "2nd Prize"
           },
           {
-            "name": "Web Performance & SEO Contest",
-            "year": "2023",
-            "place": "1st Place"
+            "name": "Le Hubckathon",
+            "location": "UM6P, casablanca",
+            "year": "2025",
+            "place": "Mentor"
           },
           {
-            "name": "Digital Innovation Day",
-            "year": "2023",
-            "place": "2nd Place"
+            "name": "HackAI",
+            "location": "UM6P, Ben Guerir",
+            "year": "2025",
+            "place": "Organizer"
+          },
+          {
+            "name": "CureCode Hackathon",
+            "location": "UM6P_SHCC, Faculty of Medical Sciences & UM6P Hospital",
+            "year": "2026",
+            "place": "1st Prize"
           }
         ]
       },
@@ -241,9 +254,8 @@
           "Build or redesign your website — fast, SEO-optimized, and mobile-first.",
           "Set up automation and AI tools to save you time and scale your operations.",
           "Design ad creatives and social media visuals that explain your offer and drive sales.",
-          "Audit and improve your existing site's speed, SEO, and conversion.",
-          "Train your team or support you with ongoing maintenance and updates."
-        ]
+          "Audit and improve your existing site's speed, SEO, and conversion."
+      ]
       },
       "values": [
         {
@@ -328,7 +340,7 @@
           "linkLabel": "View case study",
           "category": "Ad Design",
           "type": "professional",
-          "status": "used for campaign ads",
+          "status": "Campaign Ads",
           "href": "/portfolio/social-campaign"
         },
         {

@@ -17,7 +17,7 @@ import {
   Coffee,
   BookOpen,
   Sparkles,
-  ChevronRight
+  ChevronRight,
 } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
@@ -25,7 +25,6 @@ import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const ABOUT_IMAGE = "/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg";
 const STORY_IMAGE = "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg";
 
 export async function generateStaticParams() {
@@ -56,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     locale === "en"
       ? ["web developer Morocco", "designer", "portfolio", "freelance"]
       : locale === "ar"
-        ? [ "مطور ويب المغرب", "مصمم", "أعمالي"]
+        ? ["مطور ويب المغرب", "مصمم", "أعمالي"]
         : ["développeur web Maroc", "designer", "portfolio"];
 
   return buildPageMetadata({
@@ -82,24 +81,19 @@ export default async function AboutPage({ params }: Props) {
   if (!t) return null;
 
   return (
-    <div
+    <main
       className="min-h-screen bg-background hero-section-light "
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-  
-        <div className="relative px-4 sm:px-6 py-16">
+        <div className="relative px-4 sm:px-6 py-12 sm:py-16 md:py-18">
           <div className="max-w-7xl mx-auto">
             <div className="text-center max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <Sparkles className="w-4 h-4" />
-                {t.subtitle}
-              </div>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-foreground via-foreground to-primary bg-clip-text text-transparent mb-6">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.15] text-foreground mb-6">
                 {t.heading}
               </h1>
-              <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 {t.intro}
               </p>
             </div>
@@ -116,14 +110,14 @@ export default async function AboutPage({ params }: Props) {
               <div className="space-y-4">
                 <div className="inline-flex items-center gap-2 text-primary">
                   <span className="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-                    {locale === "en" ? "Who I Am" : locale === "fr" ? "Qui je suis" : "من أنا"}
+                    {t.whoIAm.title}
                   </span>
                 </div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  {t.paragraph1}
+                  {t.whoIAm.paragraph1}
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  {t.paragraph2}
+                  {t.whoIAm.paragraph2}
                 </p>
               </div>
 
@@ -132,19 +126,31 @@ export default async function AboutPage({ params }: Props) {
                 <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
                   <div className="text-2xl font-bold text-primary">5+</div>
                   <div className="text-xs text-muted-foreground">
-                    {locale === "en" ? "Years Experience" : locale === "fr" ? "Ans d'expérience" : "سنوات خبرة"}
+                    {locale === "en"
+                      ? "Years Experience"
+                      : locale === "fr"
+                        ? "Ans d'expérience"
+                        : "سنوات خبرة"}
                   </div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
-                  <div className="text-2xl font-bold text-primary">50+</div>
+                  <div className="text-2xl font-bold text-primary">98%</div>
                   <div className="text-xs text-muted-foreground">
-                    {locale === "en" ? "Happy Clients" : locale === "fr" ? "Clients satisfaits" : "عملاء سعداء"}
+                    {locale === "en"
+                      ? "Happy Clients"
+                      : locale === "fr"
+                        ? "Clients satisfaits"
+                        : "عملاء سعداء"}
                   </div>
                 </div>
                 <div className="text-center p-4 rounded-xl bg-primary/5 border border-primary/10">
-                  <div className="text-2xl font-bold text-primary">100+</div>
+                  <div className="text-2xl font-bold text-primary">20+</div>
                   <div className="text-xs text-muted-foreground">
-                    {locale === "en" ? "Projects" : locale === "fr" ? "Projets" : "مشروع"}
+                    {locale === "en"
+                      ? "Projects"
+                      : locale === "fr"
+                        ? "Projets"
+                        : "مشروع"}
                   </div>
                 </div>
               </div>
@@ -154,8 +160,8 @@ export default async function AboutPage({ params }: Props) {
               <div className="relative aspect-square max-w-md mx-auto">
                 <div className="relative rounded-2xl overflow-hidden border-2 border-primary/20 shadow-2xl">
                   <Image
-                    src={ABOUT_IMAGE}
-                    alt=""
+                    src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
+                    alt="mohammed devsign full stack developer and designer"
                     width={500}
                     height={500}
                     className="w-full h-full object-cover"
@@ -169,15 +175,18 @@ export default async function AboutPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Who I Am Section */}
-          {t.whoIAm && (
-            <div className="mb-20 p-8 rounded-3xl bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/10">
-              <div className="max-w-3xl mx-auto text-center">
+          {t.experience && (
+            <div className="relative my-12">
+              {/* Background blur effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 rounded-3xl blur-3xl" />
+
+              {/* Content container */}
+              <div className="relative text-center py-12 sm:py-16 px-4 sm:px-8 rounded-3xl bg-gradient-to-br from-primary/5 to-secondary/5 border border-primary/20">
                 <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-4">
-                  {"My experience"}
+                  {t.experience.title}
                 </h2>
-                <p className="text-muted-foreground leading-relaxed text-lg">
-                  {t.whoIAm.text}
+                <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
+                  {t.experience.paragraph}
                 </p>
               </div>
             </div>
@@ -197,7 +206,11 @@ export default async function AboutPage({ params }: Props) {
                         <BookOpen className="w-5 h-5 text-primary" />
                       </div>
                       <h3 className="text-xl font-semibold text-foreground">
-                        {locale === "en" ? "My Story" : locale === "fr" ? "Mon parcours" : "قصتي"}
+                        {locale === "en"
+                          ? "My Story"
+                          : locale === "fr"
+                            ? "Mon parcours"
+                            : "قصتي"}
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed pl-13">
@@ -210,7 +223,11 @@ export default async function AboutPage({ params }: Props) {
                         <Target className="w-5 h-5 text-primary" />
                       </div>
                       <h3 className="text-xl font-semibold text-foreground">
-                        {locale === "en" ? "My Mission" : locale === "fr" ? "Ma mission" : "مهمتي"}
+                        {locale === "en"
+                          ? "My Mission"
+                          : locale === "fr"
+                            ? "Ma mission"
+                            : "مهمتي"}
                       </h3>
                     </div>
                     <p className="text-muted-foreground leading-relaxed pl-13">
@@ -238,15 +255,17 @@ export default async function AboutPage({ params }: Props) {
                     {t.storyMissionValues.valuesTitle}
                   </h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {t.storyMissionValues.values.map((item: string, i: number) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-3 p-4 rounded-xl bg-card/50 border border-border hover:border-primary/30 transition-all hover:shadow-lg"
-                      >
-                        <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-muted-foreground">{item}</span>
-                      </div>
-                    ))}
+                    {t.storyMissionValues.values.map(
+                      (item: string, i: number) => (
+                        <div
+                          key={i}
+                          className="flex items-center gap-3 p-4 rounded-xl bg-card/50 border border-border hover:border-primary/30 transition-all hover:shadow-lg"
+                        >
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </div>
+                      ),
+                    )}
                   </div>
                 </div>
               )}
@@ -257,44 +276,64 @@ export default async function AboutPage({ params }: Props) {
           {t.hackathons?.items?.length > 0 && (
             <div className="mb-20">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-                  <Trophy className="w-4 h-4" />
-                  {t.hackathons.title}
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">
                   {t.hackathons.title}
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <Trophy className="w-4 h-4" />
+
                   {t.hackathons.subtitle}
                 </p>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2">
                 {t.hackathons.items.map(
-                  (item: { name: string; year: string; place: string }, i: number) => (
+                  (
+                    item: {
+                      name: string;
+                      location: string;
+                      year: string;
+                      place: string;
+                    },
+                    i: number,
+                  ) => (
                     <div
                       key={i}
-                      className="group relative overflow-hidden p-6 rounded-2xl bg-gradient-to-br from-card to-primary/5 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-xl"
+                      className="group relative overflow-hidden p-4 sm:p-6 rounded-xl sm:rounded-2xl bg-gradient-to-br from-card to-primary/5 border border-border hover:border-primary/30 transition-all duration-300 hover:shadow-xl"
                     >
-                      <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all" />
+                      <div className="absolute top-0 right-0 w-16 h-16 sm:w-20 sm:h-20 bg-primary/5 rounded-full blur-2xl group-hover:bg-primary/10 transition-all" />
                       <div className="relative z-10">
-                        <div className="flex items-start gap-4">
-                          <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                            <Trophy className="w-6 h-6 text-primary" />
+                        <div
+                          className={`flex items-start gap-3 sm:gap-4 ${isRtl ? "flex-row-reverse" : ""}`}
+                        >
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                            <Trophy className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                           </div>
-                          <div className="flex-1">
-                            <h3 className="font-semibold text-foreground mb-1">
+                          <div className="flex-1 min-w-0">
+                            <h3
+                              className={`font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base truncate ${isRtl ? "text-right" : ""}`}
+                            >
                               {item.name}
                             </h3>
-                            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                              <span>{item.year}</span>
-                              <span>•</span>
-                              <span>{item.place}</span>
+                            <div
+                              className={`flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-x-3 gap-y-1 text-xs sm:text-sm text-muted-foreground ${isRtl ? "items-end sm:items-center" : ""}`}
+                            >
+                              <span className="flex items-center gap-1">
+                                {item.year}
+                              </span>
+                              <span className="hidden sm:inline">•</span>
+                              <span className="flex items-center gap-1">
+                                {item.location}
+                              </span>
+                              <span className="hidden sm:inline">•</span>
+                              <span className="flex items-center gap-1">
+                                {item.place}
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  )
+                  ),
                 )}
               </div>
             </div>
@@ -304,14 +343,11 @@ export default async function AboutPage({ params }: Props) {
           {t.howCanIHelp?.items?.length > 0 && (
             <div className="mb-20">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-                  <HelpCircle className="w-4 h-4" />
-                  {t.howCanIHelp.title}
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold mb-2">
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">
                   {t.howCanIHelp.title}
                 </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
+                <p className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <HelpCircle className="w-4 h-4" />
                   {t.howCanIHelp.subtitle}
                 </p>
               </div>
@@ -337,21 +373,22 @@ export default async function AboutPage({ params }: Props) {
           {t.values && t.values.length > 0 && (
             <div className="mb-20">
               <div className="text-center mb-12">
-                <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
-                  <Heart className="w-4 h-4" />
-                  {locale === "en"
-                    ? "What I Stand For"
-                    : locale === "ar"
-                      ? "ما أؤمن به"
-                      : "Ce qui me guide"}
-                </div>
-                <h2 className="text-2xl sm:text-3xl font-bold">
+      
+                <h2 className="text-2xl sm:text-3xl font-bold mb-5">
                   {locale === "en"
                     ? "Core Values"
                     : locale === "ar"
                       ? "القيم الأساسية"
                       : "Valeurs fondamentales"}
                 </h2>
+                          <p className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-4">
+                  <Heart className="w-4 h-4" />
+                  {locale === "en"
+                    ? "What I Stand For"
+                    : locale === "ar"
+                      ? "ما أؤمن به"
+                      : "Ce qui me guide"}
+                </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 {t.values.map(
@@ -373,7 +410,7 @@ export default async function AboutPage({ params }: Props) {
                         </p>
                       </div>
                     );
-                  }
+                  },
                 )}
               </div>
             </div>
@@ -411,7 +448,7 @@ export default async function AboutPage({ params }: Props) {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
 

@@ -29,7 +29,7 @@
           "subtext": "À travers le Maroc"
         },
         {
-           "value": 5,
+          "value": 5,
           "prefix": "+",
           "suffix": "",
           "text": "Ans d'expérience",
@@ -117,6 +117,7 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services que nous proposons",
+      "cta_up": "Contactez-nous pour en savoir plus",
       "heading": "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc",
       "description": "Vous recherchez des services professionnels de développement web, d'optimisation SEO ou d'automatisation IA au Maroc ? Nous concevons des sites web optimisés pour le SEO, créons des systèmes d'automatisation d'entreprise alimentés par l'IA et réalisons des publicités sur les réseaux sociaux à fort taux de conversion. Faites confiance à notre expertise pour accompagner startups et entreprises vers des résultats mesurables, une visibilité en ligne accrue et une croissance des ventes.",
       "services": {
@@ -157,7 +158,7 @@
           ]
         }
       },
-      "cta": "Contactez-nous pour en savoir plus",
+      "cta": "Lire plus sur ce service",
       "Success_stories": "Histoires de succès",
       "Selected_projects": "Projets sélectionnés",
       "Real_results": "Résultats concrets que nous avons livrés pour nos clients",
@@ -186,19 +187,21 @@
     },
     "about_page": {
       "title": "À Propos de Moi",
-      "subtitle": "Votre partenaire pour la réussite digitale",
-      "heading": "Développeur et designer axé sur les résultats",
-      "intro": "Je suis développeur et designer au Maroc. Je ne travaille pas pour les grandes agences — j'accompagne les startups, les PME et tous ceux qui vendent ou communiquent en ligne et qui ont besoin d'une présence web solide, d'automatisation ou d'IA.",
-      "paragraph1": "Je conçois des sites légers et optimisés SEO qui se positionnent bien, et je crée des visuels et publicités qui mettent en valeur vos services ou produits. Site neuf, automatisation ou visuels pour vos réseaux : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
-      "paragraph2": "Mon approche allie technique moderne, performance et clarté. Je vous aide à toucher plus de clients, à automatiser les tâches répétitives et à présenter votre offre de façon à convertir.",
+      "heading": "Développeur & designer axé sur des résultats concrets",
+      "intro": "Je suis un développeur full-stack et designer freelance utilisant les technologies modernes. J'aide les startups, entreprises et particuliers à créer des sites web haute performance, améliorer le SEO, automatiser les processus avec l'IA et concevoir des publicités sociales à fort taux de conversion.",
       "whoIAm": {
         "title": "Qui Je Suis",
-        "text": "Je suis Mohammed — développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits digitaux performants. Je travaille avec les startups et PME qui veulent se démarquer en ligne : du référencement Google à l'automatisation des processus et au design d'annonces qui convertissent. Je crois en un code propre, une communication claire et des résultats mesurables."
+        "paragraph1": "Je conçois des sites légers et optimisés SEO qui se positionnent bien, et je crée des visuels et publicités qui mettent en valeur vos services ou produits. Site neuf, automatisation ou visuels pour vos réseaux : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
+        "paragraph2": "Mon approche allie technique moderne, performance et clarté. Je vous aide à toucher plus de clients, à automatiser les tâches répétitives et à présenter votre offre de façon à convertir."
+      },
+      "experience": {
+        "title": "Mon Expérience et Parcours",
+        "paragraph": "J’ai travaillé avec des startups, des entreprises et des organisations pour créer des solutions numériques efficaces qui produisent des résultats concrets. Mon expérience comprend le développement d’applications web full-stack, la configuration et l’optimisation de serveurs pour de meilleures performances, ainsi que la création de systèmes d’automatisation qui permettent aux entreprises de gagner un temps précieux au quotidien. J’ai également conçu des centaines de visuels publicitaires pour les réseaux sociaux qui ont aidé les marques à augmenter leur engagement et à atteindre plus de clients. En parallèle, j’ai participé à plusieurs hackathons et remporté la première place dans différentes compétitions en développant des solutions innovantes sous contrainte de temps. De l’architecture web optimisée pour le SEO au déploiement de workflows basés sur l’IA, mon objectif reste toujours le même : créer des solutions qui apportent une valeur mesurable."
       },
       "storyMissionValues": {
         "title": "Découvrez l'histoire, la mission et les valeurs qui me portent",
-        "story": "Mon parcours a commencé par une curiosité pour le web et la façon dont les entreprises peuvent l'utiliser pour grandir. Au fil des années j'ai créé des sites, automatisé des processus et conçu des campagnes pour des marques qui avaient besoin d'un partenaire à la fois développeur et designer — et capable de livrer dans les temps.",
-        "mission": "Ma mission est d'aider les entreprises et les créateurs à construire une présence en ligne forte et visible. Je veux que chaque projet soit rapide, trouvable et centré sur l'utilisateur — pour que vous puissiez vous concentrer sur votre métier pendant que votre présence digitale travaille pour vous.",
+        "story": "Mon parcours a commencé par une curiosité pour le web et la façon dont les entreprises peuvent l'utiliser pour grandir. Au fil des années j'ai créé des sites, automatisé des processus et conçu des campagnes pour des marques qui avaient besoin d'un partenaire à la fois développeur et designer et capable de livrer dans les temps.",
+        "mission": "Ma mission est d'aider les entreprises et les créateurs à construire une présence en ligne forte et visible. Je veux que chaque projet soit rapide, trouvable et centré sur l'utilisateur pour que vous puissiez vous concentrer sur votre métier pendant que votre présence digitale travaille pour vous.",
         "valuesTitle": "Ce qui me guide",
         "values": [
           "La qualité avant la quantité — chaque ligne de code et chaque pixel compte.",
@@ -212,24 +215,34 @@
         "subtitle": "Où j'ai concouru et gagné",
         "items": [
           {
-            "name": "Hackathon National Startups",
+            "name": "DyslexAI Hackathon",
+            "location": "Al Akhawayn University, Ifrane",
             "year": "2024",
             "place": "1er Prix"
           },
           {
-            "name": "Challenge IA & Automatisation",
+            "name": "Attijari Business Hackathon",
+            "location": "Attijariwafa Bank Headquarters, Casablanca",
             "year": "2024",
             "place": "2e Prix"
           },
           {
-            "name": "Concours Performance Web & SEO",
-            "year": "2023",
-            "place": "1er Prix"
+            "name": "Le Hubckathon",
+            "location": "UM6P, casablanca",
+            "year": "2025",
+            "place": "Mentor"
           },
           {
-            "name": "Journée Innovation Digitale",
-            "year": "2023",
-            "place": "2e Prix"
+            "name": "HackAI",
+            "location": "UM6P, Ben Guerir",
+            "year": "2025",
+            "place": "Organisateur"
+          },
+          {
+            "name": "CureCode Hackathon",
+            "location": "UM6P_SHCC, Faculty of Medical Sciences & UM6P Hospital",
+            "year": "2026",
+            "place": "1er Prix"
           }
         ]
       },
@@ -240,9 +253,7 @@
           "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
           "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
           "Concevoir visuels publicitaires et contenus réseaux sociaux qui expliquent votre offre et génèrent des ventes.",
-          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant.",
-          "Former votre équipe ou vous accompagner en maintenance et évolutions."
-        ]
+          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant."        ]
       },
       "values": [
         {

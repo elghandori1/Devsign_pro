@@ -8,7 +8,6 @@ import {
   Award,
   Code2,
   FileCheck,
-  Briefcase,
 } from "lucide-react";
 
 import { Locale, i18n } from "@/i18n-config";
@@ -215,10 +214,10 @@ export default async function ServicesPage({ params }: Props) {
 
             <Link
               href={`/${locale}/contact`}
-              aria-label={data?.cta}
+              aria-label={data?.cta_up}
               className="hidden lg:inline-flex items-center gap-2 px-6 py-3 text-sm bg-primary text-primary-foreground rounded-full font-semibold hover:opacity-90 hover:-translate-y-0.5 transition-all duration-300 shadow-md shadow-primary/20 shrink-0 min-h-[48px]"
             >
-              {data?.cta}
+              {data?.cta_up}
               {isRtl ? (
                 <ArrowLeft size={16} aria-hidden="true" />
               ) : (
