@@ -255,7 +255,7 @@
           "Set up automation and AI tools to save you time and scale your operations.",
           "Design ad creatives and social media visuals that explain your offer and drive sales.",
           "Audit and improve your existing site's speed, SEO, and conversion."
-      ]
+        ]
       },
       "values": [
         {
@@ -386,18 +386,52 @@
       }
     },
     "contact_page": {
-      "title": "Contact Us",
-      "subtitle": "Let's talk about your project",
       "heading": "Ready to grow your presence online?",
-      "description": "Whether you need a website, automation, AI integration, or ad design — reach out. I'll get back to you as soon as possible.",
+      "description": "Have a project in mind? Whether it's a website, business automation, AI integration, or ad design I'm here to help you turn your ideas into reality. Drop me a message and I'll get back to you within 24 hours.",
+      "subtitle": "Let's talk about your project",
       "email": "Email",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
+      "linkedin": "LinkedIn",
       "location": "Morocco",
       "sendMessage": "Send a message",
       "orWrite": "Or write directly to",
+      "chooseWay": "Choose your preferred way",
+      "getInTouch": "Get in touch",
+      "quickResponses": {
+        "response24h": "Response within 24h",
+        "freeConsultation": "Free consultation",
+        "noObligation": "No obligation quotes",
+        "worldwide": "Worldwide service"
+      },
+      "channels": {
+        "emailDescription": "Response within 24 hours",
+        "whatsappDescription": "Fastest response",
+        "instagramDescription": "Seeing my work and updates",
+        "linkedinDescription": "Professional network"
+      },
+      "form": {
+        "heading": "Send a message",
+        "subheading": "I'll get back to you within 24 hours.",
+        "fullNamePlaceholder": "Jane Smith",
+        "emailAddress": "Email Address",
+        "emailPlaceholder": "jane@example.com",
+        "projectType": "Project Type",
+        "projectTypePlaceholder": "Select a project type",
+        "projectTypes": {
+          "website": "Website Development",
+          "automation": "Business Automation",
+          "ai": "AI Integration",
+          "design": "Ad Design & Branding",
+          "other": "Other"
+        },
+        "message": "Message",
+        "messagePlaceholder": "Tell me about your project...",
+        "successMessage": "Message sent! I'll get back to you soon."
+      },
       "whyReachOut": {
         "title": "Why Reach Out?",
+        "subtitle": "Here's what makes working with me different",
         "reasons": [
           {
             "title": "Free initial consultation",

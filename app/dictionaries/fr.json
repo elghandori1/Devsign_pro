@@ -383,35 +383,70 @@
         ]
       }
     },
-    "contact_page": {
-      "title": "Contactez-nous",
-      "subtitle": "Parlons de votre projet",
-      "heading": "Prêt à renforcer votre présence en ligne ?",
-      "description": "Site web, automatisation, intégration IA ou design publicitaire — contactez-moi. Je vous répondrai au plus tôt.",
-      "email": "E-mail",
-      "whatsapp": "WhatsApp",
-      "instagram": "Instagram",
-      "location": "Maroc",
-      "sendMessage": "Envoyer un message",
-      "orWrite": "Ou écrivez directement à",
-      "whyReachOut": {
-        "title": "Pourquoi Nous Contacter ?",
-        "reasons": [
-          {
-            "title": "Consultation initiale gratuite",
-            "text": "On discute de vos objectifs et de notre adéquation — sans engagement."
-          },
-          {
-            "title": "Tarifs et délais clairs",
-            "text": "Devis et planning transparents avant de commencer."
-          },
-          {
-            "title": "Accompagnement continu",
-            "text": "Après le lancement, maintenance et évolutions pour que votre projet reste performant."
-          }
-        ]
+  "contact_page": {
+  
+  "heading": "Prêt à développer votre présence en ligne ?",
+"description": "Vous avez un projet en tête ? Qu'il s'agisse d'un site web, d'automatisation, d'intégration IA ou de design publicitaire je suis là pour transformer vos idées en réalité. Envoyez-moi un message et je vous répondrai sous 24 heures.",
+  "subtitle": "Parlons de votre projet",
+  "email": "E-mail",
+  "whatsapp": "WhatsApp",
+  "instagram": "Instagram",
+  "linkedin": "LinkedIn",
+  "location": "Maroc",
+  "sendMessage": "Envoyer un message",
+  "orWrite": "Ou écrivez directement à",
+  "chooseWay": "Choisissez votre moyen préféré",
+  "getInTouch": "Prendre contact",
+  "quickResponses": {
+    "response24h": "Réponse sous 24h",
+    "freeConsultation": "Consultation gratuite",
+    "noObligation": "Devis sans engagement",
+    "worldwide": "Service mondial"
+  },
+  "channels": {
+    "emailDescription": "Réponse sous 24 heures",
+    "whatsappDescription": "Réponse la plus rapide",
+    "instagramDescription": "Voir mon travail et mes mises à jour",
+    "linkedinDescription": "Réseau professionnel"
+  },
+  "form": {
+    "heading": "Envoyer un message",
+    "subheading": "Je vous répondrai dans les 24 heures.",
+    "fullNamePlaceholder": "Sophie Dupont",
+    "emailAddress": "Adresse e-mail",
+    "emailPlaceholder": "sophie@exemple.com",
+    "projectType": "Type de projet",
+    "projectTypePlaceholder": "Sélectionnez un type de projet",
+    "projectTypes": {
+      "website": "Développement de site web",
+      "automation": "Automatisation d'entreprise",
+      "ai": "Intégration IA",
+      "design": "Design publicitaire & branding",
+      "other": "Autre"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Parlez-moi de votre projet...",
+    "successMessage": "Message envoyé ! Je vous répondrai bientôt."
+  },
+  "whyReachOut": {
+    "title": "Pourquoi me contacter ?",
+    "subtitle": "Voici ce qui rend ma façon de travailler différente",
+    "reasons": [
+      {
+        "title": "Consultation initiale gratuite",
+        "text": "Nous discuterons de vos objectifs et verrons si nous sommes compatibles — sans engagement."
+      },
+      {
+        "title": "Tarifs & délais transparents",
+        "text": "Vous recevez un devis clair et un plan de livraison avant de commencer."
+      },
+      {
+        "title": "Support continu",
+        "text": "Après le lancement, je propose maintenance et mises à jour pour que votre projet reste performant."
       }
-    }
+    ]
+  }
+}
   },
   "footer": {
     "brandName": "Devsign",
