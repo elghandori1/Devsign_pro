@@ -8,8 +8,9 @@
   },
   "homepage": {
     "hero": {
-      "title_line1": "Full-Stack Web Developer in Morocco",
-      "title_highlight": "Building SEO-Optimized Websites & AI Business Automation",
+      "availability": "Available for new projects",
+      "title_line1": "Full-Stack Web Developer in Morocco, Fast Websites",
+      "title_highlight": "SEO-Optimized and High Performance",
       "description": "I'm a full-stack web developer in Morocco, helping enterprises, startups, and individual persons build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
       "focus": "My focus is simple: performance, scalability, and real results for growing businesses.",
       "cta_primary": "Start Your Project",
@@ -118,9 +119,14 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services We Provide",
-      "cta_up": "Contact us to learn more",
       "heading": "Expert Web Development, SEO & Custom AI Automation in Morocco",
       "description": "Looking for professional web development, SEO optimization, or AI automation services in Morocco? We build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
+      "hashtags": [
+        "#WebDevelopment",
+        "#SEOServices",
+        "#AIAutomation",
+        "#DigitalGrowth"
+      ],
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -159,37 +165,43 @@
           ]
         }
       },
-      "cta": "Read more about this service",
+      "cta": "Explore this service",
       "Success_stories": "Success Stories",
       "Selected_projects": "Selected Projects",
-      "Real_results": "Real results we've delivered for our clients",
+      "Real_results": "Real results delivered for real clients, see what's possible.",
       "View_All_Projects": "View All Projects",
+      "viewDetails": "View details",
       "whyChooseUs": {
         "title": "Why We're the Best Choice",
-        "subtitle": "What sets our services apart",
+        "subtitle": "We don't just build, we deliver outcomes that move the needle.",
         "reasons": [
           {
-            "title": "Trusted Results",
-            "text": "We deliver websites and systems that rank, convert, and scale, providing tangible results for enterprises, startups, and individuals."
+            "title": "Results You Can Measure",
+            "text": "Every project is tied to a real goal: higher rankings, more leads, or faster operations. No vanity metrics."
           },
           {
-            "title": "Full-stack expertise",
-            "text": "From front-end design to backend logic, SEO, and automation one partner for your entire digital stack."
+            "title": "One Partner, Full Stack",
+            "text": "Design, development, SEO, and automation — handled end-to-end so nothing falls through the cracks."
           },
           {
-            "title": "Quality & Performance",
-            "text": "Clean code, standard technologies, and clear documentation so you own your project and can maintain or extend it anytime."
+            "title": "Built to Last",
+            "text": "Clean code, modern stack, clear documentation. You own your product and can scale it anytime."
           }
         ]
       },
       "ctat_title": "Ready to Transform Your Digital Presence?",
       "cta_desc": "Let's discuss how our services can help you achieve your business goals.",
-      "cta_btn": "Get Started Today"
+      "cta_btn": "Start the conversation"
     },
     "about_page": {
       "title": "About Me",
       "heading": "Developer & designer focused on real results",
       "intro": "I'm a freelance full-stack developer and designer using modern technologies. I help startups, enterprises, and individuals build high-performance websites, improve SEO, automate workflows with AI, and design high-converting social media ads.",
+      "stats": {
+        "years": "Years of Experience",
+        "clients": "Satisfied Clients",
+        "projects": "Projects Delivered"
+      },
       "whoIAm": {
         "title": "Who I Am",
         "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. I actively participate in hackathons and speak at tech community events to gain experience and stay updated with the latest technologies.",
@@ -209,7 +221,13 @@
           "Transparency — you're always in the loop, from kickoff to launch.",
           "Performance — lightweight, SEO-friendly, and built to last.",
           "Partnership — I succeed when your business grows."
-        ]
+        ],
+        "storyLabel": "My Story",
+        "missionLabel": "My Mission"
+      },
+      "valuesSection": {
+        "title": "Core Values",
+        "subtitle": "What I Stand For"
       },
       "hackathons": {
         "title": "Hackathons & Events",
@@ -241,7 +259,7 @@
           },
           {
             "name": "CureCode Hackathon",
-            "location": "UM6P_SHCC, Faculty of Medical Sciences & UM6P Hospital",
+            "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
             "place": "1st Prize"
           }
@@ -275,15 +293,20 @@
           "text": "Focused on delivery and measurable impact for your business."
         }
       ],
-      "cta": "Get in touch"
+      "cta": {
+        "title": "Ready to Bring Your Vision to Life?",
+        "description": "Let's work together to build something that performs, scales, and stands out.",
+        "button": "Start a conversation"
+      }
     },
     "portfolio_page": {
       "subtitle": "Selected Work",
-      "heading": "Projects That Deliver",
-      "description": "A curated collection of work spanning client projects, personal builds, and academic research.",
+      "heading": "Work That Moves Businesses Forward",
+      "description": "From fast-loading websites to intelligent automations, here's a curated look at what I've built, launched, and delivered for real clients and personal ventures. Let's add your project to this list.",
       "viewCase": "View case study",
       "cta": "Start a project together",
       "ui": {
+        "filterBy": "Filter by",
         "displayModes": {
           "combined": "Combined View",
           "byType": "By Project Type"
@@ -306,8 +329,9 @@
         },
         "emptyStateTitle": "No projects found",
         "emptyStateText": "Try selecting another project category.",
-        "ctaTitle": "Ready to bring your vision to life?",
-        "ctaDescription": "Let's discuss your next project and build a fast, SEO-focused digital experience."
+        "ctaTitle": "Got a project idea? Let's make it happen.",
+        "ctaExplore": " Click to explore",
+        "ctaDescription": "I partner with businesses and founders to design, build, and launch digital products that perform. Whether you're starting from scratch or leveling up — I'm ready when you are."
       },
       "projects": [
         {
@@ -366,21 +390,22 @@
           "href": "/portfolio/ecommerce-platform"
         }
       ],
+      "Warning":"The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
       "whyChooseUs": {
-        "title": "Why clients choose my work",
-        "subtitle": "I build things that actually work — on time, on budget, and built to last.",
+        "title": "Why collaborate with me?",
+        "subtitle": "I don't just deliver code, I deliver outcomes. Here's what you can expect when we work together.",
         "reasons": [
           {
-            "title": "Results-Driven",
-            "text": "Every project is tied to a real outcome: more users, less manual work, or stronger brand presence."
+            "title": "Outcome-Focused Delivery",
+            "text": "Every decision design, tech stack, structure is tied to a real business goal: more traffic, higher conversions, or less manual work."
           },
           {
-            "title": "Full-Stack Ownership",
-            "text": "From design to deployment, I handle the entire product so nothing gets lost in handoffs."
+            "title": "End-to-End Ownership",
+            "text": "From first sketch to final deployment, I own the full build. No broken handoffs, no lost context just clean, consistent execution."
           },
           {
-            "title": "Built to Scale",
-            "text": "Clean architecture and modern stacks mean your product grows with your business, not against it."
+            "title": "Built to Last & Scale",
+            "text": "Modern architecture and clean code mean your product evolves with your ambitions not against them."
           }
         ]
       }
@@ -425,6 +450,9 @@
           "design": "Ad Design & Branding",
           "other": "Other"
         },
+        "copy": "Copy",
+        "copied": "Copied!",
+        "availability": "Available for new projects",
         "message": "Message",
         "messagePlaceholder": "Tell me about your project...",
         "successMessage": "Message sent! I'll get back to you soon."

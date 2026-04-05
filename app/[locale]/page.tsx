@@ -3,9 +3,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
-import { ArrowRight, InstagramIcon, ArrowLeft } from "lucide-react";
-import { MdEmail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -395,128 +393,168 @@ export default async function Home({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <section
+        className="relative overflow-hidden hero-section-light border-b border-border"
+        aria-labelledby="hero-heading"
+      >
+        {/* ── grid texture ── */}
+        <div
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right,currentColor 1px,transparent 1px),linear-gradient(to bottom,currentColor 1px,transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+          aria-hidden="true"
+        />
+        {/* ── ambient glows ── */}
+        <div
+          className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute -bottom-20 right-0 w-80 h-80 bg-primary/8 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
 
-      <section className="relative px-4 sm:px-6 py-6 md:py-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-1 lg:gap-14 md:mt-8">
-          {/* TEXT CONTENT */}
-          <div className="text-left order-2 lg:order-1">
-            <h1
-              className="hero-headline text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-8 sm:my-8 leading-[1.30]"
-              style={{ textAlign: isArabic ? "right" : "left" }}
-            >
-              {isArabic ? (
-                <>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground dark:from-foreground dark:to-muted hero-headline-highlight">
-                    {t.hero.title_line1}{" "}
-                  </span>
-                  {t.hero.title_highlight}
-                </>
-              ) : (
-                <>
-                  {t.hero.title_line1}{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-muted-foreground dark:from-foreground dark:to-muted hero-headline-highlight">
-                    {t.hero.title_highlight}
-                  </span>
-                </>
-              )}
-            </h1>
-
-            <p
-              className="hero-text text-sm sm:text-base md:text-lg text-muted-foreground mb-6 max-w-xl leading-relaxed font-light"
-              style={{ textAlign: isArabic ? "right" : "left" }}
-            >
-              {t.hero.description}
-            </p>
-
-            <p
-              className="hero-text text-xs sm:text-sm md:text-base text-muted-foreground italic mb-6"
-              style={{ textAlign: isArabic ? "right" : "left" }}
-            >
-              {t.hero.focus}
-            </p>
-
-            {/* CTA BUTTONS */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-              <Link
-                href={`/${locale}/contact`}
-                className="w-full sm:w-auto px-6 py-3.5 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md transition-all shadow-lg shadow-primary/30 transform hover:scale-[1.02] active:scale-95 text-center"
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16 lg:py-18">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+            <div className="flex flex-col gap-5 sm:gap-6">
+              <div
+                className="inline-flex items-center gap-2 bg-primary/10 text-primary
+  border border-primary/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium w-fit"
               >
-                {t.hero.cta_primary}
-              </Link>
-
-              <Link
-                href={`/${locale}/portfolio`}
-                className="px-8 py-3.5 bg-card hover:bg-card/80 border border-input text-foreground font-semibold rounded-md transition-all flex items-center justify-center gap-2 transform hover:scale-[1.02] active:scale-95 shadow-sm"
-              >
-                {t.hero.cta_secondary}
-                {!isArabic && <ArrowRight size={16} />}
-                {isArabic && <ArrowLeft size={16} />}
-              </Link>
-            </div>
-          </div>
-
-          {/* PROFILE */}
-          <div className="order-1 lg:order-2 flex flex-col items-center">
-            <div className="w-full max-w-[260px] sm:max-w-sm flex flex-col">
-              <div className="aspect-square overflow-hidden border-2 border-primary/20 rounded-lg">
-                <Image
-                  src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
-                  alt={t.hero.profile_name}
-                  width={480}
-                  height={480}
-                  className="w-full h-full object-cover object-top"
-                  priority
-                  sizes="(max-width: 768px) 100vw, 480px"
+                <span
+                  className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"
+                  aria-hidden="true"
                 />
+                {t.hero.availability ?? "Available for new projects"}
               </div>
+              <h1
+                id="hero-heading"
+                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.1]"
+              >
+                {isArabic ? (
+                  <>
+                    <span
+                      className="text-transparent bg-clip-text bg-gradient-to-r
+                       from-foreground to-muted-foreground
+                       dark:from-foreground dark:to-muted"
+                    >
+                      {t.hero.title_line1}{" "}
+                    </span>
+                    {t.hero.title_highlight}
+                  </>
+                ) : (
+                  <>
+                    {t.hero.title_line1}{" "}
+                    <span
+                      className="text-transparent bg-clip-text bg-gradient-to-r
+                       from-foreground to-muted-foreground
+                       dark:from-foreground dark:to-muted"
+                    >
+                      {t.hero.title_highlight}
+                    </span>
+                  </>
+                )}
+              </h1>
 
-              <div className="flex flex-col items-center px-4 py-4">
-                <p className="hero-text text-base sm:text-lg font-medium">
-                  {t.hero.profile_name}
-                </p>
+              {/* description */}
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed max-w-xl">
+                {t.hero.description}
+              </p>
 
-                <p className="hero-text text-center text-xs sm:text-sm text-muted-foreground mt-1 mb-3">
-                  {t.hero.profile_role}
-                </p>
+              {/* focus line */}
+              <p
+                className="text-xs sm:text-sm text-muted-foreground italic border-l-2 border-primary/30 pl-3 sm:pl-4
+              rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3 sm:rtl:pr-4"
+              >
+                {t.hero.focus}
+              </p>
 
+              {/* CTA buttons */}
+              <div
+                className={`flex flex-col xs:flex-row sm:flex-row gap-3 w-full sm:w-auto`}
+              >
                 <Link
-                  href="#about"
-                  className="px-5 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-md text-sm transition-all"
+                  href={`/${locale}/contact`}
+                  className="inline-flex items-center justify-center gap-2
+               px-5 sm:px-7 py-2.5 sm:py-3.5 bg-primary text-primary-foreground
+               font-semibold rounded-xl text-sm sm:text-base
+               hover:opacity-90 active:scale-95 transition-all
+               shadow-lg shadow-primary/25"
                 >
-                  {t.hero.cta_more_about}
+                  {t.hero.cta_primary}
                 </Link>
 
-                {/* SOCIAL */}
-                <div className="flex items-center justify-center gap-3 mt-4">
-                  <Link
-                    href="https://instagram.com/yourusername"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-pink-500/50 hover:bg-pink-500 hover:text-white transition-all duration-300 hover:scale-110"
-                    aria-label="Instagram"
-                  >
-                    <InstagramIcon size={17} />
-                  </Link>
+                <Link
+                  href={`/${locale}/portfolio`}
+                  className="inline-flex items-center justify-center gap-2
+               px-5 sm:px-7 py-2.5 sm:py-3.5 bg-card border border-border
+               text-foreground font-semibold rounded-xl text-sm sm:text-base
+               hover:border-primary/30 hover:bg-muted/50 active:scale-95
+               transition-all"
+                >
+                  {t.hero.cta_secondary}
+                  {isArabic ? (
+                    <ArrowLeft size={16} aria-hidden="true" />
+                  ) : (
+                    <ArrowRight size={16} aria-hidden="true" />
+                  )}
+                </Link>
+              </div>
+            </div>
 
-                  <Link
-                    href="https://wa.me/212XXXXXXXXX"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-green-500/60 hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-110"
-                    aria-label="WhatsApp"
-                  >
-                    <BsWhatsapp size={17} />
-                  </Link>
+            {/* ── PROFILE SIDE - ENLARGED IMAGE ── */}
+            <div
+              className={`flex justify-center ${isArabic ? "lg:order-1" : "lg:order-2"}`}
+            >
+              <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px]">
+                <div
+                  className="absolute -inset-4 rounded-3xl border border-primary/10"
+                  aria-hidden="true"
+                />
+                <div
+                  className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"
+                  aria-hidden="true"
+                />
 
-                  <Link
-                    href="mailto:contact@devsign.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-9 h-9 flex items-center justify-center bg-card/95 rounded-full border border-blue-500/60 hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:scale-110"
-                    aria-label="Email"
-                  >
-                    <MdEmail size={17} />
-                  </Link>
+                <div className="relative rounded-2xl border border-border bg-card overflow-hidden shadow-xl">
+                  {/* image — better portrait proportions */}
+                  <div className="relative aspect-[4/5] overflow-hidden">
+                    <Image
+                      src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
+                      alt={t.hero.profile_name}
+                      width={420}
+                      height={525}
+                      className="w-full h-full object-cover object-top
+                       transition-transform duration-700 hover:scale-105"
+                      priority
+                      sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 420px"
+                    />
+                    <div
+                      className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
+                      aria-hidden="true"
+                    />
+                  </div>
+
+                  {/* name / role strip */}
+                  <div className="px-4 py-3 border-t border-border">
+                    <p className="font-semibold text-foreground text-sm truncate">
+                      {t.hero.profile_name}
+                    </p>
+                    <p className="text-xs text-muted-foreground truncate mt-0.5">
+                      {t.hero.profile_role}
+                    </p>
+                    <Link
+                      href={`/${locale}#about`}
+                      className="mt-3 w-full inline-flex items-center justify-center gap-1.5
+                       px-3 py-1.5 bg-primary text-primary-foreground font-semibold
+                       rounded-lg text-xs hover:opacity-90 active:scale-95 transition-all"
+                    >
+                      {t.hero.cta_more_about}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

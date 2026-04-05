@@ -8,8 +8,9 @@
   },
   "homepage": {
     "hero": {
-      "title_line1": "Développeur Full-Stack au Maroc, Sites Web optimisés SEO",
-      "title_highlight": "& Automatisation Business via l'IA.",
+      "availability": "Disponible pour de nouveaux projets",
+      "title_line1": "Développeur Web Full-Stack au Maroc Sites Web Rapides",
+      "title_highlight": " SEO et Performants",
       "description": "Je suis un développeur web full-stack au Maroc, aidant les entreprises, les start-ups et les personnes individuelles à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
       "focus": "Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
       "cta_primary": "Démarrer un projet",
@@ -117,8 +118,13 @@
     "services_page": {
       "title": "Services",
       "subtitle": "Services que nous proposons",
-      "cta_up": "Contactez-nous pour en savoir plus",
       "heading": "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc",
+      "hashtags": [
+        "#DéveloppementWeb",
+        "#ServicesSEO",
+        "#AutomatisationIA",
+        "#CroissanceDigitale"
+      ],
       "description": "Vous recherchez des services professionnels de développement web, d'optimisation SEO ou d'automatisation IA au Maroc ? Nous concevons des sites web optimisés pour le SEO, créons des systèmes d'automatisation d'entreprise alimentés par l'IA et réalisons des publicités sur les réseaux sociaux à fort taux de conversion. Faites confiance à notre expertise pour accompagner startups et entreprises vers des résultats mesurables, une visibilité en ligne accrue et une croissance des ventes.",
       "services": {
         "web": {
@@ -158,37 +164,43 @@
           ]
         }
       },
-      "cta": "Lire plus sur ce service",
+      "cta": "Explorer ce service",
       "Success_stories": "Histoires de succès",
       "Selected_projects": "Projets sélectionnés",
-      "Real_results": "Résultats concrets que nous avons livrés pour nos clients",
+      "Real_results": "Des résultats concrets livrés à de vrais clients, voyez ce qui est possible.",
       "View_All_Projects": "Voir tous les projets",
+      "viewDetails": "Voir les détails",
       "whyChooseUs": {
         "title": "Pourquoi Nous Choisir",
         "subtitle": "Ce qui distingue nos services",
         "reasons": [
           {
-            "title": "Résultats de confiance",
-            "text": "Nous concevons des sites web et des systèmes performants (référencement, conversion et évolutivité) offrant des résultats concrets aux entreprises, aux startups et aux particuliers."
+            "title": "Des résultats mesurables",
+            "text": "Chaque projet est lié à un objectif concret : meilleur classement, plus de leads ou opérations plus rapides."
           },
           {
-            "title": "Expertise complète (Full-stack)",
-            "text": "Du design front-end à la logique back-end, en passant par le SEO et l'automatisation un seul partenaire pour toute votre stack numérique."
+            "title": "Un seul partenaire, full stack",
+            "text": "Design, développement, SEO et automatisation — pris en charge de bout en bout."
           },
           {
-            "title": "Qualité & Performance",
-            "text": "Code propre, technologies standards et documentation claire vous possédez votre projet et pouvez le maintenir ou l'étendre à tout moment."
+            "title": "Construit pour durer",
+            "text": "Code propre, stack moderne, documentation claire. Vous possédez votre produit et pouvez l'étendre à tout moment."
           }
         ]
       },
       "ctat_title": "Prêt à Transformer Votre Présence Digitale ?",
       "cta_desc": "Discutons de la façon dont nos services peuvent vous aider à atteindre vos objectifs.",
-      "cta_btn": "Commencer Aujourd'hui"
+      "cta_btn": "Démarrer la conversation"
     },
     "about_page": {
       "title": "À Propos de Moi",
       "heading": "Développeur & designer axé sur des résultats concrets",
       "intro": "Je suis un développeur full-stack et designer freelance utilisant les technologies modernes. J'aide les startups, entreprises et particuliers à créer des sites web haute performance, améliorer le SEO, automatiser les processus avec l'IA et concevoir des publicités sociales à fort taux de conversion.",
+      "stats": {
+        "years": "Ans d'expérience",
+        "clients": "Clients satisfaits",
+        "projects": "Projets livrés"
+      },
       "whoIAm": {
         "title": "Qui Je Suis",
         "paragraph1": "Je conçois des sites légers et optimisés SEO qui se positionnent bien, et je crée des visuels et publicités qui mettent en valeur vos services ou produits. Site neuf, automatisation ou visuels pour vos réseaux : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
@@ -208,7 +220,13 @@
           "La transparence — vous êtes toujours informé, du démarrage au lancement.",
           "La performance — sites légers, SEO-friendly et durables.",
           "Le partenariat — je réussis quand votre activité grandit."
-        ]
+        ],
+        "storyLabel": "Mon parcours",
+        "missionLabel": "Ma mission"
+      },
+      "valuesSection": {
+        "title": "Valeurs fondamentales",
+        "subtitle": "Ce qui me guide"
       },
       "hackathons": {
         "title": "Hackathons & Événements",
@@ -240,7 +258,7 @@
           },
           {
             "name": "CureCode Hackathon",
-            "location": "UM6P_SHCC, Faculty of Medical Sciences & UM6P Hospital",
+            "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
             "place": "1er Prix"
           }
@@ -253,7 +271,8 @@
           "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
           "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
           "Concevoir visuels publicitaires et contenus réseaux sociaux qui expliquent votre offre et génèrent des ventes.",
-          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant."        ]
+          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant."
+        ]
       },
       "values": [
         {
@@ -273,10 +292,14 @@
           "text": "Livraison et impact mesurable pour votre activité."
         }
       ],
-      "cta": "Me contacter"
+      "cta": {
+        "title": "Prêt à donner vie à votre vision ?",
+        "description": "Travaillons ensemble pour créer quelque chose de performant, évolutif et mémorable.",
+        "button": "Démarrer une conversation"
+      }
     },
     "portfolio_page": {
-      "subtitle": "Réalisations sélectionnées",
+      "subtitle": "Travaux sélectionnés",
       "heading": "Des projets qui génèrent des résultats",
       "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
       "viewCase": "Voir l'étude de cas",
@@ -305,6 +328,7 @@
         "emptyStateTitle": "Aucun projet trouvé",
         "emptyStateText": "Essayez de sélectionner une autre catégorie.",
         "ctaTitle": "Prêt à concrétiser votre vision ?",
+        "ctaExplore": " Cliquez pour explorer",
         "ctaDescription": "Parlons de votre prochain projet et créons une expérience rapide et optimisée SEO."
       },
       "projects": [
@@ -364,6 +388,7 @@
           "href": "/portfolio/ecommerce-platform"
         }
       ],
+      "Warning": "Les projets professionnels sont publiés avec autorisation. D'autres projets ne sont pas inclus ici afin de respecter la confidentialité.",
       "whyChooseUs": {
         "title": "Pourquoi On Choisit Mon Travail",
         "subtitle": "Chaque projet est livré pour performer",
@@ -383,70 +408,72 @@
         ]
       }
     },
-  "contact_page": {
-  
-  "heading": "Prêt à développer votre présence en ligne ?",
-"description": "Vous avez un projet en tête ? Qu'il s'agisse d'un site web, d'automatisation, d'intégration IA ou de design publicitaire je suis là pour transformer vos idées en réalité. Envoyez-moi un message et je vous répondrai sous 24 heures.",
-  "subtitle": "Parlons de votre projet",
-  "email": "E-mail",
-  "whatsapp": "WhatsApp",
-  "instagram": "Instagram",
-  "linkedin": "LinkedIn",
-  "location": "Maroc",
-  "sendMessage": "Envoyer un message",
-  "orWrite": "Ou écrivez directement à",
-  "chooseWay": "Choisissez votre moyen préféré",
-  "getInTouch": "Prendre contact",
-  "quickResponses": {
-    "response24h": "Réponse sous 24h",
-    "freeConsultation": "Consultation gratuite",
-    "noObligation": "Devis sans engagement",
-    "worldwide": "Service mondial"
-  },
-  "channels": {
-    "emailDescription": "Réponse sous 24 heures",
-    "whatsappDescription": "Réponse la plus rapide",
-    "instagramDescription": "Voir mon travail et mes mises à jour",
-    "linkedinDescription": "Réseau professionnel"
-  },
-  "form": {
-    "heading": "Envoyer un message",
-    "subheading": "Je vous répondrai dans les 24 heures.",
-    "fullNamePlaceholder": "Sophie Dupont",
-    "emailAddress": "Adresse e-mail",
-    "emailPlaceholder": "sophie@exemple.com",
-    "projectType": "Type de projet",
-    "projectTypePlaceholder": "Sélectionnez un type de projet",
-    "projectTypes": {
-      "website": "Développement de site web",
-      "automation": "Automatisation d'entreprise",
-      "ai": "Intégration IA",
-      "design": "Design publicitaire & branding",
-      "other": "Autre"
-    },
-    "message": "Message",
-    "messagePlaceholder": "Parlez-moi de votre projet...",
-    "successMessage": "Message envoyé ! Je vous répondrai bientôt."
-  },
-  "whyReachOut": {
-    "title": "Pourquoi me contacter ?",
-    "subtitle": "Voici ce qui rend ma façon de travailler différente",
-    "reasons": [
-      {
-        "title": "Consultation initiale gratuite",
-        "text": "Nous discuterons de vos objectifs et verrons si nous sommes compatibles — sans engagement."
+    "contact_page": {
+      "heading": "Prêt à développer votre présence en ligne ?",
+      "description": "Vous avez un projet en tête ? Qu'il s'agisse d'un site web, d'automatisation, d'intégration IA ou de design publicitaire je suis là pour transformer vos idées en réalité. Envoyez-moi un message et je vous répondrai sous 24 heures.",
+      "subtitle": "Parlons de votre projet",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "location": "Maroc",
+      "sendMessage": "Envoyer un message",
+      "orWrite": "Ou écrivez directement à",
+      "chooseWay": "Choisissez votre moyen préféré",
+      "getInTouch": "Prendre contact",
+      "quickResponses": {
+        "response24h": "Réponse sous 24h",
+        "freeConsultation": "Consultation gratuite",
+        "noObligation": "Devis sans engagement",
+        "worldwide": "Service mondial"
       },
-      {
-        "title": "Tarifs & délais transparents",
-        "text": "Vous recevez un devis clair et un plan de livraison avant de commencer."
+      "channels": {
+        "emailDescription": "Réponse sous 24 heures",
+        "whatsappDescription": "Réponse la plus rapide",
+        "instagramDescription": "Voir mon travail et mes mises à jour",
+        "linkedinDescription": "Réseau professionnel"
       },
-      {
-        "title": "Support continu",
-        "text": "Après le lancement, je propose maintenance et mises à jour pour que votre projet reste performant."
+      "form": {
+        "heading": "Envoyer un message",
+        "subheading": "Je vous répondrai dans les 24 heures.",
+        "fullNamePlaceholder": "Sophie Dupont",
+        "emailAddress": "Adresse e-mail",
+        "emailPlaceholder": "sophie@exemple.com",
+        "projectType": "Type de projet",
+        "projectTypePlaceholder": "Sélectionnez un type de projet",
+        "projectTypes": {
+          "website": "Développement de site web",
+          "automation": "Automatisation d'entreprise",
+          "ai": "Intégration IA",
+          "design": "Design publicitaire & branding",
+          "other": "Autre"
+        },
+        "copy": "Copier",
+        "copied": "Copié !",
+        "availability": "Disponible pour de nouveaux projets",
+        "message": "Message",
+        "messagePlaceholder": "Parlez-moi de votre projet...",
+        "successMessage": "Message envoyé ! Je vous répondrai bientôt."
+      },
+      "whyReachOut": {
+        "title": "Pourquoi me contacter ?",
+        "subtitle": "Voici ce qui rend ma façon de travailler différente",
+        "reasons": [
+          {
+            "title": "Consultation initiale gratuite",
+            "text": "Nous discuterons de vos objectifs et verrons si nous sommes compatibles — sans engagement."
+          },
+          {
+            "title": "Tarifs & délais transparents",
+            "text": "Vous recevez un devis clair et un plan de livraison avant de commencer."
+          },
+          {
+            "title": "Support continu",
+            "text": "Après le lancement, je propose maintenance et mises à jour pour que votre projet reste performant."
+          }
+        ]
       }
-    ]
-  }
-}
+    }
   },
   "footer": {
     "brandName": "Devsign",
