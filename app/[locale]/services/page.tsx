@@ -8,9 +8,7 @@ import {
   Award,
   Code2,
   FileCheck,
-  Sparkles,
-  CheckCircle2,
-} from "lucide-react";
+  Sparkles} from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";

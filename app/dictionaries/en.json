@@ -131,37 +131,136 @@
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
           "title": "Secure & SEO-Optimized Website Development",
+          "subtitle": "Websites built to rank, convert, and scale",
           "description": "Build fast websites with modern technologies, focusing on performance, security, mobile-first design, and search engine optimization to help your business rank higher and convert visitors into clients.",
+          "longDescription": "Every website we build starts with a clear goal: get found, get clicks, and turn visitors into paying clients. We combine modern frameworks like Next.js with proven SEO architecture, clean code, and mobile-first design to deliver a site that works as hard as you do.",
           "link": "/services/web-development",
           "features": [
             "SEO-optimized",
-            "Mobile-first",
+            "Mobile-friendly",
             "Fast loading",
-            "Clear structure"
+            "Security"
+          ],
+          "benefits": [
+            {
+              "title": "Higher search rankings",
+              "text": "Structured data, optimized meta, fast load times, everything Google rewards."
+            },
+            {
+              "title": "More conversions",
+              "text": "Clear CTAs, intuitive layouts, and trust signals that turn visitors into leads."
+            },
+            {
+              "title": "Performance Insights",
+              "text": "Track traffic, user behavior, and search performance using Google Analytics and Search Console."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Discovery",
+              "text": "We learn your goals, audience, and competitors."
+            },
+            {
+              "step": "02",
+              "title": "Design, Build & Test",
+              "text": "Wireframes, development, SEO setup, and thorough analysis & testing for performance and security."
+            },
+            {
+              "step": "03",
+              "title": "Launch & Monitor",
+              "text": "Go live with analytics, sitemap, and performance checks."
+            }
           ]
         },
         "systems": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
           "title": "Business Automation & AI-Powered Systems",
+          "subtitle": "Stop doing manually what a system can do for you",
           "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
+          "longDescription": "We build custom dashboards, automated pipelines, and AI-powered tools tailored to your exact workflow. Whether it's client management, inventory tracking, or intelligent reporting — you get a system that works the way your business does.",
           "link": "/services/business-systems",
           "features": [
             "Workflow automation",
             "AI integration",
             "Custom dashboards",
             "Scalable"
+          ],
+          "benefits": [
+            {
+              "title": "Save hours every week",
+              "text": "Automate repetitive tasks so your team focuses on what matters."
+            },
+            {
+              "title": "Fewer errors",
+              "text": "Automated systems eliminate manual data entry mistakes."
+            },
+            {
+              "title": "Real-time insights",
+              "text": "Custom dashboards that show the numbers you actually need."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Audit",
+              "text": "We map your current workflow and find automation opportunities."
+            },
+            {
+              "step": "02",
+              "title": "Build",
+              "text": "Custom tools and integrations built around your stack."
+            },
+            {
+              "step": "03",
+              "title": "Train & Hand off",
+              "text": "Full documentation and walkthrough so your team is confident."
+            }
           ]
         },
         "design": {
           "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
           "title": "Social Media Ad Design",
+          "subtitle": "Visuals that stop the scroll and drive action",
           "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
+          "longDescription": "Great ads don't just look good — they communicate the right message at the right moment. We design scroll-stopping visuals with clear messaging, strong CTAs, and brand consistency that makes your products impossible to ignore.",
           "link": "/services/social-design",
           "features": [
             "Social ads",
             "Product visuals",
             "Brand consistency",
             "High conversion"
+          ],
+          "benefits": [
+            {
+              "title": "More engagement",
+              "text": "Eye-catching designs that earn saves, shares, and clicks."
+            },
+            {
+              "title": "Brand consistency",
+              "text": "Every visual feels unmistakably yours across every platform."
+            },
+            {
+              "title": "Higher ROAS",
+              "text": "Creatives built around conversion, not just aesthetics."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Brief",
+              "text": "We define your audience, platform, and campaign goal."
+            },
+            {
+              "step": "02",
+              "title": "Design",
+              "text": "Multiple concepts delivered with revisions included."
+            },
+            {
+              "step": "03",
+              "title": "Export & Launch",
+              "text": "Delivered in all sizes and formats ready to run."
+            }
           ]
         }
       },
@@ -390,7 +489,7 @@
           "href": "/portfolio/ecommerce-platform"
         }
       ],
-      "Warning":"The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
+      "Warning": "The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
       "whyChooseUs": {
         "title": "Why collaborate with me?",
         "subtitle": "I don't just deliver code, I deliver outcomes. Here's what you can expect when we work together.",

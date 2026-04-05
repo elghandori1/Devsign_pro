@@ -129,38 +129,136 @@
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Développement de Sites Web Sécurisés et Optimisés SEO",
-          "description": "Création de sites web rapides avec des technologies modernes, en mettant l’accent sur la performance, la sécurité, le design mobile-first et l’optimisation pour les moteurs de recherche afin d’aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
+          "title": "Développement de sites web sécurisés et optimisés pour le SEO",
+          "subtitle": "Des sites conçus pour bien se classer, convertir et évoluer",
+          "description": "Créez des sites rapides avec des technologies modernes, en mettant l'accent sur la performance, la sécurité, le design mobile-first et l'optimisation pour les moteurs de recherche afin d'aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
+          "longDescription": "Chaque site que nous construisons commence avec un objectif clair : être trouvé, obtenir des clics et transformer les visiteurs en clients payants. Nous combinons des frameworks modernes comme Next.js avec une architecture SEO éprouvée, un code propre et un design mobile-first pour livrer un site qui travaille aussi dur que vous.",
           "link": "/services/web-development",
           "features": [
             "Optimisé SEO",
             "Mobile-first",
             "Chargement rapide",
-            "Structure claire"
-          ]
+            "Sécurisé"
+          ],
+         "benefits": [
+  {
+    "title": "Meilleur classement sur les moteurs de recherche",
+    "text": "Données structurées, métadonnées optimisées, temps de chargement rapide, tout ce que Google valorise."
+  },
+  {
+    "title": "Plus de conversions",
+    "text": "Des appels à l’action clairs, des interfaces intuitives et des éléments de confiance qui transforment les visiteurs en clients."
+  },
+  {
+    "title": "Analyse des performances",
+    "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche avec Google Analytics et Search Console."
+  }
+],"process": [
+  {
+    "step": "01",
+    "title": "Découverte",
+    "text": "Nous étudions vos objectifs, votre audience et vos concurrents."
+  },
+  {
+    "step": "02",
+    "title": "Conception, Développement & Test",
+    "text": "Maquettes, développement, configuration SEO, avec analyse complète et tests de performance et sécurité."
+  },
+  {
+    "step": "03",
+    "title": "Lancement & Suivi",
+    "text": "Mise en ligne avec analytics, sitemap et vérifications de performance."
+  }
+]
         },
         "systems": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "title": "Systèmes d’Automatisation et Solutions IA pour Entreprises",
-          "description": "Outils logiciels sur mesure, automatisation des workflows et intégrations d’intelligence artificielle pour simplifier les opérations, réduire les tâches répétitives et permettre à votre entreprise de fonctionner plus rapidement et plus efficacement.",
+          "title": "Automatisation des processus métier et systèmes alimentés par l'IA",
+          "subtitle": "Arrêtez de faire manuellement ce qu'un système peut faire pour vous",
+          "description": "Outils logiciels personnalisés, flux de travail automatisés et intégrations d'IA qui simplifient les opérations, réduisent les tâches répétitives et aident votre entreprise à fonctionner plus rapidement et plus efficacement.",
+          "longDescription": "Nous construisons des tableaux de bord personnalisés, des pipelines automatisés et des outils alimentés par l'IA adaptés à votre flux de travail exact. Que ce soit pour la gestion des clients, le suivi des stocks ou les rapports intelligents — vous obtenez un système qui fonctionne comme votre entreprise.",
           "link": "/services/business-systems",
           "features": [
-            "Automatisation",
+            "Automatisation des flux",
             "Intégration IA",
-            "Tableaux de bord",
+            "Tableaux de bord sur mesure",
             "Évolutif"
+          ],
+          "benefits": [
+            {
+              "title": "Gagnez des heures chaque semaine",
+              "text": "Automatisez les tâches répétitives pour que votre équipe se concentre sur l'essentiel."
+            },
+            {
+              "title": "Moins d'erreurs",
+              "text": "Les systèmes automatisés éliminent les erreurs de saisie manuelle."
+            },
+            {
+              "title": "Informations en temps réel",
+              "text": "Des tableaux de bord personnalisés qui montrent les chiffres dont vous avez réellement besoin."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Audit",
+              "text": "Nous cartographions votre flux de travail actuel et trouvons les opportunités d'automatisation."
+            },
+            {
+              "step": "02",
+              "title": "Construction",
+              "text": "Outils personnalisés et intégrations construits autour de votre stack."
+            },
+            {
+              "step": "03",
+              "title": "Formation & Transfert",
+              "text": "Documentation complète et démonstration pour que votre équipe soit à l'aise."
+            }
           ]
         },
         "design": {
           "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
-          "title": "Design Publicitaire pour les Réseaux Sociaux",
-          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l’attention et augmenter l’engagement ainsi que les ventes.",
+          "title": "Design d'annonces pour les réseaux sociaux",
+          "subtitle": "Des visuels qui arrêtent le défilement et poussent à l'action",
+          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l'attention et augmenter l'engagement et les ventes.",
+          "longDescription": "Les bonnes publicités ne sont pas seulement esthétiques — elles communiquent le bon message au bon moment. Nous concevons des visuels accrocheurs avec un message clair, des CTAs forts et une cohérence de marque qui rend vos produits impossibles à ignorer.",
           "link": "/services/social-design",
           "features": [
-            "Pub réseaux sociaux",
+            "Annonces sociales",
             "Visuels produits",
             "Cohérence de marque",
-            "Fort taux de conversion"
+            "Haute conversion"
+          ],
+          "benefits": [
+            {
+              "title": "Plus d'engagement",
+              "text": "Des designs accrocheurs qui génèrent des sauvegardes, des partages et des clics."
+            },
+            {
+              "title": "Cohérence de marque",
+              "text": "Chaque visuel semble indéniablement vôtre sur toutes les plateformes."
+            },
+            {
+              "title": "ROAS plus élevé",
+              "text": "Des créatifs construits autour de la conversion, pas seulement de l'esthétique."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Brief",
+              "text": "Nous définissons votre audience, votre plateforme et l'objectif de la campagne."
+            },
+            {
+              "step": "02",
+              "title": "Design",
+              "text": "Plusieurs concepts livrés avec révisions incluses."
+            },
+            {
+              "step": "03",
+              "title": "Export & Lancement",
+              "text": "Livré dans toutes les tailles et formats prêts à être diffusés."
+            }
           ]
         }
       },
