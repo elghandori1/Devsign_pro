@@ -64,12 +64,12 @@
       "subtitle": "Votre partenaire pour ",
       "highlight": "la réussite digitale",
       "paragraph1": "Je suis développeur et designer avec de l’expérience dans la création de solutions digitales modernes. J’ai participé à plusieurs hackathons, remportant la 1ère place à l’Université Al Akhawayn et à l’UM6P Ben Guerir, ainsi que la 2ème place à l’UM6P Rabat, tout en participant à d’autres hackathons. J’ai également travaillé sur des projets pour des clients au Maroc, en les aidant à créer des sites web, automatiser leurs processus métiers et concevoir des publicités sur les réseaux sociaux performantes.",
-      "paragraph2": "Grâce au travail sur des projets réels et à la participation aux hackathons, j’ai acquis une expérience précieuse que j’utilise aujourd’hui pour créer des sites web de haute qualité, des systèmes pour les entreprises et des solutions digitales efficaces.",
+      "paragraph2": "Je crois au code propre, à une communication claire et à des résultats mesurables. Je m’engage à favoriser votre réussite en ligne avec des solutions efficaces, car votre succès est le mien.",
       "cta": "Plus sur moi"
     },
     "why_we_are_section": {
       "sectionLabel": "Pourquoi me choisir",
-      "description": "J’aide les entreprises, les start-ups et les personnes individuelles à créer des solutions numériques puissantes qui ne se contentent pas d’être belles — elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
+      "description": "J’aide les entreprises, les start-ups et les personnes individuelles à créer des solutions numériques puissantes qui ne se contentent pas d’être belles elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
       "subtitle": "Ce qui fait de moi le bon partenaire pour votre réussite",
       "reasons": [
         {
@@ -140,36 +140,37 @@
             "Chargement rapide",
             "Sécurisé"
           ],
-         "benefits": [
-  {
-    "title": "Meilleur classement sur les moteurs de recherche",
-    "text": "Données structurées, métadonnées optimisées, temps de chargement rapide, tout ce que Google valorise."
-  },
-  {
-    "title": "Plus de conversions",
-    "text": "Des appels à l’action clairs, des interfaces intuitives et des éléments de confiance qui transforment les visiteurs en clients."
-  },
-  {
-    "title": "Analyse des performances",
-    "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche avec Google Analytics et Search Console."
-  }
-],"process": [
-  {
-    "step": "01",
-    "title": "Découverte",
-    "text": "Nous étudions vos objectifs, votre audience et vos concurrents."
-  },
-  {
-    "step": "02",
-    "title": "Conception, Développement & Test",
-    "text": "Maquettes, développement, configuration SEO, avec analyse complète et tests de performance et sécurité."
-  },
-  {
-    "step": "03",
-    "title": "Lancement & Suivi",
-    "text": "Mise en ligne avec analytics, sitemap et vérifications de performance."
-  }
-]
+          "benefits": [
+            {
+              "title": "Meilleur classement sur les moteurs de recherche",
+              "text": "Données structurées, métadonnées optimisées, temps de chargement rapide, tout ce que Google valorise."
+            },
+            {
+              "title": "Plus de conversions",
+              "text": "Des appels à l’action clairs, des interfaces intuitives et des éléments de confiance qui transforment les visiteurs en clients."
+            },
+            {
+              "title": "Analyse des performances",
+              "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche avec Google Analytics et Search Console."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Découverte",
+              "text": "Nous étudions vos objectifs, votre audience et vos concurrents."
+            },
+            {
+              "step": "02",
+              "title": "Conception, Développement & Test",
+              "text": "Maquettes, développement, configuration SEO, avec analyse complète et tests de performance et sécurité."
+            },
+            {
+              "step": "03",
+              "title": "Lancement & Suivi",
+              "text": "Mise en ligne avec analytics, sitemap et vérifications de performance."
+            }
+          ]
         },
         "systems": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
@@ -301,8 +302,8 @@
       },
       "whoIAm": {
         "title": "Qui Je Suis",
-        "paragraph1": "Je conçois des sites légers et optimisés SEO qui se positionnent bien, et je crée des visuels et publicités qui mettent en valeur vos services ou produits. Site neuf, automatisation ou visuels pour vos réseaux : je privilégie la qualité, une communication claire et des résultats qui font grandir votre marque.",
-        "paragraph2": "Mon approche allie technique moderne, performance et clarté. Je vous aide à toucher plus de clients, à automatiser les tâches répétitives et à présenter votre offre de façon à convertir."
+        "paragraph1": "Je m’appelle Mohammed, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337, membre du prestigieux réseau 42 Network. Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
+        "paragraph2": "Je crois au code propre, à une communication claire et à des résultats mesurables. Je m’engage à favoriser votre réussite en ligne avec des solutions efficaces, car votre succès est le mien."
       },
       "experience": {
         "title": "Mon Expérience et Parcours",
@@ -398,8 +399,8 @@
     },
     "portfolio_page": {
       "subtitle": "Travaux sélectionnés",
-      "heading": "Des projets qui génèrent des résultats",
-      "description": "Une sélection de sites, systèmes et designs réalisés pour des startups et entreprises.",
+      "heading": "Des réalisations qui propulsent votre entreprise",
+      "description": "Des sites web ultra-rapides aux automatisations intelligentes, voici un aperçu de ce que j'ai conçu, lancé et livré pour des clients réels et des projets personnels. Et si nous ajoutions votre projet à cette liste",
       "viewCase": "Voir l'étude de cas",
       "cta": "Démarrer votre projet",
       "ui": {

@@ -458,7 +458,8 @@ export default async function ServicesPage({ params }: Props) {
                          active:scale-95 transition-all duration-200"
             >
               {data.View_All_Projects}
-              <Arr size={15} aria-hidden="true" className={arrClass} />
+              
+              <Arr size={15} aria-hidden="true" />
             </Link>
           </div>
         </div>
