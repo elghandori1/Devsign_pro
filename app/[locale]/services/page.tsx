@@ -162,8 +162,6 @@ export default async function ServicesPage({ params }: Props) {
             <Sparkles size={13} aria-hidden="true" />
             {data.subtitle}
           </div>
-
-          {/* h1 — primary SEO target */}
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
@@ -306,7 +304,7 @@ export default async function ServicesPage({ params }: Props) {
       {/* ── 3. SELECTED PROJECTS ── */}
       <section
         aria-labelledby="projects-heading"
-        className="border-t border-border bg-muted/20"
+        className="border-t border-border bg-primary/10"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
           <div className="text-center mb-10 sm:mb-14">
@@ -491,7 +489,7 @@ export default async function ServicesPage({ params }: Props) {
                   return (
                     <div
                       key={r.title}
-                      className="group relative p-5 sm:p-6 rounded-2xl border border-border bg-card
+                      className="group relative p-5 sm:p-6 rounded-2xl border border-border bg-primary/5
                                hover:border-primary/30 hover:shadow-lg transition-all duration-300"
                     >
                       {/* top shimmer on hover */}

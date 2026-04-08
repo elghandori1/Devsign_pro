@@ -127,14 +127,29 @@
         "#AIAutomation",
         "#DigitalGrowth"
       ],
+      "useCasesTitle": "What we can automate for you",
+      "statsTitle": "The impact of automation",
+      "techTitle": "Technologies we work with",
+      "viewPortfolio": "See our work",
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "heroAltSuffix": "SEO-optimized website development",
           "title": "Secure & SEO-Optimized Website Development",
           "subtitle": "Websites built to rank, convert, and scale",
-          "description": "Build fast websites with modern technologies, focusing on performance, security, mobile-first design, and search engine optimization to help your business rank higher and convert visitors into clients.",
-          "longDescription": "Every website we build starts with a clear goal: get found, get clicks, and turn visitors into paying clients. We combine modern frameworks like Next.js with proven SEO architecture, clean code, and mobile-first design to deliver a site that works as hard as you do.",
-          "link": "/services/web-development",
+          "description": "Build fast, secure, and SEO-optimized websites using modern technologies. We focus on performance, mobile-friendly design, technical SEO, and user experience to help your business rank higher on Google and convert visitors into real clients.",
+          "longDescription": "Every website we build starts with a clear goal: get found, generate traffic, and convert visitors into paying customers. We use modern frameworks combined with advanced SEO architecture, fast loading performance, and clean, scalable code.We also integrate Google Analytics and Google Search Console to track performance, monitor traffic, and improve your rankings over time. From proper indexing to keyword optimization, your website is built to be visible and competitive. To accelerate your growth, we can launch and manage Google Ads campaigns that drive targeted traffic to your site, helping you reach the right audience and maximize conversions. The result is a complete digital solution that not only looks great but actively grows your business.",
+           "link": "/services/web-development",
+          "overviewTitle": "Overview",
+          "includedTitle": "What's included?",
+          "includedDesc": "Our web development service includes:",
+          "benefitsTitle": "What you'll gain",
+          "benefitsDesc": "By choosing our web development service, you can expect:",
+          "processTitle": "Our Process",
+          "processDesc": "We follow a clear and efficient process to ensure your project's success:",
+          "techTitle": "Technologies we work with",
+          "techDesc": "We carefully select the right technologies based on your specific project requirements and business goals.",
+          "portfolioBtn": "View Portfolio",
           "features": [
             "SEO-optimized",
             "Mobile-friendly",
@@ -215,6 +230,46 @@
               "step": "03",
               "title": "Train & Hand off",
               "text": "Full documentation and walkthrough so your team is confident."
+            }
+          ],
+          "stats": [
+            {
+              "value": "80%",
+              "label": "Average time saved on manual tasks"
+            },
+            {
+              "value": "3×",
+              "label": "Faster operations after automation"
+            },
+            {
+              "value": "0",
+              "label": "Manual errors with automated pipelines"
+            }
+          ],
+          "techStack": [
+            "Node.js",
+            "Python",
+            "OpenAI API",
+            "REST APIs",
+            "MongoDB",
+            "React"
+          ],
+          "useCases": [
+            {
+              "title": "Client & CRM Management",
+              "text": "Track clients, contracts, and renewals automatically — no spreadsheets."
+            },
+            {
+              "title": "Inventory & Stock Control",
+              "text": "Real-time stock tracking with low-stock alerts and automated reordering."
+            },
+            {
+              "title": "Reporting & Analytics",
+              "text": "Custom dashboards that pull live data and generate weekly reports automatically."
+            },
+            {
+              "title": "AI-Powered Workflows",
+              "text": "Intelligent document processing, email triage, and decision support built into your tools."
             }
           ]
         },

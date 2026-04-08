@@ -125,15 +125,30 @@
         "#AutomatisationIA",
         "#CroissanceDigitale"
       ],
+      "useCasesTitle": "What we can automate for you",
+      "statsTitle": "The impact of automation",
+      "techTitle": "Technologies we work with",
+      "viewPortfolio": "See our work",
       "description": "Vous recherchez des services professionnels de développement web, d'optimisation SEO ou d'automatisation IA au Maroc ? Nous concevons des sites web optimisés pour le SEO, créons des systèmes d'automatisation d'entreprise alimentés par l'IA et réalisons des publicités sur les réseaux sociaux à fort taux de conversion. Faites confiance à notre expertise pour accompagner startups et entreprises vers des résultats mesurables, une visibilité en ligne accrue et une croissance des ventes.",
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "heroAltSuffix": "développement de sites web optimisés pour le SEO",
           "title": "Développement de sites web sécurisés et optimisés pour le SEO",
           "subtitle": "Des sites conçus pour bien se classer, convertir et évoluer",
           "description": "Créez des sites rapides avec des technologies modernes, en mettant l'accent sur la performance, la sécurité, le design mobile-first et l'optimisation pour les moteurs de recherche afin d'aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
-          "longDescription": "Chaque site que nous construisons commence avec un objectif clair : être trouvé, obtenir des clics et transformer les visiteurs en clients payants. Nous combinons des frameworks modernes comme Next.js avec une architecture SEO éprouvée, un code propre et un design mobile-first pour livrer un site qui travaille aussi dur que vous.",
+          "longDescription": "Chaque site web que nous créons commence par un objectif clair : être trouvé, générer du trafic et convertir les visiteurs en clients payants. Nous utilisons des technologies modernes associées à une architecture SEO avancée, des performances de chargement rapides et un code propre et évolutif. Nous intégrons également Google Analytics et Google Search Console pour suivre les résultats et améliorer votre classement. Nous pouvons également gérer des campagnes Google Ads ciblées pour attirer un trafic qualifié et maximiser les conversions, faisant de votre site web un véritable moteur de croissance.",
           "link": "/services/web-development",
+          "overviewTitle": "Aperçu",
+          "includedTitle": "Ce qui est inclus",
+          "includedDesc": "Notre service de développement web comprend :",
+          "benefitsTitle": "Ce que vous y gagnez",
+          "benefitsDesc": "En choisissant notre service de développement web, vous pouvez vous attendre à :",
+          "processTitle": "Notre processus",
+          "processDesc": "Nous suivons un processus clair et efficace pour assurer le succès de votre projet :",
+          "techTitle": "Les technologies que nous utilisons",
+          "techDesc": "Nous sélectionnons soigneusement les technologies appropriées en fonction des exigences spécifiques de votre projet et de vos objectifs commerciaux.",
+          "portfolioBtn": "Voir le portfolio",
           "features": [
             "Optimisé SEO",
             "Mobile-first",
@@ -214,6 +229,46 @@
               "step": "03",
               "title": "Formation & Transfert",
               "text": "Documentation complète et démonstration pour que votre équipe soit à l'aise."
+            }
+          ],
+          "stats": [
+            {
+              "value": "80%",
+              "label": "Temps moyen économisé sur les tâches manuelles"
+            },
+            {
+              "value": "3×",
+              "label": "Opérations plus rapides après automatisation"
+            },
+            {
+              "value": "0",
+              "label": "Erreurs manuelles avec les pipelines automatisés"
+            }
+          ],
+          "techStack": [
+            "Node.js",
+            "Python",
+            "OpenAI API",
+            "REST APIs",
+            "MongoDB",
+            "React"
+          ],
+          "useCases": [
+            {
+              "title": "Gestion clients & CRM",
+              "text": "Suivez automatiquement clients, contrats et renouvellements — sans tableurs."
+            },
+            {
+              "title": "Gestion des stocks",
+              "text": "Suivi des stocks en temps réel avec alertes et réassort automatique."
+            },
+            {
+              "title": "Rapports & analytics",
+              "text": "Tableaux de bord personnalisés qui tirent des données en direct et génèrent des rapports hebdo."
+            },
+            {
+              "title": "Workflows IA",
+              "text": "Traitement intelligent de documents, tri d'emails et aide à la décision intégrés à vos outils."
             }
           ]
         },
@@ -404,6 +459,7 @@
       "viewCase": "Voir l'étude de cas",
       "cta": "Démarrer votre projet",
       "ui": {
+        "filterBy": "Filtrer par",
         "displayModes": {
           "combined": "Vue combinée",
           "byType": "Par type de projet"
