@@ -1,0 +1,705 @@
+{
+  "navbar": {
+    "home": "Accueil",
+    "about": "À Propos de Moi",
+    "Services": "Services",
+    "portfolio": "Mes Projets",
+    "Contact": "Contact"
+  },
+  "homepage": {
+    "hero": {
+      "availability": "Disponible pour de nouveaux projets",
+      "title_line1": "Développeur Web Full-Stack au Maroc Sites Web Rapides",
+      "title_highlight": " SEO et Performants",
+      "description": "Je suis un développeur web full-stack au Maroc, aidant les entreprises, les start-ups et les personnes individuelles à créer des sites web modernes et performants, à améliorer leur référencement SEO et à automatiser leurs processus grâce à des outils d’intelligence artificielle. Je conçois également des publicités pour les réseaux sociaux à fort taux de conversion.",
+      "focus": "Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
+      "cta_primary": "Démarrer un projet",
+      "cta_secondary": "Voir mon portfolio",
+      "profile_name": "mohammed devsign",
+      "profile_role": "développeur full-stack et spécialiste SEO et automatisation IA",
+      "cta_more_about": "en savoir plus",
+      "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
+    },
+    "stats": {
+      "items": [
+        {
+          "value": 20,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Clients satisfaits",
+          "subtext": "À travers le Maroc"
+        },
+        {
+          "value": 5,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Ans d'expérience",
+          "subtext": "Excellence digitale"
+        },
+        {
+          "value": 95,
+          "prefix": "",
+          "suffix": "%",
+          "text": "Taux de réussite",
+          "subtext": "Satisfaction client"
+        },
+        {
+          "value": 24,
+          "prefix": "",
+          "suffix": "/7",
+          "text": "Support",
+          "subtext": "Assistance dédiée"
+        }
+      ]
+    },
+    "services_section": {
+      "sectionLabel": "Nos Services",
+      "heading": "Des solutions digitales pour",
+      "highlight": "Élever Votre Entreprise",
+      "viewAll": "Voir Tous les Services",
+      "cta": "En savoir plus"
+    },
+    "about_section": {
+      "sectionLabel": "À propos de moi",
+      "subtitle": "Votre partenaire pour ",
+      "highlight": "la réussite digitale",
+      "paragraph1": "Je suis développeur et designer avec de l’expérience dans la création de solutions digitales modernes. J’ai participé à plusieurs hackathons, remportant la 1ère place à l’Université Al Akhawayn et à l’UM6P Ben Guerir, ainsi que la 2ème place à l’UM6P Rabat, tout en participant à d’autres hackathons. J’ai également travaillé sur des projets pour des clients au Maroc, en les aidant à créer des sites web, automatiser leurs processus métiers et concevoir des publicités sur les réseaux sociaux performantes.",
+      "paragraph2": "Je crois au code propre, à une communication claire et à des résultats mesurables. Je m’engage à favoriser votre réussite en ligne avec des solutions efficaces, car votre succès est le mien.",
+      "cta": "Plus sur moi"
+    },
+    "why_we_are_section": {
+      "sectionLabel": "Pourquoi me choisir",
+      "description": "J’aide les entreprises, les start-ups et les personnes individuelles à créer des solutions numériques puissantes qui ne se contentent pas d’être belles elles performent, convertissent et évoluent. Chaque projet est conçu pour offrir des résultats concrets et une valeur à long terme.",
+      "subtitle": "Ce qui fait de moi le bon partenaire pour votre réussite",
+      "reasons": [
+        {
+          "title": "Qualité et Performance",
+          "description": "Des sites web et systèmes légers et rapides, construits selon les meilleures pratiques et avec des technologies modernes."
+        },
+        {
+          "title": "Mobile-First et SEO",
+          "description": "Chaque projet est responsive et optimisé pour les moteurs de recherche et tous les appareils."
+        },
+        {
+          "title": "Communication Claire",
+          "description": "Processus transparent, mises à jour régulières et assistance pour que vous soyez toujours informé."
+        },
+        {
+          "title": "Résultats Fiables",
+          "description": "Axé sur la livraison et la satisfaction client avec des résultats mesurables."
+        }
+      ]
+    },
+    "projects_section": {
+      "sectionLabel": "Réalisations",
+      "subtitle": "Projets récents qui génèrent des résultats"
+    },
+    "contact_section": {
+      "sectionLabel": "Prenez Contact",
+      "description": "Prêt à commencer votre projet de site web, système ou design ? Contactez-moi via le canal de votre choix.",
+      "whatsapp": "WhatsApp",
+      "phoneNumber": "+212 6 12 34 56 78",
+      "whatsappNumber": "212612345678",
+      "whatsappCta": "Discuter maintenant",
+      "email": "Email",
+      "emailAddress": "contact@devsign.com",
+      "emailHref": "mailto:contact@devsign.com",
+      "emailCta": "Envoyer un email",
+      "instagram": "Instagram",
+      "instagramUrl": "https://www.instagram.com/devsignpro",
+      "instagramHandle": "@devsignpro",
+      "instagramFollowers": "+2K",
+      "instagramLabel": "abonnés",
+      "instagramCta": "Visiter Instagram",
+      "brandName": "Instagram"
+    }
+  },
+  "pages": {
+    "services_page": {
+      "title": "Services",
+      "subtitle": "Services que nous proposons",
+      "heading": "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc",
+      "hashtags": [
+        "#DéveloppementWeb",
+        "#ServicesSEO",
+        "#AutomatisationIA",
+        "#CroissanceDigitale"
+      ],
+      "useCasesTitle": "What we can automate for you",
+      "statsTitle": "The impact of automation",
+      "techTitle": "Technologies we work with",
+      "viewPortfolio": "See our work",
+      "description": "Vous recherchez des services professionnels de développement web, d'optimisation SEO ou d'automatisation IA au Maroc ? Nous concevons des sites web optimisés pour le SEO, créons des systèmes d'automatisation d'entreprise alimentés par l'IA et réalisons des publicités sur les réseaux sociaux à fort taux de conversion. Faites confiance à notre expertise pour accompagner startups et entreprises vers des résultats mesurables, une visibilité en ligne accrue et une croissance des ventes.",
+      "services": {
+        "web": {
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "heroAltSuffix": "développement de sites web optimisés pour le SEO",
+          "title": "Développement de sites web sécurisés et optimisés pour le SEO",
+          "subtitle": "Des sites conçus pour bien se classer, convertir et évoluer",
+          "description": "Créez des sites rapides avec des technologies modernes, en mettant l'accent sur la performance, la sécurité, le design mobile-first et l'optimisation pour les moteurs de recherche afin d'aider votre entreprise à mieux se positionner et à convertir les visiteurs en clients.",
+          "longDescription": "Chaque site web que nous créons commence par un objectif clair : être trouvé, générer du trafic et convertir les visiteurs en clients payants. Nous utilisons des technologies modernes associées à une architecture SEO avancée, des performances de chargement rapides et un code propre et évolutif. Nous intégrons également Google Analytics et Google Search Console pour suivre les résultats et améliorer votre classement. Nous pouvons également gérer des campagnes Google Ads ciblées pour attirer un trafic qualifié et maximiser les conversions, faisant de votre site web un véritable moteur de croissance.",
+          "link": "/services/web-development",
+          "overviewTitle": "Aperçu",
+          "includedTitle": "Ce qui est inclus",
+          "includedDesc": "Notre service de développement web comprend :",
+          "benefitsTitle": "Ce que vous y gagnez",
+          "benefitsDesc": "En choisissant notre service de développement web, vous pouvez vous attendre à :",
+          "processTitle": "Notre processus",
+          "processDesc": "Nous suivons un processus clair et efficace pour assurer le succès de votre projet :",
+          "techTitle": "Les technologies que nous utilisons",
+          "techDesc": "Nous sélectionnons soigneusement les technologies appropriées en fonction des exigences spécifiques de votre projet et de vos objectifs commerciaux.",
+          "AnothersrvcBtn": "Voir un autre service",
+          "features": [
+            "Optimisé SEO",
+            "Mobile-first",
+            "Chargement rapide",
+            "Sécurisé"
+          ],
+          "benefits": [
+            {
+              "title": "Meilleur classement sur les moteurs de recherche",
+              "text": "Données structurées, métadonnées optimisées, temps de chargement rapide, tout ce que Google valorise."
+            },
+            {
+              "title": "Plus de conversions",
+              "text": "Des appels à l’action clairs, des interfaces intuitives et des éléments de confiance qui transforment les visiteurs en clients."
+            },
+            {
+              "title": "Analyse des performances",
+              "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche avec Google Analytics et Search Console."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Découverte",
+              "text": "Nous étudions vos objectifs, votre audience et vos concurrents."
+            },
+            {
+              "step": "02",
+              "title": "Conception, Développement & Test",
+              "text": "Maquettes, développement, configuration SEO, avec analyse complète et tests de performance et sécurité."
+            },
+            {
+              "step": "03",
+              "title": "Lancement & Suivi",
+              "text": "Mise en ligne avec analytics, sitemap et vérifications de performance."
+            }
+          ]
+        },
+        "systems": {
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "heroAltSuffix": "automatisation des processus et systèmes d'IA",
+          "title": "Automatisation des affaires & Systèmes basés sur l'IA",
+          "subtitle": "Arrêtez de faire manuellement ce qu'un système peut faire pour vous",
+          "description": "Des outils logiciels sur mesure, des flux de travail automatisés et des intégrations d'IA qui simplifient les opérations, réduisent les tâches répétitives et aident votre entreprise à fonctionner plus rapidement et efficacement.",
+          "link": "/services/business-systems",
+          "longDescription": "Nous créons des tableaux de bord sur mesure, des pipelines automatisés et des outils basés sur l'IA adaptés exactement à votre flux de travail. Qu'il s'agisse de la gestion des clients, du suivi des stocks ou de rapports intelligents, vous obtenez un système qui fonctionne comme votre entreprise.",
+          "overviewTitle": "Aperçu",
+          "includedTitle": "Ce qui est inclus",
+          "includedDesc": "Nos services d'automatisation et de systèmes incluent :",
+          "benefitsTitle": "Ce que vous y gagnez",
+          "benefitsDesc": "En automatisant vos opérations, vous pouvez vous attendre à :",
+          "useCasesTitle": "Applications concrètes",
+          "useCasesDesc": "Voici comment nos systèmes transforment vos opérations quotidiennes :",
+          "processTitle": "Notre processus",
+          "processDesc": "Nous suivons un processus clair et efficace pour assurer une intégration fluide :",
+          "techTitle": "Les technologies que nous utilisons",
+          "techDesc": "Nous sélectionnons soigneusement les technologies appropriées en fonction de vos exigences.",
+          "AnothersrvcBtn": "Voir un autre service",
+          "features": [
+            "Automatisation du workflow",
+            "Intégration de l'IA",
+            "Tableaux de bord sur mesure",
+            "Infrastructure évolutive"
+          ],
+          "stats": [
+            {
+              "value": "80%",
+              "label": "Temps moyen gagné sur les tâches manuelles"
+            },
+            {
+              "value": "3×",
+              "label": "Opérations plus rapides après automatisation"
+            },
+            {
+              "value": "0",
+              "label": "Erreurs manuelles avec des pipelines automatisés"
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Gagnez des heures chaque semaine",
+              "text": "Automatisez les tâches répétitives pour que votre équipe se concentre sur l'essentiel."
+            },
+            {
+              "title": "Moins d'erreurs",
+              "text": "Les systèmes automatisés éliminent les erreurs de saisie manuelle des données."
+            },
+            {
+              "title": "Données en temps réel",
+              "text": "Des tableaux de bord sur mesure qui affichent les chiffres dont vous avez réellement besoin."
+            }
+          ],
+          "useCases": [
+            {
+              "title": "Gestion des clients et CRM",
+              "text": "Suivez automatiquement les clients, les contrats et les renouvellements — fini les tableurs."
+            },
+            {
+              "title": "Gestion des stocks et inventaire",
+              "text": "Suivi des stocks en temps réel avec alertes de niveau bas et réapprovisionnement automatisé."
+            },
+            {
+              "title": "Rapports et analyses",
+              "text": "Tableaux de bord sur mesure qui extraient des données en direct et génèrent des rapports hebdomadaires automatiquement."
+            },
+            {
+              "title": "Flux de travail basés sur l'IA",
+              "text": "Traitement intelligent des documents, tri des e-mails et aide à la décision intégrés à vos outils."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Audit",
+              "text": "Nous cartographions votre flux de travail actuel et trouvons des opportunités d'automatisation."
+            },
+            {
+              "step": "02",
+              "title": "Construction",
+              "text": "Outils et intégrations sur mesure construits autour de votre stack technologique."
+            },
+            {
+              "step": "03",
+              "title": "Formation et passation",
+              "text": "Documentation complète et présentation détaillée pour que votre équipe soit en confiance."
+            }
+          ],
+          "techStackList": [
+            "Node.js",
+            "Python",
+            "OpenAI API",
+            "REST APIs",
+            "MongoDB",
+            "React"
+          ]
+        },
+        "design": {
+          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
+          "heroAltSuffix": "conception de publicités sur les réseaux sociaux",
+          "title": "Conception de Publicités Social Media",
+          "subtitle": "Des visuels qui arrêtent le défilement et incitent à l'action",
+          "description": "Visuels publicitaires professionnels pour Instagram, Facebook et TikTok conçus pour présenter clairement vos produits ou services, attirer l'attention et augmenter l'engagement et les ventes.",
+          "link": "/services/social-design",
+          "longDescription": "Les excellentes publicités ne se contentent pas d'être belles — elles communiquent le bon message au bon moment. Nous concevons des visuels captivants avec un message clair, des appels à l'action forts et une cohérence de marque qui rendent vos produits impossibles à ignorer.",
+          "overviewTitle": "Aperçu",
+          "exampleTitle": "Anatomie d'une Publicité",
+          "exampleDesc": "Nous combinons des visuels percutants avec un placement stratégique de l'image de marque, des textes convaincants et des appels à l'action clairs pour maximiser votre retour sur les dépenses publicitaires (ROAS). Chaque élément a un objectif précis.",
+          "exampleFeatures": [
+            "Message clair et convaincant",
+            "Mise en avant du produit",
+            "Intégration stratégique des sponsors et logos",
+            "Appel à l'action très contrasté"
+          ],
+          "exampleCopyright": "© 2024 Exemple de publicité Devsign. La structure de mise en page visuelle et les éléments de sponsors fictifs sont présentés à des fins éducatives et illustratives uniquement.",
+          "benefitsTitle": "Ce que vous y gagnez",
+          "benefitsDesc": "En investissant dans une conception publicitaire professionnelle, vous pouvez vous attendre à :",
+          "processTitle": "Notre Processus de Conception",
+          "processDesc": "Nous suivons un processus clair et efficace pour assurer le succès de votre campagne :",
+          "toolsTitle": "Les Outils Que Nous Utilisons",
+          "toolsDesc": "Nous utilisons des logiciels de pointe pour créer des visuels au pixel près.",
+          "AnothersrvcBtn": "Voir Tous Les Services",
+          "features": [
+            "Publicités sociales",
+            "Visuels de produits",
+            "Cohérence de marque",
+            "Forte conversion"
+          ],
+          "benefits": [
+            {
+              "title": "Plus d'engagement",
+              "text": "Des designs accrocheurs qui génèrent des enregistrements, des partages et des clics."
+            },
+            {
+              "title": "Cohérence de marque",
+              "text": "Chaque visuel reflète parfaitement votre identité sur toutes les plateformes."
+            },
+            {
+              "title": "ROAS plus élevé",
+              "text": "Des créations axées sur la conversion, et pas seulement sur l'esthétique."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Brief",
+              "text": "Nous définissons votre audience, la plateforme et l'objectif de la campagne."
+            },
+            {
+              "step": "02",
+              "title": "Conception",
+              "text": "Plusieurs concepts proposés, avec révisions incluses."
+            },
+            {
+              "step": "03",
+              "title": "Exportation & Lancement",
+              "text": "Livré dans toutes les tailles et formats, prêt à être diffusé."
+            }
+          ],
+          "toolsList": [
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "After Effects"
+          ]
+        }
+      },
+      "cta": "Explorer ce service",
+      "Success_stories": "Histoires de succès",
+      "Selected_projects": "Projets sélectionnés",
+      "Real_results": "Des résultats concrets livrés à de vrais clients, voyez ce qui est possible.",
+      "View_All_Projects": "Voir tous les projets",
+      "viewDetails": "Voir les détails",
+      "whyChooseUs": {
+        "title": "Pourquoi Nous Choisir",
+        "subtitle": "Ce qui distingue nos services",
+        "reasons": [
+          {
+            "title": "Des résultats mesurables",
+            "text": "Chaque projet est lié à un objectif concret : meilleur classement, plus de leads ou opérations plus rapides."
+          },
+          {
+            "title": "Un seul partenaire, full stack",
+            "text": "Design, développement, SEO et automatisation — pris en charge de bout en bout."
+          },
+          {
+            "title": "Construit pour durer",
+            "text": "Code propre, stack moderne, documentation claire. Vous possédez votre produit et pouvez l'étendre à tout moment."
+          }
+        ]
+      },
+      "ctat_title": "Prêt à Transformer Votre Présence Digitale ?",
+      "cta_desc": "Discutons de la façon dont nos services peuvent vous aider à atteindre vos objectifs.",
+      "cta_btn": "Démarrer la conversation"
+    },
+    "about_page": {
+      "title": "À Propos de Moi",
+      "heading": "Développeur & designer axé sur des résultats concrets",
+      "intro": "Je suis un développeur full-stack et designer freelance utilisant les technologies modernes. J'aide les startups, entreprises et particuliers à créer des sites web haute performance, améliorer le SEO, automatiser les processus avec l'IA et concevoir des publicités sociales à fort taux de conversion.",
+      "stats": {
+        "years": "Ans d'expérience",
+        "clients": "Clients satisfaits",
+        "projects": "Projets livrés"
+      },
+      "whoIAm": {
+        "title": "Qui Je Suis",
+        "paragraph1": "Je m’appelle Mohammed, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337, membre du prestigieux réseau 42 Network. Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
+        "paragraph2": "Je crois au code propre, à une communication claire et à des résultats mesurables. Je m’engage à favoriser votre réussite en ligne avec des solutions efficaces, car votre succès est le mien."
+      },
+      "experience": {
+        "title": "Mon Expérience et Parcours",
+        "paragraph": "J’ai travaillé avec des startups, des entreprises et des organisations pour créer des solutions numériques efficaces qui produisent des résultats concrets. Mon expérience comprend le développement d’applications web full-stack, la configuration et l’optimisation de serveurs pour de meilleures performances, ainsi que la création de systèmes d’automatisation qui permettent aux entreprises de gagner un temps précieux au quotidien. J’ai également conçu des centaines de visuels publicitaires pour les réseaux sociaux qui ont aidé les marques à augmenter leur engagement et à atteindre plus de clients. En parallèle, j’ai participé à plusieurs hackathons et remporté la première place dans différentes compétitions en développant des solutions innovantes sous contrainte de temps. De l’architecture web optimisée pour le SEO au déploiement de workflows basés sur l’IA, mon objectif reste toujours le même : créer des solutions qui apportent une valeur mesurable."
+      },
+      "storyMissionValues": {
+        "title": "Découvrez l'histoire, la mission et les valeurs qui me portent",
+        "story": "Mon parcours a commencé par une curiosité pour le web et la façon dont les entreprises peuvent l'utiliser pour grandir. Au fil des années j'ai créé des sites, automatisé des processus et conçu des campagnes pour des marques qui avaient besoin d'un partenaire à la fois développeur et designer et capable de livrer dans les temps.",
+        "mission": "Ma mission est d'aider les entreprises et les créateurs à construire une présence en ligne forte et visible. Je veux que chaque projet soit rapide, trouvable et centré sur l'utilisateur pour que vous puissiez vous concentrer sur votre métier pendant que votre présence digitale travaille pour vous.",
+        "valuesTitle": "Ce qui me guide",
+        "values": [
+          "La qualité avant la quantité — chaque ligne de code et chaque pixel compte.",
+          "La transparence — vous êtes toujours informé, du démarrage au lancement.",
+          "La performance — sites légers, SEO-friendly et durables.",
+          "Le partenariat — je réussis quand votre activité grandit."
+        ],
+        "storyLabel": "Mon parcours",
+        "missionLabel": "Ma mission"
+      },
+      "valuesSection": {
+        "title": "Valeurs fondamentales",
+        "subtitle": "Ce qui me guide"
+      },
+      "hackathons": {
+        "title": "Hackathons & Événements",
+        "subtitle": "Où j'ai concouru et gagné",
+        "items": [
+          {
+            "name": "DyslexAI Hackathon",
+            "location": "Al Akhawayn University, Ifrane",
+            "year": "2024",
+            "place": "1er Prix"
+          },
+          {
+            "name": "Attijari Business Hackathon",
+            "location": "Attijariwafa Bank Headquarters, Casablanca",
+            "year": "2024",
+            "place": "2e Prix"
+          },
+          {
+            "name": "Le Hubckathon",
+            "location": "UM6P, casablanca",
+            "year": "2025",
+            "place": "Mentor"
+          },
+          {
+            "name": "HackAI",
+            "location": "UM6P, Ben Guerir",
+            "year": "2025",
+            "place": "Organisateur"
+          },
+          {
+            "name": "CureCode Hackathon",
+            "location": "UM6P SHCC, Faculty of Medical Sciences",
+            "year": "2026",
+            "place": "1er Prix"
+          }
+        ]
+      },
+      "howCanIHelp": {
+        "title": "Comment Puis-Je Vous Aider ?",
+        "subtitle": "Les façons dont nous pouvons travailler ensemble",
+        "items": [
+          "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
+          "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
+          "Concevoir visuels publicitaires et contenus réseaux sociaux qui expliquent votre offre et génèrent des ventes.",
+          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant."
+        ]
+      },
+      "values": [
+        {
+          "title": "Qualité et performance",
+          "text": "Code et designs rapides, maintenables, qui fonctionnent sur tous les appareils."
+        },
+        {
+          "title": "SEO et visibilité",
+          "text": "Sites conçus pour être trouvés par la bonne audience."
+        },
+        {
+          "title": "Communication claire",
+          "text": "Processus transparent et mises à jour régulières."
+        },
+        {
+          "title": "Résultats",
+          "text": "Livraison et impact mesurable pour votre activité."
+        }
+      ],
+      "cta": {
+        "title": "Prêt à donner vie à votre vision ?",
+        "description": "Travaillons ensemble pour créer quelque chose de performant, évolutif et mémorable.",
+        "button": "Démarrer une conversation"
+      }
+    },
+    "portfolio_page": {
+      "subtitle": "Travaux sélectionnés",
+      "heading": "Des réalisations qui propulsent votre entreprise",
+      "description": "Des sites web ultra-rapides aux automatisations intelligentes, voici un aperçu de ce que j'ai conçu, lancé et livré pour des clients réels et des projets personnels. Et si nous ajoutions votre projet à cette liste",
+      "viewCase": "Voir l'étude de cas",
+      "cta": "Démarrer votre projet",
+      "ui": {
+        "filterBy": "Filtrer par",
+        "displayModes": {
+          "combined": "Vue combinée",
+          "byType": "Par type de projet"
+        },
+        "filters": {
+          "all": "Tous les projets",
+          "professional": "Projets clients",
+          "personal": "Projets personnels",
+          "academic": "Projets académiques"
+        },
+        "typeLabels": {
+          "professional": "Client",
+          "personal": "Personnel",
+          "academic": "Académique"
+        },
+        "sections": {
+          "professional": "Projets clients",
+          "personal": "Projets personnels",
+          "academic": "Projets académiques"
+        },
+        "emptyStateTitle": "Aucun projet trouvé",
+        "emptyStateText": "Essayez de sélectionner une autre catégorie.",
+        "ctaTitle": "Prêt à concrétiser votre vision ?",
+        "ctaExplore": " Cliquez pour explorer",
+        "ctaDescription": "Parlons de votre prochain projet et créons une expérience rapide et optimisée SEO."
+      },
+      "projects": [
+        {
+          "title": "Site Web d'Entreprise & Croissance SEO",
+          "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
+          "tech": "Next.js, SEO Optimization, Mongodb",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Développement Web & SEO",
+          "type": "professional",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
+        },
+        {
+          "title": "Dashboard d'Automatisation d'Entreprise",
+          "description": "Création d'un tableau de bord personnalisé pour gérer les clients, les abonnements et les opérations commerciales en un seul endroit. Fonctionnalités incluant le suivi des dates de début/fin d'abonnement, la gestion des prix, la gestion des stocks et des alertes automatisées pour les services expirés. Cette solution a considérablement amélioré l'organisation, réduit le travail manuel et optimisé la gestion client.",
+          "tech": "React, Node.js, REST API",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Systèmes & Automatisation par IA",
+          "type": "professional",
+          "status": "entreprise locale",
+          "href": "/portfolio/ecommerce-platform"
+        },
+        {
+          "title": "Design pour Réseaux Sociaux & Publicités",
+          "description": "Création de visuels à fort taux de conversion pour les réseaux sociaux, en transformant des images de produits simples en contenu marketing professionnel. Chaque design intègre un message clair, une identité de marque et des éléments d'appel à l'action pour augmenter l'engagement et encourager les achats sur des plateformes comme Instagram et Facebook.",
+          "tech": "Photoshop, Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Création de publicités",
+          "type": "professional",
+          "status": "Campagnes publicitaires",
+          "href": "/portfolio/ecommerce-platform"
+        },
+        {
+          "title": "Open Source CLI Toolkit",
+          "description": "Création d'un toolkit en ligne de commande open source pour automatiser les tâches répétitives de développement et accélérer les workflows d'équipe.",
+          "tech": "Node.js, TypeScript, Commander.js",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Outils développeur",
+          "type": "personal",
+          "status": "online",
+          "href": "/portfolio/business-automation-dashboard"
+        },
+        {
+          "title": "Portail de Recherche Académique",
+          "description": "Conception d'un prototype de portail universitaire pour gérer les soumissions de recherche, les retours des encadrants et le suivi de progression.",
+          "tech": "React, PostgreSQL, Express",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Plateforme éducative",
+          "type": "academic",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
+        }
+      ],
+      "Warning": "Les projets professionnels sont publiés avec autorisation. D'autres projets ne sont pas inclus ici afin de respecter la confidentialité.",
+      "whyChooseUs": {
+        "title": "Pourquoi On Choisit Mon Travail",
+        "subtitle": "Chaque projet est livré pour performer",
+        "reasons": [
+          {
+            "title": "Orientation résultats",
+            "text": "Chaque projet vise à améliorer la visibilité, les conversions ou l'efficacité — avec des résultats mesurables."
+          },
+          {
+            "title": "Stack moderne",
+            "text": "Next.js, React et outils éprouvés pour des produits rapides, maintenables et pérennes."
+          },
+          {
+            "title": "Livraison de bout en bout",
+            "text": "Du concept au lancement et au-delà — design, développement et support pour que vous puissiez vous concentrer sur votre activité."
+          }
+        ]
+      }
+    },
+    "contact_page": {
+      "heading": "Prêt à développer votre présence en ligne ?",
+      "description": "Vous avez un projet en tête ? Qu'il s'agisse d'un site web, d'automatisation, d'intégration IA ou de design publicitaire je suis là pour transformer vos idées en réalité. Envoyez-moi un message et je vous répondrai sous 24 heures.",
+      "subtitle": "Parlons de votre projet",
+      "email": "E-mail",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "location": "Maroc",
+      "sendMessage": "Envoyer un message",
+      "orWrite": "Ou écrivez directement à",
+      "chooseWay": "Choisissez votre moyen préféré",
+      "getInTouch": "Prendre contact",
+      "quickResponses": {
+        "response24h": "Réponse sous 24h",
+        "freeConsultation": "Consultation gratuite",
+        "noObligation": "Devis sans engagement",
+        "worldwide": "Service mondial"
+      },
+      "channels": {
+        "emailDescription": "Réponse sous 24 heures",
+        "whatsappDescription": "Réponse la plus rapide",
+        "instagramDescription": "Voir mon travail et mes mises à jour",
+        "linkedinDescription": "Réseau professionnel"
+      },
+      "form": {
+        "heading": "Envoyer un message",
+        "subheading": "Je vous répondrai dans les 24 heures.",
+        "fullNamePlaceholder": "Sophie Dupont",
+        "emailAddress": "Adresse e-mail",
+        "emailPlaceholder": "sophie@exemple.com",
+        "projectType": "Type de projet",
+        "projectTypePlaceholder": "Sélectionnez un type de projet",
+        "projectTypes": {
+          "website": "Développement de site web",
+          "automation": "Automatisation d'entreprise",
+          "ai": "Intégration IA",
+          "design": "Design publicitaire & branding",
+          "other": "Autre"
+        },
+        "copy": "Copier",
+        "copied": "Copié !",
+        "availability": "Disponible pour de nouveaux projets",
+        "message": "Message",
+        "messagePlaceholder": "Parlez-moi de votre projet...",
+        "successMessage": "Message envoyé ! Je vous répondrai bientôt."
+      },
+      "whyReachOut": {
+        "title": "Pourquoi me contacter ?",
+        "subtitle": "Voici ce qui rend ma façon de travailler différente",
+        "reasons": [
+          {
+            "title": "Consultation initiale gratuite",
+            "text": "Nous discuterons de vos objectifs et verrons si nous sommes compatibles — sans engagement."
+          },
+          {
+            "title": "Tarifs & délais transparents",
+            "text": "Vous recevez un devis clair et un plan de livraison avant de commencer."
+          },
+          {
+            "title": "Support continu",
+            "text": "Après le lancement, je propose maintenance et mises à jour pour que votre projet reste performant."
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "brandName": "Devsign",
+    "brandTagline": "Freelance",
+    "email": "devsignprofessional@gmail.com",
+    "phone": "+212 6 12 34 56 78",
+    "address": "Casablanca, Maroc",
+    "aboutTitle": "Explorer",
+    "links": [
+      {
+        "label": "À propos",
+        "href": "/about"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Projets",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "followTitle": "Suivez-moi",
+    "copyright": "© {year} Devsign. Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookiePolicy": "Politique des cookies"
+  }
+}

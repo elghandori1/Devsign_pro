@@ -1,0 +1,706 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Me",
+    "Services": "Services",
+    "portfolio": "My Work",
+    "Contact": "Contact"
+  },
+  "homepage": {
+    "hero": {
+      "availability": "Available for new projects",
+      "title_line1": "Full-Stack Web Developer in Morocco, Fast Websites",
+      "title_highlight": "SEO-Optimized and High Performance",
+      "description": "I'm a full-stack web developer in Morocco, helping enterprises, startups, and individual persons build modern, high-performance websites, improve their SEO rankings, and automate workflows using AI tools. I also design high-converting social media ads.",
+      "focus": "My focus is simple: performance, scalability, and real results for growing businesses.",
+      "cta_primary": "Start Your Project",
+      "cta_secondary": "View Portfolio",
+      "profile_name": "mohammed devsign",
+      "profile_role": "Full-Stack Developer, SEO Specialist & AI Automation",
+      "cta_more_about": "more about me",
+      "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
+    },
+    "stats": {
+      "items": [
+        {
+          "value": 20,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Happy Clients",
+          "subtext": "Across Morocco"
+        },
+        {
+          "value": 5,
+          "prefix": "+",
+          "suffix": "",
+          "text": "Years Experience",
+          "subtext": "Digital Excellence"
+        },
+        {
+          "value": 95,
+          "prefix": "",
+          "suffix": "%",
+          "text": "Success Rate",
+          "subtext": "Client Satisfaction"
+        },
+        {
+          "value": 24,
+          "prefix": "",
+          "suffix": "/7",
+          "text": "Support",
+          "subtext": "Dedicated Assistance"
+        }
+      ]
+    },
+    "services_section": {
+      "sectionLabel": "Our Services",
+      "heading": "Smart Digital Solutions to",
+      "highlight": "Elevate Your Business",
+      "viewAll": "View All Services",
+      "cta": "Learn More"
+    },
+    "about_section": {
+      "sectionLabel": "About Me",
+      "subtitle": "Your partner for ",
+      "highlight": "digital success",
+      "paragraph1": "I’m a developer and designer with experience building modern digital solutions. I’ve participated in several hackathons, winning 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat, along with participating in other hackathons. I’ve also worked on projects for clients in Morocco, helping them build websites, automate business processes, and create social media ads that convert.",
+      "paragraph2": "I believe in clean code, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work because your success is my success.",
+      "cta": "More About Me"
+    },
+    "why_we_are_section": {
+      "sectionLabel": "Why Work With Me",
+      "description": "I help businesses, startups, and individuals build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real results and long-term value.",
+      "subtitle": "What makes me the right partner for your success",
+      "reasons": [
+        {
+          "title": "Quality & Performance",
+          "description": "Lightweight, fast websites and systems built with best practices and modern tech."
+        },
+        {
+          "title": "Mobile-First & SEO",
+          "description": "Every project is responsive and optimized for search engines and all devices."
+        },
+        {
+          "title": "Clear Communication",
+          "description": "Transparent process, regular updates, and support so you're always in the loop."
+        },
+        {
+          "title": "Trusted Results",
+          "description": "Focused on delivery and client satisfaction with measurable outcomes."
+        }
+      ]
+    },
+    "projects_section": {
+      "sectionLabel": "Selected Work",
+      "subtitle": "Recent projects that drive results"
+    },
+    "contact_section": {
+      "sectionLabel": "Get in Touch",
+      "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
+      "cta_message": "",
+      "whatsapp": "WhatsApp",
+      "phoneNumber": "+212 6 12 34 56 78",
+      "whatsappNumber": "212612345678",
+      "whatsappCta": "Chat now",
+      "email": "Email",
+      "emailAddress": "contact@devsign.com",
+      "emailHref": "mailto:contact@devsign.com",
+      "emailCta": "Send email",
+      "instagram": "Instagram",
+      "instagramUrl": "https://www.instagram.com/devsignpro",
+      "instagramHandle": "@devsignpro",
+      "instagramFollowers": "+2K",
+      "instagramLabel": "followers",
+      "instagramCta": "Visit Instagram",
+      "brandName": "Instagram"
+    }
+  },
+  "pages": {
+    "services_page": {
+      "title": "Services",
+      "subtitle": "Services We Provide",
+      "heading": "Expert Web Development, SEO & Custom AI Automation in Morocco",
+      "description": "Looking for professional web development, SEO optimization, or AI automation services in Morocco? We build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
+      "hashtags": [
+        "#WebDevelopment",
+        "#SEOServices",
+        "#AIAutomation",
+        "#DigitalGrowth"
+      ],
+      "useCasesTitle": "What we can automate for you",
+      "statsTitle": "The impact of automation",
+      "techTitle": "Technologies we work with",
+      "viewPortfolio": "See our work",
+      "services": {
+        "web": {
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "heroAltSuffix": "SEO-optimized website development",
+          "title": "Secure & SEO-Optimized Website Development",
+          "subtitle": "Websites built to rank, convert, and scale",
+          "description": "Build fast, secure, and SEO-optimized websites using modern technologies. We focus on performance, mobile-friendly design, technical SEO, and user experience to help your business rank higher on Google and convert visitors into real clients.",
+          "longDescription": "Every website we build starts with a clear goal: get found, generate traffic, and convert visitors into paying customers. We use modern frameworks combined with advanced SEO architecture, fast loading performance, and clean, scalable code.We also integrate Google Analytics and Google Search Console to track performance, monitor traffic, and improve your rankings over time. From proper indexing to keyword optimization, your website is built to be visible and competitive. To accelerate your growth, we can launch and manage Google Ads campaigns that drive targeted traffic to your site, helping you reach the right audience and maximize conversions. The result is a complete digital solution that not only looks great but actively grows your business.",
+          "link": "/services/web-development",
+          "overviewTitle": "Overview",
+          "includedTitle": "What's included?",
+          "includedDesc": "Our web development service includes:",
+          "benefitsTitle": "What you'll gain",
+          "benefitsDesc": "By choosing our web development service, you can expect:",
+          "processTitle": "Our Process",
+          "processDesc": "We follow a clear and efficient process to ensure your project's success:",
+          "techTitle": "Technologies we work with",
+          "techDesc": "We carefully select the right technologies based on your specific project requirements and business goals.",
+          "AnothersrvcBtn": "View another service",
+          "features": [
+            "SEO-optimized",
+            "Mobile-friendly",
+            "Fast loading",
+            "Security"
+          ],
+          "benefits": [
+            {
+              "title": "Higher search rankings",
+              "text": "Structured data, optimized meta, fast load times, everything Google rewards."
+            },
+            {
+              "title": "More conversions",
+              "text": "Clear CTAs, intuitive layouts, and trust signals that turn visitors into leads."
+            },
+            {
+              "title": "Performance Insights",
+              "text": "Track traffic, user behavior, and search performance using Google Analytics and Search Console."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Discovery",
+              "text": "We learn your goals, audience, and competitors."
+            },
+            {
+              "step": "02",
+              "title": "Design, Build & Test",
+              "text": "Wireframes, development, SEO setup, and thorough analysis & testing for performance and security."
+            },
+            {
+              "step": "03",
+              "title": "Launch & Monitor",
+              "text": "Go live with analytics, sitemap, and performance checks."
+            }
+          ]
+        },
+        "systems": {
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "heroAltSuffix": "business automation and AI systems",
+          "title": "Business Automation & AI-Powered Systems",
+          "subtitle": "Stop doing manually what a system can do for you",
+          "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
+          "longDescription": "We build custom dashboards, automated pipelines, and AI-powered tools tailored to your exact workflow. Whether it's client management, inventory tracking, or intelligent reporting, you get a system that works the way your business does.",
+          "link": "/services/business-systems",
+          "overviewTitle": "Overview",
+          "includedTitle": "What's included?",
+          "includedDesc": "Our automation & system services include:",
+          "benefitsTitle": "What you'll gain",
+          "benefitsDesc": "By automating your operations, you can expect:",
+          "useCasesTitle": "Real-World Applications",
+          "useCasesDesc": "Here is how our systems transform your daily operations:",
+          "processTitle": "Our Process",
+          "processDesc": "We follow a clear and efficient process to ensure a seamless integration:",
+          "techTitle": "Technologies we work with",
+          "techDesc": "We carefully select the right technologies based on your specific workflow requirements.",
+          "AnothersrvcBtn": "View another service",
+          "features": [
+            "Workflow automation",
+            "AI integration",
+            "Custom dashboards",
+            "Scalable infrastructure"
+          ],
+          "stats": [
+            {
+              "value": "80%",
+              "label": "Average time saved on manual tasks"
+            },
+            {
+              "value": "3×",
+              "label": "Faster operations after automation"
+            },
+            {
+              "value": "0",
+              "label": "Manual errors with automated pipelines"
+            }
+          ],
+          "benefits": [
+            {
+              "title": "Save hours every week",
+              "text": "Automate repetitive tasks so your team focuses on what matters."
+            },
+            {
+              "title": "Fewer errors",
+              "text": "Automated systems eliminate manual data entry mistakes."
+            },
+            {
+              "title": "Real-time insights",
+              "text": "Custom dashboards that show the numbers you actually need."
+            }
+          ],
+          "useCases": [
+            {
+              "title": "Client & CRM Management",
+              "text": "Track clients, contracts, and renewals automatically — no spreadsheets."
+            },
+            {
+              "title": "Inventory & Stock Control",
+              "text": "Real-time stock tracking with low-stock alerts and automated reordering."
+            },
+            {
+              "title": "Reporting & Analytics",
+              "text": "Custom dashboards that pull live data and generate weekly reports automatically."
+            },
+            {
+              "title": "AI-Powered Workflows",
+              "text": "Intelligent document processing, email triage, and decision support built into your tools."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Audit",
+              "text": "We map your current workflow and find automation opportunities."
+            },
+            {
+              "step": "02",
+              "title": "Build",
+              "text": "Custom tools and integrations built around your stack."
+            },
+            {
+              "step": "03",
+              "title": "Train & Hand off",
+              "text": "Full documentation and walkthrough so your team is confident."
+            }
+          ],
+          "techStackList": [
+            "Node.js",
+            "Python",
+            "OpenAI API",
+            "REST APIs",
+            "MongoDB",
+            "React"
+          ]
+        },
+        "design": {
+          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
+          "heroAltSuffix": "social media ad design",
+          "title": "Social Media Ad Design",
+          "subtitle": "Visuals that stop the scroll and drive action",
+          "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
+          "link": "/services/social-design",
+          "longDescription": "Great ads don't just look good — they communicate the right message at the right moment. We design scroll-stopping visuals with clear messaging, strong CTAs, and brand consistency that makes your products impossible to ignore.",
+          "overviewTitle": "Overview",
+          "exampleTitle": "Anatomy of an Ad",
+          "exampleDesc": "We combine striking visuals with strategic placement of branding, compelling copy, and clear calls-to-action to maximize your Return on Ad Spend (ROAS). Every element serves a specific purpose.",
+          "exampleFeatures": [
+            "Clear, compelling messaging",
+            "Prominent product placement",
+            "Strategic sponsor & logo integration",
+            "High-contrast Call-to-Action"
+          ],
+          "exampleCopyright": "© 2024 Devsign Ad Example. Visual layout structure and fictional sponsor elements shown for educational and illustrative purposes only.",
+          "benefitsTitle": "What you'll gain",
+          "benefitsDesc": "By investing in professional ad design, you can expect:",
+          "processTitle": "Our Design Process",
+          "processDesc": "We follow a clear and efficient process to ensure your campaign's success:",
+          "toolsTitle": "Design Tools We Use",
+          "toolsDesc": "We use industry-leading software to create pixel-perfect creatives.",
+          "AnothersrvcBtn": "View All Services",
+          "features": [
+            "Social ads",
+            "Product visuals",
+            "Brand consistency",
+            "High conversion"
+          ],
+          "benefits": [
+            {
+              "title": "More engagement",
+              "text": "Eye-catching designs that earn saves, shares, and clicks."
+            },
+            {
+              "title": "Brand consistency",
+              "text": "Every visual feels unmistakably yours across every platform."
+            },
+            {
+              "title": "Higher ROAS",
+              "text": "Creatives built around conversion, not just aesthetics."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Brief",
+              "text": "We define your audience, platform, and campaign goal."
+            },
+            {
+              "step": "02",
+              "title": "Design",
+              "text": "Multiple concepts delivered with revisions included."
+            },
+            {
+              "step": "03",
+              "title": "Export & Launch",
+              "text": "Delivered in all sizes and formats ready to run."
+            }
+          ],
+          "toolsList": [
+            "Figma",
+            "Adobe Photoshop",
+            "Adobe Illustrator",
+            "After Effects"
+          ]
+        }
+      },
+      "cta": "Explore this service",
+      "Success_stories": "Success Stories",
+      "Selected_projects": "Selected Projects",
+      "Real_results": "Real results delivered for real clients, see what's possible.",
+      "View_All_Projects": "View All Projects",
+      "viewDetails": "View details",
+      "whyChooseUs": {
+        "title": "Why We're the Best Choice",
+        "subtitle": "We don't just build, we deliver outcomes that move the needle.",
+        "reasons": [
+          {
+            "title": "Results You Can Measure",
+            "text": "Every project is tied to a real goal: higher rankings, more leads, or faster operations. No vanity metrics."
+          },
+          {
+            "title": "One Partner, Full Stack",
+            "text": "Design, development, SEO, and automation — handled end-to-end so nothing falls through the cracks."
+          },
+          {
+            "title": "Built to Last",
+            "text": "Clean code, modern stack, clear documentation. You own your product and can scale it anytime."
+          }
+        ]
+      },
+      "ctat_title": "Ready to Transform Your Digital Presence?",
+      "cta_desc": "Let's discuss how our services can help you achieve your business goals.",
+      "cta_btn": "Start the conversation"
+    },
+    "about_page": {
+      "title": "About Me",
+      "heading": "Developer & designer focused on real results",
+      "intro": "I'm a freelance full-stack developer and designer using modern technologies. I help startups, enterprises, and individuals build high-performance websites, improve SEO, automate workflows with AI, and design high-converting social media ads.",
+      "stats": {
+        "years": "Years of Experience",
+        "clients": "Satisfied Clients",
+        "projects": "Projects Delivered"
+      },
+      "whoIAm": {
+        "title": "Who I Am",
+        "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
+        "paragraph2": "I believe in clean code, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work because your success is my success."
+      },
+      "experience": {
+        "title": "My Experience & Background",
+        "paragraph": "I've worked with enterprises, startups, and small businesses to build real digital solutions that deliver results. I've developed full-stack web applications, configured servers for optimal performance, and built automation systems that save hours of manual work daily. I've designed hundreds of social media ad visuals that helped businesses increase engagement and sales. I've also won first place in multiple hackathons I participated in, competing against talented developers and building innovative solutions under pressure. From setting up SEO-friendly architectures to deploying AI-powered workflows, every project I take on is focused on one thing: getting you measurable outcomes."
+      },
+      "storyMissionValues": {
+        "title": "Discover the story, mission, and values that drive me",
+        "story": "My journey started with a curiosity for how the web works and how businesses can use it to grow. Over the years I've built websites, automated processes, and designed campaigns for brands that needed a partner who could both code and design and deliver on time.",
+        "mission": "My mission is to help businesses and creators build a strong, visible online presence. I want every project to be fast, findable, and focused on the user so you can focus on what you do best while your digital presence works for you.",
+        "valuesTitle": "What I stand for",
+        "values": [
+          "Quality over quantity — every line of code and every pixel matters.",
+          "Transparency — you're always in the loop, from kickoff to launch.",
+          "Performance — lightweight, SEO-friendly, and built to last.",
+          "Partnership — I succeed when your business grows."
+        ],
+        "storyLabel": "My Story",
+        "missionLabel": "My Mission"
+      },
+      "valuesSection": {
+        "title": "Core Values",
+        "subtitle": "What I Stand For"
+      },
+      "hackathons": {
+        "title": "Hackathons & Events",
+        "subtitle": "Where I've competed and won",
+        "items": [
+          {
+            "name": "DyslexAI Hackathon",
+            "location": "Al Akhawayn University, Ifrane",
+            "year": "2024",
+            "place": "1st Prize"
+          },
+          {
+            "name": "Attijari Business Hackathon",
+            "location": "Attijariwafa Bank Headquarters, Casablanca",
+            "year": "2024",
+            "place": "2nd Prize"
+          },
+          {
+            "name": "Le Hubckathon",
+            "location": "UM6P, casablanca",
+            "year": "2025",
+            "place": "Mentor"
+          },
+          {
+            "name": "HackAI",
+            "location": "UM6P, Ben Guerir",
+            "year": "2025",
+            "place": "Organizer"
+          },
+          {
+            "name": "CureCode Hackathon",
+            "location": "UM6P SHCC, Faculty of Medical Sciences",
+            "year": "2026",
+            "place": "1st Prize"
+          }
+        ]
+      },
+      "howCanIHelp": {
+        "title": "How Can I Help?",
+        "subtitle": "Ways we can work together",
+        "items": [
+          "Build or redesign your website — fast, SEO-optimized, and mobile-first.",
+          "Set up automation and AI tools to save you time and scale your operations.",
+          "Design ad creatives and social media visuals that explain your offer and drive sales.",
+          "Audit and improve your existing site's speed, SEO, and conversion."
+        ]
+      },
+      "values": [
+        {
+          "title": "Quality & performance",
+          "text": "Fast, maintainable code and designs that work across devices."
+        },
+        {
+          "title": "SEO & visibility",
+          "text": "Sites built to rank and be found by the right audience."
+        },
+        {
+          "title": "Clear communication",
+          "text": "Transparent process and regular updates so you're always in the loop."
+        },
+        {
+          "title": "Results-oriented",
+          "text": "Focused on delivery and measurable impact for your business."
+        }
+      ],
+      "cta": {
+        "title": "Ready to Bring Your Vision to Life?",
+        "description": "Let's work together to build something that performs, scales, and stands out.",
+        "button": "Start a conversation"
+      }
+    },
+    "portfolio_page": {
+      "subtitle": "Selected Work",
+      "heading": "Work That Moves Businesses Forward",
+      "description": "From high-performance websites to intelligent automations, here is a curated look at what I’ve built, launched, and delivered for real clients and personal ventures. Let’s add your project to this list.",
+      "viewCase": "View case study",
+      "cta": "Start a project together",
+      "ui": {
+        "filterBy": "Filter by",
+        "displayModes": {
+          "combined": "Combined View",
+          "byType": "By Project Type"
+        },
+        "filters": {
+          "all": "All Projects",
+          "professional": "Client Work",
+          "personal": "Personal Projects",
+          "academic": "Academic Projects"
+        },
+        "typeLabels": {
+          "professional": "Client",
+          "personal": "Personal",
+          "academic": "Academic"
+        },
+        "sections": {
+          "professional": "Client Projects",
+          "personal": "Personal Projects",
+          "academic": "Academic Projects"
+        },
+        "emptyStateTitle": "No projects found",
+        "emptyStateText": "Try selecting another project category.",
+        "ctaTitle": "Got a project idea? Let's make it happen.",
+        "ctaExplore": " Click to explore",
+        "ctaDescription": "I partner with businesses and founders to design, build, and launch digital products that perform. Whether you're starting from scratch or leveling up — I'm ready when you are."
+      },
+      "projects": [
+        {
+          "title": "Corporate Website & SEO Growth",
+          "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. Achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
+          "tech": "Next.js, SEO Optimization, MongoDB",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "View case study",
+          "category": "Web Development & SEO",
+          "type": "professional",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
+        },
+        {
+          "title": "Business Automation Dashboard",
+          "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services.",
+          "tech": "React, Node.js, REST API",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "View case study",
+          "category": "Systems & Automation",
+          "type": "professional",
+          "status": "local enterprise",
+          "href": "/portfolio/business-automation-dashboard"
+        },
+        {
+          "title": "Social Media Design & Ads",
+          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
+          "tech": "Photoshop , Illustrator",
+          "image": "/images/projects/Social-Media-Design.jpg",
+          "linkLabel": "View case study",
+          "category": "Ad Design",
+          "type": "professional",
+          "status": "Campaign Ads",
+          "href": "/portfolio/social-campaign"
+        },
+        {
+          "title": "Open Source CLI Toolkit",
+          "description": "Built a reusable command-line toolkit that automates repetitive development tasks and improves team productivity. Includes modular commands, configuration support, and clear documentation for onboarding.",
+          "tech": "Node.js, TypeScript, Commander.js",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "View case study",
+          "category": "Developer Tools",
+          "type": "personal",
+          "status": "online",
+          "href": "/portfolio/business-automation-dashboard"
+        },
+        {
+          "title": "Academic Research Portal",
+          "description": "Designed and implemented a university portal prototype for managing research submissions, supervisor feedback, and project status tracking. Focused on usability, data structure, and accessible interface patterns.",
+          "tech": "React, PostgreSQL, Express",
+          "image": "/images/projects/Corporate-Website.png",
+          "linkLabel": "View case study",
+          "category": "Education Platform",
+          "type": "academic",
+          "status": "online",
+          "href": "/portfolio/ecommerce-platform"
+        }
+      ],
+      "Warning": "The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
+      "whyChooseUs": {
+        "title": "Why collaborate with me?",
+        "subtitle": "I don't just deliver code, I deliver outcomes. Here's what you can expect when we work together.",
+        "reasons": [
+          {
+            "title": "Outcome-Focused Delivery",
+            "text": "Every decision design, tech stack, structure is tied to a real business goal: more traffic, higher conversions, or less manual work."
+          },
+          {
+            "title": "End-to-End Ownership",
+            "text": "From first sketch to final deployment, I own the full build. No broken handoffs, no lost context just clean, consistent execution."
+          },
+          {
+            "title": "Built to Last & Scale",
+            "text": "Modern architecture and clean code mean your product evolves with your ambitions not against them."
+          }
+        ]
+      }
+    },
+    "contact_page": {
+      "heading": "Ready to grow your presence online?",
+      "description": "Have a project in mind? Whether it's a website, business automation, AI integration, or ad design I'm here to help you turn your ideas into reality. Drop me a message and I'll get back to you within 24 hours.",
+      "subtitle": "Let's talk about your project",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "location": "Morocco",
+      "sendMessage": "Send a message",
+      "orWrite": "Or write directly to",
+      "chooseWay": "Choose your preferred way",
+      "getInTouch": "Get in touch",
+      "quickResponses": {
+        "response24h": "Response within 24h",
+        "freeConsultation": "Free consultation",
+        "noObligation": "No obligation quotes",
+        "worldwide": "Worldwide service"
+      },
+      "channels": {
+        "emailDescription": "Response within 24 hours",
+        "whatsappDescription": "Fastest response",
+        "instagramDescription": "Seeing my work and updates",
+        "linkedinDescription": "Professional network"
+      },
+      "form": {
+        "heading": "Send a message",
+        "subheading": "I'll get back to you within 24 hours.",
+        "fullNamePlaceholder": "Jane Smith",
+        "emailAddress": "Email Address",
+        "emailPlaceholder": "jane@example.com",
+        "projectType": "Project Type",
+        "projectTypePlaceholder": "Select a project type",
+        "projectTypes": {
+          "website": "Website Development",
+          "automation": "Business Automation",
+          "ai": "AI Integration",
+          "design": "Ad Design & Branding",
+          "other": "Other"
+        },
+        "copy": "Copy",
+        "copied": "Copied!",
+        "availability": "Available for new projects",
+        "message": "Message",
+        "messagePlaceholder": "Tell me about your project...",
+        "successMessage": "Message sent! I'll get back to you soon."
+      },
+      "whyReachOut": {
+        "title": "Why Reach Out?",
+        "subtitle": "Here's what makes working with me different",
+        "reasons": [
+          {
+            "title": "Free initial consultation",
+            "text": "We'll discuss your goals and see if we're a good fit no commitment."
+          },
+          {
+            "title": "Clear pricing & timeline",
+            "text": "You get a transparent quote and delivery plan before we start."
+          },
+          {
+            "title": "Ongoing support",
+            "text": "After launch, I offer maintenance and updates so your project keeps performing."
+          }
+        ]
+      }
+    }
+  },
+  "footer": {
+    "brandName": "Devsign",
+    "brandTagline": "Freelance",
+    "email": "devsignprofessional@gmail.com",
+    "phone": "+212 6 12 34 56 78",
+    "address": "Casablanca, Morocco",
+    "aboutTitle": "Explore",
+    "links": [
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Projects",
+        "href": "/projects"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "followTitle": "Follow me",
+    "copyright": "© {year} Devsign. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy"
+  }
+}
