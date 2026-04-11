@@ -395,7 +395,7 @@
       },
       "whoIAm": {
         "title": "Who I Am",
-        "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
+        "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337 School UM6P, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
         "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success."
       },
       "experience": {
@@ -410,7 +410,6 @@
         "values": [
           "Quality over quantity — every line of code and every pixel matters.",
           "Transparency — you're always in the loop, from kickoff to launch.",
-          "Performance — lightweight, SEO-friendly, and built to last.",
           "Partnership — I succeed when your business grows."
         ],
         "storyLabel": "My Story",

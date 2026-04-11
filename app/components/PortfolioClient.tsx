@@ -164,7 +164,7 @@ export default function PortfolioClient({
             {data.heading}
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground max-w-2xl leading-relaxed">
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl leading-relaxed">
             {data.description}
           </p>
 

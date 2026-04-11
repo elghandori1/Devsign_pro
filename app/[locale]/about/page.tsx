@@ -183,7 +183,7 @@ export default async function AboutPage({ params }: Props) {
             {t.heading}
           </h1>
 
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
             {t.intro}
           </p>
 
@@ -211,44 +211,50 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       {/* ── 2. WHO I AM ── */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-          {/* text */}
-          <div className={`space-y-5 ${isRtl ? "lg:order-2" : ""}`}>
-            <span
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                             px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
-            >
-              {t.whoIAm?.title}
-            </span>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {t.whoIAm?.paragraph1}
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              {t.whoIAm?.paragraph2}
-            </p>
-          </div>
+     <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+  <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
+    
+    {/* text */}
+    <div className={`space-y-5 ${isRtl ? "lg:order-2" : ""}`}>
+      <span
+        className="inline-flex items-center gap-2 bg-primary/10 text-primary
+                   px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
+      >
+        {t.whoIAm?.title}
+      </span>
 
-          {/* image */}
-          <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
-            <div className="relative  max-w-sm mx-auto lg:max-w-none">
-              {/* decorative ring */}
-              <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
-              <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl">
-                <Image
-                  src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
-                  alt="Mohammed — full-stack developer and designer at Devsign"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover"
-                  sizes="(max-width: 1024px) 100vw, 500px"
-                  priority
-                />
-              </div>
-            </div>
-          </div>
+      <p className="text-lg text-muted-foreground leading-relaxed">
+        {t.whoIAm?.paragraph1}
+      </p>
+
+      <p className="text-muted-foreground leading-relaxed">
+        {t.whoIAm?.paragraph2}
+      </p>
+    </div>
+
+    {/* image */}
+    <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
+      <div className="relative max-w-xs mx-auto lg:max-w-none">
+        
+        {/* decorative ring */}
+        <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
+
+        <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl aspect-[3/4]">
+          <Image
+            src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
+            alt="Mohammed Devsign full-stack developer and designer at Devsignpro"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 30vw"
+            priority
+          />
         </div>
-      </section>
+
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* ── 3. EXPERIENCE BANNER ── */}
       {t.experience && (

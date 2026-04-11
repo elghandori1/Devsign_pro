@@ -394,7 +394,7 @@
       },
       "whoIAm": {
         "title": "Qui Je Suis",
-        "paragraph1": "Je m’appelle Mohammed, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337, membre du prestigieux réseau 42 Network. Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
+        "paragraph1": "Je m’appelle Mohammed, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337 School UM6P, membre du prestigieux réseau 42 Network. Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
         "paragraph2": "Je crois en la qualité du travail bien fait, une communication claire et des résultats mesurables. Je m'engage à vous aider à réussir en ligne avec des solutions efficaces, car votre réussite est la mienne."
       },
       "experience": {
@@ -409,7 +409,6 @@
         "values": [
           "La qualité avant la quantité — chaque ligne de code et chaque pixel compte.",
           "La transparence — vous êtes toujours informé, du démarrage au lancement.",
-          "La performance — sites légers, SEO-friendly et durables.",
           "Le partenariat — je réussis quand votre activité grandit."
         ],
         "storyLabel": "Mon parcours",
