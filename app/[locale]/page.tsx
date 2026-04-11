@@ -15,6 +15,7 @@ import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
+import TechnologySlider from "../components/TechnologySlider";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -34,16 +35,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = locale === "ar";
 
   const title = isEnglish
-    ? "Full-Stack Web Developer Morocco | Website Design, SEO & AI Automation"
+    ? "Web Developer in Morocco | SEO Websites, AI Automation & Social Media Ads"
     : isArabic
-      ? "مطور ويب في المغرب | تصميم مواقع، خبير سيو (SEO) وأتمتة ذكية"
-      : "Développeur Web Full-Stack Maroc | Création Site Web, Expert SEO & IA";
+      ? "مطور ويب في المغرب | أتمتة الذكاء الاصطناعي، SEO وتصميم إعلانات"
+      : "Développeur Web Maroc | Automatisation IA, SEO & Design Publicitaire";
 
   const description = isEnglish
-    ? "Expert Full-Stack Web Developer in Morocco. Specialized in high-performance Next.js websites, SEO optimization, and AI-driven business automation for growth."
+    ? "Boost your business with high-performance website development, AI-driven automation, and high-converting social media ad design. Expert digital solutions in Morocco."
     : isArabic
-      ? "مطور ويب (Full-Stack) في المغرب متخصص في تصميم مواقع احترافية، تحسين محركات البحث (SEO)، وحلول الأتمتة بالذكاء الاصطناعي لتطوير ونمو الشركات."
-      : "Développeur Web Full-Stack au Maroc spécialisé en création de sites modernes, optimisation SEO avancée et automatisation d'entreprise par l'IA.";
+      ? "خدمات احترافية في تطوير المواقع، تحسين محركات البحث (SEO)، أتمتة الأعمال بالذكاء الاصطناعي، وتصميم إعلانات السوشيال ميديا لزيادة مبيعاتك في المغرب."
+      : "Expert en création de sites web, optimisation SEO et solutions d'automatisation par l'IA. Boostez votre visibilité avec des designs publicitaires percutants au Maroc.";
 
   const keywords = isEnglish
     ? [
@@ -407,7 +408,6 @@ export default async function Home({ params }: Props) {
           }}
           aria-hidden="true"
         />
-        {/* ── ambient glows ── */}
         <div
           className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
@@ -592,6 +592,10 @@ export default async function Home({ params }: Props) {
           projectsData={dict.pages.portfolio_page.projects}
           locale={locale}
         />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+            <TechnologySlider />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>

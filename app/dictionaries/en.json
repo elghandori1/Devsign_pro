@@ -64,7 +64,7 @@
       "subtitle": "Your partner for ",
       "highlight": "digital success",
       "paragraph1": "I’m a developer and designer with experience building modern digital solutions. I’ve participated in several hackathons, winning 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat, along with participating in other hackathons. I’ve also worked on projects for clients in Morocco, helping them build websites, automate business processes, and create social media ads that convert.",
-      "paragraph2": "I believe in clean code, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work because your success is my success.",
+      "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success.",
       "cta": "More About Me"
     },
     "why_we_are_section": {
@@ -99,12 +99,12 @@
       "description": "Ready to start your website, system, or design project? Reach out via your preferred channel.",
       "cta_message": "",
       "whatsapp": "WhatsApp",
-      "phoneNumber": "+212 6 12 34 56 78",
-      "whatsappNumber": "212612345678",
+      "phoneNumber": "+212 7 78 18 03 06",
+      "whatsappNumber": "http://wa.me/+212778180306",
       "whatsappCta": "Chat now",
       "email": "Email",
-      "emailAddress": "contact@devsign.com",
-      "emailHref": "mailto:contact@devsign.com",
+      "emailAddress": "devsignprofessional@gmail.com",
+      "emailHref": "mailto:devsignprofessional@gmail.com",
       "emailCta": "Send email",
       "instagram": "Instagram",
       "instagramUrl": "https://www.instagram.com/devsignpro",
@@ -136,9 +136,9 @@
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
           "heroAltSuffix": "SEO-optimized website development",
           "title": "Secure & SEO-Optimized Website Development",
-          "subtitle": "Websites built to rank, convert, and scale",
           "description": "Build fast, secure, and SEO-optimized websites using modern technologies. We focus on performance, mobile-friendly design, technical SEO, and user experience to help your business rank higher on Google and convert visitors into real clients.",
-          "longDescription": "Every website we build starts with a clear goal: get found, generate traffic, and convert visitors into paying customers. We use modern frameworks combined with advanced SEO architecture, fast loading performance, and clean, scalable code.We also integrate Google Analytics and Google Search Console to track performance, monitor traffic, and improve your rankings over time. From proper indexing to keyword optimization, your website is built to be visible and competitive. To accelerate your growth, we can launch and manage Google Ads campaigns that drive targeted traffic to your site, helping you reach the right audience and maximize conversions. The result is a complete digital solution that not only looks great but actively grows your business.",
+          "startDescription": "Every website we build starts with a clear goal : ",
+          "longDescription": "get found, generate traffic, and convert visitors into paying customers. We use modern frameworks combined with advanced SEO architecture, fast loading performance, and clean, scalable code.We also integrate Google Analytics and Google Search Console to track performance, monitor traffic, and improve your rankings over time. From proper indexing to keyword optimization, your website is built to be visible and competitive. To accelerate your growth, we can launch and manage Google Ads campaigns that drive targeted traffic to your site, helping you reach the right audience and maximize conversions. The result is a complete digital solution that not only looks great but actively grows your business.",
           "link": "/services/web-development",
           "overviewTitle": "Overview",
           "includedTitle": "What's included?",
@@ -149,7 +149,7 @@
           "processDesc": "We follow a clear and efficient process to ensure your project's success:",
           "techTitle": "Technologies we work with",
           "techDesc": "We carefully select the right technologies based on your specific project requirements and business goals.",
-          "AnothersrvcBtn": "View another service",
+          "AnothersrvcBtn": "View All Services",
           "features": [
             "SEO-optimized",
             "Mobile-friendly",
@@ -192,9 +192,9 @@
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
           "heroAltSuffix": "business automation and AI systems",
           "title": "Business Automation & AI-Powered Systems",
-          "subtitle": "Stop doing manually what a system can do for you",
           "description": "Custom software tools, automated workflows, and AI integrations that simplify operations, reduce repetitive tasks, and help your business run faster and more efficiently.",
-          "longDescription": "We build custom dashboards, automated pipelines, and AI-powered tools tailored to your exact workflow. Whether it's client management, inventory tracking, or intelligent reporting, you get a system that works the way your business does.",
+          "startDescription": "Stop doing manually what a system can do for you",
+          "longDescription": "We build custom dashboards, automated pipelines, and AI-powered tools tailored to your exact workflow. Whether it's streamlining client management, optimizing inventory tracking, or generating intelligent reporting, we provide a scalable system that works exactly the way your business does—eliminating repetitive tasks so you can focus on growth and results.",
           "link": "/services/business-systems",
           "overviewTitle": "Overview",
           "includedTitle": "What's included?",
@@ -207,7 +207,7 @@
           "processDesc": "We follow a clear and efficient process to ensure a seamless integration:",
           "techTitle": "Technologies we work with",
           "techDesc": "We carefully select the right technologies based on your specific workflow requirements.",
-          "AnothersrvcBtn": "View another service",
+          "AnothersrvcBtn": "View All Services",
           "features": [
             "Workflow automation",
             "AI integration",
@@ -289,21 +289,20 @@
         "design": {
           "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
           "heroAltSuffix": "social media ad design",
-          "title": "Social Media Ad Design",
-          "subtitle": "Visuals that stop the scroll and drive action",
-          "description": "Professional ad visuals for Instagram, Facebook, and TikTok designed to clearly present your products or services, attract attention, and increase engagement and sales.",
+          "title": "Social Media Ad Design & Visuals",
+          "description": "High-impact ad visuals for Instagram, Facebook, and TikTok. We create designs that capture attention, communicate your brand value, and turn viewers into loyal customers.",
+          "startDescription": "Visuals that stop the scroll and drive real action",
+          "longDescription": "Great ads don't just look good—they communicate the right message to the right people at the right moment. We design scroll-stopping visuals with clear messaging and strong calls-to-action that align perfectly with your brand identity. From eye-catching static posts to engaging motion graphics for Reels and TikTok, we ensure your products stand out in a crowded feed, making it impossible for your audience to look away and encouraging them to engage with your business.",
           "link": "/services/social-design",
-          "longDescription": "Great ads don't just look good — they communicate the right message at the right moment. We design scroll-stopping visuals with clear messaging, strong CTAs, and brand consistency that makes your products impossible to ignore.",
           "overviewTitle": "Overview",
-          "exampleTitle": "Anatomy of an Ad",
-          "exampleDesc": "We combine striking visuals with strategic placement of branding, compelling copy, and clear calls-to-action to maximize your Return on Ad Spend (ROAS). Every element serves a specific purpose.",
+          "exampleTitle": "Elements of a Successful Ad",
+          "exampleDesc": "We combine striking visuals with strategic branding, compelling messaging, and clear calls-to-action. Every element is designed with a specific purpose: to maximize your impact and ensure your investment delivers real results.",
           "exampleFeatures": [
-            "Clear, compelling messaging",
-            "Prominent product placement",
-            "Strategic sponsor & logo integration",
-            "High-contrast Call-to-Action"
+            "Clear and compelling messaging",
+            "Professional product placement",
+            "Brand-aligned visual hierarchy",
+            "High-contrast buttons (CTA)"
           ],
-          "exampleCopyright": "© 2024 Devsign Ad Example. Visual layout structure and fictional sponsor elements shown for educational and illustrative purposes only.",
           "benefitsTitle": "What you'll gain",
           "benefitsDesc": "By investing in professional ad design, you can expect:",
           "processTitle": "Our Design Process",
@@ -352,6 +351,7 @@
             "Figma",
             "Adobe Photoshop",
             "Adobe Illustrator",
+            "Canva",
             "After Effects"
           ]
         }
@@ -396,7 +396,7 @@
       "whoIAm": {
         "title": "Who I Am",
         "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
-        "paragraph2": "I believe in clean code, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work because your success is my success."
+        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success."
       },
       "experience": {
         "title": "My Experience & Background",
@@ -453,6 +453,12 @@
             "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
             "place": "1st Prize"
+          },
+          {
+            "name": "GITEX Africa 2026",
+            "location": "Marrakech, Morocco",
+            "year": "2026",
+            "place": "Visitor"
           }
         ]
       },
@@ -493,8 +499,8 @@
     "portfolio_page": {
       "subtitle": "Selected Work",
       "heading": "Work That Moves Businesses Forward",
-      "description": "From high-performance websites to intelligent automations, here is a curated look at what I’ve built, launched, and delivered for real clients and personal ventures. Let’s add your project to this list.",
-      "viewCase": "View case study",
+      "description":"From high-performance websites to intelligent AI automations and social media ad designs, here is a curated look at the digital solutions I’ve built, launched, and delivered in Morocco and beyond. Whether for real clients or personal ventures, every project is optimized for search and scale. Let’s add your project to this list.",
+      "viewCase": "See more details",
       "cta": "Start a project together",
       "ui": {
         "filterBy": "Filter by",
@@ -530,7 +536,7 @@
           "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. Achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
           "tech": "Next.js, SEO Optimization, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "View case study",
+          "linkLabel": "See more details",
           "category": "Web Development & SEO",
           "type": "professional",
           "status": "online",
@@ -541,7 +547,7 @@
           "description": "Built a custom dashboard to manage clients, subscriptions, and business operations in one place. Features include tracking subscription start/end dates, pricing, stock management, and automated alerts for expired services.",
           "tech": "React, Node.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "View case study",
+          "linkLabel": "See more details",
           "category": "Systems & Automation",
           "type": "professional",
           "status": "local enterprise",
@@ -552,7 +558,7 @@
           "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
           "tech": "Photoshop , Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "View case study",
+          "linkLabel": "See more details",
           "category": "Ad Design",
           "type": "professional",
           "status": "Campaign Ads",
@@ -563,7 +569,7 @@
           "description": "Built a reusable command-line toolkit that automates repetitive development tasks and improves team productivity. Includes modular commands, configuration support, and clear documentation for onboarding.",
           "tech": "Node.js, TypeScript, Commander.js",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "View case study",
+          "linkLabel": "See more details",
           "category": "Developer Tools",
           "type": "personal",
           "status": "online",
@@ -574,7 +580,7 @@
           "description": "Designed and implemented a university portal prototype for managing research submissions, supervisor feedback, and project status tracking. Focused on usability, data structure, and accessible interface patterns.",
           "tech": "React, PostgreSQL, Express",
           "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "View case study",
+          "linkLabel": "See more details",
           "category": "Education Platform",
           "type": "academic",
           "status": "online",
@@ -672,7 +678,7 @@
     "brandName": "Devsign",
     "brandTagline": "Freelance",
     "email": "devsignprofessional@gmail.com",
-    "phone": "+212 6 12 34 56 78",
+    "phone": "+212 7 78 18 03 06",
     "address": "Casablanca, Morocco",
     "aboutTitle": "Explore",
     "links": [

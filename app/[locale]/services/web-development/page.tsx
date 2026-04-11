@@ -9,6 +9,7 @@ import {
   Rocket, Shield, Database, Code2, Globe, Zap,
 } from "lucide-react";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -47,23 +48,55 @@ export default async function WebDevelopmentPage({ params }: Props) {
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
-  const fwd = isRtl ? "rotate-180" : "";
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: data.title,
     description: data.description,
-    provider: { "@type": "Organization", name: "Devsign", url: "https://devsign.ma" },
-    serviceType: "Web Development & SEO",
+    image: data.image || `${getBaseUrl()}/og-image.jpg`,
+    url: `${getBaseUrl()}/${locale}/services/web-development`,
+    provider: { 
+      "@type": "Organization", 
+      name: "Devsign", 
+      url: "https://devsign.ma", 
+      "telephone": "+212 7 78 00 00 06",
+      "email": "contact@devsign.ma"
+    },
+    serviceType: data.title,
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+  };
+
+    const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${getBaseUrl()}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${getBaseUrl()}/${locale}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: data.title,
+        item: `${getBaseUrl()}/${locale}/services/web-development`,
+      }
+    ]
   };
 
   return (
     <main className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
-      
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* ── 1. HERO ── */}
       <section 
         aria-label="Service Hero" 
@@ -125,14 +158,14 @@ export default async function WebDevelopmentPage({ params }: Props) {
 
       {/* ── 2. OVERVIEW ── */}
       {data.features?.length > 0 && (
-        <section aria-labelledby="overview-heading" className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-16 lg:py-18">
+        <section aria-labelledby="overview-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 lg:py-18">
           <div className="space-y-4 sm:space-y-6">
             <h2 id="overview-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
               {data.overviewTitle}
             </h2>
             <div className="w-10 sm:w-12 h-1 bg-primary rounded-full" aria-hidden="true" />
             <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl">
-              {data.longDescription}
+            <span className="font-semibold text-foreground">{data.startDescription}</span> {data.longDescription}
             </p>
           </div>
         </section>
@@ -140,7 +173,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
 
       {/* ── 3. WHAT'S INCLUDED ── */}
       {data.features?.length > 0 && (
-        <section aria-labelledby="included-heading" className="max-w-7xl mx-auto px-4 py-12 sm:py-16 border-t border-border">
+        <section aria-labelledby="included-heading" className="max-w-6xl mx-auto px-4 py-12 sm:py-16 border-t border-border">
           <div className="text-center mb-8 sm:mb-10">
             <h2 id="included-heading" className="text-2xl sm:text-3xl font-bold mb-3 text-foreground">
               {data.includedTitle}
@@ -282,7 +315,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
                            hover:opacity-90 active:scale-95 transition-all
                            shadow-lg shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
                 {svc.cta_btn}
-                <ArrFwd size={16} className={`${fwd} group-hover:translate-x-0.5 transition-transform`} aria-hidden="true" />
+                <ArrFwd size={16} className="group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
               </Link>
               <Link href={`/${locale}/services`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2

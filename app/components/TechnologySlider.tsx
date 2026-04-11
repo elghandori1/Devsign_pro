@@ -73,8 +73,8 @@ export default function TechnologySlider() {
     return null;
   }
   return (
-    <div
-      className="w-full overflow-hidden py-3 sm:py-4 md:py-6 mt-8 sm:mt-10 md:mt-14 bg-card border-y border-border"
+    <section
+      className="w-full overflow-hidden py-3 sm:py-4 md:py-6 mt-2 md:mt-6 bg-card border-y border-border"
       dir="ltr"
     >
       <div className="relative">
@@ -118,6 +118,6 @@ export default function TechnologySlider() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

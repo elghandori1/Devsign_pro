@@ -9,7 +9,7 @@ import {
   Clock, ShieldAlert, BarChart3, Bot, Network,
   Database, Code2, Layout, Server, Briefcase, Package, Workflow
 } from "lucide-react";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -58,22 +58,55 @@ export default async function BusinessSystemsPage({ params }: Props) {
 
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
-  const fwd = isRtl ? "rotate-180" : "";
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: data.title,
     description: data.description,
-    provider: { "@type": "Organization", name: "Devsign", url: "https://devsign.ma" },
+    image: data.image || `${getBaseUrl()}/og-image.jpg`,
+    url: `${getBaseUrl()}/${locale}/services/business-systems`,
+    provider: { 
+      "@type": "Organization", 
+      name: "Devsign", 
+      url: "https://devsign.ma", 
+      telephone: "+212 7 78 00 00 06",
+      email: "contact@devsign.ma" 
+    },
     serviceType: "Business Automation & AI Systems",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
 
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${getBaseUrl()}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${getBaseUrl()}/${locale}/services`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: data.title,
+        item: `${getBaseUrl()}/${locale}/services/business-systems`,
+      }
+    ]
+  };
+
   return (
     <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
 
       <section
         aria-label="Service Hero"
@@ -133,7 +166,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
         </header>
       </section>
       {/* ── 2. OVERVIEW + IMPACT STATS ── */}
-      <section aria-labelledby="overview-heading" className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-24">
+      <section aria-labelledby="overview-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20 lg:py-24">
         {/* Overview Text */}
         <div className="space-y-4 sm:space-y-6">
           <h2 id="overview-heading" className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
@@ -141,7 +174,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
           </h2>
           <div className="w-10 sm:w-12 h-1 bg-primary rounded-full" aria-hidden="true" />
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl">
-            <span className="font-semibold text-foreground">{data.subtitle}</span> — {data.longDescription}
+            <span className="font-semibold text-foreground">{data.startDescription}, </span> {data.longDescription}
           </p>
         </div>
 
@@ -184,7 +217,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
               {data.useCases.map((uc: { title: string; text: string }, i: number) => {
                 const Icon = USE_CASE_ICONS[i % USE_CASE_ICONS.length];
                 return (
-                  <article key={i} className="group flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 rounded-2xl border border-border bg-card hover:border-primary/40 hover:shadow-md transition-all duration-300">
+                  <article key={i} className="group flex flex-col sm:flex-row items-start gap-4 p-5 sm:p-6 rounded-2xl border border-primary/40 bg-card hover:shadow-md transition-all duration-300">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-white text-primary transition-colors duration-300">
                       <Icon className="w-6 h-6" aria-hidden="true" />
                     </div>
@@ -217,7 +250,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
               {data.benefits.map((b: { title: string; text: string }, i: number) => {
                 const Icon = BENEFIT_ICONS[i % BENEFIT_ICONS.length];
                 return (
-                  <article key={i} className="relative p-6 sm:p-8 rounded-2xl bg-muted/20 border border-border overflow-hidden flex flex-col items-center text-center">
+                  <article key={i} className="relative p-6 sm:p-8 rounded-2xl border border-border bg-card shadow-sm hover:shadow-md hover:border-primary/30 overflow-hidden flex flex-col items-center text-center">
                     <div className="w-14 h-14 rounded-full bg-background border border-border flex items-center justify-center mb-5 shadow-sm">
                       <Icon className="w-6 h-6 text-primary" aria-hidden="true" />
                     </div>
@@ -312,7 +345,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
                            hover:opacity-90 active:scale-95 transition-all
                            shadow-lg shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
                 {svc.cta_btn}
-                <ArrFwd size={16} className={`${fwd} group-hover:translate-x-0.5 transition-transform`} aria-hidden="true" />
+                <ArrFwd size={16} className="group-hover:translate-x-0.5 transition-transform" aria-hidden="true" />
               </Link>
               <Link href={`/${locale}/services`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2

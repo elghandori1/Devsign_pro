@@ -10,7 +10,6 @@ import {
   Code2,
   FileCheck,
   Sparkles,
-  ExternalLink,
 } from "lucide-react";
 
 type ProjectType = "professional" | "personal" | "academic";
@@ -194,13 +193,22 @@ export default function PortfolioClient({
       <section className="sticky top-0 z-20 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-            {/* label */}
-            <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground shrink-0">
-              {ui.filterBy ?? "Filter by"}
-            </span>
+            {/* label & animated hint */}
+            <div className="flex flex-col shrink-0">
+              <span className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+                {ui.filterBy ?? "Filter by"}
+              </span>
+              <span className="text-[10px] text-muted-foreground/60 italic mt-0.5">
+                {locale === "en"
+                  ? "Click a filter to see projects"
+                  : locale === "ar"
+                    ? "انقر على فلتر لعرض المشاريع"
+                    : "Cliquez sur un filtre pour voir les projets"}
+              </span>
+            </div>
 
             {/* divider (desktop only) */}
-            <div className="hidden sm:block w-px h-5 bg-border shrink-0" />
+            <div className="hidden sm:block w-px h-8 bg-border shrink-0 mx-2" />
 
             {/* segmented pill group */}
             <div className="flex flex-wrap gap-2">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import PortfolioClient from "../../components/PortfolioClient";
 
 type Props = { params: Promise<{ locale: string }> };
@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         ? [
             "معرض المشاريع",
             "مشاريع تطوير ويب",
-            "دراسات حالة سيو",
+            "دراسات حالة SEO",
             "مشاريع أتمتة الأعمال",
             "مشاريع شخصية واحترافية",
             "مشاريع أكاديمية",
@@ -85,11 +85,49 @@ export default async function PortfolioPage({ params }: Props) {
 
   if (!data || !data.projects) return null;
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: data.heading || "Portfolio",
+    description: data.description || "Portfolio projects covering web development, SEO, and automation.",
+    url: `${getBaseUrl()}/${locale}/portfolio`,
+    provider: { 
+      "@type": "Organization", 
+      name: "Devsign", 
+      url: "https://devsign.ma", 
+      telephone: "+212 7 78 00 00 06",
+      email: "contact@devsign.ma" 
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${getBaseUrl()}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Portfolio",
+        item: `${getBaseUrl()}/${locale}/portfolio`,
+      },
+    ],
+  };
+
   return (
-    <PortfolioClient
-      data={data}
-      locale={locale}
-      isRtl={isRtl}
-    />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <PortfolioClient
+        data={data}
+        locale={locale}
+        isRtl={isRtl}
+      />
+    </>
   );
 }

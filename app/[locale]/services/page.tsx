@@ -8,7 +8,8 @@ import {
   Award,
   Code2,
   FileCheck,
-  Sparkles} from "lucide-react";
+  Sparkles,
+} from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -52,14 +53,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : i18n.defaultLocale;
 
   const titles = {
-    en: "Web Development, SEO & AI Automation Services in Morocco | Devsign",
-    fr: "Développement Web, SEO & Automatisation IA au Maroc | Devsign",
-    ar: "تطوير الويب وتحسين SEO وأتمتة الذكاء الاصطناعي في المغرب | Devsign",
+    en: "Expert Web Development, SEO & AI Automation Services in Morocco | Devsign",
+    fr: "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc | Devsign",
+    ar: "تطوير ويب احترافي، تحسين SEO وأتمتة الذكاء الاصطناعي في المغرب| Devsign",
   };
+
   const descriptions = {
-    en: "Expert web development, SEO optimization, AI business automation, and high-converting ad design in Morocco. Boost your online presence with Devsign.",
-    fr: "Services professionnels au Maroc : développement web, optimisation SEO, automatisation IA et design publicitaire performant.",
-    ar: "خدمات احترافية في تطوير الويب، تحسين SEO، أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات عالية التحويل في المغرب.",
+    en: "Web development, SEO optimization, AI automation systems, and social media ad design services in Morocco to increase traffic, leads, and online business growth.",
+    fr: "Développement web, SEO, automatisation IA et design de publicités sur les réseaux sociaux au Maroc pour générer plus de trafic et de clients.",
+    ar: "خدمات تطوير المواقع، SEO، أتمتة بالذكاء الاصطناعي وتصميم إعلانات السوشيال ميديا في المغرب لزيادة الزيارات والعملاء ونمو الأعمال.",
   };
 
   return buildPageMetadata({
@@ -85,8 +87,7 @@ export default async function ServicesPage({ params }: Props) {
   if (!data) return null;
 
   const isRtl = locale === "ar";
-  const baseUrl = getBaseUrl();
-
+ 
   const servicesList = Object.values(data.services) as Array<{
     title: string;
     description: string;
@@ -100,15 +101,15 @@ export default async function ServicesPage({ params }: Props) {
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": `${baseUrl}/${locale}/services#page`,
-        url: `${baseUrl}/${locale}/services`,
+        "@id": `${getBaseUrl()}/${locale}/services#page`,
+        url: `${getBaseUrl()}/${locale}/services`,
         name: data.heading,
         description: data.description,
         inLanguage: locale,
       },
       {
         "@type": "ItemList",
-        "@id": `${baseUrl}/${locale}/services#list`,
+        "@id": `${getBaseUrl()}/${locale}/services#list`,
         itemListElement: servicesList.map((svc, i) => ({
           "@type": "ListItem",
           position: i + 1,
@@ -116,11 +117,30 @@ export default async function ServicesPage({ params }: Props) {
             "@type": "Service",
             name: svc.title,
             description: svc.description,
-            image: `${baseUrl}${svc.image}`,
-            provider: { "@id": `${baseUrl}/#organization` },
+            image: `${getBaseUrl()}${svc.image}`,
+            provider: { "@id": `${getBaseUrl()}/#organization` },
             areaServed: { "@type": "Country", name: "Morocco" },
           },
         })),
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${getBaseUrl()}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Services",
+        item: `${getBaseUrl()}/${locale}/services`,
       },
     ],
   };
@@ -134,7 +154,10 @@ export default async function ServicesPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       {/* ── 1. HERO ── */}
       <section
         aria-labelledby="hero-heading"
@@ -456,7 +479,7 @@ export default async function ServicesPage({ params }: Props) {
                          active:scale-95 transition-all duration-200"
             >
               {data.View_All_Projects}
-              
+
               <Arr size={15} aria-hidden="true" />
             </Link>
           </div>

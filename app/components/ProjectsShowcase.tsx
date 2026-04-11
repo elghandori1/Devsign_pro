@@ -1,8 +1,6 @@
 // components/ProjectsShowcase.tsx
 import { Locale } from "@/i18n-config";
 import ProjectsShowcaseSlider, { ProjectItem } from "./ProjectsShowcaseSlider";
-import TechnologySlider from "./TechnologySlider";
-
 
 interface ProjectsShowcaseProps {
   translations: string;
@@ -20,7 +18,7 @@ export default function ProjectsShowcase({
   return (
     <section
       id="projects"
-      className="pt-8 md:pt-10 bg-muted/10 transition-colors duration-300"
+      className="pt-8 md:pt-10 pb-2 bg-muted/10 transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -31,7 +29,6 @@ export default function ProjectsShowcase({
         </div>
         <ProjectsShowcaseSlider projects={projectsData} locale={locale} />
       </div>
-      <TechnologySlider />
     </section>
   );
 }

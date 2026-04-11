@@ -37,12 +37,12 @@ export default function ContactSection({
   return (
     <section
       id="contact"
-      className="py-12 sm:py-16 md:py-20"
+      className="py-10 sm:py-14 md:py-18"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="max-w-2xl mx-auto text-center mb-12">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-primary mb-4">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-primary mb-4">
             {translations.sectionLabel}
           </h2>
           <div className="w-12 h-0.5 bg-primary rounded-full mx-auto mb-6" />
@@ -58,9 +58,9 @@ export default function ContactSection({
             href={`https://wa.me/${translations.whatsappNumber.replace(/\D/g, "")}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-green-500/40 rounded-2xl hover:shadow-md hover:border-green-500/60 transition group"
+            className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-green-600/40 rounded-2xl hover:shadow-md hover:border-green-600/60 transition group"
           >
-            <div className="w-16 h-16 rounded-2xl bg-green-500 flex items-center justify-center text-white">
+            <div className="w-16 h-16 rounded-2xl bg-green-600 flex items-center justify-center text-white">
               <BsWhatsapp size={30} />
             </div>
 
@@ -73,7 +73,7 @@ export default function ContactSection({
               </p>
             </div>
 
-            <span className="text-sm font-medium text-green-600 dark:text-green-400 group-hover:underline">
+            <span className="text-sm font-medium text-green-700 dark:text-green-600 group-hover:underline">
               {translations.whatsappCta} →
             </span>
           </Link>

@@ -6,11 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Locale } from "@/i18n-config";
-import {
-  ChevronLeft,
-  ChevronRight,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface ProjectItem {
   title: string;
@@ -96,7 +92,6 @@ export default function ProjectsShowcaseSlider({
         {/* Image Section with Enhanced Design */}
         <div className="relative group">
           <div className="relative aspect-[4/3] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
-
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={project.image + index}
@@ -142,10 +137,11 @@ export default function ProjectsShowcaseSlider({
                       setIndex(i);
                       setTimeout(() => setIsAutoPlaying(true), 10000);
                     }}
-                    className={`relative h-1.5 sm:h-2 rounded-full transition-all duration-300 ${i === index
-                      ? "w-6 sm:w-8 bg-primary"
-                      : "w-1.5 sm:w-2 bg-white/60 hover:bg-white/80"
-                      }`}
+                    className={`relative h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
+                      i === index
+                        ? "w-6 sm:w-8 bg-primary"
+                        : "w-1.5 sm:w-2 bg-white/60 hover:bg-white/80"
+                    }`}
                     aria-label={`Project ${i + 1}`}
                     aria-current={i === index ? "true" : undefined}
                   >
@@ -202,10 +198,11 @@ export default function ProjectsShowcaseSlider({
                   setDirection(i > index ? 1 : -1);
                   setIndex(i);
                 }}
-                className={`h-1 rounded-full transition-all duration-300 ${i === index
-                  ? "w-4 sm:w-6 bg-primary"
-                  : "w-1.5 sm:w-2 bg-muted-foreground/30"
-                  }`}
+                className={`h-1 rounded-full transition-all duration-300 ${
+                  i === index
+                    ? "w-4 sm:w-6 bg-primary"
+                    : "w-1.5 sm:w-2 bg-muted-foreground/30"
+                }`}
                 aria-label={`Go to project ${i + 1}`}
               />
             ))}
@@ -267,7 +264,11 @@ export default function ProjectsShowcaseSlider({
                   className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm sm:text-base overflow-hidden transition-all duration-300 hover:pr-6 sm:hover:pr-8 hover:pl-6 sm:hover:pl-8"
                 >
                   <span className="relative z-10">{project.linkLabel}</span>
-                  <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 relative z-10 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  {isRtl ? (
+                    <ArrowLeft size={16} aria-hidden="true" />
+                  ) : (
+                    <ArrowRight size={16} aria-hidden="true" />
+                  )}{" "}
                   <div className="absolute inset-0 bg-gradient-to-r from-primary-foreground/20 to-transparent translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
                 </Link>
               </div>
@@ -280,7 +281,13 @@ export default function ProjectsShowcaseSlider({
       {isAutoPlaying && (
         <div className="flex justify-center mt-6 sm:mt-8">
           <div className="flex gap-1.5 sm:gap-2 items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-background/80 backdrop-blur-sm rounded-full shadow-sm border border-border">
-            <div className="text-xs sm:text-sm text-muted-foreground">{locale === "en" ? "Auto-playing" : locale === "fr" ? "reproduction automatique" : "التشغيل التلقائي"}</div>
+            <div className="text-xs sm:text-sm text-muted-foreground">
+              {locale === "en"
+                ? "Auto-playing"
+                : locale === "fr"
+                  ? "reproduction automatique"
+                  : "التشغيل التلقائي"}
+            </div>
             <button
               onClick={() => setIsAutoPlaying(false)}
               className="text-xs sm:text-sm text-primary hover:underline font-medium"

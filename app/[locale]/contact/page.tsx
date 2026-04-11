@@ -26,10 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "en"
-      ? "Contact Us | Let's Build Something Amazing — Devsign"
+      ? "Contact Us. Let's Build Something Amazing | Devsign"
       : locale === "ar"
-        ? "اتصل بنا | لنبنِ شيئاً مذهلاً معاً — ديفساين"
-        : "Contactez-nous | Créons Quelque Chose d'Incroyable — Devsign";
+        ? "اتصل بنا. لنبنِ شيئاً مذهلاً معاً | ديفساين"
+        : "Contactez-nous. Créons Quelque Chose d'Incroyable | Devsign";
 
   const description =
     locale === "en"
@@ -107,11 +107,34 @@ export default async function ContactPage({ params }: Props) {
     },
   };
 
+    const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${baseUrl}/${locale}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Contact",
+        item: `${baseUrl}/${locale}/contact`,
+      },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <ContactClient 
         data={t} 

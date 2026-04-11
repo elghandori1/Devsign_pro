@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n-config";
 
 export function getBaseUrl() {
-  return (process.env.NEXT_PUBLIC_BASE_URL || "https://yourdomain.com").trim();
+  return (process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:3000").trim();
 }
 
 interface SEOProps {
