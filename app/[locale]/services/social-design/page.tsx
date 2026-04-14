@@ -316,7 +316,7 @@ export default async function SocialDesignPage({ params }: Props) {
               {/* Main Visual/Product Presentation */}
               <div className="relative w-full aspect-square sm:aspect-[4/4] rounded-xl overflow-hidden bg-muted flex flex-col items-center justify-center border border-border/50 group">
                 <Image
-                  src="/images/services/machianeAlavie.jpg"
+                  src="/images/projects/machianeAlavie.jpg"
                   alt="Example of a social media ad design showcasing a product with clear branding and a call-to-action."
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform"

@@ -282,7 +282,7 @@ export default async function Home({ params }: Props) {
         url: `${baseUrl}/${locale}`,
         logo: {
           "@type": "ImageObject",
-          url: `${baseUrl}/logo.png`,
+          url: `${baseUrl}/logo/devsign-logo.jpg`,
           width: 512,
           height: 512,
         },
@@ -363,7 +363,7 @@ export default async function Home({ params }: Props) {
         inLanguage: locale,
         image: {
           "@type": "ImageObject",
-          url: `${baseUrl}/og-image.jpg`,
+          url: `${baseUrl}/cover/Design-cover.png`,
           width: 1200,
           height: 630,
         },

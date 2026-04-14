@@ -33,8 +33,7 @@ export function buildPageMetadata({
       ? ogImagePath.startsWith("http")
         ? ogImagePath
         : `${baseUrl}${ogImagePath.startsWith("/") ? "" : "/"}${ogImagePath}`
-      : `${baseUrl}/og-image.jpg`;
-
+      : `${baseUrl}/cover/Design-cover.png`;
   return {
     metadataBase: new URL(baseUrl),
     title,
@@ -82,7 +81,20 @@ export function buildPageMetadata({
       },
     },
     icons: {
-      icon: "/favicon.ico",
+      icon: [
+        { url: "/favicon.ico" },
+        { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+      ],
+      apple: [
+        {
+          url: "/apple-touch-icon.png",
+          type: "image/png",
+          sizes: "180x180",
+        },
+      ],
+      shortcut: ["/favicon.ico"],
     },
+    manifest: "/site.webmanifest",
   };
 }
