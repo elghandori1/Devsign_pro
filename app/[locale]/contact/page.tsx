@@ -4,15 +4,16 @@ import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import ContactClient from "../../components/ContactClient";
-
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const EMAIL = "contact@devsign.com";
-const WHATSAPP_NUMBER = "212XXXXXXXXX";
-const INSTAGRAM_HANDLE = "devsign";
-const GITHUB_HANDLE = "devsign";
-const LINKEDIN_HANDLE = "devsign";
+const EMAIL = infos.email || "";
+const WHATSAPP_NUMBER = infos.whatsappLink || "";
+const INSTAGRAM_HANDLE = infos.social.instagram || "@devsign_pro";
+const GITHUB_HANDLE = infos.githubHandle || "";
+const GITHUB_LINK = infos.social.github || "";
+const LINKEDIN_HANDLE = infos.social.linkedin || "";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -144,6 +145,7 @@ export default async function ContactPage({ params }: Props) {
         whatsappNumber={WHATSAPP_NUMBER}
         instagramHandle={INSTAGRAM_HANDLE}
         githubHandle={GITHUB_HANDLE}
+        githubLink={GITHUB_LINK}
         linkedinHandle={LINKEDIN_HANDLE}
       />
     </>

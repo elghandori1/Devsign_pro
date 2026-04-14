@@ -16,6 +16,7 @@ import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
 import TechnologySlider from "../components/TechnologySlider";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -267,8 +268,10 @@ export default async function Home({ params }: Props) {
           { "@type": "Language", name: "Arabic" },
         ],
         sameAs: [
-          // "https://www.linkedin.com/in/YOUR_HANDLE",
-          // "https://github.com/YOUR_HANDLE",
+         infos.social.facebook,
+         infos.social.instagram,
+         infos.social.linkedin,
+         infos.social.github,
         ],
       },
 
@@ -283,7 +286,7 @@ export default async function Home({ params }: Props) {
           width: 512,
           height: 512,
         },
-        email: "devsignprofessional@gmail.com",
+        email: infos.email,
         description: orgDescription,
         foundingDate: "2021",
         priceRange: "$$",
@@ -296,7 +299,7 @@ export default async function Home({ params }: Props) {
         },
         contactPoint: {
           "@type": "ContactPoint",
-          email: "devsignprofessional@gmail.com",
+          email: infos.email,
           contactType: "customer service",
           availableLanguage: ["English", "French", "Arabic"],
         },
@@ -325,11 +328,10 @@ export default async function Home({ params }: Props) {
           },
         ],
         sameAs: [
-          // Uncomment and fill in your actual profiles:
-          // "https://www.facebook.com/YOUR_REAL_PAGE",
-          // "https://www.instagram.com/YOUR_REAL_PROFILE",
-          // "https://www.linkedin.com/company/YOUR_COMPANY",
-          // "https://github.com/YOUR_HANDLE",
+          infos.social.facebook,
+          infos.social.instagram,
+          infos.social.linkedin,
+          infos.social.github,
         ],
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -386,7 +388,6 @@ export default async function Home({ params }: Props) {
       },
     ],
   };
-
   return (
     <main className="bg-background text-foreground transition-colors duration-300 min-h-screen">
       <Script

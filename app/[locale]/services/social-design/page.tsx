@@ -32,18 +32,39 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(locale);
   const data = dict.pages.services_page.services.design;
 
+    const keywords = locale
+    ? [
+     "social media ads",
+      "ad design",
+      "facebook ads",
+      "instagram creatives",
+      "conversion design",
+      "ad campaign design"
+      ]
+    : locale === "ar"
+      ? [
+          "إعلانات وسائل التواصل الاجتماعي",
+          "تصميم الإعلانات",
+          "إعلانات فيسبوك",
+          "تصاميم إنستغرام",
+          "تصميم التحويل",
+          "تصميم حملات الإعلانات"
+        ]
+      : [
+          "social media ads",
+          "ad design",
+          "facebook ads",
+          "instagram creatives",
+          "conversion design",
+          "ad campaign design"
+        ];
+
   return buildPageMetadata({
     locale,
     title: `${data.title} | Devsign`,
     description: data.description,
     route: "/services/social-design",
-    keywords: [
-      "social media ads",
-      "ad design",
-      "facebook ads",
-      "instagram creatives",
-      "conversion design",
-    ],
+    keywords: keywords
   });
 }
 
@@ -85,7 +106,7 @@ export default async function SocialDesignPage({ params }: Props) {
       telephone: "+212 7 78 00 00 06",
       email: "contact@devsign.ma",
     },
-    serviceType: "Social Media Ad Design",
+    serviceType: locale === "en" ? "Social Media Ad Design" : locale === "fr" ? "Conception de Publicités pour les Réseaux Sociaux" : "تصميم إعلانات وسائل التواصل الاجتماعي",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
@@ -295,7 +316,7 @@ export default async function SocialDesignPage({ params }: Props) {
               {/* Main Visual/Product Presentation */}
               <div className="relative w-full aspect-square sm:aspect-[4/4] rounded-xl overflow-hidden bg-muted flex flex-col items-center justify-center border border-border/50 group">
                 <Image
-                  src="/images/projects/Social-Media-Design.jpg"
+                  src="/images/services/machianeAlavie.jpg"
                   alt="Example of a social media ad design showcasing a product with clear branding and a call-to-action."
                   fill
                   className="object-cover object-center group-hover:scale-105 transition-transform"

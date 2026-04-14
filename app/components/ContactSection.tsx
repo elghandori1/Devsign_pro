@@ -4,24 +4,18 @@ import { MdEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import { Users } from "lucide-react";
+import infos from "@/app/dictionaries/global.json";
 
 interface ContactTranslations {
   sectionLabel: string;
   description: string;
-  email: string;
-  emailAddress: string;
-  emailHref: string;
-  emailCta: string;
   whatsapp: string;
-  phoneNumber: string;
-  whatsappNumber: string;
   whatsappCta: string;
+  email: string;
+  emailCta: string;
   instagram: string;
-  instagramUrl: string;
   instagramLabel: string;
   instagramCta: string;
-  instagramHandle: string;
-  instagramFollowers: string;
   brandName: string;
 }
 
@@ -55,7 +49,7 @@ export default function ContactSection({
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4"  dir="ltr">
           {/* WhatsApp */}
           <Link
-            href={`https://wa.me/${translations.whatsappNumber.replace(/\D/g, "")}`}
+            href={`${infos.whatsappLink.replace(/\D/g, "")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-green-600/40 rounded-2xl hover:shadow-md hover:border-green-600/60 transition group"
@@ -69,7 +63,7 @@ export default function ContactSection({
                 {translations.whatsapp}
               </h4>
               <p className="text-sm text-muted-foreground mt-1">
-                {translations.phoneNumber}
+                {infos.phoneNumber}
               </p>
             </div>
 
@@ -80,7 +74,7 @@ export default function ContactSection({
 
           {/* Email */}
           <Link
-            href={translations.emailHref}
+            href={infos.emailHref}
             className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-blue-500/40 rounded-2xl hover:shadow-md hover:border-blue-500/60 transition group"
           >
             <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-white">
@@ -92,7 +86,7 @@ export default function ContactSection({
                 {translations.email}
               </h4>
               <p className="text-sm text-muted-foreground mt-1">
-                {translations.emailAddress}
+                {infos.email}
               </p>
             </div>
 
@@ -103,7 +97,7 @@ export default function ContactSection({
 
           {/* Instagram */}
           <Link
-            href={translations.instagramUrl}
+            href={infos.social.instagram}
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-pink-500/40 rounded-2xl hover:shadow-md hover:border-pink-500/60 transition group"
@@ -124,12 +118,12 @@ export default function ContactSection({
               </h4>
 
               <p className="text-sm text-muted-foreground mt-1">
-                {translations.instagramHandle}
+                {infos.instagramHandle}
               </p>
 
               <div className="flex items-center justify-center gap-1 mt-2 text-xs">
                 <span className="font-semibold text-pink-600">
-                  {translations.instagramFollowers}
+                  {infos.instagramFollowers}
                 </span>
                 <Users size={12} className="text-pink-500" />
                 <span className="text-muted-foreground">

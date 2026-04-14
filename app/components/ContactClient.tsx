@@ -71,6 +71,7 @@ interface ContactClientProps {
   whatsappNumber: string;
   instagramHandle: string;
   githubHandle: string;
+  githubLink: string;
   linkedinHandle: string;
 }
 
@@ -81,15 +82,17 @@ export default function ContactClient({
   whatsappNumber,
   instagramHandle,
   githubHandle,
+  githubLink,
   linkedinHandle,
 }: ContactClientProps) {
   const [copied, setCopied] = useState(false);
   const [formStatus, setFormStatus] = useState<null | "success" | "error">(null);
 
-  const waLink        = `https://wa.me/${whatsappNumber.replace(/\D/g, "")}`;
-  const instagramLink = `https://instagram.com/${instagramHandle}`;
-  const githubLink    = `https://github.com/${githubHandle}`;
-  const linkedinLink  = `https://linkedin.com/in/${linkedinHandle}`;
+  const waLink        = `${whatsappNumber}`;
+  const instagramLink = `${instagramHandle}`;
+  const githublink    = `${githubLink}`;
+  const githubName    = `${githubHandle}`;
+  const linkedinLink  = `${linkedinHandle}`;
 
   const handleCopyEmail = async () => {
     try {
@@ -249,7 +252,7 @@ export default function ContactClient({
 
               <div className="w-px h-4 bg-border hidden xs:block shrink-0" aria-hidden="true" />
 
-              <a href={githubLink} target="_blank" rel="noopener noreferrer"
+              <a href={githublink} target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 flex-1 min-w-0 group">
                 <Github size={16} className="text-primary shrink-0" aria-hidden="true" />
                 <span className="text-sm font-medium text-foreground group-hover:text-primary
@@ -275,7 +278,7 @@ export default function ContactClient({
                 {/* email */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
-                    {data.form.emailAddress}
+                    {data.form.emailAddress} <span className="text-red-500">*</span>
                   </label>
                   <input
                     type="email"
@@ -290,7 +293,7 @@ export default function ContactClient({
                 {/* project type */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
-                    {data.form.projectType}
+                    {data.form.projectType} <span className="text-red-500">*</span>
                   </label>
                   <select
                     className="w-full px-3 sm:px-4 py-2.5 rounded-lg border border-border
@@ -309,7 +312,7 @@ export default function ContactClient({
                 {/* message */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
-                    {data.form.message}
+                    {data.form.message} <span className="text-red-500">*</span>
                   </label>
                   <textarea
                     rows={4}

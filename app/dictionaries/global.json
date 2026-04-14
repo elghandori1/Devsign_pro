@@ -1,0 +1,18 @@
+{
+    "phoneNumber": "+212 7 78 18 03 06",
+    "phoneNumberLink": "tel:+212 7 78 18 03 06",
+    "whatsappNumber": "+212778180306",
+    "whatsappLink": "https://wa.me/+212778180306",
+    "email": "devsignprofessional@gmail.com",
+    "emailHref": "mailto:devsignprofessional@gmail.com",
+    "instagramHandle": "@devsign_pro",
+    "instagramFollowers": "+2K",
+    "address": "Casablanca, Maroc",
+    "githubHandle": "elghandori1",
+    "social": {
+        "linkedin": "https://ma.linkedin.com/mohammed-devsign",
+        "facebook": "https://facebook.com/devsignpro",
+        "instagram": "https://instagram.com/devsign_pro",
+        "github": "https://github.com/elghandori1"
+    }
+}

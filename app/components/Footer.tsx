@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Locale } from "@/i18n-config";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
+import infos from "@/app/dictionaries/global.json";
 
 interface FooterLink {
   label: string;
@@ -11,7 +12,6 @@ interface FooterLink {
 interface FooterTranslations {
   brandName: string;
   brandTagline: string;
-  email: string;
   phone: string;
   address: string;
   aboutTitle: string;
@@ -32,28 +32,28 @@ const socials = [
   {
     id: "facebook",
     icon: FaFacebookF,
-    href: "https://facebook.com/devsignpro",
+    href: infos.social.facebook,
     label: "Facebook",
     bg: "bg-[#1877F2]",
   },
   {
     id: "instagram",
     icon: FaInstagram,
-    href: "https://instagram.com/devsign_pro",
+    href: infos.social.instagram,
     label: "Instagram",
     bg: "bg-gradient-to-br from-[#f9a825] via-[#f06292] to-[#7c4dff]",
   },
   {
     id: "linkedin",
     icon: FaLinkedinIn,
-    href: "https://linkedin.com/in/mohammed_devsign",
+    href: infos.social.linkedin,
     label: "LinkedIn",
     bg: "bg-[#0A66C2]",
   },
   {
     id: "whatsapp",
     icon: FaWhatsapp,
-    href: "https://wa.me/+212612345678",
+    href: infos.whatsappLink,
     label: "WhatsApp",
     bg: "bg-[#25D366]",
   },
@@ -85,11 +85,11 @@ export default function Footer({ footer, locale }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <a
-                  href={`mailto:${footer.email}`}
+                  href={`mailto:${infos.email}`}
                   className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <MdEmail size={16} className="text-primary shrink-0" />
-                  {footer.email}
+                  {infos.email}
                 </a>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-muted-foreground">
@@ -98,7 +98,7 @@ export default function Footer({ footer, locale }: FooterProps) {
               </li>
               <li>
                 <a
-                  href={`tel:${footer.phone.replace(/\s/g, "")}`}
+                  href={`${infos.phoneNumberLink.replace(/\s/g, "")}`}
                   className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <MdPhone size={16} className="text-primary shrink-0" />

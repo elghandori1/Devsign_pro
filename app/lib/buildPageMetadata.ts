@@ -12,6 +12,7 @@ interface SEOProps {
   description: string;
   keywords: string[];
   route?: string;
+  ogImagePath?: string;
 }
 
 export function buildPageMetadata({
@@ -20,12 +21,19 @@ export function buildPageMetadata({
   description,
   keywords,
   route = "",
+  ogImagePath,
 }: SEOProps): Metadata {
   const baseUrl = getBaseUrl();
   const ogLocale = locale === "en" ? "en_US":locale === "ar" ? "ar_MA" :"fr_MA";
   const safeRoute = route ? (route.startsWith("/") ? route : `/${route}`) : "";
   const currentUrl = `${baseUrl}/${locale}${safeRoute}`;
   const defaultUrl = `${baseUrl}/${i18n.defaultLocale}${safeRoute}`;
+  const ogImage =
+    ogImagePath && ogImagePath.length > 0
+      ? ogImagePath.startsWith("http")
+        ? ogImagePath
+        : `${baseUrl}${ogImagePath.startsWith("/") ? "" : "/"}${ogImagePath}`
+      : `${baseUrl}/og-image.jpg`;
 
   return {
     metadataBase: new URL(baseUrl),
@@ -48,7 +56,7 @@ export function buildPageMetadata({
       siteName: "Devsign",
       images: [
         {
-          url: `/og-image.jpg`,
+          url: ogImage,
           width: 1200,
           height: 630,
           alt: title,
@@ -61,7 +69,7 @@ export function buildPageMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [`/og-image.jpg`],
+      images: [ogImage],
     },
     robots: {
       index: true,

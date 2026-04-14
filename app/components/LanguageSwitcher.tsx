@@ -11,6 +11,7 @@ const localeLabels: Record<Locale, string> = {
   ar: "AR",
 };
 
+
 export default function LanguageSwitcher({ currentLocale }: { currentLocale: Locale }) {
   const [langOpen, setLangOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -63,6 +64,21 @@ export default function LanguageSwitcher({ currentLocale }: { currentLocale: Loc
         className={`flex items-center space-x-1 cursor-pointer text-zinc-500 ${hoverTextColor} transition-colors`}
         onClick={() => setLangOpen(!langOpen)}
       >
+        <svg
+          className="w-5 h-5"
+          viewBox="0 0 25 25"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M11.999 3.5a8.5 8.5 0 100 17 8.5 8.5 0 000-17zm0 0c2.3 1.95 3.75 4.95 3.75 8.5s-1.45 6.55-3.75 8.5m0-17C9.699 5.45 8.249 8.45 8.249 12s1.45 6.55 3.75 8.5m-8.5-8.5h17m-16 4.25h15m-15-8.5h15"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
         <span className="text-sm font-medium uppercase">{currentLocale}</span>
         <svg
           className={`w-3 h-3 text-zinc-500 transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`}
@@ -76,12 +92,12 @@ export default function LanguageSwitcher({ currentLocale }: { currentLocale: Loc
       </button>
 
       {langOpen && (
-        <div className="absolute top-full mt-2 right-0 min-w-[3.5rem] bg-[#050505] text-zinc-300 rounded-md shadow-xl z-50 border border-white/10 overflow-hidden">
+        <div className="absolute top-full mt-2 right-0 min-w-14 bg-[#050505] text-zinc-300 rounded-md shadow-xl z-50 border border-white/10 overflow-hidden">
           {otherLocales.map((loc) => (
             <button
               key={loc}
               onClick={() => toggleLanguage(loc)}
-              className="block w-full text-center px-2 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition-colors uppercase"
+              className="flex w-full items-center justify-center gap-2 px-2 py-2 text-sm font-bold hover:bg-blue-500 hover:text-white transition-colors uppercase"
             >
               {localeLabels[loc]}
             </button>

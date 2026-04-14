@@ -25,6 +25,12 @@ interface Project {
   type: string;
   status?: string;
   href: string;
+  detail?: {
+    seo: { title: string; description: string; keywords: string[] };
+    intro: string;
+    sections?: { title: string; body: string }[];
+    highlights: string[];
+  };
 }
 
 interface WhyChooseUs {
@@ -200,18 +206,33 @@ export default function PortfolioClient({
               </span>
               <span className="text-[10px] text-muted-foreground/60 italic mt-0.5">
                 {locale === "en"
-                  ? "Click a filter to see projects"
+                  ? "Click a category to see projects"
                   : locale === "ar"
-                    ? "انقر على فلتر لعرض المشاريع"
-                    : "Cliquez sur un filtre pour voir les projets"}
+                    ? "انقر على فئة لعرض المشاريع"
+                    : "Cliquez sur une catégorie pour voir les projets"}
               </span>
             </div>
 
             {/* divider (desktop only) */}
             <div className="hidden sm:block w-px h-8 bg-border shrink-0 mx-2" />
 
-            {/* segmented pill group */}
-            <div className="flex flex-wrap gap-2">
+            {/* mobile select */}
+            <div className="sm:hidden w-auto">
+              <select
+                value={activeFilter}
+                onChange={(e) => setActiveFilter(e.target.value as FilterKey)}
+                className="w-full px-4 py-2 rounded-xl border border-border bg-card text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+              >
+                {filters.map((f) => (
+                  <option key={f.id} value={f.id}>
+                    {f.label} ({counts[f.id]})
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            {/* desktop pills */}
+            <div className="hidden sm:flex flex-wrap gap-2">
               {filters.map((f) => {
                 const isActive = activeFilter === f.id;
                 return (
@@ -224,14 +245,9 @@ export default function PortfolioClient({
                         : "bg-card text-muted-foreground border-border hover:bg-muted/40 hover:text-foreground hover:border-muted-foreground/10"
                     }`}
                   >
-                    {/* colored dot per type */}
                     {f.id !== "all" && (
                       <span
-                        className={`w-1.5 h-1.5 rounded-full shrink-0 transition-opacity ${
-                          isActive
-                            ? "opacity-70"
-                            : "opacity-50 group-hover:opacity-100"
-                        } ${
+                        className={`w-1.5 h-1.5 rounded-full shrink-0 ${
                           f.id === "professional"
                             ? "bg-sky-400"
                             : f.id === "personal"
@@ -243,8 +259,7 @@ export default function PortfolioClient({
 
                     <span>{f.label}</span>
 
-                    {/* count badge */}
-                    <span className="text-[10px] font-semibold tabular-nums px-1.5 py-0.5 rounded-md transition-colors bg-primary/80 text-primary-foreground">
+                    <span className="text-[10px] font-semibold tabular-nums px-1.5 py-0.5 rounded-md bg-primary/80 text-primary-foreground">
                       {counts[f.id]}
                     </span>
                   </button>
@@ -264,9 +279,6 @@ export default function PortfolioClient({
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
         {filteredProjects.length === 0 ? (
           <div className="flex flex-col items-center justify-center py-28 text-center">
-            <div className="w-14 h-14 rounded-2xl bg-muted flex items-center justify-center mb-4 border border-border">
-              <Sparkles className="w-6 h-6 text-muted-foreground" />
-            </div>
             <h2 className="text-lg font-semibold mb-1">{emptyTitle}</h2>
             <p className="text-sm text-muted-foreground max-w-xs">
               {emptyText}
