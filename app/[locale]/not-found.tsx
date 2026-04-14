@@ -6,27 +6,27 @@ import { usePathname } from "next/navigation";
 export default function NotFound() {
   const pathname = usePathname();
   const segment = pathname?.split("/")[1];
-  const isEnglish = segment === "en";
-  const locale = isEnglish ? "en" : segment === "fr" ? "fr" : "ar";
-  const content = isEnglish
+  const isFrench = segment === "fr";
+  const locale = isFrench ? "fr" : segment === "ar" ? "ar" : "en";
+  const content = isFrench
     ? {
-        title: "Sorry, this page was not found",
+        title: "Désolé, cette page n'a pas été trouvée",
         description:
-          "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
-        buttonText: "Back to Home",
+          "La page que vous recherchez a peut-être été supprimée, son nom a changé ou elle est temporairement indisponible.",
+        buttonText: "Retour à l'accueil",
       }
-    : segment === "fr"
+    : segment === "ar"
       ? {
-          title: "Désolé, cette page n'a pas été trouvée",
-          description:
-            "La page que vous recherchez a peut-être été supprimée, son nom a changé ou elle est temporairement indisponible.",
-          buttonText: "Retour à l'accueil",
-        }
-      : {
           title: "عذراً، لم يتم العثور على هذه الصفحة",
           description:
             "قد تكون الصفحة التي تبحث عنها قد تم حذفها، أو تم تغيير اسمها، أو أنها غير متاحة مؤقتاً.",
           buttonText: "العودة إلى الصفحة الرئيسية",
+        }
+      : {
+          title: "Sorry, this page was not found",
+          description:
+            "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+          buttonText: "Back to Home",
         };
 
   return (

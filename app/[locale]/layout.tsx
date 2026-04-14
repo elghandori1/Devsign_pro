@@ -9,6 +9,7 @@ import Footer from "@/app/components/Footer";
 import { getDictionary } from "@/app/lib/dictionary";
 import { I18nProvider } from "@/app/providers/i18n-provider";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import infos from "@/app/dictionaries/global.json";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -120,10 +121,19 @@ export default async function RootLayout({
     "@type": "ProfessionalService",
     name: "Devsign",
     url: baseUrl,
+    inLanguage: locale,
     description: jsonLdDescription,
+    email: infos.email,
+    telephone: infos.phoneNumber,
+    areaServed: {
+      "@type": "Country",
+      name: "Morocco",
+    },
     sameAs: [
-      "https://www.linkedin.com/in/yourprofile",
-      "https://www.instagram.com/yourprofile"
+      infos.social.linkedin,
+      infos.social.instagram,
+      infos.social.facebook,
+      infos.social.github,
     ],
     serviceType: jsonLdServices,
   };

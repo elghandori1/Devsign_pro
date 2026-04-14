@@ -174,7 +174,7 @@ export default async function ServicesPage({ params }: Props) {
         />
         {/* glows */}
         <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24">
           {/* pill */}

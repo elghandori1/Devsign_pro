@@ -15,7 +15,7 @@
       "focus": "My focus is simple: performance, scalability, and real results for growing businesses.",
       "cta_primary": "Start Your Project",
       "cta_secondary": "View Portfolio",
-      "profile_name": "mohammed devsign",
+      "profile_name": "mohammed elghandori",
       "profile_role": "Full-Stack Developer, SEO Specialist & AI Automation",
       "cta_more_about": "more about me",
       "mission": "My mission is to assist startups and enterprises in creating an emotional bond between their products and satisfied, engaged customers."
@@ -1172,25 +1172,25 @@
     "address": "Casablanca, Morocco",
     "aboutTitle": "Explore",
     "links": [
-      {
-        "label": "About",
-        "href": "/about"
-      },
-      {
+        {
         "label": "Services",
         "href": "/services"
       },
       {
-        "label": "Projects",
+      "label": "Projects",
         "href": "/projects"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+       {
+        "label": "Contact",
+        "href": "/contact"
       },
       {
         "label": "Blog",
         "href": "/blog"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
       }
     ],
     "followTitle": "Follow me",

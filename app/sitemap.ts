@@ -6,6 +6,13 @@ import { hrefToPortfolioSlug } from "@/app/lib/portfolio";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = getBaseUrl();
+	const localeAlternates = (path: string) => ({
+		languages: {
+			en: `${baseUrl}/en${path}`,
+			fr: `${baseUrl}/fr${path}`,
+			ar: `${baseUrl}/ar${path}`,
+		},
+	});
 
 	const routes = [
 		{ path: "", changeFrequency: "weekly" as const, priority: 1 },
@@ -36,6 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		({ path, changeFrequency, priority }) =>
 			i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}${path}`,
+				alternates: localeAlternates(path),
 				lastModified,
 				changeFrequency,
 				priority,
@@ -56,6 +64,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 			return i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}/portfolio/${slug}`,
+				alternates: localeAlternates(`/portfolio/${slug}`),
 				lastModified,
 				changeFrequency: "monthly" as const,
 				priority: 0.7,

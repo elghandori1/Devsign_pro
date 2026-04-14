@@ -15,7 +15,7 @@
       "focus": "تركيزي بسيط: الأداء، القابلية للتوسع، وتحقيق نتائج حقيقية للأعمال المتنامية.",
       "cta_primary": "ابدأ مشروعك الآن",
       "cta_secondary": "شاهد أعمالي السابقة ",
-      "profile_name": "محمد Devsign",
+      "profile_name": "محمد الغنضوري",
       "profile_role": "مطور Full-Stack وأخصائي SEO وأتمتة بالذكاء الاصطناعي",
       "cta_more_about": "المزيد عني",
       "mission": "مهمتي مساعدة الشركات الناشئة والمؤسسات على خلق رابطة عاطفية بين منتجاتهم والعملاء الراضين والمتفاعلين."
@@ -1170,25 +1170,25 @@
     "address": "الدار البيضاء، المغرب",
     "aboutTitle": "استكشف",
     "links": [
-      {
+        {
+        "label": "الخدمات",
+        "href": "/services"
+      },
+         {
+        "label": "المشاريع",
+        "href": "/projects"
+      },
+         {
         "label": "عنّي",
         "href": "/about"
       },
       {
-        "label": "الخدمات",
-        "href": "/services"
-      },
-      {
-        "label": "المشاريع",
-        "href": "/projects"
-      },
-      {
-        "label": "المدونة",
-        "href": "/blog"
-      },
-      {
         "label": "اتصل بي",
         "href": "/contact"
+      },
+          {
+        "label": "المدونة",
+        "href": "/blog"
       }
     ],
     "followTitle": "تابعني",

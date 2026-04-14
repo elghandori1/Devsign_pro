@@ -3,7 +3,20 @@ import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n-config";
 
 export function getBaseUrl() {
-  return (process.env.NEXT_PUBLIC_BASE_URL || "https://localhost:3000").trim();
+  const rawBaseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    process.env.VERCEL_PROJECT_PRODUCTION_URL ||
+    process.env.VERCEL_URL ||
+    (process.env.NODE_ENV === "development"
+      ? "http://localhost:3000"
+      : "https://devsignpro.com");
+
+  const normalizedBaseUrl = rawBaseUrl.trim();
+  if (normalizedBaseUrl.startsWith("http://") || normalizedBaseUrl.startsWith("https://")) {
+    return normalizedBaseUrl.replace(/\/+$/, "");
+  }
+
+  return `https://${normalizedBaseUrl}`.replace(/\/+$/, "");
 }
 
 interface SEOProps {
@@ -24,7 +37,12 @@ export function buildPageMetadata({
   ogImagePath,
 }: SEOProps): Metadata {
   const baseUrl = getBaseUrl();
-  const ogLocale = locale === "en" ? "en_US":locale === "ar" ? "ar_MA" :"fr_MA";
+  const ogLocale = locale === "en" ? "en_US" : locale === "ar" ? "ar_MA" : "fr_MA";
+  const ogLocaleAlternate = i18n.locales
+    .filter((currentLocale) => currentLocale !== locale)
+    .map((currentLocale) =>
+      currentLocale === "en" ? "en_US" : currentLocale === "ar" ? "ar_MA" : "fr_MA",
+    );
   const safeRoute = route ? (route.startsWith("/") ? route : `/${route}`) : "";
   const currentUrl = `${baseUrl}/${locale}${safeRoute}`;
   const defaultUrl = `${baseUrl}/${i18n.defaultLocale}${safeRoute}`;
@@ -36,9 +54,14 @@ export function buildPageMetadata({
       : `${baseUrl}/cover/Design-cover.png`;
   return {
     metadataBase: new URL(baseUrl),
+    applicationName: "Devsign Pro",
     title,
     description,
     keywords,
+    category: "technology",
+    creator: "Devsign",
+    publisher: "Devsign",
+    authors: [{ name: "Devsign", url: baseUrl }],
     alternates: {
       canonical: currentUrl,
       languages: {
@@ -62,6 +85,7 @@ export function buildPageMetadata({
         },
       ],
       locale: ogLocale,
+      alternateLocale: ogLocaleAlternate,
       type: "website",
     },
     twitter: {
@@ -69,6 +93,8 @@ export function buildPageMetadata({
       title,
       description,
       images: [ogImage],
+      creator: "@devsign_pro",
+      site: "@devsign_pro",
     },
     robots: {
       index: true,

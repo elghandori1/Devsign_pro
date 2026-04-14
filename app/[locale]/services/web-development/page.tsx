@@ -218,7 +218,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
       {data.features?.length > 0 && (
         <section
           aria-labelledby="overview-heading"
-          className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 lg:py-18"
+          className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 lg:py-20"
         >
           <div className="space-y-4 sm:space-y-6">
             <h2

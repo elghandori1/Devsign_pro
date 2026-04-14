@@ -164,25 +164,25 @@ export default function ProjectsShowcaseSlider({
                 <button
                   type="button"
                   onClick={handlePrev}
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
+                  className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
                   aria-label={isRtl ? "Next project" : "Previous project"}
                 >
                   {isRtl ? (
-                    <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <ChevronRight className="w-5 h-5 sm:w-5 sm:h-5" />
                   ) : (
-                    <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <ChevronLeft className="w-5 h-5 sm:w-5 sm:h-5" />
                   )}
                 </button>
                 <button
                   type="button"
                   onClick={handleNext}
-                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
+                  className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
                   aria-label={isRtl ? "Previous project" : "Next project"}
                 >
                   {isRtl ? (
-                    <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <ChevronLeft className="w-5 h-5 sm:w-5 sm:h-5" />
                   ) : (
-                    <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <ChevronRight className="w-5 h-5 sm:w-5 sm:h-5" />
                   )}
                 </button>
               </div>
@@ -194,17 +194,24 @@ export default function ProjectsShowcaseSlider({
             {projectlist.map((_, i) => (
               <button
                 key={i}
+                type="button"
                 onClick={() => {
                   setDirection(i > index ? 1 : -1);
                   setIndex(i);
                 }}
-                className={`h-1 rounded-full transition-all duration-300 ${
+                className={`h-6 px-1 inline-flex items-center justify-center rounded-full transition-all duration-300 ${
                   i === index
-                    ? "w-4 sm:w-6 bg-primary"
-                    : "w-1.5 sm:w-2 bg-muted-foreground/30"
+                    ? "w-8 sm:w-10 bg-primary/20"
+                    : "w-6 sm:w-8 bg-muted-foreground/15"
                 }`}
                 aria-label={`Go to project ${i + 1}`}
-              />
+              >
+                <span
+                  className={`h-1.5 rounded-full transition-all duration-300 ${
+                    i === index ? "w-4 sm:w-6 bg-primary" : "w-1.5 sm:w-2 bg-muted-foreground/40"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

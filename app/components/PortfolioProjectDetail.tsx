@@ -79,7 +79,7 @@ export default function PortfolioProjectDetail({
 
   return (
     <main
-      className="min-h-screen bg-primary/6 text-foreground overflow-x-hidden"
+      className="min-h-screen bg-primary/6 text-foreground"
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* ── Breadcrumb ── */}
@@ -110,7 +110,7 @@ export default function PortfolioProjectDetail({
           <li aria-hidden="true" className="text-border">
             /
           </li>
-          <li className="text-foreground font-medium truncate max-w-[180px] sm:max-w-none">
+          <li className="text-foreground font-medium truncate max-w-[220px] sm:max-w-none">
             {project.title}
           </li>
         </ol>
@@ -173,7 +173,7 @@ export default function PortfolioProjectDetail({
           </div>
         </header>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-10 lg:gap-14">
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] xl:grid-cols-[minmax(0,1fr)_300px] gap-10 lg:gap-14">
           {/* ── Main column ── */}
           <div className="min-w-0 space-y-10 sm:space-y-12">
             {/* Intro */}

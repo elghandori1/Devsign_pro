@@ -142,7 +142,7 @@ export default function PortfolioClient({
 
   return (
     <main
-      className="min-h-screen bg-background text-foreground overflow-x-hidden"
+      className="min-h-screen bg-background text-foreground"
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* ── Hero ── */}

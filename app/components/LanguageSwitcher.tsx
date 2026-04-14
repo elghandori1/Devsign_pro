@@ -92,7 +92,7 @@ export default function LanguageSwitcher({ currentLocale }: { currentLocale: Loc
       </button>
 
       {langOpen && (
-        <div className="absolute top-full mt-2 right-0 min-w-14 bg-[#050505] text-zinc-300 rounded-md shadow-xl z-50 border border-white/10 overflow-hidden">
+        <div className="absolute top-full mt-2 right-0 min-w-16 bg-[#050505] text-zinc-300 rounded-md shadow-xl z-50 border border-white/10 overflow-hidden">
           {otherLocales.map((loc) => (
             <button
               key={loc}

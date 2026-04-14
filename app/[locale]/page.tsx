@@ -414,11 +414,11 @@ export default async function Home({ params }: Props) {
           aria-hidden="true"
         />
         <div
-          className="absolute -bottom-20 right-0 w-80 h-80 bg-primary/8 rounded-full blur-3xl pointer-events-none"
+          className="absolute -bottom-20 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16 lg:py-18">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
             <div className="flex flex-col gap-5 sm:gap-6">
               <div
@@ -524,8 +524,8 @@ export default async function Home({ params }: Props) {
                   {/* image — better portrait proportions */}
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
-                      src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
-                      alt={t.hero.profile_name}
+                      src="/images/profile.png"
+                      alt={t.hero.profile_name + " profile picture"}
                       width={420}
                       height={525}
                       className="w-full h-full object-cover object-top

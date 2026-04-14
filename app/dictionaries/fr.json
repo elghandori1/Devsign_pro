@@ -15,7 +15,7 @@
       "focus": "Mon objectif est simple : performance, évolutivité et résultats concrets pour les entreprises en croissance.",
       "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mon portfolio",
-      "profile_name": "mohammed devsign",
+      "profile_name": "mohammed elghandori",
       "profile_role": "développeur full-stack et spécialiste SEO et automatisation IA",
       "cta_more_about": "en savoir plus",
       "mission": "Ma mission est d'aider les startups et les entreprises à créer un lien émotionnel entre leurs produits et des clients satisfaits et engagés."
@@ -965,7 +965,7 @@
           "type": "personal",
           "status": "online",
           "href": "/portfolio/money-transfer",
-             "highlightsHeading": "key features",
+          "highlightsHeading": "key features",
           "detail": {
             "seo": {
               "title": "Convertisseur de devises & transfert | APIs | Devsign",
@@ -1004,8 +1004,7 @@
           "type": "professional",
           "status": "local enterprise",
           "href": "/portfolio/hotel-technical-issue-manager",
-                    "highlightsHeading": "Ce que nous avons livré",
-
+          "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
               "title": "Maintenance hôtelière | PHP, MySQL, PDF | Devsign",
@@ -1036,7 +1035,7 @@
         },
         {
           "title": "Outil Utilitaire Calucature",
-  "description": "Un outil desktop léger développé en Python, conçu pour des calculs techniques rapides et efficaces. Grâce à une interface graphique Tkinter, il offre une expérience simple et offline pour gérer des tâches mathématiques répétitives sans dépendre d’une application web.",
+          "description": "Un outil desktop léger développé en Python, conçu pour des calculs techniques rapides et efficaces. Grâce à une interface graphique Tkinter, il offre une expérience simple et offline pour gérer des tâches mathématiques répétitives sans dépendre d’une application web.",
           "tech": "Python, Tkinter",
           "image": "/images/projects/Calucature-Utility-Tool.jpg",
           "linkLabel": "Voir les détails",
@@ -1058,16 +1057,16 @@
               ]
             },
             "intro": "Tous les problèmes ne nécessitent pas une application web. Calucature est un outil desktop Python conçu pour être rapide, fiable et facile à utiliser. Il transforme les tâches répétitives en un workflow fluide, avec une interface graphique claire et optimisée pour la productivité.",
-  "sections": [
-    {
-      "title": "Efficacité desktop avec Python",
-      "body": "Développée avec Python et Tkinter, l’application offre une expérience desktop légère avec une faible consommation de ressources. L’interface est pensée pour la clarté et la rapidité, permettant d’effectuer des calculs sans distraction. Sa structure modulaire facilite l’ajout de nouvelles fonctionnalités selon les besoins."
-    },
-    {
-      "title": "Ce que nous avons appris",
-      "body": "Ce projet a renforcé notre maîtrise de Python pour les applications desktop, notamment la conception d’interfaces graphiques, la programmation événementielle et l’expérience utilisateur. Nous avons également appris à concevoir des outils offline efficaces, à optimiser les workflows et à structurer un code maintenable et évolutif."
-    }
-              ],
+            "sections": [
+              {
+                "title": "Efficacité desktop avec Python",
+                "body": "Développée avec Python et Tkinter, l’application offre une expérience desktop légère avec une faible consommation de ressources. L’interface est pensée pour la clarté et la rapidité, permettant d’effectuer des calculs sans distraction. Sa structure modulaire facilite l’ajout de nouvelles fonctionnalités selon les besoins."
+              },
+              {
+                "title": "Ce que nous avons appris",
+                "body": "Ce projet a renforcé notre maîtrise de Python pour les applications desktop, notamment la conception d’interfaces graphiques, la programmation événementielle et l’expérience utilisateur. Nous avons également appris à concevoir des outils offline efficaces, à optimiser les workflows et à structurer un code maintenable et évolutif."
+              }
+            ],
             "highlights": [
               "Expérience desktop simple",
               "Adapté aux calculs répétitifs",
@@ -1172,10 +1171,6 @@
     "aboutTitle": "Explorer",
     "links": [
       {
-        "label": "À propos",
-        "href": "/about"
-      },
-      {
         "label": "Services",
         "href": "/services"
       },
@@ -1183,13 +1178,17 @@
         "label": "Projets",
         "href": "/projects"
       },
+        {
+        "label": "À propos",
+        "href": "/about"
+      },
+        {
+        "label": "Contact",
+        "href": "/contact"
+      },
       {
         "label": "Blog",
         "href": "/blog"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
       }
     ],
     "followTitle": "Suivez-moi",

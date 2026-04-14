@@ -20,7 +20,6 @@ import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: string }> };
-const STORY_IMAGE = "/images/alex-suprun-ZHvM3XIOHoE-unsplash.jpg";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -211,50 +210,46 @@ export default async function AboutPage({ params }: Props) {
       </section>
 
       {/* ── 2. WHO I AM ── */}
-     <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
-  <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
-    
-    {/* text */}
-    <div className={`space-y-5 ${isRtl ? "lg:order-2" : ""}`}>
-      <span
-        className="inline-flex items-center gap-2 bg-primary/10 text-primary
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
+          {/* text */}
+          <div className={`space-y-5 ${isRtl ? "lg:order-2" : ""}`}>
+            <span
+              className="inline-flex items-center gap-2 bg-primary/10 text-primary
                    px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
-      >
-        {t.whoIAm?.title}
-      </span>
+            >
+              {t.whoIAm?.title}
+            </span>
 
-      <p className="text-lg text-muted-foreground leading-relaxed">
-        {t.whoIAm?.paragraph1}
-      </p>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {t.whoIAm?.paragraph1}
+            </p>
 
-      <p className="text-muted-foreground leading-relaxed">
-        {t.whoIAm?.paragraph2}
-      </p>
-    </div>
+            <p className="text-muted-foreground leading-relaxed">
+              {t.whoIAm?.paragraph2}
+            </p>
+          </div>
 
-    {/* image */}
-    <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
-      <div className="relative max-w-xs mx-auto lg:max-w-none">
-        
-        {/* decorative ring */}
-        <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
+          {/* image */}
+          <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
+            <div className="relative max-w-xs mx-auto lg:max-w-none">
+              {/* decorative ring */}
+              <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
 
-        <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl aspect-[3/4]">
-          <Image
-            src="/images/md-ishak-raman-x45xE1P6Fe4-unsplash.jpg"
-            alt="Mohammed Devsign full-stack developer and designer at Devsignpro"
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 30vw"
-            priority
-          />
+              <div className="relative rounded-2xl overflow-hidden border border-border shadow-xl aspect-[3/4]">
+                <Image
+                  src="/images/profile.png"
+                  alt="Mohammed elghandori full-stack developer and designer at Devsignpro"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 30vw"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
+      </section>
 
       {/* ── 3. EXPERIENCE BANNER ── */}
       {t.experience && (
@@ -317,8 +312,8 @@ export default async function AboutPage({ params }: Props) {
               <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
                 <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-border">
                   <Image
-                    src={STORY_IMAGE}
-                    alt=""
+                    src="/images/about/profile1.png"
+                    alt="devsign pro story and mission"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
