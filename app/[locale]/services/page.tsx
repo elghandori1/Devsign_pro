@@ -21,21 +21,21 @@ const getSEOKeywords = (locale: Locale): string[] =>
   ({
     en: [
       "web development services Morocco",
-      "SEO services Morocco",
+      "freelance web development Morocco",
       "AI automation services",
       "website design Morocco",
       "business automation solutions",
     ],
     fr: [
       "développement web Maroc",
-      "services SEO Maroc",
+      "freelance développement web Maroc",
       "automatisation IA entreprise",
       "création site web Casablanca",
       "solutions automatisation business",
     ],
     ar: [
       "تطوير ويب المغرب",
-      "خدمات SEO المغرب",
+      "خدمات تطوير الويب المغرب",
       "أتمتة الذكاء الاصطناعي",
       "تصميم مواقع المغرب",
       "حلول أتمتة الأعمال",
@@ -52,16 +52,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const titles = {
-    en: "Expert Web Development, SEO & AI Automation Services in Morocco | Devsign",
-    fr: "Développement Web Expert, SEO & Automatisation IA Sur Mesure au Maroc | Devsign",
-    ar: "تطوير ويب احترافي، تحسين SEO وأتمتة الذكاء الاصطناعي في المغرب| Devsign",
-  };
+const titles = {
+  en: "Freelance Expert Web Development, SEO & AI Automation Services | devsign",
+  fr: "Expert Freelance en Développement Web, SEO & Automatisation IA | devsign",
+  ar: "خبير مستقل في تطوير الويب، SEO وخدمات أتمتة الذكاء الاصطناعي | devsign",
+};
 
   const descriptions = {
-    en: "Web development, SEO optimization, AI automation systems, and social media ad design services in Morocco to increase traffic, leads, and online business growth.",
-    fr: "Développement web, SEO, automatisation IA et design de publicités sur les réseaux sociaux au Maroc pour générer plus de trafic et de clients.",
-    ar: "خدمات تطوير المواقع، SEO، أتمتة بالذكاء الاصطناعي وتصميم إعلانات السوشيال ميديا في المغرب لزيادة الزيارات والعملاء ونمو الأعمال.",
+    en: "Freelance Expert Web development, SEO optimization, AI automation systems, and social media ad design services in Morocco to increase traffic, leads, and online business growth.",
+    fr: "Expert Freelance en Développement web, SEO, automatisation IA et design de publicités sur les réseaux sociaux au Maroc pour générer plus de trafic et de clients.",
+    ar: "خبير مستقل في تطوير الويب، تحسين محركات البحث (SEO)، أتمتة الذكاء الاصطناعي وتصميم إعلانات وسائل التواصل الاجتماعي في المغرب لجذب المزيد من الزيارات والعملاء."
   };
 
   return buildPageMetadata({

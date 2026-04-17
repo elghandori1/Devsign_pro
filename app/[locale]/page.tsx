@@ -36,16 +36,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = locale === "ar";
 
   const title = isEnglish
-    ? "Web Developer in Morocco | SEO Websites, AI Automation & Social Media Ads"
+    ? "Expert Web Developer in Morocco | SEO, AI Automation & Digital Solutions"
     : isArabic
-      ? "مطور ويب في المغرب | أتمتة الذكاء الاصطناعي، SEO وتصميم إعلانات"
-      : "Développeur Web Maroc | Automatisation IA, SEO & Design Publicitaire";
+      ? "مطور ويب محترف في المغرب | SEO، أتمتة الذكاء الاصطناعي وحلول رقمية"
+      : "Développeur Web Expert au Maroc | SEO, Automatisation IA & Solutions Digitales";
 
   const description = isEnglish
     ? "Boost your business with high-performance website development, AI-driven automation, and high-converting social media ad design. Expert digital solutions in Morocco."
     : isArabic
-      ? "خدمات احترافية في تطوير المواقع، تحسين محركات البحث (SEO)، أتمتة الأعمال بالذكاء الاصطناعي، وتصميم إعلانات السوشيال ميديا لزيادة مبيعاتك في المغرب."
-      : "Expert en création de sites web, optimisation SEO et solutions d'automatisation par l'IA. Boostez votre visibilité avec des designs publicitaires percutants au Maroc.";
+      ? "خدمات احترافية في تطوير المواقع، تحسين محركات البحث (SEO)، أتمتة الأعمال بالذكاء الاصطناعي، وتصميم إعلانات وسائل التواصل الاجتماعي لزيادة مبيعاتك في المغرب."
+      : "Expert au Maroc en création de sites web, SEO et automatisation par l'IA. Des designs publicitaires percutants pour booster votre visibilité et vos ventes.";
 
   const keywords = isEnglish
     ? [
@@ -58,6 +58,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "Social Media Ads Expert",
         "Social Media Ads Design",
         "Facebook Instagram TikTok Ads",
+        "Freelance Web Development Morocco",
       ]
     : isArabic
       ? [
@@ -250,7 +251,7 @@ export default async function Home({ params }: Props) {
         knowsAbout: [
           "Web Development",
           "Next.js Development",
-          "React.js",
+          "freelance web development",
           "SEO Optimisation",
           "Technical SEO",
           "AI Automation",
@@ -268,10 +269,10 @@ export default async function Home({ params }: Props) {
           { "@type": "Language", name: "Arabic" },
         ],
         sameAs: [
-         infos.social.facebook,
-         infos.social.instagram,
-         infos.social.linkedin,
-         infos.social.github,
+          infos.social.facebook,
+          infos.social.instagram,
+          infos.social.linkedin,
+          infos.social.github,
         ],
       },
 
@@ -310,6 +311,7 @@ export default async function Home({ params }: Props) {
           "javascript",
           "typescript",
           "SEO",
+          "freelance web development",
           "Technical SEO",
           "AI Automation",
           "Business Automation",
@@ -596,7 +598,7 @@ export default async function Home({ params }: Props) {
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-            <TechnologySlider />
+        <TechnologySlider />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>

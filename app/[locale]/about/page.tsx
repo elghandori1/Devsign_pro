@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const title =
-    locale === "en"
-      ? "About Me | Web Developer & Designer — Devsign"
-      : locale === "ar"
-        ? "عني | مطور ويب ومصمم - ديفساين"
-        : "À Propos | Développeur Web & Designer — Devsign";
+ const title =
+  locale === "en"
+    ? "Full-Stack Web Developer & AI Automation Expert in Morocco | Devsign"
+    : locale === "ar"
+      ? "مطور ويب Full-Stack وخبير أتمتة الذكاء الاصطناعي في المغرب | Devsign"
+      : "Développeur Full-Stack & Expert en Automatisation IA au Maroc | Devsign";
 
   const description =
     locale === "en"
