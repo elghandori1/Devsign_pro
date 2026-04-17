@@ -59,9 +59,9 @@ export default function ContactSection({
             </div>
 
             <div>
-              <h4 className="font-semibold text-base">
+              <p className="font-semibold text-base">
                 {translations.whatsapp}
-              </h4>
+              </p>
               <p className="text-sm text-muted-foreground mt-1">
                 {infos.phoneNumber}
               </p>
@@ -82,9 +82,9 @@ export default function ContactSection({
             </div>
 
             <div>
-              <h4 className="font-semibold text-base">
+              <p className="font-semibold text-base">
                 {translations.email}
-              </h4>
+              </p>
               <p className="text-sm text-muted-foreground mt-1">
                 {infos.email}
               </p>
@@ -113,9 +113,9 @@ export default function ContactSection({
             </div>
 
             <div>
-              <h4 className="font-semibold text-base">
+              <p className="font-semibold text-base">
                 {translations.brandName}
-              </h4>
+              </p>
 
               <p className="text-sm text-muted-foreground mt-1">
                 {infos.instagramHandle}

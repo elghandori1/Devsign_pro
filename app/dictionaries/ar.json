@@ -1126,7 +1126,7 @@
         "subheading": "سأرد عليك خلال 24 ساعة.",
         "fullNamePlaceholder": "محمد الأمين",
         "emailAddress": "عنوان البريد الإلكتروني",
-        "emailPlaceholder": "mohammed@example.com",
+        "emailPlaceholder": "yourname@example.com",
         "projectType": "نوع المشروع",
         "projectTypePlaceholder": "اختر نوع المشروع",
         "projectTypes": {
@@ -1141,7 +1141,16 @@
         "availability": "متاح لمشاريع جديدة",
         "message": "الرسالة",
         "messagePlaceholder": "أخبرني عن مشروعك...",
-        "successMessage": "تم إرسال رسالتك! سأتواصل معك قريباً."
+        "successMessage": "تم إرسال رسالتك! سأتواصل معك قريباً.",
+        "sending": "جارٍ الإرسال...",
+        "errors": {
+          "emailRequired": "البريد الإلكتروني مطلوب",
+          "projectTypeRequired": "نوع المشروع مطلوب",
+          "messageRequired": "يجب أن تكون الرسالة 10 أحرف على الأقل",
+          "networkError": "خطأ في الشبكة",
+          "somethingWentWrong": "حدث خطأ ما",
+          "selectProjectType": "يرجى اختيار نوع المشروع"
+        }
       },
       "whyReachOut": {
         "title": "لماذا تتواصل معي؟",
@@ -1168,7 +1177,7 @@
     "brandTagline": "فريلانس",
     "phone": "7 78 18 03 06 212+",
     "address": "الدار البيضاء، المغرب",
-    "aboutTitle": "استكشف",
+    "ExplorerTitle": "استكشف",
     "links": [
         {
         "label": "الخدمات",

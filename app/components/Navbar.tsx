@@ -8,29 +8,29 @@ import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 
 type NavbarProps = {
-  lang: Locale;
+  locale: Locale;
 };
 
-export default async function Navbar({ lang }: NavbarProps) {
-const fullDictionary = await getDictionary(lang);
+export default async function Navbar({ locale }: NavbarProps) {
+const fullDictionary = await getDictionary(locale);
   const t = fullDictionary.navbar;
 
   return (
     <nav dir="ltr" className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
-        <Link href={`/${lang}`} className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity">
+        <Link href={`/${locale}`} className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity">
           <span>Devsign</span>
         </Link>
         <div className="hidden md:block">
-          <NavLinks lang={lang} t={t} />
+          <NavLinks locale={locale} t={t} />
         </div>
         <div className="flex items-center gap-2 md:gap-4">
           <div className="hidden md:flex items-center gap-4">
-            <LanguageSwitcher currentLocale={lang} />
+            <LanguageSwitcher currentLocale={locale} />
             <ThemeToggle />
           </div>
           <div className="md:hidden">
-            <MobileMenu lang={lang} t={t} />
+            <MobileMenu locale={locale} t={t} />
           </div>
         </div>
       </div>

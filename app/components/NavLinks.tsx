@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Locale } from "@/i18n-config";
 
 type NavLinksProps = {
-  lang: Locale;
+  locale: Locale;
   t: {
     home: string;
     about: string;
@@ -16,16 +16,15 @@ type NavLinksProps = {
   };
 };
 
-export default function NavLinks({ lang, t }: NavLinksProps) {
+export default function NavLinks({ locale, t }: NavLinksProps) {
   const pathname = usePathname();
 
   // Helper to check if a path is active
   const isActive = (path: string) => {
-    // Normalize paths: ensure they start with /{lang}
-    const fullPath = `/${lang}${path}`;
+    const fullPath = `/${locale}${path}`;
     return pathname === fullPath;
   };
-const locale = lang;
+
   const navItems = [
     { href: "", label: t.home },
     { href: "/services", label: t.Services },
@@ -37,9 +36,8 @@ const locale = lang;
   return (
    <div dir={locale === "ar" ? "rtl" : "ltr"}  className="hidden md:flex items-center gap-8 text-sm font-medium">
   {navItems.map((item) => {
-    const fullHref = `/${lang}${item.href}`;
+    const fullHref = `/${locale}${item.href}`;
     const active = isActive(item.href);
-
     return (
       <Link
         key={item.href}

@@ -14,7 +14,7 @@ interface FooterTranslations {
   brandTagline: string;
   phone: string;
   address: string;
-  aboutTitle: string;
+  ExplorerTitle: string;
   links: FooterLink[];
   followTitle: string;
   copyright: string;
@@ -110,12 +110,12 @@ export default function Footer({ footer, locale }: FooterProps) {
 
           {/* Links */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-5">{footer.aboutTitle}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-5">{footer.ExplorerTitle}</h3>
             <ul className="space-y-3">
               {footer.links.map((link) => (
                 <li key={link.href}>
                   <Link
-                    href={link.href}
+                    href={`/${locale}${link.href}`}
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
                     {link.label}
@@ -150,7 +150,7 @@ export default function Footer({ footer, locale }: FooterProps) {
       {/* Footer bottom */}
       <div className="border-t border-border bg-primary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-center">
-          <p className="text-xs sm:text-sm text-primary-foreground/80 text-center sm:text-start">{copyright}</p>
+          <p className="text-xs sm:text-sm text-primary-foreground text-center sm:text-start">{copyright}</p>
         </div>
       </div>
     </footer>

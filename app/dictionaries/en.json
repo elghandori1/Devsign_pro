@@ -1128,7 +1128,7 @@
         "subheading": "I'll get back to you within 24 hours.",
         "fullNamePlaceholder": "Jane Smith",
         "emailAddress": "Email Address",
-        "emailPlaceholder": "jane@example.com",
+        "emailPlaceholder": "yourname@example.com",
         "projectType": "Project Type",
         "projectTypePlaceholder": "Select a project type",
         "projectTypes": {
@@ -1143,7 +1143,16 @@
         "availability": "Available for new projects",
         "message": "Message",
         "messagePlaceholder": "Tell me about your project...",
-        "successMessage": "Message sent! I'll get back to you soon."
+        "successMessage": "Message sent! I'll get back to you soon.",
+        "sending": "Sending...",
+        "errors": {
+          "emailRequired": "Email is required",
+          "projectTypeRequired": "Project type is required",
+          "messageRequired": "Message must be at least 10 characters",
+          "networkError": "Network error",
+          "somethingWentWrong": "Something went wrong",
+          "selectProjectType": "Please select a project type"
+        }
       },
       "whyReachOut": {
         "title": "Why Reach Out?",
@@ -1170,7 +1179,7 @@
     "brandTagline": "Freelance",
     "phone": "+212 7 78 18 03 06",
     "address": "Casablanca, Morocco",
-    "aboutTitle": "Explore",
+    "ExplorerTitle": "Explore",
     "links": [
         {
         "label": "Services",

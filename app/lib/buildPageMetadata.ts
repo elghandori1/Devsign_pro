@@ -9,7 +9,7 @@ export function getBaseUrl() {
     process.env.VERCEL_URL ||
     (process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://devsignpro.com");
+      : "https://devsign.com");
 
   const normalizedBaseUrl = rawBaseUrl.trim();
   if (normalizedBaseUrl.startsWith("http://") || normalizedBaseUrl.startsWith("https://")) {
@@ -51,7 +51,7 @@ export function buildPageMetadata({
       ? ogImagePath.startsWith("http")
         ? ogImagePath
         : `${baseUrl}${ogImagePath.startsWith("/") ? "" : "/"}${ogImagePath}`
-      : `${baseUrl}/cover/Design-cover.png`;
+      : `${baseUrl}/cover/Design-cover.jpg`;
   return {
     metadataBase: new URL(baseUrl),
     applicationName: "Devsign Pro",

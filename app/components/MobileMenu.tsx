@@ -9,7 +9,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import { ThemeToggle } from "./ThemeToggle";
 
 type MobileMenuProps = {
-  lang: Locale;
+  locale: Locale;
   t: {
     home: string;
     about: string;
@@ -19,7 +19,7 @@ type MobileMenuProps = {
   };
 };
 
-export default function MobileMenu({ lang, t }: MobileMenuProps) {
+export default function MobileMenu({ locale, t }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
@@ -75,8 +75,8 @@ export default function MobileMenu({ lang, t }: MobileMenuProps) {
           {/* Navigation Links */}
           <nav className="flex-1 flex flex-col py-8 px-2 space-y-2 bg-card rounded-md shadow-sm">
             {navItems.map((item) => {
-              const fullHref = item.href === "" ? `/${lang}` : `/${lang}${item.href}`;
-              const active = pathname === fullHref || (pathname === `/${lang}` && item.href === "");
+              const fullHref = item.href === "" ? `/${locale}` : `/${locale}${item.href}`;
+              const active = pathname === fullHref || (pathname === `/${locale}` && item.href === "");
 
               return (
                 <Link
@@ -98,10 +98,10 @@ export default function MobileMenu({ lang, t }: MobileMenuProps) {
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between bg-card p-5 rounded-2xl border border-border shadow-sm">
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-card-foreground">Language & Theme</span>
+                  <span className="text-xs font-bold text-card-foreground">{locale=="en"?"Language & Theme":locale=="fr"?"Langue et Thème":"اللغة والسمة"}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <LanguageSwitcher currentLocale={lang} />
+                  <LanguageSwitcher currentLocale={locale} />
                   <div className="w-[1px] h-6 bg-border" />
                   <ThemeToggle />
                 </div>

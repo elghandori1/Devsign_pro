@@ -5,8 +5,19 @@ import Link from "next/link";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp, BsInstagram, BsLinkedin } from "react-icons/bs";
 import {
-  MapPin, ArrowRight, MessageCircle, Calendar, Headphones,
-  Clock, Coffee, Sparkles, CheckCircle, Globe, Mail, Heart, Github,
+  MapPin,
+  ArrowRight,
+  MessageCircle,
+  Calendar,
+  Headphones,
+  Clock,
+  Coffee,
+  Sparkles,
+  CheckCircle,
+  Globe,
+  Mail,
+  Heart,
+  Github,
 } from "lucide-react";
 
 interface ContactData {
@@ -49,12 +60,20 @@ interface ContactData {
       design: string;
       other: string;
     };
-  copy: string;
-  copied: string;
-  availability: string;
+    copy: string;
+    copied: string;
+    availability: string;
     message: string;
     messagePlaceholder: string;
     successMessage: string;
+    sending: string;
+    errors: {
+      emailRequired: string;
+      projectTypeRequired: string;
+      messageRequired: string;
+      networkError: string;
+      somethingWentWrong: string;
+    };
   };
   whyReachOut?: {
     title: string;
@@ -86,13 +105,15 @@ export default function ContactClient({
   linkedinHandle,
 }: ContactClientProps) {
   const [copied, setCopied] = useState(false);
-  const [formStatus, setFormStatus] = useState<null | "success" | "error">(null);
-
-  const waLink        = `${whatsappNumber}`;
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
+  const [error, setError] = useState("");
+  const [formStartTime] = useState(Date.now());
+  const waLink = `${whatsappNumber}`;
   const instagramLink = `${instagramHandle}`;
-  const githublink    = `${githubLink}`;
-  const githubName    = `${githubHandle}`;
-  const linkedinLink  = `${linkedinHandle}`;
+  const githublink = `${githubLink}`;
+  const linkedinLink = `${linkedinHandle}`;
 
   const handleCopyEmail = async () => {
     try {
@@ -104,24 +125,108 @@ export default function ContactClient({
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const validateForm = (formData: FormData) => {
+    const errors: Record<string, string> = {};
+
+    const email = formData.get("email") as string;
+    const projectType = formData.get("projectType") as string;
+    const message = formData.get("message") as string;
+
+    if (!email) errors.email = data.form.errors.emailRequired;
+    if (!projectType || projectType === "") {
+      errors.projectType = data.form.errors.projectTypeRequired;
+    }
+    if (!message || message.length < 10)
+      errors.message = data.form.errors.messageRequired;
+
+    setFieldErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setFormStatus("success");
-    setTimeout(() => setFormStatus(null), 3000);
+
+    setLoading(true);
+    setError("");
+    setFieldErrors({});
+
+    const formData = new FormData(e.currentTarget);
+
+    if (!validateForm(formData)) {
+      setLoading(false);
+      return;
+    }
+
+    const payload = {
+      email: formData.get("email"),
+      projectType: formData.get("projectType"),
+      message: formData.get("message"),
+      company: formData.get("company"),
+      formTime: formStartTime,
+    };
+
+    try {
+      const response = await fetch("/api/Email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      const contentType = response.headers.get("content-type") || "";
+      const result = contentType.includes("application/json")
+        ? await response.json()
+        : { success: false, error: await response.text() };
+
+      if (response.ok && result.success) {
+        setSuccess(true);
+        (e.target as HTMLFormElement).reset();
+
+        setTimeout(() => setSuccess(false), 4000);
+      } else {
+        setError(result.error || data.form.errors.somethingWentWrong);
+      }
+    } catch (err) {
+      setError(data.form.errors.networkError);
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const channels = [
-    { label: data.email,     href: `mailto:${email}`, icon: MdEmail,      description: data.channels.emailDescription },
-    { label: data.whatsapp,  href: waLink,             icon: BsWhatsapp,   description: data.channels.whatsappDescription },
-    { label: data.instagram, href: instagramLink,      icon: BsInstagram,  description: data.channels.instagramDescription },
-    { label: data.linkedin,  href: linkedinLink,       icon: BsLinkedin,   description: data.channels.linkedinDescription },
+    {
+      label: data.email,
+      href: `mailto:${email}`,
+      icon: MdEmail,
+      description: data.channels.emailDescription,
+    },
+    {
+      label: data.whatsapp,
+      href: waLink,
+      icon: BsWhatsapp,
+      description: data.channels.whatsappDescription,
+    },
+    {
+      label: data.instagram,
+      href: instagramLink,
+      icon: BsInstagram,
+      description: data.channels.instagramDescription,
+    },
+    {
+      label: data.linkedin,
+      href: linkedinLink,
+      icon: BsLinkedin,
+      description: data.channels.linkedinDescription,
+    },
   ];
 
   const quickResponses = [
-    { icon: Clock,    text: data.quickResponses.response24h },
-    { icon: Coffee,   text: data.quickResponses.freeConsultation },
+    { icon: Clock, text: data.quickResponses.response24h },
+    { icon: Coffee, text: data.quickResponses.freeConsultation },
     { icon: Sparkles, text: data.quickResponses.noObligation },
-    { icon: Globe,    text: data.quickResponses.worldwide },
+    { icon: Globe, text: data.quickResponses.worldwide },
   ];
 
   const WHY_ICONS = [MessageCircle, Calendar, Headphones];
@@ -131,7 +236,6 @@ export default function ContactClient({
       className="min-h-screen bg-background transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
-
       {/* ── 1. HERO ── */}
       <section className="relative overflow-hidden hero-section-light border-b border-border">
         {/* grid texture */}
@@ -149,15 +253,22 @@ export default function ContactClient({
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-14 sm:py-20 text-center">
           {/* availability pill */}
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                          border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" aria-hidden="true" />
+          <div
+            className="inline-flex items-center gap-2 bg-primary/10 text-primary
+                          border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6"
+          >
+            <span
+              className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"
+              aria-hidden="true"
+            />
             {data.form.availability}
           </div>
 
           {/* h1 */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight
-                         text-foreground mb-5 leading-[1.1]">
+          <h1
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight
+                         text-foreground mb-5 leading-[1.1]"
+          >
             {data.heading}
           </h1>
 
@@ -168,10 +279,16 @@ export default function ContactClient({
           {/* quick response badges */}
           <div className="flex flex-wrap justify-center gap-2 sm:gap-3">
             {quickResponses.map((item, idx) => (
-              <div key={idx}
+              <div
+                key={idx}
                 className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1.5 sm:py-2
-                           bg-card rounded-full border border-border">
-                <item.icon size={13} className="text-primary shrink-0" aria-hidden="true" />
+                           bg-card rounded-full border border-border"
+              >
+                <item.icon
+                  size={13}
+                  className="text-primary shrink-0"
+                  aria-hidden="true"
+                />
                 <span className="text-xs sm:text-sm text-muted-foreground whitespace-nowrap">
                   {item.text}
                 </span>
@@ -189,11 +306,14 @@ export default function ContactClient({
         </h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
-
           {/* ── LEFT: channels + location ── */}
           <div className="flex flex-col gap-6">
             <h3 className="flex items-center gap-2 text-lg sm:text-xl font-semibold text-foreground">
-              <Mail size={18} className="text-primary shrink-0" aria-hidden="true" />
+              <Mail
+                size={18}
+                className="text-primary shrink-0"
+                aria-hidden="true"
+              />
               {data.chooseWay}
             </h3>
 
@@ -205,19 +325,30 @@ export default function ContactClient({
                   <Link
                     key={channel.label}
                     href={channel.href}
-                    target={channel.href.startsWith("http") ? "_blank" : undefined}
-                    rel={channel.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    target={
+                      channel.href.startsWith("http") ? "_blank" : undefined
+                    }
+                    rel={
+                      channel.href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
                     className="group relative flex flex-col p-4 sm:p-5 rounded-xl border border-border
                                bg-card hover:border-primary/30 hover:shadow-lg hover:-translate-y-0.5
                                transition-all duration-200 overflow-hidden"
                   >
                     {/* hover shimmer */}
-                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent
+                    <div
+                      className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent
                                     via-primary/40 to-transparent opacity-0 group-hover:opacity-100
-                                    transition-opacity" aria-hidden="true" />
+                                    transition-opacity"
+                      aria-hidden="true"
+                    />
 
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center
-                                    mb-3 group-hover:bg-primary/20 transition-colors shrink-0">
+                    <div
+                      className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center
+                                    mb-3 group-hover:bg-primary/20 transition-colors shrink-0"
+                    >
                       <Icon size={18} className="text-primary" />
                     </div>
 
@@ -228,14 +359,17 @@ export default function ContactClient({
                       {channel.description}
                     </span>
 
-                    <div className={`inline-flex items-center gap-1 text-xs font-medium text-primary
-                                     ${isRtl ? "flex-row-reverse" : ""}`}>
+                    <div
+                      className={`inline-flex items-center gap-1 text-xs font-medium text-primary
+                                     ${isRtl ? "flex-row-reverse" : ""}`}
+                    >
                       <span>{data.getInTouch}</span>
-                      <ArrowRight size={11}
-                        className={`transition-transform duration-200
-                          group-hover:${isRtl ? "-translate-x-1" : "translate-x-1"}
+                      <ArrowRight
+                        size={11}
+                        className={`transition-transform duration-200 group-hover:translate-x-1
                           ${isRtl ? "rotate-180" : ""}`}
-                        aria-hidden="true" />
+                        aria-hidden="true"
+                      />
                     </div>
                   </Link>
                 );
@@ -243,20 +377,41 @@ export default function ContactClient({
             </div>
 
             {/* location + github strip */}
-            <div className="flex flex-col xs:flex-row sm:flex-row items-start xs:items-center gap-3 sm:gap-4
-                            p-4 sm:p-5 rounded-xl border border-border bg-card">
+            <div
+              className="flex flex-col xs:flex-row sm:flex-row items-start xs:items-center gap-3 sm:gap-4
+                            p-4 sm:p-5 rounded-xl border border-border bg-card"
+            >
               <div className="flex items-center gap-2 flex-1 min-w-0">
-                <MapPin size={16} className="text-primary shrink-0" aria-hidden="true" />
-                <span className="text-sm font-medium text-foreground truncate">{data.location}</span>
+                <MapPin
+                  size={16}
+                  className="text-primary shrink-0"
+                  aria-hidden="true"
+                />
+                <span className="text-sm font-medium text-foreground truncate">
+                  {data.location}
+                </span>
               </div>
 
-              <div className="w-px h-4 bg-border hidden xs:block shrink-0" aria-hidden="true" />
+              <div
+                className="w-px h-4 bg-border hidden xs:block shrink-0"
+                aria-hidden="true"
+              />
 
-              <a href={githublink} target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 flex-1 min-w-0 group">
-                <Github size={16} className="text-primary shrink-0" aria-hidden="true" />
-                <span className="text-sm font-medium text-foreground group-hover:text-primary
-                                 transition-colors truncate">
+              <a
+                href={githublink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 flex-1 min-w-0 group"
+              >
+                <Github
+                  size={16}
+                  className="text-primary shrink-0"
+                  aria-hidden="true"
+                />
+                <span
+                  className="text-sm font-medium text-foreground group-hover:text-primary
+                                 transition-colors truncate"
+                >
                   @{githubHandle}
                 </span>
               </a>
@@ -270,17 +425,26 @@ export default function ContactClient({
               <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-1">
                 {data.form.heading}
               </h3>
-              <p className="text-sm text-muted-foreground">{data.form.subheading}</p>
+              <p className="text-sm text-muted-foreground">
+                {data.form.subheading}
+              </p>
             </div>
 
             <div className="px-5 sm:px-8 py-6 sm:py-8">
-              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5">
+              <form
+                onSubmit={handleSubmit}
+                noValidate
+                className="space-y-4 sm:space-y-5"
+              >
+                <input type="text" name="company" style={{ display: "none" }} />
                 {/* email */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
-                    {data.form.emailAddress} <span className="text-red-500">*</span>
+                    {data.form.emailAddress}{" "}
+                    <span className="text-red-500">*</span>
                   </label>
                   <input
+                    name="email"
                     type="email"
                     required
                     placeholder={data.form.emailPlaceholder}
@@ -288,25 +452,45 @@ export default function ContactClient({
                                bg-background text-foreground text-sm placeholder:text-muted-foreground
                                focus:outline-none focus:ring-2 focus:ring-primary transition"
                   />
+                  {fieldErrors.email && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {fieldErrors.email}
+                    </p>
+                  )}
                 </div>
 
                 {/* project type */}
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-1.5">
-                    {data.form.projectType} <span className="text-red-500">*</span>
+                    {data.form.projectType}{" "}
+                    <span className="text-red-500">*</span>
                   </label>
                   <select
+                    name="projectType"
                     className="w-full px-3 sm:px-4 py-2.5 rounded-lg border border-border
                                bg-background text-foreground text-sm
                                focus:outline-none focus:ring-2 focus:ring-primary transition"
                   >
                     <option value="">{data.form.projectTypePlaceholder}</option>
-                    <option value="website">{data.form.projectTypes.website}</option>
-                    <option value="automation">{data.form.projectTypes.automation}</option>
+                    <option value="website">
+                      {data.form.projectTypes.website}
+                    </option>
+                    <option value="automation">
+                      {data.form.projectTypes.automation}
+                    </option>
                     <option value="ai">{data.form.projectTypes.ai}</option>
-                    <option value="design">{data.form.projectTypes.design}</option>
-                    <option value="other">{data.form.projectTypes.other}</option>
+                    <option value="design">
+                      {data.form.projectTypes.design}
+                    </option>
+                    <option value="other">
+                      {data.form.projectTypes.other}
+                    </option>
                   </select>
+                  {fieldErrors.projectType && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {fieldErrors.projectType}
+                    </p>
+                  )}
                 </div>
 
                 {/* message */}
@@ -317,43 +501,68 @@ export default function ContactClient({
                   <textarea
                     rows={4}
                     required
+                    name="message"
                     placeholder={data.form.messagePlaceholder}
                     className="w-full px-3 sm:px-4 py-2.5 rounded-lg border border-border
                                bg-background text-foreground text-sm placeholder:text-muted-foreground
                                focus:outline-none focus:ring-2 focus:ring-primary transition resize-none"
                   />
+                  {fieldErrors.message && (
+                    <p className="text-red-500 text-xs mt-1">
+                      {fieldErrors.message}
+                    </p>
+                  )}
                 </div>
+
+                {/* Status Messages */}
+                {error && (
+                  <div className="p-3 text-sm text-red-500 bg-red-500/10 rounded-lg border border-red-500/20">
+                    {error}
+                  </div>
+                )}
+                {success && (
+                  <div className="p-3 text-sm text-green-500 bg-green-500/10 rounded-lg border border-green-500/20 flex items-center gap-2">
+                    <CheckCircle size={16} />
+                    {data.form.successMessage}
+                  </div>
+                )}
 
                 {/* submit */}
                 <button
                   type="submit"
+                  disabled={loading}
                   className="w-full inline-flex items-center justify-center gap-2
                              px-6 py-3 rounded-xl bg-primary text-primary-foreground
                              text-sm sm:text-base font-semibold
                              hover:opacity-90 active:scale-95 transition-all
-                             shadow-md shadow-primary/20"
+                             shadow-md shadow-primary/20 disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  {data.sendMessage}
-                  <ArrowRight size={15} className={isRtl ? "rotate-180" : ""} aria-hidden="true" />
+                  <span>{loading ? data.form.sending : data.sendMessage}</span>
+                  <ArrowRight
+                    size={15}
+                    className={isRtl ? "rotate-180" : ""}
+                    aria-hidden="true"
+                  />
                 </button>
-
-                {/* success feedback */}
-                {formStatus === "success" && (
-                  <div className="flex items-center gap-2 text-green-600 dark:text-green-400
-                                  text-sm font-medium">
-                    <CheckCircle size={15} aria-hidden="true" />
-                    {data.form.successMessage}
-                  </div>
-                )}
               </form>
 
               {/* email copy strip */}
               <div className="mt-6 pt-5 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-2.5">{data.orWrite}</p>
-                <div className="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-lg
-                                bg-background border border-border">
-                  <Mail size={13} className="text-muted-foreground shrink-0" aria-hidden="true" />
-                  <code className="text-sm text-foreground truncate flex-1 min-w-0">{email}</code>
+                <p className="text-xs text-muted-foreground mb-2.5">
+                  {data.orWrite}
+                </p>
+                <div
+                  className="flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-lg
+                                bg-background border border-border"
+                >
+                  <Mail
+                    size={13}
+                    className="text-muted-foreground shrink-0"
+                    aria-hidden="true"
+                  />
+                  <code className="text-sm text-foreground truncate flex-1 min-w-0">
+                    {email}
+                  </code>
                   <button
                     onClick={handleCopyEmail}
                     className="text-xs px-2.5 py-1 rounded-md border border-border
@@ -373,9 +582,15 @@ export default function ContactClient({
         <section className="border-t border-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
             <div className="text-center mb-10 sm:mb-14">
-              <h2 className="inline-flex items-center justify-center gap-2 text-2xl sm:text-3xl
-                             md:text-4xl font-bold text-foreground mb-3 flex-wrap">
-                <Heart size={22} className="text-primary shrink-0" aria-hidden="true" />
+              <h2
+                className="inline-flex items-center justify-center gap-2 text-2xl sm:text-3xl
+                             md:text-4xl font-bold text-foreground mb-3 flex-wrap"
+              >
+                <Heart
+                  size={22}
+                  className="text-primary shrink-0"
+                  aria-hidden="true"
+                />
                 {data.whyReachOut.title}
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -394,19 +609,30 @@ export default function ContactClient({
                                transition-all duration-300"
                   >
                     {/* hover gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent
+                    <div
+                      className="absolute inset-0 bg-linear-to-br from-primary/5 to-transparent
                                     rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity
-                                    pointer-events-none" aria-hidden="true" />
+                                    pointer-events-none"
+                      aria-hidden="true"
+                    />
                     {/* top shimmer */}
-                    <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent
+                    <div
+                      className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent
                                     via-primary/40 to-transparent opacity-0 group-hover:opacity-100
-                                    transition-opacity rounded-t-2xl" aria-hidden="true" />
+                                    transition-opacity rounded-t-2xl"
+                      aria-hidden="true"
+                    />
 
                     <div className="relative">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary/10
+                      <div
+                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary/10
                                       flex items-center justify-center mb-4 sm:mb-5
-                                      group-hover:bg-primary/20 transition-colors">
-                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" aria-hidden="true" />
+                                      group-hover:bg-primary/20 transition-colors"
+                      >
+                        <Icon
+                          className="w-6 h-6 sm:w-7 sm:h-7 text-primary"
+                          aria-hidden="true"
+                        />
                       </div>
                       <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2 sm:mb-3">
                         {reason.title}

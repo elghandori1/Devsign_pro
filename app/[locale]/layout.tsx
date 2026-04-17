@@ -1,7 +1,7 @@
 // app/[locale]/layout.tsx
 import type { Metadata } from "next";
 import { Roboto, Almarai } from "next/font/google";
-import "../globals.css";
+import "@/app/globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
@@ -147,7 +147,7 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Navbar lang={locale} />
+          <Navbar locale={locale} />
           <main>{children}</main>
           <Footer footer={footer} locale={locale} />
         </ThemeProvider>

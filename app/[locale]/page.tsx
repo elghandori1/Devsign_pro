@@ -363,7 +363,7 @@ export default async function Home({ params }: Props) {
         inLanguage: locale,
         image: {
           "@type": "ImageObject",
-          url: `${baseUrl}/cover/Design-cover.png`,
+          url: `${baseUrl}/cover/Design-cover.jpg`,
           width: 1200,
           height: 630,
         },

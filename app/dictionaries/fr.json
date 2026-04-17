@@ -1126,7 +1126,7 @@
         "subheading": "Je vous répondrai dans les 24 heures.",
         "fullNamePlaceholder": "Sophie Dupont",
         "emailAddress": "Adresse e-mail",
-        "emailPlaceholder": "sophie@exemple.com",
+        "emailPlaceholder": "yourname@example.com",
         "projectType": "Type de projet",
         "projectTypePlaceholder": "Sélectionnez un type de projet",
         "projectTypes": {
@@ -1141,7 +1141,16 @@
         "availability": "Disponible pour de nouveaux projets",
         "message": "Message",
         "messagePlaceholder": "Parlez-moi de votre projet...",
-        "successMessage": "Message envoyé ! Je vous répondrai bientôt."
+        "successMessage": "Message envoyé ! Je vous répondrai bientôt.",
+        "sending": "Envoi...",
+        "errors": {
+          "emailRequired": "L'adresse e-mail est requise",
+          "projectTypeRequired": "Le type de projet est requis",
+          "messageRequired": "Le message doit contenir au moins 10 caractères",
+          "networkError": "Erreur réseau",
+          "somethingWentWrong": "Un problème est survenu",
+          "selectProjectType": "Veuillez sélectionner un type de projet"
+        }
       },
       "whyReachOut": {
         "title": "Pourquoi me contacter ?",
@@ -1168,7 +1177,7 @@
     "brandTagline": "Freelance",
     "phone": "+212 7 78 18 03 06",
     "address": "Casablanca, Maroc",
-    "aboutTitle": "Explorer",
+    "ExplorerTitle": "Explorer",
     "links": [
       {
         "label": "Services",
