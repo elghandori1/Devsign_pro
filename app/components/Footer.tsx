@@ -1,6 +1,11 @@
 import Link from "next/link";
 import { Locale } from "@/i18n-config";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 import infos from "@/app/dictionaries/global.json";
 
@@ -74,12 +79,15 @@ export default function Footer({ footer, locale }: FooterProps) {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16">
-
           {/* Brand & Contact */}
           <div className="space-y-6">
             <div>
-              <p className="font-bold text-xl text-foreground leading-tight">{footer.brandName}</p>
-              <p className="text-sm text-muted-foreground mt-0.5">{footer.brandTagline}</p>
+              <p className="font-bold text-xl text-foreground leading-tight">
+                {footer.brandName}
+              </p>
+              <p className="text-sm text-muted-foreground mt-0.5">
+                {footer.brandTagline}
+              </p>
             </div>
 
             <ul className="space-y-3">
@@ -93,7 +101,10 @@ export default function Footer({ footer, locale }: FooterProps) {
                 </a>
               </li>
               <li className="flex items-start gap-2.5 text-sm text-muted-foreground">
-                <MdLocationOn size={16} className="text-primary shrink-0 mt-0.5" />
+                <MdLocationOn
+                  size={16}
+                  className="text-primary shrink-0 mt-0.5"
+                />
                 <span className="leading-relaxed">{footer.address}</span>
               </li>
               <li>
@@ -110,7 +121,9 @@ export default function Footer({ footer, locale }: FooterProps) {
 
           {/* Links */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-5">{footer.ExplorerTitle}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-5">
+              {footer.ExplorerTitle}
+            </h3>
             <ul className="space-y-3">
               {footer.links.map((link) => (
                 <li key={link.href}>
@@ -127,7 +140,9 @@ export default function Footer({ footer, locale }: FooterProps) {
 
           {/* Socials */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-5">{footer.followTitle}</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-5">
+              {footer.followTitle}
+            </h3>
             <div className="flex flex-wrap gap-3">
               {socials.map(({ id, icon: Icon, href, label, bg }) => (
                 <a
@@ -143,14 +158,15 @@ export default function Footer({ footer, locale }: FooterProps) {
               ))}
             </div>
           </div>
-
         </div>
       </div>
 
       {/* Footer bottom */}
-      <div className="border-t border-border bg-primary">
+      <div className="border-t border-border bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-center">
-          <p className="text-xs sm:text-sm text-primary-foreground text-center sm:text-start">{copyright}</p>
+          <p className="text-xs sm:text-sm text-center sm:text-start">
+            {copyright}
+          </p>
         </div>
       </div>
     </footer>

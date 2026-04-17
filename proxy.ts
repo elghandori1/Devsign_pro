@@ -1,11 +1,11 @@
-// middleware.ts
+// proxy.ts
 import { NextRequest, NextResponse } from "next/server";
 import { i18n } from "./i18n-config";
 
 const STATIC_PATH_PATTERN = /^\/(_next|favicon|logo|images|cover)/;
 const LOCALE_PATH_PATTERN = new RegExp(`^/(${i18n.locales.join('|')})(/|$)`);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
   
   if (STATIC_PATH_PATTERN.test(pathname)) {
