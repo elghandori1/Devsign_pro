@@ -1,6 +1,7 @@
 // app/[locale]/layout.tsx
 import type { Metadata } from "next";
 import { Roboto, Almarai } from "next/font/google";
+import Script from "next/script";
 import "@/app/globals.css";
 import { Locale, i18n } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
@@ -103,6 +104,7 @@ export default async function RootLayout({
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
   const baseUrl = getBaseUrl();
+  const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const fontClassName = isArabic ? almarai.className : roboto.className;
   const dir = isArabic ? "rtl" : "ltr";
 
@@ -141,6 +143,22 @@ export default async function RootLayout({
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <body className={`${fontClassName} antialiased`}>
+        {gaMeasurementId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaMeasurementId}');
+              `}
+            </Script>
+          </>
+        ) : null}
         <I18nProvider dictionary={dict}>
         <script
           type="application/ld+json"
