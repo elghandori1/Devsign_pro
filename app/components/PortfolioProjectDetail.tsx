@@ -304,10 +304,10 @@ export default function PortfolioProjectDetail({
                 href="https://washmachine.vercel.app"
                 content={
                   locale === "en"
-                    ? "Landing Page"
+                    ? "Landing Page Link"
                     : locale === "fr"
-                      ? "Page d'atterrissage"
-                      : "صفحة الهبوط"
+                      ? "Lien de Landing Page"
+                      : "رابط الصفحة الرئيسية"
                 }
               />
             )}
@@ -317,10 +317,10 @@ export default function PortfolioProjectDetail({
                 href="https://pesscore.vercel.app"
                 content={
                   locale === "en"
-                    ? "Pesscore Page"
+                    ? "Pesscore Link"
                     : locale === "fr"
-                      ? "Page de Pesscore"
-                      : "صفحة Pesscore"
+                      ? "Lien de Pesscore"
+                      : "رابط  Pesscore"
                 }
               />
             )}

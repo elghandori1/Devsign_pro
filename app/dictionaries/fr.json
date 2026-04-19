@@ -655,8 +655,8 @@
           }
         },
         {
-          "title": "Page de destination pour e-commerce",
-          "description": "Une page de destination à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, l'adaptation mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client, elle est associée à un tableau de bord puissant permettant des mises à jour de contenu en temps réel pour maximiser l'engagement et les conversions.",
+          "title": "Landing page pour E-commerce",
+          "description": "Une page de destination (landing page) à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, l'adaptation mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client, elle est associée à un tableau de bord puissant permettant des mises à jour de contenu en temps réel pour maximiser l'engagement et les conversions.",
           "tech": "JavaScript, HTML, CSS, Tailwind",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
           "linkLabel": "Voir plus de détails",
@@ -667,7 +667,7 @@
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
-              "title": "Page de destination e-commerce Rapide & Mobile-friendly & optimisée SEO | Devsign",
+              "title": "Page de destination pour e-commerce Rapide & Mobile-friendly & optimisée SEO | Devsign",
               "description": "Une page d'atterrissage à fort taux de conversion conçue pour le commerce moderne. Axée sur une performance ultra-rapide, un design responsive et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
               "keywords": [
                 "page de destination ecommerce",
@@ -678,7 +678,7 @@
                 "embaucher développeur frontend"
               ]
             },
-            "intro": "Le e-commerce moderne exige rapidité, clarté et flexibilité. Au-delà des performances, nous avons conçu cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour instantanément le contenu, les promotions et les sections — sans toucher au code. Le résultat est une expérience rapide et optimisée pour le mobile, combinée à un contrôle total sur les messages et le parcours de conversion.",
+            "intro": "E-commerce moderne exige rapidité, clarté et flexibilité. Au-delà des performances, nous avons conçu cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour instantanément le contenu, les promotions et les sections — sans toucher au code. Le résultat est une expérience rapide et optimisée pour le mobile, combinée à un contrôle total sur les messages et le parcours de conversion.",
             "sections": [
               {
                 "title": "Construction intelligente et contrôle du contenu",
