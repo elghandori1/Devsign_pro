@@ -244,7 +244,7 @@ export default async function Home({ params }: Props) {
       {
         "@type": "Person",
         "@id": `${baseUrl}/#person`,
-        name: "Mohammed Devsign",
+        name: "Mohammed elghandori",
         url: `${baseUrl}/${locale}`,
         jobTitle: jobTitle,
         worksFor: { "@id": `${baseUrl}/#organization` },
