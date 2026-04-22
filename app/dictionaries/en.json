@@ -380,7 +380,7 @@
     "about_page": {
       "title": "About Me",
       "heading": "Developer & designer focused on real results",
-      "intro": "I'm a freelance full-stack developer and designer using modern technologies. I help startups, enterprises, and individuals build high-performance websites, improve SEO, automate workflows with AI, and design high-converting social media ads.",
+      "intro": "I'm a freelance web developer and designer using modern technologies. I help startups, enterprises, and individuals build high-performance websites, improve SEO, automate workflows with AI, and design high-converting social media ads.",
       "stats": {
         "years": "Years of Experience",
         "clients": "Satisfied Clients",
@@ -388,7 +388,7 @@
       },
       "whoIAm": {
         "title": "Who I Am",
-        "paragraph1": "I'm Mohammed, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337 School UM6P, part of the prestigious 42 Network. I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
+        "paragraph1": "I'm Mohammed elghandori, a full-stack developer, SEO specialist, and designer passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337 School UM6P, (part of the prestigious 42 Network). I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
         "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success."
       },
       "experience": {
@@ -537,7 +537,7 @@
         {
           "title": "Corporate Website & SEO Growth",
           "description": "Designed and developed a professional company website to showcase services and products with a strong focus on performance and SEO. Achieved over 2,900 new users in just 2 months thanks to fast loading speeds, optimized structure, and modern technologies.",
-          "tech": "Next.js, SEO Optimization, MySQL",
+          "tech": "Next.js, SEO Optimization, mongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "See more details",
           "category": "Web Development & SEO",
@@ -1200,6 +1200,10 @@
       {
         "label": "Blog",
         "href": "/blog"
+      },
+      {
+        "label": "Mohammed elghandori",
+        "href": "/mohammed-elghandori"
       }
     ],
     "followTitle": "Follow me",

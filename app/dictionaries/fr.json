@@ -379,7 +379,7 @@
     "about_page": {
       "title": "À Propos de Moi",
       "heading": "Développeur & designer axé sur des résultats concrets",
-      "intro": "Je suis un développeur full-stack et designer freelance utilisant les technologies modernes. J'aide les startups, entreprises et particuliers à créer des sites web haute performance, améliorer le SEO, automatiser les processus avec l'IA et concevoir des publicités sociales à fort taux de conversion.",
+      "intro": "Je suis un développeur web et designer freelance utilisant les technologies modernes. J'aide les startups, entreprises et particuliers à créer des sites web haute performance, améliorer le SEO, automatiser les processus avec l'IA et concevoir des publicités sociales à fort taux de conversion.",
       "stats": {
         "years": "Ans d'expérience",
         "clients": "Clients satisfaits",
@@ -387,7 +387,7 @@
       },
       "whoIAm": {
         "title": "Qui Je Suis",
-        "paragraph1": "Je m’appelle Mohammed, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337 School UM6P, membre du prestigieux réseau 42 Network. Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
+        "paragraph1": "Je m’appelle Mohammed elghandori, développeur full-stack, spécialiste SEO et designer, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337 School UM6P,(membre du prestigieux réseau 42 Network). Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
         "paragraph2": "Je crois en la qualité du travail bien fait, une communication claire et des résultats mesurables. Je m'engage à vous aider à réussir en ligne avec des solutions efficaces, car votre réussite est la mienne."
       },
       "experience": {
@@ -536,7 +536,7 @@
         {
           "title": "Site Web d'Entreprise & Croissance SEO",
           "description": "Conception et développement d'un site web professionnel pour présenter les services et produits d'une entreprise, avec un fort accent sur la performance et le référencement (SEO). La plateforme a attiré plus de 2 900 nouveaux utilisateurs en seulement 2 mois grâce à des temps de chargement rapides, une structure optimisée et des technologies modernes.",
-          "tech": "Next.js, SEO Optimization, MySQL",
+          "tech": "Next.js, SEO Optimization, mongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir plus de détails",
           "category": "Développement Web & SEO",
@@ -1198,6 +1198,10 @@
       {
         "label": "Blog",
         "href": "/blog"
+      },
+      {
+        "label": "Mohammed elghandori",
+        "href": "/mohammed-elghandori"
       }
     ],
     "followTitle": "Suivez-moi",

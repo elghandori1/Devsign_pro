@@ -100,6 +100,15 @@ export default function Footer({ footer, locale }: FooterProps) {
                   {infos.email}
                 </a>
               </li>
+              <li>
+                <a
+                  href={`mailto:${infos.email_personal}`}
+                  className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <MdEmail size={16} className="text-primary shrink-0" />
+                  {infos.email_personal}
+                </a>
+              </li>
               <li className="flex items-start gap-2.5 text-sm text-muted-foreground">
                 <MdLocationOn
                   size={16}
