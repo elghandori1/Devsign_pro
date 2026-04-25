@@ -25,9 +25,6 @@ interface FooterTranslations {
   followTitle: string;
   contactTitle: string;
   copyright: string;
-  privacyPolicy: string;
-  termsOfService: string;
-  cookiePolicy: string;
 }
 
 interface FooterProps {
