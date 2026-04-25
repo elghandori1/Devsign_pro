@@ -74,7 +74,7 @@ export default function ContactSection({
 
           {/* Email */}
           <Link
-            href={infos.emailHref}
+            href={infos.emailHref_personal}
             className="flex flex-col items-center text-center gap-4 p-6 bg-card border border-blue-500/40 rounded-2xl hover:shadow-md hover:border-blue-500/60 transition group"
           >
             <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-white">
@@ -86,7 +86,7 @@ export default function ContactSection({
                 {translations.email}
               </p>
               <p className="text-sm text-muted-foreground mt-1">
-                {infos.email}
+                {infos.email_personal}
               </p>
             </div>
 

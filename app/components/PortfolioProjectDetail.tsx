@@ -49,6 +49,7 @@ interface PortfolioProjectDetailProps {
   caseStudyUi: CaseStudyUi;
   portfolioHref: string;
   ctaLabel: string;
+  ctaLabel_other: string;
   locale: string;
   isRtl: boolean;
 }
@@ -58,6 +59,7 @@ export default function PortfolioProjectDetail({
   caseStudyUi,
   portfolioHref,
   ctaLabel,
+  ctaLabel_other,
   locale,
   isRtl,
 }: PortfolioProjectDetailProps) {
@@ -342,17 +344,41 @@ export default function PortfolioProjectDetail({
             <p className="text-muted-foreground mb-8 leading-relaxed">
               {caseStudyUi.collaborationBody}
             </p>
-            <Link
-              href={`/${locale}/contact`}
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-[0.98] transition-all shadow-lg shadow-primary/20"
-            >
-              {ctaLabel}
+
+               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+              <Link
+                href={`/${locale}/contact`}
+                className="w-full sm:w-auto group inline-flex items-center justify-center gap-2
+                           px-8 py-3.5 rounded-xl bg-primary text-primary-foreground
+                           font-semibold text-sm sm:text-base
+                           hover:opacity-90 active:scale-95 transition-all
+                           shadow-lg shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+            {ctaLabel}
               <ArrowRight
                 size={17}
                 className={isRtl ? "rotate-180" : ""}
                 aria-hidden
               />
-            </Link>
+              </Link>
+              <Link
+               href={`/${locale}/portfolio`}
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2
+                           px-8 py-3.5 rounded-xl border border-border bg-background
+                           text-foreground font-semibold text-sm sm:text-base
+                           hover:border-primary/30 hover:bg-muted/50 active:scale-95 transition-all
+                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+               {ctaLabel_other}
+              <ArrowRight
+                size={17}
+                className={isRtl ? "rotate-180" : ""}
+                aria-hidden
+              />
+              </Link>
+            </div>
+         
+           
           </div>
         </section>
       </article>

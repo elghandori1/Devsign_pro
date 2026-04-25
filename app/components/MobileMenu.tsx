@@ -13,9 +13,9 @@ type MobileMenuProps = {
   t: {
     home: string;
     about: string;
-    Services: string;
+    services: string;
     portfolio: string;
-    Contact: string;
+    contact: string;
   };
 };
 
@@ -24,11 +24,11 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
   const pathname = usePathname();
 
   const navItems = [
-    { href: "", label: t.home },
-    { href: "/services", label: t.Services },
-    { href: "/about", label: t.about },
+      { href: "", label: t.home },
     { href: "/portfolio", label: t.portfolio },
-    { href: "/contact", label: t.Contact },
+    { href: "/services", label: t.services },
+    { href: "/about", label: t.about },
+    { href: "/contact", label: t.contact },
   ];
 
   useEffect(() => {

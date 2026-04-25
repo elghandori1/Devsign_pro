@@ -189,9 +189,9 @@ export default async function AboutPage({ params }: Props) {
           {/* Stats strip */}
           <div className="grid grid-cols-3 gap-3 sm:gap-4 mt-10 max-w-sm sm:max-w-md">
             {[
-              { value: "5+", label: t.stats?.years ?? "Years Experience" },
+              { value: "3+", label: t.stats?.years ?? "Years Experience" },
               { value: "98%", label: t.stats?.clients ?? "Happy Clients" },
-              { value: "20+", label: t.stats?.projects ?? "Projects" },
+              { value: "11+", label: t.stats?.projects ?? "Projects" },
             ].map((s) => (
               <div
                 key={s.label}

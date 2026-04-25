@@ -236,6 +236,14 @@ export default async function WebDevelopmentPage({ params }: Props) {
                 {data.startDescription}
               </span>{" "}
               {data.longDescription}
+              {data.company_recruitment && (
+                <>
+                  <br />
+                  <span className="text-primary">
+                    {data.company_recruitment}
+                  </span>
+                </>
+              )}
             </p>
           </div>
         </section>

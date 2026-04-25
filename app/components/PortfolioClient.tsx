@@ -166,7 +166,7 @@ export default function PortfolioClient({
             {data.subtitle}
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 max-w-3xl leading-[1.1]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 max-w-4xl leading-[1.1]">
             {data.heading}
           </h1>
 
@@ -324,7 +324,7 @@ export default function PortfolioClient({
 
                       {/* Modern badge design - top left */}
                       <div
-                        className={`absolute top-4 ${isRtl ? "right-4" : "left-4"} z-20 flex flex-wrap gap-2`}
+                        className={`absolute top-1 ${isRtl ? "right-1" : "left-1"} z-20 flex flex-wrap gap-2`}
                       >
                         <span
                           className="px-3 py-1 text-xs font-medium rounded-full 

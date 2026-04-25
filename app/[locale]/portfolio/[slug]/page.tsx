@@ -170,6 +170,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
         caseStudyUi={caseStudyUi}
         portfolioHref={`/${locale}/portfolio`}
         ctaLabel={portfolioPage?.cta ?? "Contact"}
+        ctaLabel_other={portfolioPage?.cta_other ?? "see other projects"}
         locale={locale}
         isRtl={isRtl}
       />

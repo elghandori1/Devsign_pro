@@ -8,7 +8,7 @@ import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const EMAIL = infos.email || "";
+const EMAIL = infos.email_personal || "";
 const WHATSAPP_NUMBER = infos.whatsappLink || "";
 const INSTAGRAM_HANDLE = infos.social.instagram || "@devsign_pro";
 const GITHUB_HANDLE = infos.githubHandle || "";

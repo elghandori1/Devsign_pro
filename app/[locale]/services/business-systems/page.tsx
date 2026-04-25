@@ -257,10 +257,14 @@ export default async function BusinessSystemsPage({ params }: Props) {
             aria-hidden="true"
           />
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl">
-            <span className="font-semibold text-foreground">
-              {data.startDescription},{" "}
-            </span>{" "}
+            <span className="text-foreground">{data.startDescription} </span>{" "}
             {data.longDescription}
+            {data.company_recruitment && (
+              <>
+                <br />
+                <span className="text-primary">{data.company_recruitment}</span>
+              </>
+            )}
           </p>
         </div>
 

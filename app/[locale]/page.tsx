@@ -16,6 +16,8 @@ import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
 import TechnologySlider from "../components/TechnologySlider";
+import CVDownloadPopup from "../components/CVDownloadPopup";
+import { getCVOptions } from "@/app/lib/cv-data"
 import infos from "@/app/dictionaries/global.json";
 
 type Props = {
@@ -98,6 +100,7 @@ export default async function Home({ params }: Props) {
 
   const dict = await getDictionary(locale);
   const t = dict.homepage;
+  const cvOptions = getCVOptions(t);
   const baseUrl = getBaseUrl();
 
   const isEnglish = locale === "en";
@@ -236,7 +239,7 @@ export default async function Home({ params }: Props) {
         "@type": "WebSite",
         "@id": `${baseUrl}/#website`,
         url: baseUrl,
-        name: "Devsign",
+        name: "Devsignpro",
         description: orgDescription,
         inLanguage: locale,
         publisher: { "@id": `${baseUrl}/#organization` },
@@ -435,7 +438,7 @@ export default async function Home({ params }: Props) {
               </div>
               <h1
                 id="hero-heading"
-                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2] sm:leading-[1.1]"
+                className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2]"
               >
                 {isArabic ? (
                   <>
@@ -541,7 +544,6 @@ export default async function Home({ params }: Props) {
                     />
                   </div>
 
-                  {/* name / role strip */}
                   <div className="px-4 py-3 border-t border-border">
                     <p className="font-semibold text-foreground text-sm truncate">
                       {t.hero.profile_name}
@@ -549,14 +551,27 @@ export default async function Home({ params }: Props) {
                     <p className="text-xs text-muted-foreground truncate mt-0.5">
                       {t.hero.profile_role}
                     </p>
-                    <Link
-                      href={`/${locale}#about`}
-                      className="mt-3 w-full inline-flex items-center justify-center gap-1.5
-                       px-3 py-1.5 bg-primary text-primary-foreground font-semibold
-                       rounded-lg text-xs hover:opacity-90 active:scale-95 transition-all"
-                    >
-                      {t.hero.cta_more_about}
-                    </Link>
+
+                    <div className="mt-3 space-y-2">
+                      <Link
+                        href={`/${locale}#about`}
+                        className="w-full inline-flex items-center justify-center gap-1.5
+                         px-3 py-1.5 bg-primary text-primary-foreground font-semibold
+                         rounded-lg text-xs hover:opacity-90 active:scale-95 transition-all"
+                      >
+                        {t.hero.cta_more_about}
+                      </Link>
+
+                      {/* CV Download Button with Popup */}
+                      <CVDownloadPopup
+                        buttonText={t.hero.cta_download_cv || "Download CV"}
+                        popupTitle={t.hero.cv_popup_title || "Download Specialized CV"}
+                        popupDescription={t.hero.cv_popup_desc || "Choose a CV tailored to the role:"}
+                        popupFooter={t.hero.cv_popup_footer || "PDF format • Updated recently"}
+                        cvOptions={cvOptions}
+                        isRtl={isArabic}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>

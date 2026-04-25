@@ -53,15 +53,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : i18n.defaultLocale;
 
 const titles = {
-  en: "Freelance Expert Web Development, SEO & AI Automation Services | devsign",
-  fr: "Expert Freelance en Développement Web, SEO & Automatisation IA | devsign",
-  ar: "خبير مستقل في تطوير الويب، SEO وخدمات أتمتة الذكاء الاصطناعي | devsign",
+  en: "Expert Web Development, SEO & AI Automation Services | devsign",
+  fr: "Expert en Développement Web, SEO & Automatisation IA | devsign",
+  ar: "خبير في تطوير الويب، SEO وخدمات أتمتة الذكاء الاصطناعي | devsign",
 };
 
   const descriptions = {
-    en: "Freelance Expert Web development, SEO optimization, AI automation systems, and social media ad design services in Morocco to increase traffic, leads, and online business growth.",
-    fr: "Expert Freelance en Développement web, SEO, automatisation IA et design de publicités sur les réseaux sociaux au Maroc pour générer plus de trafic et de clients.",
-    ar: "خبير مستقل في تطوير الويب، تحسين محركات البحث (SEO)، أتمتة الذكاء الاصطناعي وتصميم إعلانات وسائل التواصل الاجتماعي في المغرب لجذب المزيد من الزيارات والعملاء."
+    en: "Expert Web development, SEO optimization, AI automation systems, and social media ad design services in Morocco to increase traffic, leads, and online business growth.",
+    fr: "Expert en Développement web, SEO, automatisation IA et design de publicités sur les réseaux sociaux au Maroc pour générer plus de trafic et de clients.",
+    ar: "خبير في تطوير الويب، تحسين محركات البحث (SEO)، أتمتة الذكاء الاصطناعي وتصميم إعلانات وسائل التواصل الاجتماعي في المغرب لجذب المزيد من الزيارات والعملاء."
   };
 
   return buildPageMetadata({
@@ -371,7 +371,7 @@ export default async function ServicesPage({ params }: Props) {
 
                       {/* category badge */}
                       <div
-                        className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}
+                        className={`absolute top-2 ${isRtl ? "right-2" : "left-2"}`}
                       >
                         <span
                           className="px-2.5 py-1 text-[11px] font-medium rounded-full
