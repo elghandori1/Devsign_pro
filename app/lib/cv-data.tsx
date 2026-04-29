@@ -17,7 +17,7 @@ export function getCVOptions(t: any): CVOption[] {
       label: t.hero.cv_web || 'Web Development',
       color: 'bg-blue-500',
       ringColor: 'ring-blue-500/20',
-      fileName: 'cv-web-dev.pdf',
+      fileName: 'mohammed-elghandori-full-stack-cv.pdf',
       description: t.hero.cv_web_desc || 'Next.js, React, Node.js, Full-Stack',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@ export function getCVOptions(t: any): CVOption[] {
       label: t.hero.cv_devops || 'DevOps & Cloud',
       color: 'bg-green-500',
       ringColor: 'ring-green-500/20',
-      fileName: 'cv-devops.pdf',
+      fileName: 'mohammed-elghandori-devops-cv.pdf',
       description: t.hero.cv_devops_desc || 'Docker, K8s, CI/CD, AWS/GCP',
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

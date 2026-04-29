@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Accueil",
     "portfolio": "Projets",
-    "services": "Services",
+    "services": "Ce que je fais",
     "about": "À Propos",
     "contact": "Contact"
   },
@@ -20,8 +20,8 @@
       "cta_more_about": "En savoir plus",
       "cta_download_cv": "Télécharger CV",
       "cv_popup_title": "Télécharger CV Spécialisé",
-      "cv_popup_desc": "Choisissez un CV adapté au poste:",
-      "cv_popup_footer": "Format PDF • Mis à jour récemment",
+      "cv_popup_desc": "chacun contient des projets spécifiques",
+      "cv_popup_footer": "• Format PDF",
       "cv_web": "Développement Web",
       "cv_web_desc": "MERN Stack, SEO Optimization",
       "cv_devops": "DevOps & Cloud/Infrastructure",

@@ -2,7 +2,7 @@
   "navbar": {
     "home": "الرئيسية",
     "portfolio": "أعمالي",
-    "services": "الخدمات",
+    "services": "ما أفعله",
     "about": "عني",
     "contact": "اتصل معي"
   },
@@ -20,12 +20,12 @@
       "cta_more_about": "المزيد عني",
       "cta_download_cv": "تحميل السيرة الذاتية",
       "cv_popup_title": "تحميل سيرة ذاتية متخصصة",
-    "cv_popup_desc": "اختر سيرة ذاتية مناسبة للوظيفة:",
-    "cv_popup_footer": "صيغة PDF • تم تحديثها مؤخراً",
-    "cv_web": "Web Development",
-    "cv_web_desc": "MERN Stack, SEO Optimization",
-    "cv_devops": "DevOps & Cloud/Infrastructure",
-    "cv_devops_desc": "Docker, K8s, CI/CD, AWS/GCP"
+      "cv_popup_desc": "كل واحد يحتوي على مشاريع محددة",
+      "cv_popup_footer": "صيغة PDF",
+      "cv_web": "Web Development",
+      "cv_web_desc": "MERN Stack, SEO Optimization",
+      "cv_devops": "DevOps & Cloud/Infrastructure",
+      "cv_devops_desc": "Docker, K8s, CI/CD, AWS/GCP"
     },
     "stats": {
       "items": [
