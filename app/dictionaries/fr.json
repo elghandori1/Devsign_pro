@@ -60,7 +60,7 @@
       ]
     },
     "services_section": {
-      "sectionLabel": "Services",
+      "sectionLabel": "Ce que je fais",
       "heading": "Des solutions digitales pour ",
       "highlight": "développer votre activité",
       "viewAll": "Voir tous les services",
@@ -116,8 +116,8 @@
   },
   "pages": {
     "services_page": {
-      "title": "Services",
-      "subtitle": "Ce que je propose",
+      "title": "Ce que je fais",
+      "subtitle": "Mes services digitaux",
       "heading": "Développement Web, SEO & Automatisation avec l’IA Sur Mesure au Maroc",
       "description": "Vous recherchez un professionnel en développement web, référencement SEO ou automatisation par IA au Maroc ? Je crée des sites web optimisés pour le SEO, conçois des systèmes d'automatisation d'entreprise basés sur l'IA, et réalise des publicités pour les réseaux sociaux à fort taux de conversion. Les startups et les grandes entreprises me font confiance pour fournir des résultats mesurables, accroître leur visibilité en ligne et stimuler la croissance des ventes.",
       "hashtags": [

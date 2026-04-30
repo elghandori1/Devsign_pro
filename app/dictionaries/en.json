@@ -60,7 +60,7 @@
       ]
     },
     "services_section": {
-      "sectionLabel": "Services",
+      "sectionLabel": "What I Offer",
       "heading": "Digital solutions to Grow",
       "highlight": "Your Business",
       "viewAll": "View All Services",
@@ -117,8 +117,8 @@
   },
   "pages": {
     "services_page": {
-      "title": "Services",
-      "subtitle": "What I Offer",
+      "title": "What I Do",
+      "subtitle": "My Digital Services",
       "heading": "Web Development, SEO & AI Automation Solutions in Morocco",
       "description": "Looking for a professional in web development, SEO optimization, or AI automation in Morocco? I build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
       "hashtags": [
