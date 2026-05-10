@@ -130,3 +130,37 @@ body {
     animation: scroll 55s linear infinite;
   }
 }
+
+@layer components {
+  .prose-custom {
+    @apply text-foreground;
+  }
+  
+  .prose-custom h2 {
+    @apply text-2xl sm:text-3xl font-bold mt-12 mb-6 leading-tight tracking-tight text-foreground;
+  }
+  
+  .prose-custom h3 {
+    @apply text-xl sm:text-2xl font-semibold mt-10 mb-4 leading-snug text-foreground;
+  }
+  
+  .prose-custom p {
+    @apply text-base sm:text-lg text-foreground/85 leading-[1.8] mb-5;
+  }
+  
+  .prose-custom blockquote {
+    @apply border-l-4 border-primary/25 bg-primary/[0.04] rounded-r-xl px-6 py-5 my-6 text-foreground/90 italic text-lg leading-relaxed;
+  }
+  
+  .prose-custom ul {
+    @apply space-y-2.5 my-5;
+  }
+  
+  .prose-custom li {
+    @apply flex items-start gap-3 text-foreground/85 leading-relaxed;
+  }
+  
+  .prose-custom strong {
+    @apply font-semibold text-foreground;
+  }
+}

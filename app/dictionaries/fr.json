@@ -1175,8 +1175,68 @@
           }
         ]
       }
+    },
+    "articles_page": {
+    "subtitle": "Expérience réelle, insights pratiques",
+    "heading": "Articles, Idées & Notes Techniques",
+    "description": "Je partage des leçons concrètes sur la création de sites web, le déploiement de projets réels, l'optimisation des performances, le travail avec les clients, et l'exploration des outils modernes d'IA et d'automatisation.",
+    "sectionLabel": "Ce que j'écris",
+    "articlesLabel": "Derniers Articles",
+    "topics": [
+      {
+        "title": "Web & Tech",
+        "text": "Développement web, performance, SEO, déploiement, outils modernes, et insights techniques issus de projets réels."
+      },
+      {
+        "title": "Conseils & Informations",
+        "text": "Guides utiles, recommandations pratiques, conseils digitaux, et retours d'expérience du travail en ligne."
+      },
+      {
+        "title": "Freelancing & Business",
+        "text": "Gestion client, productivité, communication, automatisation, et stratégies pour développer des services digitaux."
+      }
+    ],
+    "categoryChips": [
+      "Web & Tech",
+      "IA & Outils",
+      "SEO & Performance"
+    ],
+    "articles": [
+      {
+        "href": "/articles/best-laptop-guide-2026",
+        "slug": "best-laptop-guide-2026",
+        "title": "Meilleur Guide PC Portable 2026 pour Étudiants, Développeurs et Entrepreneurs",
+        "image": "/images/articles/laptop-configue-information-fr.jpg",
+        "date": "Mai 2026",
+        "category": "Informations & Conseils",
+        "published": "2026-05-07",
+        "readTime": "8 min de lecture",
+        "excerpt": "Un guide pratique pour choisir le bon ordinateur portable en 2026 selon vos vrais besoins — étudiant, développeur, freelance ou entrepreneur.",
+        "head": "Comment Choisir le Bon Ordinateur Portable en 2026 pour les Études, la Programmation et le Business",
+        "text": "Aujourd’hui, un ordinateur portable est bien plus qu’un simple appareil. C’est votre espace de travail, votre outil d’apprentissage et parfois même votre partenaire professionnel. Que vous soyez étudiant, développeur, freelance ou entrepreneur, choisir le bon ordinateur peut vous faire gagner du temps, améliorer votre productivité et vous offrir un confort de travail pendant plusieurs années. Dans ce guide, nous allons voir les éléments les plus importants à considérer avant d’acheter un ordinateur portable en 2026.",
+        "text1": "Processeur (CPU) : choisissez selon vos vrais besoins\nLe processeur est l’élément principal qui influence la vitesse et les performances de votre ordinateur. Mais vous n’avez pas toujours besoin du processeur le plus récent ou le plus cher.\n\nPour les étudiants, le travail bureautique, les cours en ligne, le freelancing et les tâches quotidiennes moyennes, ces processeurs restent très bons en 2026 :\n• Intel Core i5 10ᵉ génération ou plus récent\n• Intel Core i7 9ᵉ génération ou plus récent\n• AMD Ryzen 5 série 4000 ou 5000\n\nCes modèles peuvent encore gérer la programmation, le multitâche, les navigateurs web, les réunions en ligne et la plupart des tâches de productivité sans problème.\n\nSi vous recherchez plus de confort, de meilleures performances et une durée de vie plus longue, vous pouvez choisir :\n• Intel Core i5/i7 12ᵉ génération ou plus récent\n• Apple Silicon M1, M2 ou M3\n• AMD Ryzen 7 série 5000 ou plus récent\n\nLe plus important est de choisir un ordinateur adapté à vos besoins réels et à votre budget.",
+        "text2": "RAM : une performance fluide est essentielle\nLa mémoire RAM permet à votre ordinateur de gérer plusieurs applications et onglets en même temps.\n\n• 8GB RAM : suffisant pour des tâches simples\n• 16GB RAM : le meilleur choix pour les développeurs, freelances et utilisateurs professionnels\n• DDR4 ou DDR5 : recommandé pour de meilleures performances et une meilleure compatibilité future\n\nSi vous utilisez VS Code, Docker, des logiciels de design ou beaucoup d’onglets Chrome, 16GB RAM fera une grande différence.",
+        "text3": "Stockage (SSD) : la vitesse avant tout\nÉvitez les anciens disques HDD si possible. Les SSD modernes rendent votre ordinateur beaucoup plus rapide.\n\nRecommandé :\n• Stockage SSD NVMe\n• Minimum 256GB\n• 512GB recommandé pour les développeurs et les professionnels\n\nPlus d’espace signifie plus de place pour vos projets, documents et outils.",
+        "text4": "Écran et Poids : votre confort quotidien\nVous passez probablement plusieurs heures par jour devant votre ordinateur, donc le confort est important.\n\nÀ rechercher :\n• Résolution Full HD (1920×1080)\n• Écran IPS pour de meilleurs angles de vision\n• Design léger entre 1.2kg et 1.8kg si vous voyagez souvent\n\nUn bon écran peut réduire la fatigue des yeux et améliorer votre expérience.",
+        "text5": "Conseil important pour les développeurs, freelances et entrepreneurs :\n\"Avant d’acheter un ordinateur portable, vérifiez la qualité du clavier, car c’est votre principal outil de travail. Assurez-vous également de la présence d’un port USB-C compatible avec la charge rapide et le transfert rapide des données.\"",
+        "text6": "Conclusion\nAcheter un ordinateur portable est un investissement pour votre futur travail et votre productivité. Commencez par définir vos vrais besoins et votre budget, puis concentrez-vous sur le processeur, la RAM et le stockage. Un ordinateur équilibré et fiable sera souvent un meilleur choix que des spécifications très coûteuses dont vous n’aurez peut-être jamais besoin.",
+        "highlights": [
+          "Comment choisir un ordinateur selon votre usage réel",
+          "Les meilleures configurations pour étudiants et développeurs",
+          "Ce qui compte vraiment lors de l’achat d’un ordinateur en 2026",
+          "Les erreurs fréquentes avant l’achat",
+          "Trouver le bon équilibre entre performance, batterie et budget"
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Vous voulez un article sur un sujet précis ?",
+      "description": "Envoyez-moi votre idée et je peux la transformer en guide pratique, étude de cas ou note technique.",
+      "button": "Me contacter"
     }
+  }
   },
+  
   "footer": {
     "brandName": "Devsign",
     "brandTagline": "Freelance",
@@ -1201,8 +1261,8 @@
         "href": "/contact"
       },
       {
-        "label": "Blog",
-        "href": "/blog"
+       "label": "Articles",
+        "href": "/articles"
       }
     ],
     "followTitle": "Suivez-moi",

@@ -37,9 +37,29 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		{ path: "/contact", changeFrequency: "monthly" as const, priority: 0.8 },
 	];
 
+	const articleRoutes = [
+		{ path: "/articles", changeFrequency: "monthly" as const, priority: 0.7 },
+		{
+			path: "/articles/best-laptop-guide-2026",
+			changeFrequency: "monthly" as const,
+			priority: 0.6,
+		},
+	];
+
 	const lastModified = new Date();
 
 	const staticEntries: MetadataRoute.Sitemap = routes.flatMap(
+		({ path, changeFrequency, priority }) =>
+			i18n.locales.map((locale) => ({
+				url: `${baseUrl}/${locale}${path}`,
+				alternates: localeAlternates(path),
+				lastModified,
+				changeFrequency,
+				priority,
+			})),
+	);
+
+	const articleEntries: MetadataRoute.Sitemap = articleRoutes.flatMap(
 		({ path, changeFrequency, priority }) =>
 			i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}${path}`,
@@ -72,6 +92,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		},
 	);
 
-	return [...staticEntries, ...portfolioEntries];
+	return [...staticEntries, ...articleEntries, ...portfolioEntries];
 }
-

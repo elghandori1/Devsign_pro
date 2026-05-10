@@ -1177,6 +1177,65 @@
           }
         ]
       }
+    },
+    "articles_page": {
+      "subtitle": "Real experience, practical insights",
+      "heading": "Articles, Ideas & Technical Notes",
+      "description": "I share practical lessons from building websites, deploying real-world projects, improving performance, working with clients, and exploring modern AI and automation tools. The goal is simple: useful content based on real experience, not theory.",
+      "sectionLabel": "What I write about",
+      "articlesLabel": "Latest Articles",
+      "topics": [
+        {
+          "title": "Web & Tech",
+          "text": "Web development, performance, SEO, deployment, modern tools, and practical technical insights from real projects."
+        },
+        {
+          "title": "Advices & Informations",
+          "text": "Useful guides, practical recommendations, digital tips, and lessons learned from working online and building products."
+        },
+        {
+          "title": "Freelancing & Business",
+          "text": "Client work, productivity, communication, automation, and strategies for building and growing digital services."
+        }
+      ],
+      "categoryChips": [
+        "Web & Tech",
+        "AI & Tools",
+        "SEO & Performance"
+      ],
+      "articles": [
+        {
+          "href": "/articles/best-laptop-guide-2026",
+          "slug": "best-laptop-guide-2026",
+          "title": "Best Laptop Guide 2026 for Students, Developers & Business Owners",
+          "image": "/images/articles/laptop-configue-information-en.jpg",
+          "date": "May 2026",
+          "category": "Information & Advices",
+          "published": "2026-05-07",
+          "readTime": "8 min read",
+          "excerpt": "A practical guide to choosing the right laptop in 2026 based on your real needs — whether you're a student, programmer, freelancer, or managing a business.",
+          "head": "How to Choose the Right Laptop in 2026 for Study, Programming & Business",
+          "text": "Today, a laptop is more than just a device. It is your workspace, your learning tool, and sometimes even your business partner. Whether you are a student, developer, freelancer, or business owner, choosing the right laptop can save you time, improve your productivity, and help you work comfortably for years. In this guide, we will explain the most important things you should focus on before buying a laptop in 2026.",
+          "text1": "Processor (CPU): Choose Based on Your Real Needs\nThe processor is the main part that affects your laptop’s speed and performance. But you do not always need the newest or most expensive processor.\n\nFor students, office work, online learning, freelancing, and medium daily tasks, these processors are still very good in 2026:\n• Intel Core i5 10th Gen or newer\n• Intel Core i7 9th Gen or newer\n• AMD Ryzen 5 4000/5000 series\n\nThese options can still handle programming, multitasking, browsers, meetings, and most productivity tasks without problems.\n\nIf you want better comfort, stronger performance, and longer future support, then you can look for:\n• Intel Core i5/i7 12th Gen or newer\n• Apple Silicon M1, M2, or M3\n• AMD Ryzen 7 5000 series or newer\n\nThe most important thing is choosing a laptop that matches your real work and budget — not only buying the newest specifications.",
+          "text2": "RAM: Smooth Performance Matters\nRAM helps your laptop handle multiple apps and browser tabs at the same time.\n\n• 8GB RAM: Good only for basic office and school tasks\n• 16GB RAM: The best choice for developers, freelancers, and business users\n• DDR4 or DDR5 RAM: Recommended for better speed and future compatibility\n\nIf you use tools like VS Code, Docker, design software, or many Chrome tabs, 16GB RAM will make a big difference.",
+          "text3": "Storage (SSD): Fast is Better\nAvoid old HDD drives if possible. Modern SSD storage makes your laptop faster when starting the system, opening apps, or transferring files.\n\nRecommended:\n• NVMe SSD storage\n• 256GB minimum\n• 512GB recommended for developers and business users\n\nMore storage means more space for projects, documents, videos, and software tools.",
+          "text4": "Screen & Weight: Your Everyday Comfort\nYou may spend many hours in front of your laptop every day, so comfort is important.\n\nWhat to look for:\n• Full HD resolution (1920×1080)\n• IPS display for better viewing angles\n• Lightweight design between 1.2kg and 1.8kg if you travel often\n\nA good screen can reduce eye strain and improve your work experience.",
+          "text5": "Golden Advice for Programmers, Business Owners, and Freelancers:\n\"Before buying the device, check the quality of the keyboard because it is your primary work tool, and make sure there is a USB-C port that supports fast charging for quick data and power transfer.\"",
+          "text6": "Conclusion\nBuying a laptop is an investment in your future work and productivity. Start with your real needs and your budget, then focus on the processor, RAM, and storage. A balanced laptop with good performance and reliability will serve you much better than choosing expensive specifications you may never use.",
+          "highlights": [
+            "How to choose a laptop based on your real workflow",
+            "Best laptop specifications for developers and students",
+            "What actually matters when buying a laptop in 2026",
+            "Common mistakes people make before purchasing",
+            "Finding the right balance between performance, battery, and budget"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Want me to cover a specific topic?",
+        "description": "Send me an idea and I can turn it into a practical breakdown, a case study, or a short technical note.",
+        "button": "Contact me"
+      }
     }
   },
   "footer": {
@@ -1203,8 +1262,8 @@
         "href": "/contact"
       },
       {
-        "label": "Blog",
-        "href": "/blog"
+        "label": "Articles",
+        "href": "/articles"
       }
     ],
     "followTitle": "Follow me",
