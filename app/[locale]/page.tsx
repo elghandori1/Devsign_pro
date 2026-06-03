@@ -15,6 +15,7 @@ import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
+import ArticlesSection from "../components/ArticlesSection";
 import TechnologySlider from "../components/TechnologySlider";
 import CVDownloadPopup from "../components/CVDownloadPopup";
 import { getCVOptions } from "@/app/lib/cv-data"
@@ -100,6 +101,7 @@ export default async function Home({ params }: Props) {
 
   const dict = await getDictionary(locale);
   const t = dict.homepage;
+  const articlesPage = dict.pages.articles_page;
   const cvOptions = getCVOptions(t);
   const baseUrl = getBaseUrl();
 
@@ -111,7 +113,6 @@ export default async function Home({ params }: Props) {
     : isArabic
       ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الاحترافية، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات منصات التواصل الاجتماعي."
       : "Développeur web au Maroc spécialisé en création de sites web professionnels, optimisation SEO, automatisation d'entreprise par IA et conception publicitaire pour les réseaux sociaux.";
-
   const jobTitle = isEnglish
     ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer"
     : isArabic
@@ -594,16 +595,6 @@ export default async function Home({ params }: Props) {
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.about_section.sectionLabel} />
-        <AboutMeSection translations={t.about_section} locale={locale} />
-      </ScrollReveal>
-
-      <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.why_we_are_section.sectionLabel} />
-        <WhyWeAreSection translations={t.why_we_are_section} locale={locale} />
-      </ScrollReveal>
-
-      <ScrollReveal delay={0.05}>
         <SubTitle sectionLabel={t.projects_section.sectionLabel} />
         <ProjectsShowcase
           translations={t.projects_section.subtitle}
@@ -612,8 +603,32 @@ export default async function Home({ params }: Props) {
         />
       </ScrollReveal>
 
+     <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={t.why_we_are_section.sectionLabel} />
+        <WhyWeAreSection translations={t.why_we_are_section} locale={locale} />
+      </ScrollReveal>
+
       <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={t.about_section.sectionLabel} />
+        <AboutMeSection translations={t.about_section} locale={locale} />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={t.technology_stack.sectionLabel} />
+        <p className="text-sm sm:text-base text-muted-foreground max-w-5xl mx-auto text-center leading-relaxed mb-6">
+          {t.technology_stack.description}
+        </p>
         <TechnologySlider />
+      </ScrollReveal>
+
+      <ScrollReveal delay={0.05}>
+        <SubTitle sectionLabel={articlesPage.sectionLabel} />
+        <ArticlesSection
+          heading={articlesPage.articlesLabel}
+          description={articlesPage.description}
+          articles={articlesPage.articles.slice(0, 3)}
+          locale={locale}
+        />
       </ScrollReveal>
 
       <ScrollReveal delay={0.05}>

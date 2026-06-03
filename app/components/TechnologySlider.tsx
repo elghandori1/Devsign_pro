@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-
 const technologies = [
   {
     name: "Git",
@@ -68,20 +67,19 @@ const technologies = [
 
 export default function TechnologySlider() {
   const duplicated = [...technologies, ...technologies];
-
+ 
   if (technologies.length === 0) {
     return null;
   }
   return (
     <section
-      className="w-full overflow-hidden py-3 sm:py-4 md:py-6 mt-2 md:mt-6 bg-card border-y border-border"
+      className="w-full overflow-hidden py-3 sm:py-4 md:py-6 bg-card border-y border-border"
       dir="ltr"
     >
       <div className="relative">
         {/* Gradient overlays - responsive widths */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-8 sm:w-12 md:w-16 lg:w-24 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-8 sm:w-12 md:w-16 lg:w-24 bg-gradient-to-l from-background to-transparent z-10" />
-
         <div className="flex animate-scroll gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-max">
           {duplicated.map((tech, index) => (
             <div

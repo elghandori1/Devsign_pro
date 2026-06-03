@@ -101,9 +101,9 @@ export default function Footer({ footer, locale }: FooterProps) {
               <p className="font-bold text-xl text-foreground leading-tight">
                 {footer.brandName}
               </p>
-              <p className="text-sm text-muted-foreground mt-0.5">
+              {/* <p className="text-sm text-muted-foreground mt-0.5">
                 {footer.brandTagline}
-              </p>
+              </p> */}
             </div>
 
             <ul className="space-y-3">

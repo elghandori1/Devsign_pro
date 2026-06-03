@@ -101,6 +101,10 @@
       "sectionLabel": "Projets",
       "subtitle": "Des réalisations qui apportent de vrais résultats"
     },
+    "technology_stack": {
+      "sectionLabel": "Technologies & outils que j'utilise",
+      "description": "Je choisis les outils adaptés à chaque projet en fonction de vos besoins et objectifs. Mon expertise comprend :"
+    },
     "contact_section": {
       "sectionLabel": "Prenez Contact",
       "description": "Un projet ou une collaboration en tête ? Discutons ensemble pour créer quelque chose d’impactant.",
@@ -1177,66 +1181,93 @@
       }
     },
     "articles_page": {
-    "subtitle": "Expérience réelle, insights pratiques",
-    "heading": "Articles, Idées & Notes Techniques",
-    "description": "Je partage des leçons concrètes sur la création de sites web, le déploiement de projets réels, l'optimisation des performances, le travail avec les clients, et l'exploration des outils modernes d'IA et d'automatisation.",
-    "sectionLabel": "Ce que j'écris",
-    "articlesLabel": "Derniers Articles",
-    "topics": [
-      {
-        "title": "Web & Tech",
-        "text": "Développement web, performance, SEO, déploiement, outils modernes, et insights techniques issus de projets réels."
-      },
-      {
-        "title": "Conseils & Informations",
-        "text": "Guides utiles, recommandations pratiques, conseils digitaux, et retours d'expérience du travail en ligne."
-      },
-      {
-        "title": "Freelancing & Business",
-        "text": "Gestion client, productivité, communication, automatisation, et stratégies pour développer des services digitaux."
+      "subtitle": "Expérience réelle, insights pratiques",
+      "heading": "Articles, Idées & Notes Techniques",
+      "description": "Je partage des articles basés sur mon expérience réelle en développement web et freelancing. Chaque article offre des conseils pratiques, des recommandations d'outils et des insights techniques pour aider les développeurs, freelances et entrepreneurs à réussir dans le monde numérique.",
+      "sectionLabel": "Ce que j'écris",
+      "articlesLabel": "Derniers Articles",
+      "topics": [
+        {
+          "title": "Web & Tech",
+          "text": "Développement web, performance, SEO, déploiement, outils modernes, et insights techniques issus de projets réels."
+        },
+        {
+          "title": "Conseils & Informations",
+          "text": "Guides utiles, recommandations pratiques, conseils digitaux, et retours d'expérience du travail en ligne."
+        },
+        {
+          "title": "Freelancing & Business",
+          "text": "Gestion client, productivité, communication, automatisation, et stratégies pour développer des services digitaux."
+        }
+      ],
+      "categoryChips": [
+        "Web & Tech",
+        "IA & Outils",
+        "SEO & Performance"
+      ],
+      "articles": [
+        {
+          "href": "/articles/best-laptop-guide-2026",
+          "slug": "best-laptop-guide-2026",
+          "title": "Meilleur Guide PC Portable 2026 pour Étudiants, Développeurs et Entrepreneurs",
+          "image": "/images/articles/laptop-configue-information-fr.jpg",
+          "date": "Mai 2026",
+          "category": "Informations & Conseils",
+          "published": "2026-05-07",
+          "readTime": "8 min de lecture",
+          "excerpt": "Un guide pratique pour choisir le bon ordinateur portable en 2026 selon vos vrais besoins — étudiant, développeur, freelance ou entrepreneur.",
+          "head": "Comment Choisir le Bon Ordinateur Portable en 2026 pour les Études, la Programmation et le Business",
+          "text": "Aujourd’hui, un ordinateur portable est bien plus qu’un simple appareil. C’est votre espace de travail, votre outil d’apprentissage et parfois même votre partenaire professionnel. Que vous soyez étudiant, développeur, freelance ou entrepreneur, choisir le bon ordinateur peut vous faire gagner du temps, améliorer votre productivité et vous offrir un confort de travail pendant plusieurs années. Dans ce guide, nous allons voir les éléments les plus importants à considérer avant d’acheter un ordinateur portable en 2026.",
+          "text1": "Processeur (CPU) : choisissez selon vos vrais besoins\nLe processeur est l’élément principal qui influence la vitesse et les performances de votre ordinateur. Mais vous n’avez pas toujours besoin du processeur le plus récent ou le plus cher.\n\nPour les étudiants, le travail bureautique, les cours en ligne, le freelancing et les tâches quotidiennes moyennes, ces processeurs restent très bons en 2026 :\n• Intel Core i5 10ᵉ génération ou plus récent\n• Intel Core i7 9ᵉ génération ou plus récent\n• AMD Ryzen 5 série 4000 ou 5000\n\nCes modèles peuvent encore gérer la programmation, le multitâche, les navigateurs web, les réunions en ligne et la plupart des tâches de productivité sans problème.\n\nSi vous recherchez plus de confort, de meilleures performances et une durée de vie plus longue, vous pouvez choisir :\n• Intel Core i5/i7 12ᵉ génération ou plus récent\n• Apple Silicon M1, M2 ou M3\n• AMD Ryzen 7 série 5000 ou plus récent\n\nLe plus important est de choisir un ordinateur adapté à vos besoins réels et à votre budget.",
+          "text2": "RAM : une performance fluide est essentielle\nLa mémoire RAM permet à votre ordinateur de gérer plusieurs applications et onglets en même temps.\n\n• 8GB RAM : suffisant pour des tâches simples\n• 16GB RAM : le meilleur choix pour les développeurs, freelances et utilisateurs professionnels\n• DDR4 ou DDR5 : recommandé pour de meilleures performances et une meilleure compatibilité future\n\nSi vous utilisez VS Code, Docker, des logiciels de design ou beaucoup d’onglets Chrome, 16GB RAM fera une grande différence.",
+          "text3": "Stockage (SSD) : la vitesse avant tout\nÉvitez les anciens disques HDD si possible. Les SSD modernes rendent votre ordinateur beaucoup plus rapide.\n\nRecommandé :\n• Stockage SSD NVMe\n• Minimum 256GB\n• 512GB recommandé pour les développeurs et les professionnels\n\nPlus d’espace signifie plus de place pour vos projets, documents et outils.",
+          "text4": "Écran et Poids : votre confort quotidien\nVous passez probablement plusieurs heures par jour devant votre ordinateur, donc le confort est important.\n\nÀ rechercher :\n• Résolution Full HD (1920×1080)\n• Écran IPS pour de meilleurs angles de vision\n• Design léger entre 1.2kg et 1.8kg si vous voyagez souvent\n\nUn bon écran peut réduire la fatigue des yeux et améliorer votre expérience.",
+          "text5": "Conseil important pour les développeurs, freelances et entrepreneurs :\n\"Avant d’acheter un ordinateur portable, vérifiez la qualité du clavier, car c’est votre principal outil de travail. Assurez-vous également de la présence d’un port USB-C compatible avec la charge rapide et le transfert rapide des données.\"",
+          "text6": "Conclusion\nAcheter un ordinateur portable est un investissement pour votre futur travail et votre productivité. Commencez par définir vos vrais besoins et votre budget, puis concentrez-vous sur le processeur, la RAM et le stockage. Un ordinateur équilibré et fiable sera souvent un meilleur choix que des spécifications très coûteuses dont vous n’aurez peut-être jamais besoin.",
+          "highlights": [
+            "Comment choisir un ordinateur selon votre usage réel",
+            "Les meilleures configurations pour étudiants et développeurs",
+            "Ce qui compte vraiment lors de l’achat d’un ordinateur en 2026",
+            "Les erreurs fréquentes avant l’achat",
+            "Trouver le bon équilibre entre performance, batterie et budget"
+          ]
+        },
+        {
+          "href": "/articles/how-to-check-used-laptop-2026",
+          "slug": "how-to-check-used-laptop-2026",
+          "title": "Comment vérifier un ordinateur portable d'occasion avant d'acheter : La checklist complète 2026",
+          "image": "/images/articles/used-laptop-checklist-fr.jpg",
+          "category": "Informations & Conseils",
+          "date": "Juin 2026",
+          "published": "2026-06-02",
+          "readTime": "10 min de lecture",
+          "excerpt": "Acheter un ordinateur portable d'occasion peut être une excellente affaire, mais cela peut aussi devenir une erreur coûteuse si vous sautez l'étape d'inspection. Cette checklist vous aidera à vérifier le matériel, identifier les problèmes cachés et confirmer que l'appareil correspond à la description du vendeur avant de payer.",
+          "head": "Une checklist complète étape par étape pour vérifier le matériel, repérer les problèmes cachés et confirmer les spécifications avant d'acheter un ordinateur portable d'occasion en 2026.",
+          "text1": "Rassembler les informations essentielles avant de rencontrer le vendeur\nAvant de rencontrer le vendeur, demandez ces détails. Cela vous aide à vérifier la valeur de l'appareil et à éviter les surprises pendant les tests.\n* **Numéro de modèle exact :** ThinkPad T14 Gen 3, pas seulement \"Lenovo ThinkPad\". Les différentes générations ont des spécifications et des valeurs très différentes.\n* **Modèle et génération du CPU :** Intel Core i7-12700H ou AMD Ryzen 7 7840U.\n* **Capacité et type de RAM :** 16 Go DDR4 ou 32 Go DDR5. Vérifiez si des mises à niveau sont possibles.\n* **Type et capacité de stockage :** Vérifiez si l'ordinateur utilise un SSD ou un HDD et confirmez sa taille. Les SSD sont plus rapides que les HDD.\n* **État de la batterie :** Demandez l'état actuel de la batterie et l'autonomie attendue.\n* **Date d'achat ou preuve d'achat :** Aide à confirmer l'âge de l'appareil.\n* **Chargeur d'origine :** Confirmez qu'il est inclus et qu'il fonctionne correctement.\n* **Historique de réparation :** Demandez si l'écran, la batterie, la carte mère ou les charnières ont été réparés ou remplacés.\n* **Spécifications de l'écran :** Taille, type de panneau et résolution. Exemple : 14 pouces IPS 1920×1080.",
+          "text2": "Commencer par une vérification rapide de l'état de la batterie\n**Avant d'effectuer les tests :**\n1. Notez le pourcentage de batterie au démarrage de l'ordinateur.\n2. Effectuez votre inspection et vos tests.\n3. Comparez le pourcentage de batterie à la fin.\n\nUne grande baisse de batterie lors d'une utilisation légère peut indiquer une usure significative de la batterie.",
+          "text3": "Inspecter l'état physique\n**Vérifier le boîtier et le châssis**\n* Fissures ou bosses sur le capot, le repose-paume et le dessous.\n* Un châssis déformé ou qui vacille posé sur une surface plane.\n* Vis manquantes sur le panneau inférieur.\n* Charnières lâches ou endommagées. Ouvrez et fermez le capot lentement, 3 à 5 fois.\n* Écarts, résidus de colle ou mauvais alignement autour du cadre de l'écran.\n__Ports & Chargeur__\n* **Port de chargeur :** Test de secousse — branchez le chargeur et secouez doucement le connecteur.\n* Testez chaque port : USB-A / USB-C, prise audio, Ethernet, etc.\n__Refroidissement & Ventilations__\n* **Bruit du ventilateur :** Allumez et écoutez au démarrage.\n* **Flux d'air :** Sentez l'air chaud sortir des ventilations après 5 minutes.\n* **Odeur :** Approchez-vous des ventilations.",
+          "text4": "Test de l'écran\n* **Pixels morts** — Points noirs qui ne changent jamais.\n* **Points lumineux** — Taches blanches, généralement dues à la pression.\n* **Taches jaunes** — Dommage liquide ou vieillissement du rétroéclairage.\n* **Scintillement** — Luminosité pulsée ou lignes clignotantes.\n* **Brûlure d'écran** — Images fantômes d'anciennes fenêtres toujours visibles.\n__Le test des couleurs__\nOuvrez ceux-ci en plein écran un par un. Utilisez [Dead Pixel Test](https://deadpixeltest.org) ou des images de couleur unie. Baissez les lumières. Passez 10 secondes sur chaque couleur, en balayant tout l'écran.\n* **Blanc** — Montre les points sombres et le rétroéclairage inégal.\n* **Noir** — Montre les points lumineux, le bleeding et les pixels bloqués.\n* **Rouge / Vert / Bleu** — Détecte les sous-pixels bloqués.",
+          "text5": "Clavier, pavé tactile, webcam, haut-parleurs et microphone\n**Clavier** — Ouvrez le Bloc-notes. Appuyez sur chaque touche deux fois. Surveillez les touches bloquées, les doubles frappes ou l'absence de réponse.\n**Pavé tactile** — Testez le défilement à deux doigts, le balayage à trois doigts et le pinch-to-zoom. Vérifiez le rejet de paume : le curseur ne doit pas bouger pendant que vous tapez.\n**Webcam** — Ouvrez l'application Caméra. Image nette ? Pas de scintillement ?\n**Haut-parleurs** — Lancez une vidéo YouTube. Testez l'audio gauche et droit. Des grésillements à volume élevé ?\n**Microphone** — Enregistrez 10 secondes dans l'Enregistreur vocal. Écoutez. Clair? Pas de bourdonnement?",
+          "text6": "Wi-Fi, réseau et vérification logicielle\n**Wi-Fi & Réseau**\n* **Wi-Fi** — Connectez-vous et naviguez. La connexion tombe-t-elle quand vous bougez ?\n* **Bluetooth** — Recherchez votre téléphone ou vos écouteurs. Les détecte-t-il ?\n* **Détection de hotspot** — Peut-il voir les hotspots mobiles à proximité ?\n__Logiciel et état d'activation__\n* **Activation Windows** — Paramètres → Système → Activation. Doit indiquer \"Actif\".\n* **Logiciels superflus/malware** — Faites défiler la liste des programmes installés. Des barres d'outils inconnues ou des applications louches = un ancien propriétaire négligent.\n* **Mot de passe BIOS** — Redémarrez et entrez dans les paramètres BIOS/UEFI. Un BIOS verrouillé peut empêcher les mises à niveau, les changements de démarrage et le dépannage.\n* **MacBooks uniquement** — Préférences Système → Apple ID. Si le compte d'une autre personne est verrouillé et qu'il refuse de se déconnecter, partez. C'est le verrouillage d'activation.",
+          "text7": "Test de stress rapide\n* Ouvrez 10 à 20 onglets de navigateur.\n* Lancez une vidéo 4K ou haute qualité dans un onglet.\n* Basculez rapidement entre les applications.\n* Observez les températures, le bruit du ventilateur, les ralentissements, les blocages ou les arrêts inattendus.",
+          "text8": "Vérifications de base en ligne de commande\n**Windows (CMD ou PowerShell)**\n| Vérification | Commande |\n| Informations système complètes | systeminfo |\n| Configuration système | dxdiag |\n| Activation Windows | slmgr /xpr |\n| Rapport de batterie | powercfg /batteryreport (fichier HTML) |\n| Détails du stockage | Paramètres > Système > Stockage |\n**Linux (Terminal)**\n| Vérification | Commande |\n| Spécifications complètes | inxi -F |\n| Détails du CPU | lscpu |\n| Utilisation de la RAM | free -h |\n| Espace disque & partitions | df -h |\n| État de la batterie | upower -i /org/freedesktop/UPower/devices/battery_BAT0 |",
+          "text9": "Conclusion\nUn bon ordinateur portable d'occasion peut être un excellent investissement, mais seulement si vous vérifiez ce que vous achetez. Passez 15 minutes à suivre cette checklist, confirmez les spécifications, testez le matériel, et vous réduirez considérablement le risque de mauvaises surprises coûteuses plus tard.",
+          "highlights": [
+            "Ce qu'il faut vérifier avant d'acheter un ordinateur portable d'occasion",
+            "Comment repérer les problèmes matériels cachés et les dommages physiques",
+            "Conseils sur l'état de la batterie et l'inspection de l'écran",
+            "Vérifications d'activation logicielle, BIOS et sécurité",
+            "Outils en ligne de commande pour vérifier les vraies spécifications"
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Vous voulez un article sur un sujet précis ?",
+        "description": "Envoyez-moi votre idée et je peux la transformer en guide pratique, étude de cas ou note technique.",
+        "button": "Me contacter"
       }
-    ],
-    "categoryChips": [
-      "Web & Tech",
-      "IA & Outils",
-      "SEO & Performance"
-    ],
-    "articles": [
-      {
-        "href": "/articles/best-laptop-guide-2026",
-        "slug": "best-laptop-guide-2026",
-        "title": "Meilleur Guide PC Portable 2026 pour Étudiants, Développeurs et Entrepreneurs",
-        "image": "/images/articles/laptop-configue-information-fr.jpg",
-        "date": "Mai 2026",
-        "category": "Informations & Conseils",
-        "published": "2026-05-07",
-        "readTime": "8 min de lecture",
-        "excerpt": "Un guide pratique pour choisir le bon ordinateur portable en 2026 selon vos vrais besoins — étudiant, développeur, freelance ou entrepreneur.",
-        "head": "Comment Choisir le Bon Ordinateur Portable en 2026 pour les Études, la Programmation et le Business",
-        "text": "Aujourd’hui, un ordinateur portable est bien plus qu’un simple appareil. C’est votre espace de travail, votre outil d’apprentissage et parfois même votre partenaire professionnel. Que vous soyez étudiant, développeur, freelance ou entrepreneur, choisir le bon ordinateur peut vous faire gagner du temps, améliorer votre productivité et vous offrir un confort de travail pendant plusieurs années. Dans ce guide, nous allons voir les éléments les plus importants à considérer avant d’acheter un ordinateur portable en 2026.",
-        "text1": "Processeur (CPU) : choisissez selon vos vrais besoins\nLe processeur est l’élément principal qui influence la vitesse et les performances de votre ordinateur. Mais vous n’avez pas toujours besoin du processeur le plus récent ou le plus cher.\n\nPour les étudiants, le travail bureautique, les cours en ligne, le freelancing et les tâches quotidiennes moyennes, ces processeurs restent très bons en 2026 :\n• Intel Core i5 10ᵉ génération ou plus récent\n• Intel Core i7 9ᵉ génération ou plus récent\n• AMD Ryzen 5 série 4000 ou 5000\n\nCes modèles peuvent encore gérer la programmation, le multitâche, les navigateurs web, les réunions en ligne et la plupart des tâches de productivité sans problème.\n\nSi vous recherchez plus de confort, de meilleures performances et une durée de vie plus longue, vous pouvez choisir :\n• Intel Core i5/i7 12ᵉ génération ou plus récent\n• Apple Silicon M1, M2 ou M3\n• AMD Ryzen 7 série 5000 ou plus récent\n\nLe plus important est de choisir un ordinateur adapté à vos besoins réels et à votre budget.",
-        "text2": "RAM : une performance fluide est essentielle\nLa mémoire RAM permet à votre ordinateur de gérer plusieurs applications et onglets en même temps.\n\n• 8GB RAM : suffisant pour des tâches simples\n• 16GB RAM : le meilleur choix pour les développeurs, freelances et utilisateurs professionnels\n• DDR4 ou DDR5 : recommandé pour de meilleures performances et une meilleure compatibilité future\n\nSi vous utilisez VS Code, Docker, des logiciels de design ou beaucoup d’onglets Chrome, 16GB RAM fera une grande différence.",
-        "text3": "Stockage (SSD) : la vitesse avant tout\nÉvitez les anciens disques HDD si possible. Les SSD modernes rendent votre ordinateur beaucoup plus rapide.\n\nRecommandé :\n• Stockage SSD NVMe\n• Minimum 256GB\n• 512GB recommandé pour les développeurs et les professionnels\n\nPlus d’espace signifie plus de place pour vos projets, documents et outils.",
-        "text4": "Écran et Poids : votre confort quotidien\nVous passez probablement plusieurs heures par jour devant votre ordinateur, donc le confort est important.\n\nÀ rechercher :\n• Résolution Full HD (1920×1080)\n• Écran IPS pour de meilleurs angles de vision\n• Design léger entre 1.2kg et 1.8kg si vous voyagez souvent\n\nUn bon écran peut réduire la fatigue des yeux et améliorer votre expérience.",
-        "text5": "Conseil important pour les développeurs, freelances et entrepreneurs :\n\"Avant d’acheter un ordinateur portable, vérifiez la qualité du clavier, car c’est votre principal outil de travail. Assurez-vous également de la présence d’un port USB-C compatible avec la charge rapide et le transfert rapide des données.\"",
-        "text6": "Conclusion\nAcheter un ordinateur portable est un investissement pour votre futur travail et votre productivité. Commencez par définir vos vrais besoins et votre budget, puis concentrez-vous sur le processeur, la RAM et le stockage. Un ordinateur équilibré et fiable sera souvent un meilleur choix que des spécifications très coûteuses dont vous n’aurez peut-être jamais besoin.",
-        "highlights": [
-          "Comment choisir un ordinateur selon votre usage réel",
-          "Les meilleures configurations pour étudiants et développeurs",
-          "Ce qui compte vraiment lors de l’achat d’un ordinateur en 2026",
-          "Les erreurs fréquentes avant l’achat",
-          "Trouver le bon équilibre entre performance, batterie et budget"
-        ]
-      }
-    ],
-    "cta": {
-      "title": "Vous voulez un article sur un sujet précis ?",
-      "description": "Envoyez-moi votre idée et je peux la transformer en guide pratique, étude de cas ou note technique.",
-      "button": "Me contacter"
     }
-  }
   },
-  
   "footer": {
     "brandName": "Devsign",
     "brandTagline": "Freelance",
@@ -1261,7 +1292,7 @@
         "href": "/contact"
       },
       {
-       "label": "Articles",
+        "label": "Articles",
         "href": "/articles"
       }
     ],

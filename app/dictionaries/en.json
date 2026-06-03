@@ -101,6 +101,10 @@
       "sectionLabel": "Selected Projects",
       "subtitle": "Selected work that delivers real results"
     },
+    "technology_stack": {
+      "sectionLabel": "Technologies & tools I Work With",
+      "description": "I choose the right tools for each project based on your needs and goals. My expertise includes:"
+    },
     "contact_section": {
       "sectionLabel": "Get in Touch",
       "description": "Have a project in mind or looking to collaborate? Let’s connect and build something impactful.",
@@ -1181,7 +1185,7 @@
     "articles_page": {
       "subtitle": "Real experience, practical insights",
       "heading": "Articles, Ideas & Technical Notes",
-      "description": "I share practical lessons from building websites, deploying real-world projects, improving performance, working with clients, and exploring modern AI and automation tools. The goal is simple: useful content based on real experience, not theory.",
+      "description": "I share articles based on my real-world experience in web development and freelancing. Each article offers practical advice, tool recommendations, and technical insights to help developers, freelancers, and entrepreneurs succeed in the digital world.",
       "sectionLabel": "What I write about",
       "articlesLabel": "Latest Articles",
       "topics": [
@@ -1228,6 +1232,34 @@
             "What actually matters when buying a laptop in 2026",
             "Common mistakes people make before purchasing",
             "Finding the right balance between performance, battery, and budget"
+          ]
+        },
+        {
+          "href": "/articles/how-to-check-used-laptop-2026",
+          "slug": "how-to-check-used-laptop-2026",
+          "title": "How to Check a Used Laptop Before Buying: The Complete 2026 Checklist",
+          "image": "/images/articles/used-laptop-checklist-en.jpg",
+          "category": "Information & Advices",
+          "date": "June 2026",
+          "published": "2026-06-02",
+          "readTime": "10 min read",
+          "excerpt": "Buying a used laptop can be a great deal, but it can also become an expensive mistake if you skip the inspection process. This checklist will help you verify the hardware, identify hidden issues, and confirm that the laptop matches the seller's description before you hand over your money.",
+          "head": "A complete step-by-step checklist to verify hardware, spot hidden issues, and confirm specs before buying a used laptop in 2026.",
+          "text1": "Gather the Essential Information Before Meeting the Seller\nBefore meeting the seller, ask for these details. This helps you verify the laptop's value and avoid surprises during testing.\n* **Exact model number:** ThinkPad T14 Gen 3, not just \"Lenovo ThinkPad\". Different generations have very different specs and values.\n* **CPU model & Generation:** Intel Core i7-12700H or AMD Ryzen 7 7840U.\n* **RAM capacity and type:** 16 GB DDR4 or 32 GB DDR5. Check whether upgrades are possible.\n* **Storage type and capacity:** Check whether the laptop uses an SSD or HDD and confirm its size. SSDs are faster than HDDs.\n* **Battery health:** Ask for the current battery condition and expected battery life.\n* **Purchase date or proof of purchase:** Helps confirm the age of the device.\n* **Original charger:** Confirm that it is included and working correctly.\n* **Repair history:** Ask whether the screen, battery, motherboard, or hinges have been repaired or replaced.\n* **Screen specifications:** Size, panel type, and resolution. Example: 14-inch IPS 1920×1080.",
+          "text2": "Start with a Quick Battery Health Check\n**Before performing any tests:**\n1. Note the battery percentage when the laptop starts.\n2. Complete your inspection and testing.\n3. Compare the battery percentage at the end.\n\nA large battery drop during light usage may indicate significant battery wear.",
+          "text3": "Inspect the Physical Condition\n**Check the Body and Chassis**\n* Cracks or dents on the lid, palm rest, and bottom cover.\n* A bent chassis or wobbling when placed on a flat surface.\n* Missing screws on the bottom panel.\n* Loose or damaged hinges. Open and close the lid slowly, 3 to 5 times.\n* Gaps, glue residue, or misalignment around the screen bezel.\n__Ports & Charger__\n* **Charger port:** Wiggle test — plug the charger in and gently wiggle the connector.\n* Test every single port: USB-A / USB-C, audio jack, Ethernet, etc.\n__Cooling & Vents__\n* **Fan noise:** Power on and listen during boot.\n* **Airflow:** Feel for warm air exiting the vents after 5 minutes.\n* **Smell:** Lean close to the vents.",
+          "text4": "Screen Test\n* **Dead pixels** — Black dots that never change.\n* **Bright spots** — White patches, usually from pressure.\n* **Yellow spots** — Liquid damage or aging backlight.\n* **Flickering** — Pulsing brightness or flashing lines.\n* **Burn-in** — Ghost images of old windows still visible.\n__The Color Test__\nOpen these in full screen one by one. Use [Dead Pixel Test](https://deadpixeltest.org) or solid color images. Dim the lights. Spend 10 seconds on each color, scanning the whole screen.\n* **White** — Shows dark spots and uneven backlight.\n* **Black** — Shows bright spots, bleed, and stuck pixels.\n* **Red / Green / Blue** — Catches stuck subpixels.",
+          "text5": "Keyboard, Trackpad, Webcam, Speakers & Microphone\n**Keyboard** — Open Notepad. Press every key twice. Watch for stuck keys, double-typing, or no response.\n**Trackpad** — Test two-finger scroll, three-finger swipe, and pinch-to-zoom. Check palm rejection: the cursor should not jump while you type.\n**Webcam** — Open the Camera app. Clear image? No flicker?\n**Speakers** — Play a YouTube video. Test left and right audio. Any crackling at high volume?\n**Microphone** — Record 10 seconds in Voice Recorder. Play it back. Clear? No buzzing?",
+          "text6": "Wi-Fi, Network & Software Verification\n**Wi-Fi & Network**\n* **Wi-Fi** — Connect and browse. Does it drop when you move around?\n* **Bluetooth** — Scan for your phone or earbuds. Does it detect them?\n* **Hotspot detection** — Can it see mobile hotspots nearby?\n__Software and Activation Status__\n* **Windows activation** — Settings → System → Activation. Must say \"Active.\"\n* **Bloatware/malware** — Scroll the installed programs list. Unknown toolbars or sketchy apps = a careless previous owner.\n* **BIOS Password** — Restart and enter the BIOS/UEFI settings. A locked BIOS can prevent upgrades, boot changes, and troubleshooting.\n* **MacBooks only** — System Preferences → Apple ID. If someone else's account is locked in and they won't sign out, walk away. That's Activation Lock.",
+          "text7": "Quick Stress Test\n* Open 10–20 browser tabs.\n* Play a 4K or high-quality video in one tab.\n* Switch between apps rapidly.\n* Observe temperatures, fan noise, lag, freezing, or unexpected shutdowns.",
+          "text8": "Basic Command-Line Checks\n**Windows (CMD or PowerShell)**\n| Check | Command |\n| Full system info | systeminfo |\n| System configuration | dxdiag |\n| Windows activation | slmgr /xpr |\n| Battery report | powercfg /batteryreport (HTML file) |\n| Storage details | Settings > System > Storage |\n**Linux (Terminal)**\n| Check | Command |\n| Full specs | inxi -F |\n| CPU details | lscpu |\n| RAM usage | free -h |\n| Disk space & partitions | df -h |\n| Battery health | upower -i /org/freedesktop/UPower/devices/battery_BAT0 |",
+          "text9": "Conclusion\nA good used laptop can be an excellent investment, but only if you verify what you're buying. Spend 15 minutes following this checklist, confirm the specifications, test the hardware, and you'll dramatically reduce the risk of expensive surprises later.",
+          "highlights": [
+            "What to check before buying a used laptop",
+            "How to spot hidden hardware issues and physical damage",
+            "Battery health and screen inspection tips",
+            "Software activation, BIOS, and security checks",
+            "Command-line tools to verify real laptop specs"
           ]
         }
       ],
