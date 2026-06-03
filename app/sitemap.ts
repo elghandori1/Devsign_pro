@@ -44,6 +44,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			changeFrequency: "monthly" as const,
 			priority: 0.6,
 		},
+		{
+			path: "/articles/how-to-check-used-laptop-2026",
+			changeFrequency: "monthly" as const,
+			priority: 0.6,
+		},
 	];
 
 	const lastModified = new Date();
