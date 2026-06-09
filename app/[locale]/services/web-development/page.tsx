@@ -14,6 +14,10 @@ import {
   Code2,
   Globe,
   Zap,
+  Sparkles,
+  TrendingUp,
+  Users,
+  BarChart3,
 } from "lucide-react";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -29,32 +33,39 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(locale);
   const data = dict.pages.services_page.services.web;
 
-  const keywords = locale
-    ? [
-        "web development Morocco",
-        "SEO website",
-        "Next.js and React developer",
-        "responsive design",
-        "custom website Morocco",
-        "web maintenance",
-      ]
-    : locale === "ar"
+  const keywords =
+    locale === "ar"
       ? [
-          "تطوير الويب المغرب",
-          "موقع تحسين محركات البحث",
-          "مطور Next.js و React",
+          "تطوير مواقع المغرب",
+          "موقع SEO محسن",
+          "مطور Next.js المغرب",
           "تصميم متجاوب",
-          "موقع مخصص المغرب",
-          "صيانة الويب",
+          "موقع آمن وسريع",
+          "تحسين محركات البحث",
+          "متجر إلكتروني المغرب",
+          "صفحة هبوط احترافية",
         ]
-      : [
-          "développement web Maroc",
-          "site web SEO",
-          "développeur Next.js et React",
-          "design responsive",
-          "site web personnalisé Maroc",
-          "maintenance web",
-        ];
+      : locale === "fr"
+        ? [
+            "développement web Maroc",
+            "site web SEO",
+            "développeur Next.js Maroc",
+            "design responsive",
+            "site sécurisé rapide",
+            "référencement naturel",
+            "boutique en ligne Maroc",
+            "landing page professionnelle",
+          ]
+        : [
+            "web development Morocco",
+            "SEO website Morocco",
+            "Next.js developer Morocco",
+            "responsive web design",
+            "secure fast website",
+            "search engine optimization",
+            "ecommerce store Morocco",
+            "professional landing page",
+          ];
 
   return buildPageMetadata({
     locale,
@@ -65,14 +76,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-const BENEFIT_ICONS = [Rocket, Shield, Database];
+const BENEFIT_ICONS = [TrendingUp, Users, BarChart3];
 const TECH_STACK = [
-  { name: "Next.js", icon: Code2 },
-  { name: "TypeScript", icon: Shield },
-  { name: "Tailwind CSS", icon: Zap },
-  { name: "Node.js", icon: Rocket },
-  { name: "MongoDB", icon: Database },
-  { name: "Google SEO", icon: Globe },
+  { name: "Next.js", icon: Code2, desc: "React Framework" },
+  { name: "TypeScript", icon: Shield, desc: "Type-Safe Code" },
+  { name: "Tailwind CSS", icon: Zap, desc: "Utility-First CSS" },
+  { name: "Node.js", icon: Rocket, desc: "Backend Runtime" },
+  { name: "MongoDB", icon: Database, desc: "NoSQL Database" },
+  { name: "Google SEO", icon: Globe, desc: "Search Optimized" },
 ];
 
 export default async function WebDevelopmentPage({ params }: Props) {
@@ -83,6 +94,12 @@ export default async function WebDevelopmentPage({ params }: Props) {
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
+  const overviewHeadline =
+    locale === "ar"
+      ? "مواقع إلكترونية تؤدي بفعالية، لا تكتفي بالمظهر الجيد"
+      : locale === "fr"
+        ? "Des sites web qui performent, pas seulement qui sont beaux"
+        : "Websites That Perform, Not Just Look Good";
 
   const schema = {
     "@context": "https://schema.org",
@@ -94,16 +111,16 @@ export default async function WebDevelopmentPage({ params }: Props) {
     provider: {
       "@type": "Organization",
       name: "Devsign",
-      url: "https://devsign.ma",
+      url: "https://devsignpro.com",
       telephone: "+212 7 78 00 00 06",
-      email: "contact@devsign.ma",
+      email: "devsignprofessional@gmail.com",
     },
     serviceType:
       locale === "en"
-        ? "Web Development and Maintenance"
+        ? "Web Development, SEO & E-commerce Solutions"
         : locale === "fr"
-          ? "Développement Web et Maintenance"
-          : "تطوير الويب والصيانة",
+          ? "Développement Web, SEO & E-commerce"
+          : "تطوير الويب، SEO والتجارة الإلكترونية",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
@@ -143,108 +160,184 @@ export default async function WebDevelopmentPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      {/* ── 1. HERO ── */}
-      <section
-        aria-label="Service Hero"
-        className="relative overflow-hidden border-b border-border min-h-[400px] sm:min-h-[500px] lg:min-h-[580px] flex items-center"
-      >
-        <Image
-          src={data.image}
-          alt={`${data.title} — ${data.heroAltSuffix}`}
-          fill
-          className="object-cover object-center"
-          priority
-          sizes="100vw"
-        />
 
-        {/* Overlays for contrast */}
-        <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
+      {/* 1. HERO — Dark Gradient + Geometric Squares  */}
+      <section
+        aria-labelledby="hero-heading"
+        className="relative overflow-hidden border-b border-border"
+      >
+        {/* Subtle background tint */}
         <div
-          className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-black/40"
+          className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30"
           aria-hidden="true"
         />
 
-        {/* Decorative Grid */}
+        {/* Grid texture */}
         <div
-          className="absolute inset-0 opacity-[0.04] pointer-events-none mix-blend-overlay"
+          className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
             backgroundImage:
-              "linear-gradient(to right,white 1px,transparent 1px),linear-gradient(to bottom,white 1px,transparent 1px)",
+              "linear-gradient(to right,currentColor 1px,transparent 1px),linear-gradient(to bottom,currentColor 1px,transparent 1px)",
             backgroundSize: "48px 48px",
           }}
           aria-hidden="true"
         />
 
-        <header className="relative w-full max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-14 lg:pb-16 pt-24 sm:pt-28 z-10">
+        {/* Soft glows — subtle in light, visible in dark */}
+        <div
+          className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
+        {/* Geometric Squares Pattern */}
+        <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
+          {/* Large faint squares */}
+          <div className="absolute top-10 left-10 w-32 h-32 border border-white/[0.04] rotate-12" />
+          <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
+          <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/[0.04] rotate-45" />
+          <div className="absolute top-1/2 right-1/4 w-24 h-24 border border-white/[0.03] -rotate-12" />
+          <div className="absolute bottom-32 left-1/4 w-56 h-56 border border-white/[0.02] rotate-6" />
+
+          {/* Small scattered squares */}
+          <div className="absolute top-16 right-16 w-8 h-8 bg-primary/10 rotate-12" />
+          <div className="absolute top-40 right-40 w-6 h-6 bg-primary/15 -rotate-6" />
+          <div className="absolute bottom-40 left-16 w-10 h-10 bg-primary/10 rotate-45" />
+          <div className="absolute top-1/3 left-1/3 w-4 h-4 bg-white/5 rotate-12" />
+          <div className="absolute bottom-1/3 right-1/3 w-5 h-5 bg-white/5 -rotate-12" />
+          <div className="absolute top-20 left-1/2 w-3 h-3 bg-primary/20 rotate-6" />
+          <div className="absolute bottom-24 right-1/2 w-7 h-7 bg-white/[0.03] -rotate-45" />
+
+          {/* Filled squares with blur glow */}
+          <div className="absolute top-1/4 left-[15%] w-20 h-20 bg-primary/5 blur-2xl rounded-sm" />
+          <div className="absolute bottom-1/4 right-[15%] w-28 h-28 bg-blue-500/5 blur-3xl rounded-sm" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/[0.03] blur-3xl rounded-sm" />
+        </div>
+        {/* Content */}
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24">
+          {/* Pill badge */}
           <nav aria-label="Breadcrumb" className="mb-6">
             <Link
               href={`/${locale}/services`}
-              className="inline-flex items-center gap-1.5 text-sm font-medium transition-colors
-                         rounded-md py-1.5 px-3 bg-primary/90 hover:bg-primary text-white shadow-lg active:scale-95"
+              className="inline-flex items-center gap-2 bg-primary/10 text-primary
+                          border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6"
             >
               <Arr size={14} aria-hidden="true" />
               {svc.title}
             </Link>
           </nav>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.15] text-white mb-5 max-w-3xl drop-shadow-md">
+          {/* Heading */}
+          <h1
+            id="hero-heading"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
+                       leading-[1.1] text-foreground mb-5 max-w-4xl"
+          >
             {data.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-white/85 leading-relaxed max-w-2xl mb-6 drop-shadow-sm">
+          {/* Description */}
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
             {data.description}
           </p>
 
-          <div className="flex flex-wrap gap-2 sm:gap-3 mb-8">
-            {data.features?.map((f: string, i: number) => (
+          {/* Hashtag chips */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {(data.features ?? []).map((tag: string) => (
               <span
-                key={i}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs sm:text-sm font-medium
-                           border border-white/20 bg-black/30 text-white rounded-full backdrop-blur-md"
+                key={tag}
+                className="px-3 py-1.5 bg-primary/10 text-primary rounded-full
+                           text-xs sm:text-sm font-medium border border-primary/20
+                           hover:bg-primary/15 transition-colors"
               >
-                <CheckCircle2
-                  size={12}
-                  className="text-white/80"
-                  aria-hidden="true"
-                />
-                {f}
+                {tag}
               </span>
             ))}
           </div>
-        </header>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <Link
+              href={`/${locale}/contact`}
+              className="group inline-flex items-center justify-center gap-2
+                         px-7 py-3.5 rounded-xl bg-primary text-primary-foreground
+                         font-bold text-sm sm:text-base
+                         hover:brightness-110 active:scale-[0.98] transition-all
+                         shadow-lg shadow-primary/20"
+            >
+              {data.start_btn}
+              <ArrFwd
+                size={16}
+                className="group-hover:translate-x-0.5 transition-transform"
+                aria-hidden="true"
+              />
+            </Link>
+            <Link
+              href={`/${locale}/services`}
+              className="inline-flex items-center justify-center gap-2
+                         px-7 py-3.5 rounded-xl border border-border bg-background
+                         text-foreground font-semibold text-sm sm:text-base
+                         hover:bg-muted active:scale-[0.98] transition-all"
+            >
+              {data.allServicesBtn}
+            </Link>
+          </div>
+        </div>
       </section>
 
-      {/* ── 2. OVERVIEW ── */}
+      {/*  2. OVERVIEW — Text + Image Square */}
       {data.features?.length > 0 && (
         <section
           aria-labelledby="overview-heading"
-          className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-16 lg:py-20"
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24"
         >
-          <div className="space-y-4 sm:space-y-6">
-            <h2
-              id="overview-heading"
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground"
-            >
-              {data.overviewTitle}
-            </h2>
-            <div
-              className="w-10 sm:w-12 h-1 bg-primary rounded-full"
-              aria-hidden="true"
-            />
-            <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl">
-              <span className="font-semibold text-foreground">
-                {data.startDescription}
-              </span>{" "}
-              {data.longDescription}
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Left: Text */}
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                <Sparkles size={12} />
+                {data.overviewTitle}
+              </div>
+              <h2
+                id="overview-heading"
+                className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground leading-tight"
+              >
+                {overviewHeadline}
+              </h2>
+              <div
+                className="w-12 h-1.5 bg-primary rounded-full"
+                aria-hidden="true"
+              />
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                <span className="font-semibold text-foreground">
+                  {data.startDescription}
+                </span>{" "}
+                {data.longDescription}
+              </p>
               {data.company_recruitment && (
-                <>
-                  <br />
-                  <span className="text-primary">
-                    {data.company_recruitment}
-                  </span>
-                </>
+                <p className="text-primary font-medium">
+                  {data.company_recruitment}
+                </p>
               )}
-            </p>
+            </div>
+
+            {/* Right: Image as a Square */}
+            <div className="relative aspect-square max-w-md mx-auto lg:max-w-none w-full rounded-2xl overflow-hidden border border-border shadow-xl">
+              <Image
+                src={data.image}
+                alt={`${data.title} — preview`}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              {/* Subtle overlay on image */}
+              <div
+                className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                aria-hidden="true"
+              />
+            </div>
           </div>
         </section>
       )}
@@ -253,7 +346,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
       {data.features?.length > 0 && (
         <section
           aria-labelledby="included-heading"
-          className="max-w-6xl mx-auto px-4 py-12 sm:py-16 border-t border-border"
+          className="max-w-6xl mx-auto px-4 py-10 sm:pb-12 sm:pt-0"
         >
           <div className="text-center mb-8 sm:mb-10">
             <h2

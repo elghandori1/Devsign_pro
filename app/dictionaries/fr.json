@@ -10,8 +10,8 @@
     "hero": {
       "availability": "Disponible pour de nouveaux projets",
       "title_line1": "Développeur Web au Maroc",
-      "title_highlight": "Sites Web Rapides, Performants et Optimisés SEO",
-      "description": "Je suis un développeur full-stack basé au Maroc, j’aide les startups, entreprises et équipes à créer des applications web modernes et évolutives. Je me concentre sur la performance, le SEO et l’expérience utilisateur pour générer de vrais résultats.",
+      "title_highlight": "Sites Web Rapides, Optimisés SEO & Haute Performance",
+      "description": "Je suis un développeur full-stack basé au Maroc, aidant les startups, les entreprises et les équipes à construire des sites web et des applications web modernes et évolutives. Je me concentre sur la performance, le SEO, le GEO et l’expérience utilisateur pour générer de vrais résultats.",
       "focus": "Mon objectif est simple : concevoir des solutions rapides, fiables et évolutives qui apportent des résultats concrets.",
       "cta_primary": "Démarrer un projet",
       "cta_secondary": "Voir mes projets",
@@ -133,58 +133,59 @@
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "heroAltSuffix": "développement de sites web optimisés SEO",
-          "title": "Développement Web Sécurisé & Optimisé SEO",
-          "description": "Je crée des sites web rapides, sécurisés et optimisés pour le référencement — axés sur la performance, le design responsive et l'expérience utilisateur pour aider votre entreprise à mieux se positionner sur Google et transformer les visiteurs en vrais clients.",
-          "startDescription": "Chaque site que je crée part d'un objectif clair :",
-          "longDescription": "Être trouvé, générer du trafic et convertir les visiteurs en clients. J'utilise des frameworks modernes combinés à une architecture SEO solide, des performances de chargement rapides et un code propre et évolutif conçu pour durer. J'intègre également Google Analytics et Google Search Console pour suivre vos performances, surveiller votre trafic et améliorer votre positionnement au fil du temps — de l'indexation correcte à l'optimisation des mots-clés, votre site est construit pour être visible et compétitif dès le premier jour.",
+          "title": "Développement de Sites Web avec SEO et Optimisation IA au Maroc",
+          "description": "Je crée des sites web rapides, sécurisés et optimisés pour le référencement pour les entreprises au Maroc et dans le monde. De la landing page personnalisée à la boutique e-commerce complète — conçus pour expliquer clairement votre domaine, vos services et vos produits afin que chacun comprenne ce que vous faites et vos activités. Conçus pour se classer sur Google, apparaître dans les résultats de recherche IA, charger instantanément et transformer les visiteurs en clients payants.",
+          "startDescription": "Chaque site web que je crée part d'un objectif clair :",
+          "longDescription": "Être trouvé, générer du trafic et convertir les visiteurs en clients réels. Je crée des sites web rapides et soignés qui expliquent clairement votre domaine, vos services et vos produits afin que chacun comprenne ce que vous faites et vos activités. Chaque page est rédigée pour cibler les expressions exactes que vos clients recherchent, avec un contenu optimisé pour se classer sur Google et performer dans les outils IA comme ChatGPT, Gemini et Perplexity. Vous bénéficiez d'une configuration SEO complète et d'une intégration Google Search Console pour suivre les mots-clés qui vous apportent des prospects, ainsi que d'une optimisation GEO IA pour que votre entreprise soit recommandée lorsque les gens demandent aux assistants IA des services locaux. Google Analytics est connecté dès le premier jour pour que vous voyiez d'où viennent chaque demande et quel contenu génère des résultats. C'est un système complet conçu pour attirer, expliquer et convertir dès le premier jour.",
           "company_recruitment": "Je collabore également avec des équipes et des entreprises sur des projets de développement.",
           "link": "/services/web-development",
-          "overviewTitle": "Aperçu",
-          "includedTitle": "Qu'est-ce qui est inclus ?",
+          "start_btn": "Démarrer Votre Projet",
+          "allServicesBtn": "Voir Tous les Services",
+          "overviewTitle": "Pourquoi Me Choisir ?",
+          "includedTitle": "Ce qui est inclus",
           "includedDesc": "Ce service comprend :",
           "benefitsTitle": "Ce que vous gagnerez",
           "benefitsDesc": "En travaillant avec moi sur votre site web, vous pouvez vous attendre à :",
           "processTitle": "Comment je travaille",
-          "processDesc": "Je suis un processus clair et ciblé pour m'assurer que votre projet soit livré dans les délais et atteigne ses objectifs :",
-          "techTitle": "Technologies avec lesquelles je travaille",
-          "techDesc": "Je choisis les technologies adaptées à vos besoins — pas en fonction des tendances, mais de vos objectifs.",
-          "AnothersrvcBtn": "Voir tous les services",
+          "processDesc": "Je suis un processus clair et concentré pour m'assurer que votre projet est lancé à temps et atteint ses objectifs :",
+          "techTitle": "Les technologies avec lesquelles je travaille",
+          "techDesc": "Je choisis les bonnes technologies en fonction des besoins de votre projet et de vos objectifs commerciaux — pas selon les tendances.",
+          "AnothersrvcBtn": "Voir Tous les Services",
           "features": [
-            "Optimisé SEO",
-            "Compatible mobile",
+            "Optimisé pour le SEO",
+            "Adapté aux mobiles",
             "Chargement rapide",
-            "Sécurité"
+            "Sécurisé"
           ],
           "benefits": [
             {
-              "title": "Meilleur positionnement",
+              "title": "Meilleur classement dans les recherches",
               "text": "Données structurées, métadonnées optimisées et temps de chargement rapides — tout ce que Google récompense, intégré dès le départ."
             },
             {
               "title": "Plus de conversions",
-              "text": "Des appels à l'action clairs, des interfaces intuitives et des signaux de confiance qui transforment les visiteurs en prospects réels."
+              "text": "Appels à l'action clairs, mises en page intuitives et signaux de confiance qui transforment les visiteurs en leads réels."
             },
             {
-              "title": "Suivi des performances",
-              "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche via Google Analytics et Search Console — configurés et prêts dès le lancement."
+              "title": "Aperçu des performances",
+              "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche via Google Analytics et Search Console — configurés et prêts le jour du lancement."
             }
           ],
           "process": [
             {
               "step": "01",
               "title": "Découverte",
-              "text": "J'analyse vos objectifs, votre audience et ce que vos concurrents font bien."
+              "text": "J'apprends vos objectifs, votre audience et ce que vos concurrents font bien."
             },
             {
               "step": "02",
-              "title": "Design, Développement & Tests",
-              "text": "Maquettes, développement, configuration SEO et tests approfondis de performance, d'accessibilité et de sécurité."
+              "title": "Conception, Construction & Tests",
+              "text": "Maquettes, développement, configuration SEO et tests approfondis des performances, de l'accessibilité et de la sécurité."
             },
             {
               "step": "03",
               "title": "Lancement & Suivi",
-              "text": "Mise en ligne avec analytics configurés, sitemap soumis et performances confirmées."
+              "text": "Mise en ligne avec les analytics configurés, le sitemap soumis et les benchmarks de performance confirmés."
             }
           ]
         },
@@ -197,7 +198,9 @@
           "longDescription": "Je crée des tableaux de bord personnalisés, des pipelines automatisés et des outils propulsés par l'IA adaptés à votre flux de travail exact. Qu'il s'agisse de simplifier la gestion des clients, de suivre les stocks en temps réel ou de générer des rapports intelligents automatiquement — je livre un système qui fonctionne exactement comme votre entreprise. L'objectif est simple : éliminer les blocages qui vous ralentissent pour que vous puissiez vous concentrer entièrement sur la croissance.",
           "company_recruitment": "Je collabore également avec des équipes et des entreprises sur des projets de développement.",
           "link": "/services/business-systems",
-          "overviewTitle": "Aperçu",
+          "start_btn": "Démarrer Votre Projet",
+          "allServicesBtn": "Voir Tous les Services",
+          "overviewTitle": "Pourquoi Me Choisir ?",
           "includedTitle": "Qu'est-ce qui est inclus ?",
           "includedDesc": "Ce service comprend :",
           "benefitsTitle": "Ce que vous gagnerez",
@@ -295,7 +298,9 @@
           "startDescription": "Des visuels qui arrêtent le scroll et génèrent de vrais résultats —",
           "longDescription": "Une bonne publicité ne se contente pas d'être belle — elle dit la bonne chose à la bonne personne au bon moment. Je crée des visuels percutants avec des messages clairs et des appels à l'action forts qui s'alignent avec votre identité de marque. Qu'il s'agisse d'un post statique ou d'un motion graphic pour Reels et TikTok, chaque élément est conçu avec un objectif précis : maximiser votre impact et transformer l'attention en engagement.",
           "link": "/services/social-design",
-          "overviewTitle": "Aperçu",
+          "start_btn": "Démarrer Votre Projet",
+          "allServicesBtn": "Voir Tous les Services",
+          "overviewTitle": "Pourquoi Me Choisir ?",
           "exampleTitle": "Les éléments d'une publicité réussie",
           "exampleDesc": "Les visuels seuls ne suffisent pas. Je combine un design percutant avec une messagerie stratégique, une cohérence de marque et des appels à l'action clairs — chaque élément justifie sa place dans la mise en page.",
           "exampleFeatures": [
