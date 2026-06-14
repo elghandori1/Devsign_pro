@@ -38,18 +38,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
 
-  const title = isEnglish
-    ? "Expert Web Developer in Morocco | SEO, AI Automation & Digital Solutions"
-    : isArabic
-      ? "مطور ويب محترف في المغرب | SEO، أتمتة الذكاء الاصطناعي وحلول رقمية"
-      : "Développeur Web Expert au Maroc | SEO, Automatisation IA & Solutions Digitales";
+const title = isEnglish
+  ? "Expert Web Developer in Morocco | SEO, AI Overview Optimization & Digital Growth"
+  : isArabic
+    ? "مطور ويب محترف في المغرب | SEO، تحسين ظهور نتائج الذكاء الاصطناعي وحلول رقمية"
+    : "Développeur Web Expert au Maroc | SEO, Optimisation IA Overview & Croissance Digitale";
 
-  const description = isEnglish
-    ? "Boost your business with high-performance website development, AI-driven automation, and high-converting social media ad design. Expert digital solutions in Morocco."
-    : isArabic
-      ? "خدمات احترافية في تطوير المواقع، تحسين محركات البحث (SEO)، أتمتة الأعمال بالذكاء الاصطناعي، وتصميم إعلانات وسائل التواصل الاجتماعي لزيادة مبيعاتك في المغرب."
-      : "Expert au Maroc en création de sites web, SEO et automatisation par l'IA. Des designs publicitaires percutants pour booster votre visibilité et vos ventes.";
-
+const description = isEnglish
+  ? "Boost your business with high-performance websites. Introduce your brand to the world with expert SEO, AI, and digital solutions in Morocco."
+  : isArabic
+    ? "عزز عملك بمواقع ويب عالية الأداء. قدّم علامتك التجارية للعالم مع SEO والذكاء الاصطناعي وحلول رقمية متخصصة في المغرب."
+    : "Boostez votre entreprise avec des sites web performants. Présentez votre marque au monde avec du SEO, de l'IA et des solutions digitales expertes au Maroc.";
+    
   const keywords = isEnglish
     ? [
         "Full-Stack Developer Morocco",
