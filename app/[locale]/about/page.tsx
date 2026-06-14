@@ -40,17 +40,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "en"
-      ? "Professional developer and designer in Morocco. SEO-optimized websites, business automation, AI integration, and ad design for startups and SMBs."
+      ? "Professional full-stack developer in Morocco. I build fast, SEO-ready websites, automate workflows, and integrate AI, available for new projects."
       : locale === "ar"
-        ? "مطور ومصمم محترف من المغرب. مواقع محسّنة للسيو، أتمتة الأعمال، دمج الذكاء الاصطناعي وتصميم إعلانات للشركات الناشئة والمتوسطة."
-        : "Développeur et designer au Maroc. Sites SEO, automatisation, intégration IA et design publicitaire pour startups et PME.";
+        ? "مطور Full-Stack محترف في المغرب. أقوم ببناء مواقع سريعة وجاهزة للسيو، وأتمتة سير العمل، ودمج الذكاء الاصطناعي، متاح لمشاريع جديدة."
+        : "Développeur Full-Stack professionnel au Maroc. Je crée des sites rapides et optimisés pour le SEO, j'automatise les flux de travail et j'intègre l'IA, disponible pour de nouveaux projets.";
 
   const keywords =
     locale === "en"
-      ? ["web developer Morocco", "designer", "portfolio", "freelance"]
+      ? ["web developer Morocco", "full-stack developer", "portfolio", "freelance"]
       : locale === "ar"
-        ? ["مطور ويب المغرب", "مصمم", "أعمالي"]
-        : ["développeur web Maroc", "designer", "portfolio"];
+        ? ["مطور ويب المغرب", "مطور Full-Stack", "أعمالي"]
+        : ["développeur web Maroc", "développeur Full-Stack", "portfolio"];
 
   return buildPageMetadata({
     locale,
@@ -94,17 +94,17 @@ export default async function AboutPage({ params }: Props) {
 
   const title =
     locale === "en"
-      ? "About Me | Web Developer & Designer — Devsign"
+      ? "Full-Stack Web Developer & AI Automation Expert in Morocco | Devsign"
       : locale === "ar"
-        ? "عني | مطور ويب ومصمم - ديفساين"
-        : "À Propos | Développeur Web & Designer — Devsign";
+        ? "مطور ويب Full-Stack وخبير أتمتة الذكاء الاصطناعي في المغرب | Devsign"
+        : "Développeur Full-Stack & Expert en Automatisation IA au Maroc | Devsign";
 
   const description =
     locale === "en"
-      ? "Professional developer and designer in Morocco. SEO-optimized websites, business automation, AI integration, and ad design for startups and SMBs."
+      ? "Professional full-stack developer in Morocco. SEO-ready websites, business automation, AI integration — available for startups and teams."
       : locale === "ar"
-        ? "مطور ومصمم محترف من المغرب. مواقع محسّنة للسيو، أتمتة الأعمال، دمج الذكاء الاصطناعي وتصميم إعلانات للشركات الناشئة والمتوسطة."
-        : "Développeur et designer au Maroc. Sites SEO, automatisation, intégration IA et design publicitaire pour startups et PME.";
+        ? "مطور Full-Stack محترف في المغرب. مواقع جاهزة للسيو، أتمتة الأعمال، دمج الذكاء الاصطناعي — متاح للشركات الناشئة والفرق."
+        : "Développeur Full-Stack professionnel au Maroc. Sites optimisés pour le SEO, automatisation des affaires, intégration de l'IA — disponible pour les startups et les équipes.";
 
   const jsonLd = {
     "@context": "https://schema.org",
