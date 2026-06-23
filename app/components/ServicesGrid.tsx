@@ -2,7 +2,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Locale } from "@/i18n-config";
-import { Check } from "lucide-react";
 
 interface SectionData {
   sectionLabel: string;
@@ -34,6 +33,11 @@ export default function ServicesGrid({
   const servicesList = Object.values(servicesData).slice(0, 3);
   const isRtl = locale === "ar";
 
+  const getDisplayTitle = (title: string) =>
+    title
+      .replace(/\s*(?:\||-|–|—)?\s*(?:in Morocco|au Maroc|في المغرب)\s*$/u, "")
+      .trim();
+
   return (
     <section
       className="px-4 sm:px-6 py-8 sm:py-10 fade-in-section"
@@ -45,7 +49,7 @@ export default function ServicesGrid({
           <div className={`max-w-2xl lg:${isRtl ? "text-right" : "text-left"}`}>
             <h3 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-[1.2]">
               {sectionData.heading}
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/70 mt-2">
+              <span className="block text-transparent bg-clip-text bg-linear-to-r from-primary to-primary/70 mt-2">
                 {sectionData.highlight}
               </span>
             </h3>
@@ -71,7 +75,7 @@ export default function ServicesGrid({
                 className="flex flex-col h-full relative z-10"
               >
                 {/* Service Image */}
-                <div className="relative w-full aspect-[16/10] overflow-hidden bg-gradient-to-br from-muted to-muted/80">
+                <div className="relative w-full aspect-16/10 overflow-hidden bg-linear-to-br from-muted to-muted/80">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -83,19 +87,19 @@ export default function ServicesGrid({
                 </div>
 
                 {/* Content Area */}
-                <div className="flex flex-col flex-grow p-6 sm:p-8">
+                <div className="flex flex-col grow p-6 sm:p-8">
                   {/* Title with underline animation - no transition on exit */}
                   <div className="mb-3">
                     <h4
                       className="text-xl sm:text-2xl font-bold group-hover:text-primary 
                          transition-colors duration-300 inline-block"
                     >
-                      {service.title}
+                      {getDisplayTitle(service.title)}
                     </h4>
                   </div>
 
                   {/* Description */}
-                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 flex-grow line-clamp-3">
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 grow line-clamp-3">
                     {service.description} ...
                   </p>
 
@@ -125,7 +129,7 @@ export default function ServicesGrid({
 
                 {/* Bottom accent bar - ONLY animates in, NO animation on exit */}
                 <div
-                  className="absolute inset-x-0 bottom-0 h-1 bg-gradient-to-r from-primary/40 via-primary to-primary/40
+                  className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-primary/40 via-primary to-primary/40
                scale-x-0 group-hover:scale-x-100
                duration-500 origin-left rounded-b-full"
                   style={{
@@ -137,7 +141,7 @@ export default function ServicesGrid({
                 {/* Corner decoration - only moves on hover, no transition back */}
                 <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden pointer-events-none">
                   <div
-                    className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-primary/15 to-transparent 
+                    className="absolute top-0 right-0 w-20 h-20 bg-linear-to-bl from-primary/15 to-transparent 
                         rotate-45 translate-x-8 -translate-y-8 group-hover:translate-x-6 group-hover:-translate-y-6
                         duration-300"
                     style={{

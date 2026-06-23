@@ -213,7 +213,7 @@ export default async function AboutPage({ params }: Props) {
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
           {/* text */}
-          <div className={`space-y-5 ${isRtl ? "lg:order-2" : ""}`}>
+          <div className={`space-y-5`}>
             <span
               className="inline-flex items-center gap-2 bg-primary/10 text-primary
                    px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
@@ -451,58 +451,9 @@ export default async function AboutPage({ params }: Props) {
           </div>
         </section>
       )}
-
-      {/* ── 7. CORE VALUES ── */}
-      {t.values?.length > 0 && (
-        <section className="border-t border-border bg-muted/10">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-            <div className="text-center mb-10">
-              <h2 className="text-2xl sm:text-3xl font-bold mb-3">
-                {t.valuesSection?.title ?? "Core Values"}
-              </h2>
-              <span
-                className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                               px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
-              >
-                <Heart className="w-4 h-4" />
-                {t.valuesSection?.subtitle ?? "What I Stand For"}
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-              {t.values.map(
-                (item: { title: string; text: string }, i: number) => {
-                  const Icon = VALUE_ICONS[i % VALUE_ICONS.length];
-                  return (
-                    <div
-                      key={item.title}
-                      className="group p-5 sm:p-6 rounded-2xl bg-card border border-border
-                               hover:border-primary/30 hover:shadow-xl hover:-translate-y-0.5
-                               transition-all duration-300"
-                    >
-                      <div
-                        className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center
-                                    mb-4 group-hover:bg-primary/20 transition-colors"
-                      >
-                        <Icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <h3 className="font-semibold text-foreground mb-2 text-sm sm:text-base">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
-                        {item.text}
-                      </p>
-                    </div>
-                  );
-                },
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-
+   
       {/* ── 8. CTA ── */}
-      <section className="border-t border-border">
+      <section className="border-t border-border bg-muted/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
           <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />

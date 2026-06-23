@@ -148,6 +148,11 @@ export default async function ServicesPage({ params }: Props) {
   const Arr = isRtl ? ArrowLeft : ArrowRight;
   const arrClass = isRtl ? "rotate-180" : "";
 
+  const getDisplayTitle = (title: string) =>
+    title
+      .replace(/\s*(?:\||-|–|—)?\s*(?:in Morocco|au Maroc|في المغرب)\s*$/u, "")
+      .trim();
+
   return (
     <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
       <script
@@ -267,7 +272,7 @@ export default async function ServicesPage({ params }: Props) {
                     className="text-lg sm:text-xl font-bold mb-2.5 leading-snug
                                  group-hover:text-primary transition-colors duration-200 line-clamp-2"
                   >
-                    {service.title}
+                    {getDisplayTitle(service.title)}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-4">
                     {service.description}
