@@ -70,8 +70,12 @@ export default function PortfolioProjectDetail({
     .filter(Boolean);
   const BackIcon = isRtl ? ArrowRight : ArrowLeft;
   const showLiveSiteLink = project.href === "/portfolio/corporate-website";
-  const showLandingPageLink = project.href === "/portfolio/landing-page-ecommerce";
-  const showPesscoreLinks = project.href === "/portfolio/pesscore-efootball-tracker";
+  const showDashboardImages =
+    project.href === "/portfolio/business-automation-dashboard";
+  const showLandingPageLink =
+    project.href === "/portfolio/landing-page-ecommerce";
+  const showPesscoreLinks =
+    project.href === "/portfolio/pesscore-efootball-tracker";
   const typeBadgeClass =
     project.type === "professional"
       ? "bg-sky-500/10 text-sky-700 dark:text-sky-400 border-sky-500/20"
@@ -227,6 +231,25 @@ export default function PortfolioProjectDetail({
                 />
               </div>
             )}
+            {showDashboardImages && (
+              <div className="flex flex-wrap gap-2 mt-4 justify-start sm:justify-between">
+                <img
+                  src="/images/Dashboard-automation/Dashboard-overview.jpg"
+                  alt="Dashboard overview"
+                  className="w-[30%] sm:w-40 md:w-60 aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="/images/Dashboard-automation/dashboard-login.jpg"
+                  alt="Dashboard login"
+                  className="w-[30%] sm:w-40 md:w-60 aspect-square object-cover rounded-md"
+                />
+                <img
+                  src="/images/Dashboard-automation/dashboard-design.jpg"
+                  alt="Dashboard design"
+                  className="w-[30%] sm:w-40 md:w-60 aspect-square object-cover rounded-md"
+                />
+              </div>
+            )}
             {/* Highlights */}
             <section aria-labelledby="highlights-heading">
               <h2
@@ -314,7 +337,7 @@ export default function PortfolioProjectDetail({
               />
             )}
 
-                  {showPesscoreLinks && (
+            {showPesscoreLinks && (
               <LinkCard
                 href="https://pesscore.vercel.app"
                 content={
@@ -345,7 +368,7 @@ export default function PortfolioProjectDetail({
               {caseStudyUi.collaborationBody}
             </p>
 
-               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <Link
                 href={`/${locale}/contact`}
                 className="w-full sm:w-auto group inline-flex items-center justify-center gap-2
@@ -354,31 +377,29 @@ export default function PortfolioProjectDetail({
                            hover:opacity-90 active:scale-95 transition-all
                            shadow-lg shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
-            {ctaLabel}
-              <ArrowRight
-                size={17}
-                className={isRtl ? "rotate-180" : ""}
-                aria-hidden
-              />
+                {ctaLabel}
+                <ArrowRight
+                  size={17}
+                  className={isRtl ? "rotate-180" : ""}
+                  aria-hidden
+                />
               </Link>
               <Link
-               href={`/${locale}/portfolio`}
+                href={`/${locale}/portfolio`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2
                            px-8 py-3.5 rounded-xl border border-border bg-background
                            text-foreground font-semibold text-sm sm:text-base
                            hover:border-primary/30 hover:bg-muted/50 active:scale-95 transition-all
                            focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
-               {ctaLabel_other}
-              <ArrowRight
-                size={17}
-                className={isRtl ? "rotate-180" : ""}
-                aria-hidden
-              />
+                {ctaLabel_other}
+                <ArrowRight
+                  size={17}
+                  className={isRtl ? "rotate-180" : ""}
+                  aria-hidden
+                />
               </Link>
             </div>
-         
-           
           </div>
         </section>
       </article>

@@ -9,7 +9,7 @@ export function getBaseUrl() {
     process.env.VERCEL_URL ||
     (process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://devsign.com");
+      : "https://www.devsignpro.com");
 
   const normalizedBaseUrl = rawBaseUrl.trim();
   if (normalizedBaseUrl.startsWith("http://") || normalizedBaseUrl.startsWith("https://")) {

@@ -595,7 +595,7 @@
         {
           "title": "Business Automation Dashboard",
           "description": "Developed a custom dashboard to centralize client management, subscriptions, and business operations. Automated tracking of billing cycles, stock, and service status reduced manual work, improved organization, and increased overall efficiency and client satisfaction.",
-          "tech": "React, Node.js, REST API",
+          "tech": "React JS, Express JS, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "See more details",
           "category": "Systems & Automation",
@@ -605,12 +605,12 @@
           "highlightsHeading": "What we delivered",
           "detail": {
             "seo": {
-              "title": "Business Automation Dashboard Case Study | React & Node | Devsign",
-              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React, Node.js, and REST APIs for real enterprises.",
+              "title": "Business Automation Dashboard with React JS & Express JS | Devsign",
+              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React JS, Express JS, and REST APIs for real enterprises.",
               "keywords": [
                 "business automation dashboard",
                 "subscription management software",
-                "React Node.js internal tools",
+                "React Express JS internal tools",
                 "operations dashboard Morocco",
                 "custom CRM dashboard"
               ]
@@ -633,7 +633,7 @@
         {
           "title": "E-commerce Landing Page",
           "description": "Designed a high-conversion landing page for product promotion and advertising campaigns. Optimized for fast loading, mobile experience, and clear product presentation, helping increase user engagement and conversion rates. Integrated with a dashboard for real-time content updates and campaign optimization.",
-          "tech": "JavaScript, HTML, CSS, Tailwind",
+          "tech": "Next.js, Tailwind CSS, MongoDB",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
           "linkLabel": "See more details",
           "category": "Web Development & SEO",
@@ -670,19 +670,19 @@
           }
         },
         {
-          "title": "Social Media Design & Ads",
-          "description": "Created high-converting social media visuals by transforming simple product images into professional marketing content. Each design includes clear messaging, branding, and CTA elements to increase engagement.",
-          "tech": "Photoshop , Illustrator",
+          "title": "Social Media Ad Design",
+          "description": "High-converting social media visuals that turn simple product shots into scroll-stopping marketing content. Clear messaging, strong branding, and conversion-focused CTAs designed for Facebook and Instagram campaigns.",
+          "tech": "Photoshop, Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "See more details",
-          "category": "Ad Design",
+          "category": "Ad Design & Branding",
           "type": "professional",
           "status": "Campaign Ads",
           "href": "/portfolio/social-campaign",
           "highlightsHeading": "What we delivered",
           "detail": {
             "seo": {
-              "title": "Social Media Ad Design Case Study | High-Converting Creatives | Devsign",
+              "title": "Social Media Ad Design High-Converting Facebook & Instagram Creatives | Devsign",
               "description": "Social ads and feed creatives built for clarity, branding, and conversion — Photoshop & Illustrator workflow for campaigns that need scroll-stopping visuals.",
               "keywords": [
                 "social media ad design",
@@ -693,11 +693,11 @@
                 "brand creatives"
               ]
             },
-            "intro": "We design high-performing social media creatives tailored for Facebook and Instagram ad campaigns. For multiple clients across different industries, we transform product and service ideas into clear, engaging visuals that highlight the offer, communicate value instantly, and guide users toward action.",
+            "intro": "We design high-performing social media creatives tailored for Facebook and Instagram ad campaigns. For clients across multiple industries, we transform product and service ideas into clear, engaging visuals that highlight the offer, communicate value instantly, and drive users to action.",
             "sections": [
               {
                 "title": "Ad-focused design approach",
-                "body": "Each design is built to capture attention in fast-scrolling feeds using strong visuals, balanced colors, and clear typography. We highlight the product or service, add compelling titles, and integrate effective CTAs such as 'Shop Now' or 'Send Message'. Whether promoting a product or a service, the goal is always the same: explain the offer quickly, attract attention, and drive conversions through consistent and impactful design."
+                "body": "Each design is built to capture attention in fast-scrolling feeds using strong visuals, balanced colors, and clear typography. We highlight the product or service, add compelling headlines, and integrate effective CTAs like 'Shop Now' or 'Send Message'. Whether promoting a product or a service, the goal is always the same: explain the offer quickly, attract attention, and drive conversions through consistent, impactful design."
               }
             ],
             "highlights": [
@@ -709,30 +709,30 @@
           }
         },
         {
-          "title": "Pesscore eFootball Tracker",
+          "title": "Pesscore eFootball Match Tracker",
           "description": "A social competitive platform for eFootball players to log match results, track head-to-head statistics, and verify game data through a real-time notification and approval system.",
-          "tech": "React, Node.js, REST API, MySQL, WebSocket",
+          "tech": "React, Express.js, REST API, MySQL, WebSocket",
           "image": "/images/projects/Pesscore-eFootball-Tracker.jpg",
           "linkLabel": "See more details",
           "category": "Full-Stack Web Application",
           "type": "personal",
           "status": "online",
           "href": "/portfolio/pesscore-efootball-tracker",
-          "highlightsHeading": "key features",
+          "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Pesscore eFootball Tracker | React, MySQL, WebSockets | Devsign",
-              "description": "Community competitive platform for eFootball: verified match results, H2H stats, approvals, and realtime notifications — React, Node, MySQL.",
+              "title": "Pesscore eFootball Match Tracker With React, Express.js, MySQL, WebSockets | Devsign",
+              "description": "Full-stack eFootball community platform with verified match results, head-to-head stats, real-time notifications, and a two-sided approval system — built with React, Express.js, and WebSockets.",
               "keywords": [
-                "eFootball tracker",
-                "React Node MySQL app",
+                "eFootball match tracker",
+                "React Express.js MySQL app",
                 "community sports platform",
                 "WebSocket notifications",
                 "head to head statistics",
                 "full stack portfolio"
               ]
             },
-            "intro": "Pesscore started from a simple problem: match results between friends were getting lost in chats and notes. It evolved into a full social platform where eFootball players can log matches, track head-to-head stats, and validate results through a shared approval system — turning casual games into structured competition.",
+            "intro": "Pesscore started from a real problem: match results between friends were getting lost in chats and notes. It evolved into a full social platform where eFootball players log matches, track head-to-head stats, and validate results through a shared approval system — turning casual games into structured, trusted competition.",
             "sections": [
               {
                 "title": "Product experience",
@@ -740,190 +740,205 @@
               },
               {
                 "title": "Architecture & real-time system",
-                "body": "The application is built with a decoupled architecture: a React frontend served on a dedicated client server, and a backend running on a separate server exposing REST APIs. Communication between both layers is handled through HTTP endpoints, while WebSockets enable real-time notifications for match validation and updates. The backend combines Node.js (Express) and a Rust service for performance-critical logic, with MySQL ensuring consistent data storage and relationships."
+                "body": "The application uses a decoupled architecture: a React frontend and an Express.js backend exposing REST APIs. WebSockets enable real-time notifications for match validation and updates. A Rust service handles performance-critical logic, while MySQL ensures consistent data storage and relationships."
               },
               {
                 "title": "What we learned",
-                "body": "This project strengthened our ability to design real-world products from idea to deployment. We gained experience in REST API design, frontend-backend separation, real-time communication with WebSockets, and building trust-based systems with validation workflows. It also improved our skills in scalable architecture, database modeling, and delivering user-focused features driven by actual needs."
+                "body": "This project strengthened our ability to design real-world products from idea to deployment. We gained hands-on experience in REST API design, frontend-backend separation, real-time communication with WebSockets, and building trust-based systems with validation workflows. It also improved our skills in scalable architecture, database modeling, and delivering user-focused features driven by actual community needs."
               }
             ],
             "highlights": [
-              "Match logging with head-to-head history",
-              "Approval workflow to reduce false reporting",
-              "Realtime updates for a responsive community UX",
-              "API-driven architecture ready for mobile clients later"
+              "Match logging with head-to-head history and player profiles",
+              "Approval workflow to eliminate false reporting",
+              "Real-time updates for a responsive community experience",
+              "API-driven architecture ready for future mobile clients"
             ]
           }
         },
         {
-          "title": "Math Multiplication Game",
-          "description": "An interactive educational tool designed to help students master math skills. Features dynamic difficulty scaling and a clean, responsive UI built with vanilla JavaScript and Bootstrap.",
-          "tech": "JavaScript, Bootstrap, HTML, CSS",
-          "image": "/images/projects/Math-Multiplication-Game.jpg",
+          "title": "Math Practice Game — Interactive Learning Tool",
+          "description": "An interactive educational web game that helps students master addition, subtraction, multiplication, and division through customizable practice modes, adaptive difficulty, instant feedback, and a clean, mobile-friendly interface.",
+          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "image": "/images/projects/math-practice-game.jpg",
           "linkLabel": "See more details",
-          "category": "Full-Stack Web Application",
+          "category": "Educational Web Application",
           "type": "personal",
           "status": "online",
-          "href": "/portfolio/math-multiplication-game",
-          "highlightsHeading": "key features",
+          "href": "/portfolio/math-practice-game",
+          "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Math Multiplication Game | Educational Web App | JavaScript | Devsign",
-              "description": "Interactive multiplication practice for students: adaptive difficulty, responsive Bootstrap UI, and lightweight vanilla JavaScript — fast on mobile.",
+              "title": "Math Practice Game — Addition, Subtraction, Multiplication, Division | Devsign",
+              "description": "Interactive math practice game for kids and students: addition, subtraction, multiplication, division, and mixed mode with adaptive difficulty, instant feedback, and a responsive Next.js + Tailwind CSS interface.",
               "keywords": [
+                "math practice game",
+                "addition subtraction multiplication division game",
                 "educational web app",
-                "math game JavaScript",
-                "Bootstrap interactive UI",
-                "kids learning tool",
-                "frontend portfolio project",
-                "responsive web game"
+                "kids math learning tool",
+                "interactive math game",
+                "Next.js educational game",
+                "Tailwind CSS responsive UI",
+                "adaptive difficulty game",
+                "frontend portfolio project"
               ]
             },
-            "intro": "Learning tools should feel instant and encouraging. This game focuses on tight feedback loops: quick rounds, progressive difficulty, and a UI that stays readable on phones where most students actually practice.",
+            "intro": "Learning math should be engaging and adaptable. This game lets students focus on a specific operation — addition (+), subtraction (−), multiplication (×), or division (÷) — or choose Mixed Mode for randomly generated questions across all four. With instant feedback, progressive difficulty, and a mobile-friendly interface, it encourages consistent practice across all core arithmetic skills.",
             "sections": [
               {
-                "title": "Pedagogy + UX",
-                "body": "The difficulty curve is designed to keep learners in the challenge zone without frustration. Visual hierarchy and large tap targets reduce cognitive load so attention stays on the math."
+                "title": "Flexible learning experience",
+                "body": "Students can practice a single operation to strengthen specific skills or switch to Mixed Mode for randomly generated addition, subtraction, multiplication, and division questions. Adaptive difficulty keeps each session appropriately challenging while maintaining an enjoyable learning experience."
               },
               {
-                "title": "Technical simplicity",
-                "body": "Built with vanilla JavaScript for minimal overhead and fast loads, while Bootstrap ensures a responsive layout that works across devices. The codebase is clean and modular, making it easy to extend with new features or subjects in the future."
+                "title": "Built for speed and scalability",
+                "body": "Developed with Next.js and Tailwind CSS for fast performance and a responsive experience across devices. The modular architecture makes it easy to expand with new game modes, difficulty levels, scoring systems, or additional educational content."
               }
             ],
             "highlights": [
-              "Dynamic difficulty scaling for varied skill levels",
-              "Mobile-friendly layout with Bootstrap components",
-              "Vanilla JS for minimal overhead and fast loads",
-              "Great example of approachable UX for broad audiences"
+              "Practice addition, subtraction, multiplication, or division individually",
+              "Mixed Mode with randomly generated operations across all four",
+              "Adaptive difficulty for different skill levels",
+              "Instant feedback to reinforce learning",
+              "Mobile-first responsive design with Tailwind CSS",
+              "Fast, modular Next.js architecture ready for future expansion"
             ]
           }
         },
         {
-          "title": "Minishell Project",
-          "description": "A custom Unix shell built from scratch in C. Replicates core Bash functionalities including command execution, piping, redirections, and environment variable management with strict memory control.",
-          "tech": "C, Linux, Shell",
+          "title": "Minishell — Bash-like Shell in C",
+          "description": "A custom Unix shell built from scratch in C that replicates core Bash behaviors: command execution, piping, redirections, environment variables, and signal handling — with strict memory safety discipline.",
+          "tech": "C, Linux, POSIX, Shell Scripting",
           "image": "/images/projects/Minishell-Project.jpg",
           "linkLabel": "See more details",
-          "category": "System Programming",
+          "category": "Systems Programming",
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/minishell-project",
-          "highlightsHeading": "key features & competencies",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "Minishell Project, Unix Shell in C, Systems Programming | Devsign",
-              "description": "Academic deep-dive: custom Unix shell in C with pipes, redirections, env vars, and strict memory discipline — foundational systems engineering.",
+              "title": "Minishell Bash-like Shell in C — Unix Systems Programming | Devsign",
+              "description": "Custom Unix shell built from scratch in C with Bash-like command parsing, pipes, redirections, environment variables, and signal handling. Deep systems programming portfolio project.",
               "keywords": [
-                "minishell C project",
                 "Unix shell implementation",
-                "pipes redirections",
+                "custom shell C",
+                "Bash-like shell project",
+                "pipes redirections C",
                 "systems programming portfolio",
+                "fork exec C Linux",
+                "POSIX shell scripting",
                 "42 school project",
-                "low-level C Linux"
+                "low-level C programming"
               ]
             },
-            "intro": "Minishell is a deep dive into how operating systems handle command execution and process control. By building a custom shell from scratch in C, we replicated core Unix behaviors — from parsing user input to executing commands, managing processes, and handling pipes and redirections with precision.",
+            "intro": "This project is a deep dive into how operating systems handle command execution and process control. By building a Bash-like shell from scratch in C, we replicated core Unix behaviors — from parsing user input to executing commands, managing processes, and handling pipes and redirections with precision.",
             "sections": [
               {
                 "title": "Technical depth",
-                "body": "The project focuses on accurate shell behavior, including command parsing, quoting rules, environment variable expansion, and signal handling (Ctrl+C, Ctrl+D, Ctrl+\\). It implements pipes, input/output redirections, and process creation using fork/exec, while ensuring memory safety and robust error handling across edge cases."
+                "body": "The shell implements accurate Bash-like behavior, including command parsing with quoting rules, environment variable expansion, and signal handling (Ctrl+C, Ctrl+D, Ctrl+\\). It supports pipes, input/output redirections, and process creation using fork/exec, while ensuring memory safety and robust error handling across edge cases."
               },
               {
                 "title": "What we learned",
-                "body": "This project strengthened our understanding of low-level system programming: process lifecycle, inter-process communication (pipes), file descriptors, and POSIX standards. It also improved our ability to manage complex parsing logic, handle signals correctly, and write clean, reliable C code under strict constraints — essential skills for systems and backend engineering."
+                "body": "This project strengthened our understanding of low-level systems programming: process lifecycle, inter-process communication through pipes, file descriptors, and POSIX standards. We deepened our knowledge of Bash command execution, shell scripting fundamentals, and how to write clean, reliable C code under strict constraints — essential skills for systems and backend engineering."
               }
             ],
             "highlights": [
-              "Command execution with pipelines and redirections",
-              "Environment variable handling aligned with shell semantics",
-              "Memory-safe discipline appropriate to low-level C code",
-              "Strong foundation for backend and infrastructure work"
+              "Command execution with pipelines and I/O redirections",
+              "Environment variable handling aligned with Bash semantics",
+              "Signal handling (SIGINT, SIGQUIT, EOF) for interactive use",
+              "Memory-safe C code with strict error handling discipline"
             ]
           }
         },
         {
-          "title": "Webserv Project",
-          "description": "A high-performance, non-blocking HTTP server built in C++98. Inspired by Nginx, it uses epoll() for multiplexing and supports CGI, file uploads, and RFC-compliant request handling.",
-          "tech": "C++, Linux, HTTP, Socket Programming",
+          "title": "Webserver — Nginx like HTTP Server",
+          "description": "A high-performance, non-blocking HTTP server built in C++98 inspired by Nginx. Uses epoll() for I/O multiplexing and supports CGI, file uploads, and RFC-compliant request handling.",
+          "tech": "C++, Linux, HTTP/1.1, Socket Programming, epoll",
           "image": "/images/projects/Webserv-Project.jpg",
-          "linkLabel": "See more details",
-          "category": "Web servers & Networking",
+          "linkLabel": "View case study",
+          "category": "Web Servers & Networking",
           "type": "academic",
-          "status": "completed",
+          "status": "Completed",
           "href": "/portfolio/webserv-project",
-          "highlightsHeading": "key features & competencies",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "Webserv HTTP Server | C++ epoll & CGI | Networking Case Study | Devsign",
-              "description": "Custom non-blocking HTTP server in C++98 with epoll multiplexing, CGI, uploads, and RFC-oriented request handling — core server engineering skills.",
+              "title": "Nginx-like HTTP Server C++ epoll & CGI High-Performance Web Server | Devsign",
+              "description": "Custom non-blocking HTTP server in C++98 with epoll multiplexing, CGI support, file uploads, and RFC-oriented request handling — core server engineering and networking skills.",
               "keywords": [
                 "C++ HTTP server",
+                "Nginx-like server",
                 "epoll multiplexing",
-                "webserv project",
+                "non-blocking web server",
                 "socket programming Linux",
-                "CGI implementation",
-                "high performance server"
+                "CGI implementation C++",
+                "high performance server",
+                "RFC compliant HTTP server",
+                "web server from scratch"
               ]
             },
-            "intro": "Building a custom web server from scratch reveals what modern frameworks often abstract away: connection handling, request parsing, protocol compliance, and maintaining performance under concurrent load. Inspired by Nginx, this project implements a scalable architecture using epoll to efficiently manage multiple client connections.",
+            "intro": "Building a production-grade web server from scratch reveals what modern frameworks abstract away: connection handling, request parsing, protocol compliance, and maintaining performance under concurrent load. Inspired by Nginx, this project implements a scalable architecture using epoll to efficiently manage thousands of simultaneous client connections.",
             "sections": [
               {
                 "title": "Architecture & capabilities",
-                "body": "Developed in C++ (C++98), the server is built on non-blocking sockets combined with a multiplexed event loop for high-performance I/O. It supports core HTTP methods (GET, POST, DELETE), a flexible configuration system inspired by Nginx (routes, ports, error pages), and CGI execution for dynamic content (PHP, Python). Additional features include secure file uploads and strict request validation."
+                "body": "Developed in C++98, the server is built on non-blocking sockets combined with a multiplexed event loop for high-performance I/O. It supports core HTTP methods (GET, POST, DELETE), a flexible configuration system inspired by Nginx (routes, ports, error pages), and CGI execution for dynamic content (PHP, Python). Additional features include secure file uploads and strict request validation against HTTP standards."
               },
               {
                 "title": "What we learned",
-                "body": "This project provided a deep understanding of how web servers operate internally: managing concurrent connections, handling HTTP protocol details, and optimizing performance with event-driven architectures. It strengthened our skills in low-level programming, socket management, and debugging complex systems, while highlighting the trade-offs between performance, scalability, and code complexity."
+                "body": "This project provided deep insight into how web servers operate internally: managing concurrent connections, handling HTTP protocol details, and optimizing performance with event-driven architectures. It strengthened our skills in low-level network programming, socket management, and debugging complex systems, while highlighting the trade-offs between performance, scalability, and code complexity."
               }
             ],
             "highlights": [
-              "Event-driven design with epoll for many concurrent connections",
-              "RFC-oriented HTTP parsing and response handling",
-              "CGI path for dynamic content and extensibility",
-              "Solid preparation for infrastructure and platform engineering roles"
+              "Event-driven design with epoll for thousands of concurrent connections",
+              "RFC-oriented HTTP parsing and response generation",
+              "CGI path for dynamic content execution and extensibility",
+              "Nginx-inspired configuration with virtual hosts and route matching"
             ]
           }
         },
         {
-          "title": "Inception Project",
-          "description": "A system administration project focused on infrastructure virtualization. Deployed a multi-container environment using Docker Compose, featuring Nginx, WordPress, and MariaDB on a secure, isolated network.",
-          "tech": "Linux, Docker, Docker-compose",
+          "title": "Inception — Docker Infrastructure stack",
+          "description": "A production-like multi-container environment deployed with Docker Compose. Features Nginx reverse proxy with SSL, WordPress application layer, and MariaDB database on a secure, isolated network.",
+          "tech": "Docker, Docker Compose, Linux, Nginx, MariaDB, WordPress",
           "image": "/images/projects/Inception-Project.jpg",
-          "linkLabel": "See more details",
-          "category": "System Programming",
+          "linkLabel": "View case study",
+          "category": "Infrastructure & DevOps",
           "type": "academic",
-          "status": "completed",
+          "status": "Completed",
           "href": "/portfolio/inception-project",
-          "highlightsHeading": "key features & competencies",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "Docker Compose Stack | Inception Infrastructure Project | Devsign",
-              "description": "Multi-container WordPress stack with Nginx and MariaDB on isolated networks — Docker Compose infrastructure project with security-minded defaults.",
+              "title": "Inception Docker-Based Infrastructure Nginx, WordPress, MariaDB with Docker Compose | Devsign",
+              "description": "Production-like multi-container stack with Docker Compose: Nginx reverse proxy with SSL, WordPress, and MariaDB on isolated networks. Infrastructure-as-code and container orchestration project.",
               "keywords": [
                 "Docker Compose project",
-                "Nginx WordPress MariaDB",
+                "Nginx WordPress MariaDB stack",
+                "container orchestration",
+                "Docker infrastructure",
+                "reverse proxy SSL",
                 "container networking",
                 "Inception 42 project",
                 "DevOps portfolio",
-                "infrastructure as code"
+                "infrastructure as code",
+                "multi-container deployment"
               ]
             },
-            "intro": "Inception recreates a production-like environment using Docker, where multiple services are isolated, secured, and orchestrated together. The architecture includes a reverse proxy with SSL (HTTPS), application services, a database, and persistent storage — all connected through explicit Docker networking for full control and reliability.",
+            "intro": "This project recreates a production-like environment using Docker, where multiple services are isolated, secured, and orchestrated together. The architecture includes a reverse proxy with SSL (HTTPS), application services, a database, and persistent storage — all connected through explicit Docker networking for full control, reliability, and environment parity.",
             "sections": [
               {
                 "title": "Containerization & security",
-                "body": "Each service runs in its own container, managed with Docker Compose for reproducibility and scalability. Nginx is configured as a reverse proxy with SSL certificates to secure traffic over HTTPS. Volumes ensure data persistence, while environment variables and custom configurations allow flexible deployment across environments."
+                "body": "Each service runs in its own container, managed with Docker Compose for reproducibility and scalability. Nginx is configured as a reverse proxy with SSL certificates to secure traffic over HTTPS. Named volumes ensure data persistence across container restarts, while environment variables and custom configurations allow flexible deployment across development, staging, and production environments."
               },
               {
                 "title": "What we learned",
-                "body": "This project builds a strong DevOps foundation: understanding containerization, service isolation, networking, and secure communication. It also emphasizes reproducibility, showing how entire environments can be defined as code and redeployed consistently — a key practice in modern development, staging, and production workflows."
+                "body": "This project built a strong DevOps foundation: understanding containerization, service isolation, inter-container networking, and secure communication. We learned how to write Dockerfiles and Compose files, configure Nginx as a reverse proxy, manage SSL/TLS certificates, and ensure data persistence with volumes. It also emphasized reproducibility — showing how entire environments can be defined as code and redeployed consistently, a key practice in modern CI/CD and infrastructure workflows."
               }
             ],
             "highlights": [
-              "Containerized services with explicit dependencies",
-              "Isolated network boundaries between components",
-              "Foundations for CI/CD and environment parity conversations",
-              "Great fit for clients who need DevOps-aware engineering partners"
+              "Multi-service container orchestration with Docker Compose",
+              "Isolated network boundaries between Nginx, WordPress, and MariaDB",
+              "SSL-secured reverse proxy with HTTPS termination",
+              "Persistent storage and environment-based configuration management"
             ]
           }
         },
@@ -937,10 +952,10 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/ft_transcendence",
-          "highlightsHeading": "key features & competencies",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "ft_transcendence | Real-Time Pong, OAuth2, WebSockets | Devsign",
+              "title": "ft_transcendence — Real-Time Pong, OAuth2, WebSockets | Devsign",
               "description": "Full-stack realtime platform: matchmaking, chat, OAuth2 authentication, PostgreSQL, Dockerized services, and Socket.io communication.",
               "keywords": [
                 "ft_transcendence",
@@ -965,7 +980,7 @@
             "highlights": [
               "Realtime gameplay and chat with scalable event patterns",
               "Secure authentication flows with OAuth2 integration",
-              "Containerized deployment story for reproducible environments",
+              "Containerized deployment for reproducible environments",
               "End-to-end TypeScript/Node architecture with clear module boundaries"
             ]
           }
@@ -980,7 +995,7 @@
           "type": "personal",
           "status": "online",
           "href": "/portfolio/money-transfer",
-          "highlightsHeading": "key features",
+          "highlightsHeading": "Key features",
           "detail": {
             "seo": {
               "title": "Currency Converter & Money Transfer Web App | APIs | Devsign",
@@ -1022,7 +1037,7 @@
           "highlightsHeading": "What we delivered",
           "detail": {
             "seo": {
-              "title": "Hotel Maintenance Ticketing System | PHP, MySQL, PDF | Devsign",
+              "title": "Hotel Maintenance Ticketing System with PHP, MySQL, PDF | Devsign",
               "description": "Internal hotel maintenance platform: issue reporting, PHPMailer alerts, MySQL records, and PDF audit reports — built for real operations teams.",
               "keywords": [
                 "hotel maintenance software",
@@ -1061,7 +1076,7 @@
           "highlightsHeading": "key features",
           "detail": {
             "seo": {
-              "title": "Calucature Desktop Utility | Python Tkinter GUI | Devsign",
+              "title": "Calucature Desktop Utility with Python Tkinter GUI | Devsign",
               "description": "Lightweight Python desktop tool with Tkinter GUI for fast technical calculations — offline utility software with a simple, focused workflow.",
               "keywords": [
                 "Python Tkinter desktop app",

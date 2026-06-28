@@ -555,7 +555,7 @@
           "linkLabel": "Voir plus de détails",
           "category": "Développement Web & SEO",
           "type": "professional",
-          "status": "online",
+          "status": "en ligne",
           "href": "/portfolio/corporate-website",
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
@@ -592,500 +592,516 @@
           }
         },
         {
-          "title": "Dashboard d’Automatisation Business",
-          "description": "Développement d’un dashboard personnalisé pour centraliser la gestion des clients, abonnements et opérations. L’automatisation du suivi des cycles de facturation, du stock et des services a permis de réduire le travail manuel, améliorer l’organisation et augmenter l’efficacité globale ainsi que la satisfaction client.",
-          "tech": "React, Node.js, API REST",
+          "title": "Tableau de Bord d'Automatisation d'Entreprise",
+          "description": "Développement d'un tableau de bord personnalisé pour centraliser la gestion des clients, les abonnements et les opérations commerciales. Le suivi automatisé des cycles de facturation, des stocks et du statut des services a réduit le travail manuel, amélioré l'organisation et augmenté l'efficacité globale et la satisfaction client.",
+          "tech": "React JS, Express JS, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "Voir plus de détails",
-          "category": "Systèmes & Automatisation par IA",
+          "category": "Systèmes & Automatisation",
           "type": "professional",
           "status": "entreprise locale",
           "href": "/portfolio/business-automation-dashboard",
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
-              "title": "Dashboard d'automatisation | React & Node | Étude de cas Devsign",
-              "description": "Portail interne pour abonnements, stocks et alertes — React, Node.js et API REST pour une entreprise réelle.",
+              "title": "Tableau de Bord d'Automatisation avec React JS & Express JS | Devsign",
+              "description": "Portail client et tableau de bord d'opérations personnalisés : abonnements, stocks, tarifs et alertes d'expiration — construits avec React JS, Express JS et des API REST pour de vraies entreprises.",
               "keywords": [
-                "automatisation entreprise",
-                "dashboard interne",
-                "React Node",
-                "gestion abonnements",
-                "outil métier"
+                "tableau de bord automatisation entreprise",
+                "logiciel gestion abonnements",
+                "outils internes React Express JS",
+                "tableau de bord opérations Maroc",
+                "CRM dashboard personnalisé"
               ]
             },
-            "intro": "Les opérations étaient réparties entre des tableaux et des fichiers. Nous avons remplacé cela par un tableau de bord unique qui reflète le cycle de vie du client, de l’abonnement au renouvellement, avec des alertes avant toute perte de revenus.",
+            "intro": "Les opérations étaient dispersées entre des feuilles de calcul et des fichiers. Nous avons remplacé cela par un tableau de bord unique qui reflète le cycle de vie client de l'abonnement au renouvellement, avec des alertes avant de perdre du chiffre d'affaires.",
             "sections": [
               {
                 "title": "Solution",
-                "body": "Une interface affichant les plans actifs, les dates d’expiration, le stock et l’historique des prix. Les alertes automatiques réduisent le suivi manuel, permettant à l’équipe de se concentrer sur les ventes et le service."
+                "body": "Une interface affichant les plans actifs, les dates d'expiration, l'inventaire et l'historique des prix. Les alertes automatisées réduisent le suivi manuel, permettant à l'équipe de se concentrer sur les ventes et le service."
               }
             ],
             "highlights": [
-              "Vue unique clients, abonnements et stock",
-              "Alertes pour expirations et seuils critiques",
-              "Architecture REST prête à accueillir de nouveaux modules",
-              "Pensé pour un usage quotidien bureau & tablette"
+              "Vue centralisée des clients, abonnements et stocks",
+              "Alertes automatisées pour les services expirants et les seuils critiques",
+              "Architecture basée sur REST prête à s'étendre avec de nouveaux modules",
+              "Conçu pour les opérations quotidiennes sur bureau et tablette"
             ]
           }
         },
         {
           "title": "Landing Page E-commerce",
-          "description": "Conception d’une landing page à forte conversion pour promouvoir des produits et campagnes publicitaires. Optimisée pour la rapidité, l’expérience mobile et une présentation claire des produits, elle permet d’augmenter l’engagement des utilisateurs et les taux de conversion. Intégrée à un dashboard pour des mises à jour en temps réel.",
-          "tech": "JavaScript, HTML, CSS, Tailwind",
+          "description": "Conception d'une page de destination à haut taux de conversion pour la promotion de produits et les campagnes publicitaires. Optimisée pour un chargement rapide, une expérience mobile et une présentation claire des produits, aidant à augmenter l'engagement utilisateur et les taux de conversion. Intégrée à un tableau de bord pour les mises à jour de contenu en temps réel et l'optimisation des campagnes.",
+          "tech": "Next.js, Tailwind CSS, MongoDB",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
           "linkLabel": "Voir plus de détails",
           "category": "Développement Web & SEO",
           "type": "professional",
-          "status": "online",
+          "status": "en ligne",
           "href": "/portfolio/landing-page-ecommerce",
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
-              "title": "Page de destination pour e-commerce Rapide & Mobile-friendly & optimisée SEO | Devsign",
-              "description": "Une page d'atterrissage à fort taux de conversion conçue pour le commerce moderne. Axée sur une performance ultra-rapide, un design responsive et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
+              "title": "Page de Destination E-commerce Rapide, Mobile-friendly & SEO Optimisée | Devsign",
+              "description": "Une page de destination à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, une adaptabilité mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
               "keywords": [
                 "page de destination ecommerce",
-                "page de destination haut taux de conversion",
-                "page de destination Tailwind CSS",
+                "landing page haute conversion",
+                "landing page Tailwind CSS",
                 "site retail mobile-first",
-                "page SEO Maroc",
+                "landing page SEO Maroc",
                 "embaucher développeur frontend"
               ]
             },
-            "intro": "E-commerce moderne exige rapidité, clarté et flexibilité. Au-delà des performances, nous avons conçu cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour instantanément le contenu, les promotions et les sections — sans toucher au code. Le résultat est une expérience rapide et optimisée pour le mobile, combinée à un contrôle total sur les messages et le parcours de conversion.",
+            "intro": "Le e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà des performances, nous avons construit cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour le contenu, les promotions et les sections instantanément — sans toucher au code. Le résultat est une expérience rapide et optimisée pour mobile, combinée à un contrôle total sur le message et le flux de conversion.",
             "sections": [
               {
-                "title": "Construction intelligente et contrôle du contenu",
-                "body": "La page est structurée avec des sections sémantiques claires, des actifs optimisés et un système évolutif pour la performance et la maintenabilité. Des mouvements et animations sont utilisés tout au long de la page pour guider l'attention de l'utilisateur et améliorer l'engagement. Nous intégrons également des images et des formulaires pour expliquer clairement le service ou le produit. De plus, un tableau de bord personnalisé permet aux équipes de modifier en temps réel les textes, images, offres, CTA et paramètres d'animation. Cela garantit que la page de destination reste fraîche, pertinente et alignée sur les campagnes marketing, que ce soit pour le SEO, les réseaux sociaux ou les publicités payantes."
+                "title": "Construction intelligente & contrôle du contenu",
+                "body": "La page est structurée avec des sections sémantiques propres, des ressources optimisées et un système évolutif pour les performances et la maintenabilité. Les animations et mouvements sont utilisés pour guider l'attention de l'utilisateur et améliorer l'engagement. Nous intégrons également des images et des formulaires pour expliquer clairement le service ou le produit. De plus, un tableau de bord personnalisé permet aux équipes d'éditer le texte, les images, les offres, les CTA et les paramètres d'animation en temps réel. Cela garantit que la page de destination reste fraîche, pertinente et alignée avec les campagnes marketing sur le SEO, les réseaux sociaux et les publicités payantes."
               }
             ],
             "highlights": [
-              "Layout mobile-first et interactions tactiles",
-              "Stratégie CSS/assets orientée performance",
-              "Hiérarchie de titres favorable au référencement",
-              "Parcours clair vers la conversion"
+              "Mise en page mobile-first et interactions adaptées au tactile",
+              "Stratégie de ressources et CSS axée sur les performances",
+              "Hiérarchie de contenu et titres orientés SEO",
+              "Chemin CTA clair du héros aux objections jusqu'à l'action"
             ]
           }
         },
         {
-          "title": "Design pour Réseaux Sociaux & Publicités",
-          "description": "Création de visuels à fort taux de conversion pour les réseaux sociaux, en transformant des images de produits simples en contenu marketing professionnel. Chaque design intègre un message clair, une identité de marque et des éléments d'appel à l'action pour augmenter l'engagement et encourager les achats sur des plateformes comme Instagram et Facebook.",
+          "title": "Conception de Publicités Réseaux Sociaux",
+          "description": "Visuels réseaux sociaux à haut taux de conversion qui transforment de simples photos de produits en contenu marketing percutant. Messages clairs, branding fort et CTA axés sur la conversion conçus pour les campagnes Facebook et Instagram.",
           "tech": "Photoshop, Illustrator",
           "image": "/images/projects/Social-Media-Design.jpg",
           "linkLabel": "Voir plus de détails",
-          "category": "Création de publicités",
+          "category": "Conception Publicitaire & Branding",
           "type": "professional",
-          "status": "Campagnes publicitaires",
+          "status": "Campagnes Publicitaires",
           "href": "/portfolio/social-campaign",
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
-              "title": "Créations publicitaires social ads | Photoshop | Devsign",
-              "description": "Visuels pour Instagram & Facebook : message clair, branding et CTA — workflow Photoshop & Illustrator.",
+              "title": "Conception de Publicités Réseaux Sociaux — Créatifs Facebook & Instagram | Devsign",
+              "description": "Publicités sociales et créatifs de flux conçus pour la clarté, le branding et la conversion — workflow Photoshop & Illustrator pour les campagnes qui ont besoin de visuels qui arrêtent le défilement.",
               "keywords": [
-                "design publicitaire",
-                "Instagram ads",
-                "Facebook ads",
-                "création contenu",
-                "conversion",
-                "graphiste Maroc"
+                "conception publicités réseaux sociaux",
+                "créatif publicité Instagram",
+                "conception publicités Facebook Maroc",
+                "graphiques sociaux conversion",
+                "embaucher designer graphique publicités",
+                "créatifs de marque"
               ]
             },
-            "intro": "Nous concevons des visuels performants pour les campagnes publicitaires sur Facebook et Instagram. Pour plusieurs clients dans différents secteurs, nous transformons des produits et services en designs clairs et attractifs qui mettent en valeur l’offre, communiquent rapidement le message et incitent à l’action.",
+            "intro": "Nous concevons des créatifs réseaux sociaux performants adaptés aux campagnes publicitaires Facebook et Instagram. Pour des clients de multiples industries, nous transformons les idées de produits et services en visuels clairs et engageants qui mettent en valeur l'offre, communiquent la valeur instantanément et incitent les utilisateurs à l'action.",
             "sections": [
               {
-                "title": "Approche orientée publicité",
-                "body": "Chaque design est pensé pour capter l’attention dans des flux rapides grâce à des visuels forts, des couleurs équilibrées et une typographie claire. Nous mettons en avant le produit ou le service, ajoutons des titres percutants et intégrons des appels à l’action efficaces comme « Acheter maintenant » ou « Envoyer un message ». L’objectif est toujours le même : expliquer rapidement l’offre, attirer l’attention et générer des conversions avec un design cohérent et impactant."
+                "title": "Approche de conception axée sur la publicité",
+                "body": "Chaque création est conçue pour capturer l'attention dans des flux à défilement rapide en utilisant des visuels forts, des couleurs équilibrées et une typographie claire. Nous mettons en avant le produit ou le service, ajoutons des titres convaincants et intégrons des CTA efficaces comme 'Acheter Maintenant' ou 'Envoyer un Message'. Que ce soit pour promouvoir un produit ou un service, l'objectif est toujours le même : expliquer l'offre rapidement, attirer l'attention et générer des conversions grâce à une conception cohérente et percutante."
               }
             ],
             "highlights": [
-              "Compositions lisibles sur petits écrans",
-              "Palette & typo alignées à la marque",
-              "Mises en page optimisées pour placements payants",
-              "Sources et exports aux formats courants"
+              "Compositions centrées sur le produit avec des messages lisibles en petit format",
+              "Palettes et typographie alignées sur la marque pour des campagnes cohérentes",
+              "Mises en page axées sur le CTA optimisées pour les placements sociaux payants",
+              "Fichiers sources et exports adaptés aux spécifications publicitaires courantes"
             ]
           }
         },
         {
-          "title": "Pesscore eFootball Tracker",
-          "description": "Une plateforme sociale et compétitive pour les joueurs d'eFootball permettant d'enregistrer les scores, de suivre les statistiques face-à-face et de valider les données via un système de notification en temps réel.",
-          "tech": "React, Node.js, REST API, MySQL, WebSocket",
+          "title": "Pesscore — Suivi de Matchs eFootball",
+          "description": "Une plateforme sociale compétitive pour les joueurs eFootball permettant d'enregistrer les résultats des matchs, suivre les statistiques en face-à-face et vérifier les données de jeu via un système de notification et d'approbation en temps réel.",
+          "tech": "React, Express.js, REST API, MySQL, WebSocket",
           "image": "/images/projects/Pesscore-eFootball-Tracker.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Application Web Full-Stack",
           "type": "personal",
-          "status": "online",
+          "status": "en ligne",
           "href": "/portfolio/pesscore-efootball-tracker",
-          "highlightsHeading": "key features",
+          "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Pesscore eFootball | Stats & communauté | Devsign",
-              "description": "Plateforme eFootball : scores, stats face-à-face, validation et notifications — React, Node, MySQL.",
+              "title": "Pesscore Suivi de Matchs eFootball avec React, Express.js, MySQL, WebSockets | Devsign",
+              "description": "Plateforme communautaire eFootball full-stack avec résultats de matchs vérifiés, statistiques face-à-face, notifications en temps réel et système d'approbation bilatéral — construite avec React, Express.js et WebSockets.",
               "keywords": [
-                "eFootball",
-                "React",
-                "MySQL",
-                "WebSocket",
-                "communauté",
-                "sport électronique"
+                "suivi matchs eFootball",
+                "application React Express.js MySQL",
+                "plateforme sportive communautaire",
+                "notifications WebSocket",
+                "statistiques face à face",
+                "portfolio full stack"
               ]
             },
-            "intro": "Pesscore est né d’un problème simple : les résultats des matchs entre amis se perdaient dans les discussions. Il est devenu une plateforme sociale complète permettant aux joueurs eFootball d’enregistrer leurs matchs, suivre leurs statistiques face à face et valider les résultats grâce à un système d’approbation partagé.",
+            "intro": "Pesscore est né d'un problème réel : les résultats des matchs entre amis se perdaient dans les chats et les notes. Il a évolué en une plateforme sociale complète où les joueurs eFootball peuvent enregistrer des matchs, suivre les statistiques face-à-face et valider les résultats via un système d'approbation partagé — transformant les jeux occasionnels en compétition structurée et fiable.",
             "sections": [
               {
                 "title": "Expérience produit",
-                "body": "La plateforme est conçue pour être simple et fiable. Les joueurs peuvent enregistrer leurs matchs, consulter l’historique avec leurs amis et suivre leurs performances. Chaque résultat est validé via un système d’approbation : lorsqu’un match est ajouté, l’adversaire reçoit une notification et peut accepter ou refuser, garantissant ainsi des classements fiables."
+                "body": "La plateforme met l'accent sur la simplicité et la confiance. Les joueurs peuvent enregistrer des matchs, consulter l'historique avec des amis et suivre les performances au fil du temps. Chaque résultat est vérifié via un système d'approbation bilatéral : lorsqu'un match est soumis, l'adversaire reçoit une notification et doit le confirmer ou le rejeter, garantissant des classements précis et fiables."
               },
               {
-                "title": "Architecture & temps réel",
-                "body": "L’application repose sur une architecture découplée : un frontend React déployé sur un serveur client dédié, et un backend sur un serveur séparé exposant des API REST. La communication se fait via des requêtes HTTP, tandis que WebSockets assurent les notifications en temps réel pour la validation des matchs. Le backend combine Node.js (Express) et un service Rust pour les parties critiques, avec MySQL pour la gestion des données."
+                "title": "Architecture & système temps réel",
+                "body": "L'application utilise une architecture découplée : un frontend React et un backend Express.js exposant des API REST. Les WebSockets permettent des notifications en temps réel pour la validation des matchs et les mises à jour. Un service Rust gère la logique critique pour les performances, tandis que MySQL assure un stockage de données cohérent et des relations fiables."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre capacité à concevoir des produits réels, de l’idée au déploiement. Nous avons acquis de l’expérience en conception d’API REST, séparation frontend/backend, communication temps réel avec WebSockets, et mise en place de systèmes basés sur la confiance avec validation. Il a également amélioré nos compétences en architecture scalable, modélisation de base de données et développement orienté utilisateur."
+                "body": "Ce projet a renforcé notre capacité à concevoir des produits réels de l'idée au déploiement. Nous avons acquis une expérience pratique dans la conception d'API REST, la séparation frontend-backend, la communication en temps réel avec WebSockets et la construction de systèmes basés sur la confiance avec des workflows de validation. Cela a également amélioré nos compétences en architecture évolutive, modélisation de base de données et livraison de fonctionnalités centrées sur l'utilisateur, motivées par les besoins réels de la communauté."
               }
             ],
             "highlights": [
-              "Journal des matchs avec historique H2H",
-              "Workflow d'approbation anti faux signalements",
-              "Notifications pour une UX réactive",
-              "API prête pour clients mobiles futurs"
+              "Enregistrement de matchs avec historique face-à-face et profils de joueurs",
+              "Workflow d'approbation pour éliminer les faux rapports",
+              "Mises à jour en temps réel pour une expérience communautaire réactive",
+              "Architecture pilotée par API prête pour de futurs clients mobiles"
             ]
           }
         },
         {
-          "title": "Jeu de Multiplication Mathématique",
-          "description": "Un outil éducatif interactif conçu pour aider les étudiants à maîtriser les mathématiques. Propose une difficulté dynamique et une interface claire et responsive construite en JavaScript natif et Bootstrap.",
-          "tech": "JavaScript, Bootstrap, HTML, CSS",
-          "image": "/images/projects/Math-Multiplication-Game.jpg",
-          "linkLabel": "Voir les détails",
-          "category": "Application Web Full-Stack",
+          "title": "Jeu de Pratique Mathématique — Outil d'Apprentissage Interactif",
+          "description": "Un jeu web éducatif interactif qui aide les élèves à maîtriser l'addition, la soustraction, la multiplication et la division grâce à des modes de pratique personnalisables, une difficulté adaptative, un retour immédiat et une interface propre et adaptée au mobile.",
+          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "image": "/images/projects/math-practice-game.jpg",
+          "linkLabel": "Voir plus de détails",
+          "category": "Application Web Éducative",
           "type": "personal",
-          "status": "online",
-          "href": "/portfolio/math-multiplication-game",
-          "highlightsHeading": "key features",
+          "status": "en ligne",
+          "href": "/portfolio/math-practice-game",
+          "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Jeu de multiplication | Éducatif JS & Bootstrap | Devsign",
-              "description": "Entraînement interactif avec difficulté adaptative et UI responsive — léger sur mobile.",
+              "title": "Jeu de Pratique Mathématique — Addition, Soustraction, Multiplication, Division | Devsign",
+              "description": "Jeu de pratique mathématique interactif pour enfants et élèves : addition, soustraction, multiplication, division et mode mixte avec difficulté adaptative, retour immédiat et interface responsive Next.js + Tailwind CSS.",
               "keywords": [
-                "éducatif",
-                "mathématiques",
-                "JavaScript",
-                "Bootstrap",
-                "enfants",
-                "web"
+                "jeu pratique mathématique",
+                "jeu addition soustraction multiplication division",
+                "application web éducative",
+                "outil apprentissage mathématique enfants",
+                "jeu mathématique interactif",
+                "jeu éducatif Next.js",
+                "interface responsive Tailwind CSS",
+                "jeu difficulté adaptative",
+                "portfolio frontend"
               ]
             },
-            "intro": "Les outils pédagogiques doivent être instantanés et encourageants : tours courts, difficulté progressive, UI lisible sur téléphone.",
+            "intro": "Apprendre les mathématiques devrait être engageant et adaptable. Ce jeu permet aux élèves de se concentrer sur une opération spécifique — addition (+), soustraction (−), multiplication (×) ou division (÷) — ou de choisir le Mode Mixte pour des questions générées aléatoirement sur les quatre opérations. Avec un retour immédiat, une difficulté progressive et une interface adaptée au mobile, il encourage une pratique régulière de toutes les compétences arithmétiques fondamentales.",
             "sections": [
               {
-                "title": "Pédagogie & UX",
-                "body": "La courbe garde l'apprenant dans la zone de défi sans frustration grosses zones tactiles pour réduire la charge cognitive."
+                "title": "Expérience d'apprentissage flexible",
+                "body": "Les élèves peuvent pratiquer une seule opération pour renforcer des compétences spécifiques ou passer au Mode Mixte pour des questions générées aléatoirement en addition, soustraction, multiplication et division. La difficulté adaptative maintient chaque session au niveau de défi approprié tout en préservant une expérience d'apprentissage agréable."
               },
               {
-                "title": "Tech & performance",
-                "body": "Pas de dépendances lourdes : juste du JavaScript natif et Bootstrap pour une expérience fluide même sur les appareils les plus basiques."
+                "title": "Conçu pour la vitesse et l'évolutivité",
+                "body": "Développé avec Next.js et Tailwind CSS pour des performances rapides et une expérience responsive sur tous les appareils. L'architecture modulaire facilite l'extension avec de nouveaux modes de jeu, niveaux de difficulté, systèmes de score ou contenu éducatif supplémentaire."
               }
             ],
             "highlights": [
-              "Difficulté dynamique",
-              "Layout mobile-friendly Bootstrap",
-              "Vanilla JS pour chargement minimal",
-              "Accessible à un large public"
+              "Pratique de l'addition, soustraction, multiplication ou division individuellement",
+              "Mode Mixte avec opérations générées aléatoirement sur les quatre",
+              "Difficulté adaptative pour différents niveaux de compétence",
+              "Retour immédiat pour renforcer l'apprentissage",
+              "Design responsive mobile-first avec Tailwind CSS",
+              "Architecture Next.js modulaire et rapide, prête pour l'expansion future"
             ]
           }
         },
         {
-          "title": "Projet Minishell",
-          "description": "Un shell Unix personnalisé développé à partir de zéro en C. Réplique les fonctionnalités de base de Bash, notamment l'exécution de commandes, les pipes, les redirections et la gestion des variables d'environnement.",
-          "tech": "C, Linux, Shell",
+          "title": "Minishell — Shell Type Bash en C",
+          "description": "Un shell Unix personnalisé construit from scratch en C qui réplique les comportements fondamentaux de Bash : exécution de commandes, pipes, redirections, variables d'environnement et gestion des signaux — avec une discipline stricte de sécurité mémoire.",
+          "tech": "C, Linux, POSIX, Shell Scripting",
           "image": "/images/projects/Minishell-Project.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Programmation Système",
           "type": "academic",
-          "status": "completed",
+          "status": "terminé",
           "href": "/portfolio/minishell-project",
-          "highlightsHeading": "key features & compétences",
+          "highlightsHeading": "Fonctionnalités clés & compétences",
           "detail": {
             "seo": {
-              "title": "Minishell | Shell Unix en C | Programmation système | Devsign",
-              "description": "Shell Unix sur-mesure : pipes, redirections, variables d'environnement et discipline mémoire.",
+              "title": "Minishell Shell Type Bash en C — Programmation Système Unix | Devsign",
+              "description": "Shell Unix personnalisé construit from scratch en C avec parsing de commandes type Bash, pipes, redirections, variables d'environnement et gestion des signaux. Projet approfondi de programmation système.",
               "keywords": [
-                "minishell",
-                "C",
-                "Linux",
-                "shell",
-                "programmation système",
-                "42"
+                "implémentation shell Unix",
+                "shell personnalisé C",
+                "projet shell type Bash",
+                "pipes redirections C",
+                "portfolio programmation système",
+                "fork exec C Linux",
+                "scripting shell POSIX",
+                "projet 42 école",
+                "programmation C bas niveau"
               ]
             },
-            "intro": "Minishell est une immersion dans le fonctionnement des systèmes d’exploitation et l’exécution des commandes. En développant un shell personnalisé en C, nous avons reproduit les comportements essentiels d’Unix — du parsing des commandes à l’exécution des processus, en passant par la gestion des pipes et des redirections.",
+            "intro": "Ce projet est une immersion profonde dans la façon dont les systèmes d'exploitation gèrent l'exécution de commandes et le contrôle des processus. En construisant un shell type Bash from scratch en C, nous avons répliqué les comportements Unix fondamentaux — du parsing de l'entrée utilisateur à l'exécution des commandes, la gestion des processus et le traitement des pipes et redirections avec précision.",
             "sections": [
               {
                 "title": "Profondeur technique",
-                "body": "Le projet met l’accent sur un comportement fidèle au shell réel : parsing des commandes, gestion des guillemets, expansion des variables d’environnement et gestion des signaux (Ctrl+C, Ctrl+D, Ctrl+\\). Il inclut les pipes, les redirections d’entrée/sortie et la création de processus via fork/exec, tout en assurant la sécurité mémoire et une gestion robuste des erreurs."
+                "body": "Le shell implémente un comportement précis type Bash, incluant le parsing de commandes avec règles de guillemets, l'expansion des variables d'environnement et la gestion des signaux (Ctrl+C, Ctrl+D, Ctrl+\\). Il supporte les pipes, les redirections entrée/sortie et la création de processus via fork/exec, tout en assurant la sécurité mémoire et une gestion robuste des erreurs sur les cas limites."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre compréhension de la programmation système : cycle de vie des processus, communication inter-processus (pipes), gestion des descripteurs de fichiers et standards POSIX. Il a également amélioré notre capacité à gérer un parsing complexe, à traiter correctement les signaux et à écrire du code C propre et fiable sous contraintes strictes."
+                "body": "Ce projet a renforcé notre compréhension de la programmation système bas niveau : cycle de vie des processus, communication inter-processus via pipes, descripteurs de fichiers et standards POSIX. Nous avons approfondi nos connaissances en exécution de commandes Bash, fondamentaux du scripting shell et écriture de code C propre et fiable sous contraintes strictes — compétences essentielles pour l'ingénierie système et backend."
               }
             ],
             "highlights": [
-              "Exécution avec pipelines et redirections",
-              "Gestion des variables d'environnement cohérente",
-              "Discipline mémoire adaptée au C système",
-              "Base solide pour backend et infrastructure"
+              "Exécution de commandes avec pipelines et redirections E/S",
+              "Gestion des variables d'environnement alignée sur la sémantique Bash",
+              "Gestion des signaux (SIGINT, SIGQUIT, EOF) pour usage interactif",
+              "Code C sécurisé mémoire avec discipline stricte de gestion d'erreurs"
             ]
           }
         },
         {
-          "title": "Projet Webserv",
-          "description": "Un serveur HTTP haute performance et non bloquant en C++98. Inspiré de Nginx, il utilise epoll() pour le multiplexage et supporte le CGI, le téléchargement de fichiers et la gestion des requêtes conforme aux normes RFC.",
-          "tech": "C++, Linux, HTTP, Socket Programming",
+          "title": "Webserver — Serveur HTTP Type Nginx",
+          "description": "Un serveur HTTP haute performance et non-bloquant construit en C++98 inspiré de Nginx. Utilise epoll() pour le multiplexage E/S et supporte CGI, uploads de fichiers et traitement de requêtes conforme aux RFC.",
+          "tech": "C++, Linux, HTTP/1.1, Socket Programming, epoll",
           "image": "/images/projects/Webserv-Project.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Serveurs Web & Réseaux",
           "type": "academic",
-          "status": "completed",
+          "status": "terminé",
           "href": "/portfolio/webserv-project",
-          "highlightsHeading": "key features & compétences",
+          "highlightsHeading": "Fonctionnalités clés & compétences",
           "detail": {
             "seo": {
-              "title": "Webserv | Serveur HTTP C++ & epoll | Devsign",
-              "description": "Serveur non bloquant avec epoll, CGI et uploads — compétences serveur fondamentales.",
+              "title": "Serveur HTTP Type Nginx — C++ epoll & CGI | Devsign",
+              "description": "Serveur HTTP non-bloquant personnalisé en C++98 avec multiplexage epoll, support CGI, uploads de fichiers et traitement de requêtes orienté RFC — compétences fondamentales en ingénierie serveur et réseaux.",
               "keywords": [
                 "serveur HTTP C++",
-                "epoll",
-                "webserv",
-                "sockets Linux",
-                "CGI",
-                "haute performance"
+                "serveur type Nginx",
+                "multiplexage epoll",
+                "serveur web non-bloquant",
+                "programmation sockets Linux",
+                "implémentation CGI C++",
+                "serveur haute performance",
+                "serveur HTTP conforme RFC",
+                "serveur web from scratch"
               ]
             },
-            "intro": "Créer un serveur web personnalisé à partir de zéro permet de comprendre ce que les frameworks modernes abstraient souvent : la gestion des connexions, le parsing des requêtes, le respect du protocole et la performance sous charge. Inspiré de Nginx, ce projet implémente une architecture scalable basée sur epoll pour gérer efficacement plusieurs connexions simultanées.",
+            "intro": "Construire un serveur web de qualité production from scratch révèle ce que les frameworks modernes abstraient : gestion des connexions, parsing des requêtes, conformité protocolaire et maintien des performances sous charge concurrente. Inspiré par Nginx, ce projet implémente une architecture évolutive utilisant epoll pour gérer efficacement des milliers de connexions client simultanées.",
             "sections": [
               {
-                "title": "Architecture & fonctionnalités",
-                "body": "Développé en C++ (C++98), le serveur repose sur des sockets non bloquants combinés à une boucle d’événements multiplexée pour des performances élevées. Il prend en charge les méthodes HTTP principales (GET, POST, DELETE), un système de configuration flexible inspiré de Nginx (routes, ports, pages d’erreur), ainsi que l’exécution CGI pour du contenu dynamique (PHP, Python). Des fonctionnalités supplémentaires incluent l’upload de fichiers sécurisé et une validation stricte des requêtes."
+                "title": "Architecture & capacités",
+                "body": "Développé en C++98, le serveur est construit sur des sockets non-bloquants combinés à une boucle d'événements multiplexée pour des E/S haute performance. Il supporte les méthodes HTTP fondamentales (GET, POST, DELETE), un système de configuration flexible inspiré de Nginx (routes, ports, pages d'erreur) et l'exécution CGI pour le contenu dynamique (PHP, Python). Des fonctionnalités supplémentaires incluent des uploads de fichiers sécurisés et une validation stricte des requêtes selon les standards HTTP."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet nous a permis de comprendre en profondeur le fonctionnement interne des serveurs web : gestion des connexions simultanées, respect du protocole HTTP et optimisation des performances avec une architecture orientée événements. Il a renforcé nos compétences en programmation bas niveau, gestion des sockets et débogage de systèmes complexes, tout en mettant en évidence les compromis entre performance, scalabilité et complexité du code."
+                "body": "Ce projet a fourni une compréhension profonde du fonctionnement interne des serveurs web : gestion de connexions concurrentes, traitement des détails du protocole HTTP et optimisation des performances avec des architectures orientées événements. Il a renforcé nos compétences en programmation réseau bas niveau, gestion des sockets et débogage de systèmes complexes, tout en mettant en lumière les compromis entre performance, évolutivité et complexité du code."
               }
             ],
             "highlights": [
-              "Design événementiel avec epoll",
-              "Parsing HTTP proche des RFC",
-              "Chemin CGI pour contenu dynamique",
-              "Compétences transférables infra & plateforme"
+              "Design orienté événements avec epoll pour des milliers de connexions concurrentes",
+              "Parsing HTTP et génération de réponses orientés RFC",
+              "Chemin CGI pour l'exécution de contenu dynamique et l'extensibilité",
+              "Configuration inspirée de Nginx avec hôtes virtuels et correspondance de routes"
             ]
           }
         },
         {
-          "title": "Projet Inception",
-          "description": "Projet d'administration système axé sur la virtualisation d'infrastructure. Déploiement d'un environnement multi-conteneurs avec Docker Compose, incluant Nginx, WordPress et MariaDB sur un réseau sécurisé et isolé.",
-          "tech": "Linux, Docker, Docker-compose",
+          "title": "Inception — Stack Infrastructure Docker",
+          "description": "Un environnement multi-conteneurs de type production déployé avec Docker Compose. Comprend un proxy inverse Nginx avec SSL, une couche applicative WordPress et une base de données MariaDB sur un réseau sécurisé et isolé.",
+          "tech": "Docker, Docker Compose, Linux, Nginx, MariaDB, WordPress",
           "image": "/images/projects/Inception-Project.jpg",
-          "linkLabel": "Voir les détails",
-          "category": "Programmation Système",
+          "linkLabel": "Voir plus de détails",
+          "category": "Infrastructure & DevOps",
           "type": "academic",
-          "status": "completed",
+          "status": "terminé",
           "href": "/portfolio/inception-project",
-          "highlightsHeading": "key features & compétences",
+          "highlightsHeading": "Fonctionnalités clés & compétences",
           "detail": {
             "seo": {
-              "title": "Inception | Stack Docker Compose | Devsign",
-              "description": "WordPress, Nginx, MariaDB sur réseau isolé — infrastructure reproductible avec Compose.",
+              "title": "Stack Infrastructure Docker — Nginx, WordPress, MariaDB | Devsign",
+              "description": "Stack multi-conteneurs de type production avec Docker Compose : proxy inverse Nginx avec SSL, WordPress et MariaDB sur des réseaux isolés. Projet d'orchestration de conteneurs et infrastructure-as-code.",
               "keywords": [
-                "Docker Compose",
-                "Nginx",
-                "WordPress",
-                "MariaDB",
-                "infra",
-                "DevOps"
+                "projet Docker Compose",
+                "stack Nginx WordPress MariaDB",
+                "orchestration de conteneurs",
+                "infrastructure Docker",
+                "proxy inverse SSL",
+                "réseaux conteneurs",
+                "projet Inception 42",
+                "portfolio DevOps",
+                "infrastructure as code",
+                "déploiement multi-conteneurs"
               ]
             },
-            "intro": "Inception recrée un environnement proche de la production en utilisant Docker, où plusieurs services sont isolés, sécurisés et orchestrés ensemble. L’architecture comprend un reverse proxy avec SSL (HTTPS), des services applicatifs, une base de données et un stockage persistant — le tout connecté via un réseau Docker explicite pour plus de contrôle et de fiabilité.",
+            "intro": "Ce projet recrée un environnement de type production utilisant Docker, où plusieurs services sont isolés, sécurisés et orchestrés ensemble. L'architecture comprend un proxy inverse avec SSL (HTTPS), des services applicatifs, une base de données et un stockage persistant — tous connectés via un réseau Docker explicite pour un contrôle total, une fiabilité et une parité d'environnement.",
             "sections": [
               {
                 "title": "Conteneurisation & sécurité",
-                "body": "Chaque service fonctionne dans son propre conteneur, géré avec Docker Compose pour garantir la reproductibilité et la scalabilité. Nginx est configuré comme reverse proxy avec des certificats SSL pour sécuriser le trafic HTTPS. Les volumes assurent la persistance des données, tandis que les variables d’environnement et les configurations personnalisées permettent une adaptation flexible."
+                "body": "Chaque service s'exécute dans son propre conteneur, géré avec Docker Compose pour la reproductibilité et l'évolutivité. Nginx est configuré comme proxy inverse avec des certificats SSL pour sécuriser le trafic HTTPS. Les volumes nommés assurent la persistance des données entre les redémarrages de conteneurs, tandis que les variables d'environnement et les configurations personnalisées permettent un déploiement flexible entre les environnements de développement, staging et production."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet renforce les bases du DevOps : compréhension de la conteneurisation, de l’isolation des services, du networking et de la communication sécurisée. Il met également l’accent sur la reproductibilité, en montrant comment définir une infrastructure complète en code et la redéployer de manière fiable — une pratique essentielle pour les environnements de développement, de test et de production."
+                "body": "Ce projet a construit une fondation DevOps solide : compréhension de la conteneurisation, isolation des services, réseaux inter-conteneurs et communication sécurisée. Nous avons appris à écrire des Dockerfiles et des fichiers Compose, configurer Nginx comme proxy inverse, gérer les certificats SSL/TLS et assurer la persistance des données avec des volumes. Cela a également souligné la reproductibilité — montrant comment des environnements complets peuvent être définis comme code et redéployés de manière cohérente, une pratique clé dans les workflows modernes CI/CD et infrastructure."
               }
             ],
             "highlights": [
-              "Services conteneurisés avec dépendances explicites",
-              "Réseaux isolés entre composants",
-              "Base pour parler CI/CD et parité d'environnements",
-              "Idéal pour clients cherchant un partenaire DevOps-aware"
+              "Orchestration multi-services avec Docker Compose",
+              "Frontières réseau isolées entre Nginx, WordPress et MariaDB",
+              "Proxy inverse sécurisé SSL avec terminaison HTTPS",
+              "Stockage persistant et gestion de configuration basée sur l'environnement"
             ]
           }
         },
         {
           "title": "ft_transcendence",
-          "description": "Une plateforme de Pong multijoueur en temps réel avec matchmaking en direct, systèmes de chat social et authentification OAuth2 sécurisée. Construit avec une architecture évolutive et une communication via WebSocket.",
+          "description": "Une plateforme multijoueur Pong en temps réel avec matchmaking live, systèmes de chat social et authentification OAuth2 sécurisée. Construite avec une architecture évolutive et une communication WebSocket fluide.",
           "tech": "TypeScript, PostgreSQL, Auth0, Docker, Node.js, Socket.io",
           "image": "/images/projects/ft_transcendence.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Application Web Full-Stack",
           "type": "academic",
-          "status": "completed",
+          "status": "terminé",
           "href": "/portfolio/ft_transcendence",
-          "highlightsHeading": "key features & compétences",
+          "highlightsHeading": "Fonctionnalités clés & compétences",
           "detail": {
             "seo": {
-              "title": "ft_transcendence | Pong temps réel & OAuth2 | Devsign",
-              "description": "Plateforme temps réel : matchmaking, chat, OAuth2, PostgreSQL, Docker et Socket.io.",
+              "title": "ft_transcendence — Pong Temps Réel, OAuth2, WebSockets | Devsign",
+              "description": "Plateforme temps réel full-stack : matchmaking, chat, authentification OAuth2, PostgreSQL, services conteneurisés et communication Socket.io.",
               "keywords": [
                 "ft_transcendence",
-                "Socket.io",
-                "OAuth2",
-                "TypeScript",
-                "PostgreSQL",
-                "temps réel"
+                "Socket.io temps réel",
+                "authentification OAuth2",
+                "full stack TypeScript",
+                "multijoueur PostgreSQL",
+                "application web Docker"
               ]
             },
-            "intro": "ft_transcendence est une application temps réel full-stack combinant des technologies modernes en TypeScript avec WebSockets pour offrir une expérience interactive de jeu et de communication en direct. La plateforme gère les utilisateurs authentifiés, les salles persistantes et les messages à faible latence, avec PostgreSQL pour le stockage des données.",
+            "intro": "ft_transcendence est une application temps réel full-stack combinant des technologies TypeScript modernes avec des WebSockets pour offrir un gameplay interactif et une communication live. La plateforme gère les utilisateurs authentifiés, les salles de jeu persistantes et la messagerie à faible latence, soutenue par PostgreSQL pour un stockage de données fiable.",
             "sections": [
               {
                 "title": "Architecture temps réel",
-                "body": "Le système repose sur une communication WebSocket pour des mises à jour instantanées du jeu et du chat. Il gère l’authentification des utilisateurs, le matchmaking et la synchronisation des états du jeu, tout en garantissant la cohérence des données via PostgreSQL. L’architecture équilibre réactivité et stabilité, même avec plusieurs utilisateurs simultanés."
+                "body": "Le système est conçu autour de la communication WebSocket pour des mises à jour instantanées dans le gameplay et le chat. Il gère l'authentification des utilisateurs, le matchmaking et la synchronisation des états de jeu tout en assurant la cohérence des données via une base de données PostgreSQL. L'architecture équilibre réactivité et stabilité, même sous usage concurrent."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre expertise dans les systèmes temps réel : gestion des connexions WebSocket, synchronisation des états et communication à faible latence. Nous avons également acquis de l’expérience en développement full-stack TypeScript, authentification sécurisée, conception de bases de données et déploiement d’applications scalables — des compétences clés pour les dashboards en direct, outils collaboratifs et systèmes de messagerie."
+                "body": "Ce projet a renforcé notre expertise dans la construction de systèmes temps réel : gestion des connexions WebSocket, synchronisation des états et assurance d'une communication à faible latence. Nous avons également acquis de l'expérience en développement full-stack TypeScript, authentification sécurisée, conception de base de données et déploiement d'applications évolutives — compétences clés pour les produits modernes comme les tableaux de bord live, les outils collaboratifs et les plateformes de messagerie."
               }
             ],
             "highlights": [
-              "Gameplay et chat temps réel",
-              "Flux OAuth2 sécurisés",
-              "Déploiement conteneurisé reproductible",
-              "Architecture full-stack modulaire"
+              "Gameplay et chat temps réel avec patterns d'événements évolutifs",
+              "Flux d'authentification sécurisés avec intégration OAuth2",
+              "Déploiement conteneurisé pour des environnements reproductibles",
+              "Architecture TypeScript/Node end-to-end avec frontières de modules claires"
             ]
           }
         },
         {
-          "title": "Transfert d'Argent & Convertisseur",
-          "description": "Une application web rapide et sécurisée pour le transfert d'argent et la conversion de devises. Offre des taux de change en temps réel et une interface simple pour des transactions internationales fluides.",
+          "title": "Transfert d'Argent & Convertisseur de Devises",
+          "description": "Une application web rapide et sécurisée pour transférer de l'argent et convertir des devises dans le monde entier. Elle offre des taux de change en temps réel, une interface simple et des résultats fiables pour des transactions internationales fluides.",
           "tech": "JavaScript, Bootstrap, APIs",
           "image": "/images/projects/Currency-Converter.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Application Web Full-Stack",
           "type": "personal",
-          "status": "online",
+          "status": "en ligne",
           "href": "/portfolio/money-transfer",
-          "highlightsHeading": "key features",
+          "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Convertisseur de devises & transfert | APIs | Devsign",
-              "description": "Taux en temps réel, parcours de transfert clairs et gestion d'erreurs stricte — JavaScript, Bootstrap, APIs.",
+              "title": "Convertisseur de Devises & Transfert d'Argent Web App | APIs | Devsign",
+              "description": "Utilitaire web style fintech : taux de change live, flux de transfert d'argent simples et précision pilotée par API — construit avec JavaScript, Bootstrap et gestion robuste des erreurs.",
               "keywords": [
-                "convertisseur devises",
-                "API taux",
-                "fintech UI",
-                "Bootstrap",
-                "JavaScript",
-                "Maroc"
+                "application web convertisseur devises",
+                "API taux de change",
+                "interface transfert d'argent",
+                "prototype fintech Bootstrap",
+                "intégration API JavaScript",
+                "embaucher développeur frontend Maroc"
               ]
             },
-            "intro": "Les interfaces financières doivent être calmes et précises. Nous connectons des APIs de taux avec états chargement/succès/échec explicites.",
+            "intro": "Les utilisateurs s'attendent à ce que les outils financiers soient calmes et précis. Cette application associe une expérience de conversion propre à des flux orientés transfert, soutenus par des taux live provenant d'APIs externes et une gestion attentive des cas limites comme les fournisseurs indisponibles ou les données obsolètes.",
             "sections": [
               {
-                "title": "Fiabilité",
-                "body": "Formats monétaires clairs et messages si fournisseur indisponible ou données obsolètes — patterns utiles fintech & e-commerce."
+                "title": "Fiabilité & clarté",
+                "body": "Les interfaces financières ont besoin d'états explicites : chargement, succès, échec et rafraîchissement. Nous avons priorisé un formatage lisible des devises et une messagerie transparente pour que les utilisateurs sachent toujours sur quel nombre ils agissent."
               }
             ],
             "highlights": [
-              "Récupération REST des taux",
-              "Responsive mobile & desktop",
-              "UX adaptée aux équipes fintech",
-              "Démonstration d'intégration API bout-en-bout"
+              "Récupération de taux en temps réel via des API REST",
+              "Mise en page responsive pour téléphones et ordinateurs",
+              "Patterns UX adaptés aux équipes fintech et ecommerce",
+              "Démonstration de la discipline d'intégration API de bout en bout"
             ]
           }
         },
         {
-          "title": "Gestionnaire de Maintenance Hôtelière",
-          "description": "Système interne professionnel pour la maintenance hôtelière. Simplifie le signalement des problèmes, automatise les alertes e-mail via PHPMailer et génère des rapports PDF pour les audits techniques.",
+          "title": "Gestionnaire de Problèmes Techniques Hôtel",
+          "description": "Un système interne professionnel pour la maintenance hôtelière. Rationalise le signalement des problèmes, automatise les alertes email via PHPMailer et génère des rapports PDF numériques pour les audits techniques.",
           "tech": "PHP, PHPMailer, MySQL, FPDF",
           "image": "/images/projects/Hotel-Technical-Issue-Manager.jpg",
-          "linkLabel": "Voir les détails",
+          "linkLabel": "Voir plus de détails",
           "category": "Gestion de Système",
           "type": "professional",
-          "status": "local enterprise",
+          "status": "entreprise locale",
           "href": "/portfolio/hotel-technical-issue-manager",
           "highlightsHeading": "Ce que nous avons livré",
           "detail": {
             "seo": {
-              "title": "Maintenance hôtelière | PHP, MySQL, PDF | Devsign",
-              "description": "Tickets de maintenance, alertes PHPMailer, base MySQL et rapports PDF pour audits.",
+              "title": "Système de Tickets de Maintenance Hôtel avec PHP, MySQL, PDF | Devsign",
+              "description": "Plateforme interne de maintenance hôtelière : signalement de problèmes, alertes PHPMailer, enregistrements MySQL et rapports d'audit PDF — construite pour de vraies équipes d'opérations.",
               "keywords": [
-                "hôtellerie",
-                "maintenance",
-                "PHP",
-                "MySQL",
-                "PDF",
-                "automatisation"
+                "logiciel maintenance hôtel",
+                "système de tickets PHP",
+                "alertes PHPMailer",
+                "application opérations MySQL",
+                "rapports audit PDF",
+                "outils internes entreprise Maroc"
               ]
             },
-            "intro": "Les établissements ont besoin de traçabilité du signalement à la résolution — avec escalade email et exports PDF pour conformité et prestataires.",
+            "intro": "Les hôtels ne peuvent pas se permettre des pannes silencieuses : les problèmes de CVC, plomberie ou électricité nécessitent des tickets traçables, des responsables identifiables et des pistes d'audit. Ce système digitalise le workflow du signalement à la résolution — avec une escalation par email quand chaque minute compte.",
             "sections": [
               {
                 "title": "Impact opérationnel",
-                "body": "Les alertes réduisent le délai de réponse ; les PDF facilitent management et audits."
+                "body": "Les notifications automatisées réduisent le temps de réponse, tandis que les exports PDF soutiennent les conversations de conformité et les transferts aux fournisseurs. Le modèle de base de données est construit autour des statuts, horodatages et responsabilités claires."
               }
             ],
             "highlights": [
-              "Cycle de vie de ticket structuré",
-              "E-mails pour événements critiques",
-              "Rapports pour revues direction",
-              "Automatisation métier concrète"
+              "Cycle de vie structuré du problème du signalement à la clôture",
+              "Alertes email pour les événements critiques et les transferts",
+              "Rapports PDF pour les audits et revues de gestion",
+              "Exemple pratique d'automatisation des processus métier"
             ]
           }
         },
         {
           "title": "Outil Utilitaire Calucature",
-          "description": "Un outil desktop léger développé en Python, conçu pour des calculs techniques rapides et efficaces. Grâce à une interface graphique Tkinter, il offre une expérience simple et offline pour gérer des tâches mathématiques répétitives sans dépendre d’une application web.",
+          "description": "Un utilitaire desktop léger construit avec Python, conçu pour des calculs techniques rapides et efficaces. Alimenté par une interface graphique Tkinter, il offre une expérience simple et offline-first pour gérer des tâches mathématiques répétitives sans la lourdeur des applications web.",
           "tech": "Python, Tkinter",
           "image": "/images/projects/Calucature-Utility-Tool.jpg",
-          "linkLabel": "Voir les détails",
-          "category": "Application de Bureau",
+          "linkLabel": "Voir plus de détails",
+          "category": "Application Desktop",
           "type": "personal",
-          "status": "online",
+          "status": "en ligne",
           "href": "/portfolio/calucature-utility-tool",
-          "highlightsHeading": "key features",
+          "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Calucature | Utilitaire desktop Python Tkinter | Devsign",
-              "description": "Outil léger hors-ligne avec GUI Tkinter pour calculs techniques du quotidien.",
+              "title": "Utilitaire Desktop Calucature avec Python Tkinter GUI | Devsign",
+              "description": "Outil desktop Python léger avec interface Tkinter pour des calculs techniques rapides — logiciel utilitaire offline avec un workflow simple et ciblé.",
               "keywords": [
-                "Python Tkinter",
-                "application bureau",
-                "utilitaire",
-                "calcul",
-                "desktop"
+                "application desktop Python Tkinter",
+                "interface calculatrice technique",
+                "outil utilitaire offline",
+                "automatisation desktop Maroc",
+                "outils petites entreprises",
+                "portfolio Python"
               ]
             },
-            "intro": "Tous les problèmes ne nécessitent pas une application web. Calucature est un outil desktop Python conçu pour être rapide, fiable et facile à utiliser. Il transforme les tâches répétitives en un workflow fluide, avec une interface graphique claire et optimisée pour la productivité.",
+            "intro": "Tous les problèmes n'appartiennent pas au navigateur. Calucature a été construit comme un outil desktop Python ciblé qui s'ouvre instantanément et effectue des calculs avec vitesse et fiabilité. Il transforme le travail manuel répétitif en un workflow fluide et adapté au clavier avec une interface graphique propre.",
             "sections": [
               {
                 "title": "Efficacité desktop avec Python",
-                "body": "Développée avec Python et Tkinter, l’application offre une expérience desktop légère avec une faible consommation de ressources. L’interface est pensée pour la clarté et la rapidité, permettant d’effectuer des calculs sans distraction. Sa structure modulaire facilite l’ajout de nouvelles fonctionnalités selon les besoins."
+                "body": "Construit avec Python et Tkinter, l'application offre une expérience desktop native avec une utilisation minimale des ressources. L'interface est conçue pour la clarté et la vitesse, permettant aux utilisateurs d'effectuer des calculs rapidement sans distractions. Sa structure modulaire facilite l'extension avec de nouvelles fonctionnalités ou logiques de calcul à mesure que les besoins évoluent."
               },
               {
                 "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre maîtrise de Python pour les applications desktop, notamment la conception d’interfaces graphiques, la programmation événementielle et l’expérience utilisateur. Nous avons également appris à concevoir des outils offline efficaces, à optimiser les workflows et à structurer un code maintenable et évolutif."
+                "body": "Ce projet a renforcé notre compréhension de Python pour les applications desktop, incluant la conception d'interface graphique, la programmation orientée événements et les patterns d'interaction utilisateur. Nous avons également exploré comment concevoir des outils offline efficaces, optimiser les workflows pour la productivité et structurer le code pour l'évolutivité et la maintenabilité dans des solutions logicielles petites mais pratiques."
               }
             ],
             "highlights": [
-              "Expérience desktop simple",
-              "Adapté aux calculs répétitifs",
-              "Hors-ligne pour le cœur du flux",
-              "Facile d'ajouter des modules"
+              "Expérience desktop native avec Python + Tkinter",
+              "UX ciblé pour les workflows techniques répétitifs",
+              "Offline-first : aucune dépendance réseau pour l'usage principal",
+              "Facile à étendre avec de nouveaux modules de calcul"
             ]
           }
         }
