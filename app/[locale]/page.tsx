@@ -2,7 +2,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Script from "next/script";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
@@ -13,13 +12,14 @@ import ServicesGrid from "../components/ServicesGrid";
 import AboutMeSection from "../components/AboutMeSection";
 import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
+import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
 import ArticlesSection from "../components/ArticlesSection";
 import TechnologySlider from "../components/TechnologySlider";
 import CVDownloadPopup from "../components/CVDownloadPopup";
-import { getCVOptions } from "@/app/lib/cv-data"
-import infos from "@/app/dictionaries/global.json";
+import { getCVOptions } from "@/app/lib/cv-data";
+import { WebPageSchema, FAQPageSchema } from "@/app/components/schemas";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -38,50 +38,57 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
 
-const title = isEnglish
-  ? "Expert Web Developer in Morocco | SEO, AI Overview Optimization & Digital Growth"
-  : isArabic
-    ? "مطور ويب محترف في المغرب | SEO، تحسين ظهور نتائج الذكاء الاصطناعي وحلول رقمية"
-    : "Développeur Web Expert au Maroc | SEO, Optimisation IA Overview & Croissance Digitale";
+  const title = isEnglish
+    ? "Freelance Web Developer Morocco | Next.js, SEO & AI Search"
+    : isArabic
+      ? "مطور ويب مستقل في المغرب | Next.js، SEO وتحسين البحث بالذكاء الاصطناعي"
+      : "Développeur Web Freelance au Maroc | Next.js, SEO & Optimisation IA";
 
-const description = isEnglish
-  ? "Boost your business with high-performance websites. Introduce your brand to the world with expert SEO, AI, and digital solutions in Morocco."
-  : isArabic
-    ? "عزز عملك بمواقع ويب عالية الأداء. قدّم علامتك التجارية للعالم مع SEO والذكاء الاصطناعي وحلول رقمية متخصصة في المغرب."
-    : "Boostez votre entreprise avec des sites web performants. Présentez votre marque au monde avec du SEO, de l'IA et des solutions digitales expertes au Maroc.";
-    
+  const description = isEnglish
+    ? "Full-stack Next.js developer in Morocco specializing in SEO & AI Search Optimization. I build fast websites that rank on Google and get cited by ChatGPT and other AI engines."
+    : isArabic
+      ? "مطور ويب متكامل في المغرب متخصص في Next.js وSEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة تتصدر Google وتُستشهد بها في ChatGPT."
+      : "Développeur Full-Stack Next.js au Maroc spécialisé en SEO et optimisation recherche IA. Je crée des sites rapides qui se classent sur Google et sont cités par ChatGPT et d'autres moteurs IA.";
+
   const keywords = isEnglish
     ? [
-        "Full-Stack Developer Morocco",
-        "SEO Specialist Morocco",
-        "Web Design Agency Morocco",
-        "AI Automation Agency Morocco",
-        "Business Automation Systems",
-        "Next.js Developer Morocco",
-        "Social Media Ads Expert",
-        "Social Media Ads Design",
-        "Facebook Instagram TikTok Ads",
-        "Freelance Web Development Morocco",
+        "next.js developer morocco",
+        "full stack developer morocco",
+        "web developer morocco",
+        "seo specialist morocco",
+        "ai engine optimization",
+        "ai search optimization",
+        "freelance web developer morocco",
+        "website optimization morocco",
+        "business dashboard automation",
+        "social media design morocco",
+        "next.js seo",
+        "high performance websites",
       ]
     : isArabic
       ? [
+          "مطور ناكست المغرب",
+          "مطور ويب متكامل المغرب",
           "مطور ويب المغرب",
-          "تصميم مواقع المغرب",
           "خبير سيو المغرب",
-          "تحسين محركات البحث",
-          "أتمتة الأعمال بالذكاء الاصطناعي",
-          "انشاء موقع الكتروني",
-          "وكالة ويب المغرب",
+          "تحسين محركات الذكاء الاصطناعي",
+          "تحسين البحث بالذكاء الاصطناعي",
+          "مطور ويب مستقل",
+          "أتمتة الأعمال",
+          "تصميم سوشيال ميديا",
+          "تحسين المواقع",
         ]
       : [
-          "Création site web Maroc",
-          "Développeur Web Freelance Maroc",
-          "Expert SEO Maroc",
-          "Référencement Naturel Maroc",
-          "Automatisation IA Maroc",
-          "Agence Web Maroc",
-          "Développeur Next.js",
-          "Site Web Responsive",
+          "développeur next.js maroc",
+          "développeur full-stack maroc",
+          "développeur web maroc",
+          "expert seo maroc",
+          "optimisation ia maroc",
+          "optimisation moteur ia",
+          "développeur web freelance",
+          "automatisation tableau bord",
+          "design social media maroc",
+          "optimisation site web maroc",
         ];
 
   return buildPageMetadata({
@@ -90,6 +97,8 @@ const description = isEnglish
     description,
     keywords,
     route: "",
+    ogImagePath: "/cover/Design-cover.jpg",
+    type: "website",
   });
 }
 
@@ -108,299 +117,104 @@ export default async function Home({ params }: Props) {
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
 
-  const orgDescription = isEnglish
-    ? "Web developer in Morocco specialising in professional website design, SEO optimisation, AI-powered business automation, and social-media advertising design."
-    : isArabic
-      ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الاحترافية، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وتصميم إعلانات منصات التواصل الاجتماعي."
-      : "Développeur web au Maroc spécialisé en création de sites web professionnels, optimisation SEO, automatisation d'entreprise par IA et conception publicitaire pour les réseaux sociaux.";
-  const jobTitle = isEnglish
-    ? "Full-Stack Developer, SEO Specialist & AI Automation Engineer"
-    : isArabic
-      ? "مطور Full-Stack وخبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
-      : "Développeur Full-Stack, Expert SEO & Automatisation IA";
   const webPageName = isEnglish
-    ? "Full-Stack Web Developer Morocco — Website Design, SEO & AI Automation"
+    ? "Full-Stack Next.js Developer Morocco — SEO, AI Search Optimization & Web Performance"
     : isArabic
-      ? "مطور ويب في المغرب — تطوير مواقع، خبير SEO وأتمتة الأعمال بالذكاء الاصطناعي"
-      : "Développeur Web Full-Stack Maroc — Création Site Web, SEO & Automatisation IA";
-  const webPageDescription = isEnglish
-    ? "Professional Full-Stack Web Developer in Morocco. I build modern websites, provide SEO optimisation, AI business automation and high-converting digital solutions."
-    : isArabic
-      ? "مطور ويب محترف في المغرب متخصص في تطوير مواقع الويب الحديثة، تحسين محركات البحث وأتمتة الأعمال بالذكاء الاصطناعي."
-      : "Développeur web full-stack au Maroc spécialisé en création de sites modernes, optimisation SEO et automatisation IA.";
-  const catalogName = isEnglish
-    ? "Digital Services"
-    : isArabic
-      ? "الخدمات الرقمية"
-      : "Services Digitaux";
+      ? "مطور Next.js متكامل في المغرب — SEO، تحسين البحث بالذكاء الاصطناعي وأداء الويب"
+      : "Développeur Full-Stack Next.js Maroc — SEO, Optimisation Recherche IA & Performance Web";
 
-  const services: Array<{ name: string; description: string }> = isEnglish
+  const webPageDescription = isEnglish
+    ? "Full-stack Next.js developer in Morocco specializing in SEO, AI Search Optimization, and Core Web Vitals. I build fast, high-performance websites that rank on Google and get cited by ChatGPT and other AI engines."
+    : isArabic
+      ? "مطور ويب متكامل في المغرب متخصص في Next.js وSEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة عالية الأداء تتصدر Google وتُستشهد بها في ChatGPT."
+      : "Développeur web full-stack au Maroc spécialisé en Next.js, SEO et optimisation recherche IA. Je crée des sites rapides et performants qui se classent sur Google et sont cités par ChatGPT et d'autres moteurs IA.";
+
+  const faqs = isEnglish
     ? [
         {
-          name: "Website Design & Development",
-          description:
-            "Custom, responsive websites built with Next.js and modern front-end technologies, optimised for speed, accessibility and conversion.",
+          question:
+            "What is AI Search Optimization and how is it different from SEO?",
+          answer:
+            "AI Search Optimization ensures your website appears in AI-powered search engines like ChatGPT, Google AI Overviews, and Perplexity. While traditional SEO focuses on ranking in Google Search, AIO structures your content so AI engines can understand, cite, and recommend your business as a trusted source.",
         },
         {
-          name: "SEO Optimisation",
-          description:
-            "Technical and on-page SEO audits, keyword strategy, structured data implementation and Core Web Vitals improvements to rank higher on Google.",
+          question: "Why should I choose Next.js for my business website?",
+          answer:
+            "Next.js delivers superior performance, SEO-friendliness, and scalability out of the box. With server-side rendering, static generation, and built-in Core Web Vitals optimization, Next.js sites load faster, rank higher, and convert better than traditional WordPress or plain React sites.",
         },
         {
-          name: "AI Business Automation",
-          description:
-            "End-to-end workflow automation using AI tools and APIs to reduce manual tasks, increase efficiency and scale business operations.",
+          question: "How much does it cost to hire a web developer in Morocco?",
+          answer:
+            "Pricing depends on project scope and complexity. A professional business website typically starts from 8,000 MAD, while full-stack applications and AI-integrated dashboards are quoted based on specific requirements. Contact me for a free consultation and detailed estimate.",
         },
         {
-          name: "Social Media Advertising Design",
-          description:
-            "High-converting ad creatives and campaigns for Facebook, Instagram and other platforms, designed to maximise ROI.",
-        },
-        {
-          name: "Responsive Web Development",
-          description:
-            "Mobile-first development ensuring flawless performance on every screen size and device.",
-        },
-        {
-          name: "Next.js Web Development",
-          description:
-            "Server-side rendered and statically generated web applications built with Next.js for outstanding performance and SEO.",
+          question: "Do you work with international clients or only Morocco?",
+          answer:
+            "While I'm based in Morocco, I work with startups and businesses globally. My websites are built with international SEO, multilingual support, and global performance standards — ready to serve customers anywhere in the world.",
         },
       ]
     : isArabic
       ? [
           {
-            name: "تصميم وتطوير المواقع الاحترافية",
-            description:
-              "تصميم مواقع ويب مخصصة ومتجاوبة باستخدام Next.js وأحدث تقنيات الواجهة الأمامية، محسّنة للسرعة وإمكانية الوصول والتحويل.",
+            question: "ما هو تحسين البحث بالذكاء الاصطناعي وكيف يختلف عن SEO؟",
+            answer:
+              "تحسين البحث بالذكاء الاصطناعي يضمن ظهور موقعك في محركات البحث المدعومة بالذكاء الاصطناعي مثل ChatGPT وGoogle AI Overviews وPerplexity. بينما يركز SEO التقليدي على الترتيب في بحث Google، يقوم AIO بتنظيم محتواك بحيث يمكن لمحركات الذكاء الاصطناعي فهمه والاستشهاد به والتوصية بعملك كمصدر موثوق.",
           },
           {
-            name: "تحسين محركات البحث (SEO)",
-            description:
-              "تدقيق SEO التقني والداخلي، استراتيجية الكلمات المفتاحية، تطبيق البيانات المنظمة وتحسين Core Web Vitals للحصول على تصنيف أعلى في Google.",
+            question: "لماذا يجب أن أختار Next.js لموقع أعمالي؟",
+            answer:
+              "Next.js يوفر أداءً فائقًا، وسهولة تحسين محركات البحث، وقابلية التوسع من البداية. مع العرض من جانب الخادم، والتوليد الثابت، وتحسين Core Web Vitals المدمج، فإن مواقع Next.js يتم تحميلها بشكل أسرع، وتحصل على ترتيب أعلى، وتحقق معدلات تحويل أفضل من مواقع WordPress التقليدية أو React العادية.",
           },
           {
-            name: "أتمتة الأعمال بالذكاء الاصطناعي",
-            description:
-              "أتمتة سير العمل الكاملة باستخدام أدوات الذكاء الاصطناعي وواجهات API لتقليل المهام اليدوية وزيادة الكفاءة وتوسيع نطاق العمل.",
+            question: "كم تكلفة توظيف مطور ويب في المغرب؟",
+            answer:
+              "تعتمد الأسعار على نطاق المشروع وتعقيده. عادةً ما يبدأ سعر موقع الأعمال الاحترافي من 8000 درهم مغربي، بينما يتم تقديم عروض أسعار للتطبيقات الكاملة ولوحات التحكم المدمجة بالذكاء الاصطناعي بناءً على المتطلبات المحددة. اتصل بي للحصول على استشارة مجانية وتقدير مفصل.",
           },
           {
-            name: "تصميم إعلانات منصات التواصل الاجتماعي",
-            description:
-              "تصميم إعلانات إبداعية وحملات تسويقية عالية التحويل لفيسبوك وإنستغرام وغيرها من المنصات.",
-          },
-          {
-            name: "تطوير مواقع متجاوبة مع الأجهزة المحمولة",
-            description:
-              "تطوير يُقدّم أولوية للجوال لضمان أداء مثالي على جميع أحجام الشاشات والأجهزة.",
-          },
-          {
-            name: "تطوير مواقع باستخدام Next.js",
-            description:
-              "تطبيقات ويب بالعرض من جانب الخادم والتوليد الثابت باستخدام Next.js لأداء استثنائي وتحسين محركات البحث.",
+            question: "هل تعمل مع عملاء دوليين أم فقط في المغرب؟",
+            answer:
+              "على الرغم من أنني مقيم في المغرب، إلا أنني أعمل مع الشركات الناشئة والأعمال التجارية على مستوى العالم. يتم بناء مواقعي مع تحسين محركات البحث الدولية، ودعم متعدد اللغات، ومعايير الأداء العالمية — جاهزة لخدمة العملاء في أي مكان في العالم.",
           },
         ]
       : [
           {
-            name: "Création de Sites Web Professionnels",
-            description:
-              "Sites web sur-mesure et responsives développés avec Next.js, optimisés pour la vitesse, l'accessibilité et la conversion.",
+            question:
+              "Qu'est-ce que l'Optimisation de Recherche par IA et en quoi est-elle différente du SEO ?",
+            answer:
+              "L'Optimisation de Recherche par IA garantit que votre site web apparaît dans les moteurs de recherche alimentés par l'IA tels que ChatGPT, Google AI Overviews et Perplexity. Alors que le SEO traditionnel se concentre sur le classement dans la recherche Google, l'AIO structure votre contenu pour que les moteurs d'IA puissent comprendre, citer et recommander votre entreprise comme source fiable.",
           },
           {
-            name: "Optimisation SEO",
-            description:
-              "Audit SEO technique et on-page, stratégie de mots-clés, implémentation de données structurées et amélioration des Core Web Vitals.",
+            question:
+              "Pourquoi devrais-je choisir Next.js pour mon site web d'entreprise ?",
+            answer:
+              "Next.js offre des performances supérieures, une optimisation SEO et une évolutivité dès le départ. Avec le rendu côté serveur, la génération statique et l'optimisation intégrée des Core Web Vitals, les sites Next.js se chargent plus rapidement, se classent mieux et convertissent mieux que les sites WordPress traditionnels ou React simples.",
           },
           {
-            name: "Automatisation d'Entreprise par IA",
-            description:
-              "Automatisation complète des flux de travail grâce à des outils IA et des APIs pour réduire les tâches manuelles et développer les activités.",
+            question:
+              "Combien coûte l'embauche d'un développeur web au Maroc ?",
+            answer:
+              "Les prix dépendent de la portée et de la complexité du projet. Un site web professionnel commence généralement à partir de 8000 MAD, tandis que les applications full-stack et les tableaux de bord intégrés à l'IA sont devisés en fonction des exigences spécifiques. Contactez-moi pour une consultation gratuite et un devis détaillé.",
           },
           {
-            name: "Design Publicitaire pour Réseaux Sociaux",
-            description:
-              "Créations publicitaires et campagnes à fort taux de conversion pour Facebook, Instagram et autres plateformes.",
-          },
-          {
-            name: "Développement Web Responsive",
-            description:
-              "Développement mobile-first garantissant des performances optimales sur tous les écrans.",
-          },
-          {
-            name: "Développement Web Sur-Mesure Next.js",
-            description:
-              "Applications web en rendu côté serveur et génération statique avec Next.js pour des performances et un SEO exceptionnels.",
+            question:
+              "Travaillez-vous avec des clients internationaux ou seulement au Maroc ?",
+            answer:
+              "Bien que je sois basé au Maroc, je travaille avec des startups et des entreprises à l'échelle mondiale. Mes sites web sont construits avec un SEO international, un support multilingue et des normes de performance mondiales — prêts à servir les clients partout dans le monde.",
           },
         ];
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": `${baseUrl}/#website`,
-        url: baseUrl,
-        name: "Devsignpro",
-        description: orgDescription,
-        inLanguage: locale,
-        publisher: { "@id": `${baseUrl}/#organization` },
-      },
-      {
-        "@type": "Person",
-        "@id": `${baseUrl}/#person`,
-        name: "Mohammed elghandori",
-        url: `${baseUrl}/${locale}`,
-        jobTitle: jobTitle,
-        worksFor: { "@id": `${baseUrl}/#organization` },
-        knowsAbout: [
-          "Web Development",
-          "Next.js Development",
-          "freelance web development",
-          "SEO Optimisation",
-          "Technical SEO",
-          "AI Automation",
-          "Business Process Automation",
-          "Digital Marketing",
-          "Social Media Advertising Design",
-          "Full-Stack Development",
-          "JavaScript",
-          "TypeScript",
-          "Node.js",
-        ],
-        knowsLanguage: [
-          { "@type": "Language", name: "English" },
-          { "@type": "Language", name: "French" },
-          { "@type": "Language", name: "Arabic" },
-        ],
-        sameAs: [
-          infos.social.facebook,
-          infos.social.instagram,
-          infos.social.linkedin,
-          infos.social.github,
-        ],
-      },
-
-      {
-        "@type": ["Organization", "ProfessionalService"],
-        "@id": `${baseUrl}/#organization`,
-        name: "Devsignpro",
-        url: `${baseUrl}/${locale}`,
-        logo: {
-          "@type": "ImageObject",
-          url: `${baseUrl}/logo/devsign-logo.jpg`,
-          width: 512,
-          height: 512,
-        },
-        email: infos.email,
-        description: orgDescription,
-        foundingDate: "2021",
-        priceRange: "$$",
-        founder: { "@id": `${baseUrl}/#person` },
-        address: {
-          "@type": "PostalAddress",
-          addressLocality: "Casablanca",
-          addressRegion: "Casablanca-Settat",
-          addressCountry: "MA",
-        },
-        contactPoint: {
-          "@type": "ContactPoint",
-          email: infos.email,
-          contactType: "customer service",
-          availableLanguage: ["English", "French", "Arabic"],
-        },
-        knowsAbout: [
-          "Web Development",
-          "Next.js",
-          "React",
-          "javascript",
-          "typescript",
-          "SEO",
-          "freelance web development",
-          "Technical SEO",
-          "AI Automation",
-          "Business Automation",
-          "Social Media Advertising",
-          "Digital Marketing",
-          "Full-Stack Development",
-        ],
-        areaServed: [
-          {
-            "@type": "Country",
-            name: "Morocco",
-          },
-          {
-            "@type": "Place",
-            name: "Worldwide (Remote)",
-          },
-        ],
-        sameAs: [
-          infos.social.facebook,
-          infos.social.instagram,
-          infos.social.linkedin,
-          infos.social.github,
-        ],
-        hasOfferCatalog: {
-          "@type": "OfferCatalog",
-          name: catalogName,
-          itemListElement: services.map((svc, index) => ({
-            "@type": "Offer",
-            position: index + 1,
-            itemOffered: {
-              "@type": "Service",
-              "@id": `${baseUrl}/#service-${index + 1}`,
-              name: svc.name,
-              serviceType: svc.name,
-              description: svc.description,
-              provider: { "@id": `${baseUrl}/#organization` },
-              areaServed: {
-                "@type": "Country",
-                name: "Morocco",
-              },
-            },
-          })),
-        },
-      },
-      {
-        "@type": "WebPage",
-        "@id": `${baseUrl}/${locale}#webpage`,
-        url: `${baseUrl}/${locale}`,
-        name: webPageName,
-        description: webPageDescription,
-        inLanguage: locale,
-        image: {
-          "@type": "ImageObject",
-          url: `${baseUrl}/cover/Design-cover.jpg`,
-          width: 1200,
-          height: 630,
-        },
-        isPartOf: { "@id": `${baseUrl}/#website` },
-        about: { "@id": `${baseUrl}/#organization` },
-        mainEntity: { "@id": `${baseUrl}/#organization` },
-        breadcrumb: {
-          "@type": "BreadcrumbList",
-          itemListElement: [
-            {
-              "@type": "ListItem",
-              position: 1,
-              name: isEnglish ? "Home" : isArabic ? "الرئيسية" : "Accueil",
-              item: `${baseUrl}/${locale}`,
-            },
-          ],
-        },
-        speakable: {
-          "@type": "SpeakableSpecification",
-          cssSelector: [".hero-headline", ".hero-text"],
-        },
-      },
-    ],
-  };
   return (
     <main className="bg-background text-foreground transition-colors duration-300 min-h-screen">
-      <Script
-        id="home-jsonld"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      <WebPageSchema
+        baseUrl={baseUrl}
+        locale={locale}
+        title={webPageName}
+        description={webPageDescription}
+        route=""
+        ogImagePath="/cover/Design-cover.jpg"
       />
+
+      <FAQPageSchema faqs={faqs} />
       <section
         className="relative overflow-hidden hero-section-light border-b border-border"
         aria-labelledby="hero-heading"
@@ -426,7 +240,7 @@ export default async function Home({ params }: Props) {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
-            <div className="flex flex-col gap-5 sm:gap-6">
+            <div className="flex flex-col gap-5 sm:gap-6 self-start">
               <div
                 className="inline-flex items-center gap-2 bg-primary/10 text-primary
   border border-primary/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium w-fit"
@@ -471,12 +285,9 @@ export default async function Home({ params }: Props) {
                 {t.hero.description}
               </p>
 
-              {/* focus line */}
-              <p
-                className="text-xs sm:text-sm text-muted-foreground italic border-l-2 border-primary/30 pl-3 sm:pl-4
-              rtl:border-l-0 rtl:border-r-2 rtl:pl-0 rtl:pr-3 sm:rtl:pr-4"
-              >
-                {t.hero.focus}
+              {/* GEO line */}
+              <p className="text-sm sm:text-base lg:text-md text-muted-foreground">
+                {t.hero.description_GEO}
               </p>
 
               {/* CTA buttons */}
@@ -566,9 +377,17 @@ export default async function Home({ params }: Props) {
                       {/* CV Download Button with Popup */}
                       <CVDownloadPopup
                         buttonText={t.hero.cta_download_cv || "Download CV"}
-                        popupTitle={t.hero.cv_popup_title || "Download Specialized CV"}
-                        popupDescription={t.hero.cv_popup_desc || "Choose a CV tailored to the role:"}
-                        popupFooter={t.hero.cv_popup_footer || "PDF format • Updated recently"}
+                        popupTitle={
+                          t.hero.cv_popup_title || "Download Specialized CV"
+                        }
+                        popupDescription={
+                          t.hero.cv_popup_desc ||
+                          "Choose a CV tailored to the role:"
+                        }
+                        popupFooter={
+                          t.hero.cv_popup_footer ||
+                          "PDF format • Updated recently"
+                        }
                         cvOptions={cvOptions}
                         isRtl={isArabic}
                       />
@@ -582,58 +401,113 @@ export default async function Home({ params }: Props) {
       </section>
 
       <ScrollReveal>
-        <Statistics translations={t.stats} />
+        <Statistics translations={t.stats} locale={locale} />
       </ScrollReveal>
 
-      <ScrollReveal delay={0.04}>
-        <SubTitle sectionLabel={t.services_section.sectionLabel} />
-        <ServicesGrid
-          sectionData={t.services_section}
-          servicesData={dict.pages.services_page.services}
-          locale={locale}
-        />
-      </ScrollReveal>
+      <section aria-labelledby="services-heading">
+        <ScrollReveal delay={0.04}>
+          <SubTitle
+            sectionLabel={t.services_section.sectionLabel}
+            id="services-heading"
+          />
+          <ServicesGrid
+            sectionData={t.services_section}
+            servicesData={dict.pages.services_page.services}
+            locale={locale}
+          />
+        </ScrollReveal>
+      </section>
 
-      <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.projects_section.sectionLabel} />
-        <ProjectsShowcase
-          translations={t.projects_section.subtitle}
-          projectsData={dict.pages.portfolio_page.projects}
-          locale={locale}
-        />
-      </ScrollReveal>
+      <section aria-labelledby="projects-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={t.projects_section.heading}
+            id="projects-heading"
+          />
+          <ProjectsShowcase
+            description={t.projects_section.description}
+            projectsData={dict.pages.portfolio_page.projects}
+            locale={locale}
+          />
+        </ScrollReveal>
+      </section>
 
-     <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.why_we_are_section.sectionLabel} />
-        <WhyWeAreSection translations={t.why_we_are_section} locale={locale} />
-      </ScrollReveal>
+      <section aria-labelledby="why-us-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={t.why_we_are_section.sectionLabel}
+            id="why-us-heading"
+          />
+          <WhyWeAreSection
+            translations={t.why_we_are_section}
+            locale={locale}
+          />
+        </ScrollReveal>
+      </section>
 
-      <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.about_section.sectionLabel} />
-        <AboutMeSection translations={t.about_section} locale={locale} />
-      </ScrollReveal>
+      <section aria-labelledby="about-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={t.about_section.sectionLabel}
+            id="about-heading"
+          />
+          <AboutMeSection translations={t.about_section} locale={locale} />
+        </ScrollReveal>
+      </section>
 
-      <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={t.technology_stack.sectionLabel} />
-        <p className="text-sm sm:text-base text-muted-foreground max-w-5xl mx-auto text-center leading-relaxed mb-6">
-          {t.technology_stack.description}
-        </p>
-        <TechnologySlider />
-      </ScrollReveal>
+      <section aria-labelledby="tech-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={t.technology_stack.sectionLabel}
+            id="tech-heading"
+          />
+          <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mb-6">
+            {t.technology_stack.description}
+          </p>
+          <TechnologySlider />
+        </ScrollReveal>
+      </section>
 
-      <ScrollReveal delay={0.05}>
-        <SubTitle sectionLabel={articlesPage.sectionLabel} />
-        <ArticlesSection
-          heading={articlesPage.articlesLabel}
-          description={articlesPage.description}
-          articles={articlesPage.articles.slice(0, 3)}
-          locale={locale}
-        />
-      </ScrollReveal>
+      <section aria-labelledby="articles-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={articlesPage.sectionLabel}
+            id="articles-heading"
+          />
+          <ArticlesSection
+            description={articlesPage.description}
+            cta={articlesPage.cta_btn}
+            articles={articlesPage.articles.slice(0, 3)}
+            locale={locale}
+          />
+        </ScrollReveal>
+      </section>
 
-      <ScrollReveal delay={0.05}>
-        <ContactSection translations={t.contact_section} />
-      </ScrollReveal>
+      <section aria-labelledby="faq-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={
+              locale === "ar"
+                ? "الأسئلة الشائعة"
+                : locale === "fr"
+                  ? "FAQ"
+                  : "FAQ"
+            }
+            id="faq-heading"
+          />
+          <FAQSection faqs={faqs} locale={locale} />
+        </ScrollReveal>
+      </section>
+
+      <section aria-labelledby="contact-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel={t.contact_section.sectionLabel}
+            id="contact-heading"
+          />
+          <ContactSection translations={t.contact_section} locale={locale} />
+        </ScrollReveal>
+      </section>
     </main>
   );
 }

@@ -2,63 +2,46 @@
 
 import { useEffect, useRef, useState } from "react";
 
+interface AnimatedCounterProps {
+  value: number;
+  prefix?: string;
+  suffix?: string;
+  duration?: number;
+}
+
 export default function AnimatedCounter({
   value,
   prefix = "",
   suffix = "",
-}: {
-  value: number;
-  prefix?: string;
-  suffix?: string;
-}) {
-  const [count, setCount] = useState(0);
-  const ref = useRef<HTMLDivElement>(null);
-  const [started, setStarted] = useState(false);
+  duration = 2000,
+}: AnimatedCounterProps) {
+  const [count, setCount] = useState(value);
+  const hasAnimated = useRef(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setStarted(true);
-      },
-      { threshold: 0.4 }
-    );
+    if (hasAnimated.current) return;
+    hasAnimated.current = true;
 
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+    setCount(0);
+    const startTime = performance.now();
 
-  useEffect(() => {
-    if (!started) return;
+    const animate = (timestamp: number) => {
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 4);
+      const current = Math.floor(eased * value);
 
-    let start = 0;
-    const duration = 1200;
-    const step = value / (duration / 16);
+      setCount(current);
+      if (progress < 1) requestAnimationFrame(animate);
+    };
 
-    const interval = setInterval(() => {
-      start += step;
-
-      if (start >= value) {
-        setCount(value);
-        clearInterval(interval);
-      } else {
-        setCount(Math.floor(start));
-      }
-    }, 16);
-
-    return () => clearInterval(interval);
-  }, [started, value]);
+    requestAnimationFrame(animate);
+  }, [value, duration]);
 
   return (
-    <div
-      ref={ref}
-      className="tabular-nums"
-      style={{
-        fontVariantNumeric: "tabular-nums",
-      }}
-    >
+    <span aria-hidden="true">
       {prefix}
       {count}
       {suffix}
-    </div>
+    </span>
   );
 }

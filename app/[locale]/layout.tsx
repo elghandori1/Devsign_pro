@@ -1,28 +1,43 @@
 // app/[locale]/layout.tsx
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto, Almarai } from "next/font/google";
 import Script from "next/script";
+// @ts-ignore
 import "@/app/globals.css";
+
 import { Locale, i18n } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
 import Footer from "@/app/components/Footer";
 import { getDictionary } from "@/app/lib/dictionary";
 import { I18nProvider } from "@/app/providers/i18n-provider";
-import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { PersonSchema, ProfessionalServiceSchema, WebSiteSchema } from "@/app/components/schemas";
+
 import infos from "@/app/dictionaries/global.json";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
-  preload: true,
+  display: "swap",
+  variable: "--font-roboto",
 });
 
 const almarai = Almarai({
   subsets: ["arabic"],
   weight: ["300", "400", "700", "800"],
-  preload: true,
+  display: "swap",
+  variable: "--font-almarai",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0a0a0a" },
+  ],
+};
 
 export async function generateMetadata({
   params,
@@ -33,57 +48,49 @@ export async function generateMetadata({
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-  const isEnglish = locale === "en";
-  const isArabic = locale === "ar";
+  const dict = await getDictionary(locale);
+  const layoutSeo = dict.SEO_content.layout_page;
 
-  const title = isEnglish
-    ? "Web Developer in Morocco | Website Design & SEO Solutions"
-    : isArabic
-      ? "مطور ويب في المغرب | تصميم مواقع وحلول سيو"
-      : "Développeur Web au Maroc | Création de Sites & SEO";
-
-  const description = isEnglish
-    ? "Professional web developer in Morocco specializing in modern website design, SEO optimization, ai business automation systems, and high-converting social media ads."
-    : isArabic
-      ? "مطور ويب محترف في المغرب متخصص في تصميم المواقع الحديثة، تحسين محركات البحث، أنظمة أتمتة الأعمال بالذكاء الاصطناعي وإعلانات السوشيال ميديا ذات التحويل العالي."
-      : "Développeur web professionnel au Maroc spécialisé en création de sites modernes, optimisation SEO, systèmes d'automatisation par ai et design publicitaire réseaux sociaux.";
-
-  const keywords = isEnglish
-    ? [
-      "Web Developer Morocco",
-      "Website Design Morocco",
-      "SEO Optimization Morocco",
-      "Business Automation Systems",
-      "Responsive Web Design",
-      "Social Media Ads Design",
-      "Facebook Instagram TikTok Ads",
-      "Portfolio Web Developer",
-    ]
-    : isArabic
-      ? [
-        "مطور ويب المغرب",
-        "تصميم مواقع المغرب",
-        "تحسين محركات البحث المغرب",
-        "أتمتة الأعمال",
-        "موقع ويب متجاوب",
-        "تصميم إعلانات السوشيال ميديا",
-      ]
-      : [
-        "Développeur web Maroc",
-        "Création site web Maroc",
-        "Optimisation SEO Maroc",
-        "Automatisation entreprise",
-        "Site web responsive",
-        "Design publicité réseaux sociaux",
-      ];
-
-  return buildPageMetadata({
-    locale,
-    title,
-    description,
-    keywords,
-    route: "",
-  });
+  return {
+    metadataBase: new URL(getBaseUrl()),
+    title: layoutSeo.generateMetadata.title,
+    description: layoutSeo.generateMetadata.description,
+    keywords: layoutSeo.generateMetadata.keywords,
+    applicationName: "Devsignpro",
+    creator: "Mohammed elghandori",
+    publisher: "Devsignpro",
+    authors: [{ name: "Mohammed elghandori", url: getBaseUrl() }],
+    category: "technology",
+    icons: {
+      icon: [
+        { url: "/favicon.ico", sizes: "32x32" },
+        { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
+        { url: "/favicon.svg", type: "image/svg+xml" },
+      ],
+      shortcut: ["/favicon.ico"],
+      apple: [
+        {
+          url: "/apple-touch-icon.png",
+          type: "image/png",
+          sizes: "180x180",
+        },
+      ],
+    },
+    manifest: "/site.webmanifest",
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+    },
+  };
 }
 
 export default async function RootLayout({
@@ -100,46 +107,15 @@ export default async function RootLayout({
 
   const dict = await getDictionary(locale as Locale);
   const footer = dict?.footer ?? null;
+  const layoutSeo = dict.SEO_content.layout_page;
 
-  const isEnglish = locale === "en";
-  const isArabic = locale === "ar";
   const baseUrl = getBaseUrl();
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-  const fontClassName = isArabic ? almarai.className : roboto.className;
-  const dir = isArabic ? "rtl" : "ltr";
-
-  const jsonLdDescription = isEnglish
-    ? "Web developer in Morocco offering website design, SEO optimization, business automation systems, and social media advertising design."
-    : isArabic
-      ? "مطور ويب في المغرب يقدم تصميم المواقع، تحسين محركات البحث، أنظمة أتمتة الأعمال وتصميم إعلانات السوشيال ميديا."
-      : "Développeur web au Maroc offrant création de sites, optimisation SEO, systèmes d'automatisation d'entreprise et design publicitaire pour les réseaux sociaux.";
-  const jsonLdServices = isEnglish
-    ? ["Creation of Modern Websites", "SEO Optimization", "Business Automation", "Social Media Ads Design", "Automated AI Business Systems"]
-    : isArabic
-      ? ["إنشاء مواقع حديثة", "تحسين محركات البحث", "أتمتة الأعمال", "تصميم إعلانات السوشيال ميديا", "أنظمة أعمال بالذكاء الاصطناعي"]
-      : ["Création de Sites Web", "Optimisation SEO", "Automatisation d'Entreprise", "Design Publicité Réseaux Sociaux", "Systèmes d'Automatisation AI"];
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    name: "Devsign",
-    url: baseUrl,
-    inLanguage: locale,
-    description: jsonLdDescription,
-    email: infos.email,
-    telephone: infos.phoneNumber,
-    areaServed: {
-      "@type": "Country",
-      name: "Morocco",
-    },
-    sameAs: [
-      infos.social.linkedin,
-      infos.social.instagram,
-      infos.social.facebook,
-      infos.social.github,
-    ],
-    serviceType: jsonLdServices,
-  };
-
+  const fontClassName = locale === "ar" ? almarai.className : roboto.className;
+  const dir = locale === "ar" ? "rtl" : "ltr";
+  const metadata = layoutSeo.generateMetadata;
+  const openGraph = layoutSeo.generateOpenGraph;
+  const services = openGraph.services;
   return (
     <html lang={locale} dir={dir} suppressHydrationWarning>
       <body className={`${fontClassName} antialiased`}>
@@ -160,15 +136,50 @@ export default async function RootLayout({
           </>
         ) : null}
         <I18nProvider dictionary={dict}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Navbar locale={locale} />
-          <main>{children}</main>
-          <Footer footer={footer} locale={locale} />
-        </ThemeProvider>
+          
+          <PersonSchema
+            baseUrl={baseUrl}
+            locale={locale}
+            name="Mohammed elghandori"
+            jobTitle={openGraph.jobTitle}
+            description={openGraph.personDescription}
+            image={`${baseUrl}/profile-photo.jpg`}
+            social={{
+              linkedin: infos.social.linkedin,
+              github: infos.social.github,
+              facebook: infos.social.facebook}}
+          />
+
+          <ProfessionalServiceSchema
+            baseUrl={baseUrl}
+            locale={locale}
+            name="Devsignpro"
+            description={openGraph.orgDescription}
+            email={infos.email}
+            phone={infos.phoneNumber}
+            logoUrl={`${baseUrl}/logo/devsign-logo.jpg`}
+            founderId={`${baseUrl}/#person`}
+            services={services}
+            social={{
+              linkedin: infos.social.linkedin,
+              instagram: infos.social.instagram,
+              facebook: infos.social.facebook,
+              github: infos.social.github,
+            }}
+          />
+
+          <WebSiteSchema
+            baseUrl={baseUrl}
+            locale={locale}
+            name="Devsignpro"
+            description={metadata.description}
+          />
+
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+            <Navbar locale={locale} />
+            <main>{children}</main>
+            <Footer footer={footer} locale={locale} />
+          </ThemeProvider>
         </I18nProvider>
       </body>
     </html>

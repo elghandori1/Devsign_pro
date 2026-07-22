@@ -9,14 +9,14 @@
   "homepage": {
     "hero": {
       "availability": "Available for new projects",
-      "title_line1": "Web Developer in Morocco",
-      "title_highlight": "Fast, SEO-Optimized & High-Performance Websites",
-      "description": "I'm a full-stack web developer based in Morocco, helping startups, businesses, and teams build modern, scalable websites and web applications. I focus on performance, SEO, GEO, and clean user experiences to deliver real business impact.",
-      "focus": "My focus is simple: building fast, scalable, and reliable solutions that drive real results.",
+      "title_line1": "Full-Stack Developer",
+      "title_highlight": "& Technical SEO Specialist",
+      "description": "I'm a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, and AI Search Optimization. I help startups and businesses build fast, modern websites, e-commerce stores, and custom web applications optimized for performance, Core Web Vitals, and search visibility.",
+      "description_GEO": "I engineer content and structured data to rank higher on Google and get discovered by ChatGPT, Google AI Overviews, Perplexity, and other AI search engines—driving real visibility and long-term business growth.",
       "cta_primary": "Start a Project",
-      "cta_secondary": "View Projects",
+      "cta_secondary": "View My Work",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Full-Stack Developer | SEO | AI Automation",
+      "profile_role": "Full-Stack Developer & SEO optimization",
       "cta_more_about": "More About Me",
       "cta_download_cv": "Download CV",
       "cv_popup_title": "Download Specialized CV",
@@ -30,10 +30,10 @@
     "stats": {
       "items": [
         {
-          "value": 11,
+          "value": 15,
           "prefix": "+",
           "suffix": "",
-          "text": "Happy Clients",
+          "text": "Projects Delivered",
           "subtext": "Across Morocco"
         },
         {
@@ -60,62 +60,60 @@
       ]
     },
     "services_section": {
-      "sectionLabel": "What I Offer",
-      "heading": "Digital solutions to Grow",
-      "highlight": "Your Business",
+      "sectionLabel": "Web Development & Digital Services",
+      "heading": "I build high-performance websites, e-commerce stores, custom dashboards, and AI-powered automations with Next.js, Technical SEO, Core Web Vitals, and AI Search Optimization—helping businesses improve search visibility, streamline operations, and achieve sustainable online growth.",
       "viewAll": "View All Services",
       "cta": "Learn More"
     },
     "about_section": {
       "sectionLabel": "About Me",
-      "subtitle": "Your partner for ",
-      "highlight": "digital success",
-      "paragraph1": "I’m a full-stack developer with experience building modern digital solutions. I’ve participated in multiple hackathons, winning 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat. I’ve also worked on real-world projects, helping businesses build websites, automate workflows, and improve their digital presence.",
-      "paragraph2": "I focus on delivering clean, scalable, and high-performance solutions with clear communication and measurable results. My goal is simple: help you succeed online, because your success is my success.",
+      "highlight": "Full-Stack Developer, Technical SEO & AI Search Optimization Specialist",
+      "paragraph1": "I'm a Full-Stack Web Developer and SEO Specialist based in Morocco, building high-performance Next.js websites, custom dashboards, and AI-powered automations. I help businesses improve search visibility, streamline operations, and scale online with clean, measurable solutions.",
+      "paragraph2": "My work has been tested under pressure, winning 1st place at Al Akhawayn University and UM6P Ben Guerir hackathons, and 2nd place at UM6P Rabat. These experiences sharpened my ability to collaborate in fast-paced teams, ship production-ready code using Git, Docker, and CI/CD pipelines, and deliver reliable software through agile workflows and rigorous code reviews.",
       "cta": "More About Me"
     },
     "why_we_are_section": {
       "sectionLabel": "Why Choose Me",
-      "description": "I help businesses, startups, and individuals build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real value and long-term impact.",
-      "subtitle": "What makes me the right partner for your success",
+      "description": "I help startups, businesses, and entrepreneurs build high-performance websites, e-commerce stores, and digital solutions that are fast, SEO-optimized, AI-ready, and designed to generate long-term business growth—not just beautiful interfaces.",
       "reasons": [
         {
-          "title": "Performance & Quality",
-          "description": "Fast, optimized, and scalable applications built with modern technologies and best practices."
+          "title": "Technical SEO & AI Search Optimization",
+          "description": "Every project is built with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, ChatGPT, Google AI Overviews, and other AI-powered search engines."
         },
         {
-          "title": "SEO & Responsive Design",
-          "description": "Every project is mobile-first and optimized for search engines and all devices."
+          "title": "Modern Full-Stack Development",
+          "description": "Custom websites, e-commerce stores, dashboards, and web applications built with Next.js, React, and scalable technologies for speed, security, and long-term growth."
         },
         {
-          "title": "Clear Communication",
-          "description": "Transparent workflow, regular updates, and ongoing support."
+          "title": "Automation & Business Efficiency",
+          "description": "Automate repetitive tasks, centralize business operations, and integrate AI-powered workflows that save time, improve productivity, and support smarter decision-making."
         },
         {
-          "title": "Reliable Results",
-          "description": "Focused on delivering real outcomes and client satisfaction."
+          "title": "Performance, Reliability & Support",
+          "description": "Fast-loading, secure, and scalable solutions backed by clean code, responsive communication, and ongoing support to keep your business performing at its best."
         }
       ]
     },
     "projects_section": {
-      "sectionLabel": "Selected Projects",
-      "subtitle": "Selected work that delivers real results"
+      "heading": "Projects That Deliver Real Impact",
+      "description": "Explore a selection of business websites, e-commerce solutions, custom dashboards, and AI-powered automations built with Next.js, Technical SEO, and performance-first development. Every project focuses on speed, scalability, user experience, and measurable business results."
     },
     "technology_stack": {
-      "sectionLabel": "Technologies & tools I Work With",
-      "description": "I choose the right tools for each project based on your needs and goals. My expertise includes:"
+      "sectionLabel": "Technology Stack",
+      "description": "I build with a modern full-stack ecosystem optimized for performance, SEO, and AI search visibility — including Next.js, React, TypeScript, Node.js, MongoDB, Docker, and cloud infrastructure."
     },
     "contact_section": {
-      "sectionLabel": "Get in Touch",
-      "description": "Have a project in mind or looking to collaborate? Let’s connect and build something impactful.",
-      "cta_message": "",
+      "sectionLabel": "Let's Build Something Together",
+      "description": "Need a fast Next.js website, SEO optimization, or an AI-powered dashboard? I'm available for freelance projects, collaborations, and long-term partnerships. Reach out and let's discuss how I can help you grow online.",
       "whatsapp": "WhatsApp",
-      "whatsappCta": "Chat now",
+      "whatsappCta": "Chat on WhatsApp",
       "email": "Email",
-      "emailCta": "Send email",
+      "emailCta": "Send an email",
+      "linkedin": "LinkedIn",
+      "linkedinCta": "Connect on LinkedIn",
       "instagram": "Instagram",
       "instagramLabel": "followers",
-      "instagramCta": "Visit Instagram",
+      "instagramCta": "Follow on Instagram",
       "brandName": "Instagram"
     }
   },
@@ -505,7 +503,7 @@
       "subtitle": "Selected Work",
       "heading": "Projects That Deliver Real Impact",
       "description": "A selection portfolio of web applications, responsive websites, social media ad designs, and AI-powered automation tools I've designed and developed. Each project is built with a strong focus on performance, scalability, user experience (UX), and real-world application — covering client projects, personal initiatives, and academic work.",
-      "viewCase": "View details",
+      "viewCase": "Project showcase",
       "cta": "Start a project together",
       "cta_other": "See other projects",
       "ui": {
@@ -550,10 +548,10 @@
       "projects": [
         {
           "title": "Corporate Website & SEO Growth",
-          "description": "Designed and developed a high-performance corporate website to showcase services and products. Optimized for speed, SEO, and user experience, resulting in 2,900+ new users in just 2 months and improved online visibility.",
-          "tech": "Next.js, SEO Optimization, MongoDB",
+          "description": "Designed and developed a high-performance corporate website with Next.js to showcase services and products. Optimized for Technical SEO, Core Web Vitals, accessibility, and user experience, resulting in more than 2,900 new users within two months while significantly improving search visibility and organic traffic.",
+          "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "See more details",
+          "linkLabel": "View case study",
           "category": "Web Development & SEO",
           "type": "professional",
           "status": "online",
@@ -594,10 +592,10 @@
         },
         {
           "title": "Business Automation Dashboard",
-          "description": "Developed a custom dashboard to centralize client management, subscriptions, and business operations. Automated tracking of billing cycles, stock, and service status reduced manual work, improved organization, and increased overall efficiency and client satisfaction.",
-          "tech": "React JS, Express JS, REST API",
+          "description": "Developed a custom business dashboard to centralize client management, subscriptions, inventory, and daily operations. Automated billing cycles, stock monitoring, and service tracking to reduce manual work, improve productivity, and streamline business workflows through intelligent automation.",
+          "tech": "React, Express.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "See more details",
+          "linkLabel": "View case study",
           "category": "Systems & Automation",
           "type": "professional",
           "status": "local enterprise",
@@ -632,10 +630,10 @@
         },
         {
           "title": "E-commerce Landing Page",
-          "description": "Designed a high-conversion landing page for product promotion and advertising campaigns. Optimized for fast loading, mobile experience, and clear product presentation, helping increase user engagement and conversion rates. Integrated with a dashboard for real-time content updates and campaign optimization.",
-          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "description": "Designed and developed a high-converting e-commerce landing page optimized for speed, mobile performance, Technical SEO, and conversion. Integrated with a custom dashboard for real-time content management, campaign optimization, and improved marketing performance.",
+          "tech": "Next.js, Tailwind CSS, Technical SEO",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
-          "linkLabel": "See more details",
+          "linkLabel": "View case study",
           "category": "Web Development & SEO",
           "type": "professional",
           "status": "online",
@@ -1203,10 +1201,9 @@
       }
     },
     "articles_page": {
-      "subtitle": "Real experience, practical insights",
-      "heading": "Articles, Ideas & Technical Notes",
-      "description": "I share articles based on my real-world experience in web development and freelancing. Each article offers practical advice, tool recommendations, and technical insights to help developers, freelancers, and entrepreneurs succeed in the digital world.",
-      "sectionLabel": "What I write about",
+      "sectionLabel": "Articles & Guides",
+      "description": "I write based on real-world experience — from choosing the best laptop for coding in 2026, to inspecting used laptops before buying, to Technical SEO, AI Search Optimization, and building fast websites with Next.js. Every article is built to help you make better decisions and grow online.",
+      "cta_btn": "Read Article",
       "articlesLabel": "Latest Articles",
       "topics": [
         {
@@ -1321,5 +1318,48 @@
     "followTitle": "Follow me",
     "contactTitle": "Contact",
     "copyright": "© {year} Devsign. All rights reserved."
+  },
+  "SEO_content": {
+    "layout_page": {
+      "generateMetadata": {
+        "title": "Freelance Web Developer Morocco | Next.js, SEO & AI Search",
+        "description": "Freelance web developer in Morocco specializing in Next.js, SEO, and AI Search Optimization. I build high-performance websites that rank and convert.",
+        "keywords": [
+          "web developer morocco",
+          "next.js developer morocco",
+          "freelance web developer morocco",
+          "website design morocco",
+          "ecommerce website morocco",
+          "seo specialist morocco",
+          "ai search optimization",
+          "generative engine optimization",
+          "full stack developer morocco",
+          "high performance websites"
+        ]
+      },
+      "generateOpenGraph": {
+        "personDescription": "Freelance Full-Stack Web Developer based in Morocco, specializing in Next.js, Technical SEO, AI Search Optimization, Core Web Vitals, and high-performance websites for businesses and e-commerce.",
+        "orgDescription": "Custom websites and e-commerce solutions built with Next.js. Optimized for Google Search, AI search engines, Core Web Vitals, and business growth.",
+        "jobTitle": "Full-Stack Developer, SEO Expert & AI Search Optimization Specialist",
+        "services": [
+          {
+            "name": "Business Website Development",
+            "description": "Custom Next.js business websites optimized for SEO, Core Web Vitals, accessibility, and AI search engines."
+          },
+          {
+            "name": "E-commerce Website Development",
+            "description": "Fast, secure online stores with excellent user experience, technical SEO, and high conversion performance."
+          },
+          {
+            "name": "Technical SEO & AI Search Optimization",
+            "description": "Improve visibility in Google Search, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search experiences."
+          },
+          {
+            "name": "Website Performance Optimization",
+            "description": "Increase speed, Core Web Vitals scores, accessibility, and overall website performance for better rankings and user experience."
+          }
+        ]
+      }
+    }
   }
 }

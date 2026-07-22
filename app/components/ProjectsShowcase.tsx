@@ -1,34 +1,48 @@
 // components/ProjectsShowcase.tsx
 import { Locale } from "@/i18n-config";
-import ProjectsShowcaseSlider, { ProjectItem } from "./ProjectsShowcaseSlider";
+import ProjectsShowcaseSlider from "./ProjectsShowcaseSlider";
+
+export interface ProjectItem {
+  title: string;
+  description: string;
+  tech: string;
+  image: string;
+  linkLabel: string;
+  category?: string;
+  type?: string;
+  status?: string;
+  href: string;
+}
 
 interface ProjectsShowcaseProps {
-  translations: string;
+  description:string;
   projectsData: ProjectItem[];
   locale: Locale;
 }
 
 export default function ProjectsShowcase({
-  translations,
+   description,
   projectsData,
   locale,
 }: ProjectsShowcaseProps) {
   const isRtl = locale === "ar";
+  const professionalProjects = projectsData
+    .filter((p) => p.type === "professional")
+    .slice(0, 3);
 
   return (
-    <section
-      id="projects"
-      className="pt-8 md:pt-10 pb-2 bg-muted/10 transition-colors duration-300"
+    <div
+      className="transition-colors duration-300"
       dir={isRtl ? "rtl" : "ltr"}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-8">
-          <p id="projects-heading" className="text-muted-foreground max-w-xl mx-auto">
-            {translations}
+        <div className="text-center mb-10 sm:mb-12">
+          <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            {description}
           </p>
         </div>
-        <ProjectsShowcaseSlider projects={projectsData} locale={locale} />
+        <ProjectsShowcaseSlider projects={professionalProjects} locale={locale} />
       </div>
-    </section>
+    </div>
   );
 }
