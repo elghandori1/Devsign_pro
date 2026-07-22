@@ -70,6 +70,8 @@ const titles = {
     description: descriptions[locale],
     route: "/services",
     keywords: getSEOKeywords(locale),
+        ogImagePath: "/cover/Design-cover.jpg",
+    type: "website",
   });
 }
 
@@ -554,7 +556,7 @@ export default async function ServicesPage({ params }: Props) {
 
       {/* ── 5. STATISTICS ── */}
       <div className="border-t border-border">
-        <Statistics translations={dict.homepage.stats} />
+        <Statistics translations={dict.homepage.stats} locale={locale} />
       </div>
 
       {/* ── 6. FINAL CTA ── */}

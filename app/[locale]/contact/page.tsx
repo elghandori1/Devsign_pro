@@ -52,6 +52,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     route: "/contact",
     keywords,
+    ogImagePath: "/cover/Design-cover.jpg",
+    type: "website",
   });
 }
 

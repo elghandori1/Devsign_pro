@@ -16,9 +16,11 @@ interface StatsTranslations {
 export default function Statistics({
   translations,
   locale,
+  id = "stats-heading",
 }: {
   translations: StatsTranslations;
   locale: string;
+  id?: string;
 }) {
   if (!translations?.items) return null;
 
@@ -28,18 +30,18 @@ export default function Statistics({
     locale === "en"
       ? "Key Business Metrics and Achievements"
       : locale === "fr"
-      ? "Principaux indicateurs et réalisations"
-      : "المقاييس والإنجازات الرئيسية";
+        ? "Principaux indicateurs et réalisations"
+        : "المقاييس والإنجازات الرئيسية";
 
   return (
-    <section
+    <div
       className="max-w-7xl mx-auto px-4 py-12 sm:py-16 fade-in-section"
-      aria-labelledby="stats-heading"
+      aria-labelledby={id}
     >
       <div className="text-center mb-8 sm:mb-10">
         <h2
-          id="stats-heading"
-        className="font-bold text-lg sm:text-xl uppercase shrink-0"
+          id={id}
+          className="font-bold text-lg sm:text-xl uppercase shrink-0"
         >
           {headingText}
         </h2>
@@ -91,6 +93,6 @@ export default function Statistics({
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

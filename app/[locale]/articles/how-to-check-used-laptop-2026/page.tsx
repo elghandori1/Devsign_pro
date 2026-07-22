@@ -45,7 +45,6 @@ type ArticleEntry = {
 };
 
 type ArticlesPageData = {
-  heading: string;
   articles: ArticleEntry[];
 };
 
@@ -76,6 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     route: ARTICLE_PATH,
     ogImagePath: article.image,
+    type: "article",
   });
 }
 

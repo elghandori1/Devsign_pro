@@ -399,10 +399,15 @@ export default async function Home({ params }: Props) {
           </div>
         </div>
       </section>
-
-      <ScrollReveal>
-        <Statistics translations={t.stats} locale={locale} />
-      </ScrollReveal>
+      <section aria-labelledby="statistics-heading">
+        <ScrollReveal>
+          <Statistics
+            translations={t.stats}
+            locale={locale}
+            id="statistics-heading"
+          />
+        </ScrollReveal>
+      </section>
 
       <section aria-labelledby="services-heading">
         <ScrollReveal delay={0.04}>

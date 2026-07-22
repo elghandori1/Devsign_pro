@@ -31,12 +31,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
- const title =
-  locale === "en"
-    ? "Full-Stack Web Developer & AI Automation Expert in Morocco | Devsign"
-    : locale === "ar"
-      ? "مطور ويب Full-Stack وخبير أتمتة الذكاء الاصطناعي في المغرب | Devsign"
-      : "Développeur Full-Stack & Expert en Automatisation IA au Maroc | Devsign";
+  const title =
+    locale === "en"
+      ? "Full-Stack Web Developer & AI Automation Expert in Morocco | Devsign"
+      : locale === "ar"
+        ? "مطور ويب Full-Stack وخبير أتمتة الذكاء الاصطناعي في المغرب | Devsign"
+        : "Développeur Full-Stack & Expert en Automatisation IA au Maroc | Devsign";
 
   const description =
     locale === "en"
@@ -47,7 +47,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const keywords =
     locale === "en"
-      ? ["web developer Morocco", "full-stack developer", "portfolio", "freelance"]
+      ? [
+          "web developer Morocco",
+          "full-stack developer",
+          "portfolio",
+          "freelance",
+        ]
       : locale === "ar"
         ? ["مطور ويب المغرب", "مطور Full-Stack", "أعمالي"]
         : ["développeur web Maroc", "développeur Full-Stack", "portfolio"];
@@ -58,6 +63,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     route: "/about",
     keywords,
+    ogImagePath: "/cover/Design-cover.jpg",
+    type: "website",
   });
 }
 
@@ -451,7 +458,7 @@ export default async function AboutPage({ params }: Props) {
           </div>
         </section>
       )}
-   
+
       {/* ── 8. CTA ── */}
       <section className="border-t border-border bg-muted/10">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">

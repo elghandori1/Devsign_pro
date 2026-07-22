@@ -78,6 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: project.detail.seo.keywords,
     route,
     ogImagePath: project.image,
+    type: "website",
   });
 }
 

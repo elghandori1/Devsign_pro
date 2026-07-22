@@ -501,11 +501,11 @@
     },
     "portfolio_page": {
       "subtitle": "Selected Work",
-      "heading": "Projects That Deliver Real Impact",
-      "description": "A selection portfolio of web applications, responsive websites, social media ad designs, and AI-powered automation tools I've designed and developed. Each project is built with a strong focus on performance, scalability, user experience (UX), and real-world application — covering client projects, personal initiatives, and academic work.",
-      "viewCase": "Project showcase",
-      "cta": "Start a project together",
-      "cta_other": "See other projects",
+      "heading": "High-Performance Websites, E-Commerce, Dashboards & AI Automation",
+      "description": "Explore 10+ real-world projects including SEO-optimized corporate websites, high-converting e-commerce stores, business automation dashboards, and AI-powered tools. Each project demonstrates expertise in Next.js, Technical SEO, Core Web Vitals, and scalable cloud architecture — from client work and personal initiatives to advanced academic systems programming.",
+      "viewCase": "View Project",
+      "cta": "Start Your Project",
+      "cta_other": "Explore More Projects",
       "ui": {
         "filterBy": "Filter by",
         "displayModes": {
@@ -530,9 +530,9 @@
         },
         "emptyStateTitle": "No projects found",
         "emptyStateText": "Try selecting another project category.",
-        "ctaTitle": "Got a project idea? Let's make it happen.",
-        "ctaExplore": " Click to explore",
-        "ctaDescription": "I work with businesses, founders, and teams to design and build reliable, high-performance digital products."
+        "ctaTitle": "Have a project in mind?",
+        "ctaExplore": "View details",
+        "ctaDescription": "I collaborate with startups and businesses to build fast, reliable, and search-optimized digital products that drive measurable growth."
       },
       "caseStudyUi": {
         "breadcrumbHome": "Home",
@@ -1060,67 +1060,24 @@
               "Practical example of business process automation"
             ]
           }
-        },
-        {
-          "title": "Calucature Utility Tool",
-          "description": "A lightweight desktop utility built with Python, designed for fast and efficient technical calculations. Powered by a Tkinter-based GUI, it provides a simple, offline-first experience for handling repetitive mathematical tasks without the overhead of web applications.",
-          "tech": "Python, Tkinter",
-          "image": "/images/projects/Calucature-Utility-Tool.jpg",
-          "linkLabel": "See more details",
-          "category": "Desktop Application",
-          "type": "personal",
-          "status": "online",
-          "href": "/portfolio/calucature-utility-tool",
-          "highlightsHeading": "key features",
-          "detail": {
-            "seo": {
-              "title": "Calucature Desktop Utility with Python Tkinter GUI | Devsign",
-              "description": "Lightweight Python desktop tool with Tkinter GUI for fast technical calculations — offline utility software with a simple, focused workflow.",
-              "keywords": [
-                "Python Tkinter desktop app",
-                "technical calculator GUI",
-                "offline utility tool",
-                "desktop automation Morocco",
-                "small business tools",
-                "Python portfolio"
-              ]
-            },
-            "intro": "Not every problem belongs in the browser. Calucature was built as a focused Python desktop tool that opens instantly and performs calculations with speed and reliability. It transforms repetitive manual work into a smooth, keyboard-friendly workflow with a clean graphical interface.",
-            "sections": [
-              {
-                "title": "Desktop efficiency with Python",
-                "body": "Built using Python and Tkinter, the application delivers a native-like desktop experience with minimal resource usage. The interface is designed for clarity and speed, allowing users to perform calculations quickly without distractions. Its modular structure makes it easy to extend with new features or calculation logic as needs evolve."
-              },
-              {
-                "title": "What we learned",
-                "body": "This project strengthened our understanding of Python for desktop applications, including GUI design, event-driven programming, and user interaction patterns. We also explored how to design efficient offline tools, optimize workflows for productivity, and structure code for scalability and maintainability in small but practical software solutions."
-              }
-            ],
-            "highlights": [
-              "Native-feeling desktop experience with Python + Tkinter",
-              "Focused UX for repetitive technical workflows",
-              "Offline-first: no network dependency for core usage",
-              "Easy to extend with new calculation modules"
-            ]
-          }
         }
       ],
-      "Warning": "The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
+      "Warning": "Client projects shown here are published with authorization. Some work is not displayed to respect confidentiality and non-disclosure agreements.",
       "whyChooseUs": {
-        "title": "Why collaborate with me?",
-        "subtitle": "I don't just deliver code, I deliver outcomes. Here's what you can expect when we work together.",
+        "title": "Why Work With Me",
+        "subtitle": "I build solutions that rank on Google, convert visitors, and scale with your business — not just code that runs.",
         "reasons": [
           {
-            "title": "Outcome-Focused Delivery",
-            "text": "Every decision design, tech stack, structure is tied to a real business goal: more traffic, higher conversions, or less manual work."
+            "title": "Business-First Development",
+            "text": "Every feature, design choice, and tech decision is tied to a measurable outcome: higher search rankings through Technical SEO, more conversions, or AI-powered workflows that save hours of manual work."
           },
           {
-            "title": "End-to-End Ownership",
-            "text": "From first sketch to final deployment, I own the full build. No broken handoffs, no lost context just clean, consistent execution."
+            "title": "Full-Stack Ownership",
+            "text": "From Technical SEO, UI/UX design, and Next.js development to deployment and Core Web Vitals tuning, I handle the entire build. No handoffs, no gaps — just clean, consistent delivery."
           },
           {
-            "title": "Built to Last & Scale",
-            "text": "Modern architecture and clean code mean your product evolves with your ambitions not against them."
+            "title": "Future-Proof Architecture",
+            "text": "Built with Next.js, modern cloud infrastructure, and scalable patterns so your website or dashboard grows with your ambitions, not against them."
           }
         ]
       }
@@ -1202,6 +1159,8 @@
     },
     "articles_page": {
       "sectionLabel": "Articles & Guides",
+      "subtitle": "",
+      "heading": "",
       "description": "I write based on real-world experience — from choosing the best laptop for coding in 2026, to inspecting used laptops before buying, to Technical SEO, AI Search Optimization, and building fast websites with Next.js. Every article is built to help you make better decisions and grow online.",
       "cta_btn": "Read Article",
       "articlesLabel": "Latest Articles",
@@ -1300,7 +1259,7 @@
       },
       {
         "label": "Projects",
-        "href": "/projects"
+        "href": "/portfolio"
       },
       {
         "label": "About",
