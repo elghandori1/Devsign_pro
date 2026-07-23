@@ -14,7 +14,7 @@ export function WebPageSchema({
   title,
   description,
   route = "",
-  ogImagePath = "/cover/Design-cover.jpg",
+  ogImagePath = "/cover/Designpro-cover.jpg",
 }: Props) {
   const currentUrl = `${baseUrl}/${locale}${route ? `/${route}` : ""}`;
 

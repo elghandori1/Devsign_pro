@@ -55,7 +55,7 @@ export function buildPageMetadata({
       ? ogImagePath.startsWith("http")
         ? ogImagePath
         : `${baseUrl}${ogImagePath.startsWith("/") ? "" : "/"}${ogImagePath}`
-      : `${baseUrl}/cover/Design-cover.jpg`;
+      : `${baseUrl}/cover/Designpro-cover.jpg`;
   return {
     metadataBase: new URL(baseUrl),
     title,

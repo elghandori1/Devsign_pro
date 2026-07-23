@@ -86,6 +86,7 @@ export default function PortfolioSchema({
       })),
     },
   };
+  
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -94,7 +95,7 @@ export default function PortfolioSchema({
         "@type": "ListItem",
         position: 1,
         name:
-          locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
         item: `${baseUrl}/${locale}`,
       },
       {

@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: data.description,
     route: "/services/social-design",
     keywords: keywords,
-        ogImagePath: "/cover/Design-cover.jpg",
+        ogImagePath: "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }

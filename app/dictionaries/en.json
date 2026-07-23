@@ -119,15 +119,17 @@
   },
   "pages": {
     "services_page": {
-      "title": "What I Do",
-      "subtitle": "My Digital Services",
-      "heading": "Web Development, SEO & AI Automation Solutions in Morocco",
-      "description": "Looking for a professional in web development, SEO optimization, or AI automation in Morocco? I build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
+      "title": "Services",
+      "subtitle": "Web Development & Digital Solutions",
+      "heading": "Web Development, Technical SEO & AI Automation Services in Morocco",
+      "description": "Grow your business with high-performance Next.js websites, e-commerce stores, Technical SEO, and AI Search Optimization (GEO/AEO). I build fast, scalable digital solutions from Morocco that improve visibility on Google, get cited by ChatGPT and Perplexity, streamline operations, and generate measurable business growth.",
       "hashtags": [
         "#WebDevelopment",
-        "#SEO",
-        "#AIAutomation",
-        "#DigitalSolutions"
+        "#Nextjs",
+        "#TechnicalSEO",
+        "#AISearchOptimization",
+        "#BusinessAutomation",
+        "#AIIntegration"
       ],
       "services": {
         "web": {
@@ -361,37 +363,37 @@
           ]
         }
       },
-      "cta": "Explore this service",
-      "Selected_projects": "Selected Projects",
-      "Real_results": "Real projects that showcase practical solutions and measurable impact.",
+      "cta": "Explore Service",
+      "Selected_projects": "Selected Client Projects",
+      "Real_results": "Real websites, dashboards, and AI solutions delivering measurable business results, improved search visibility, and better user experiences.",
       "View_All_Projects": "View All Projects",
-      "viewDetails": "View details",
+      "viewDetails": "View Case Study",
       "whyChooseUs": {
         "title": "Why Work With Me",
-        "subtitle": "I focus on building solutions that deliver real value, not just features.",
+        "subtitle": "Modern web development focused on performance, SEO, AI search visibility, and long-term business growth.",
         "reasons": [
           {
-            "title": "Results-Driven Approach",
-            "text": "Every project is built with a clear objective: performance, usability, and business impact."
+            "title": "Business-Focused Solutions",
+            "text": "Every website and application is designed to increase visibility, improve user experience, and support measurable business growth."
           },
           {
-            "title": "Full-Stack Expertise",
-            "text": "From frontend to backend, SEO to automation — I handle the full development process."
+            "title": "Full-Stack Development & Technical SEO",
+            "text": "From Next.js development and APIs to Technical SEO, Core Web Vitals, and AI Search Optimization, everything is handled in one place."
           },
           {
-            "title": "Scalable & Maintainable",
-            "text": "Clean code, modern tools, and structured architecture that grows with your needs."
+            "title": "Scalable, Reliable & Future-Ready",
+            "text": "Clean architecture, modern technologies, automation, and maintainable code that scale as your business grows."
           }
         ]
       },
-      "ctat_title": "Have a Project or Opportunity?",
-      "cta_desc": "Whether you need a developer for your team or want to build a project, let’s connect.",
-      "cta_btn": "Start the conversation"
+      "ctat_title": "Ready to Build Your Next Project?",
+      "cta_desc": "Whether you need a business website, e-commerce store, custom dashboard, or AI-powered automation, let's build a fast, scalable solution that helps your business grow.",
+      "cta_btn": "Start Your Project"
     },
     "about_page": {
       "title": "About Me",
-      "heading": "Full-Stack Developer in Morocco Focused on Real, Impactful Web Solutions",
-      "intro": "I’m a full-stack web developer who builds modern, high-performance web applications. I help businesses and teams create fast, scalable, and user-focused digital products, with a strong focus on performance, SEO, and real-world results.",
+      "heading": "Full-Stack Web Developer, SEO Specialist & AI Search Optimization Expert in Morocco",
+      "intro": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist based in Morocco. I design and build high-performance websites, e-commerce stores, business dashboards, and AI-powered web applications using Next.js and modern web technologies. Every project is developed with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines.",
       "stats": {
         "years": "Years of Experience",
         "clients": "Satisfied Clients",
@@ -399,22 +401,23 @@
       },
       "whoIAm": {
         "title": "Who I Am",
-        "paragraph1": "I'm Mohammed elghandori, a full-stack developer, passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337 School UM6P, (part of the prestigious 42 Network). I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
-        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success."
+        "paragraph1": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist passionate about building modern web experiences that solve real business problems. I studied software engineering at 1337 School UM6P (42 Network), where I developed strong foundations in computer science, algorithms, operating systems, networking, software architecture, and collaborative software development. Along the way, I earned certifications in web development, digital marketing, and artificial intelligence while continuously improving my technical expertise.",
+        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results.Whether you're a startup or an enterprise targeting global markets, I'm committed to helping you succeed online with solutions that work, because your success is my success"
       },
       "experience": {
         "title": "My Experience & Background",
-        "paragraph": "I've worked with enterprises, startups, and small businesses to build real digital solutions that deliver results. I've developed full-stack web applications, configured servers for optimal performance, and built automation systems that save hours of manual work daily. I've designed hundreds of social media ad visuals that helped businesses increase engagement and sales. I've also won first place in multiple hackathons I participated in, competing against talented developers and building innovative solutions under pressure. From setting up SEO-friendly architectures to deploying AI-powered workflows, every project I take on is focused on one thing: getting you measurable outcomes."
+        "paragraph": "I've worked on corporate websites, business dashboards, e-commerce platforms, automation systems, and AI-powered applications for companies, startups, and personal projects. My experience spans the entire development lifecycle—from planning and UI implementation to backend development, deployment, Technical SEO, and performance optimization. Through hackathons, real client work, and continuous learning, I've strengthened my ability to collaborate with multidisciplinary teams, solve complex problems under pressure, and deliver scalable digital solutions that create measurable business value.",
+        "paragraph2": "I believe successful digital products are built through technical excellence, clear communication, and continuous improvement. Whether you're a startup, small business, or established company, my goal is to create reliable, scalable, and search-optimized solutions that generate measurable business results and long-term growth."
       },
       "storyMissionValues": {
         "title": "Discover the story, mission, and values that drive me",
-        "story": "My journey started with a curiosity for how the web works and how businesses can use it to grow. Over the years I've built websites, automated processes, and designed campaigns for brands that needed a partner who could both code and design and deliver on time.",
-        "mission": "My mission is to help businesses and creators build a strong, visible online presence. I want every project to be fast, findable, and focused on the user so you can focus on what you do best while your digital presence works for you.",
+        "story": "My journey into software development began with a curiosity about how websites, servers, and the internet work. That curiosity quickly became a passion for building products that combine clean code, great user experiences, and measurable business impact. Today I continue learning new technologies while helping businesses grow through modern digital solutions.",
+        "mission": "My mission is to help businesses, startups, and entrepreneurs build websites and digital products that are fast, visible, scalable, and ready for the future of search. Every project I create combines performance, Technical SEO, AI Search Optimization, and user-focused design to deliver long-term value.",
         "valuesTitle": "What I stand for",
         "values": [
-          "Quality over quantity — every line of code and every pixel matters.",
-          "Transparency — you're always in the loop, from kickoff to launch.",
-          "Partnership — I succeed when your business grows."
+          "Quality before shortcuts — every project is built for long-term reliability.",
+          "Transparency — clear communication from planning to launch.",
+          "Partnership — your success is the measure of mine."
         ],
         "storyLabel": "My Story",
         "missionLabel": "My Mission"
@@ -469,34 +472,36 @@
         "title": "How Can I Help?",
         "subtitle": "Ways we can work together",
         "items": [
-          "Build or redesign your website — fast, SEO-optimized, and mobile-first.",
-          "Set up automation and AI tools to save you time and scale your operations.",
-          "Design ad creatives and social media visuals that explain your offer and drive sales.",
-          "Audit and improve your existing site's speed, SEO, and conversion."
+          "Build modern websites and e-commerce stores optimized for speed, SEO, and AI search.",
+          "Develop custom dashboards and business automation tools that improve productivity.",
+          "Integrate AI solutions and workflows that reduce manual work and support better decisions.",
+          "Audit and optimize existing websites for Technical SEO, Core Web Vitals, accessibility, and conversions."
         ]
       },
       "values": [
-        {
-          "title": "Performance & Quality",
-          "text": "Clean, efficient code and fast, reliable applications."
-        },
-        {
-          "title": "SEO & Visibility",
-          "text": "Built to be discovered and perform well in search engines."
-        },
-        {
-          "title": "Clear Communication",
-          "text": "Simple, transparent process with regular updates."
-        },
-        {
-          "title": "Results-Oriented",
-          "text": "Focused on delivering solutions that create real impact."
-        }
+        [
+          {
+            "title": "Technical Excellence",
+            "text": "Modern architecture, clean code, scalability, and long-term maintainability."
+          },
+          {
+            "title": "SEO & AI Visibility",
+            "text": "Every project is optimized for Google Search, AI search engines, and excellent user experience."
+          },
+          {
+            "title": "Communication & Collaboration",
+            "text": "Transparent communication, teamwork, and structured development throughout every project."
+          },
+          {
+            "title": "Business Impact",
+            "text": "Technology should generate measurable growth, efficiency, and long-term value."
+          }
+        ]
       ],
       "cta": {
-        "title": "Let’s Build Something Valuable",
-        "description": "Whether you have a project or an opportunity, I’m ready to collaborate.",
-        "button": "Start a Conversation"
+        "title": "Let's Build Your Next Digital Project",
+        "description": "Need a high-performance website, Technical SEO, AI automation, or a custom web application? Let's discuss how I can help your business grow.",
+        "button": "Start Your Project"
       }
     },
     "portfolio_page": {
@@ -1083,9 +1088,9 @@
       }
     },
     "contact_page": {
-      "heading": "Let’s Build Something That Drives Results",
-      "description": "Have a project in mind or looking for a developer to collaborate with? I help businesses and teams design and build high-performance digital solutions — from websites to automation systems. Send me a message and I’ll get back to you shortly.",
-      "subtitle": "Tell me about your project",
+      "heading": "Let's Build Your Next High-Performance Digital Project",
+      "description": "Looking for a Full-Stack Web Developer to build a website, e-commerce store, business dashboard, AI automation, or improve your Technical SEO? I help startups, businesses, and entrepreneurs create fast, scalable, and search-optimized digital solutions that generate measurable results. Tell me about your project, and let's discuss how we can bring it to life.",
+      "subtitle": "Start Your Project Today",
       "email": "Email",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
@@ -1099,34 +1104,35 @@
         "response24h": "Response within 24h",
         "freeConsultation": "Free consultation",
         "noObligation": "No obligation quotes",
-        "worldwide": "Worldwide service"
+        "worldwide": "Worldwide & remote"
       },
       "channels": {
         "emailDescription": "Response within 24 hours",
         "whatsappDescription": "Fastest response",
-        "instagramDescription": "Seeing my work and updates",
-        "linkedinDescription": "Professional network"
+        "instagramDescription": "See latest work & behind the scenes",
+        "linkedinDescription": "Professional network & referrals"
       },
       "form": {
-        "heading": "Send a message",
-        "subheading": "I'll get back to you within 24 hours.",
+        "heading": "Start Your Project",
+        "subheading": "Tell me about your goals and I'll reply within 24 hours with a free quote.",
         "fullNamePlaceholder": "Jane Smith",
         "emailAddress": "Email Address",
         "emailPlaceholder": "yourname@example.com",
         "projectType": "Project Type",
         "projectTypePlaceholder": "Select a project type",
         "projectTypes": {
-          "website": "Website Development",
-          "automation": "Business Automation",
-          "ai": "AI Integration",
+          "website": "Website / E-Commerce Development",
+          "automation": "Business Automation & Workflows",
+          "ai": "AI Integration & Chatbots",
           "design": "Ad Design & Branding",
-          "other": "Other"
+          "seo": "Technical SEO / GEO / AEO Audit",
+          "other": "Other / Not sure yet"
         },
         "copy": "Copy",
         "copied": "Copied!",
         "availability": "Available for new projects",
         "message": "Message",
-        "messagePlaceholder": "Tell me about your project...",
+        "messagePlaceholder": "Tell me about your project, timeline, and budget...",
         "successMessage": "Message sent! I'll get back to you soon.",
         "sending": "Sending...",
         "errors": {
@@ -1140,19 +1146,19 @@
       },
       "whyReachOut": {
         "title": "Why Work With Me",
-        "subtitle": "What you can expect",
+        "subtitle": "What you can expect from our collaboration",
         "reasons": [
           {
-            "title": "Clear & Simple Process",
-            "text": "We define your goals, plan the solution, and move step by step with full transparency."
+            "title": "AI-Ready & SEO-First Development",
+            "text": "Every project is built with Technical SEO, structured data (Schema.org), Core Web Vitals, and GEO/AEO optimization so your business ranks on Google and gets cited by ChatGPT and Perplexity."
           },
           {
-            "title": "Reliable Delivery",
-            "text": "Focused on building solutions that are fast, scalable, and ready for real use."
+            "title": "Reliable Delivery & Clear Communication",
+            "text": "Weekly updates, transparent timelines, and code that is fast, scalable, and maintainable. No surprises—just measurable results."
           },
           {
-            "title": "Long-Term Thinking",
-            "text": "I build with maintainability and growth in mind, so your project lasts."
+            "title": "Long-Term Partnership",
+            "text": "I don't just build and disappear. I provide ongoing support, performance monitoring, and optimization to ensure your digital product grows with your business."
           }
         ]
       }

@@ -5,20 +5,6 @@ import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 import PortfolioSchema from "../../components/schemas/PortfolioSchema";
 import PortfolioContent from "../../components/PortfolioContent";
 
-type ProjectType = "professional" | "personal" | "academic";
-
-interface PortfolioProjectEntry {
-  title?: string;
-  description?: string;
-  href?: string;
-  link?: string;
-  image?: string;
-  tech?: string;
-  type?: ProjectType;
-  status?: string;
-  category?: string;
-}
-
 type Props = {
   params: Promise<{ locale: string }>;
   searchParams: Promise<{ filter?: string }>;
@@ -91,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     keywords,
     route: "/portfolio",
-    ogImagePath: "/cover/Design-cover.jpg",
+    ogImagePath: "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }

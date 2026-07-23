@@ -122,8 +122,8 @@
     "services_page": {
       "title": "Ce que je fais",
       "subtitle": "Mes services digitaux",
-      "heading": "Développement Web, SEO & Automatisation avec l’IA Sur Mesure au Maroc",
-      "description": "Vous recherchez un professionnel en développement web, référencement SEO ou automatisation par IA au Maroc ? Je crée des sites web optimisés pour le SEO, conçois des systèmes d'automatisation d'entreprise basés sur l'IA, et réalise des publicités pour les réseaux sociaux à fort taux de conversion. Les startups et les grandes entreprises me font confiance pour fournir des résultats mesurables, accroître leur visibilité en ligne et stimuler la croissance des ventes.",
+      "heading": "Développement web, SEO technique et automatisation par l'IA au Maroc",
+      "description": "Développez votre entreprise avec des sites Next.js haute performance, du e-commerce, du SEO technique et l'optimisation pour l'IA (GEO/AEO). Je crée des solutions numériques rapides et évolutives depuis le Maroc qui améliorent votre visibilité sur Google, vous font référencer par ChatGPT et Perplexity, fluidifient vos opérations et génèrent une croissance mesurable.",
       "hashtags": [
         "#DéveloppementWeb",
         "#SEO",
@@ -362,37 +362,37 @@
           ]
         }
       },
-      "cta": "Explorer ce service",
-      "Selected_projects": "Projets sélectionnés",
-      "Real_results": "Des projets concrets qui démontrent des solutions efficaces et mesurables.",
+      "cta": "Découvrir les services",
+      "Selected_projects": "Projets clients sélectionnés",
+      "Real_results": "Sites web, dashboards et solutions d'IA réels qui génèrent des résultats mesurables, une meilleure visibilité sur les moteurs de recherche et une expérience utilisateur améliorée.",
       "View_All_Projects": "Voir tous les projets",
-      "viewDetails": "Voir détails",
+      "viewDetails": "Voir l'étude de cas",
       "whyChooseUs": {
         "title": "Pourquoi travailler avec moi",
-        "subtitle": "Je crée des solutions qui apportent une vraie valeur, pas seulement des fonctionnalités.",
+        "subtitle": "Développement web moderne axé sur la performance, le SEO, la visibilité via l'IA et une croissance à long terme.",
         "reasons": [
           {
-            "title": "Approche orientée résultats",
-            "text": "Chaque projet vise un objectif clair : performance, expérience utilisateur et impact réel."
+            "title": "Solutions orientées business",
+            "text": "Chaque site et application est conçu pour accroître votre visibilité, améliorer l'expérience utilisateur et soutenir une croissance mesurable."
           },
           {
-            "title": "Expertise Full-Stack",
-            "text": "Frontend, backend, SEO et automatisation — je gère l’ensemble du processus."
+            "title": "Développement full-stack & SEO technique",
+            "text": "Du développement Next.js et des API au SEO technique, aux Core Web Vitals et à l'optimisation pour la recherche IA, tout est géré en un seul endroit."
           },
           {
-            "title": "Évolutif et durable",
-            "text": "Code propre, technologies modernes et architecture solide pour évoluer facilement."
+            "title": "Évolutif, fiable et prêt pour l'avenir",
+            "text": "Architecture propre, technologies modernes, automatisation et code maintenable qui évoluent avec votre entreprise."
           }
         ]
       },
-      "ctat_title": "Un projet ou une opportunité ?",
-      "cta_desc": "Que ce soit pour rejoindre une équipe ou lancer un projet, discutons ensemble.",
-      "cta_btn": "Démarrer la discussion"
+      "ctat_title": "Prêt à lancer votre prochain projet ?",
+      "cta_desc": "Que vous ayez besoin d'un site vitrine, d'une boutique e-commerce, d'un tableau de bord sur mesure ou d'une automatisation par l'IA, construisons ensemble une solution rapide et évolutive qui fera grandir votre entreprise.",
+      "cta_btn": "Démarrer votre projet"
     },
     "about_page": {
       "title": "À propos",
-      "heading": "Développeur Full-Stack au Maroc pour des solutions digitales performantes et évolutives",
-      "intro": "Je suis développeur web full-stack spécialisé dans la création d’applications modernes et performantes. J’accompagne les entreprises et les équipes pour concevoir des produits digitaux rapides, évolutifs et centrés sur l’utilisateur, avec un focus sur la performance et le SEO.",
+      "heading": "Développeur Web Full-Stack, Expert SEO & Optimisation de Recherche IA au Maroc",
+      "intro": "Je suis Mohammed Elghandori, développeur Web Full-Stack et expert SEO basé au Maroc. Je conçois des sites web performants, des boutiques e-commerce, des tableaux de bord métiers et des applications web alimentées par l'IA avec Next.js et des technologies modernes. Chaque projet est développé avec le SEO technique, les Core Web Vitals, les données structurées et l'optimisation pour les moteurs de recherche IA afin d'améliorer la visibilité sur Google, Google AI Overviews, ChatGPT, Perplexity et d'autres moteurs de recherche basés sur l'IA.",
       "stats": {
         "years": "Ans d'expérience",
         "clients": "Clients satisfaits",
@@ -400,33 +400,34 @@
       },
       "whoIAm": {
         "title": "Qui Je Suis",
-        "paragraph1": "Je m’appelle Mohammed elghandori, développeur full-stack, passionné par la transformation d'idées en produits numériques performants. Je suis titulaire d’un diplôme en Développement Digital Full-Stack de l’ISTA ainsi que d’un diplôme d’Architecte en Technologies du Numérique de 1337 School UM6P, (membre du prestigieux réseau 42 Network). Je possède également des certifications en développement web, marketing digital et IA. Au fil de mon parcours, j'ai acquis de solides bases en informatique, notamment sur le fonctionnement du web, l’architecture système (mémoire et kernel), les structures de données, les algorithmes et les fondamentaux du génie logiciel. Je participe activement à des hackathons et assiste à des événements de la communauté tech pour enrichir mon expérience et rester à la pointe des dernières technologies.",
-        "paragraph2": "Je crois en la qualité du travail bien fait, une communication claire et des résultats mesurables. Je m'engage à vous aider à réussir en ligne avec des solutions efficaces, car votre réussite est la mienne."
+        "paragraph1": "Je suis Mohammed, Développeur Web Full-Stack et Spécialiste SEO passionné par la création d'expériences web modernes qui résolvent de vrais problèmes business. J'ai étudié l'ingénierie logicielle à l'école 1337 UM6P (réseau 42), où j'ai acquis de solides bases en informatique, algorithmes, systèmes d'exploitation, réseaux, architecture logicielle et développement collaboratif. En parallèle, j'ai obtenu des certifications en développement web, marketing digital et intelligence artificielle, tout en perfectionnant continuellement mon expertise technique.",
+        "paragraph2": "Je crois en un travail de qualité, une communication claire et des résultats mesurables. Que vous soyez une startup ou une grande entreprise visant les marchés internationaux, je m'engage à vous aider à réussir en ligne avec des solutions qui fonctionnent, car votre succès est le mien."
       },
       "experience": {
-        "title": "Mon Expérience et Parcours",
-        "paragraph": "J’ai travaillé avec des startups, des entreprises et des organisations pour créer des solutions numériques efficaces qui produisent des résultats concrets. Mon expérience comprend le développement d’applications web full-stack, la configuration et l’optimisation de serveurs pour de meilleures performances, ainsi que la création de systèmes d’automatisation qui permettent aux entreprises de gagner un temps précieux au quotidien. J’ai également conçu des centaines de visuels publicitaires pour les réseaux sociaux qui ont aidé les marques à augmenter leur engagement et à atteindre plus de clients. En parallèle, j’ai participé à plusieurs hackathons et remporté la première place dans différentes compétitions en développant des solutions innovantes sous contrainte de temps. De l’architecture web optimisée pour le SEO au déploiement de workflows basés sur l’IA, mon objectif reste toujours le même : créer des solutions qui apportent une valeur mesurable."
+        "title": "Mon Expérience & Mon Parcours",
+        "paragraph": "J'ai travaillé sur des sites d'entreprise, des tableaux de bord, des plateformes e-commerce, des systèmes d'automatisation et des applications IA pour des entreprises, des startups et des projets personnels. Mon expérience couvre l'intégralité du cycle de développement : de la planification et l'implémentation UI au développement backend, en passant par le déploiement, le SEO technique et l'optimisation des performances. À travers les hackathons, les projets clients réels et l'apprentissage continu, j'ai renforcé ma capacité à collaborer avec des équipes pluridisciplinaires, à résoudre des problèmes complexes sous pression et à livrer des solutions numériques évolutives qui créent une valeur business mesurable.",
+        "paragraph2": "Je suis convaincu que les produits numériques performants reposent sur l'excellence technique, une communication fluide et une amélioration continue. Que vous soyez une startup, une PME ou une grande entreprise, mon objectif est de créer des solutions fiables, évolutives et optimisées pour le référencement, générant des résultats concrets et une croissance durable."
       },
       "storyMissionValues": {
-        "title": "Découvrez l'histoire, la mission et les valeurs qui me portent",
-        "story": "Mon parcours a commencé par une curiosité pour le web et la façon dont les entreprises peuvent l'utiliser pour grandir. Au fil des années j'ai créé des sites, automatisé des processus et conçu des campagnes pour des marques qui avaient besoin d'un partenaire à la fois développeur et designer et capable de livrer dans les temps.",
-        "mission": "Ma mission est d'aider les entreprises et les créateurs à construire une présence en ligne forte et visible. Je veux que chaque projet soit rapide, trouvable et centré sur l'utilisateur pour que vous puissiez vous concentrer sur votre métier pendant que votre présence digitale travaille pour vous.",
-        "valuesTitle": "Ce qui me guide",
+        "title": "Découvrez l'histoire, la mission et les valeurs qui m'animent",
+        "story": "Mon parcours dans le développement logiciel a commencé par une curiosité pour le fonctionnement des sites web, des serveurs et d'Internet. Cette curiosité s'est rapidement transformée en passion pour la création de produits alliant code propre, excellente expérience utilisateur et impact business mesurable. Aujourd'hui, je continue d'apprendre de nouvelles technologies tout en aidant les entreprises à se développer grâce à des solutions numériques modernes.",
+        "mission": "Ma mission est d'aider les entreprises, les startups et les entrepreneurs à créer des sites web et des produits numériques rapides, visibles, évolutifs et prêts pour l'avenir de la recherche. Chaque projet que je crée combine performance, SEO technique, optimisation pour la recherche IA et design centré sur l'utilisateur pour apporter une valeur à long terme.",
+        "valuesTitle": "Ce que je défends",
         "values": [
-          "La qualité avant la quantité — chaque ligne de code et chaque pixel compte.",
-          "La transparence — vous êtes toujours informé, du démarrage au lancement.",
-          "Le partenariat — je réussis quand votre activité grandit."
+          "La qualité avant les raccourcis — chaque projet est construit pour une fiabilité à long terme.",
+          "La transparence — une communication claire de la planification jusqu'au lancement.",
+          "Le partenariat — votre succès est la mesure du mien."
         ],
-        "storyLabel": "Mon parcours",
-        "missionLabel": "Ma mission"
+        "storyLabel": "Mon Histoire",
+        "missionLabel": "Ma Mission"
       },
       "valuesSection": {
-        "title": "Valeurs fondamentales",
-        "subtitle": "Ce qui me guide"
+        "title": "Valeurs Fondamentales",
+        "subtitle": "Ce en quoi je crois"
       },
       "hackathons": {
         "title": "Hackathons & Événements",
-        "subtitle": "Où j'ai concouru et gagné",
+        "subtitle": "Où j'ai compétitionné et gagné",
         "items": [
           {
             "name": "DyslexAI Hackathon",
@@ -467,8 +468,8 @@
         ]
       },
       "howCanIHelp": {
-        "title": "Comment Puis-Je Vous Aider ?",
-        "subtitle": "Façons de collaborer",
+        "title": "Comment puis-je vous aider ?",
+        "subtitle": "Façons de collaborer ensemble",
         "items": [
           "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
           "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
@@ -477,27 +478,29 @@
         ]
       },
       "values": [
-        {
-          "title": "Performance & Qualité",
-          "text": "Code propre, rapide et applications fiables."
-        },
-        {
-          "title": "SEO & Visibilité",
-          "text": "Des solutions conçues pour être visibles et performantes."
-        },
-        {
-          "title": "Communication Claire",
-          "text": "Processus simple, transparent et suivi régulier."
-        },
-        {
-          "title": "Résultats Concrets",
-          "text": "Une approche orientée impact réel."
-        }
+        [
+          {
+            "title": "Excellence Technique",
+            "text": "Architecture moderne, code propre, scalabilité et maintenabilité à long terme."
+          },
+          {
+            "title": "SEO & Visibilité IA",
+            "text": "Chaque projet est optimisé pour Google Search, les moteurs de recherche IA et offre une excellente expérience utilisateur."
+          },
+          {
+            "title": "Communication & Collaboration",
+            "text": "Communication transparente, travail d'équipe et développement structuré tout au long du projet."
+          },
+          {
+            "title": "Impact Business",
+            "text": "La technologie doit générer une croissance mesurable, de l'efficacité et une valeur à long terme."
+          }
+        ]
       ],
       "cta": {
-        "title": "Construisons quelque chose de solide",
-        "description": "Projet ou opportunité ? Je suis ouvert à collaborer.",
-        "button": "Démarrer la discussion"
+        "title": "Construisons votre prochain projet numérique ensemble",
+        "description": "Besoin d'un site web ultra-performant, de SEO technique, d'automatisation IA ou d'une application web sur mesure ? Discutons de la façon dont je peux aider votre entreprise à se développer.",
+        "button": "Lancer mon projet"
       }
     },
     "portfolio_page": {
@@ -1084,9 +1087,9 @@
       }
     },
     "contact_page": {
-      "heading": "Construisons quelque chose qui génère des résultats",
-      "description": "Vous avez un projet ou vous recherchez un développeur pour collaborer ? J’accompagne les entreprises et les équipes dans la création de solutions digitales performantes — du site web aux systèmes d’automatisation. Envoyez-moi un message et je vous répondrai rapidement.",
-      "subtitle": "Parlez-moi de votre projet",
+      "heading": "Construisons Ensemble Votre Prochain Projet Digital Performant",
+      "description": "Vous recherchez un développeur Full-Stack pour créer un site web, une boutique e-commerce, un tableau de bord métier, une automatisation IA ou améliorer votre SEO technique ? J'aide les startups, les entreprises et les entrepreneurs à développer des solutions digitales rapides, évolutives et optimisées pour les moteurs de recherche. Parlez-moi de votre projet et construisons ensemble une solution adaptée à vos objectifs.",
+      "subtitle": "Lancez votre projet dès aujourd'hui",
       "email": "E-mail",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
@@ -1094,66 +1097,67 @@
       "location": "Maroc (GMT+1)",
       "sendMessage": "Envoyer un message",
       "orWrite": "Ou écrivez directement à",
-      "chooseWay": "Choisissez votre moyen préféré",
-      "getInTouch": "Prendre contact",
+      "chooseWay": "Choisissez votre méthode préférée",
+      "getInTouch": "Prenez contact",
       "quickResponses": {
         "response24h": "Réponse sous 24h",
         "freeConsultation": "Consultation gratuite",
         "noObligation": "Devis sans engagement",
-        "worldwide": "Service mondial"
+        "worldwide": "International & à distance"
       },
       "channels": {
-        "emailDescription": "Réponse sous 24 heures",
-        "whatsappDescription": "Réponse la plus rapide",
-        "instagramDescription": "Voir mon travail et mes mises à jour",
-        "linkedinDescription": "Réseau professionnel"
+        "emailDescription": "Réponse garantie sous 24 heures",
+        "whatsappDescription": "Le moyen le plus rapide pour me joindre",
+        "instagramDescription": "Découvrez mes dernières réalisations et les coulisses",
+        "linkedinDescription": "Réseau professionnel et recommandations"
       },
       "form": {
-        "heading": "Envoyer un message",
-        "subheading": "Je vous répondrai dans les 24 heures.",
-        "fullNamePlaceholder": "Sophie Dupont",
+        "heading": "Lancez votre projet",
+        "subheading": "Parlez-moi de vos objectifs et je vous répondrai sous 24h avec un devis gratuit.",
+        "fullNamePlaceholder": "Prénom Nom",
         "emailAddress": "Adresse e-mail",
-        "emailPlaceholder": "yourname@example.com",
+        "emailPlaceholder": "votre.nom@exemple.com",
         "projectType": "Type de projet",
         "projectTypePlaceholder": "Sélectionnez un type de projet",
         "projectTypes": {
-          "website": "Développement de site web",
-          "automation": "Automatisation d'entreprise",
-          "ai": "Intégration IA",
-          "design": "Design publicitaire & branding",
-          "other": "Autre"
+          "website": "Développement de site web / E-commerce",
+          "automation": "Automatisation des processus & Workflows",
+          "ai": "Intégration IA & Chatbots",
+          "design": "Design publicitaire & Branding",
+          "seo": "Audit SEO Technique / GEO / AEO",
+          "other": "Autre / Pas encore sûr"
         },
         "copy": "Copier",
         "copied": "Copié !",
         "availability": "Disponible pour de nouveaux projets",
         "message": "Message",
-        "messagePlaceholder": "Parlez-moi de votre projet...",
-        "successMessage": "Message envoyé ! Je vous répondrai bientôt.",
-        "sending": "Envoi...",
+        "messagePlaceholder": "Parlez-moi de votre projet, de vos délais et de votre budget...",
+        "successMessage": "Message envoyé ! Je vous répondrai très bientôt.",
+        "sending": "Envoi en cours...",
         "errors": {
           "emailRequired": "L'adresse e-mail est requise",
           "projectTypeRequired": "Le type de projet est requis",
           "messageRequired": "Le message doit contenir au moins 10 caractères",
           "networkError": "Erreur réseau",
-          "somethingWentWrong": "Un problème est survenu",
+          "somethingWentWrong": "Une erreur s'est produite",
           "selectProjectType": "Veuillez sélectionner un type de projet"
         }
       },
       "whyReachOut": {
         "title": "Pourquoi travailler avec moi",
-        "subtitle": "Ce que vous pouvez attendre",
+        "subtitle": "Ce que vous pouvez attendre de notre collaboration",
         "reasons": [
           {
-            "title": "Processus clair",
-            "text": "Définition des objectifs, planification et exécution avec transparence."
+            "title": "Développement prêt pour l'IA et axé sur le SEO",
+            "text": "Chaque projet est conçu avec le SEO technique, les données structurées (Schema.org), les Core Web Vitals et l'optimisation GEO/AEO, afin que votre entreprise soit bien classée sur Google et citée par ChatGPT et Perplexity."
           },
           {
-            "title": "Livraison fiable",
-            "text": "Des solutions rapides, évolutives et prêtes pour un usage réel."
+            "title": "Livraison fiable et communication claire",
+            "text": "Des mises à jour hebdomadaires, des délais transparents et un code rapide, évolutif et maintenable. Pas de mauvaises surprises, uniquement des résultats mesurables."
           },
           {
-            "title": "Vision long terme",
-            "text": "Des projets conçus pour durer et évoluer avec vos besoins."
+            "title": "Partenariat à long terme",
+            "text": "Je ne me contente pas de développer et de disparaître. J'offre un support continu, un suivi des performances et des optimisations pour garantir que votre produit numérique évolue avec votre entreprise."
           }
         ]
       }

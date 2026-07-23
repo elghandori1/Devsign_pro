@@ -113,7 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     route: "/articles",
     keywords: FALLBACK_KEYWORDS[locale],
-    ogImagePath: "/cover/Design-cover.jpg",
+    ogImagePath: "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }

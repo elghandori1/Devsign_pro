@@ -97,7 +97,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description,
     keywords,
     route: "",
-    ogImagePath: "/cover/Design-cover.jpg",
+    ogImagePath: "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }
@@ -211,7 +211,7 @@ export default async function Home({ params }: Props) {
         title={webPageName}
         description={webPageDescription}
         route=""
-        ogImagePath="/cover/Design-cover.jpg"
+        ogImagePath="/cover/Designpro-cover.jpg"
       />
 
       <FAQPageSchema faqs={faqs} />

@@ -30,7 +30,6 @@ export function ProfessionalServiceSchema({
   social,
 }: Props) {
   const orgId = `${baseUrl}/#organization`;
-
   const schema = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
@@ -110,7 +109,8 @@ export function ProfessionalServiceSchema({
     provider: { "@id": founderId },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Web Development & Digital Services",
+      name: name,
+      description: description,
       itemListElement: services.map((svc, index) => ({
         "@type": "Offer",
         position: index + 1,
