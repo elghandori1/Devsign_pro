@@ -9,9 +9,6 @@ import {
   Code2,
   FileCheck,
   Sparkles,
-  Zap,
-  TrendingUp,
-  Globe,
 } from "lucide-react";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
@@ -99,6 +96,7 @@ export default async function ServicesPage({ params }: Props) {
     ([key, svc]: [string, any]) => ({
       id: key,
       title: svc.title ?? "",
+      title_card: svc.title_card, 
       description: svc.description ?? "",
       link: svc.link ?? `/${locale}/services/${key}`,
       image: svc.image ?? "",
@@ -189,7 +187,7 @@ export default async function ServicesPage({ params }: Props) {
           item: {
             "@type": "Service",
             "@id": `${baseUrl}/${locale}/services/${svc.id}#service`,
-            name: svc.title,
+            name: svc.title_card,
             description: svc.description,
             image: svc.image.startsWith("http")
               ? svc.image
@@ -318,6 +316,7 @@ export default async function ServicesPage({ params }: Props) {
           </div>
         </div>
       </section>
+      
       <section
         aria-labelledby="services-list-heading"
         className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20"
@@ -377,14 +376,7 @@ export default async function ServicesPage({ params }: Props) {
                     className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     aria-hidden="true"
                   />
-                  {/* Service category badge */}
-                  <div
-                    className={`absolute top-3 ${isRtl ? "right-3" : "left-3"}`}
-                  >
-                    <span className="px-2.5 py-1 text-[11px] font-medium rounded-full bg-black/50 backdrop-blur-sm border border-white/20 text-white">
-                      {service.category}
-                    </span>
-                  </div>
+            
                 </figure>
 
                 {/* Body */}
@@ -393,7 +385,7 @@ export default async function ServicesPage({ params }: Props) {
                     className="text-lg sm:text-xl font-bold leading-snug group-hover:text-primary transition-colors duration-200 line-clamp-2 mb-2.5"
                     itemProp="name"
                   >
-                    {service.title}
+                    {service.title_card}
                   </h3>
                   <p
                     className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-4"

@@ -120,7 +120,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
     inLanguage: locale,
     creator: {
       "@type": "Organization",
-      name: "Devsign",
+      name: "Devsignpro",
       url: baseUrl,
       email: infos.email,
       telephone: infos.phoneNumber,

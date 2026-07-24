@@ -157,7 +157,7 @@ export default async function RootLayout({
             description={openGraph.orgDescription}
             email={infos.email}
             phone={infos.phoneNumber}
-            logoUrl={`${baseUrl}/logo/devsign-logo.jpg`}
+            logoUrl={`${baseUrl}/logo/devsignpro-logo.jpg`}
             founderId={`${baseUrl}/#person`}
             services={services}
             social={{

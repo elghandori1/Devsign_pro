@@ -95,17 +95,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "en"
-      ? "Articles on Web Development, SEO & Business Automation | Devsign"
+      ? "Web Development, SEO & AI Articles | Devsignpro"
       : locale === "ar"
-        ? "مقالات حول تطوير الويب و SEO وأتمتة الأعمال | Devsign"
-        : "Articles sur le développement web, le SEO et l'automatisation | Devsign";
+        ? "مقالات تطوير الويب وSEO والذكاء الاصطناعي | Devsignpro"
+        : "Articles Développement Web, SEO & IA | Devsignpro";
 
   const description =
     locale === "en"
-      ? "Practical articles and insights about tech, business systems, SEO, and working online."
+      ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and business automation — written from real project experience."
       : locale === "ar"
-        ? "مقالات عملية ورؤى حول التقنية، أنظمة الأعمال، تحسين محركات البحث والعمل عبر الإنترنت."
-        : "Des articles pratiques sur la tech, les systèmes d'entreprise, le SEO et le travail en ligne.";
+        ? "مقالات عملية حول تطوير الويب، تحسين محركات البحث التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأتمتة الأعمال — مبنية على خبرة مشاريع حقيقية."
+        : "Articles pratiques sur le développement web, le SEO technique, l'optimisation de la recherche IA, Next.js et l'automatisation — issus de projets réels.";
 
   return buildPageMetadata({
     locale,
@@ -145,7 +145,12 @@ export default async function ArticlesPage({ params }: Props) {
         "@id": `${getBaseUrl()}/${locale}/articles#page`,
         url: `${getBaseUrl()}/${locale}/articles`,
         name: data.heading,
-        description: data.description,
+        description:
+          locale === "en"
+            ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and business automation — written from real project experience."
+            : locale === "ar"
+              ? "مقالات عملية حول تطوير الويب، تحسين محركات البحث التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأتمتة الأعمال — مبنية على خبرة مشاريع حقيقية."
+              : "Articles pratiques sur le développement web, le SEO technique, l'optimisation de la recherche IA, Next.js et l'automatisation — issus de projets réels.",
         inLanguage: locale,
       },
       {
@@ -168,8 +173,8 @@ export default async function ArticlesPage({ params }: Props) {
               },
               publisher: {
                 "@type": "Organization",
-                name: "Devsign",
-                url: "https://devsign.ma",
+                name: "Devsignpro",
+                url: "https://devsignpro.com",
               },
               url: `${getBaseUrl()}/${locale}/articles/${article.slug}`,
             },

@@ -1,4 +1,4 @@
-// /app/[locale]/services/web-development/page.tsx
+// /app/[locale]/services/ecommerce/page.tsx
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import Link from "next/link";
@@ -9,7 +9,6 @@ import {
   ArrowRight,
   CheckCircle2,
   Rocket,
-  Shield,
   Database,
   Code2,
   Globe,
@@ -20,9 +19,8 @@ import {
   BarChart3,
   ChevronDown,
   ShoppingCart,
-  Search,
-  Wrench,
   LayoutDashboard,
+  CreditCard,
 } from "lucide-react";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -37,80 +35,79 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const data = dict.pages.services_page.services.web;
+  const data = dict.pages.services_page.services.ecommerce;
   const keywords =
     locale === "ar"
       ? [
-          "تطوير مواقع المغرب",
-          "تطوير مواقع إلكترونية المغرب",
-          "موقع SEO محسن",
-          "مطور Next.js المغرب",
-          "مطور ويب مستقل المغرب",
-          "تصميم متجاوب",
-          "موقع آمن وسريع",
-          "تحسين محركات البحث",
-          "تحسين الذكاء الاصطناعي GEO",
-          "متجر إلكتروني المغرب",
-          "صفحة هبوط احترافية",
-          "تطبيق ويب مخصص",
+          "تطوير متجر إلكتروني المغرب",
+          "إنشاء متجر إلكتروني المغرب",
+          "متجر إلكتروني احترافي",
+          "البيع عبر الإنترنت المغرب",
+          "الدفع عند الاستلام المغرب",
+          "بوابة الدفع CMI",
+          "SEO متجر إلكتروني",
+          "مطور متاجر إلكترونية المغرب",
+          "تكلفة متجر إلكتروني المغرب",
+          "متجر إلكتروني مخصص",
+          "بيع منتجات أونلاين المغرب",
+          "متجر سريع وآمن",
         ]
       : locale === "fr"
         ? [
-            "développement web Maroc",
-            "création site web Maroc",
-            "site web SEO",
-            "développeur Next.js Maroc",
-            "développeur web freelance Maroc",
-            "design responsive",
-            "site sécurisé rapide",
-            "référencement naturel",
-            "optimisation IA GEO",
+            "développement e-commerce Maroc",
+            "création boutique en ligne Maroc",
             "boutique en ligne Maroc",
-            "landing page professionnelle",
-            "application web sur mesure",
+            "site e-commerce Maroc",
+            "vendre en ligne Maroc",
+            "paiement CMI Maroc",
+            "paiement à la livraison Maroc",
+            "SEO e-commerce Maroc",
+            "développeur e-commerce Maroc",
+            "prix site e-commerce Maroc",
+            "boutique en ligne sur mesure",
+            "boutique rapide et sécurisée",
           ]
         : [
-            "web development Morocco",
-            "website development Morocco",
-            "SEO website development",
-            "Next.js developer Morocco",
-            "freelance web developer Morocco",
-            "responsive web design",
-            "secure fast website",
-            "search engine optimization",
-            "GEO AI search optimization",
-            "ecommerce store Morocco",
-            "professional landing page",
-            "custom web application",
+            "ecommerce development Morocco",
+            "online store Morocco",
+            "ecommerce website Morocco",
+            "custom online store",
+            "sell online Morocco",
+            "CMI payment integration Morocco",
+            "cash on delivery ecommerce Morocco",
+            "Shopify vs custom store",
+            "ecommerce SEO Morocco",
+            "online store developer Morocco",
+            "Next.js ecommerce",
+            "ecommerce website cost Morocco",
           ];
 
   return buildPageMetadata({
     locale,
     title: data.title_metadata,
     description: data.description_metadata,
-    route: "/services/web-development",
+    route: "/services/ecommerce",
     keywords: keywords,
     ogImagePath: data.image || "/Designpro-cover.jpg",
     type: "website",
   });
 }
 
-const BENEFIT_ICONS = [TrendingUp, Users, BarChart3];
-
+const BENEFIT_ICONS = [ShoppingCart, TrendingUp, BarChart3];
 const TECH_STACK = [
   { name: "Next.js", icon: Code2 },
-  { name: "TypeScript", icon: Shield },
+  { name: "Stripe & CMI", icon: CreditCard },
   { name: "Tailwind CSS", icon: Zap },
   { name: "Express.js", icon: Rocket },
   { name: "MongoDB", icon: Database },
   { name: "Technical SEO", icon: Globe },
 ];
 
-export default async function WebDevelopmentPage({ params }: Props) {
+export default async function EcommercePage({ params }: Props) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const svc = dict.pages.services_page;
-  const data = svc.services.web;
+  const data = svc.services.ecommerce;
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
@@ -124,7 +121,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
     name: data.title,
     description: data.description,
     image: data.image || `${getBaseUrl()}/Designpro-cover.jpg`,
-    url: `${getBaseUrl()}/${locale}/services/web-development`,
+    url: `${getBaseUrl()}/${locale}/services/ecommerce`,
     provider: {
       "@type": "Organization",
       name: "Devsignpro",
@@ -134,10 +131,10 @@ export default async function WebDevelopmentPage({ params }: Props) {
     },
     serviceType:
       locale === "en"
-        ? "Web Development, SEO & AI Optimization"
+        ? "E-commerce Development, SEO & AI Optimization"
         : locale === "fr"
-          ? "Développement Web, SEO & Optimisation IA"
-          : "تطوير الويب، SEO وتحسين الذكاء الاصطناعي",
+          ? "Développement E-commerce, SEO & Optimisation IA"
+          : "تطوير التجارة الإلكترونية، SEO وتحسين الذكاء الاصطناعي",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
@@ -162,7 +159,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
         "@type": "ListItem",
         position: 3,
         name: data.title,
-        item: `${getBaseUrl()}/${locale}/services/web-development`,
+        item: `${getBaseUrl()}/${locale}/services/ecommerce`,
       },
     ],
   };
@@ -317,7 +314,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
         aria-labelledby="overview-heading"
         className="relative overflow-hidden"
       >
-        {/* Ambient background */}
         <div
           className="absolute inset-0 bg-gradient-to-b from-muted/10 via-background to-background"
           aria-hidden="true"
@@ -350,7 +346,8 @@ export default async function WebDevelopmentPage({ params }: Props) {
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 <span className="font-semibold text-foreground">
                   {data.startDescription}
-                </span> <br/>
+                </span>{" "}
+                <br />
                 {data.longDescription}
               </p>
 
@@ -374,10 +371,9 @@ export default async function WebDevelopmentPage({ params }: Props) {
 
             <div className="order-1 lg:order-2 relative max-w-md mx-auto lg:max-w-none w-full">
               <div
-                className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20 "
+                className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20"
                 aria-hidden="true"
               />
-          
               <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-border shadow-2xl shadow-primary/10">
                 <Image
                   src={data.image}
@@ -391,7 +387,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
                   aria-hidden="true"
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -584,7 +579,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </div>
       </section>
 
-     {/* ── 7. FAQ — AEO / GEO section (native details = zero JS) ── */}
+      {/* ── 7. FAQ — AEO / GEO section (native details = zero JS) ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"

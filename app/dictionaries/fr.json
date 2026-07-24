@@ -120,7 +120,7 @@
   },
   "pages": {
     "services_page": {
-      "title": "Ce que je fais",
+      "title": "Services",
       "subtitle": "Mes services digitaux",
       "heading": "Développement web, SEO technique et automatisation par l'IA au Maroc",
       "description": "Développez votre entreprise avec des sites Next.js haute performance, du e-commerce, du SEO technique et l'optimisation pour l'IA (GEO/AEO). Je crée des solutions numériques rapides et évolutives depuis le Maroc qui améliorent votre visibilité sur Google, vous font référencer par ChatGPT et Perplexity, fluidifient vos opérations et génèrent une croissance mesurable.",
@@ -133,95 +133,261 @@
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Développement de Sites Web avec SEO et Optimisation IA au Maroc",
-          "description": "Je crée des sites web rapides, sécurisés et optimisés pour le référencement pour les entreprises au Maroc et dans le monde. De la landing page personnalisée à la boutique e-commerce complète — conçus pour expliquer clairement votre domaine, vos services et vos produits afin que chacun comprenne ce que vous faites et vos activités. Conçus pour se classer sur Google, apparaître dans les résultats de recherche IA, charger instantanément et transformer les visiteurs en clients payants.",
-          "startDescription": "Chaque site web que je crée part d'un objectif clair :",
-          "longDescription": "Être trouvé, générer du trafic et convertir les visiteurs en clients réels. Je crée des sites web rapides et soignés qui expliquent clairement votre domaine, vos services et vos produits afin que chacun comprenne ce que vous faites et vos activités. Chaque page est rédigée pour cibler les expressions exactes que vos clients recherchent, avec un contenu optimisé pour se classer sur Google et performer dans les outils IA comme ChatGPT, Gemini et Perplexity. Vous bénéficiez d'une configuration SEO complète et d'une intégration Google Search Console pour suivre les mots-clés qui vous apportent des prospects, ainsi que d'une optimisation GEO IA pour que votre entreprise soit recommandée lorsque les gens demandent aux assistants IA des services locaux. Google Analytics est connecté dès le premier jour pour que vous voyiez d'où viennent chaque demande et quel contenu génère des résultats. C'est un système complet conçu pour attirer, expliquer et convertir dès le premier jour.",
-          "company_recruitment": "Je collabore également avec des équipes et des entreprises sur des projets de développement.",
+          "title": "Développement de Sites Web sur Mesure avec SEO technique au Maroc",
+          "title_metadata": "Développement Web au Maroc | SEO, GEO & Optimisé IA",
+          "description_metadata": "Développement de sites web rapides et sécurisés au Maroc, avec SEO technique, Core Web Vitals et optimisation IA. Conçus pour Google et cités par l'IA.",
+          "description": "Sites web professionnels sur mesure, sites d'entreprise, landing pages et applications web conçus pour la vitesse, la scalabilité et une croissance durable. Chaque projet intègre le SEO technique, l'optimisation des Core Web Vitals, les données structurées (Schema.org) et l'optimisation pour la recherche IA, afin d'augmenter votre visibilité sur Google, ChatGPT, les aperçus IA de Google (AI Overviews), Perplexity et les autres moteurs de recherche propulsés par l'IA.",
+          "title_card": "Développement Web avec SEO & Optimisation IA",
+          "overviewHeadline": "Un Développement Web Qui Génère Trafic, Prospects & Croissance",
+          "startDescription": "Votre site web doit faire plus que paraître professionnel : il doit attirer des visiteurs qualifiés, expliquer clairement vos services et transformer vos prospects en clients réels.",
+          "longDescription": "Chaque projet est construit avec des technologies modernes comme Next.js et React, optimisé pour la vitesse, la sécurité, l'évolutivité, le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA. Je structure le contenu, les métadonnées et le schema markup pour que votre entreprise soit performante sur Google et comprise par les plateformes IA comme ChatGPT, Google AI Overviews et Perplexity. De la planification au déploiement, chaque décision vise la visibilité à long terme, la performance et une croissance mesurable de votre activité.",
+          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, avec une expérience des workflows Git, CI/CD, Docker et des pratiques de développement modernes.",
           "link": "/services/web-development",
           "start_btn": "Démarrer Votre Projet",
           "allServicesBtn": "Voir Tous les Services",
           "overviewTitle": "Pourquoi Me Choisir ?",
-          "includedTitle": "Ce qui est inclus",
-          "includedDesc": "Ce service comprend :",
-          "benefitsTitle": "Ce que vous gagnerez",
+          "includedTitle": "Ce Qui Est Inclus",
+          "includedDesc": "Chaque projet de développement web inclut :",
+          "benefitsTitle": "Ce Que Vous Gagnerez",
           "benefitsDesc": "En travaillant avec moi sur votre site web, vous pouvez vous attendre à :",
-          "processTitle": "Comment je travaille",
-          "processDesc": "Je suis un processus clair et concentré pour m'assurer que votre projet est lancé à temps et atteint ses objectifs :",
-          "techTitle": "Les technologies avec lesquelles je travaille",
-          "techDesc": "Je choisis les bonnes technologies en fonction des besoins de votre projet et de vos objectifs commerciaux — pas selon les tendances.",
+          "processTitle": "Ma Méthode de Travail",
+          "processDesc": "Un processus clair et éprouvé qui livre votre projet dans les délais et selon vos objectifs :",
+          "techTitle": "Technologies Que J'Utilise",
+          "techDesc": "Je choisis les bonnes technologies selon les besoins de votre projet et vos objectifs business — pas selon les tendances.",
+          "faqTitle": "Questions Fréquentes",
+          "faqDesc": "Des réponses directes sur le développement web, le SEO et l'optimisation pour la recherche IA :",
           "AnothersrvcBtn": "Voir Tous les Services",
           "features": [
-            "Optimisé pour le SEO",
-            "Adapté aux mobiles",
-            "Chargement rapide",
-            "Sécurisé"
+            "Structure Optimisée SEO",
+            "Prêt pour la Recherche IA (GEO)",
+            "Responsive",
+            "Core Web Vitals Optimisés"
+          ],
+          "included": [
+            "Design et développement sur mesure avec Next.js, React et TypeScript",
+            "SEO on-page : HTML sémantique, métadonnées, schema markup, sitemap et robots.txt",
+            "Optimisation GEO & AEO pour que les assistants IA comprennent, citent et recommandent votre entreprise",
+            "Optimisation des Core Web Vitals : optimisation d'images, mise en cache et temps de chargement instantanés",
+            "Intégration de Google Search Console, Google Analytics et Bing Webmaster Tools dès le premier jour",
+            "Accessibilité (WCAG) et HTML sémantique pour une meilleure utilisabilité et visibilité sur les moteurs",
+            "Renforcement de la sécurité : HTTPS, en-têtes sécurisés et formulaires protégés",
+            "Support post-lancement, documentation et suivi des performances"
           ],
           "benefits": [
             {
-              "title": "Meilleur classement dans les recherches",
-              "text": "Données structurées, métadonnées optimisées et temps de chargement rapides — tout ce que Google récompense, intégré dès le départ."
+              "title": "Améliorer la Visibilité sur les Moteurs",
+              "text": "Code sémantique, données structurées, métadonnées optimisées et Core Web Vitals rapides — tout ce que Google récompense, intégré dès la première ligne de code."
             },
             {
-              "title": "Plus de conversions",
-              "text": "Appels à l'action clairs, mises en page intuitives et signaux de confiance qui transforment les visiteurs en leads réels."
+              "title": "Visibilité dans les résultats de recherche IA",
+              "text": "Contenu structuré pour le GEO et l'AEO, afin que ChatGPT, Gemini et Perplexity puissent citer et recommander votre entreprise quand les gens recherchent des services comme les vôtres."
             },
             {
-              "title": "Aperçu des performances",
-              "text": "Suivez le trafic, le comportement des utilisateurs et les performances de recherche via Google Analytics et Search Console — configurés et prêts le jour du lancement."
+              "title": "Plus de conversions & une croissance mesurable",
+              "text": "Appels à l'action clairs, signaux de confiance et suivi analytique — chaque visiteur est guidé vers la conversion, et vous mesurez précisément ce qui fonctionne."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Découverte",
-              "text": "J'apprends vos objectifs, votre audience et ce que vos concurrents font bien."
+              "title": "Découverte & Recherche de Mots-Clés",
+              "text": "J'analyse vos objectifs, votre audience, vos concurrents et les mots-clés exacts que vos clients recherchent — avant d'écrire la moindre ligne de code."
             },
             {
               "step": "02",
-              "title": "Conception, Construction & Tests",
-              "text": "Maquettes, développement, configuration SEO et tests approfondis des performances, de l'accessibilité et de la sécurité."
+              "title": "Design & Développement",
+              "text": "Un développement propre et rapide avec Next.js — HTML sémantique, design responsive et accessibilité intégrés dans chaque composant."
             },
             {
               "step": "03",
-              "title": "Lancement & Suivi",
-              "text": "Mise en ligne avec les analytics configurés, le sitemap soumis et les benchmarks de performance confirmés."
+              "title": "Optimisation SEO & IA",
+              "text": "Schema markup, métadonnées, sitemap et contenu structuré pour le classement Google et les citations IA (GEO/AEO)."
+            },
+            {
+              "step": "04",
+              "title": "Lancement, Analytics & Amélioration Continue",
+              "text": "Mise en ligne avec analytics configurés, Search Console connectée, sitemap soumis et benchmarks Core Web Vitals validés."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Combien de temps faut-il pour créer un site web professionnel ?",
+              "a": "La plupart des sites vitrines prennent 2 à 4 semaines du lancement à la mise en ligne, selon le nombre de pages et de fonctionnalités. Une landing page peut être prête en une semaine environ, tandis qu'une application web sur mesure peut prendre 4 à 8 semaines. Vous recevez un calendrier clair avant de commencer."
+            },
+            {
+              "q": "Mon site web sera-t-il bien classé sur Google ?",
+              "a": "Oui — chaque site est construit avec le SEO technique dès le départ : HTML sémantique, schema markup, métadonnées optimisées, Core Web Vitals rapides et intégration de Google Search Console. Cela donne à votre site la meilleure base possible pour se classer sur les mots-clés que vos clients recherchent."
+            },
+            {
+              "q": "Qu'est-ce que le GEO et pourquoi est-ce important pour mon entreprise ?",
+              "a": "Le GEO (Generative Engine Optimization) consiste à structurer votre site web pour que les assistants IA comme ChatGPT, Gemini et Perplexity puissent comprendre, citer et recommander votre entreprise. Comme de plus en plus de personnes interrogent l'IA au lieu de chercher sur Google, le GEO aide votre entreprise à apparaître dans ces réponses générées par l'IA."
+            },
+            {
+              "q": "Quelles technologies utilisez-vous pour créer des sites web ?",
+              "a": "Je développe avec Next.js, React, TypeScript et Tailwind CSS — des technologies modernes choisies pour la vitesse, la sécurité et l'évolutivité. Ce stack alimente certains des sites les plus rapides au monde et rend votre site facile à maintenir et à faire évoluer."
+            },
+            {
+              "q": "Combien coûte la création d'un site web au Maroc ?",
+              "a": "Le coût dépend de la complexité du projet, des fonctionnalités, du design, des exigences SEO et des intégrations. Un site vitrine simple coûte moins cher qu'une application web sur mesure ou une plateforme e-commerce. Je fournis des devis personnalisés selon vos objectifs, en garantissant que chaque projet est optimisé pour la performance, le SEO technique et la croissance à long terme."
+            },
+            {
+              "q": "Proposez-vous une maintenance après le lancement du site ?",
+              "a": "Oui — je propose des forfaits de maintenance et de croissance couvrant les mises à jour, la sécurité, les sauvegardes, le suivi des performances et l'amélioration continue du SEO, pour que votre site reste performant bien après le jour du lancement."
+            },
+            {
+              "q": "Pouvez-vous refondre mon site existant au lieu d'en créer un nouveau ?",
+              "a": "Je peux refondre et moderniser des sites existants : améliorer les performances, corriger les problèmes de SEO technique, optimiser les Core Web Vitals, implémenter les données structurées et préparer le site pour la recherche IA — sans tout reconstruire de zéro lorsque c'est possible."
+            }
+          ]
+        },
+        "ecommerce": {
+          "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+          "title": "Développement E-commerce Sur Mesure au Maroc",
+          "title_metadata": "Développement E-commerce au Maroc | Des Boutiques en Ligne Qui Vendent",
+          "description_metadata": "Développement e-commerce sur mesure au Maroc — boutiques en ligne rapides et sécurisées avec paiements CMI, paiement à la livraison & SEO. Conçues pour se positionner sur Google et vendre plus.",
+          "description": "Des boutiques e-commerce sur mesure conçues pour vendre en ligne avec des paiements sécurisés, des performances rapides et une architecture évolutive. Chaque boutique intègre le SEO technique, les Core Web Vitals, des pages produits optimisées et l'optimisation pour la recherche IA, afin d'augmenter votre visibilité sur Google, ChatGPT, les aperçus IA de Google (AI Overviews), Perplexity et les autres moteurs de recherche propulsés par l'IA.",
+          "title_card": "Développement E-commerce",
+          "overviewHeadline": "Des Boutiques en Ligne Conçues pour Vendre, Performer et Grandir",
+          "startDescription": "Votre boutique en ligne doit faire bien plus que présenter des produits. Elle doit attirer les bons clients, instaurer la confiance, offrir une expérience d'achat fluide et transformer les visiteurs en acheteurs fidèles.",
+          "longDescription": "Que vous lanciez une nouvelle activité en ligne ou que vous modernisiez une boutique existante, je développe des sites e-commerce sur mesure pensés pour la croissance. Chaque boutique inclut l'intégration de paiements sécurisés, la gestion des produits, des pages produits optimisées, le SEO technique, l'optimisation des Core Web Vitals et l'optimisation pour la recherche IA. De la page d'accueil au paiement, chaque élément est conçu pour améliorer l'expérience utilisateur, augmenter les conversions et aider vos produits à être découverts sur Google, Google Shopping, ChatGPT, Perplexity et les autres moteurs de recherche propulsés par l'IA.",
+          "company_recruitment": "Je collabore également avec des marques, des agences et des équipes retail sur des projets e-commerce à long terme, incluant les migrations, les refontes et l'optimisation des performances.",
+          "link": "/services/ecommerce",
+          "start_btn": "Lancez Votre Boutique",
+          "allServicesBtn": "Voir Tous les Services",
+          "overviewTitle": "Pourquoi Me Choisir ?",
+          "includedTitle": "Ce Qui Est Inclus",
+          "includedDesc": "Chaque projet e-commerce inclut :",
+          "benefitsTitle": "Ce Que Vous Allez Gagner",
+          "benefitsDesc": "En travaillant avec moi sur votre boutique en ligne, vous pouvez vous attendre à :",
+          "processTitle": "Ma Méthode de Travail",
+          "processDesc": "Un processus clair et éprouvé qui mène votre boutique de l'idée à la première vente :",
+          "techTitle": "Les Technologies Que J'utilise",
+          "techDesc": "Je choisis les bonnes technologies en fonction de vos produits, votre marché et vos objectifs de croissance — pas les tendances.",
+          "faqTitle": "Questions Fréquentes",
+          "faqDesc": "Des réponses directes sur le développement e-commerce, les paiements et l'optimisation pour la recherche IA :",
+          "AnothersrvcBtn": "Voir Tous les Services",
+          "features": [
+            "Pages Produits Optimisées SEO",
+            "Prêt pour la Recherche IA (GEO)",
+            "Responsive",
+            "Paiements Sécurisés (CMI & COD)"
+          ],
+          "included": [
+            "Design et développement sur mesure de la boutique avec Next.js, React et TypeScript",
+            "Système e-commerce complet : catalogue produits, catégories, recherche, panier, liste de souhaits, paiement sécurisé et gestion des commandes",
+            "Paiements locaux et internationaux : CMI, paiement à la livraison (COD), Stripe et PayPal",
+            "SEO produits : pages produits optimisées, balisage Schema Product, sitemap et robots.txt",
+            "Optimisation GEO & AEO pour que les assistants IA puissent trouver, citer et recommander vos produits",
+            "Optimisation Core Web Vitals : pages produits rapides, optimisation des images et temps de chargement instantanés",
+            "Tableau de bord de gestion des stocks, commandes et clients, utilisable sans connaissances techniques",
+            "Intégration Google Search Console et Analytics, formation et support post-lancement"
+          ],
+          "benefits": [
+            {
+              "title": "Une Boutique Qui Vend 24h/24, 7j/7",
+              "text": "Des pages produits rapides, des paiements locaux de confiance et un paiement sans friction — tout est conçu pour réduire les paniers abandonnés et transformer les visiteurs en acheteurs, jour et nuit."
+            },
+            {
+              "title": "Plus de Visibilité Produits & Ventes Organiques",
+              "text": "Schema Product, métadonnées optimisées et structure GEO/AEO — pour que vos produits se positionnent sur Google, apparaissent dans les résultats Shopping et soient recommandés par ChatGPT et Perplexity."
+            },
+            {
+              "title": "Contrôle Total & Croissance Mesurable",
+              "text": "Vous êtes propriétaire de votre boutique, de vos données et de votre code — aucun frais mensuel de plateforme. Suivez chaque vente, produit et source de trafic avec des analytics configurés dès le premier jour."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Découverte & Étude de Marché",
+              "text": "J'analyse vos produits, vos clients cibles, vos concurrents et les mots-clés recherchés par les acheteurs — avant de concevoir quoi que ce soit."
+            },
+            {
+              "step": "02",
+              "title": "Design & Développement de la Boutique",
+              "text": "Développement propre et rapide avec Next.js — catalogue, panier, paiement et tableau de bord de gestion, le tout responsive et accessible."
+            },
+            {
+              "step": "03",
+              "title": "Paiements, SEO & Optimisation IA",
+              "text": "Intégration CMI, COD, Stripe et PayPal — plus Schema Product, métadonnées et contenu structuré pour le positionnement Google et les citations IA."
+            },
+            {
+              "step": "04",
+              "title": "Lancement, Analytics & Croissance",
+              "text": "Mise en ligne avec analytics configurés, Search Console connectée, sitemap soumis et un plan clair pour développer vos ventes."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "Combien coûte la création d'une boutique en ligne au Maroc ?",
+              "a": "Le coût dépend du nombre de produits, des intégrations de paiement, de la complexité du design et des fonctionnalités personnalisées. Une boutique simple avec des paiements standards coûte moins qu'une plateforme sur mesure avec des fonctionnalités avancées. Je fournis un devis personnalisé basé sur vos objectifs — chaque boutique inclut le SEO, la sécurité et l'optimisation des performances dès le départ."
+            },
+            {
+              "q": "Quels moyens de paiement ma boutique en ligne peut-elle accepter ?",
+              "a": "Votre boutique peut accepter les moyens de paiement que vos clients utilisent réellement : CMI pour les cartes bancaires marocaines, paiement à la livraison (COD) pour les acheteurs locaux, et Stripe ou PayPal pour les clients internationaux. Je vous aide à choisir et intégrer la bonne combinaison pour votre marché."
+            },
+            {
+              "q": "Ma boutique en ligne peut-elle supporter plusieurs langues et devises ?",
+              "a": "Oui. Je peux développer des boutiques en ligne multilingues et multi-devises pour que vous puissiez vendre localement au Maroc ou à l'international, tout en maintenant d'excellentes performances et un bon SEO."
+            },
+            {
+              "q": "Dois-je choisir Shopify, WooCommerce ou une boutique sur mesure ?",
+              "a": "Shopify et WooCommerce fonctionnent pour un démarrage rapide, mais ils impliquent des frais mensuels, des limitations de plugins et des performances plus lentes. Une boutique sur mesure développée avec Next.js est plus rapide, entièrement adaptée à votre activité, sans frais de plateforme, et obtient de meilleurs scores Core Web Vitals — ce qui améliore directement votre positionnement Google et vos conversions."
+            },
+            {
+              "q": "Puis-je gérer mes produits et commandes moi-même après le lancement ?",
+              "a": "Oui — votre boutique inclut un tableau de bord de gestion simple où vous pouvez ajouter des produits, mettre à jour les prix et les stocks, et suivre les commandes sans aucune connaissance technique. Vous recevez également une formation et une documentation pour garder le contrôle total."
+            },
+            {
+              "q": "Mes produits apparaîtront-ils sur Google et dans les résultats de recherche IA ?",
+              "a": "Oui — chaque page produit est construite avec le balisage Schema Product, des métadonnées optimisées et des Core Web Vitals rapides, offrant à vos produits la meilleure base pour se positionner sur Google et apparaître dans les résultats Shopping. L'optimisation GEO et AEO structure également votre contenu pour que les assistants IA comme ChatGPT et Perplexity puissent citer et recommander vos produits."
+            },
+            {
+              "q": "Pouvez-vous améliorer ou refondre ma boutique en ligne existante ?",
+              "a": "Oui — je peux moderniser les boutiques existantes, corriger les pages produits lentes, améliorer la conversion du paiement, réparer les problèmes de SEO technique, implémenter les données structurées et préparer votre boutique pour la recherche propulsée par l'IA — sans perdre vos produits, clients ou positions existants."
             }
           ]
         },
         "systems": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "heroAltSuffix": "automatisation des entreprises et systèmes IA",
-          "title": "Automatisation & Systèmes Alimentés par l'IA",
-          "description": "Des outils logiciels sur mesure, des flux de travail automatisés et des intégrations IA qui simplifient vos opérations, éliminent les tâches répétitives et permettent à votre entreprise d'avancer plus vite avec moins d'erreurs.",
-          "startDescription": "Arrêtez de faire manuellement ce qu'un système peut gérer à votre place —",
-          "longDescription": "Je crée des tableaux de bord personnalisés, des pipelines automatisés et des outils propulsés par l'IA adaptés à votre flux de travail exact. Qu'il s'agisse de simplifier la gestion des clients, de suivre les stocks en temps réel ou de générer des rapports intelligents automatiquement — je livre un système qui fonctionne exactement comme votre entreprise. L'objectif est simple : éliminer les blocages qui vous ralentissent pour que vous puissiez vous concentrer entièrement sur la croissance.",
-          "company_recruitment": "Je collabore également avec des équipes et des entreprises sur des projets de développement.",
+          "title": "Tableaux de Bord Sur Mesure, Automatisation des Processus & Intégration IA au Maroc",
+          "title_metadata": "Automatisation des Processus, Tableaux de Bord Sur Mesure & Intégration IA au Maroc",
+          "description_metadata": "Tableaux de bord sur mesure, systèmes d'automatisation des processus, automatisation des workflows et intégrations IA qui rationalisent les opérations, améliorent la productivité et aident les entreprises à croître.",
+          "title_card": "Automatisation des Processus & Intégration IA",
+          "description": "Tableaux de bord sur mesure, automatisation des workflows et systèmes métier propulsés par l'IA qui rationalisent les opérations, éliminent les tâches répétitives, améliorent la productivité et soutiennent des décisions business plus intelligentes.",
+          "overviewHeadline": "Travaillez Plus Intelligemment avec des Systèmes Métier Sur Mesure",
+          "startDescription": "Votre équipe ne devrait pas perdre de temps sur des tâches répétitives quand un logiciel peut les automatiser pour vous.",
+          "longDescription": "Je conçois et développe des tableaux de bord sur mesure, des systèmes métier internes, des automatisations de workflows et des intégrations IA adaptés au fonctionnement de votre entreprise. Que vous ayez besoin d'un logiciel CRM, de gestion des stocks, de tableaux de bord de reporting, d'automatisation de documents, d'assistants IA ou d'intégrations API, chaque solution est conçue pour gagner du temps, réduire le travail manuel, améliorer la précision et vous donner une visibilité complète sur votre activité. Le résultat : un système évolutif qui grandit avec votre entreprise tout en aidant votre équipe à se concentrer sur des tâches à plus forte valeur ajoutée.",
+          "company_recruitment": "Je collabore également avec des startups et des entreprises sur des projets de développement logiciel, d'automatisation et d'intégration IA à long terme.",
           "link": "/services/business-systems",
-          "start_btn": "Démarrer Votre Projet",
+          "start_btn": "Automatisez Votre Entreprise",
           "allServicesBtn": "Voir Tous les Services",
           "overviewTitle": "Pourquoi Me Choisir ?",
-          "includedTitle": "Qu'est-ce qui est inclus ?",
-          "includedDesc": "Ce service comprend :",
-          "benefitsTitle": "Ce que vous gagnerez",
-          "benefitsDesc": "Après l'automatisation de vos opérations, vous pouvez vous attendre à :",
-          "useCasesTitle": "Applications concrètes",
-          "useCasesDesc": "Voici comment ces systèmes transforment les opérations quotidiennes en pratique :",
-          "processTitle": "Comment je travaille",
-          "processDesc": "Je suis un processus clair pour m'assurer que le système s'adapte à votre flux de travail dès le premier jour :",
-          "techTitle": "Technologies avec lesquelles je travaille",
-          "techDesc": "Je choisis la bonne stack selon vos besoins — conçue pour évoluer avec votre entreprise.",
-          "AnothersrvcBtn": "Voir tous les services",
+          "includedTitle": "Ce Qui Est Inclus",
+          "includedDesc": "Chaque projet d'automatisation des processus inclut :",
+          "benefitsTitle": "Ce Que Vous Allez Gagner",
+          "benefitsDesc": "Automatiser votre entreprise vous aide à gagner du temps, réduire les coûts et améliorer la productivité.",
+          "useCasesTitle": "Solutions d'Automatisation des Processus",
+          "useCasesDesc": "Exemples de systèmes réels que je développe pour les entreprises.",
+          "processTitle": "Ma Méthode de Travail",
+          "processDesc": "Un processus de développement structuré, conçu autour de vos objectifs business.",
+          "techTitle": "Les Technologies Que J'utilise",
+          "techDesc": "Des technologies modernes sélectionnées selon les besoins de votre entreprise — pas les tendances.",
+          "faqTitle": "Questions Fréquentes",
+          "faqDesc": "Des réponses directes sur l'automatisation des processus, les tableaux de bord et l'intégration IA :",
+          "AnothersrvcBtn": "Voir Tous les Services",
           "features": [
-            "Automatisation des flux",
+            "Tableaux de Bord Sur Mesure",
+            "Automatisation des Workflows",
             "Intégration IA",
-            "Tableaux de bord personnalisés",
-            "Infrastructure évolutive"
+            "Reporting & Analytics",
+            "Intégrations API"
           ],
           "stats": [
             {
               "value": "~80%",
-              "label": "Réduction du temps consacré aux tâches manuelles — rapportée par les clients après automatisation"
+              "label": "Réduction du temps consacré aux tâches manuelles — rapportée par les clients après l'automatisation"
             },
             {
               "value": "3×",
@@ -234,131 +400,86 @@
           ],
           "benefits": [
             {
-              "title": "Des heures économisées chaque semaine",
-              "text": "Les tâches répétitives s'exécutent automatiquement pour que votre équipe se concentre sur ce qui compte vraiment."
+              "title": "Gagnez du Temps Chaque Jour",
+              "text": "Automatisez les tâches répétitives, les approbations, les notifications et les rapports pour que votre équipe puisse se concentrer sur des tâches à forte valeur ajoutée."
             },
             {
-              "title": "Moins d'erreurs coûteuses",
-              "text": "Les systèmes automatisés éliminent le risque d'erreur humaine dans la saisie, les rapports et les décisions routinières."
+              "title": "Augmentez la Productivité",
+              "text": "Centralisez vos données métier, réduisez les processus manuels et donnez à votre équipe un accès plus rapide aux informations dont elle a besoin."
             },
             {
-              "title": "Visibilité en temps réel",
-              "text": "Des tableaux de bord personnalisés qui affichent les chiffres dont vous avez réellement besoin — quand vous en avez besoin."
+              "title": "Prenez de Meilleures Décisions Business",
+              "text": "Des tableaux de bord en temps réel et des insights propulsés par l'IA vous aident à suivre vos KPIs, identifier les tendances et prendre des décisions éclairées."
             }
           ],
           "useCases": [
             {
-              "title": "Gestion des clients & CRM",
-              "text": "Suivez les clients, les contrats et les renouvellements automatiquement — sans tableurs, sans relances oubliées."
+              "title": "CRM & Gestion des Clients",
+              "text": "Gérez vos clients, prospects, contrats, factures et suivis depuis un tableau de bord centralisé."
             },
             {
-              "title": "Gestion des stocks",
-              "text": "Suivi des stocks en temps réel avec alertes de rupture et réapprovisionnement automatisé intégré."
+              "title": "Stocks & Opérations",
+              "text": "Suivez vos stocks, fournisseurs, achats, livraisons et alertes d'inventaire automatisées en temps réel."
             },
             {
-              "title": "Reporting & Analytics",
-              "text": "Des tableaux de bord personnalisés qui extraient des données en direct et génèrent des rapports automatiquement — quotidiennement, hebdomadairement ou à la demande."
+              "title": "Tableaux de Bord & Reporting",
+              "text": "Visualisez vos KPIs, ventes, revenus, productivité et données opérationnelles à travers des tableaux de bord interactifs."
             },
             {
-              "title": "Flux de travail propulsés par l'IA",
-              "text": "Traitement intelligent de documents, tri des e-mails et aide à la décision intégrés directement dans vos outils."
+              "title": "Automatisation IA & Intégrations",
+              "text": "Intégrez des assistants IA, du traitement de documents, de l'automatisation d'e-mails, des API et des workflows intelligents dans vos systèmes métier existants."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Audit",
-              "text": "J'analyse votre flux de travail actuel, j'identifie les blocages et les opportunités d'automatisation à plus forte valeur ajoutée."
+              "title": "Analyse des Besoins Métier",
+              "text": "Comprendre votre workflow, identifier les goulots d'étranglement et définir les opportunités d'automatisation."
             },
             {
               "step": "02",
-              "title": "Développement",
-              "text": "Outils et intégrations sur mesure construits autour de votre stack existante — sans complexité inutile."
+              "title": "Conception & Développement du Système",
+              "text": "Développer des tableaux de bord sécurisés, des workflows d'automatisation, des API et des intégrations IA adaptés à votre entreprise."
             },
             {
               "step": "03",
-              "title": "Formation & Remise",
-              "text": "Documentation complète et présentation pratique pour que vous et votre équipe soyez totalement à l'aise."
+              "title": "Déploiement & Support",
+              "text": "Déployer votre système, former votre équipe, surveiller les performances et améliorer continuellement la solution à mesure que votre entreprise grandit."
             }
           ],
           "techStackList": [
-            "Node.js",
+            "Express.js",
             "Python",
             "OpenAI API",
             "REST APIs",
             "MongoDB",
             "React"
-          ]
-        },
-        "design": {
-          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
-          "heroAltSuffix": "design de publicités sur les réseaux sociaux",
-          "title": "Design de Publicités & Visuels pour les Réseaux Sociaux",
-          "description": "Des visuels publicitaires à fort impact pour Instagram, Facebook et TikTok — conçus pour capter l'attention, communiquer clairement votre valeur et pousser les spectateurs à passer à l'action.",
-          "startDescription": "Des visuels qui arrêtent le scroll et génèrent de vrais résultats —",
-          "longDescription": "Une bonne publicité ne se contente pas d'être belle — elle dit la bonne chose à la bonne personne au bon moment. Je crée des visuels percutants avec des messages clairs et des appels à l'action forts qui s'alignent avec votre identité de marque. Qu'il s'agisse d'un post statique ou d'un motion graphic pour Reels et TikTok, chaque élément est conçu avec un objectif précis : maximiser votre impact et transformer l'attention en engagement.",
-          "link": "/services/social-design",
-          "start_btn": "Démarrer Votre Projet",
-          "allServicesBtn": "Voir Tous les Services",
-          "overviewTitle": "Pourquoi Me Choisir ?",
-          "exampleTitle": "Les éléments d'une publicité réussie",
-          "exampleDesc": "Les visuels seuls ne suffisent pas. Je combine un design percutant avec une messagerie stratégique, une cohérence de marque et des appels à l'action clairs — chaque élément justifie sa place dans la mise en page.",
-          "exampleFeatures": [
-            "Message clair et percutant",
-            "Mise en valeur professionnelle du produit",
-            "Hiérarchie visuelle alignée sur la marque",
-            "Appels à l'action à fort contraste"
           ],
-          "benefitsTitle": "Ce que vous gagnerez",
-          "benefitsDesc": "En investissant dans un design publicitaire professionnel, vous pouvez vous attendre à :",
-          "processTitle": "Comment je travaille",
-          "processDesc": "Un processus ciblé pour s'assurer que chaque création est conçue pour performer :",
-          "toolsTitle": "Outils de design que j'utilise",
-          "toolsDesc": "Des logiciels de référence pour livrer des créations pixel-perfect dans chaque format et taille.",
-          "AnothersrvcBtn": "Voir tous les services",
-          "features": [
-            "Publicités sociales",
-            "Visuels produits",
-            "Cohérence de marque",
-            "Fort taux de conversion"
-          ],
-          "benefits": [
+          "faqs": [
             {
-              "title": "Plus d'engagement",
-              "text": "Des designs conçus pour générer des enregistrements, des partages et des clics — pas seulement des impressions."
+              "q": "Qu'est-ce que l'automatisation des processus et comment aide-t-elle mon entreprise ?",
+              "a": "L'automatisation des processus consiste à utiliser des logiciels pour traiter automatiquement les tâches répétitives — comme la facturation, la saisie de données, le reporting et les suivis clients. Elle fait gagner des heures chaque semaine à votre équipe, réduit les erreurs humaines, diminue les coûts opérationnels et vous donne une visibilité en temps réel sur votre activité grâce à des tableaux de bord sur mesure."
             },
             {
-              "title": "Cohérence de marque",
-              "text": "Chaque visuel est reconnaissable comme le vôtre, sur chaque plateforme et chaque format."
+              "q": "Combien de temps l'automatisation peut-elle réellement faire gagner à mon entreprise ?",
+              "a": "Cela dépend de vos processus, mais la plupart des entreprises récupèrent 5 à 15 heures par semaine et par employé en automatisant les tâches répétitives comme la saisie de données, le reporting et les suivis. Lors de la phase d'analyse, j'identifie vos pertes de temps spécifiques et j'estime les gains exacts avant tout développement."
             },
             {
-              "title": "Meilleur ROAS",
-              "text": "Des créations conçues autour de la conversion — pas seulement de l'esthétique."
+              "q": "Pouvez-vous intégrer l'automatisation avec les outils que j'utilise déjà ?",
+              "a": "Oui — je connecte vos outils existants comme votre CRM, votre logiciel comptable, votre plateforme e-commerce, vos tableurs et vos e-mails. Les systèmes sont construits autour de votre workflow actuel, donc votre équipe garde les outils qu'elle connaît tandis que tout se synchronise automatiquement en arrière-plan."
+            },
+            {
+              "q": "Ai-je besoin de connaissances techniques pour utiliser ces systèmes ?",
+              "a": "Non — chaque système est livré avec une interface simple conçue pour les utilisateurs non techniques, plus une formation complète et une documentation en langage clair. Si votre équipe sait utiliser un tableur, elle saura utiliser les tableaux de bord et les outils que je développe."
+            },
+            {
+              "q": "Comment l'IA peut-elle réellement aider les opérations de mon entreprise ?",
+              "a": "L'IA apporte une vraie valeur dans des domaines précis : répondre automatiquement aux questions fréquentes des clients, traiter et classer des documents, générer des rapports et du contenu, et extraire des insights de vos données. J'intègre l'IA uniquement là où elle résout un vrai problème — jamais comme un gadget — pour que vous obteniez des résultats mesurables, pas des buzzwords."
+            },
+            {
+              "q": "Combien coûte un système métier sur mesure au Maroc ?",
+              "a": "Le coût dépend de la complexité : nombre d'intégrations, périmètre de l'automatisation et fonctionnalités du tableau de bord. Une automatisation ciblée d'un workflow coûte moins qu'un système de gestion complet. Après l'analyse initiale, vous recevez un devis clair — et comme la plupart des systèmes se rentabilisent grâce aux gains de temps, je vous aide à prioriser les automatisations avec le retour sur investissement le plus rapide."
             }
-          ],
-          "process": [
-            {
-              "step": "01",
-              "title": "Brief",
-              "text": "Je définis votre audience cible, la plateforme et l'objectif précis de la campagne."
-            },
-            {
-              "step": "02",
-              "title": "Design",
-              "text": "Plusieurs concepts livrés avec des révisions incluses jusqu'à ce que ce soit exactement ce qu'il faut."
-            },
-            {
-              "step": "03",
-              "title": "Export & Lancement",
-              "text": "Livré dans tous les formats et tailles requis — prêt à diffuser immédiatement."
-            }
-          ],
-          "toolsList": [
-            "Figma",
-            "Adobe Photoshop",
-            "Adobe Illustrator",
-            "Canva",
-            "After Effects"
           ]
         }
       },
@@ -595,6 +716,45 @@
           }
         },
         {
+          "title": "Landing Page E-commerce",
+          "description": "Conception d'une page de destination à haut taux de conversion pour la promotion de produits et les campagnes publicitaires. Optimisée pour un chargement rapide, une expérience mobile et une présentation claire des produits, aidant à augmenter l'engagement utilisateur et les taux de conversion. Intégrée à un tableau de bord pour les mises à jour de contenu en temps réel et l'optimisation des campagnes.",
+          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "image": "/images/projects/Landing-Page-Ecommerce.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Développement Web & E-commerce",
+          "type": "professional",
+          "status": "en ligne",
+          "href": "/portfolio/landing-page-ecommerce",
+          "highlightsHeading": "Ce que nous avons livré",
+          "detail": {
+            "seo": {
+              "title": "Page de Destination E-commerce Rapide, Mobile-friendly & SEO Optimisée | Devsign",
+              "description": "Une page de destination à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, une adaptabilité mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
+              "keywords": [
+                "page de destination ecommerce",
+                "landing page haute conversion",
+                "landing page Tailwind CSS",
+                "site retail mobile-first",
+                "landing page SEO Maroc",
+                "embaucher développeur frontend"
+              ]
+            },
+            "intro": "Le e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà des performances, nous avons construit cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour le contenu, les promotions et les sections instantanément — sans toucher au code. Le résultat est une expérience rapide et optimisée pour mobile, combinée à un contrôle total sur le message et le flux de conversion.",
+            "sections": [
+              {
+                "title": "Construction intelligente & contrôle du contenu",
+                "body": "La page est structurée avec des sections sémantiques propres, des ressources optimisées et un système évolutif pour les performances et la maintenabilité. Les animations et mouvements sont utilisés pour guider l'attention de l'utilisateur et améliorer l'engagement. Nous intégrons également des images et des formulaires pour expliquer clairement le service ou le produit. De plus, un tableau de bord personnalisé permet aux équipes d'éditer le texte, les images, les offres, les CTA et les paramètres d'animation en temps réel. Cela garantit que la page de destination reste fraîche, pertinente et alignée avec les campagnes marketing sur le SEO, les réseaux sociaux et les publicités payantes."
+              }
+            ],
+            "highlights": [
+              "Mise en page mobile-first et interactions adaptées au tactile",
+              "Stratégie de ressources et CSS axée sur les performances",
+              "Hiérarchie de contenu et titres orientés SEO",
+              "Chemin CTA clair du héros aux objections jusqu'à l'action"
+            ]
+          }
+        },
+        {
           "title": "Tableau de Bord d'Automatisation d'Entreprise",
           "description": "Développement d'un tableau de bord personnalisé pour centraliser la gestion des clients, les abonnements et les opérations commerciales. Le suivi automatisé des cycles de facturation, des stocks et du statut des services a réduit le travail manuel, amélioré l'organisation et augmenté l'efficacité globale et la satisfaction client.",
           "tech": "React JS, Express JS, REST API",
@@ -629,45 +789,6 @@
               "Alertes automatisées pour les services expirants et les seuils critiques",
               "Architecture basée sur REST prête à s'étendre avec de nouveaux modules",
               "Conçu pour les opérations quotidiennes sur bureau et tablette"
-            ]
-          }
-        },
-        {
-          "title": "Landing Page E-commerce",
-          "description": "Conception d'une page de destination à haut taux de conversion pour la promotion de produits et les campagnes publicitaires. Optimisée pour un chargement rapide, une expérience mobile et une présentation claire des produits, aidant à augmenter l'engagement utilisateur et les taux de conversion. Intégrée à un tableau de bord pour les mises à jour de contenu en temps réel et l'optimisation des campagnes.",
-          "tech": "Next.js, Tailwind CSS, MongoDB",
-          "image": "/images/projects/Landing-Page-Ecommerce.jpg",
-          "linkLabel": "Voir l'étude de cas",
-          "category": "Développement Web & SEO",
-          "type": "professional",
-          "status": "en ligne",
-          "href": "/portfolio/landing-page-ecommerce",
-          "highlightsHeading": "Ce que nous avons livré",
-          "detail": {
-            "seo": {
-              "title": "Page de Destination E-commerce Rapide, Mobile-friendly & SEO Optimisée | Devsign",
-              "description": "Une page de destination à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, une adaptabilité mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
-              "keywords": [
-                "page de destination ecommerce",
-                "landing page haute conversion",
-                "landing page Tailwind CSS",
-                "site retail mobile-first",
-                "landing page SEO Maroc",
-                "embaucher développeur frontend"
-              ]
-            },
-            "intro": "Le e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà des performances, nous avons construit cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour le contenu, les promotions et les sections instantanément — sans toucher au code. Le résultat est une expérience rapide et optimisée pour mobile, combinée à un contrôle total sur le message et le flux de conversion.",
-            "sections": [
-              {
-                "title": "Construction intelligente & contrôle du contenu",
-                "body": "La page est structurée avec des sections sémantiques propres, des ressources optimisées et un système évolutif pour les performances et la maintenabilité. Les animations et mouvements sont utilisés pour guider l'attention de l'utilisateur et améliorer l'engagement. Nous intégrons également des images et des formulaires pour expliquer clairement le service ou le produit. De plus, un tableau de bord personnalisé permet aux équipes d'éditer le texte, les images, les offres, les CTA et les paramètres d'animation en temps réel. Cela garantit que la page de destination reste fraîche, pertinente et alignée avec les campagnes marketing sur le SEO, les réseaux sociaux et les publicités payantes."
-              }
-            ],
-            "highlights": [
-              "Mise en page mobile-first et interactions adaptées au tactile",
-              "Stratégie de ressources et CSS axée sur les performances",
-              "Hiérarchie de contenu et titres orientés SEO",
-              "Chemin CTA clair du héros aux objections jusqu'à l'action"
             ]
           }
         },
@@ -1164,7 +1285,9 @@
     },
     "articles_page": {
       "sectionLabel": "Articles & Guides",
-      "description": "J'écris à partir de mon expérience réelle — du choix du meilleur ordinateur pour le développement en 2026, à l'inspection des ordinateurs d'occasion avant achat, en passant par le SEO technique, l'optimisation de la recherche IA et la création de sites rapides avec Next.js. Chaque article vous aide à prendre de meilleures décisions et à croître en ligne.",
+      "subtitle": "Expérience réelle, conseils pratiques",
+      "heading": "Articles sur le Développement Web, le SEO et l'Optimisation de la Recherche IA",
+      "description": "J'écris à partir d'une expérience terrain concrète : du choix du meilleur ordinateur portable pour coder en 2026, à l'inspection d'un PC d'occasion avant achat, en passant par le SEO technique, l'optimisation pour la recherche IA et la création de sites web rapides avec Next.js. Chaque article est conçu pour vous aider à prendre de meilleures décisions et à développer votre présence en ligne.",
       "cta_btn": "Lire l'Article",
       "articlesLabel": "Derniers Articles",
       "topics": [
@@ -1249,38 +1372,32 @@
       }
     }
   },
-  "footer": {
-    "brandName": "Devsign",
-    "brandTagline": "Freelance",
-    "phone": "+212 7 78 18 03 06",
-    "address": "Maroc (GMT+1)",
-    "ExplorerTitle": "Explorer",
-    "links": [
-      {
-        "label": "Services",
-        "href": "/services"
-      },
-      {
-        "label": "Projets",
-        "href": "/portfolio"
-      },
-      {
-        "label": "À propos",
-        "href": "/about"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
-      },
-      {
-        "label": "Articles",
-        "href": "/articles"
-      }
-    ],
-    "followTitle": "Suivez-moi",
-    "contactTitle": "Contact",
-    "copyright": "© {year} Devsign. Tous droits réservés."
-  },
+"footer": {
+  "brandName": "Devsignpro",
+  "brandTagline": "Développeur Full-Stack & Spécialiste SEO",
+  "phone": "+212 7 78 18 03 06",
+  "address": "Maroc (GMT+1)",
+  "ExplorerTitle": "Explorer",
+  "links": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Projets", "href": "/portfolio" },
+    { "label": "À propos", "href": "/about" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Articles", "href": "/articles" }
+  ],
+  "servicesTitle": "Services",
+  "servicesLinks": [
+    { "label": "Développement Web", "href": "/services/web-development" },
+    { "label": "Développement E-commerce", "href": "/services/ecommerce" },
+    { "label": "Dashboards & Automatisation", "href": "/services/business-systems" }
+  ],
+  "legalLinks": [
+    { "label": "Plan du site", "href": "/sitemap.xml" }
+  ],
+  "followTitle": "Suivez-moi",
+  "contactTitle": "Contact",
+  "copyright": "© {year} Devsignpro. Tous droits réservés."
+},
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
@@ -1305,20 +1422,20 @@
         "jobTitle": "Développeur Full-Stack, Expert SEO & Spécialiste Optimisation Recherche IA",
         "services": [
           {
-            "name": "Développement de Sites Business",
-            "description": "Sites business sur mesure en Next.js optimisés pour le SEO, les Core Web Vitals, l'accessibilité, et les moteurs de recherche IA."
+            "name": "Développement de Sites Web sur Mesure",
+            "description": "Création de sites web d'entreprise, sites corporate, landing pages et applications web avec SEO technique, Core Web Vitals et optimisation pour la recherche IA."
           },
           {
-            "name": "Développement de Sites E-commerce",
-            "description": "Boutiques en ligne rapides et sécurisées avec excellente expérience utilisateur, SEO technique, et forte performance de conversion."
+            "name": "Automatisation des Processus, Tableaux de Bord & Intégration IA",
+            "description": "Développement de tableaux de bord, automatisation des processus métier, intégration de l'IA et systèmes de gestion personnalisés pour améliorer la productivité."
           },
           {
-            "name": "SEO Technique & Optimisation Recherche IA",
-            "description": "Améliorez votre visibilité sur Google Search, Google AI Overviews, ChatGPT, Perplexity, et autres expériences de recherche IA."
+            "name": "Développement de Boutiques E-commerce",
+            "description": "Création de boutiques en ligne performantes avec paiements sécurisés, SEO technique, optimisation des fiches produits et forte capacité de conversion."
           },
           {
-            "name": "Optimisation des Performances Web",
-            "description": "Augmentez la vitesse, les scores Core Web Vitals, l'accessibilité, et les performances globales pour de meilleurs classements et UX."
+            "name": "SEO Technique & Optimisation pour la Recherche IA",
+            "description": "SEO technique, Core Web Vitals, données structurées et optimisation pour la recherche IA afin d'améliorer la visibilité sur Google et les moteurs de recherche IA."
           }
         ]
       }

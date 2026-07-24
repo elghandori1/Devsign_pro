@@ -193,7 +193,7 @@ export default async function ArticleDetailsPage({ params }: Props) {
       name: "Devsignpro",
       logo: {
         "@type": "ImageObject",
-        url: `${getBaseUrl()}/logo/devsign-logo.jpg`,
+        url: `${getBaseUrl()}/logo/devsignpro-logo.jpg`,
       },
       url: "https://devsignpro.com",
     },

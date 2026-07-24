@@ -13,6 +13,7 @@ interface SectionData {
 interface ServiceItem {
   image: string;
   title: string;
+  title_card: string;
   description: string;
   link: string;
   features: string[];
@@ -82,7 +83,7 @@ export default function ServicesGrid({
                   <div className="flex flex-col grow p-6 sm:p-8">
                     <div className="mb-3">
                       <h3 className="text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300">
-                        {service.title}
+                        {service.title_card}
                       </h3>
                     </div>
 

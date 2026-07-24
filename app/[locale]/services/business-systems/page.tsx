@@ -8,21 +8,28 @@ import {
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  Clock,
-  ShieldAlert,
-  BarChart3,
-  Bot,
-  Network,
+  Server,
+  Terminal,
   Database,
   Code2,
-  Layout,
-  Server,
+  Bot,
+  Network,
+  Sparkles,
+  Clock,
+  TrendingUp,
+  BarChart3,
+  ChevronDown,
+  ShoppingCart,
+  Search,
+  Wrench,
+  Users,
   Briefcase,
   Package,
   Workflow,
-  Sparkles,
 } from "lucide-react";
-import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import { getBaseUrl } from "@/app/lib/buildPageMetadata";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -34,70 +41,73 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const data = dict.pages.services_page.services.systems;
-
-  const keywords = locale === "ar"
-    ? [
-        "أتمتة الأعمال المغرب",
-        "أنظمة ذكاء اصطناعي",
-        "أتمتة سير العمل",
-        "لوحات تحكم مخصصة",
-        "كفاءة الأعمال",
-        "تحسين العمليات",
-        "تكامل الذكاء الاصطناعي",
-        "أتمتة المهام المتكررة",
-      ]
-    : locale === "fr"
+  const keywords =
+    locale === "ar"
       ? [
-          "automatisation entreprise Maroc",
-          "systèmes IA",
-          "automatisation flux de travail",
-          "tableaux de bord personnalisés",
-          "efficacité entreprise",
-          "optimisation processus",
-          "intégration IA",
-          "automatisation tâches répétitives",
+          "أتمتة الأعمال المغرب",
+          "أنظمة أعمال مخصصة المغرب",
+          "أنظمة ذكاء اصطناعي للشركات",
+          "أتمتة سير العمل",
+          "لوحات تحكم مخصصة",
+          "لوحة تحكم إدارية",
+          "تحسين العمليات",
+          "تكامل الذكاء الاصطناعي",
+          "أتمتة المهام المتكررة",
+          "تقارير آلية",
+          "إدارة المخزون أتمتة",
+          "حلول برمجية للشركات المغرب",
         ]
-      : [
-          "business automation Morocco",
-          "AI systems Morocco",
-          "workflow automation",
-          "custom dashboards",
-          "business efficiency",
-          "process optimization",
-          "AI integration",
-          "automated reporting",
-          "scalable solutions",
-        ];
+      : locale === "fr"
+        ? [
+            "automatisation entreprise Maroc",
+            "systèmes d'entreprise sur mesure Maroc",
+            "systèmes IA entreprise",
+            "automatisation flux de travail",
+            "tableaux de bord personnalisés",
+            "tableau de bord gestion Maroc",
+            "optimisation processus",
+            "intégration IA entreprise",
+            "automatisation tâches répétitives",
+            "rapports automatisés",
+            "gestion stock automatisée",
+            "solutions logicielles PME Maroc",
+          ]
+        : [
+            "business automation Morocco",
+            "custom business systems Morocco",
+            "AI systems for business",
+            "workflow automation Morocco",
+            "custom dashboards Morocco",
+            "management dashboard development",
+            "process optimization",
+            "AI integration for business",
+            "automate repetitive tasks",
+            "automated reporting system",
+            "inventory management automation",
+            "business software solutions Morocco",
+          ];
 
   return buildPageMetadata({
     locale,
-    title: `${data.title} | Devsign`,
-    description: data.description,
+    title: data.title_metadata,
+    description: data.description_metadata,
     route: "/services/business-systems",
     keywords: keywords,
-        ogImagePath: "/cover/Designpro-cover.jpg",
+    ogImagePath: data.image || "/Designpro-cover.jpg",
     type: "website",
   });
 }
 
-// Icons for Benefits
-const BENEFIT_ICONS = [Clock, ShieldAlert, BarChart3];
-
-// Icons for Use Cases
+const BENEFIT_ICONS = [Clock, TrendingUp, BarChart3];
 const USE_CASE_ICONS = [Briefcase, Package, BarChart3, Bot];
-
-// Helper to map string tech names from JSON to Lucide Icons dynamically
-const getTechIcon = (techName: string) => {
-  const name = techName.toLowerCase();
-  if (name.includes("node")) return Server;
-  if (name.includes("python")) return Code2;
-  if (name.includes("openai") || name.includes("ai")) return Bot;
-  if (name.includes("api") || name.includes("rest")) return Network;
-  if (name.includes("mongo") || name.includes("sql") || name.includes("database"))
-    return Database;
-  if (name.includes("react") || name.includes("vue")) return Layout;
-  return Workflow;
-};
+const TECH_STACK = [
+  { name: "Next.js & React", icon: Code2 },
+  { name: "Node.js", icon: Server },
+  { name: "Python", icon: Terminal },
+  { name: "AI / OpenAI API", icon: Bot },
+  { name: "REST APIs", icon: Network },
+  { name: "MongoDB", icon: Database },
+];
 
 export default async function BusinessSystemsPage({ params }: Props) {
   const { locale } = await params;
@@ -105,37 +115,32 @@ export default async function BusinessSystemsPage({ params }: Props) {
   const svc = dict.pages.services_page;
   const data = svc.services.systems;
   const isRtl = locale === "ar";
-
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
 
-  const overviewHeadline =
-    locale === "ar"
-      ? "أنظمة تعمل بدلاً منك، لا مجرد أدوات"
-      : locale === "fr"
-        ? "Des systèmes qui travaillent pour vous, pas seulement des outils"
-        : "Systems That Work for You, Not Just Tools";
+  const includedItems: string[] = data.features ?? [];
+  const faqs: { q: string; a: string }[] = data.faqs ?? [];
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: data.title,
     description: data.description,
-    image: data.image || `${getBaseUrl()}/og-image.jpg`,
+    image: data.image || `${getBaseUrl()}/Designpro-cover.jpg`,
     url: `${getBaseUrl()}/${locale}/services/business-systems`,
     provider: {
       "@type": "Organization",
-      name: "Devsign",
-      url: "https://devsign.ma",
-      telephone: "+212 7 78 00 00 06",
-      email: "contact@devsign.ma",
+      name: "Devsignpro",
+      url: `${getBaseUrl()}/${locale}`,
+      telephone: infos.phoneNumber,
+      email: infos.email,
     },
     serviceType:
       locale === "en"
-        ? "Business Systems and Automation"
+        ? "Custom Dashboards, Business Automation & AI Integration"
         : locale === "fr"
-          ? "Systèmes d'entreprise et automatisation"
-          : "أنظمة الأعمال والأتمتة",
+          ? "Tableaux de bord personnalisés, Automatisation & Intégration IA"
+          : "لوحات تحكم مخصصة, أتمتة الأعمال وتكامل الذكاء الاصطناعي",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
@@ -153,7 +158,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Services",
+        name: locale === "ar" ? "خدمات" : "Services",
         item: `${getBaseUrl()}/${locale}/services`,
       },
       {
@@ -165,8 +170,21 @@ export default async function BusinessSystemsPage({ params }: Props) {
     ],
   };
 
+  const faqSchema =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
-    <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -175,19 +193,22 @@ export default async function BusinessSystemsPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
-      {/* 1. HERO — Same Style as Web Dev Page*/}
+      {/* ── 1. HERO ── */}
       <section
         aria-labelledby="hero-heading"
         className="relative overflow-hidden border-b border-border"
       >
-        {/* Subtle background tint */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30"
           aria-hidden="true"
         />
-
-        {/* Grid texture */}
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
@@ -197,8 +218,6 @@ export default async function BusinessSystemsPage({ params }: Props) {
           }}
           aria-hidden="true"
         />
-
-        {/* Soft glows */}
         <div
           className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
@@ -207,74 +226,62 @@ export default async function BusinessSystemsPage({ params }: Props) {
           className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
-
         {/* Geometric Squares Pattern */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          {/* Large faint squares */}
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/[0.04] rotate-12" />
           <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
           <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/[0.04] rotate-45" />
           <div className="absolute top-1/2 right-1/4 w-24 h-24 border border-white/[0.03] -rotate-12" />
-          <div className="absolute bottom-32 left-1/4 w-56 h-56 border border-white/[0.02] rotate-6" />
-
-          {/* Small scattered squares */}
-          <div className="absolute top-16 right-16 w-8 h-8 bg-primary/10 rotate-12" />
-          <div className="absolute top-40 right-40 w-6 h-6 bg-primary/15 -rotate-6" />
-          <div className="absolute bottom-40 left-16 w-10 h-10 bg-primary/10 rotate-45" />
-          <div className="absolute top-1/3 left-1/3 w-4 h-4 bg-white/5 rotate-12" />
-          <div className="absolute bottom-1/3 right-1/3 w-5 h-5 bg-white/5 -rotate-12" />
-          <div className="absolute top-20 left-1/2 w-3 h-3 bg-primary/20 rotate-6" />
-          <div className="absolute bottom-24 right-1/2 w-7 h-7 bg-white/[0.03] -rotate-45" />
-
-          {/* Filled squares with blur glow */}
-          <div className="absolute top-1/4 left-[15%] w-20 h-20 bg-primary/5 blur-2xl rounded-sm" />
           <div className="absolute bottom-1/4 right-[15%] w-28 h-28 bg-blue-500/5 blur-3xl rounded-sm" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/[0.03] blur-3xl rounded-sm" />
         </div>
 
-        {/* Content */}
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24">
-          {/* Breadcrumb */}
           <nav aria-label="Breadcrumb" className="mb-6">
-            <Link
-              href={`/${locale}/services`}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                          border border-primary/20 px-4 py-2 rounded-full text-sm font-medium"
-            >
-              <Arr size={14} aria-hidden="true" />
-              {svc.title}
-            </Link>
+            <ol className="flex flex-wrap items-center gap-2 text-sm">
+              <li>
+                <Link
+                  href={`/${locale}/services`}
+                  className="inline-flex items-center gap-2 bg-primary/10 text-primary
+                             border border-primary/20 px-4 py-2 rounded-full font-medium
+                             hover:bg-primary/15 transition-colors"
+                >
+                  <Arr size={14} aria-hidden="true" />
+                  {svc.title}
+                </Link>
+              </li>
+              <li aria-current="page" className="sr-only">
+                {data.title}
+              </li>
+            </ol>
           </nav>
 
-          {/* Heading */}
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
-                       leading-[1.1] text-foreground mb-5 max-w-4xl"
+                       leading-[1.1] text-foreground mb-5 max-w-5xl"
           >
             {data.title}
           </h1>
 
-          {/* Description */}
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
             {data.description}
           </p>
 
-          {/* Feature Tags */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          {/* Keyword chips */}
+          <ul className="flex flex-wrap gap-2 mb-8 list-none p-0">
             {(data.features ?? []).map((tag: string) => (
-              <span
+              <li
                 key={tag}
                 className="px-3 py-1.5 bg-primary/10 text-primary rounded-full
                            text-xs sm:text-sm font-medium border border-primary/20
                            hover:bg-primary/15 transition-colors"
               >
                 {tag}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href={`/${locale}/contact`}
@@ -304,87 +311,94 @@ export default async function BusinessSystemsPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 2. OVERVIEW — Text + Image Square*/}
-      {data.features?.length > 0 && (
-        <section
-          aria-labelledby="overview-heading"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24"
-        >
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left: Text */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-                <Sparkles size={12} />
+      {/* ── 2. OVERVIEW ── */}
+      <section
+        aria-labelledby="overview-heading"
+        className="relative overflow-hidden"
+      >
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-muted/10 via-background to-background"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* ── Left: Text ── */}
+            <div className="order-2 lg:order-1">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                <Sparkles size={12} aria-hidden="true" />
                 {data.overviewTitle}
               </div>
+
               <h2
                 id="overview-heading"
-                className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground leading-tight"
+                className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground leading-[1.30] mb-6"
               >
-                {overviewHeadline}
+                {data.overviewHeadline}
               </h2>
-              <div
-                className="w-12 h-1.5 bg-primary rounded-full"
-                aria-hidden="true"
-              />
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+
+              <div className="flex items-center gap-2 mb-6" aria-hidden="true">
+                <div className="w-14 h-1 bg-primary rounded-full" />
+              </div>
+
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 <span className="font-semibold text-foreground">
                   {data.startDescription}
                 </span>{" "}
+                <br />
                 {data.longDescription}
               </p>
+
               {data.company_recruitment && (
-                <p className="text-primary font-medium">
-                  {data.company_recruitment}
-                </p>
+                <div className="flex items-start gap-3 p-4 rounded-xl border border-primary/20 bg-primary/5">
+                  <div
+                    className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  >
+                    <Users
+                      className="w-4 h-4 text-primary"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p className="text-sm sm:text-base text-foreground/90 font-medium leading-relaxed">
+                    {data.company_recruitment}
+                  </p>
+                </div>
               )}
             </div>
 
-            {/* Right: Image as a Square */}
-            <div className="relative aspect-square max-w-md mx-auto lg:max-w-none w-full rounded-2xl overflow-hidden border border-border shadow-xl">
-              <Image
-                src={data.image}
-                alt={`${data.title} — preview`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+            <div className="order-1 lg:order-2 relative max-w-md mx-auto lg:max-w-none w-full">
               <div
-                className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20"
                 aria-hidden="true"
               />
+              <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-border shadow-2xl shadow-primary/10">
+                <Image
+                  src={data.image}
+                  alt={data.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
+                  aria-hidden="true"
+                />
+              </div>
             </div>
           </div>
-        </section>
-      )}
-
-      {/* ═══════════════════════════════════════
-          2b. SIMPLE STATS — Square Cards, No Description
-         ═══════════════════════════════════════ */}
-      {data.stats?.length > 0 && (
-        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-            {data.stats.map(
-              (stat: { value: string; label: string }, i: number) => (
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center gap-1 p-5 sm:p-6 rounded-xl border border-border bg-card
-                             hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
-                >
-                  <div className="text-2xl sm:text-3xl font-extrabold text-primary">{stat.value}</div>
-                  <div className="text-sm sm:text-base font-semibold text-foreground text-center">{stat.label}</div>
-                </div>
-              ),
-            )}
-          </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* ── 3. WHAT'S INCLUDED ── */}
-      {data.features?.length > 0 && (
+      {includedItems.length > 0 && (
         <section
           aria-labelledby="included-heading"
-          className="max-w-6xl mx-auto px-4 py-12 sm:py-16 border-t border-border"
+          className="max-w-6xl mx-auto px-4 py-10 sm:pb-12 sm:pt-0"
         >
           <div className="text-center mb-8 sm:mb-10">
             <h2
@@ -398,11 +412,11 @@ export default async function BusinessSystemsPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {data.features.map((f: string, i: number) => (
-              <article
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 list-none p-0">
+            {includedItems.map((item: string, i: number) => (
+              <li
                 key={i}
-                className="group flex items-center gap-4 p-4 sm:p-5 rounded-xl border border-border
+                className="group flex items-start gap-4 p-4 sm:p-5 rounded-xl border border-border
                            bg-card hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5
                            transition-all duration-200"
               >
@@ -415,12 +429,12 @@ export default async function BusinessSystemsPage({ params }: Props) {
                     aria-hidden="true"
                   />
                 </div>
-                <span className="text-sm sm:text-base font-medium text-foreground">
-                  {f}
+                <span className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
+                  {item}
                 </span>
-              </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
 
@@ -458,8 +472,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
                         className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
                         aria-hidden="true"
                       />
-
-                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/20 transition-colors">
+                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 sm:mb-5">
                         <Icon
                           className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
                           aria-hidden="true"
@@ -480,7 +493,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── 5. USE CASES ── */}
+      {/* ── 5. USE CASES (specific to this service) ── */}
       {data.useCases?.length > 0 && (
         <section
           aria-labelledby="usecases-heading"
@@ -509,7 +522,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
                              hover:border-primary/30 hover:shadow-lg hover:-translate-y-1
                              transition-all duration-300"
                   >
-                    <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4">
                       <Icon
                         className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
                         aria-hidden="true"
@@ -529,7 +542,7 @@ export default async function BusinessSystemsPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── 6. PROCESS ── */}
+      {/* ── 6. PROCESS — 4 steps ── */}
       {data.process?.length > 0 && (
         <section
           aria-labelledby="process-heading"
@@ -580,13 +593,12 @@ export default async function BusinessSystemsPage({ params }: Props) {
           </div>
         </section>
       )}
-
       {/* ── 7. TECH STACK ── */}
-      {data.techStackList?.length > 0 && (
-        <section
-          aria-labelledby="tech-heading"
-          className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
-        >
+      <section
+        aria-labelledby="tech-heading"
+        className="py-12 sm:py-16 border-t border-border bg-muted/5"
+      >
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-10 sm:mb-12">
             <h2
               id="tech-heading"
@@ -599,26 +611,69 @@ export default async function BusinessSystemsPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
-            {data.techStackList.map((tech: string, i: number) => {
-              const Icon = getTechIcon(tech);
-              return (
-                <div
-                  key={i}
-                  className="flex flex-col items-center justify-center gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl
-                             border border-border bg-muted/10 hover:border-primary/30 hover:bg-primary/5 
-                             transition-all group cursor-default"
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 list-none p-0">
+            {TECH_STACK.map((tech, i) => (
+              <li
+                key={i}
+                className="flex flex-col items-center justify-center gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl
+                           border border-border bg-muted/10 hover:border-primary/30 hover:bg-primary/5
+                           transition-all group cursor-default"
+              >
+                <tech.icon
+                  className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform"
+                  aria-hidden="true"
+                />
+                <span className="text-xs sm:text-sm font-medium text-foreground text-center leading-tight">
+                  {tech.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* ── 8. FAQ — AEO / GEO section (native details = zero JS) ── */}
+      {faqs.length > 0 && (
+        <section
+          aria-labelledby="faq-heading"
+          className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <h2
+              id="faq-heading"
+              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
+            >
+              {data.faqTitle}
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
+              {data.faqDesc}
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            {faqs.map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-xl border border-border bg-card overflow-hidden
+                           hover:border-primary/30 transition-colors"
+              >
+                <summary
+                  className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5
+                             font-semibold text-foreground text-sm sm:text-base
+                             list-none [&::-webkit-details-marker]:hidden
+                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
-                  <Icon
-                    className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform"
+                  <h3 className="text-left">{f.q}</h3>
+                  <ChevronDown
+                    className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180"
                     aria-hidden="true"
                   />
-                  <span className="text-xs sm:text-sm font-medium text-foreground text-center leading-tight">
-                    {tech}
-                  </span>
-                </div>
-              );
-            })}
+                </summary>
+                <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  {f.a}
+                </p>
+              </details>
+            ))}
           </div>
         </section>
       )}
@@ -637,7 +692,6 @@ export default async function BusinessSystemsPage({ params }: Props) {
             className="absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
-
           <div className="relative text-center py-10 sm:py-16 px-5 sm:px-12 z-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 max-w-2xl mx-auto leading-tight text-foreground">
               {svc.ctat_title}
@@ -645,7 +699,6 @@ export default async function BusinessSystemsPage({ params }: Props) {
             <p className="text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
               {svc.cta_desc}
             </p>
-
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <Link
                 href={`/${locale}/contact`}

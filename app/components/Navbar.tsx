@@ -19,7 +19,7 @@ const fullDictionary = await getDictionary(locale);
     <nav dir="ltr" className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur-md transition-colors duration-300">
       <div className="max-w-7xl mx-auto flex h-16 items-center justify-between px-6">
         <Link href={`/${locale}`} className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground hover:opacity-80 transition-opacity">
-          <span>Devsign</span>
+          <span>Devsignpro</span>
         </Link>
         <div className="hidden md:block">
           <NavLinks locale={locale} t={t} />

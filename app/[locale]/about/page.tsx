@@ -191,20 +191,20 @@ export default async function AboutPage({ params }: Props) {
             ? "أقوم ببناء حلول رقمية عالية الأداء باستخدام مجموعة تقنيات حديثة: الواجهات الأمامية والخلفية (React, Next.js, TypeScript, Node.js, Express.js, NestJS)، وقواعد البيانات وأدوات النشر (MySQL, MongoDB, Docker, Git، بالإضافة إلى أحدث أساليب النشر السحابي). بالإضافة إلى التطوير الأساسي، أتخصص في تحسين محركات البحث والذكاء الاصطناعي (تطبيق Schema.org، البيانات المنظمة، تحسين مقاييس ويب الأساسية Core Web Vitals، وهندسة محتوى جاهزة للذكاء الاصطناعي) وأتمتة الأعمال (باستخدام n8n, Make، وواجهات برمجة تطبيقات OpenAI). أختار دائماً مجموعة التقنيات الأنسب لمتطلبات عملك المحددة لضمان تقديم حلول رقمية آمنة، قابلة للتوسع، وسهلة الصيانة."
             : "Je développe des solutions performantes en m'appuyant sur une stack technologique moderne : Frontend & Backend (React, Next.js, TypeScript, Node.js, Express.js, NestJS), et Bases de données & DevOps (MySQL, MongoDB, Docker, Git, ainsi que des workflows de déploiement cloud modernes). Au-delà du développement pur, je me spécialise dans l'optimisation SEO & IA (mise en place de Schema.org, données structurées, optimisation des Core Web Vitals et architecture de contenu prête pour l'IA) et l'automatisation des processus (via n8n, Make et les API OpenAI). Je choisis toujours la pile technologique la plus adaptée à vos besoins métier spécifiques afin de livrer des solutions numériques sécurisées, évolutives et maintenables.",
     },
-    {
-      question:
-        locale === "en"
-          ? "Why choose a web developer in Morocco?"
-          : locale === "ar"
-            ? "لماذا تختار مطور ويب في المغرب؟"
-            : "Pourquoi choisir un développeur web au Maroc ?",
-      answer:
-        locale === "en"
-          ? "Working with a web developer in Morocco gives businesses access to modern development expertise at competitive rates while benefiting from convenient collaboration across European and African time zones. Mohammed Elghandori builds fast, secure, scalable websites, business dashboards, e-commerce platforms, and custom web applications using modern technologies and industry best practices. Every project is designed to improve performance, user experience, search visibility, and long-term business growth."
-          : locale === "ar"
-            ? "يمنحك العمل مع مطور ويب في المغرب خبرة حديثة في تطوير الويب بتكلفة تنافسية، مع سهولة التعاون بفضل توافق المناطق الزمنية مع أوروبا وأفريقيا. يقوم محمد الغندوري بتطوير مواقع ويب، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات ويب مخصصة تكون سريعة وآمنة وقابلة للتوسع باستخدام أحدث التقنيات وأفضل الممارسات. يركز كل مشروع على تحسين الأداء، وتجربة المستخدم، والظهور في نتائج البحث، وتحقيق نمو مستدام للأعمال."
-            : "Collaborer avec un développeur web au Maroc permet de bénéficier d'une expertise moderne à un coût compétitif tout en profitant d'un fuseau horaire adapté à l'Europe et à l'Afrique. Mohammed Elghandori conçoit des sites web, des boutiques e-commerce, des tableaux de bord et des applications web sécurisés, rapides et évolutifs en utilisant des technologies modernes et les meilleures pratiques du secteur. Chaque projet est pensé pour améliorer les performances, l'expérience utilisateur, la visibilité en ligne et la croissance de votre entreprise.",
-    },
+{
+  question:
+    locale === "en"
+      ? "Why choose a web developer in Morocco?"
+      : locale === "ar"
+        ? "لماذا تختار مطور ويب في المغرب؟"
+        : "Pourquoi choisir un développeur web au Maroc ?",
+  answer:
+    locale === "en"
+      ? "Hiring a web developer in Morocco gives you European-level quality at 40–70% lower cost than agencies in France, the UK, or the US — without compromising on code quality, security, or performance. With Morocco's GMT+1 timezone and trilingual developers (French, Arabic, English), collaboration is seamless. Mohammed Elghandori builds fast, secure, scalable websites, e-commerce stores, business dashboards, and AI-powered applications using Next.js and modern technologies. Every project includes Technical SEO, Core Web Vitals, and AI Search Optimization to improve your visibility on Google, ChatGPT, and Perplexity."
+      : locale === "ar"
+        ? "توظيف مطور ويب في المغرب يمنحك جودة بمستوى أوروبي بتكلفة أقل بنسبة 40–70% مقارنة بالوكالات في فرنسا أو المملكة المتحدة أو الولايات المتحدة — دون المساومة على جودة الكود أو الأمان أو الأداء. بفضل المنطقة الزمنية GMT+1 ومطورين يتقنون الفرنسية والعربية والإنجليزية، يكون التعاون سلساً وفعّالاً. محمد الغندوري يطور مواقع ويب سريعة وآمنة وقابلة للتوسع، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات مدعومة بالذكاء الاصطناعي باستخدام Next.js وأحدث التقنيات. يشمل كل مشروع تحسين محركات البحث التقني، ومقاييس ويب الأساسية، وتحسين البحث بالذكاء الاصطناعي لتعزيز ظهورك على Google وChatGPT وPerplexity."
+        : "Engager un développeur web au Maroc vous offre une qualité de niveau européen à un coût 40 à 70 % inférieur aux agences en France, au Royaume-Uni ou aux États-Unis — sans compromis sur la qualité du code, la sécurité ou les performances. Avec le fuseau horaire GMT+1 et des développeurs trilingues (français, arabe, anglais), la collaboration est fluide. Mohammed Elghandori conçoit des sites web rapides, sécurisés et évolutifs, des boutiques e-commerce, des tableaux de bord et des applications propulsées par l'IA avec Next.js et les technologies modernes. Chaque projet inclut le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA pour améliorer votre visibilité sur Google, ChatGPT et Perplexity.",
+}
   ];
   const aboutSchema = {
     "@context": "https://schema.org",
