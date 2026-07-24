@@ -366,7 +366,7 @@ export default async function Home({ params }: Props) {
 
                     <div className="mt-3 space-y-2">
                       <Link
-                        href={`/${locale}#about`}
+                        href={`/${locale}/about`}
                         className="w-full inline-flex items-center justify-center gap-1.5
                          px-3 py-1.5 bg-primary text-primary-foreground font-semibold
                          rounded-lg text-xs hover:opacity-90 active:scale-95 transition-all"
