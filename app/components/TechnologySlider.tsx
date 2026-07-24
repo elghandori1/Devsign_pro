@@ -39,21 +39,18 @@ export default function TechnologySlider() {
           aria-hidden="true"
         />
 
-        {/* Scrolling track */}
-        <div
-          className="flex animate-scroll gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-max"
-          role="list"
-        >
+        <ul className="flex animate-scroll hover:[animation-play-state:paused] focus-within:[animation-play-state:paused] gap-2 sm:gap-3 md:gap-4 lg:gap-6 w-max p-0 m-0 list-none">
           {duplicated.map((tech, index) => (
-            <div
+            
+            <li
               key={`${tech.name}-${index}`}
+              aria-hidden={index >= technologies.length ? "true" : "false"}
               className="flex items-center gap-1.5 sm:gap-2 md:gap-3 min-w-max px-2 sm:px-3 md:px-4 lg:px-5 py-1 sm:py-1.5 md:py-2 rounded-lg sm:rounded-xl bg-background/60 backdrop-blur border border-border hover:scale-105 transition-transform duration-300"
-              role="listitem"
             >
               <div className="relative w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8">
                 <Image
                   src={tech.logo}
-                  alt={`${tech.name} logo`}
+                  alt={index >= technologies.length ? "" : `${tech.name} logo`}
                   fill
                   className="object-contain"
                   sizes="32px"
@@ -65,9 +62,9 @@ export default function TechnologySlider() {
               <span className="text-xs sm:text-sm md:text-base font-medium text-foreground/80 whitespace-nowrap">
                 {tech.name}
               </span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

@@ -39,15 +39,11 @@ export default function WhyWeAreSection({
         </div>
 
         {/* ── Reason Cards ── */}
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6"
-          role="list"
-        >
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 list-none p-0 m-0">
           {translations.reasons.map((reason, index) => (
-            <article
+            <li
               key={index}
               className="group p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-border bg-card/50 hover:bg-card hover:border-primary/30 hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-              role="listitem"
             >
               <div className="flex flex-col gap-3 sm:gap-4">
                 {/* Icon */}
@@ -68,9 +64,9 @@ export default function WhyWeAreSection({
                   </p>
                 </div>
               </div>
-            </article>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </div>
   );

@@ -40,7 +40,6 @@ export default function AboutMeSection({
         aria-hidden="true"
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        {/* ── GEO/AEO Highlight ── */}
         <div className="text-center mb-10 sm:mb-12">
           <p className="text-xl font-extrabold tracking-tight leading-[1.2] text-foreground max-w-4xl mx-auto">
             {translations.highlight}
