@@ -81,9 +81,9 @@ export default function ArticlesSection({
                     </span>
                   </div>
 
-                  <h4 className="text-lg sm:text-xl font-semibold leading-tight mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                  <h3 className="text-lg sm:text-xl font-semibold leading-tight mb-2 group-hover:text-primary transition-colors line-clamp-2">
                     {article.title}
-                  </h4>
+                  </h3>
 
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-3">
                     {article.excerpt}

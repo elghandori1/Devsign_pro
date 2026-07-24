@@ -241,7 +241,7 @@ export default function Footer({ footer, locale }: FooterProps) {
       </div>
 
       {/* ── Footer bottom: copyright + legal ── */}
-      <div className="border-t border-border bg-primary text-white">
+      <div className="border-t border-border bg-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs sm:text-sm text-center sm:text-start order-2 sm:order-1">
             {copyright}
@@ -253,14 +253,14 @@ export default function Footer({ footer, locale }: FooterProps) {
                   {link.href.endsWith(".xml") ? (
                     <a
                       href={link.href}
-                      className="text-xs sm:text-sm text-white/85 hover:text-white transition-colors"
+                      className="text-xs sm:text-sm text-white hover:text-gray-200 transition-colors"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       href={`/${locale}${link.href}`}
-                      className="text-xs sm:text-sm text-white/85 hover:text-white transition-colors"
+                      className="text-xs sm:text-sm text-white hover:text-gray-200 transition-colors"
                     >
                       {link.label}
                     </Link>

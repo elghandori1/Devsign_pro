@@ -24,7 +24,7 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
   const pathname = usePathname();
 
   const navItems = [
-      { href: "", label: t.home },
+    { href: "", label: t.home },
     { href: "/portfolio", label: t.portfolio },
     { href: "/services", label: t.services },
     { href: "/about", label: t.about },
@@ -37,7 +37,9 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
     } else {
       document.body.style.overflow = "";
     }
-    return () => { document.body.style.overflow = ""; };
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   useEffect(() => {
@@ -49,46 +51,59 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
       <button
         type="button"
         onClick={() => setOpen(true)}
+        aria-label="Open mobile menu"
+        aria-expanded={open}
         className="flex items-center justify-center w-10 h-10 rounded-lg text-foreground hover:bg-muted transition-colors"
       >
-        <Menu className="w-6 h-6" />
+        <Menu className="w-6 h-6" aria-hidden="true" />
       </button>
 
       <div
-        className={`fixed inset-0 z-[100] bg-background transition-all duration-300 ease-in-out ${open ? "translate-x-0 opacity-100 visible" : "translate-x-full opacity-0 invisible"
-          }`}
+        className={`fixed inset-0 z-[100] bg-background transition-all duration-300 ease-in-out ${
+          open
+            ? "translate-x-0 opacity-100 visible"
+            : "translate-x-full opacity-0 invisible"
+        }`}
       >
         <div className="flex flex-col h-full w-full px-6 py-4">
-
           {/* Header row */}
           <div className="flex items-center justify-between h-16 border-b border-border">
-            <span className="font-bold text-lg text-foreground tracking-tight">Devsign</span>
+            <span className="font-bold text-lg text-foreground tracking-tight">
+              Devsign
+            </span>
             <button
               type="button"
               onClick={() => setOpen(false)}
+              aria-label="Close mobile menu"
               className="flex items-center justify-center w-10 h-10 rounded-lg text-foreground hover:bg-muted transition-colors"
             >
-              <X className="w-6 h-6" />
+              <X className="w-6 h-6" aria-hidden="true" />
             </button>
           </div>
 
           {/* Navigation Links */}
           <nav className="flex-1 flex flex-col py-8 px-2 space-y-2 bg-card rounded-md shadow-sm">
             {navItems.map((item) => {
-              const fullHref = item.href === "" ? `/${locale}` : `/${locale}${item.href}`;
-              const active = pathname === fullHref || (pathname === `/${locale}` && item.href === "");
+              const fullHref =
+                item.href === "" ? `/${locale}` : `/${locale}${item.href}`;
+              const active =
+                pathname === fullHref ||
+                (pathname === `/${locale}` && item.href === "");
 
               return (
                 <Link
                   key={item.href}
                   href={fullHref}
-                  className={`flex items-center justify-between p-4 text-xl font-semibold rounded-xl transition-all border-b border-blue-500/30 ${active
+                  className={`flex items-center justify-between p-4 text-xl font-semibold rounded-xl transition-all border-b border-blue-500/30 ${
+                    active
                       ? "bg-primary text-primary-foreground shadow-md border-blue-500"
                       : "text-foreground hover:bg-muted"
-                    }`}
+                  }`}
                 >
                   {item.label}
-                  {active && <div className="w-2 h-2 rounded-full bg-primary-foreground animate-pulse" />}
+                  {active && (
+                    <div className="w-2 h-2 rounded-full bg-primary-foreground animate-pulse" />
+                  )}
                 </Link>
               );
             })}
@@ -98,7 +113,13 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
             <div className="flex flex-col gap-3">
               <div className="flex items-center justify-between bg-card p-5 rounded-2xl border border-border shadow-sm">
                 <div className="flex flex-col">
-                  <span className="text-xs font-bold text-card-foreground">{locale=="en"?"Language & Theme":locale=="fr"?"Langue et Thème":"اللغة والسمة"}</span>
+                  <span className="text-xs font-bold text-card-foreground">
+                    {locale == "en"
+                      ? "Language & Theme"
+                      : locale == "fr"
+                        ? "Langue et Thème"
+                        : "اللغة والسمة"}
+                  </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <LanguageSwitcher currentLocale={locale} />
@@ -108,7 +129,6 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>

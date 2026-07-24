@@ -210,7 +210,7 @@ export default async function RootLayout({
             description={metadata.description}
           />
 
-          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <ThemeProvider attribute="class" defaultTheme="white" enableSystem>
             <Navbar locale={locale} />
             <main>{children}</main>
             <Footer footer={footer} locale={locale} />
