@@ -350,7 +350,8 @@ export default async function WebDevelopmentPage({ params }: Props) {
               <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 <span className="font-semibold text-foreground">
                   {data.startDescription}
-                </span> <br/>
+                </span>{" "}
+                <br />
                 {data.longDescription}
               </p>
 
@@ -377,7 +378,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
                 className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20 "
                 aria-hidden="true"
               />
-          
+
               <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-border shadow-2xl shadow-primary/10">
                 <Image
                   src={data.image}
@@ -391,7 +392,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
                   aria-hidden="true"
                 />
               </div>
-
             </div>
           </div>
         </div>
@@ -484,7 +484,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
                       <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">
                         {b.title}
                       </h3>
-                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed flex-grow">
+                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-grow">
                         {b.text}
                       </p>
                     </article>
@@ -534,7 +534,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
                     <h3 className="font-semibold text-foreground mb-1.5 sm:mb-2 text-base sm:text-lg">
                       {p.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed px-2">
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed px-2">
                       {p.text}
                     </p>
                   </div>
@@ -584,7 +584,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </div>
       </section>
 
-     {/* ── 7. FAQ — AEO / GEO section (native details = zero JS) ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"
@@ -597,36 +596,36 @@ export default async function WebDevelopmentPage({ params }: Props) {
             >
               {data.faqTitle}
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
+            <p className="text-foreground/80 max-w-xl mx-auto text-sm sm:text-base">
               {data.faqDesc}
             </p>
           </div>
 
-          <div className="space-y-3">
-            {faqs.map((f, i) => (
-              <details
-                key={i}
-                className="group rounded-xl border border-border bg-card overflow-hidden
-                           hover:border-primary/30 transition-colors"
-              >
-                <summary
-                  className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5
+          <ul className="space-y-3 list-none p-0 m-0">
+            <div className="space-y-3">
+              {faqs.map((f, i) => (
+                <li key={i}>
+                  <details className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-colors">
+                    <summary
+                      className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5
                              font-semibold text-foreground text-sm sm:text-base
                              list-none [&::-webkit-details-marker]:hidden
                              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  <h3 className="text-left">{f.q}</h3>
-                  <ChevronDown
-                    className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180"
-                    aria-hidden="true"
-                  />
-                </summary>
-                <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  {f.a}
-                </p>
-              </details>
-            ))}
-          </div>
+                    >
+                      <h3 className="text-left">{f.q}</h3>
+                      <ChevronDown
+                        className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180"
+                        aria-hidden="true"
+                      />
+                    </summary>
+                    <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-foreground/80 leading-relaxed">
+                      {f.a}
+                    </p>
+                  </details>
+                </li>
+              ))}
+            </div>
+          </ul>
         </section>
       )}
 
@@ -648,7 +647,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 max-w-2xl mx-auto leading-tight text-foreground">
               {svc.ctat_title}
             </h2>
-            <p className="text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
+            <p className="text-foreground/80 mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
               {svc.cta_desc}
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">

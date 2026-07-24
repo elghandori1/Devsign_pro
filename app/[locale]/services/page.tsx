@@ -96,7 +96,7 @@ export default async function ServicesPage({ params }: Props) {
     ([key, svc]: [string, any]) => ({
       id: key,
       title: svc.title ?? "",
-      title_card: svc.title_card, 
+      title_card: svc.title_card,
       description: svc.description ?? "",
       link: svc.link ?? `/${locale}/services/${key}`,
       image: svc.image ?? "",
@@ -298,25 +298,24 @@ export default async function ServicesPage({ params }: Props) {
             {data.description}
           </p>
 
-          <div
-            className="flex flex-wrap gap-2 mb-8"
-            role="list"
+          <ul
+            className="flex flex-wrap gap-2 mb-8 list-none p-0 m-0"
             aria-label="Service categories"
           >
             {(data.hashtags ?? []).map((tag: string) => (
-              <span
-                key={tag}
-                className="px-3 py-1.5 bg-primary/10 text-primary rounded-full text-xs sm:text-sm font-medium border border-primary/20"
-                role="listitem"
-                itemProp="keywords"
-              >
-                {tag}
-              </span>
+              <li key={tag}>
+                <span
+                  className="px-3 py-1.5 bg-primary/10 text-primary rounded-full text-xs sm:text-sm font-medium border border-primary/20 block"
+                  itemProp="keywords"
+                >
+                  {tag}
+                </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
-      
+
       <section
         aria-labelledby="services-list-heading"
         className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20"
@@ -343,14 +342,12 @@ export default async function ServicesPage({ params }: Props) {
 
         <div
           className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"
-          role="list"
           aria-label="Available services"
         >
           {servicesList.map((service, idx) => (
             <article
               key={service.id}
               className="group relative flex flex-col rounded-2xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/10"
-              role="listitem"
               itemScope
               itemType="https://schema.org/Service"
             >
@@ -376,7 +373,6 @@ export default async function ServicesPage({ params }: Props) {
                     className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     aria-hidden="true"
                   />
-            
                 </figure>
 
                 {/* Body */}
@@ -388,7 +384,7 @@ export default async function ServicesPage({ params }: Props) {
                     {service.title_card}
                   </h3>
                   <p
-                    className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-4"
+                    className="text-sm text-foreground/80 leading-relaxed mb-4 flex-1 line-clamp-4"
                     itemProp="description"
                   >
                     {service.description}
@@ -455,10 +451,7 @@ export default async function ServicesPage({ params }: Props) {
             </p>
           </header>
 
-          <div
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6"
-            role="list"
-          >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {portfolioProjects
               .filter((p: any) => p.type === "professional")
               .slice(0, 3)
@@ -466,7 +459,6 @@ export default async function ServicesPage({ params }: Props) {
                 <article
                   key={project.title ?? idx}
                   className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10"
-                  role="listitem"
                   itemScope
                   itemType="https://schema.org/CreativeWork"
                 >
@@ -513,7 +505,7 @@ export default async function ServicesPage({ params }: Props) {
                         {project.title}
                       </h3>
                       <p
-                        className="text-sm text-muted-foreground leading-relaxed line-clamp-3 mb-3 flex-1"
+                        className="text-sm text-foreground/80 leading-relaxed line-clamp-3 mb-3 flex-1"
                         itemProp="description"
                       >
                         {project.description}
@@ -609,7 +601,6 @@ export default async function ServicesPage({ params }: Props) {
                     <div
                       key={r.title}
                       className="group relative p-5 sm:p-6 rounded-2xl border border-border bg-primary/5 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-                      role="listitem"
                       itemScope
                       itemType="https://schema.org/ListItem"
                     >
@@ -631,7 +622,7 @@ export default async function ServicesPage({ params }: Props) {
                         {r.title}
                       </h3>
                       <p
-                        className="text-sm text-muted-foreground leading-relaxed"
+                        className="text-sm text-foreground/80 leading-relaxed"
                         itemProp="description"
                       >
                         {r.text}
@@ -645,16 +636,10 @@ export default async function ServicesPage({ params }: Props) {
         </section>
       )}
 
-      {/* ═══════════════════════════════════════════════════════
-          5. STATISTICS
-          ═══════════════════════════════════════════════════════ */}
       <div className="border-t border-border">
         <Statistics translations={dict.homepage.stats} locale={locale} />
       </div>
 
-      {/* ═══════════════════════════════════════════════════════
-          6. FAQ SECTION (AEO-optimized for AI answers & snippets)
-          ═══════════════════════════════════════════════════════ */}
       <section
         aria-labelledby="faq-heading"
         className="border-t border-border bg-primary/5"
@@ -680,40 +665,41 @@ export default async function ServicesPage({ params }: Props) {
             </p>
           </header>
 
-          <div className="space-y-4">
+          <ul className="space-y-4 list-none p-0 m-0">
             {faqs.map((faq, idx) => (
-              <details
-                key={idx}
-                className="group rounded-xl border border-border bg-card overflow-hidden"
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
-              >
-                <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-primary/5 transition-colors">
-                  <h3
-                    className="font-semibold text-foreground pr-4"
-                    itemProp="name"
-                  >
-                    {faq.question}
-                  </h3>
-                  <span className="shrink-0 w-5 h-5 rounded-full border border-primary/30 flex items-center justify-center text-primary group-open:rotate-180 transition-transform">
-                    <ArrowRight
-                      size={12}
-                      className={isRtl ? "rotate-180" : ""}
-                    />
-                  </span>
-                </summary>
-                <div
-                  className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed"
+              <li key={idx}>
+                <details
+                  className="group rounded-xl border border-border bg-card overflow-hidden"
                   itemScope
-                  itemProp="acceptedAnswer"
-                  itemType="https://schema.org/Answer"
+                  itemProp="mainEntity"
+                  itemType="https://schema.org/Question"
                 >
-                  <div itemProp="text">{faq.answer}</div>
-                </div>
-              </details>
+                  <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-primary/5 transition-colors">
+                    <h3
+                      className="font-semibold text-foreground pr-4"
+                      itemProp="name"
+                    >
+                      {faq.question}
+                    </h3>
+                    <span className="shrink-0 w-5 h-5 rounded-full border border-primary/30 flex items-center justify-center text-primary group-open:rotate-180 transition-transform">
+                      <ArrowRight
+                        size={12}
+                        className={isRtl ? "rotate-180" : ""}
+                      />
+                    </span>
+                  </summary>
+                  <div
+                    className="px-5 pb-5 text-sm text-foreground/80 leading-relaxed"
+                    itemScope
+                    itemProp="acceptedAnswer"
+                    itemType="https://schema.org/Answer"
+                  >
+                    <div itemProp="text">{faq.answer}</div>
+                  </div>
+                </details>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 

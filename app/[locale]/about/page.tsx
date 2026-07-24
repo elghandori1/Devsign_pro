@@ -191,20 +191,20 @@ export default async function AboutPage({ params }: Props) {
             ? "أقوم ببناء حلول رقمية عالية الأداء باستخدام مجموعة تقنيات حديثة: الواجهات الأمامية والخلفية (React, Next.js, TypeScript, Node.js, Express.js, NestJS)، وقواعد البيانات وأدوات النشر (MySQL, MongoDB, Docker, Git، بالإضافة إلى أحدث أساليب النشر السحابي). بالإضافة إلى التطوير الأساسي، أتخصص في تحسين محركات البحث والذكاء الاصطناعي (تطبيق Schema.org، البيانات المنظمة، تحسين مقاييس ويب الأساسية Core Web Vitals، وهندسة محتوى جاهزة للذكاء الاصطناعي) وأتمتة الأعمال (باستخدام n8n, Make، وواجهات برمجة تطبيقات OpenAI). أختار دائماً مجموعة التقنيات الأنسب لمتطلبات عملك المحددة لضمان تقديم حلول رقمية آمنة، قابلة للتوسع، وسهلة الصيانة."
             : "Je développe des solutions performantes en m'appuyant sur une stack technologique moderne : Frontend & Backend (React, Next.js, TypeScript, Node.js, Express.js, NestJS), et Bases de données & DevOps (MySQL, MongoDB, Docker, Git, ainsi que des workflows de déploiement cloud modernes). Au-delà du développement pur, je me spécialise dans l'optimisation SEO & IA (mise en place de Schema.org, données structurées, optimisation des Core Web Vitals et architecture de contenu prête pour l'IA) et l'automatisation des processus (via n8n, Make et les API OpenAI). Je choisis toujours la pile technologique la plus adaptée à vos besoins métier spécifiques afin de livrer des solutions numériques sécurisées, évolutives et maintenables.",
     },
-{
-  question:
-    locale === "en"
-      ? "Why choose a web developer in Morocco?"
-      : locale === "ar"
-        ? "لماذا تختار مطور ويب في المغرب؟"
-        : "Pourquoi choisir un développeur web au Maroc ?",
-  answer:
-    locale === "en"
-      ? "Hiring a web developer in Morocco gives you European-level quality at 40–70% lower cost than agencies in France, the UK, or the US — without compromising on code quality, security, or performance. With Morocco's GMT+1 timezone and trilingual developers (French, Arabic, English), collaboration is seamless. Mohammed Elghandori builds fast, secure, scalable websites, e-commerce stores, business dashboards, and AI-powered applications using Next.js and modern technologies. Every project includes Technical SEO, Core Web Vitals, and AI Search Optimization to improve your visibility on Google, ChatGPT, and Perplexity."
-      : locale === "ar"
-        ? "توظيف مطور ويب في المغرب يمنحك جودة بمستوى أوروبي بتكلفة أقل بنسبة 40–70% مقارنة بالوكالات في فرنسا أو المملكة المتحدة أو الولايات المتحدة — دون المساومة على جودة الكود أو الأمان أو الأداء. بفضل المنطقة الزمنية GMT+1 ومطورين يتقنون الفرنسية والعربية والإنجليزية، يكون التعاون سلساً وفعّالاً. محمد الغندوري يطور مواقع ويب سريعة وآمنة وقابلة للتوسع، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات مدعومة بالذكاء الاصطناعي باستخدام Next.js وأحدث التقنيات. يشمل كل مشروع تحسين محركات البحث التقني، ومقاييس ويب الأساسية، وتحسين البحث بالذكاء الاصطناعي لتعزيز ظهورك على Google وChatGPT وPerplexity."
-        : "Engager un développeur web au Maroc vous offre une qualité de niveau européen à un coût 40 à 70 % inférieur aux agences en France, au Royaume-Uni ou aux États-Unis — sans compromis sur la qualité du code, la sécurité ou les performances. Avec le fuseau horaire GMT+1 et des développeurs trilingues (français, arabe, anglais), la collaboration est fluide. Mohammed Elghandori conçoit des sites web rapides, sécurisés et évolutifs, des boutiques e-commerce, des tableaux de bord et des applications propulsées par l'IA avec Next.js et les technologies modernes. Chaque projet inclut le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA pour améliorer votre visibilité sur Google, ChatGPT et Perplexity.",
-}
+    {
+      question:
+        locale === "en"
+          ? "Why choose a web developer in Morocco?"
+          : locale === "ar"
+            ? "لماذا تختار مطور ويب في المغرب؟"
+            : "Pourquoi choisir un développeur web au Maroc ?",
+      answer:
+        locale === "en"
+          ? "Hiring a web developer in Morocco gives you European-level quality at 40–70% lower cost than agencies in France, the UK, or the US — without compromising on code quality, security, or performance. With Morocco's GMT+1 timezone and trilingual developers (French, Arabic, English), collaboration is seamless. Mohammed Elghandori builds fast, secure, scalable websites, e-commerce stores, business dashboards, and AI-powered applications using Next.js and modern technologies. Every project includes Technical SEO, Core Web Vitals, and AI Search Optimization to improve your visibility on Google, ChatGPT, and Perplexity."
+          : locale === "ar"
+            ? "توظيف مطور ويب في المغرب يمنحك جودة بمستوى أوروبي بتكلفة أقل بنسبة 40–70% مقارنة بالوكالات في فرنسا أو المملكة المتحدة أو الولايات المتحدة — دون المساومة على جودة الكود أو الأمان أو الأداء. بفضل المنطقة الزمنية GMT+1 ومطورين يتقنون الفرنسية والعربية والإنجليزية، يكون التعاون سلساً وفعّالاً. محمد الغندوري يطور مواقع ويب سريعة وآمنة وقابلة للتوسع، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات مدعومة بالذكاء الاصطناعي باستخدام Next.js وأحدث التقنيات. يشمل كل مشروع تحسين محركات البحث التقني، ومقاييس ويب الأساسية، وتحسين البحث بالذكاء الاصطناعي لتعزيز ظهورك على Google وChatGPT وPerplexity."
+            : "Engager un développeur web au Maroc vous offre une qualité de niveau européen à un coût 40 à 70 % inférieur aux agences en France, au Royaume-Uni ou aux États-Unis — sans compromis sur la qualité du code, la sécurité ou les performances. Avec le fuseau horaire GMT+1 et des développeurs trilingues (français, arabe, anglais), la collaboration est fluide. Mohammed Elghandori conçoit des sites web rapides, sécurisés et évolutifs, des boutiques e-commerce, des tableaux de bord et des applications propulsées par l'IA avec Next.js et les technologies modernes. Chaque projet inclut le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA pour améliorer votre visibilité sur Google, ChatGPT et Perplexity.",
+    },
   ];
   const aboutSchema = {
     "@context": "https://schema.org",
@@ -469,7 +469,7 @@ export default async function AboutPage({ params }: Props) {
                         className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/30 hover:shadow-md transition-all duration-200"
                       >
                         <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
-                        <span className="text-sm text-muted-foreground">
+                        <span className="text-sm text-foreground/80">
                           {item}
                         </span>
                       </div>
@@ -501,7 +501,8 @@ export default async function AboutPage({ params }: Props) {
               </span>
             </header>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4" role="list">
+            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0 m-0">
+              {" "}
               {t.hackathons.items.map(
                 (
                   item: {
@@ -512,35 +513,34 @@ export default async function AboutPage({ params }: Props) {
                   },
                   i: number,
                 ) => (
-                  <article
-                    key={i}
-                    className="group flex items-start gap-4 p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-                    role="listitem"
-                  >
-                    <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                      <Trophy
-                        className="w-5 h-5 text-primary"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="min-w-0">
-                      <h3 className="font-semibold text-foreground mb-1.5 truncate">
-                        {item.name}
-                      </h3>
-                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
-                        <time dateTime={item.year}>{item.year}</time>
-                        <span className="text-border">•</span>
-                        <span>{item.location}</span>
-                        <span className="text-border">•</span>
-                        <span className="text-primary font-medium">
-                          {item.place}
-                        </span>
+                  <li key={i}>
+                    <article className="group flex items-start gap-4 p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300">
+                      <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                        <Trophy
+                          className="w-5 h-5 text-primary"
+                          aria-hidden="true"
+                        />
                       </div>
-                    </div>
-                  </article>
+                      <div className="min-w-0">
+                        <h3 className="font-semibold text-foreground mb-1.5 truncate">
+                          {item.name}
+                        </h3>
+                        {/* CHANGED: text-muted-foreground to text-foreground/80 */}
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-foreground/80">
+                          <time dateTime={item.year}>{item.year}</time>
+                          <span className="text-border">•</span>
+                          <span>{item.location}</span>
+                          <span className="text-border">•</span>
+                          <span className="text-primary font-medium">
+                            {item.place}
+                          </span>
+                        </div>
+                      </div>
+                    </article>
+                  </li>
                 ),
               )}
-            </div>
+            </ul>
           </div>
         </section>
       )}
@@ -576,7 +576,7 @@ export default async function AboutPage({ params }: Props) {
                       aria-hidden="true"
                     />
                   </div>
-                  <span className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  <span className="text-sm sm:text-base text-foreground/80 leading-relaxed">
                     {item}
                   </span>
                 </div>

@@ -41,7 +41,7 @@ export default function NavLinks({ locale, t }: NavLinksProps) {
         const fullHref = `/${locale}${item.href}`;
         const active = isActive(item.href);
         return (
-      <Link
+          <Link
             key={item.href}
             href={fullHref}
             className={`transition-colors relative hover:text-blue-600 dark:hover:text-blue-400 ${
@@ -50,7 +50,8 @@ export default function NavLinks({ locale, t }: NavLinksProps) {
           >
             {item.label}
             {active && (
-<span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />            )}
+              <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 rounded-full" />
+            )}
           </Link>
         );
       })}
