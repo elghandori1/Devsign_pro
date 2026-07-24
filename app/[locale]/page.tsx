@@ -481,7 +481,6 @@ export default async function Home({ params }: Props) {
           />
           <ArticlesSection
             description={articlesPage.description}
-            cta={articlesPage.cta_btn}
             articles={articlesPage.articles.slice(0, 3)}
             locale={locale}
           />
