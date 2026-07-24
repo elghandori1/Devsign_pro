@@ -45,16 +45,12 @@ export default function ServicesGrid({
         </p>
 
         {/* ── 3 Main Service Cards ── */}
-        <div
-          className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 fade-in-section"
-          role="list"
-        >
+        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 fade-in-section">
           {servicesList.map((service, idx) => {
             return (
               <article
                 key={service.link}
                 className="group flex flex-col h-full rounded-2xl border border-border/60 bg-card overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20"
-                role="listitem"
               >
                 <Link
                   href={`/${locale}${service.link}`}
