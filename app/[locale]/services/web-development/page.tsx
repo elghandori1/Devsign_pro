@@ -18,9 +18,15 @@ import {
   TrendingUp,
   Users,
   BarChart3,
+  ChevronDown,
+  ShoppingCart,
+  Search,
+  Wrench,
+  LayoutDashboard,
 } from "lucide-react";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -32,58 +38,72 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const data = dict.pages.services_page.services.web;
-
   const keywords =
     locale === "ar"
       ? [
           "تطوير مواقع المغرب",
+          "تطوير مواقع إلكترونية المغرب",
           "موقع SEO محسن",
           "مطور Next.js المغرب",
+          "مطور ويب مستقل المغرب",
           "تصميم متجاوب",
           "موقع آمن وسريع",
           "تحسين محركات البحث",
+          "تحسين الذكاء الاصطناعي GEO",
           "متجر إلكتروني المغرب",
           "صفحة هبوط احترافية",
+          "تطبيق ويب مخصص",
         ]
       : locale === "fr"
         ? [
             "développement web Maroc",
+            "création site web Maroc",
             "site web SEO",
             "développeur Next.js Maroc",
+            "développeur web freelance Maroc",
             "design responsive",
             "site sécurisé rapide",
             "référencement naturel",
+            "optimisation IA GEO",
             "boutique en ligne Maroc",
             "landing page professionnelle",
+            "application web sur mesure",
           ]
         : [
             "web development Morocco",
-            "SEO website Morocco",
+            "website development Morocco",
+            "SEO website development",
             "Next.js developer Morocco",
+            "freelance web developer Morocco",
             "responsive web design",
             "secure fast website",
             "search engine optimization",
+            "GEO AI search optimization",
             "ecommerce store Morocco",
             "professional landing page",
+            "custom web application",
           ];
 
   return buildPageMetadata({
     locale,
-    title: `${data.title} | Devsign`,
-    description: data.description,
+    title: data.title_metadata,
+    description: data.description_metadata,
     route: "/services/web-development",
     keywords: keywords,
+    ogImagePath: data.image || "/cover/Designpro-cover.jpg",
+    type: "website",
   });
 }
 
 const BENEFIT_ICONS = [TrendingUp, Users, BarChart3];
+
 const TECH_STACK = [
-  { name: "Next.js", icon: Code2, desc: "React Framework" },
-  { name: "TypeScript", icon: Shield, desc: "Type-Safe Code" },
-  { name: "Tailwind CSS", icon: Zap, desc: "Utility-First CSS" },
-  { name: "Node.js", icon: Rocket, desc: "Backend Runtime" },
-  { name: "MongoDB", icon: Database, desc: "NoSQL Database" },
-  { name: "Google SEO", icon: Globe, desc: "Search Optimized" },
+  { name: "Next.js", icon: Code2 },
+  { name: "TypeScript", icon: Shield },
+  { name: "Tailwind CSS", icon: Zap },
+  { name: "Express.js", icon: Rocket },
+  { name: "MongoDB", icon: Database },
+  { name: "Technical SEO", icon: Globe },
 ];
 
 export default async function WebDevelopmentPage({ params }: Props) {
@@ -94,33 +114,30 @@ export default async function WebDevelopmentPage({ params }: Props) {
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
-  const overviewHeadline =
-    locale === "ar"
-      ? "مواقع إلكترونية تؤدي بفعالية، لا تكتفي بالمظهر الجيد"
-      : locale === "fr"
-        ? "Des sites web qui performent, pas seulement qui sont beaux"
-        : "Websites That Perform, Not Just Look Good";
+
+  const includedItems: string[] = data.included ?? data.features ?? [];
+  const faqs: { q: string; a: string }[] = data.faqs ?? [];
 
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: data.title,
     description: data.description,
-    image: data.image || `${getBaseUrl()}/og-image.jpg`,
+    image: data.image || `${getBaseUrl()}/cover/Designpro-cover.jpg`,
     url: `${getBaseUrl()}/${locale}/services/web-development`,
     provider: {
       "@type": "Organization",
-      name: "Devsign",
-      url: "https://devsignpro.com",
-      telephone: "+212 7 78 00 00 06",
-      email: "devsignprofessional@gmail.com",
+      name: "Devsignpro",
+      url: `${getBaseUrl()}/${locale}`,
+      telephone: infos.phoneNumber,
+      email: infos.email,
     },
     serviceType:
       locale === "en"
-        ? "Web Development, SEO & E-commerce Solutions"
+        ? "Web Development, SEO & AI Optimization"
         : locale === "fr"
-          ? "Développement Web, SEO & E-commerce"
-          : "تطوير الويب، SEO والتجارة الإلكترونية",
+          ? "Développement Web, SEO & Optimisation IA"
+          : "تطوير الويب، SEO وتحسين الذكاء الاصطناعي",
     areaServed: { "@type": "Country", name: "Morocco" },
     offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
   };
@@ -138,7 +155,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 2,
-        name: "Services",
+        name: locale === "ar" ? "خدمات" : "Services",
         item: `${getBaseUrl()}/${locale}/services`,
       },
       {
@@ -150,6 +167,19 @@ export default async function WebDevelopmentPage({ params }: Props) {
     ],
   };
 
+  const faqSchema =
+    faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }
+      : null;
+
   return (
     <main className="min-h-screen bg-background">
       <script
@@ -160,19 +190,22 @@ export default async function WebDevelopmentPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
 
-      {/* 1. HERO — Dark Gradient + Geometric Squares  */}
+      {/* ── 1. HERO ── */}
       <section
         aria-labelledby="hero-heading"
         className="relative overflow-hidden border-b border-border"
       >
-        {/* Subtle background tint */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30"
           aria-hidden="true"
         />
-
-        {/* Grid texture */}
         <div
           className="absolute inset-0 opacity-[0.04] pointer-events-none"
           style={{
@@ -182,8 +215,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
           }}
           aria-hidden="true"
         />
-
-        {/* Soft glows — subtle in light, visible in dark */}
         <div
           className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
@@ -194,42 +225,38 @@ export default async function WebDevelopmentPage({ params }: Props) {
         />
         {/* Geometric Squares Pattern */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          {/* Large faint squares */}
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/[0.04] rotate-12" />
           <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
           <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/[0.04] rotate-45" />
           <div className="absolute top-1/2 right-1/4 w-24 h-24 border border-white/[0.03] -rotate-12" />
           <div className="absolute bottom-32 left-1/4 w-56 h-56 border border-white/[0.02] rotate-6" />
-
-          {/* Small scattered squares */}
           <div className="absolute top-16 right-16 w-8 h-8 bg-primary/10 rotate-12" />
           <div className="absolute top-40 right-40 w-6 h-6 bg-primary/15 -rotate-6" />
-          <div className="absolute bottom-40 left-16 w-10 h-10 bg-primary/10 rotate-45" />
-          <div className="absolute top-1/3 left-1/3 w-4 h-4 bg-white/5 rotate-12" />
-          <div className="absolute bottom-1/3 right-1/3 w-5 h-5 bg-white/5 -rotate-12" />
-          <div className="absolute top-20 left-1/2 w-3 h-3 bg-primary/20 rotate-6" />
-          <div className="absolute bottom-24 right-1/2 w-7 h-7 bg-white/[0.03] -rotate-45" />
-
-          {/* Filled squares with blur glow */}
           <div className="absolute top-1/4 left-[15%] w-20 h-20 bg-primary/5 blur-2xl rounded-sm" />
           <div className="absolute bottom-1/4 right-[15%] w-28 h-28 bg-blue-500/5 blur-3xl rounded-sm" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/[0.03] blur-3xl rounded-sm" />
         </div>
-        {/* Content */}
+
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24">
-          {/* Pill badge */}
           <nav aria-label="Breadcrumb" className="mb-6">
-            <Link
-              href={`/${locale}/services`}
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                          border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6"
-            >
-              <Arr size={14} aria-hidden="true" />
-              {svc.title}
-            </Link>
+            <ol className="flex flex-wrap items-center gap-2 text-sm">
+              <li>
+                <Link
+                  href={`/${locale}/services`}
+                  className="inline-flex items-center gap-2 bg-primary/10 text-primary
+                             border border-primary/20 px-4 py-2 rounded-full font-medium
+                             hover:bg-primary/15 transition-colors"
+                >
+                  <Arr size={14} aria-hidden="true" />
+                  {svc.title}
+                </Link>
+              </li>
+              <li aria-current="page" className="sr-only">
+                {data.title}
+              </li>
+            </ol>
           </nav>
 
-          {/* Heading */}
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
@@ -238,26 +265,24 @@ export default async function WebDevelopmentPage({ params }: Props) {
             {data.title}
           </h1>
 
-          {/* Description */}
           <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
             {data.description}
           </p>
 
-          {/* Hashtag chips */}
-          <div className="flex flex-wrap gap-2 mb-8">
+          {/* Keyword chips */}
+          <ul className="flex flex-wrap gap-2 mb-8 list-none p-0">
             {(data.features ?? []).map((tag: string) => (
-              <span
+              <li
                 key={tag}
                 className="px-3 py-1.5 bg-primary/10 text-primary rounded-full
                            text-xs sm:text-sm font-medium border border-primary/20
                            hover:bg-primary/15 transition-colors"
               >
                 {tag}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <Link
               href={`/${locale}/contact`}
@@ -287,63 +312,93 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </div>
       </section>
 
-      {/*  2. OVERVIEW — Text + Image Square */}
-      {data.features?.length > 0 && (
-        <section
-          aria-labelledby="overview-heading"
-          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24"
-        >
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Left: Text */}
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-                <Sparkles size={12} />
+      {/* ── 2. OVERVIEW ── */}
+      <section
+        aria-labelledby="overview-heading"
+        className="relative overflow-hidden"
+      >
+        {/* Ambient background */}
+        <div
+          className="absolute inset-0 bg-gradient-to-b from-muted/10 via-background to-background"
+          aria-hidden="true"
+        />
+        <div
+          className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none"
+          aria-hidden="true"
+        />
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            {/* ── Left: Text ── */}
+            <div className="order-2 lg:order-1">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
+                <Sparkles size={12} aria-hidden="true" />
                 {data.overviewTitle}
               </div>
+
               <h2
                 id="overview-heading"
-                className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground leading-tight"
+                className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground leading-[1.30] mb-6"
               >
-                {overviewHeadline}
+                {data.overviewHeadline}
               </h2>
-              <div
-                className="w-12 h-1.5 bg-primary rounded-full"
-                aria-hidden="true"
-              />
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+
+              <div className="flex items-center gap-2 mb-6" aria-hidden="true">
+                <div className="w-14 h-1 bg-primary rounded-full" />
+              </div>
+
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
                 <span className="font-semibold text-foreground">
                   {data.startDescription}
-                </span>{" "}
+                </span> <br/>
                 {data.longDescription}
               </p>
+
               {data.company_recruitment && (
-                <p className="text-primary font-medium">
-                  {data.company_recruitment}
-                </p>
+                <div className="flex items-start gap-3 p-4 rounded-xl border border-primary/20 bg-primary/5">
+                  <div
+                    className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0 mt-0.5"
+                    aria-hidden="true"
+                  >
+                    <Users
+                      className="w-4 h-4 text-primary"
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <p className="text-sm sm:text-base text-foreground/90 font-medium leading-relaxed">
+                    {data.company_recruitment}
+                  </p>
+                </div>
               )}
             </div>
 
-            {/* Right: Image as a Square */}
-            <div className="relative aspect-square max-w-md mx-auto lg:max-w-none w-full rounded-2xl overflow-hidden border border-border shadow-xl">
-              <Image
-                src={data.image}
-                alt={`${data.title} — preview`}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              {/* Subtle overlay on image */}
+            <div className="order-1 lg:order-2 relative max-w-md mx-auto lg:max-w-none w-full">
               <div
-                className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"
+                className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20 "
                 aria-hidden="true"
               />
+          
+              <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-border shadow-2xl shadow-primary/10">
+                <Image
+                  src={data.image}
+                  alt={data.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
+                  aria-hidden="true"
+                />
+              </div>
+
             </div>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
       {/* ── 3. WHAT'S INCLUDED ── */}
-      {data.features?.length > 0 && (
+      {includedItems.length > 0 && (
         <section
           aria-labelledby="included-heading"
           className="max-w-6xl mx-auto px-4 py-10 sm:pb-12 sm:pt-0"
@@ -360,11 +415,11 @@ export default async function WebDevelopmentPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-            {data.features.map((f: string, i: number) => (
-              <article
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 list-none p-0">
+            {includedItems.map((item: string, i: number) => (
+              <li
                 key={i}
-                className="group flex items-center gap-4 p-4 sm:p-5 rounded-xl border border-border
+                className="group flex items-start gap-4 p-4 sm:p-5 rounded-xl border border-border
                            bg-card hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5
                            transition-all duration-200"
               >
@@ -377,12 +432,12 @@ export default async function WebDevelopmentPage({ params }: Props) {
                     aria-hidden="true"
                   />
                 </div>
-                <span className="text-sm sm:text-base font-medium text-foreground">
-                  {f}
+                <span className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
+                  {item}
                 </span>
-              </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </section>
       )}
 
@@ -420,8 +475,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
                         className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
                         aria-hidden="true"
                       />
-
-                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 sm:mb-5 group-hover:bg-primary/20 transition-colors">
+                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 sm:mb-5">
                         <Icon
                           className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
                           aria-hidden="true"
@@ -442,7 +496,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── 5. PROCESS ── */}
+      {/* ── 5. PROCESS — 4 steps ── */}
       {data.process?.length > 0 && (
         <section
           aria-labelledby="process-heading"
@@ -460,15 +514,14 @@ export default async function WebDevelopmentPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 relative">
+          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 relative list-none p-0">
             <div
-              className="hidden md:block absolute top-7 left-[16.66%] right-[16.66%] border-t-2 border-dashed border-border"
+              className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-border"
               aria-hidden="true"
             />
-
             {data.process.map(
               (p: { step: string; title: string; text: string }, i: number) => (
-                <article
+                <li
                   key={i}
                   className="flex flex-col items-center text-center gap-3 sm:gap-4"
                 >
@@ -485,10 +538,10 @@ export default async function WebDevelopmentPage({ params }: Props) {
                       {p.text}
                     </p>
                   </div>
-                </article>
+                </li>
               ),
             )}
-          </div>
+          </ol>
         </section>
       )}
 
@@ -510,12 +563,12 @@ export default async function WebDevelopmentPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 xs:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4">
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 list-none p-0">
             {TECH_STACK.map((tech, i) => (
-              <div
+              <li
                 key={i}
                 className="flex flex-col items-center justify-center gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl
-                           border border-border bg-muted/10 hover:border-primary/30 hover:bg-primary/5 
+                           border border-border bg-muted/10 hover:border-primary/30 hover:bg-primary/5
                            transition-all group cursor-default"
               >
                 <tech.icon
@@ -525,19 +578,64 @@ export default async function WebDevelopmentPage({ params }: Props) {
                 <span className="text-xs sm:text-sm font-medium text-foreground text-center leading-tight">
                   {tech.name}
                 </span>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
-      {/* ── 7. CTA ── */}
+     {/* ── 7. FAQ — AEO / GEO section (native details = zero JS) ── */}
+      {faqs.length > 0 && (
+        <section
+          aria-labelledby="faq-heading"
+          className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
+        >
+          <div className="text-center mb-8 sm:mb-10">
+            <h2
+              id="faq-heading"
+              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
+            >
+              {data.faqTitle}
+            </h2>
+            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
+              {data.faqDesc}
+            </p>
+          </div>
+
+          <div className="space-y-3">
+            {faqs.map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-xl border border-border bg-card overflow-hidden
+                           hover:border-primary/30 transition-colors"
+              >
+                <summary
+                  className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5
+                             font-semibold text-foreground text-sm sm:text-base
+                             list-none [&::-webkit-details-marker]:hidden
+                             focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                >
+                  <h3 className="text-left">{f.q}</h3>
+                  <ChevronDown
+                    className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180"
+                    aria-hidden="true"
+                  />
+                </summary>
+                <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                  {f.a}
+                </p>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ── 8. CTA ── */}
       <section
         aria-label="Call to Action"
         className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16"
       >
         <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
-          {/* Subtle Background Effects */}
           <div
             className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none"
             aria-hidden="true"
@@ -546,7 +644,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
             className="absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
             aria-hidden="true"
           />
-
           <div className="relative text-center py-10 sm:py-16 px-5 sm:px-12 z-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 max-w-2xl mx-auto leading-tight text-foreground">
               {svc.ctat_title}
@@ -554,7 +651,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
             <p className="text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
               {svc.cta_desc}
             </p>
-
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
               <Link
                 href={`/${locale}/contact`}

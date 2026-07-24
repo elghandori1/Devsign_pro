@@ -9,14 +9,14 @@
   "homepage": {
     "hero": {
       "availability": "Available for new projects",
-      "title_line1": "Web Developer in Morocco",
-      "title_highlight": "Fast, SEO-Optimized & High-Performance Websites",
-      "description": "I'm a full-stack web developer based in Morocco, helping startups, businesses, and teams build modern, scalable websites and web applications. I focus on performance, SEO, GEO, and clean user experiences to deliver real business impact.",
-      "focus": "My focus is simple: building fast, scalable, and reliable solutions that drive real results.",
+      "title_line1": "Full-Stack Developer",
+      "title_highlight": "& Technical SEO Specialist",
+      "description": "I'm a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, and AI Search Optimization. I help startups and businesses build fast, modern websites, e-commerce stores, and custom web applications optimized for performance, Core Web Vitals, and search visibility.",
+      "description_GEO": "I engineer content and structured data to rank higher on Google and get discovered by ChatGPT, Google AI Overviews, Perplexity, and other AI search engines—driving real visibility and long-term business growth.",
       "cta_primary": "Start a Project",
-      "cta_secondary": "View Projects",
+      "cta_secondary": "View My Work",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Full-Stack Developer | SEO | AI Automation",
+      "profile_role": "Full-Stack Developer & SEO optimization",
       "cta_more_about": "More About Me",
       "cta_download_cv": "Download CV",
       "cv_popup_title": "Download Specialized CV",
@@ -30,10 +30,10 @@
     "stats": {
       "items": [
         {
-          "value": 11,
+          "value": 15,
           "prefix": "+",
           "suffix": "",
-          "text": "Happy Clients",
+          "text": "Projects Delivered",
           "subtext": "Across Morocco"
         },
         {
@@ -60,164 +60,330 @@
       ]
     },
     "services_section": {
-      "sectionLabel": "What I Offer",
-      "heading": "Digital solutions to Grow",
-      "highlight": "Your Business",
+      "sectionLabel": "Web Development & Digital Services",
+      "heading": "I build high-performance websites, e-commerce stores, custom dashboards, and AI-powered automations with Next.js, Technical SEO, Core Web Vitals, and AI Search Optimization—helping businesses improve search visibility, streamline operations, and achieve sustainable online growth.",
       "viewAll": "View All Services",
       "cta": "Learn More"
     },
     "about_section": {
       "sectionLabel": "About Me",
-      "subtitle": "Your partner for ",
-      "highlight": "digital success",
-      "paragraph1": "I’m a full-stack developer with experience building modern digital solutions. I’ve participated in multiple hackathons, winning 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat. I’ve also worked on real-world projects, helping businesses build websites, automate workflows, and improve their digital presence.",
-      "paragraph2": "I focus on delivering clean, scalable, and high-performance solutions with clear communication and measurable results. My goal is simple: help you succeed online, because your success is my success.",
+      "highlight": "Full-Stack Developer, Technical SEO & AI Search Optimization Specialist",
+      "paragraph1": "I'm a Full-Stack Web Developer and SEO Specialist based in Morocco, building high-performance Next.js websites, custom dashboards, and AI-powered automations. I help businesses improve search visibility, streamline operations, and scale online with clean, measurable solutions.",
+      "paragraph2": "My work has been tested under pressure, winning 1st place at Al Akhawayn University and UM6P Ben Guerir hackathons, and 2nd place at UM6P Rabat. These experiences sharpened my ability to collaborate in fast-paced teams, ship production-ready code using Git, Docker, and CI/CD pipelines, and deliver reliable software through agile workflows and rigorous code reviews.",
       "cta": "More About Me"
     },
     "why_we_are_section": {
       "sectionLabel": "Why Choose Me",
-      "description": "I help businesses, startups, and individuals build powerful digital solutions that don’t just look good they perform, convert, and scale. Every project is designed to deliver real value and long-term impact.",
-      "subtitle": "What makes me the right partner for your success",
+      "description": "I help startups, businesses, and entrepreneurs build high-performance websites, e-commerce stores, and digital solutions that are fast, SEO-optimized, AI-ready, and designed to generate long-term business growth—not just beautiful interfaces.",
       "reasons": [
         {
-          "title": "Performance & Quality",
-          "description": "Fast, optimized, and scalable applications built with modern technologies and best practices."
+          "title": "Technical SEO & AI Search Optimization",
+          "description": "Every project is built with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, ChatGPT, Google AI Overviews, and other AI-powered search engines."
         },
         {
-          "title": "SEO & Responsive Design",
-          "description": "Every project is mobile-first and optimized for search engines and all devices."
+          "title": "Modern Full-Stack Development",
+          "description": "Custom websites, e-commerce stores, dashboards, and web applications built with Next.js, React, and scalable technologies for speed, security, and long-term growth."
         },
         {
-          "title": "Clear Communication",
-          "description": "Transparent workflow, regular updates, and ongoing support."
+          "title": "Automation & Business Efficiency",
+          "description": "Automate repetitive tasks, centralize business operations, and integrate AI-powered workflows that save time, improve productivity, and support smarter decision-making."
         },
         {
-          "title": "Reliable Results",
-          "description": "Focused on delivering real outcomes and client satisfaction."
+          "title": "Performance, Reliability & Support",
+          "description": "Fast-loading, secure, and scalable solutions backed by clean code, responsive communication, and ongoing support to keep your business performing at its best."
         }
       ]
     },
     "projects_section": {
-      "sectionLabel": "Selected Projects",
-      "subtitle": "Selected work that delivers real results"
+      "heading": "Projects That Deliver Real Impact",
+      "description": "Explore a selection of business websites, e-commerce solutions, custom dashboards, and AI-powered automations built with Next.js, Technical SEO, and performance-first development. Every project focuses on speed, scalability, user experience, and measurable business results."
     },
     "technology_stack": {
-      "sectionLabel": "Technologies & tools I Work With",
-      "description": "I choose the right tools for each project based on your needs and goals. My expertise includes:"
+      "sectionLabel": "Technology Stack",
+      "description": "I build with a modern full-stack ecosystem optimized for performance, SEO, and AI search visibility — including Next.js, React, TypeScript, Node.js, MongoDB, Docker, and cloud infrastructure."
     },
     "contact_section": {
-      "sectionLabel": "Get in Touch",
-      "description": "Have a project in mind or looking to collaborate? Let’s connect and build something impactful.",
-      "cta_message": "",
+      "sectionLabel": "Let's Build Something Together",
+      "description": "Need a fast Next.js website, SEO optimization, or an AI-powered dashboard? I'm available for freelance projects, collaborations, and long-term partnerships. Reach out and let's discuss how I can help you grow online.",
       "whatsapp": "WhatsApp",
-      "whatsappCta": "Chat now",
+      "whatsappCta": "Chat on WhatsApp",
       "email": "Email",
-      "emailCta": "Send email",
+      "emailCta": "Send an email",
+      "linkedin": "LinkedIn",
+      "linkedinCta": "Connect on LinkedIn",
       "instagram": "Instagram",
       "instagramLabel": "followers",
-      "instagramCta": "Visit Instagram",
+      "instagramCta": "Follow on Instagram",
       "brandName": "Instagram"
     }
   },
   "pages": {
     "services_page": {
-      "title": "What I Do",
-      "subtitle": "My Digital Services",
-      "heading": "Web Development, SEO & AI Automation Solutions in Morocco",
-      "description": "Looking for a professional in web development, SEO optimization, or AI automation in Morocco? I build SEO-optimized websites, create AI-powered business automation systems, and design high-converting social media ads. Trusted by startups and enterprises to deliver measurable results, increase online visibility, and drive sales growth.",
+      "title": "Services",
+      "subtitle": "Web Development & Digital Solutions",
+      "heading": "Web Development, Technical SEO & AI Automation Services in Morocco",
+      "description": "Grow your business with high-performance Next.js websites, e-commerce stores, Technical SEO, and AI Search Optimization (GEO/AEO). I build fast, scalable digital solutions from Morocco that improve visibility on Google, get cited by ChatGPT and Perplexity, streamline operations, and generate measurable business growth.",
       "hashtags": [
         "#WebDevelopment",
-        "#SEO",
-        "#AIAutomation",
-        "#DigitalSolutions"
+        "#Nextjs",
+        "#TechnicalSEO",
+        "#AISearchOptimization",
+        "#BusinessAutomation",
+        "#AIIntegration"
       ],
       "services": {
         "web": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Website Development with SEO & AI Optimization in Morocco",
-          "description": "I build fast, secure, and SEO-optimized websites for businesses in Morocco and worldwide. From custom landing pages to full e-commerce stores — designed to clearly explain your field, services, and products so anyone can understand what you do and your activities. Built to rank on Google, appear in AI search results, load instantly, and turn visitors into paying customers.",
-          "startDescription": "Every website I build starts with one clear goal:",
-          "longDescription": "Get found, generate traffic, and convert visitors into real clients. I build fast, clean websites that clearly explain your field, services, and products so anyone can understand what you do and your activities. Every page is written to target the exact phrases your customers search for, with content optimized to rank on Google and perform in AI tools like ChatGPT, Gemini, and Perplexity. You get full SEO setup and Google Search Console integration to track which keywords bring you leads, plus AI GEO optimization so your business gets recommended when people ask AI assistants for local services. Google Analytics is connected from day one so you see where every inquiry comes from and what content drives results. It's a complete system built to attract, explain, and convert from the very first day.",
-          "company_recruitment": "I also collaborate with teams and companies on development projects.",
+          "title": "Custom Website Development with Technical SEO in Morocco",
+          "title_metadata": "Website Development in Morocco | SEO, GEO & AI-Optimized",
+          "description_metadata": "Fast, secure website development in Morocco with Technical SEO, Core Web Vitals & AI optimization. Custom websites built to rank on Google & get cited by AI.",
+          "description": "Custom business websites, corporate websites, landing pages, and web applications built for speed, scalability, and long-term growth. Every project includes Technical SEO, Core Web Vitals optimization, structured data, and AI Search Optimization to increase visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and other AI-powered search engines.",
+          "title_card": "Website Development with SEO & AI Optimization",
+          "overviewHeadline": "Website Development That Drives Traffic, Leads & Business Growth",
+          "startDescription": "Your website should do more than look professional, it should attract qualified visitors, explain your services clearly, and turn potential customers into real clients.",
+          "longDescription": "Every project is built with modern technologies like Next.js and React, optimized for speed, security, scalability, Technical SEO, Core Web Vitals, and AI Search Optimization. I structure content, metadata, and schema so your business can perform well in Google Search and be understood by AI platforms like ChatGPT, Google AI Overviews, and Perplexity. From planning to deployment, every decision focuses on long-term visibility, performance, and measurable business growth.",
+          "company_recruitment": "I'm also available to collaborate with startups, agencies, and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker, and modern development practices.",
           "link": "/services/web-development",
           "start_btn": "Start Your Project",
           "allServicesBtn": "View All Services",
           "overviewTitle": "Why Choose Me?",
-          "includedTitle": "What's included?",
-          "includedDesc": "This service includes:",
-          "benefitsTitle": "What you'll gain",
+          "includedTitle": "What's Included",
+          "includedDesc": "Every web development project includes:",
+          "benefitsTitle": "What You'll Gain",
           "benefitsDesc": "By working with me on your website, you can expect:",
-          "processTitle": "How I work",
-          "processDesc": "I follow a clear and focused process to make sure your project launches on time and on target:",
-          "techTitle": "Technologies I work with",
+          "processTitle": "How I Work",
+          "processDesc": "A clear, proven process that delivers your project on time and on target:",
+          "techTitle": "Technologies I Work With",
           "techDesc": "I choose the right technologies based on your project requirements and business goals — not trends.",
+          "faqTitle": "Frequently Asked Questions",
+          "faqDesc": "Direct answers about website development, SEO, and AI search optimization:",
           "AnothersrvcBtn": "View All Services",
           "features": [
-            "SEO-optimized",
-            "Mobile-friendly",
-            "Fast loading",
-            "Security"
+            "SEO-Optimized Structure",
+            "AI Search Ready (GEO)",
+            "Responsive",
+            "Core Web Vitals Optimized"
+          ],
+          "included": [
+            "Custom design and development with Next.js, React, and TypeScript",
+            "On-page SEO: semantic HTML, metadata, schema markup, sitemap and robots.txt",
+            "GEO & AEO optimization so AI assistants can understand, quote, and recommend your business",
+            "Core Web Vitals optimization: image optimization, caching, and instant load times",
+            "Google Search Console, Google Analytics, and Bing Webmaster Tools integration from day one",
+            "Accessibility (WCAG) and semantic HTML for better usability and search visibility",
+            "Security hardening: HTTPS, secure headers, and protected forms",
+            "Post-launch support, documentation, and performance monitoring"
           ],
           "benefits": [
             {
-              "title": "Higher search rankings",
-              "text": "Structured data, optimized metadata, and fast load times — everything Google rewards built in from the start."
+              "title": "Improve Search Visibility",
+              "text": "Semantic code, structured data, optimized metadata, and fast Core Web Vitals — everything Google rewards, built in from the first line of code."
             },
             {
-              "title": "More conversions",
-              "text": "Clear calls-to-action, intuitive layouts, and trust signals that turn visitors into real leads."
+              "title": "Visibility in AI search results",
+              "text": "Content structured for GEO and AEO, so ChatGPT, Gemini, and Perplexity can cite and recommend your business when people ask for services like yours."
             },
             {
-              "title": "Performance insights",
-              "text": "Track traffic, user behavior, and search performance through Google Analytics and Search Console — set up and ready on launch day."
+              "title": "More conversions & measurable growth",
+              "text": "Clear calls-to-action, trust signals, and analytics tracking — so every visitor is guided toward becoming a client, and you can measure exactly what works."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Discovery",
-              "text": "I learn your goals, your audience, and what your competitors are doing right."
+              "title": "Discovery & Keyword Research",
+              "text": "I analyze your goals, audience, competitors, and the exact keywords your customers search for — before writing a single line of code."
             },
             {
               "step": "02",
-              "title": "Design, Build & Test",
-              "text": "Wireframes, development, SEO setup, and thorough testing for performance, accessibility, and security."
+              "title": "Design & Development",
+              "text": "Clean, fast development with Next.js — semantic HTML, responsive design, and accessibility built into every component."
             },
             {
               "step": "03",
-              "title": "Launch & Monitor",
-              "text": "Go live with analytics configured, sitemap submitted, and performance benchmarks confirmed."
+              "title": "SEO & AI Optimization",
+              "text": "Schema markup, metadata, sitemap, and content structured for Google rankings and AI citations (GEO/AEO)."
+            },
+            {
+              "step": "04",
+              "title": "Launch, Analytics & Continuous Improvement",
+              "text": "Go live with analytics configured, Search Console connected, sitemap submitted, and Core Web Vitals benchmarks confirmed."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "How long does it take to build a professional website?",
+              "a": "Most business websites take 2 to 4 weeks from kickoff to launch, depending on the number of pages and features. Landing pages can be ready in about one week, while larger custom web applications may take 4 to 8 weeks. You get a clear timeline before we start."
+            },
+            {
+              "q": "Will my website rank on Google?",
+              "a": "Yes — every website is built with technical SEO from the start: semantic HTML, schema markup, optimized metadata, fast Core Web Vitals, and Google Search Console integration. This gives your site the strongest possible foundation to rank for the keywords your customers search."
+            },
+            {
+              "q": "What is GEO and why does it matter for my business?",
+              "a": "GEO (Generative Engine Optimization) means structuring your website so AI assistants like ChatGPT, Gemini, and Perplexity can understand, cite, and recommend your business. As more people ask AI instead of searching Google, GEO helps your business appear in those AI-generated answers."
+            },
+            {
+              "q": "Which technologies do you use to build websites?",
+              "a": "I build with Next.js, React, TypeScript, and Tailwind CSS — modern technologies chosen for speed, security, and scalability. This stack powers some of the world's fastest websites and makes your site easy to maintain and grow over time."
+            },
+            {
+              "q": "How much does it cost to build a website in Morocco?",
+              "a": "The cost depends on the project's complexity, features, design, SEO requirements, and integrations. A simple business website costs less than a custom web application or e-commerce platform. I provide tailored quotes based on your goals, ensuring every project is optimized for performance, Technical SEO, and long-term business growth."
+            },
+            {
+              "q": "Do you provide maintenance after the website launches?",
+              "a": "Yes — I offer ongoing maintenance and growth plans covering updates, security, backups, performance monitoring, and continuous SEO improvements, so your website keeps performing long after launch day."
+            },
+            {
+              "q": "Can you redesign my existing website instead of building a new one?",
+              "a": "I can redesign and modernize existing websites, improve performance, fix Technical SEO issues, enhance Core Web Vitals, implement structured data, and prepare the website for AI-powered search without rebuilding everything from scratch when possible."
+            }
+          ]
+        },
+        "ecommerce": {
+          "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+          "title": "Custom E-commerce Development in Morocco",
+          "title_metadata": "E-commerce Development in Morocco | Online Stores That Sell",
+          "description_metadata": "Custom e-commerce development in Morocco — fast, secure online stores with CMI payments, cash on delivery & SEO. Built to rank on Google and sell more.",
+          "description": "Custom e-commerce websites built to sell online with secure payments, fast performance, and scalable architecture. Every store includes Technical SEO, Core Web Vitals, optimized product pages, and AI Search Optimization to increase visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and other AI-powered search engines.",
+          "title_card": "E-commerce Development",
+          "overviewHeadline": "Online Stores Built for Sales, Speed & Growth",
+          "startDescription": "Your online store should do more than showcase products. It should attract the right customers, build trust, provide a seamless shopping experience, and convert visitors into loyal buyers.",
+          "longDescription": "Whether you're launching a new online business or modernizing an existing store, I build custom e-commerce websites designed for growth. Every store includes secure payment integration, product management, optimized product pages, Technical SEO, Core Web Vitals optimization, and AI Search Optimization. From the homepage to checkout, every element is designed to improve user experience, increase conversions, and help your products get discovered on Google, Google Shopping, ChatGPT, Perplexity, and other AI-powered search engines.",
+          "company_recruitment": "I also collaborate with brands, agencies, and retail teams on long-term e-commerce projects, including migrations, redesigns, and performance optimization.",
+          "link": "/services/ecommerce",
+          "start_btn": "Launch Your Store",
+          "allServicesBtn": "View All Services",
+          "overviewTitle": "Why Choose Me?",
+          "includedTitle": "What's Included",
+          "includedDesc": "Every e-commerce project includes:",
+          "benefitsTitle": "What You'll Gain",
+          "benefitsDesc": "By working with me on your online store, you can expect:",
+          "processTitle": "How I Work",
+          "processDesc": "A clear, proven process that takes your store from idea to first sale:",
+          "techTitle": "Technologies I Work With",
+          "techDesc": "I choose the right technologies based on your products, market, and growth goals — not trends.",
+          "faqTitle": "Frequently Asked Questions",
+          "faqDesc": "Direct answers about e-commerce development, payments, and AI search optimization:",
+          "AnothersrvcBtn": "View All Services",
+          "features": [
+            "SEO-Optimized Product Pages",
+            "AI Search Ready (GEO)",
+            "Responsive",
+            "Secure Payments (CMI & COD)"
+          ],
+          "included": [
+            "Custom store design and development with Next.js, React, and TypeScript",
+            "Complete e-commerce system: product catalog, categories, search, shopping cart, wishlist, secure checkout, and order management",
+            "Local and international payments: CMI, cash on delivery (COD), Stripe, and PayPal",
+            "Product SEO: optimized product pages, Product schema markup, sitemap and robots.txt",
+            "GEO & AEO optimization so AI assistants can find, cite, and recommend your products",
+            "Core Web Vitals optimization: fast product pages, image optimization, and instant load times",
+            "Inventory, order, and customer management dashboard you can use without technical knowledge",
+            "Google Search Console and Analytics integration, training, and post-launch support"
+          ],
+          "benefits": [
+            {
+              "title": "A Store Built to Sell 24/7",
+              "text": "Fast product pages, trusted local payments, and a friction-free checkout — everything designed to reduce abandoned carts and turn visitors into buyers, day and night."
+            },
+            {
+              "title": "More Product Visibility & Organic Sales",
+              "text": "Product schema, optimized metadata, and GEO/AEO structure — so your products can rank on Google, appear in Shopping results, and get recommended by ChatGPT and Perplexity."
+            },
+            {
+              "title": "Full Control & Measurable Growth",
+              "text": "You own your store, your data, and your code — no monthly platform fees. Track every sale, product, and traffic source with analytics configured from day one."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Discovery & Market Research",
+              "text": "I analyze your products, target customers, competitors, and the keywords buyers search for — before designing anything."
+            },
+            {
+              "step": "02",
+              "title": "Store Design & Development",
+              "text": "Clean, fast development with Next.js — catalog, cart, checkout, and a management dashboard, all responsive and accessible."
+            },
+            {
+              "step": "03",
+              "title": "Payments, SEO & AI Optimization",
+              "text": "CMI, COD, Stripe, and PayPal integration — plus Product schema, metadata, and content structured for Google rankings and AI citations."
+            },
+            {
+              "step": "04",
+              "title": "Launch, Analytics & Growth",
+              "text": "Go live with analytics configured, Search Console connected, sitemap submitted, and a clear plan to grow your sales."
+            }
+          ],
+          "faqs": [
+            {
+              "q": "How much does it cost to build an online store in Morocco?",
+              "a": "The cost depends on the number of products, payment integrations, design complexity, and custom features. A simple store with standard payments costs less than a custom platform with advanced features. I provide a tailored quote based on your goals — every store includes SEO, security, and performance optimization from the start."
+            },
+            {
+              "q": "Which payment methods can my online store accept?",
+              "a": "Your store can accept the payment methods your customers actually use: CMI for Moroccan bank cards, cash on delivery (COD) for local buyers, and Stripe or PayPal for international customers. I help you choose and integrate the right combination for your market."
+            },
+            {
+              "q": "Can my online store support multiple languages and currencies?",
+              "a": "Yes. I can build multilingual and multi-currency online stores so you can sell locally in Morocco or internationally while maintaining excellent performance and SEO."
+            },
+            {
+              "q": "Should I choose Shopify, WooCommerce, or a custom store?",
+              "a": "Shopify and WooCommerce work for quick starts, but they come with monthly fees, plugin limitations, and slower performance. A custom store built with Next.js is faster, fully tailored to your business, free of platform fees, and scores higher on Core Web Vitals — which directly improves your Google rankings and conversions."
+            },
+            {
+              "q": "Can I manage products and orders myself after launch?",
+              "a": "Yes — your store includes a simple management dashboard where you can add products, update prices and stock, and track orders without any technical knowledge. You also receive training and documentation so you stay fully in control."
+            },
+            {
+              "q": "Will my products appear on Google and in AI search results?",
+              "a": "Yes — every product page is built with Product schema markup, optimized metadata, and fast Core Web Vitals, giving your products the strongest foundation to rank on Google and appear in Shopping results. GEO and AEO optimization also structures your content so AI assistants like ChatGPT and Perplexity can cite and recommend your products."
+            },
+            {
+              "q": "Can you improve or redesign my existing online store?",
+              "a": "Yes — I can modernize existing stores, fix slow product pages, improve checkout conversion, repair Technical SEO issues, implement structured data, and prepare your store for AI-powered search — without losing your existing products, customers, or rankings."
             }
           ]
         },
         "systems": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "heroAltSuffix": "business automation and AI systems",
-          "title": "Business Automation & AI-Powered Systems",
-          "description": "Custom software tools, automated workflows, and AI integrations that simplify your operations, eliminate repetitive tasks, and help your business move faster with fewer errors.",
-          "startDescription": "Stop doing manually what a system can handle for you —",
-          "longDescription": "I build custom dashboards, automated pipelines, and AI-powered tools tailored to your exact workflow. Whether it's streamlining client management, tracking inventory in real time, or generating intelligent reports automatically — I deliver a system that works exactly the way your business does. The goal is simple: eliminate the bottlenecks that slow you down so you can focus entirely on growth.",
-          "company_recruitment": "I also collaborate with teams and companies on development projects.",
+          "title": "Custom Dashboards, Business Automation & AI Integration in Morocco",
+          "title_metadata": "Business Automation, Custom Dashboards & AI Integration Services in Morocco",
+          "description_metadata": "Custom dashboards, business automation systems, workflow automation, and AI integrations that streamline operations, improve productivity, and help businesses grow.",
+          "title_card": "Business Automation & AI Integration",
+          "description": "Custom dashboards, workflow automation, and AI-powered business systems that streamline operations, eliminate repetitive tasks, improve productivity, and support smarter business decisions.",
+          "overviewHeadline": "Work Smarter with Custom Business Systems",
+          "startDescription": "Your team shouldn't waste time on repetitive tasks when software can automate them for you.",
+          "longDescription": "I design and develop custom dashboards, internal business systems, workflow automations, and AI integrations tailored to the way your business operates. Whether you need CRM software, inventory management, reporting dashboards, document automation, AI assistants, or API integrations, every solution is built to save time, reduce manual work, improve accuracy, and give you complete visibility over your business. The result is a scalable system that grows with your company while helping your team focus on higher-value work.",
+          "company_recruitment": "I also collaborate with startups and companies on long-term software development, automation, and AI integration projects.",
           "link": "/services/business-systems",
-          "start_btn": "Start Your Project",
+          "start_btn": "Automate Your Business",
           "allServicesBtn": "View All Services",
           "overviewTitle": "Why Choose Me?",
           "includedTitle": "What's included?",
-          "includedDesc": "This service includes:",
+          "includedDesc": "Every business automation project includes:",
           "benefitsTitle": "What you'll gain",
-          "benefitsDesc": "After automating your operations, you can expect:",
-          "useCasesTitle": "Real-World Applications",
-          "useCasesDesc": "Here's how these systems change daily operations in practice:",
-          "processTitle": "How I work",
-          "processDesc": "I follow a clear process to make sure the system fits your workflow from day one:",
-          "techTitle": "Technologies I work with",
-          "techDesc": "I choose the right stack based on your workflow needs — built to scale as your business grows.",
+          "benefitsDesc": "Automating your business helps you save time, reduce costs, and improve productivity.",
+          "useCasesTitle": "Business Automation Solutions",
+          "useCasesDesc": "Examples of real-world systems I build for businesses.",
+          "processTitle": "How I Work",
+          "processDesc": "A structured development process designed around your business goals.",
+          "techTitle": "Technologies I Use",
+          "techDesc": "Modern technologies selected according to your business requirements—not trends.",
+          "faqTitle": "Frequently Asked Questions",
+          "faqDesc": "Direct answers about business automation, dashboards, and AI integration:",
           "AnothersrvcBtn": "View All Services",
           "features": [
-            "Workflow automation",
-            "AI integration",
-            "Custom dashboards",
-            "Scalable infrastructure"
+            "Custom Dashboards",
+            "Workflow Automation",
+            "AI Integration",
+            "Reporting & Analytics",
+            "API Integrations"
           ],
           "stats": [
             {
@@ -235,165 +401,120 @@
           ],
           "benefits": [
             {
-              "title": "Hours saved every week",
-              "text": "Repetitive tasks run automatically so your team focuses on work that actually moves the needle."
+              "title": "Save Time Every Day",
+              "text": "Automate repetitive tasks, approvals, notifications, and reports so your team can focus on high-value work."
             },
             {
-              "title": "Fewer costly errors",
-              "text": "Automated systems remove the human error risk from data entry, reporting, and routine decisions."
+              "title": "Increase Productivity",
+              "text": "Centralize your business data, reduce manual processes, and give your team faster access to the information they need."
             },
             {
-              "title": "Real-time visibility",
-              "text": "Custom dashboards that surface the numbers you actually need — when you need them."
+              "title": "Make Better Business Decisions",
+              "text": "Real-time dashboards and AI-powered insights help you monitor KPIs, identify trends, and make informed decisions."
             }
           ],
           "useCases": [
             {
-              "title": "Client & CRM Management",
-              "text": "Track clients, contracts, and renewals automatically — no spreadsheets, no missed follow-ups."
+              "title": "CRM & Client Management",
+              "text": "Manage customers, leads, contracts, invoices, and follow-ups from one centralized dashboard."
             },
             {
-              "title": "Inventory & Stock Control",
-              "text": "Real-time stock tracking with low-stock alerts and automated reordering built in."
+              "title": "Inventory & Operations",
+              "text": "Monitor stock, suppliers, purchases, deliveries, and automated inventory alerts in real time."
             },
             {
-              "title": "Reporting & Analytics",
-              "text": "Custom dashboards that pull live data and generate reports automatically — daily, weekly, or on demand."
+              "title": "Business Dashboards & Reporting",
+              "text": "Visualize KPIs, sales, revenue, productivity, and operational data through interactive dashboards."
             },
             {
-              "title": "AI-Powered Workflows",
-              "text": "Intelligent document processing, email triage, and decision support integrated directly into your tools."
+              "title": "AI Automation & Integrations",
+              "text": "Integrate AI assistants, document processing, email automation, APIs, and intelligent workflows into your existing business systems."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Audit",
-              "text": "I map your current workflow, identify the bottlenecks, and find the highest-value automation opportunities."
+              "title": "Business Analysis",
+              "text": "Understand your workflow, identify bottlenecks, and define automation opportunities."
             },
             {
               "step": "02",
-              "title": "Build",
-              "text": "Custom tools and integrations built around your existing stack — no unnecessary complexity."
+              "title": "System Design & Development",
+              "text": "Build secure dashboards, automation workflows, APIs, and AI integrations tailored to your business."
             },
             {
               "step": "03",
-              "title": "Train & Hand off",
-              "text": "Full documentation and a hands-on walkthrough so you and your team are completely confident using it."
+              "title": "Deployment & Support",
+              "text": "Deploy your system, train your team, monitor performance, and continuously improve the solution as your business grows."
             }
           ],
           "techStackList": [
-            "Node.js",
+            "Express.js",
             "Python",
             "OpenAI API",
             "REST APIs",
             "MongoDB",
             "React"
-          ]
-        },
-        "design": {
-          "image": "/images/services/social-media-marketing-advertising-dashboard-design.jpeg",
-          "heroAltSuffix": "social media ad design",
-          "title": "Social Media Ad Design & Visuals",
-          "description": "High-impact ad visuals for Instagram, Facebook, and TikTok — designed to capture attention, communicate your value clearly, and move viewers toward action.",
-          "startDescription": "Visuals that stop the scroll and drive real results —",
-          "longDescription": "Great ads don't just look good — they say the right thing to the right person at the right moment. I design scroll-stopping visuals with clear messaging and strong calls-to-action that align with your brand identity. Whether it's a static post or a motion graphic for Reels and TikTok, every element is built with a specific purpose: to maximize your impact and turn attention into engagement.",
-          "link": "/services/social-design",
-          "start_btn": "Start Your Project",
-          "allServicesBtn": "View All Services",
-          "overviewTitle": "Why Choose Me?",
-          "exampleTitle": "Elements of a Successful Ad",
-          "exampleDesc": "Strong visuals alone aren't enough. I combine striking design with strategic messaging, brand alignment, and clear calls-to-action — every element earns its place in the layout.",
-          "exampleFeatures": [
-            "Clear and compelling messaging",
-            "Professional product placement",
-            "Brand-aligned visual hierarchy",
-            "High-contrast calls-to-action"
           ],
-          "benefitsTitle": "What you'll gain",
-          "benefitsDesc": "By investing in professional ad design, you can expect:",
-          "processTitle": "How I work",
-          "processDesc": "A focused process to make sure every creative is built to perform:",
-          "toolsTitle": "Design tools I use",
-          "toolsDesc": "Industry-standard software to deliver pixel-perfect creatives at every format and size.",
-          "AnothersrvcBtn": "View All Services",
-          "features": [
-            "Social ads",
-            "Product visuals",
-            "Brand consistency",
-            "High conversion"
-          ],
-          "benefits": [
+          "faqs": [
             {
-              "title": "More engagement",
-              "text": "Designs built to earn saves, shares, and clicks — not just impressions."
+              "q": "What is business automation and how does it help my company?",
+              "a": "Business automation means using software to handle repetitive tasks automatically — like invoicing, data entry, reporting, and customer follow-ups. It saves your team hours every week, reduces human errors, lowers operational costs, and gives you real-time visibility over your business through custom dashboards."
             },
             {
-              "title": "Brand consistency",
-              "text": "Every visual feels unmistakably yours, across every platform and format."
+              "q": "How much time can automation actually save my business?",
+              "a": "It depends on your processes, but most businesses recover 5 to 15 hours per week per employee by automating repetitive tasks like data entry, reporting, and follow-ups. During the analysis phase, I identify your specific time-wasters and estimate the exact savings before any development starts."
             },
             {
-              "title": "Higher ROAS",
-              "text": "Creatives designed around conversion — not just aesthetics."
+              "q": "Can you integrate automation with the tools I already use?",
+              "a": "Yes — I connect your existing tools like your CRM, accounting software, e-commerce platform, spreadsheets, and email. Systems are built around your current workflow, so your team keeps the tools they know while everything synchronizes automatically in the background."
+            },
+            {
+              "q": "Do I need technical knowledge to use these systems?",
+              "a": "No — every system comes with a simple interface designed for non-technical users, plus complete training and documentation in clear language. If your team can use a spreadsheet, they can use the dashboards and tools I build."
+            },
+            {
+              "q": "How can AI actually help my business operations?",
+              "a": "AI adds real value in specific areas: automatically answering common customer questions, processing and classifying documents, generating reports and content, and extracting insights from your data. I integrate AI only where it solves a real problem — never as a gimmick — so you get measurable results, not buzzwords."
+            },
+            {
+              "q": "How much does a custom business system cost in Morocco?",
+              "a": "The cost depends on the complexity: number of integrations, automation scope, and dashboard features. A focused automation of one workflow costs less than a complete management system. After the initial analysis, you receive a clear quote — and since most systems pay for themselves through time savings, I help you prioritize the automations with the fastest return."
             }
-          ],
-          "process": [
-            {
-              "step": "01",
-              "title": "Brief",
-              "text": "I define your target audience, platform, and the specific goal of the campaign."
-            },
-            {
-              "step": "02",
-              "title": "Design",
-              "text": "Multiple concepts delivered with revisions included until it's exactly right."
-            },
-            {
-              "step": "03",
-              "title": "Export & Launch",
-              "text": "Delivered in all required sizes and formats — ready to run immediately."
-            }
-          ],
-          "toolsList": [
-            "Figma",
-            "Adobe Photoshop",
-            "Adobe Illustrator",
-            "Canva",
-            "After Effects"
           ]
         }
       },
-      "cta": "Explore this service",
-      "Selected_projects": "Selected Projects",
-      "Real_results": "Real projects that showcase practical solutions and measurable impact.",
+      "cta": "Explore Service",
+      "Selected_projects": "Selected Client Projects",
+      "Real_results": "Real websites, dashboards, and AI solutions delivering measurable business results, improved search visibility, and better user experiences.",
       "View_All_Projects": "View All Projects",
-      "viewDetails": "View details",
+      "viewDetails": "View Case Study",
       "whyChooseUs": {
         "title": "Why Work With Me",
-        "subtitle": "I focus on building solutions that deliver real value, not just features.",
+        "subtitle": "Modern web development focused on performance, SEO, AI search visibility, and long-term business growth.",
         "reasons": [
           {
-            "title": "Results-Driven Approach",
-            "text": "Every project is built with a clear objective: performance, usability, and business impact."
+            "title": "Business-Focused Solutions",
+            "text": "Every website and application is designed to increase visibility, improve user experience, and support measurable business growth."
           },
           {
-            "title": "Full-Stack Expertise",
-            "text": "From frontend to backend, SEO to automation — I handle the full development process."
+            "title": "Full-Stack Development & Technical SEO",
+            "text": "From Next.js development and APIs to Technical SEO, Core Web Vitals, and AI Search Optimization, everything is handled in one place."
           },
           {
-            "title": "Scalable & Maintainable",
-            "text": "Clean code, modern tools, and structured architecture that grows with your needs."
+            "title": "Scalable, Reliable & Future-Ready",
+            "text": "Clean architecture, modern technologies, automation, and maintainable code that scale as your business grows."
           }
         ]
       },
-      "ctat_title": "Have a Project or Opportunity?",
-      "cta_desc": "Whether you need a developer for your team or want to build a project, let’s connect.",
-      "cta_btn": "Start the conversation"
+      "ctat_title": "Ready to Build Your Next Project?",
+      "cta_desc": "Whether you need a business website, e-commerce store, custom dashboard, or AI-powered automation, let's build a fast, scalable solution that helps your business grow.",
+      "cta_btn": "Start Your Project"
     },
     "about_page": {
       "title": "About Me",
-      "heading": "Full-Stack Developer in Morocco Focused on Real, Impactful Web Solutions",
-      "intro": "I’m a full-stack web developer who builds modern, high-performance web applications. I help businesses and teams create fast, scalable, and user-focused digital products, with a strong focus on performance, SEO, and real-world results.",
+      "heading": "Full-Stack Web Developer, SEO Specialist & AI Search Optimization Expert in Morocco",
+      "intro": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist based in Morocco. I design and build high-performance websites, e-commerce stores, business dashboards, and AI-powered web applications using Next.js and modern web technologies. Every project is developed with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines.",
       "stats": {
         "years": "Years of Experience",
         "clients": "Satisfied Clients",
@@ -401,22 +522,23 @@
       },
       "whoIAm": {
         "title": "Who I Am",
-        "paragraph1": "I'm Mohammed elghandori, a full-stack developer, passionate about turning ideas into high-performing digital products. I hold a diploma in Digital Full-Stack Development from ISTA and a diploma in Architecte en Technologies du Numérique from 1337 School UM6P, (part of the prestigious 42 Network). I also have certifications in web development, digital marketing, and AI. Through my studies, I built a strong foundation in computer science, including how the web works, core computer architecture concepts such as memory and the kernel, data structures and algorithms, and the fundamentals of software development. I actively participate in hackathons and Attend tech community events to gain experience and stay up to date with the latest technologies.",
-        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results. I'm committed to helping you succeed online with solutions that work, because your success is my success."
+        "paragraph1": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist passionate about building modern web experiences that solve real business problems. I studied software engineering at 1337 School UM6P (42 Network), where I developed strong foundations in computer science, algorithms, operating systems, networking, software architecture, and collaborative software development. Along the way, I earned certifications in web development, digital marketing, and artificial intelligence while continuously improving my technical expertise.",
+        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results.Whether you're a startup or an enterprise targeting global markets, I'm committed to helping you succeed online with solutions that work, because your success is my success"
       },
       "experience": {
         "title": "My Experience & Background",
-        "paragraph": "I've worked with enterprises, startups, and small businesses to build real digital solutions that deliver results. I've developed full-stack web applications, configured servers for optimal performance, and built automation systems that save hours of manual work daily. I've designed hundreds of social media ad visuals that helped businesses increase engagement and sales. I've also won first place in multiple hackathons I participated in, competing against talented developers and building innovative solutions under pressure. From setting up SEO-friendly architectures to deploying AI-powered workflows, every project I take on is focused on one thing: getting you measurable outcomes."
+        "paragraph": "I've worked on corporate websites, business dashboards, e-commerce platforms, automation systems, and AI-powered applications for companies, startups, and personal projects. My experience spans the entire development lifecycle—from planning and UI implementation to backend development, deployment, Technical SEO, and performance optimization. Through hackathons, real client work, and continuous learning, I've strengthened my ability to collaborate with multidisciplinary teams, solve complex problems under pressure, and deliver scalable digital solutions that create measurable business value.",
+        "paragraph2": "I believe successful digital products are built through technical excellence, clear communication, and continuous improvement. Whether you're a startup, small business, or established company, my goal is to create reliable, scalable, and search-optimized solutions that generate measurable business results and long-term growth."
       },
       "storyMissionValues": {
         "title": "Discover the story, mission, and values that drive me",
-        "story": "My journey started with a curiosity for how the web works and how businesses can use it to grow. Over the years I've built websites, automated processes, and designed campaigns for brands that needed a partner who could both code and design and deliver on time.",
-        "mission": "My mission is to help businesses and creators build a strong, visible online presence. I want every project to be fast, findable, and focused on the user so you can focus on what you do best while your digital presence works for you.",
+        "story": "My journey into software development began with a curiosity about how websites, servers, and the internet work. That curiosity quickly became a passion for building products that combine clean code, great user experiences, and measurable business impact. Today I continue learning new technologies while helping businesses grow through modern digital solutions.",
+        "mission": "My mission is to help businesses, startups, and entrepreneurs build websites and digital products that are fast, visible, scalable, and ready for the future of search. Every project I create combines performance, Technical SEO, AI Search Optimization, and user-focused design to deliver long-term value.",
         "valuesTitle": "What I stand for",
         "values": [
-          "Quality over quantity — every line of code and every pixel matters.",
-          "Transparency — you're always in the loop, from kickoff to launch.",
-          "Partnership — I succeed when your business grows."
+          "Quality before shortcuts — every project is built for long-term reliability.",
+          "Transparency — clear communication from planning to launch.",
+          "Partnership — your success is the measure of mine."
         ],
         "storyLabel": "My Story",
         "missionLabel": "My Mission"
@@ -471,43 +593,45 @@
         "title": "How Can I Help?",
         "subtitle": "Ways we can work together",
         "items": [
-          "Build or redesign your website — fast, SEO-optimized, and mobile-first.",
-          "Set up automation and AI tools to save you time and scale your operations.",
-          "Design ad creatives and social media visuals that explain your offer and drive sales.",
-          "Audit and improve your existing site's speed, SEO, and conversion."
+          "Build modern websites and e-commerce stores optimized for speed, SEO, and AI search.",
+          "Develop custom dashboards and business automation tools that improve productivity.",
+          "Integrate AI solutions and workflows that reduce manual work and support better decisions.",
+          "Audit and optimize existing websites for Technical SEO, Core Web Vitals, accessibility, and conversions."
         ]
       },
       "values": [
-        {
-          "title": "Performance & Quality",
-          "text": "Clean, efficient code and fast, reliable applications."
-        },
-        {
-          "title": "SEO & Visibility",
-          "text": "Built to be discovered and perform well in search engines."
-        },
-        {
-          "title": "Clear Communication",
-          "text": "Simple, transparent process with regular updates."
-        },
-        {
-          "title": "Results-Oriented",
-          "text": "Focused on delivering solutions that create real impact."
-        }
+        [
+          {
+            "title": "Technical Excellence",
+            "text": "Modern architecture, clean code, scalability, and long-term maintainability."
+          },
+          {
+            "title": "SEO & AI Visibility",
+            "text": "Every project is optimized for Google Search, AI search engines, and excellent user experience."
+          },
+          {
+            "title": "Communication & Collaboration",
+            "text": "Transparent communication, teamwork, and structured development throughout every project."
+          },
+          {
+            "title": "Business Impact",
+            "text": "Technology should generate measurable growth, efficiency, and long-term value."
+          }
+        ]
       ],
       "cta": {
-        "title": "Let’s Build Something Valuable",
-        "description": "Whether you have a project or an opportunity, I’m ready to collaborate.",
-        "button": "Start a Conversation"
+        "title": "Let's Build Your Next Digital Project",
+        "description": "Need a high-performance website, Technical SEO, AI automation, or a custom web application? Let's discuss how I can help your business grow.",
+        "button": "Start Your Project"
       }
     },
     "portfolio_page": {
       "subtitle": "Selected Work",
-      "heading": "Projects That Deliver Real Impact",
-      "description": "A selection portfolio of web applications, responsive websites, social media ad designs, and AI-powered automation tools I've designed and developed. Each project is built with a strong focus on performance, scalability, user experience (UX), and real-world application — covering client projects, personal initiatives, and academic work.",
-      "viewCase": "View details",
-      "cta": "Start a project together",
-      "cta_other": "See other projects",
+      "heading": "High-Performance Websites, E-Commerce, Dashboards & AI Automation",
+      "description": "Explore 10+ real-world projects including SEO-optimized corporate websites, high-converting e-commerce stores, business automation dashboards, and AI-powered tools. Each project demonstrates expertise in Next.js, Technical SEO, Core Web Vitals, and scalable cloud architecture — from client work and personal initiatives to advanced academic systems programming.",
+      "viewCase": "View Project",
+      "cta": "Start Your Project",
+      "cta_other": "Explore More Projects",
       "ui": {
         "filterBy": "Filter by",
         "displayModes": {
@@ -532,9 +656,9 @@
         },
         "emptyStateTitle": "No projects found",
         "emptyStateText": "Try selecting another project category.",
-        "ctaTitle": "Got a project idea? Let's make it happen.",
-        "ctaExplore": " Click to explore",
-        "ctaDescription": "I work with businesses, founders, and teams to design and build reliable, high-performance digital products."
+        "ctaTitle": "Have a project in mind?",
+        "ctaExplore": "View details",
+        "ctaDescription": "I collaborate with startups and businesses to build fast, reliable, and search-optimized digital products that drive measurable growth."
       },
       "caseStudyUi": {
         "breadcrumbHome": "Home",
@@ -550,10 +674,10 @@
       "projects": [
         {
           "title": "Corporate Website & SEO Growth",
-          "description": "Designed and developed a high-performance corporate website to showcase services and products. Optimized for speed, SEO, and user experience, resulting in 2,900+ new users in just 2 months and improved online visibility.",
-          "tech": "Next.js, SEO Optimization, MongoDB",
+          "description": "Designed and developed a high-performance corporate website with Next.js to showcase services and products. Optimized for Technical SEO, Core Web Vitals, accessibility, and user experience, resulting in more than 2,900 new users within two months while significantly improving search visibility and organic traffic.",
+          "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "See more details",
+          "linkLabel": "View case study",
           "category": "Web Development & SEO",
           "type": "professional",
           "status": "online",
@@ -593,50 +717,12 @@
           }
         },
         {
-          "title": "Business Automation Dashboard",
-          "description": "Developed a custom dashboard to centralize client management, subscriptions, and business operations. Automated tracking of billing cycles, stock, and service status reduced manual work, improved organization, and increased overall efficiency and client satisfaction.",
-          "tech": "React JS, Express JS, REST API",
-          "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "See more details",
-          "category": "Systems & Automation",
-          "type": "professional",
-          "status": "local enterprise",
-          "href": "/portfolio/business-automation-dashboard",
-          "highlightsHeading": "What we delivered",
-          "detail": {
-            "seo": {
-              "title": "Business Automation Dashboard with React JS & Express JS | Devsign",
-              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React JS, Express JS, and REST APIs for real enterprises.",
-              "keywords": [
-                "business automation dashboard",
-                "subscription management software",
-                "React Express JS internal tools",
-                "operations dashboard Morocco",
-                "custom CRM dashboard"
-              ]
-            },
-            "intro": "Operations were spread across spreadsheets and files. We replaced this with a single dashboard that reflects the customer lifecycle from subscription to renewal, with alerts before revenue is lost.",
-            "sections": [
-              {
-                "title": "Solution",
-                "body": "An interface displaying active plans, expiration dates, inventory, and price history. Automated alerts reduce manual follow-up, allowing the team to focus on sales and service."
-              }
-            ],
-            "highlights": [
-              "Centralized view of clients, subscriptions, and stock",
-              "Automated alerts for expiring services and critical thresholds",
-              "REST-backed architecture ready to extend with new modules",
-              "Designed for daily operations on desktop and tablet"
-            ]
-          }
-        },
-        {
           "title": "E-commerce Landing Page",
-          "description": "Designed a high-conversion landing page for product promotion and advertising campaigns. Optimized for fast loading, mobile experience, and clear product presentation, helping increase user engagement and conversion rates. Integrated with a dashboard for real-time content updates and campaign optimization.",
-          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "description": "Designed and developed a high-converting e-commerce landing page optimized for speed, mobile performance, Technical SEO, and conversion. Integrated with a custom dashboard for real-time content management, campaign optimization, and improved marketing performance.",
+          "tech": "Next.js, Tailwind CSS, Technical SEO",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
-          "linkLabel": "See more details",
-          "category": "Web Development & SEO",
+          "linkLabel": "View case study",
+          "category": "Web Development & E-commerce",
           "type": "professional",
           "status": "online",
           "href": "/portfolio/landing-page-ecommerce",
@@ -666,6 +752,44 @@
               "Performance-conscious assets and CSS strategy",
               "SEO-oriented headings and content hierarchy",
               "Clear CTA path from hero through objections to action"
+            ]
+          }
+        },
+        {
+          "title": "Business Automation Dashboard",
+          "description": "Developed a custom business dashboard to centralize client management, subscriptions, inventory, and daily operations. Automated billing cycles, stock monitoring, and service tracking to reduce manual work, improve productivity, and streamline business workflows through intelligent automation.",
+          "tech": "React, Express.js, REST API",
+          "image": "/images/projects/Business-Automation-Dashboard.jpg",
+          "linkLabel": "View case study",
+          "category": "Systems & Automation",
+          "type": "professional",
+          "status": "local enterprise",
+          "href": "/portfolio/business-automation-dashboard",
+          "highlightsHeading": "What we delivered",
+          "detail": {
+            "seo": {
+              "title": "Business Automation Dashboard with React JS & Express JS | Devsign",
+              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React JS, Express JS, and REST APIs for real enterprises.",
+              "keywords": [
+                "business automation dashboard",
+                "subscription management software",
+                "React Express JS internal tools",
+                "operations dashboard Morocco",
+                "custom CRM dashboard"
+              ]
+            },
+            "intro": "Operations were spread across spreadsheets and files. We replaced this with a single dashboard that reflects the customer lifecycle from subscription to renewal, with alerts before revenue is lost.",
+            "sections": [
+              {
+                "title": "Solution",
+                "body": "An interface displaying active plans, expiration dates, inventory, and price history. Automated alerts reduce manual follow-up, allowing the team to focus on sales and service."
+              }
+            ],
+            "highlights": [
+              "Centralized view of clients, subscriptions, and stock",
+              "Automated alerts for expiring services and critical thresholds",
+              "REST-backed architecture ready to extend with new modules",
+              "Designed for daily operations on desktop and tablet"
             ]
           }
         },
@@ -1062,75 +1186,32 @@
               "Practical example of business process automation"
             ]
           }
-        },
-        {
-          "title": "Calucature Utility Tool",
-          "description": "A lightweight desktop utility built with Python, designed for fast and efficient technical calculations. Powered by a Tkinter-based GUI, it provides a simple, offline-first experience for handling repetitive mathematical tasks without the overhead of web applications.",
-          "tech": "Python, Tkinter",
-          "image": "/images/projects/Calucature-Utility-Tool.jpg",
-          "linkLabel": "See more details",
-          "category": "Desktop Application",
-          "type": "personal",
-          "status": "online",
-          "href": "/portfolio/calucature-utility-tool",
-          "highlightsHeading": "key features",
-          "detail": {
-            "seo": {
-              "title": "Calucature Desktop Utility with Python Tkinter GUI | Devsign",
-              "description": "Lightweight Python desktop tool with Tkinter GUI for fast technical calculations — offline utility software with a simple, focused workflow.",
-              "keywords": [
-                "Python Tkinter desktop app",
-                "technical calculator GUI",
-                "offline utility tool",
-                "desktop automation Morocco",
-                "small business tools",
-                "Python portfolio"
-              ]
-            },
-            "intro": "Not every problem belongs in the browser. Calucature was built as a focused Python desktop tool that opens instantly and performs calculations with speed and reliability. It transforms repetitive manual work into a smooth, keyboard-friendly workflow with a clean graphical interface.",
-            "sections": [
-              {
-                "title": "Desktop efficiency with Python",
-                "body": "Built using Python and Tkinter, the application delivers a native-like desktop experience with minimal resource usage. The interface is designed for clarity and speed, allowing users to perform calculations quickly without distractions. Its modular structure makes it easy to extend with new features or calculation logic as needs evolve."
-              },
-              {
-                "title": "What we learned",
-                "body": "This project strengthened our understanding of Python for desktop applications, including GUI design, event-driven programming, and user interaction patterns. We also explored how to design efficient offline tools, optimize workflows for productivity, and structure code for scalability and maintainability in small but practical software solutions."
-              }
-            ],
-            "highlights": [
-              "Native-feeling desktop experience with Python + Tkinter",
-              "Focused UX for repetitive technical workflows",
-              "Offline-first: no network dependency for core usage",
-              "Easy to extend with new calculation modules"
-            ]
-          }
         }
       ],
-      "Warning": "The professional projects are published with authorization. Additional projects are not included here to respect privacy.",
+      "Warning": "Client projects shown here are published with authorization. Some work is not displayed to respect confidentiality and non-disclosure agreements.",
       "whyChooseUs": {
-        "title": "Why collaborate with me?",
-        "subtitle": "I don't just deliver code, I deliver outcomes. Here's what you can expect when we work together.",
+        "title": "Why Work With Me",
+        "subtitle": "I build solutions that rank on Google, convert visitors, and scale with your business — not just code that runs.",
         "reasons": [
           {
-            "title": "Outcome-Focused Delivery",
-            "text": "Every decision design, tech stack, structure is tied to a real business goal: more traffic, higher conversions, or less manual work."
+            "title": "Business-First Development",
+            "text": "Every feature, design choice, and tech decision is tied to a measurable outcome: higher search rankings through Technical SEO, more conversions, or AI-powered workflows that save hours of manual work."
           },
           {
-            "title": "End-to-End Ownership",
-            "text": "From first sketch to final deployment, I own the full build. No broken handoffs, no lost context just clean, consistent execution."
+            "title": "Full-Stack Ownership",
+            "text": "From Technical SEO, UI/UX design, and Next.js development to deployment and Core Web Vitals tuning, I handle the entire build. No handoffs, no gaps — just clean, consistent delivery."
           },
           {
-            "title": "Built to Last & Scale",
-            "text": "Modern architecture and clean code mean your product evolves with your ambitions not against them."
+            "title": "Future-Proof Architecture",
+            "text": "Built with Next.js, modern cloud infrastructure, and scalable patterns so your website or dashboard grows with your ambitions, not against them."
           }
         ]
       }
     },
     "contact_page": {
-      "heading": "Let’s Build Something That Drives Results",
-      "description": "Have a project in mind or looking for a developer to collaborate with? I help businesses and teams design and build high-performance digital solutions — from websites to automation systems. Send me a message and I’ll get back to you shortly.",
-      "subtitle": "Tell me about your project",
+      "heading": "Let's Build Your Next High-Performance Digital Project",
+      "description": "Looking for a Full-Stack Web Developer to build a website, e-commerce store, business dashboard, AI automation, or improve your Technical SEO? I help startups, businesses, and entrepreneurs create fast, scalable, and search-optimized digital solutions that generate measurable results. Tell me about your project, and let's discuss how we can bring it to life.",
+      "subtitle": "Start Your Project Today",
       "email": "Email",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
@@ -1144,34 +1225,35 @@
         "response24h": "Response within 24h",
         "freeConsultation": "Free consultation",
         "noObligation": "No obligation quotes",
-        "worldwide": "Worldwide service"
+        "worldwide": "Worldwide & remote"
       },
       "channels": {
         "emailDescription": "Response within 24 hours",
         "whatsappDescription": "Fastest response",
-        "instagramDescription": "Seeing my work and updates",
-        "linkedinDescription": "Professional network"
+        "instagramDescription": "See latest work & behind the scenes",
+        "linkedinDescription": "Professional network & referrals"
       },
       "form": {
-        "heading": "Send a message",
-        "subheading": "I'll get back to you within 24 hours.",
+        "heading": "Start Your Project",
+        "subheading": "Tell me about your goals and I'll reply within 24 hours with a free quote.",
         "fullNamePlaceholder": "Jane Smith",
         "emailAddress": "Email Address",
         "emailPlaceholder": "yourname@example.com",
         "projectType": "Project Type",
         "projectTypePlaceholder": "Select a project type",
         "projectTypes": {
-          "website": "Website Development",
-          "automation": "Business Automation",
-          "ai": "AI Integration",
+          "website": "Website / E-Commerce Development",
+          "automation": "Business Automation & Workflows",
+          "ai": "AI Integration & Chatbots",
           "design": "Ad Design & Branding",
-          "other": "Other"
+          "seo": "Technical SEO / GEO / AEO Audit",
+          "other": "Other / Not sure yet"
         },
         "copy": "Copy",
         "copied": "Copied!",
         "availability": "Available for new projects",
         "message": "Message",
-        "messagePlaceholder": "Tell me about your project...",
+        "messagePlaceholder": "Tell me about your project, timeline, and budget...",
         "successMessage": "Message sent! I'll get back to you soon.",
         "sending": "Sending...",
         "errors": {
@@ -1185,28 +1267,29 @@
       },
       "whyReachOut": {
         "title": "Why Work With Me",
-        "subtitle": "What you can expect",
+        "subtitle": "What you can expect from our collaboration",
         "reasons": [
           {
-            "title": "Clear & Simple Process",
-            "text": "We define your goals, plan the solution, and move step by step with full transparency."
+            "title": "AI-Ready & SEO-First Development",
+            "text": "Every project is built with Technical SEO, structured data (Schema.org), Core Web Vitals, and GEO/AEO optimization so your business ranks on Google and gets cited by ChatGPT and Perplexity."
           },
           {
-            "title": "Reliable Delivery",
-            "text": "Focused on building solutions that are fast, scalable, and ready for real use."
+            "title": "Reliable Delivery & Clear Communication",
+            "text": "Weekly updates, transparent timelines, and code that is fast, scalable, and maintainable. No surprises—just measurable results."
           },
           {
-            "title": "Long-Term Thinking",
-            "text": "I build with maintainability and growth in mind, so your project lasts."
+            "title": "Long-Term Partnership",
+            "text": "I don't just build and disappear. I provide ongoing support, performance monitoring, and optimization to ensure your digital product grows with your business."
           }
         ]
       }
     },
     "articles_page": {
+      "sectionLabel": "Articles & Guides",
       "subtitle": "Real experience, practical insights",
-      "heading": "Articles, Ideas & Technical Notes",
-      "description": "I share articles based on my real-world experience in web development and freelancing. Each article offers practical advice, tool recommendations, and technical insights to help developers, freelancers, and entrepreneurs succeed in the digital world.",
-      "sectionLabel": "What I write about",
+      "heading": "Web Development, SEO & AI Search Optimization Articles",
+      "description": "I write based on real-world experience from choosing the best laptop for coding in 2026, to inspecting used laptops before buying, to Technical SEO, AI Search Optimization, and building fast websites with Next.js. Every article is built to help you make better decisions and grow online.",
+      "cta_btn": "Read Article",
       "articlesLabel": "Latest Articles",
       "topics": [
         {
@@ -1291,35 +1374,72 @@
     }
   },
   "footer": {
-    "brandName": "Devsign",
-    "brandTagline": "Freelance",
-    "phone": "+212 7 78 18 03 06",
-    "address": "Morocco (GMT+1)",
-    "ExplorerTitle": "Explore",
-    "links": [
-      {
-        "label": "Services",
-        "href": "/services"
+  "brandName": "Devsignpro",
+  "brandTagline": "Full-Stack Developer & SEO Specialist",
+  "phone": "+212 7 78 18 03 06",
+  "address": "Morocco (GMT+1)",
+  "ExplorerTitle": "Explore",
+  "links": [
+    { "label": "Services", "href": "/services" },
+    { "label": "Projects", "href": "/portfolio" },
+    { "label": "About", "href": "/about" },
+    { "label": "Contact", "href": "/contact" },
+    { "label": "Articles", "href": "/articles" }
+  ],
+  "servicesTitle": "Services",
+  "servicesLinks": [
+    { "label": "Website Development", "href": "/services/web-development" },
+    { "label": "E-commerce Development", "href": "/services/ecommerce" },
+    { "label": "Dashboards & Automation", "href": "/services/business-systems" }
+  ],
+  "legalLinks": [
+    { "label": "Sitemap", "href": "/sitemap.xml" }
+  ],
+  "followTitle": "Follow me",
+  "contactTitle": "Contact",
+  "copyright": "© {year} Devsignpro. All rights reserved."
+},
+  "SEO_content": {
+    "layout_page": {
+      "generateMetadata": {
+        "title": "Freelance Web Developer Morocco | Next.js, SEO & AI Search",
+        "description": "Freelance web developer in Morocco specializing in Next.js, SEO, and AI Search Optimization. I build high-performance websites that rank and convert.",
+        "keywords": [
+          "web developer morocco",
+          "next.js developer morocco",
+          "freelance web developer morocco",
+          "website design morocco",
+          "ecommerce website morocco",
+          "seo specialist morocco",
+          "ai search optimization",
+          "generative engine optimization",
+          "full stack developer morocco",
+          "high performance websites"
+        ]
       },
-      {
-        "label": "Projects",
-        "href": "/projects"
-      },
-      {
-        "label": "About",
-        "href": "/about"
-      },
-      {
-        "label": "Contact",
-        "href": "/contact"
-      },
-      {
-        "label": "Articles",
-        "href": "/articles"
+      "generateOpenGraph": {
+        "personDescription": "Freelance Full-Stack Web Developer based in Morocco, specializing in Next.js, Technical SEO, AI Search Optimization, Core Web Vitals, and high-performance websites for businesses and e-commerce.",
+        "orgDescription": "Custom websites and e-commerce solutions built with Next.js. Optimized for Google Search, AI search engines, Core Web Vitals, and business growth.",
+        "jobTitle": "Full-Stack Developer, SEO Expert & AI Search Optimization Specialist",
+        "services": [
+          {
+            "name": "Custom Website Development",
+            "description": "Custom business websites, corporate websites, landing pages, and web applications built with Technical SEO, Core Web Vitals, and AI Search Optimization."
+          },
+          {
+            "name": "Business Automation, Custom Dashboards & AI Integration",
+            "description": "Custom dashboards, workflow automation, AI integrations, and internal business systems that improve productivity, streamline operations, and support business growth."
+          },
+          {
+            "name": "E-commerce Website Development",
+            "description": "Custom online stores with secure payments, optimized product pages, Technical SEO, and AI Search Optimization to increase traffic, sales, and conversions."
+          },
+          {
+            "name": "Technical SEO & AI Search Optimization",
+            "description": "Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and AI search engines."
+          }
+        ]
       }
-    ],
-    "followTitle": "Follow me",
-    "contactTitle": "Contact",
-    "copyright": "© {year} Devsign. All rights reserved."
+    }
   }
 }

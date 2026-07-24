@@ -11,6 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			en: `${baseUrl}/en${path}`,
 			fr: `${baseUrl}/fr${path}`,
 			ar: `${baseUrl}/ar${path}`,
+			"x-default": `${baseUrl}/${i18n.defaultLocale}${path}`,
 		},
 	});
 
@@ -29,7 +30,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			priority: 0.7,
 		},
 		{
-			path: "/services/social-design",
+			path: "/services/ecommerce",
 			changeFrequency: "monthly" as const,
 			priority: 0.7,
 		},

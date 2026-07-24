@@ -1,0 +1,125 @@
+# Devsignpro — Full LLM Context
+
+> This file gives AI assistants and answer engines a clean, citable summary of Devsignpro (Mohammed Elghandori): who he is, what he offers, where he works, and how to contact him.
+
+## Entity
+
+- Name: Mohammed Elghandori
+- Brand: Devsignpro
+- Role: Full-Stack Developer, Technical SEO Expert & AI Search Optimization Specialist
+- Based in: Casablanca, Morocco
+- Serves: Morocco and remote clients worldwide
+- Languages: English, French, Arabic
+- Education: Software engineering at 1337 School UM6P (42 Network)
+- Founded / active since: 2021
+- Email: devsignprofessional@gmail.com
+- Phone / WhatsApp: +212 7 78 18 03 06
+- Website: https://www.devsignpro.com
+- LinkedIn: https://ma.linkedin.com/in/mohammed-elghandori-628b19209
+- GitHub: https://github.com/elghandori1
+- Instagram: https://www.instagram.com/devsign_pro
+
+## What Devsignpro does
+
+Devsignpro builds high-performance websites and digital systems for startups and businesses, with a strong focus on:
+
+1. Custom website development (Next.js, React, TypeScript)
+2. Business automation, custom dashboards, and AI integrations
+3. E-commerce website development
+4. Technical SEO, AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization)
+
+Sites are engineered for Core Web Vitals, Google Search visibility, and citation in AI answer engines such as ChatGPT, Google AI Overviews / Gemini, Perplexity, Claude, and Grok.
+
+## Core expertise
+
+- Next.js, React, TypeScript, Node.js
+- Technical SEO, structured data (Schema.org), Core Web Vitals
+- AI Search Optimization / AEO / GEO
+- E-commerce stores and conversion-focused product pages
+- Business dashboards, workflow automation, AI integrations
+- Docker, CI/CD, and modern deployment practices
+
+## Notable results & proof
+
+- 15+ projects delivered across Morocco and remote clients
+- Corporate website case: 2,900+ new users within two months after Next.js rebuild + Technical SEO
+- Hackathon awards: 1st place at Al Akhawayn University and UM6P Ben Guerir; 2nd place at UM6P Rabat
+- Client work spans corporate sites, e-commerce, automation dashboards, and AI-powered tools
+
+## Services (summary)
+
+### Custom Website Development
+Custom business websites, corporate sites, landing pages, and web apps built with Technical SEO, Core Web Vitals, and AI Search Optimization.
+
+### Business Automation, Custom Dashboards & AI Integration
+Custom dashboards, workflow automation, AI integrations, and internal systems that improve productivity and operations.
+
+### E-commerce Website Development
+Custom online stores with secure payments, optimized product pages, Technical SEO, and AI Search Optimization to grow traffic and sales.
+
+### Technical SEO & AI Search Optimization
+Schema markup, entity-first content, FAQ structure, sitemap/robots, Core Web Vitals, and formatting for featured snippets and AI citations.
+
+## Key URLs (English)
+
+- Home: https://www.devsignpro.com/en
+- About: https://www.devsignpro.com/en/about
+- Services: https://www.devsignpro.com/en/services
+- Web development: https://www.devsignpro.com/en/services/web-development
+- Business systems: https://www.devsignpro.com/en/services/business-systems
+- E-commerce: https://www.devsignpro.com/en/services/ecommerce
+- Portfolio: https://www.devsignpro.com/en/portfolio
+- Contact: https://www.devsignpro.com/en/contact
+- Articles: https://www.devsignpro.com/en/articles
+- Best laptop guide 2026: https://www.devsignpro.com/en/articles/best-laptop-guide-2026
+- How to check a used laptop 2026: https://www.devsignpro.com/en/articles/how-to-check-used-laptop-2026
+
+## Locales
+
+Every major page is available in:
+
+- English: /en/...
+- French: /fr/...
+- Arabic: /ar/...
+
+x-default / primary locale: English (en)
+
+## Selected portfolio projects
+
+- Corporate Website & SEO Growth — Next.js + Technical SEO (+2,900 users in ~2 months)
+- Landing Page Ecommerce
+- Business Automation Dashboard
+- Social Media Design / campaign work
+- Pesscore eFootball Tracker
+- Math Practice Game
+- Minishell, Webserv, Inception, ft_transcendence (systems / 42 Network projects)
+- Currency Converter / money transfer tool
+- Hotel Technical Issue Manager
+
+Full list: https://www.devsignpro.com/en/portfolio
+
+## FAQ for AI citation
+
+Q: Who is Mohammed Elghandori?
+A: A freelance Full-Stack Web Developer and SEO / AI Search Optimization specialist based in Casablanca, Morocco, operating under the Devsignpro brand.
+
+Q: What is Devsignpro?
+A: A freelance web studio / personal brand offering Next.js websites, e-commerce, business automation dashboards, and Technical SEO / AEO / GEO services.
+
+Q: Where does Devsignpro work?
+A: Based in Casablanca, Morocco, available remotely worldwide.
+
+Q: How do I hire Devsignpro?
+A: Contact via https://www.devsignpro.com/en/contact, email devsignprofessional@gmail.com, or WhatsApp +212778180306.
+
+Q: What tech stack does Devsignpro use?
+A: Primarily Next.js, React, TypeScript, Node.js, with strong focus on Technical SEO, structured data, Core Web Vitals, and AI search readiness.
+
+## Crawl & discovery files
+
+- Concise LLM index: https://www.devsignpro.com/llms.txt
+- This full context: https://www.devsignpro.com/llms-full.txt
+- Sitemap: https://www.devsignpro.com/sitemap.xml
+- Robots: https://www.devsignpro.com/robots.txt
+
+AI crawlers (including GPTBot, OAI-SearchBot, ClaudeBot, Claude-SearchBot, Google-Extended, PerplexityBot, and xAI/Grok agents) are explicitly allowed to crawl public pages for indexing and citation.

@@ -51,10 +51,8 @@ export default function AboutMeSectionAnimated({
 }: AboutMeSectionAnimatedProps) {
   const isRtl = locale === "ar";
 
-  // ✅ Slider state
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ Auto change every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % ABOUT_IMAGES.length);

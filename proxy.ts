@@ -2,7 +2,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { i18n } from "./i18n-config";
 
-const STATIC_PATH_PATTERN = /^\/(_next|favicon|logo|images|cover|CV)/;
+const STATIC_PATH_PATTERN = /^\/(_next|favicon|logo|images|cover|CV|llms)/;
 const LOCALE_PATH_PATTERN = new RegExp(`^/(${i18n.locales.join('|')})(/|$)`);
 
 export function proxy(request: NextRequest) {
@@ -29,7 +29,7 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Exclude API routes, Next static/image assets, and global static files
-    '/((?!api|_next/static|_next/image|favicon.ico|favicon-96x96.png|favicon.svg|apple-touch-icon.png|web-app-manifest-192x192.png|web-app-manifest-512x512.png|robots.txt|sitemap.xml|site.webmanifest|logo|cover|CV).*)',
+    // Exclude API routes, Next static/image assets, SEO discovery files, and global static files
+    '/((?!api|_next/static|_next/image|favicon\\.ico|favicon\\.png|favicon-.*\\.png|apple-touch-icon\\.png|mstile-.*\\.png|web-app-manifest-.*\\.png|browserconfig\\.xml|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt|site\\.webmanifest|indexnow-key\\.txt|[a-f0-9]{32}\\.txt|logo|cover|CV|images).*)',
   ],
 };

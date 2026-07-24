@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
-import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
-import PortfolioClient from "../../components/PortfolioClient";
+import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import PortfolioSchema from "../../components/schemas/PortfolioSchema";
+import PortfolioContent from "../../components/PortfolioContent";
 
-type Props = { params: Promise<{ locale: string }> };
+type Props = {
+  params: Promise<{ locale: string }>;
+  searchParams: Promise<{ filter?: string }>;
+};
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -15,69 +19,83 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-
-  const dict = await getDictionary(locale);
-  const data = dict.pages?.portfolio_page;
-
   const title =
-    data?.heading ||
-    (locale === "en"
-      ? "Portfolio: SEO Websites, AI Automation & Web Apps | Devsign"
+    locale === "en"
+      ? "Portfolio | high-performance Websites, E-Commerce, Dashboards & AI Automation"
       : locale === "ar"
-        ? "أعمالي: مواقع SEO وأتمتة الذكاء الاصطناعي وتطبيقات الويب | Devsign"
-        : "Portfolio : Sites SEO, Automatisation IA & Applications Web | Devsign");
-
+        ? "معرض الأعمال | مواقع عالية الأداء، متاجر إلكترونية، لوحات تحكم وحلول أتمتة الذكاء الاصطناعي"
+        : "Portfolio | Sites performants, E-Commerce, Dashboards & Automatisation IA";
   const description =
-    data?.description ||
-    (locale === "en"
-      ? "Browse professional, personal, and academic projects in web development, SEO, and automation. Fast, modern solutions built to deliver results."
+    locale === "en"
+      ? "Discover high-performance websites, e-commerce stores, dashboards, and AI solutions. See how I help businesses grow online."
       : locale === "ar"
-        ? "تصفح مشاريع احترافية وشخصية وأكاديمية في تطوير الويب والسيو والأتمتة. حلول سريعة وحديثة تحقق نتائج عملية."
-        : "Découvrez des projets professionnels, personnels et académiques en développement web, SEO et automatisation.");
-
+        ? "اكتشف مواقع عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم، وحلول الذكاء الاصطناعي. شاهد كيف أساعد الشركات على النمو عبر الإنترنت."
+        : "Découvrez des sites performants, boutiques e-commerce, dashboards et solutions d'IA. Boostez votre croissance.";
   const keywords =
     locale === "en"
       ? [
-          "portfolio projects",
-          "web development portfolio",
+          "portfolio",
+          "web development projects morocco",
+          "Next.js portfolio",
           "SEO case studies",
-          "business automation projects",
-          "client and personal projects",
-          "academic web projects",
+          "AI automation projects",
+          "dashboard development",
+          "full-stack developer portfolio",
+          "client projects",
+          "academic projects",
+          "web applications",
         ]
       : locale === "ar"
         ? [
-            "معرض المشاريع",
-            "مشاريع تطوير ويب",
-            "دراسات حالة SEO",
-            "مشاريع أتمتة الأعمال",
-            "مشاريع شخصية واحترافية",
+            "معرض أعمال",
+            "مشاريع تطوير ويب المغرب",
+            "مشاريع Next.js",
+            "دراسات SEO",
+            "مشاريع أتمتة IA",
+            "تطوير لوحات التحكم",
+            "مطور متكامل",
+            "أعمال العملاء",
             "مشاريع أكاديمية",
+            "تطبيقات ويب",
           ]
         : [
-            "portfolio projets",
-            "projets développement web",
+            "portfolio",
+            "projets développement web maroc",
+            "projets Next.js",
             "études de cas SEO",
-            "projets automatisation entreprise",
-            "projets clients et personnels",
+            "projets automatisation IA",
+            "développement dashboards",
+            "développeur full-stack",
+            "projets clients",
             "projets académiques",
+            "applications web",
           ];
 
   return buildPageMetadata({
     locale,
     title,
     description,
-    route: "/portfolio",
     keywords,
+    route: "/portfolio",
+    ogImagePath: "/cover/Designpro-cover.jpg",
+    type: "website",
   });
 }
 
-export default async function PortfolioPage({ params }: Props) {
+export default async function PortfolioPage({ params, searchParams }: Props) {
   const { locale: rawLocale } = await params;
+  const { filter: rawFilter } = await searchParams;
 
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
+
+  const validFilters = ["all", "professional", "personal", "academic"] as const;
+  type FilterKey = (typeof validFilters)[number];
+
+  const activeFilter = validFilters.includes(rawFilter as FilterKey)
+    ? (rawFilter as FilterKey)
+    : "all";
 
   const dict = await getDictionary(locale);
   const data = dict.pages?.portfolio_page;
@@ -85,53 +103,45 @@ export default async function PortfolioPage({ params }: Props) {
 
   if (!data || !data.projects) return null;
 
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: data.heading || "Portfolio",
-    description:
-      data.description ||
-      "Portfolio projects covering web development, SEO, and automation.",
-    url: `${getBaseUrl()}/${locale}/portfolio`,
-    provider: {
-      "@type": "Organization",
-      name: "Devsign",
-      url: "https://devsign.ma",
-      telephone: "+212 7 78 00 00 06",
-      email: "contact@devsign.ma",
-    },
-  };
+  const allProjects = Object.values(data.projects).map((p: any) => ({
+    title: p.title ?? "",
+    description: p.description ?? "",
+    href: p.href || p.link || "#",
+    image: p.image ?? "",
+    tech: p.tech ?? "",
+    type: p.type as "professional" | "personal" | "academic",
+    status: p.status,
+    category: p.category,
+    linkLabel: p.linkLabel,
+  }));
 
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: `${getBaseUrl()}/${locale}`,
-      },
-      {
-        "@type": "ListItem",
-        position: 2,
-        name: "Portfolio",
-        item: `${getBaseUrl()}/${locale}/portfolio`,
-      },
-    ],
-  };
+  const filteredProjects =
+    activeFilter === "all"
+      ? allProjects
+      : allProjects.filter((p) => p.type === activeFilter);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      <PortfolioSchema
+        locale={locale}
+        title={data.heading || "Portfolio"}
+        description={
+          locale === "en"
+            ? "Portfolio of high-performance Next.js websites, e-commerce stores, business dashboards, and AI-powered solutions built with Technical SEO and scalable architecture."
+            : locale === "ar"
+              ? "معرض أعمال يضم مواقع Next.js عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم للأعمال، وحلولاً مدعومة بالذكاء الاصطناعي، مع SEO تقني وبنية قابلة للتوسع."
+              : "Portfolio de sites Next.js performants, boutiques e-commerce, tableaux de bord métier et solutions d'IA, développés avec un SEO technique et une architecture évolutive."
+        }
+        projects={allProjects}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      <PortfolioContent
+        data={data}
+        locale={locale}
+        isRtl={isRtl}
+        allProjects={allProjects}
+        filteredProjects={filteredProjects}
+        activeFilter={activeFilter}
       />
-      <PortfolioClient data={data} locale={locale} isRtl={isRtl} />
     </>
   );
 }

@@ -42,7 +42,6 @@ type ArticleEntry = {
 };
 
 type ArticlesPageData = {
-  heading: string;
   articles: ArticleEntry[];
 };
 
@@ -76,6 +75,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ],
     route: ARTICLE_PATH,
     ogImagePath: article.image,
+    type: "article",
   });
 }
 
@@ -186,16 +186,16 @@ export default async function ArticleDetailsPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: "Mohammed Elghandori",
-      url: "https://devsignpro.com/about",
+      url: `${getBaseUrl()}/${locale}/about`,
     },
     publisher: {
       "@type": "Organization",
       name: "Devsignpro",
       logo: {
         "@type": "ImageObject",
-        url: `${getBaseUrl()}/logo/devsign-logo.jpg`,
+        url: `${getBaseUrl()}/logo/devsignpro-logo.jpg`,
       },
-      url: "https://devsignpro.com",
+      url: getBaseUrl(),
     },
     mainEntityOfPage: {
       "@type": "WebPage",

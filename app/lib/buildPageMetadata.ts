@@ -12,10 +12,12 @@ export function getBaseUrl() {
       : "https://www.devsignpro.com");
 
   const normalizedBaseUrl = rawBaseUrl.trim();
-  if (normalizedBaseUrl.startsWith("http://") || normalizedBaseUrl.startsWith("https://")) {
+  if (
+    normalizedBaseUrl.startsWith("http://") ||
+    normalizedBaseUrl.startsWith("https://")
+  ) {
     return normalizedBaseUrl.replace(/\/+$/, "");
   }
-
   return `https://${normalizedBaseUrl}`.replace(/\/+$/, "");
 }
 
@@ -26,6 +28,7 @@ interface SEOProps {
   keywords: string[];
   route?: string;
   ogImagePath?: string;
+  type?: "website" | "article";
 }
 
 export function buildPageMetadata({
@@ -35,6 +38,7 @@ export function buildPageMetadata({
   keywords,
   route = "",
   ogImagePath,
+  type, 
 }: SEOProps): Metadata {
   const baseUrl = getBaseUrl();
   const ogLocale = locale === "en" ? "en_US" : locale === "ar" ? "ar_MA" : "fr_MA";
@@ -51,17 +55,12 @@ export function buildPageMetadata({
       ? ogImagePath.startsWith("http")
         ? ogImagePath
         : `${baseUrl}${ogImagePath.startsWith("/") ? "" : "/"}${ogImagePath}`
-      : `${baseUrl}/cover/Design-cover.jpg`;
+      : `${baseUrl}/cover/Designpro-cover.jpg`;
   return {
     metadataBase: new URL(baseUrl),
-    applicationName: "Devsign Pro",
     title,
     description,
     keywords,
-    category: "technology",
-    creator: "Devsign",
-    publisher: "Devsign",
-    authors: [{ name: "Devsign", url: baseUrl }],
     alternates: {
       canonical: currentUrl,
       languages: {
@@ -75,7 +74,7 @@ export function buildPageMetadata({
       title,
       description,
       url: currentUrl,
-      siteName: "Devsign",
+      siteName: "Devsignpro",
       images: [
         {
           url: ogImage,
@@ -86,7 +85,7 @@ export function buildPageMetadata({
       ],
       locale: ogLocale,
       alternateLocale: ogLocaleAlternate,
-      type: "website",
+      type,
     },
     twitter: {
       card: "summary_large_image",
@@ -94,7 +93,7 @@ export function buildPageMetadata({
       description,
       images: [ogImage],
       creator: "@devsign_pro",
-      site: "@devsign_pro",
+      site: "@devsignpro",
     },
     robots: {
       index: true,
@@ -104,23 +103,8 @@ export function buildPageMetadata({
         follow: true,
         "max-image-preview": "large",
         "max-snippet": -1,
+        "max-video-preview": -1,
       },
     },
-    icons: {
-      icon: [
-        { url: "/favicon.ico" },
-        { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
-        { url: "/favicon.svg", type: "image/svg+xml" },
-      ],
-      apple: [
-        {
-          url: "/apple-touch-icon.png",
-          type: "image/png",
-          sizes: "180x180",
-        },
-      ],
-      shortcut: ["/favicon.ico"],
-    },
-    manifest: "/site.webmanifest",
   };
 }

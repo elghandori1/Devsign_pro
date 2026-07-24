@@ -1,24 +1,12 @@
 // components/ProjectsShowcaseSlider.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { ChevronLeft, ChevronRight, ArrowLeft, ArrowRight } from "lucide-react";
 import { Locale } from "@/i18n-config";
-import { ArrowRight, ArrowLeft, ChevronLeft, ChevronRight } from "lucide-react";
-
-export interface ProjectItem {
-  title: string;
-  description: string;
-  tech: string;
-  image: string;
-  linkLabel: string;
-  category?: string;
-  type?: string;
-  status?: string;
-  href: string;
-}
+import { ProjectItem } from "./ProjectsShowcase";
 
 interface ProjectsShowcaseSliderProps {
   projects: ProjectItem[];
@@ -30,185 +18,142 @@ export default function ProjectsShowcaseSlider({
   locale,
 }: ProjectsShowcaseSliderProps) {
   const [index, setIndex] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
-  const [direction, setDirection] = useState(0);
   const isRtl = locale === "ar";
+  const project = projects[index];
 
-  const projectlist = projects
-    .filter((p) => p.type === "professional")
-    .slice(0, 3);
-  const project = projectlist[index];
+  const goNext = () => setIndex((i) => (i + 1) % projects.length);
+  const goPrev = () => setIndex((i) => (i - 1 + projects.length) % projects.length);
 
-  useEffect(() => {
-    if (!isAutoPlaying) return;
+  if (!project) return null;
 
-    const interval = setInterval(() => {
-      setIndex((i) => (i + 1) % projectlist.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, projectlist.length]);
-
-  const goNext = () => {
-    setIsAutoPlaying(false);
-    setIndex((i) => (i + 1) % projectlist.length);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
-  };
-
-  const goPrev = () => {
-    setIsAutoPlaying(false);
-    setIndex((i) => (i - 1 + projectlist.length) % projectlist.length);
-    setTimeout(() => setIsAutoPlaying(true), 10000);
-  };
-
-  const handleNext = () => {
-    setDirection(1);
-    goNext();
-  };
-
-  const handlePrev = () => {
-    setDirection(-1);
-    goPrev();
-  };
-
-  const slideVariant = {
-    initial: (dir: number) => ({
-      opacity: 0,
-      x: dir > 0 ? 80 : -80,
-      scale: 0.95,
-    }),
-    animate: { opacity: 1, x: 0, scale: 1 },
-    exit: (dir: number) => ({
-      opacity: 0,
-      x: dir > 0 ? -80 : 80,
-      scale: 0.95,
-    }),
-  };
-
-  return (
-    <div className="relative mb-12 sm:mb-16">
-      {/* Main Content Grid */}
+return (
+<div
+  role="region"
+  aria-roledescription="carousel"
+  aria-label={
+    locale === "ar"
+      ? "عرض المشاريع"
+      : locale === "fr"
+        ? "Études de cas"
+        : "Project showcase"} 
+      className="relative mb-12 sm:mb-16 bg-muted/10 p-6 rounded-xl">
       <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-stretch">
-        {/* Image Section with Enhanced Design */}
+        {/* ── Image Side ── */}
         <div className="relative group">
-          <div className="relative aspect-[4/3] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl">
-            <AnimatePresence mode="wait" custom={direction}>
-              <motion.div
-                key={project.image + index}
-                custom={direction}
-                variants={slideVariant}
-                initial="initial"
-                animate="animate"
-                exit="exit"
-                transition={{ duration: 0.5, ease: [0.32, 0.72, 0, 1] }}
-                className="absolute inset-0"
+          <div className="relative aspect-[4/3] w-full rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl bg-muted">
+            {projects.map((p, i) => (
+              <div
+                key={p.href}
+                className={`absolute inset-0 ${
+                  i === index
+                    ? "opacity-100 z-10"
+                    : "opacity-0 z-0 pointer-events-none"
+                }`}
+                aria-hidden={i !== index}
               >
                 <Image
-                  src={project.image}
-                  alt={project.title}
+                  src={p.image}
+                  alt={`${p.title} project screenshot`}
                   fill
                   className="object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 540px"
-                  priority={index === 0}
+                  priority={i === 0}
+                  loading={i === 0 ? "eager" : "lazy"}
                 />
-              </motion.div>
-            </AnimatePresence>
+              </div>
+            ))}
 
-            {/* Category Badge (Status removed from here) */}
+            {/* Category Badge */}
             {project.category && (
-              <div className="absolute top-3 sm:top-4 left-3 sm:left-4 z-10 flex items-center gap-2">
+              <div className="absolute top-3 sm:top-4 left-3 sm:left-4 z-20">
                 <span className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/90 backdrop-blur-sm text-primary-foreground text-sm rounded-full shadow-sm">
                   {project.category}
                 </span>
               </div>
             )}
 
-            {/* Navigation Controls - Bottom */}
-            <div className="absolute bottom-3 sm:bottom-4 inset-x-3 sm:inset-x-4 flex items-center justify-between z-10">
-              {/* Progress Dots */}
+            {/* Navigation Controls */}
+            <div className="absolute bottom-3 sm:bottom-4 inset-x-3 sm:inset-x-4 flex items-center justify-between z-20">
+              {/* Dots */}
               <div className="hidden sm:flex gap-1.5 sm:gap-2 bg-background/20 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1.5 sm:py-2">
-                {projectlist.map((_, i) => (
+                {projects.map((_, i) => (
                   <button
                     key={i}
                     type="button"
-                    onClick={() => {
-                      setDirection(i > index ? 1 : -1);
-                      setIsAutoPlaying(false);
-                      setIndex(i);
-                      setTimeout(() => setIsAutoPlaying(true), 10000);
-                    }}
-                    className={`relative h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
+                    onClick={() => setIndex(i)}
+                    className={`h-1.5 sm:h-2 rounded-full transition-all duration-300 ${
                       i === index
                         ? "w-6 sm:w-8 bg-primary"
                         : "w-1.5 sm:w-2 bg-white/60 hover:bg-white/80"
                     }`}
-                    aria-label={`Project ${i + 1}`}
+                    aria-label={`${
+                      locale === "ar"
+                        ? "الانتقال إلى المشروع"
+                        : locale === "fr"
+                          ? "Aller au projet"
+                          : "Go to project"
+                    } ${i + 1}`}
                     aria-current={i === index ? "true" : undefined}
-                  >
-                    {i === index && (
-                      <motion.div
-                        className="absolute inset-0 bg-primary rounded-full"
-                        layoutId="activeDot"
-                        transition={{
-                          type: "spring",
-                          stiffness: 300,
-                          damping: 30,
-                        }}
-                      />
-                    )}
-                  </button>
+                  />
                 ))}
               </div>
 
+              {/* Arrows */}
               <div className="flex gap-1.5 sm:gap-2 ml-auto sm:ml-0">
                 <button
                   type="button"
-                  onClick={handlePrev}
-                  className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
+                  onClick={goPrev}
+                  className="w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
                   aria-label={isRtl ? "Next project" : "Previous project"}
                 >
                   {isRtl ? (
-                    <ChevronRight className="w-5 h-5 sm:w-5 sm:h-5" />
+                    <ChevronRight className="w-5 h-5" aria-hidden="true" />
                   ) : (
-                    <ChevronLeft className="w-5 h-5 sm:w-5 sm:h-5" />
+                    <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                   )}
                 </button>
                 <button
                   type="button"
-                  onClick={handleNext}
-                  className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300 hover:scale-105 shadow-sm"
+                  onClick={goNext}
+                  className="w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
                   aria-label={isRtl ? "Previous project" : "Next project"}
                 >
                   {isRtl ? (
-                    <ChevronLeft className="w-5 h-5 sm:w-5 sm:h-5" />
+                    <ChevronLeft className="w-5 h-5" aria-hidden="true" />
                   ) : (
-                    <ChevronRight className="w-5 h-5 sm:w-5 sm:h-5" />
+                    <ChevronRight className="w-5 h-5" aria-hidden="true" />
                   )}
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Mobile Progress Dots */}
+          {/* Mobile Dots */}
           <div className="flex justify-center gap-1.5 sm:gap-2 mt-3 sm:mt-4 lg:hidden">
-            {projectlist.map((_, i) => (
+            {projects.map((_, i) => (
               <button
                 key={i}
                 type="button"
-                onClick={() => {
-                  setDirection(i > index ? 1 : -1);
-                  setIndex(i);
-                }}
+                onClick={() => setIndex(i)}
                 className={`h-6 px-1 inline-flex items-center justify-center rounded-full transition-all duration-300 ${
                   i === index
                     ? "w-8 sm:w-10 bg-primary/20"
                     : "w-6 sm:w-8 bg-muted-foreground/15"
                 }`}
-                aria-label={`Go to project ${i + 1}`}
+                aria-label={`${
+                  locale === "ar"
+                    ? "الانتقال إلى المشروع"
+                    : locale === "fr"
+                      ? "Aller au projet"
+                      : "Go to project"
+                } ${i + 1}`}
+                aria-current={i === index ? "true" : undefined}
               >
                 <span
                   className={`h-1.5 rounded-full transition-all duration-300 ${
-                    i === index ? "w-4 sm:w-6 bg-primary" : "w-1.5 sm:w-2 bg-muted-foreground/40"
+                    i === index
+                      ? "w-4 sm:w-6 bg-primary"
+                      : "w-1.5 sm:w-2 bg-muted-foreground/40"
                   }`}
                 />
               </button>
@@ -216,94 +161,65 @@ export default function ProjectsShowcaseSlider({
           </div>
         </div>
 
-        {/* Text Section */}
+        {/* ── Text Side ── */}
         <div
-          className={`flex flex-col justify-center px-2 sm:px-0 ${isRtl ? "text-right" : "text-left"}`}
+          className={`flex flex-col justify-center px-2 sm:px-0 ${
+            isRtl ? "text-right" : "text-left"
+          }`}
           dir={isRtl ? "rtl" : "ltr"}
         >
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.4, delay: 0.1 }}
-              className="space-y-4 sm:space-y-6"
-            >
-              {project.status && (
-                <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 w-fit">
-                  <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600"></span>
-                  </span>
-                  <span className="text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-500 capitalize tracking-wide">
-                    {project.status}
-                  </span>
-                </div>
-              )}
-
-              {/* Title */}
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-                {project.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
-                {project.description}
-              </p>
-
-              {/* Tech Stack */}
-              <div className="flex flex-wrap gap-1.5 sm:gap-2">
-                {project.tech.split(",").map((tech, idx) => (
-                  <span
-                    key={idx}
-                    className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/10 text-primary text-xs sm:text-sm rounded-full font-medium"
-                  >
-                    {tech.trim()}
-                  </span>
-                ))}
+          <div
+            className="space-y-4 sm:space-y-6"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            {project.status && (
+              <div className="inline-flex items-center gap-2.5 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 w-fit">
+                <span className="relative flex h-2.5 w-2.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-600" />
+                </span>
+                <span className="text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-500 capitalize tracking-wide">
+                  {project.status}
+                </span>
               </div>
+            )}
 
-              {/* CTA Button */}
-              <div className="pt-3 sm:pt-4">
-                <Link
-                  href={`/${locale}${project.href}`}
-                  className="group relative inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm sm:text-base overflow-hidden transition-all duration-300 hover:pr-6 sm:hover:pr-8 hover:pl-6 sm:hover:pl-8"
+            <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+              {project.title}
+            </h3>
+
+            <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
+              {project.description}
+            </p>
+
+            <ul className="flex flex-wrap gap-1.5 sm:gap-2 list-none p-0 m-0">
+              {project.tech.split(",").map((tech, idx) => (
+                <li
+                  key={idx}
+                  className="px-2 sm:px-3 py-0.5 sm:py-1 bg-primary/10 text-primary text-xs sm:text-sm rounded-full font-medium"
                 >
-                  <span className="relative z-10">{project.linkLabel}</span>
-                  {isRtl ? (
-                    <ArrowLeft size={16} aria-hidden="true" />
-                  ) : (
-                    <ArrowRight size={16} aria-hidden="true" />
-                  )}{" "}
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary-foreground/20 to-transparent translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
-                </Link>
-              </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
-      </div>
+                  {tech.trim()}
+                </li>
+              ))}
+            </ul>
 
-      {/* Auto-play indicator */}
-      {isAutoPlaying && (
-        <div className="flex justify-center mt-6 sm:mt-8">
-          <div className="flex gap-1.5 sm:gap-2 items-center px-3 sm:px-4 py-1.5 sm:py-2 bg-background/80 backdrop-blur-sm rounded-full shadow-sm border border-border">
-            <div className="text-xs sm:text-sm text-muted-foreground">
-              {locale === "en"
-                ? "Auto-playing"
-                : locale === "fr"
-                  ? "reproduction automatique"
-                  : "التشغيل التلقائي"}
+            <div className="pt-3 sm:pt-4">
+              <Link
+                href={`/${locale}${project.href}`}
+                className="inline-flex items-center gap-1.5 sm:gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-primary text-primary-foreground font-semibold text-sm sm:text-base hover:opacity-90 transition-opacity duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              >
+                <span>{project.linkLabel}</span>
+                {isRtl ? (
+                  <ArrowLeft size={16} aria-hidden="true" />
+                ) : (
+                  <ArrowRight size={16} aria-hidden="true" />
+                )}
+              </Link>
             </div>
-            <button
-              onClick={() => setIsAutoPlaying(false)}
-              className="text-xs sm:text-sm text-primary hover:underline font-medium"
-            >
-              {locale === "en" ? "Pause" : locale === "fr" ? "Pause" : "إيقاف"}
-            </button>
           </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }

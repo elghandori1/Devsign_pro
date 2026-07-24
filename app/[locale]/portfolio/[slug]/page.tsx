@@ -78,6 +78,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: project.detail.seo.keywords,
     route,
     ogImagePath: project.image,
+    type: "website",
   });
 }
 
@@ -119,7 +120,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
     inLanguage: locale,
     creator: {
       "@type": "Organization",
-      name: "Devsign",
+      name: "Devsignpro",
       url: baseUrl,
       email: infos.email,
       telephone: infos.phoneNumber,
