@@ -383,7 +383,7 @@ export default async function ArticleDetailsPage({ params }: Props) {
     author: {
       "@type": "Person",
       name: "Mohammed Elghandori",
-      url: "https://devsignpro.com/about",
+      url: `${getBaseUrl()}/${locale}/about`,
     },
     publisher: {
       "@type": "Organization",
@@ -392,7 +392,7 @@ export default async function ArticleDetailsPage({ params }: Props) {
         "@type": "ImageObject",
         url: `${getBaseUrl()}/logo/devsignpro-logo.jpg`,
       },
-      url: "https://devsignpro.com/about",
+      url: getBaseUrl(),
     },
     mainEntityOfPage: {
       "@type": "WebPage",

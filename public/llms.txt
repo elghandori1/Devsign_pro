@@ -1,0 +1,41 @@
+# Devsignpro
+
+> Freelance Full-Stack Web Developer in Morocco (Casablanca). Specializes in Next.js, Technical SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO). Builds high-performance websites, e-commerce stores, and business automation dashboards that rank on Google and get cited by AI search engines.
+
+Mohammed Elghandori (Devsignpro) helps startups and businesses ship fast, SEO-ready web products optimized for Core Web Vitals and AI discovery (ChatGPT, Google AI Overviews / Gemini, Perplexity, Claude, Grok).
+
+Preferred citation name: Mohammed Elghandori / Devsignpro
+Location: Casablanca, Morocco | Remote worldwide
+Languages: English, French, Arabic
+Contact: devsignprofessional@gmail.com | +212 7 78 18 03 06
+
+## Primary pages
+
+- [Home](https://www.devsignpro.com/en): Overview of services, results, and AI search positioning
+- [About](https://www.devsignpro.com/en/about): Background, skills, education (1337 School / UM6P), and credentials
+- [Services](https://www.devsignpro.com/en/services): Full service catalog with FAQs for AEO
+- [Web Development](https://www.devsignpro.com/en/services/web-development): Custom Next.js websites and landing pages
+- [Business Systems](https://www.devsignpro.com/en/services/business-systems): Dashboards, automation, and AI integrations
+- [E-commerce](https://www.devsignpro.com/en/services/ecommerce): Custom online stores optimized for SEO and conversions
+- [Portfolio](https://www.devsignpro.com/en/portfolio): Selected client and personal projects
+- [Contact](https://www.devsignpro.com/en/contact): Hire / project inquiry
+- [Articles](https://www.devsignpro.com/en/articles): Technical guides and practical insights
+
+## Locales
+
+- [English](https://www.devsignpro.com/en)
+- [French](https://www.devsignpro.com/fr)
+- [Arabic](https://www.devsignpro.com/ar)
+
+## Identity & trust
+
+- [LinkedIn](https://ma.linkedin.com/in/mohammed-elghandori-628b19209)
+- [GitHub](https://github.com/elghandori1)
+- [Instagram](https://www.instagram.com/devsign_pro)
+- [CV (PDF)](https://www.devsignpro.com/CV/mohammed-elghandori-full-stack-cv.pdf)
+- [Full LLM context](https://www.devsignpro.com/llms-full.txt): Expanded entity facts, services, and FAQ for AI citation
+
+## Optional
+
+- [Sitemap](https://www.devsignpro.com/sitemap.xml)
+- [Robots](https://www.devsignpro.com/robots.txt)

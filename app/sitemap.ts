@@ -11,6 +11,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			en: `${baseUrl}/en${path}`,
 			fr: `${baseUrl}/fr${path}`,
 			ar: `${baseUrl}/ar${path}`,
+			"x-default": `${baseUrl}/${i18n.defaultLocale}${path}`,
 		},
 	});
 

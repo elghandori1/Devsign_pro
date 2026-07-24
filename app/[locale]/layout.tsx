@@ -62,12 +62,18 @@ export async function generateMetadata({
     authors: [{ name: "Mohammed elghandori", url: getBaseUrl() }],
     category: "technology",
     icons: {
+      // PNG first: Bing, Brave, Firefox, and most engines prefer these over SVG.
+      // The root SVG is a large embedded bitmap and is unreliable for search icons.
       icon: [
-        { url: "/favicon.ico", sizes: "32x32" },
+        { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+        { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
+        { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
         { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
-        { url: "/favicon.svg", type: "image/svg+xml" },
+        { url: "/favicon-192x192.png", type: "image/png", sizes: "192x192" },
+        { url: "/favicon.ico", type: "image/x-icon", sizes: "48x48" },
+        { url: "/favicon.png", type: "image/png", sizes: "32x32" },
       ],
-      shortcut: ["/favicon.ico"],
+      shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
       apple: [
         {
           url: "/apple-touch-icon.png",
@@ -75,8 +81,27 @@ export async function generateMetadata({
           sizes: "180x180",
         },
       ],
+      other: [
+        {
+          rel: "mask-icon",
+          url: "/favicon-32x32.png",
+        },
+      ],
     },
     manifest: "/site.webmanifest",
+    other: {
+      "msapplication-TileColor": "#0a0a0a",
+      "msapplication-config": "/browserconfig.xml",
+      "msapplication-TileImage": "/mstile-150x150.png",
+    },
+    alternates: {
+      types: {
+        "text/plain": [
+          { url: "/llms.txt", title: "LLM instructions" },
+          { url: "/llms-full.txt", title: "Full LLM context" },
+        ],
+      },
+    },
     robots: {
       index: true,
       follow: true,
@@ -85,10 +110,20 @@ export async function generateMetadata({
         follow: true,
         "max-image-preview": "large",
         "max-snippet": -1,
+        "max-video-preview": -1,
       },
     },
     verification: {
-      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+      ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+        ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+        : {}),
+      ...(process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION
+        ? {
+            other: {
+              "msvalidate.01": process.env.NEXT_PUBLIC_BING_SITE_VERIFICATION,
+            },
+          }
+        : {}),
     },
   };
 }
@@ -143,7 +178,7 @@ export default async function RootLayout({
             name="Mohammed elghandori"
             jobTitle={openGraph.jobTitle}
             description={openGraph.personDescription}
-            image={`${baseUrl}/profile-photo.jpg`}
+            image={`${baseUrl}/images/profile.png`}
             social={{
               linkedin: infos.social.linkedin,
               github: infos.social.github,

@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: data.description_metadata,
     route: "/services/web-development",
     keywords: keywords,
-    ogImagePath: data.image || "/Designpro-cover.jpg",
+    ogImagePath: data.image || "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }
@@ -123,7 +123,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
     "@type": "Service",
     name: data.title,
     description: data.description,
-    image: data.image || `${getBaseUrl()}/Designpro-cover.jpg`,
+    image: data.image || `${getBaseUrl()}/cover/Designpro-cover.jpg`,
     url: `${getBaseUrl()}/${locale}/services/web-development`,
     provider: {
       "@type": "Organization",

@@ -174,7 +174,7 @@ export default async function ArticlesPage({ params }: Props) {
               publisher: {
                 "@type": "Organization",
                 name: "Devsignpro",
-                url: "https://devsignpro.com",
+                url: getBaseUrl(),
               },
               url: `${getBaseUrl()}/${locale}/articles/${article.slug}`,
             },
