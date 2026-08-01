@@ -7,7 +7,7 @@ const LOCALE_PATH_PATTERN = new RegExp(`^/(${i18n.locales.join('|')})(/|$)`);
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
+
   if (STATIC_PATH_PATTERN.test(pathname)) {
     return NextResponse.next();
   }
@@ -15,11 +15,13 @@ export function proxy(request: NextRequest) {
   const pathnameHasValidLocale = LOCALE_PATH_PATTERN.test(pathname);
   if (!pathnameHasValidLocale) {
     const newUrl = new URL(`/${i18n.defaultLocale}${pathname}`, request.url);
-    return NextResponse.rewrite(newUrl); 
+    // 301 permanent redirect — consolidates all SEO signals to the /en URL
+    return NextResponse.redirect(newUrl, 301);
   }
+
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-url', request.url);
-  
+
   return NextResponse.next({
     request: {
       headers: requestHeaders,
@@ -29,7 +31,6 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    // Exclude API routes, Next static/image assets, SEO discovery files, and global static files
     '/((?!api|_next/static|_next/image|favicon\\.ico|favicon\\.png|favicon-.*\\.png|apple-touch-icon\\.png|mstile-.*\\.png|web-app-manifest-.*\\.png|browserconfig\\.xml|robots\\.txt|sitemap\\.xml|llms\\.txt|llms-full\\.txt|site\\.webmanifest|indexnow-key\\.txt|[a-f0-9]{32}\\.txt|logo|cover|CV|images).*)',
   ],
 };

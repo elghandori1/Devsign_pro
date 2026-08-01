@@ -101,7 +101,7 @@ const TECH_STACK = [
   { name: "Next.js", icon: Code2 },
   { name: "TypeScript", icon: Shield },
   { name: "Tailwind CSS", icon: Zap },
-  { name: "Express.js", icon: Rocket },
+  { name: "Nest.js", icon: Rocket },
   { name: "MongoDB", icon: Database },
   { name: "Technical SEO", icon: Globe },
 ];
@@ -492,6 +492,76 @@ export default async function WebDevelopmentPage({ params }: Props) {
                 },
               )}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Client Case Study */}
+      {data.caseStudy && (
+        <section
+          aria-labelledby="case-study-heading"
+          className="py-16 md:py-20"
+        >
+          <div className="container mx-auto px-4">
+            <header className="text-center max-w-3xl mx-auto mb-10">
+              <p className="inline-block text-sm font-medium text-primary bg-primary/10 rounded-full px-4 py-1.5 mb-4">
+                {data.caseStudy.badge}
+              </p>
+              <h2
+                id="case-study-heading"
+                className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
+              >
+                {data.caseStudy.title}
+              </h2>
+            </header>
+            <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto bg-card border border-border rounded-xl p-6 md:p-10">
+              <Link
+                href={data.caseStudy.link.href}
+                className="block overflow-hidden rounded-xl group"
+                aria-label={`${data.caseStudy.link.label}: ${data.caseStudy.title}`}
+              >
+                <Image
+                  src={data.caseStudy.image}
+                  alt={data.caseStudy.imageAlt}
+                  width={800}
+                  height={600}
+                  className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </Link>
+
+              <div>
+                <p className="text-muted-foreground leading-relaxed mb-8">
+                  {data.caseStudy.description}
+                </p>
+
+                <ul className="grid grid-cols-3 gap-4 list-none p-0 mb-8">
+                  {data.caseStudy.results.map(
+                    (r: { value: string; label: string }) => (
+                      <li key={r.label} className="text-center">
+                        <p className="text-xl md:text-2xl font-bold text-primary">
+                          {r.value}
+                        </p>
+                        <p className="text-xs md:text-sm text-muted-foreground mt-1">
+                          {r.label}
+                        </p>
+                      </li>
+                    ),
+                  )}
+                </ul>
+
+                <Link
+                  href={data.caseStudy.link.href}
+                  className="inline-flex items-center gap-2 font-medium text-primary hover:underline"
+                >
+                  {data.caseStudy.link.label}
+                  <ArrowRight
+                    className="h-4 w-4 rtl:rotate-180"
+                    aria-hidden="true"
+                  />
+                </Link>
+              </div>
+            </article>
           </div>
         </section>
       )}

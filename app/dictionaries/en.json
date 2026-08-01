@@ -210,6 +210,31 @@
               "text": "Go live with analytics configured, Search Console connected, sitemap submitted, and Core Web Vitals benchmarks confirmed."
             }
           ],
+          "caseStudy": {
+            "badge": "Real Client Project",
+            "title": "A Corporate Website That Tripled Traffic in Two Months",
+            "description": "Neodyne Group needed a fast, professional corporate website that could rank on Google and turn visitors into leads. We designed and built a custom website from scratch — no templates, no page builders — with full SEO and AI-search optimization built in from day one.",
+            "results": [
+              {
+                "value": "2,900+",
+                "label": "new users in the first two months"
+              },
+              {
+                "value": "3×",
+                "label": "organic traffic growth"
+              },
+              {
+                "value": "<1s",
+                "label": "average page load time"
+              }
+            ],
+            "image": "/images/projects/Corporate-Website.png",
+            "imageAlt": "Homepage of the Neodyne Group corporate website built by Devsignpro",
+            "link": {
+              "href": "/portfolio/corporate-website",
+              "label": "View the full case study"
+            }
+          },
           "faqs": [
             {
               "q": "How long does it take to build a professional website?",
@@ -1374,31 +1399,58 @@
     }
   },
   "footer": {
-  "brandName": "Devsignpro",
-  "brandTagline": "Full-Stack Developer & SEO Specialist",
-  "phone": "+212 7 78 18 03 06",
-  "address": "Morocco (GMT+1)",
-  "ExplorerTitle": "Explore",
-  "links": [
-    { "label": "Services", "href": "/services" },
-    { "label": "Projects", "href": "/portfolio" },
-    { "label": "About", "href": "/about" },
-    { "label": "Contact", "href": "/contact" },
-    { "label": "Articles", "href": "/articles" }
-  ],
-  "servicesTitle": "Services",
-  "servicesLinks": [
-    { "label": "Website Development", "href": "/services/web-development" },
-    { "label": "E-commerce Development", "href": "/services/ecommerce" },
-    { "label": "Dashboards & Automation", "href": "/services/business-systems" }
-  ],
-  "legalLinks": [
-    { "label": "Sitemap", "href": "/sitemap.xml" }
-  ],
-  "followTitle": "Follow me",
-  "contactTitle": "Contact",
-  "copyright": "© {year} Devsignpro. All rights reserved."
-},
+    "brandName": "Devsignpro",
+    "brandTagline": "Full-Stack Developer & SEO Specialist",
+    "phone": "+212 7 78 18 03 06",
+    "address": "Morocco (GMT+1)",
+    "ExplorerTitle": "Explore",
+    "links": [
+      {
+        "label": "Services",
+        "href": "/services"
+      },
+      {
+        "label": "Projects",
+        "href": "/portfolio"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      },
+      {
+        "label": "Articles",
+        "href": "/articles"
+      }
+    ],
+    "servicesTitle": "Services",
+    "servicesLinks": [
+      {
+        "label": "Website Development",
+        "href": "/services/web-development"
+      },
+      {
+        "label": "E-commerce Development",
+        "href": "/services/ecommerce"
+      },
+      {
+        "label": "Dashboards & Automation",
+        "href": "/services/business-systems"
+      }
+    ],
+    "legalLinks": [
+      {
+        "label": "Sitemap",
+        "href": "/sitemap.xml"
+      }
+    ],
+    "followTitle": "Follow me",
+    "contactTitle": "Contact",
+    "copyright": "© {year} Devsignpro. All rights reserved."
+  },
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
