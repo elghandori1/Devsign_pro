@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 
 const baseUrl = (
-	process.env.NEXT_PUBLIC_BASE_URL || "https://www.devsignpro.com"
+	process.env.NEXT_PUBLIC_BASE_URL || "https://devsignpro.com"
 ).replace(/\/+$/, "");
 
 const key = (

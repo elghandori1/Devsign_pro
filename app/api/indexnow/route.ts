@@ -4,7 +4,7 @@ import { submitIndexNow } from "@/app/lib/indexNow";
 /**
  * POST /api/indexnow
  * Optional header: x-indexnow-secret = INDEXNOW_SUBMIT_SECRET
- * Body (optional): { "urls": ["https://www.devsignpro.com/en"] }
+ * Body (optional): { "urls": ["https://devsignpro.com/en"] }
  */
 export async function POST(request: NextRequest) {
 	const requiredSecret = process.env.INDEXNOW_SUBMIT_SECRET;

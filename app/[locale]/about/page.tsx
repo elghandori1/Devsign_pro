@@ -13,6 +13,7 @@ import {
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -129,15 +130,54 @@ export default async function AboutPage({ params }: Props) {
   const isRtl = locale === "ar";
   const baseUrl = getBaseUrl();
 
-  const ProfileSchema = {
-    "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "@id": `${baseUrl}/${locale}/about#profile`,
-    url: `${baseUrl}/${locale}/about`,
-    mainEntity: {
-      "@id": `${baseUrl}/#person`,
+const ProfileSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ProfilePage",
+      "@id": `${baseUrl}/${locale}/about#profile`,
+      "url": `${baseUrl}/${locale}/about`,
+      "mainEntity": {
+        "@id": `${baseUrl}/#person`,
+      },
+      "about": {
+        "@id": `${baseUrl}/#person`,
+      },
     },
-  };
+    {
+      "@type": "Person",
+      "@id": `${baseUrl}/#person`,
+      "name": "Mohammed Elghandori",
+      "url": `${baseUrl}/${locale}/about`,
+      "image": `${baseUrl}/images/mohammed-profile.png`,
+      "jobTitle": locale === "ar" 
+        ? "مطور ويب Full-Stack وخبير SEO" 
+        : locale === "fr" 
+          ? "Développeur Web Full-Stack & Expert SEO" 
+          : "Full-Stack Web Developer & SEO Expert",
+      "description": locale === "ar"
+        ? "مطور ويب مقيم في المغرب متخصص في SEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة وحديثة ومُحسّنة للبحث."
+        : locale === "fr"
+          ? "Développeur web basé au Maroc spécialisé en SEO et optimisation recherche IA. Je construis des sites rapides, modernes et optimisés pour la recherche."
+          : "Web Developer based in Morocco specializing in SEO and AI Search Optimization. I build fast, modern, and search-optimized websites.",
+         "sameAs": [infos.social.linkedin, infos.social.github, infos.social.facebook].filter(Boolean),
+
+      "knowsAbout": [
+        "Web Development",
+        "Next.js",
+        "Technical SEO",
+        "AI Search Optimization",
+        "Core Web Vitals",
+        "Schema.org",
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "MA",
+        "addressLocality": locale === "ar" ? "المغرب" : locale === "fr" ? "Maroc" : "Morocco",
+      },
+    },
+  ],
+};
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
