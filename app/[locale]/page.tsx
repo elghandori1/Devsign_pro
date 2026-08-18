@@ -12,14 +12,14 @@ import ServicesGrid from "../components/ServicesGrid";
 import AboutMeSection from "../components/AboutMeSection";
 import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
-import FAQSection from "../components/FAQSection";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
 import ArticlesSection from "../components/ArticlesSection";
-import TechnologySlider from "../components/TechnologySlider";
+import TechStackSection from "../components/TechStackSection";
 import CVDownloadPopup from "../components/CVDownloadPopup";
-import { getCVOptions } from "@/app/lib/cv-data";
-import { WebPageSchema, FAQPageSchema } from "@/app/components/schemas";
+import FAQSection from "../components/FAQSection";
+import { FAQPageSchema, PersonSchema } from "@/app/components/schemas";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -39,16 +39,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = locale === "ar";
 
   const title = isEnglish
-    ? "Freelance Web Developer Morocco | Next.js, SEO & AI Search"
+    ? "Web Developer & SEO Expert in Morocco | Freelancer"
     : isArabic
-      ? "مطور ويب مستقل في المغرب | Next.js، SEO وتحسين البحث بالذكاء الاصطناعي"
-      : "Développeur Web Freelance au Maroc | Next.js, SEO & Optimisation IA";
+      ? "مطور ويب وخبير SEO في المغرب | مستقل"
+      : "Développeur Web & Expert SEO au Maroc | Freelance";
 
   const description = isEnglish
-    ? "Full-stack Next.js developer in Morocco specializing in SEO & AI Search Optimization. I build fast websites that rank on Google and get cited by ChatGPT and other AI engines."
+    ? "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization."
     : isArabic
-      ? "مطور ويب متكامل في المغرب متخصص في Next.js وSEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة تتصدر Google وتُستشهد بها في ChatGPT."
-      : "Développeur Full-Stack Next.js au Maroc spécialisé en SEO et optimisation recherche IA. Je crée des sites rapides qui se classent sur Google et sont cités par ChatGPT et d'autres moteurs IA.";
+      ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
+      : "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.";
 
   const keywords = isEnglish
     ? [
@@ -111,24 +111,21 @@ export default async function Home({ params }: Props) {
   const dict = await getDictionary(locale);
   const t = dict.homepage;
   const articlesPage = dict.pages.articles_page;
-  const cvOptions = getCVOptions(t);
   const baseUrl = getBaseUrl();
+  const jobTitle =
+    locale === "en"
+      ? "Web Developer & SEO Specialist"
+      : locale === "ar"
+        ? "مطور ويب وخبير تحسين محركات البحث"
+        : "Développeur Web & Spécialiste SEO";
 
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
-
-  const webPageName = isEnglish
-    ? "Full-Stack Next.js Developer Morocco — SEO, AI Search Optimization & Web Performance"
+  const description = isEnglish
+    ? "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization."
     : isArabic
-      ? "مطور Next.js متكامل في المغرب — SEO، تحسين البحث بالذكاء الاصطناعي وأداء الويب"
-      : "Développeur Full-Stack Next.js Maroc — SEO, Optimisation Recherche IA & Performance Web";
-
-  const webPageDescription = isEnglish
-    ? "Full-stack Next.js developer in Morocco specializing in SEO, AI Search Optimization, and Core Web Vitals. I build fast, high-performance websites that rank on Google and get cited by ChatGPT and other AI engines."
-    : isArabic
-      ? "مطور ويب متكامل في المغرب متخصص في Next.js وSEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة عالية الأداء تتصدر Google وتُستشهد بها في ChatGPT."
-      : "Développeur web full-stack au Maroc spécialisé en Next.js, SEO et optimisation recherche IA. Je crée des sites rapides et performants qui se classent sur Google et sont cités par ChatGPT et d'autres moteurs IA.";
-
+      ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
+      : "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.";
   const faqs = isEnglish
     ? [
         {
@@ -205,21 +202,23 @@ export default async function Home({ params }: Props) {
 
   return (
     <main className="bg-background text-foreground transition-colors duration-300 min-h-screen">
-      <WebPageSchema
+      <FAQPageSchema faqs={faqs} />
+      <PersonSchema
         baseUrl={baseUrl}
         locale={locale}
-        title={webPageName}
-        description={webPageDescription}
-        route=""
-        ogImagePath="/cover/Designpro-cover.jpg"
+        jobTitle={jobTitle}
+        description={description}
+        image={`${baseUrl}/images/mohammed-profile.png`}
+        social={{
+          linkedin: infos.social.linkedin,
+          github: infos.social.github,
+          facebook: infos.social.facebook,
+        }}
       />
-
-      <FAQPageSchema faqs={faqs} />
       <section
         className="relative overflow-hidden hero-section-light border-b border-border"
         aria-labelledby="hero-heading"
       >
-        {/* ── grid texture ── */}
         <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
@@ -327,7 +326,7 @@ export default async function Home({ params }: Props) {
             <div
               className={`flex justify-center ${isArabic ? "lg:order-1" : "lg:order-2"}`}
             >
-              <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[380px] xl:max-w-[420px]">
+              <div className="relative w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[360px] xl:max-w-[400px]">
                 <div
                   className="absolute -inset-4 rounded-3xl border border-primary/10"
                   aria-hidden="true"
@@ -341,8 +340,15 @@ export default async function Home({ params }: Props) {
                   {/* image — better portrait proportions */}
                   <div className="relative aspect-[4/5] overflow-hidden">
                     <Image
-                      src="/images/profile.png"
-                      alt={t.hero.profile_name + " profile picture"}
+                      src="/images/mohammed-profile.png"
+                      alt={
+                        t.hero.profile_name +
+                        (locale === "ar"
+                          ? " — صورة الملف الشخصي"
+                          : locale === "fr"
+                            ? " — photo de profil"
+                            : " — profile picture")
+                      }
                       width={420}
                       height={525}
                       className="w-full h-full object-cover object-top
@@ -360,36 +366,22 @@ export default async function Home({ params }: Props) {
                     <p className="font-semibold text-foreground text-sm truncate">
                       {t.hero.profile_name}
                     </p>
-                    <p className="text-xs text-muted-foreground truncate mt-0.5">
+                    <p className="text-xs text-muted-foreground truncate mt-2">
                       {t.hero.profile_role}
                     </p>
 
                     <div className="mt-3 space-y-2">
                       <Link
                         href={`/${locale}/about`}
-                        className="w-full inline-flex items-center justify-center gap-1.5
-                         px-3 py-1.5 bg-primary text-primary-foreground font-semibold
+                        className="w-full inline-flex items-center justify-center gap-2
+                         px-3 py-2 bg-primary text-primary-foreground font-semibold
                          rounded-lg text-xs hover:opacity-90 active:scale-95 transition-all"
                       >
                         {t.hero.cta_more_about}
                       </Link>
-
-                      {/* CV Download Button with Popup */}
                       <CVDownloadPopup
                         buttonText={t.hero.cta_download_cv || "Download CV"}
-                        popupTitle={
-                          t.hero.cv_popup_title || "Download Specialized CV"
-                        }
-                        popupDescription={
-                          t.hero.cv_popup_desc ||
-                          "Choose a CV tailored to the role:"
-                        }
-                        popupFooter={
-                          t.hero.cv_popup_footer ||
-                          "PDF format • Updated recently"
-                        }
-                        cvOptions={cvOptions}
-                        isRtl={isArabic}
+                        fileName="mohammed-elghandori-full-stack-cv.pdf"
                       />
                     </div>
                   </div>
@@ -462,14 +454,8 @@ export default async function Home({ params }: Props) {
 
       <section aria-labelledby="tech-heading">
         <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={t.technology_stack.sectionLabel}
-            id="tech-heading"
-          />
-          <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mb-6">
-            {t.technology_stack.description}
-          </p>
-          <TechnologySlider />
+          <SubTitle sectionLabel={t.techStack.title} id="tech-heading" />
+          <TechStackSection data={t.techStack} headingId="tech-heading" />
         </ScrollReveal>
       </section>
 
@@ -491,11 +477,7 @@ export default async function Home({ params }: Props) {
         <ScrollReveal delay={0.05}>
           <SubTitle
             sectionLabel={
-              locale === "ar"
-                ? "الأسئلة الشائعة"
-                : locale === "fr"
-                  ? "FAQ"
-                  : "FAQ"
+              isArabic ? "الأسئلة الشائعة" : locale === "fr" ? "FAQ" : "FAQ"
             }
             id="faq-heading"
           />

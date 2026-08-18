@@ -62,10 +62,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!article) notFound();
 
+  const seoTitle =
+    locale === "en"
+      ? "Best Laptop Guide 2026 | Students & Developers"
+      : locale === "ar"
+        ? "دليل أفضل لابتوب 2026 | طلاب ومطورون"
+        : "Guide des meilleurs laptops 2026 | Étudiants";
+
+  const seoDescription =
+    locale === "en"
+      ? "Choose the right laptop in 2026 for study, programming, or business. Practical specs, budget tips, and what actually matters before you buy."
+      : locale === "ar"
+        ? "اختر اللابتوب المناسب في 2026 للدراسة أو البرمجة أو العمل. مواصفات عملية، ونصائح للميزانية، وما الذي يهم فعلاً قبل الشراء."
+        : "Choisissez le bon laptop en 2026 pour étudier, coder ou gérer une activité. Specs utiles, budget, et critères qui comptent vraiment.";
+
   return buildPageMetadata({
     locale,
-    title: article.title,
-    description: article.excerpt,
+    title: seoTitle,
+    description: seoDescription,
     keywords: [
       article.category,
       article.title,
@@ -170,38 +184,37 @@ export default async function ArticleDetailsPage({ params }: Props) {
   const shareUrl = `${getBaseUrl()}/${locale}${ARTICLE_PATH}`;
 
   // Structured data
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    description: article.excerpt,
-    image: article.image.startsWith("http")
-      ? article.image
-      : `${getBaseUrl()}${article.image.startsWith("/") ? "" : "/"}${article.image}`,
-    datePublished: article.published,
-    dateModified: article.published,
-    articleSection: article.category,
-    inLanguage: locale,
-    wordCount: contentBlocks.join(" ").split(/\s+/).length,
-    author: {
-      "@type": "Person",
-      name: "Mohammed Elghandori",
-      url: `${getBaseUrl()}/${locale}/about`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Devsignpro",
-      logo: {
-        "@type": "ImageObject",
-        url: `${getBaseUrl()}/logo/devsignpro-logo.jpg`,
-      },
-      url: getBaseUrl(),
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": shareUrl,
-    },
-  };
+const baseUrl = getBaseUrl();
+const langCode = locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
+
+// Structured data
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": `${shareUrl}#article`,
+  "headline": article.title,
+  "description": article.excerpt,
+  "url": shareUrl, 
+  "image": article.image.startsWith("http")
+    ? article.image
+    : `${baseUrl}${article.image.startsWith("/") ? "" : "/"}${article.image}`,
+  "datePublished": article.published,
+  "dateModified": article.published,
+  "articleSection": article.category,
+  "inLanguage": langCode,
+  "wordCount": contentBlocks.join(" ").split(/\s+/).length,
+  "isPartOf": { "@id": `${baseUrl}/#website` },
+  "author": {
+    "@id": `${baseUrl}/#person`,
+  },
+  "publisher": {
+    "@id": `${baseUrl}/#person`,
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": shareUrl,
+  },
+};
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -272,10 +285,10 @@ export default async function ArticleDetailsPage({ params }: Props) {
           : "Mohammed Elghandori",
     authorRole:
       locale === "ar"
-        ? "مطور برمجيات"
+        ? "مطور ويب Full-Stack"
         : locale === "fr"
-          ? "développeur de logiciels"
-          : "software developer",
+          ? "Développeur Web Full-Stack"
+          : "Full-Stack Web Developer",
   };
 
   return (
@@ -421,7 +434,7 @@ export default async function ArticleDetailsPage({ params }: Props) {
             <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between gap-5">
               <div className="flex items-center gap-4">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/mohammed-profile.png"
                   alt="Mohammed Elghandori"
                   width={48}
                   height={48}

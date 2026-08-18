@@ -46,31 +46,42 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "en"
-      ? "Contact | Web Development, Technical SEO & AI Automation"
+      ? "Contact Mohammed Elghandori | Next.js & SEO Expert"
       : locale === "ar"
-        ? "تواصل | تطوير الويب، SEO التقني وأتمتة الذكاء الاصطناعي"
-        : "Contact | Développement Web, SEO Technique & Automatisation IA";
+        ? "تواصل مع محمد الغنضوري | مطور Next.js وخبير SEO"
+        : "Contact Mohammed Elghandori | Dev Next.js & SEO";
 
   const description =
     locale === "en"
-      ? "Need a high-performance website, Technical SEO, AI automation, or a custom web application? Contact Mohammed Elghandori, a Full-Stack Web Developer in Morocco, and let's discuss your project."
+      ? "Contact Mohammed Elghandori, a Full-Stack Web Developer in Morocco. Hire me for Next.js dashboards, corporate sites, and Technical SEO."
       : locale === "ar"
-        ? "هل تحتاج إلى موقع ويب عالي الأداء، أو SEO تقني، أو أتمتة بالذكاء الاصطناعي، أو تطبيق ويب مخصص؟ تواصل مع محمد الغندوري، مطور ويب Full-Stack في المغرب، لبدء مشروعك."
-        : "Besoin d'un site web performant, d'un SEO technique, d'une automatisation IA ou d'une application web sur mesure ? Contactez Mohammed Elghandori, développeur Full-Stack au Maroc, pour discuter de votre projet.";
+        ? "تواصل مع محمد الغنضوري، مطور ويب Full-Stack في المغرب. متاح لمشاريع Next.js، المواقع المؤسسية، ولوحات التحكم والـ SEO التقني."
+        : "Contactez Mohammed Elghandori, développeur Full-Stack au Maroc. Disponible pour vos projets Next.js, sites corporate et SEO technique.";
 
   const keywords =
     locale === "en"
       ? [
-          "contact",
-          "hire web developer",
-          "Morocco",
-          "freelance",
-          "web design",
-          "automation",
+          "contact web developer Morocco",
+          "hire Next.js developer",
+          "Technical SEO expert",
+          "freelance dashboard developer",
+          "hire full-stack engineer",
         ]
       : locale === "ar"
-        ? ["اتصل", "مطور ويب", "المغرب", "تصميم", "أتمتة"]
-        : ["contact", "développeur web", "Maroc", "design", "automatisation"];
+        ? [
+            "تواصل مطور ويب المغرب",
+            "توظيف مطور Next.js",
+            "خبير SEO تقني",
+            "مطور لوحات تحكم",
+            "مهندس برمجيات مستقل",
+          ]
+        : [
+            "contact développeur web Maroc",
+            "embaucher développeur Next.js",
+            "expert SEO technique",
+            "développeur freelance",
+            "ingénieur full-stack",
+          ];
 
   return buildPageMetadata({
     locale,
@@ -102,14 +113,14 @@ export default async function ContactPage({ params }: Props) {
     url: `${baseUrl}/${locale}/contact`,
     name:
       locale === "en"
-        ? "Contact | Hire Freelance Web Developer & SEO Specialist Morocco"
+        ? "Contact | Freelance Web Developer & SEO Specialist in Morocco"
         : locale === "ar"
-          ? "تواصل | توظيف مطور ويب مستقل ومتخصص في SEO بالمغرب"
-          : "Contact | Embaucher Développeur Web Freelance & Spécialiste SEO Maroc",
+          ? "تواصل | مطور ويب مستقل وخبير SEO في المغرب"
+          : "Contact | Développeur Web Freelance & Spécialiste SEO au Maroc",
     description: t.description,
-    inLanguage: locale,
+    inLanguage: locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
     isPartOf: { "@id": `${baseUrl}/#website` },
-    publisher: { "@id": `${baseUrl}/#organization` },
+    publisher: { "@id": `${baseUrl}/#person` },
     about: { "@id": `${baseUrl}/#person` },
     mainEntity: {
       "@type": "ContactPoint",
@@ -162,35 +173,34 @@ export default async function ContactPage({ params }: Props) {
       },
     ],
   };
-
   const faqs = [
     {
       question:
         locale === "en"
-          ? "How do I hire you for a web development project?"
+          ? "Do you work with international clients or only in Morocco?"
           : locale === "ar"
-            ? "كيف يمكنني توظيفك لمشروع تطوير ويب؟"
-            : "Comment puis-je vous engager pour un projet de développement web ?",
+            ? "هل تعمل مع عملاء دوليين أم فقط في المغرب؟"
+            : "Travaillez-vous avec des clients internationaux ou uniquement au Maroc ?",
       answer:
         locale === "en"
-          ? "Simply fill out the contact form, send an email, or message me on WhatsApp. I'll reply within 24 hours to schedule a free consultation where we discuss your goals, timeline, and budget. Based in Casablanca, Morocco, I work with clients locally and worldwide."
+          ? "While I'm based in Morocco, I work with startups and enterprises globally. My web applications are built with international SEO, multilingual support, and global performance standards—ready to serve users anywhere in the world."
           : locale === "ar"
-            ? "ما عليك سوى ملء نموذج التواصل أو إرسال بريد إلكتروني أو مراسلتي على WhatsApp. سأرد خلال 24 ساعة لتحديد استشارة مجانية نناقش فيها أهدافك وجدولك الزمني وميزانيتك."
-            : "Remplissez simplement le formulaire de contact, envoyez un email, ou contactez-moi sur WhatsApp. Je réponds sous 24h pour planifier une consultation gratuite où nous discutons de vos objectifs, délais et budget.",
+            ? "على الرغم من أنني مقيم في المغرب، إلا أنني أعمل مع الشركات الناشئة والمؤسسات على مستوى العالم. يتم بناء تطبيقات الويب الخاصة بي مع مراعاة الـ SEO الدولي، ودعم اللغات المتعددة، ومعايير الأداء العالمية لتخدمة المستخدمين في أي مكان."
+            : "Bien que basé au Maroc, je collabore avec des startups et des entreprises à l'international. Mes applications web sont conçues avec un SEO international, un support multilingue et des standards de performance mondiaux.",
     },
     {
       question:
         locale === "en"
-          ? "What is your typical project timeline and pricing?"
+          ? "Can you work with startups, enterprises, or development teams on technical SEO and web development?"
           : locale === "ar"
-            ? "ما هو الجدول الزمني والتسعير النموذجي لمشاريعك؟"
-            : "Quels sont vos délais et tarifs typiques ?",
+            ? "هل يمكنك العمل مع الشركات الناشئة أو المؤسسات أو فرق التطوير في تحسين محركات البحث التقني وتطوير الويب؟"
+            : "Pouvez-vous travailler avec des startups, des entreprises ou des équipes de développement sur le SEO technique et le développement web ?",
       answer:
         locale === "en"
-          ? "Timelines vary by scope: a landing page takes 1 week, a full Next.js website 3–6 weeks, and complex e-commerce or AI automation systems 6–10 weeks. I provide transparent, no-obligation quotes after the initial consultation. Competitive Morocco-based rates with global-quality delivery."
+          ? "Yes. I can integrate with product, marketing, or development teams, or work independently. I do not only build applications; I also implement technical SEO: metadata, canonical tags, robots.txt, XML sitemaps, structured data / Schema.org, hreflang, semantic architecture, internal linking, performance, Core Web Vitals, and AI-ready structured content. This helps startups and enterprises improve visibility in search engines and AI engines while keeping the product fast, scalable, and maintainable."
           : locale === "ar"
-            ? "تختلف الجداول الزمنية حسب النطاق: الصفحة المقصودة تستغرق 1 أسبوع, موقع Next.js كامل 3-6 أسابيع، وأنظمة التجارة الإلكترونية أو أتمتة الذكاء الاصطناعي المعقدة 6-10 أسابيع."
-            : "Les délais varient selon la portée : une landing page prend 1 semaine, un site Next.js complet 3–6 semaines, et les systèmes e-commerce ou IA complexes 6–10 semaines.",
+            ? "نعم. يمكنني الاندماج مع فرق المنتج أو التسويق أو التطوير، أو العمل بشكل مستقل. أنا لا أكتفي ببناء التطبيقات فقط، بل أقوم أيضاً بتنفيذ تحسين محركات البحث التقني: البيانات الوصفية، وعلامات canonical، وملف robots.txt، وخرائط الموقع XML، والبيانات المنظمة / Schema.org، وhreflang، والبنية الدلالية، والربط الداخلي، والأداء، وCore Web Vitals، والمحتوى المنظم الجاهز لمحركات الذكاء الاصطناعي. هذا يساعد الشركات الناشئة والمؤسسات على تحسين الظهور في محركات البحث ومحركات الذكاء الاصطناعي مع الحفاظ على منتج سريع وقابل للتوسع وسهل الصيانة."
+            : "Oui. Je peux intégrer une équipe produit, marketing ou développement, ou travailler en autonomie. Je ne fais pas que développer des applications : j'applique aussi le SEO technique : métadonnées, balises canonical, fichier robots.txt, sitemaps XML, données structurées / Schema.org, hreflang, architecture sémantique, maillage interne, performance, Core Web Vitals et contenu structuré prêt pour les moteurs IA. Cela aide les startups et les entreprises à améliorer leur visibilité sur les moteurs de recherche et les moteurs IA tout en gardant un produit rapide, évolutif et maintenable.",
     },
     {
       question:
@@ -201,13 +211,12 @@ export default async function ContactPage({ params }: Props) {
             : "Fournissez-vous un support continu après la livraison ?",
       answer:
         locale === "en"
-          ? "Yes. I offer monthly maintenance retainers that include performance monitoring, security updates, SEO health checks, and AI citation tracking. This ensures your website stays fast, secure, and visible as search algorithms and AI platforms evolve."
+          ? "Yes. I offer monthly maintenance retainers that include performance monitoring, security updates, Technical SEO health checks, and AI citation tracking. This ensures your digital product stays fast, secure, and visible as search algorithms evolve."
           : locale === "ar"
-            ? "نعم. أقدم خطط صيانة شهرية تشمل مراقبة الأداء وتحديثات الأمان وفحوصات صحة SEO وتتبع الاستشهادات AI. هذا يضمن بقاء موقعك سريعاً وآمناً ومرئياً."
-            : "Oui. Je propose des forfaits de maintenance mensuels incluant monitoring de performance, mises à jour de sécurité, checks SEO santé et suivi des citations IA.",
+            ? "نعم. أقدم خطط صيانة شهرية تشمل مراقبة الأداء، وتحديثات الأمان، وفحوصات صحة الـ SEO التقني، وتتبع الاستشهادات في محركات الذكاء الاصطناعي. هذا يضمن بقاء منتجك الرقمي سريعاً، آمناً، ومتصدراً لنتائج البحث."
+            : "Oui. Je propose des forfaits de maintenance mensuels incluant le monitoring des performances, les mises à jour de sécurité, les audits SEO technique et le suivi des citations IA. Cela garantit que votre produit reste rapide, sécurisé et visible.",
     },
   ];
-
   const channels = [
     {
       label: t.email,
@@ -254,10 +263,6 @@ export default async function ContactPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <FAQPageSchema faqs={faqs} />
-
-      {/* ═══════════════════════════════════════════════════════
-          1. HERO — Server-rendered semantic HTML
-          ═══════════════════════════════════════════════════════ */}
       <section
         className="relative overflow-hidden hero-section-light border-b border-border"
         aria-labelledby="contact-hero-heading"
@@ -329,9 +334,6 @@ export default async function ContactPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════
-          2. MAIN GRID — Channels (server) + Form (client)
-          ═══════════════════════════════════════════════════════ */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-10 sm:mb-14">
           {t.subtitle}
@@ -469,7 +471,8 @@ export default async function ContactPage({ params }: Props) {
             </header>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-6">
-              {t.whyReachOut.reasons.map((reason: any, index: number) => {
+              {(t.whyReachOut.reasons as { title: string; text: string }[]).map(
+                (reason, index) => {
                 const Icon = WHY_ICONS[index % WHY_ICONS.length];
                 return (
                   <article
@@ -506,9 +509,6 @@ export default async function ContactPage({ params }: Props) {
         </section>
       ) : null}
 
-      {/* ═══════════════════════════════════════════════════════
-          4. FAQ — Client Component (needs interactivity)
-          ═══════════════════════════════════════════════════════ */}
       <section
         className="border-t border-border bg-primary/5"
         aria-labelledby="contact-faq-heading"
@@ -520,17 +520,18 @@ export default async function ContactPage({ params }: Props) {
               className="text-2xl sm:text-3xl font-bold mb-3"
             >
               {locale === "en"
-                ? "Hiring FAQ"
+                ? "Project & Technical SEO FAQ"
                 : locale === "ar"
-                  ? "الأسئلة الشائعة حول التوظيف"
-                  : "FAQ Recrutement"}
+                  ? "الأسئلة الشائعة حول المشاريع وSEO التقني"
+                  : "FAQ Projets & SEO technique"}
             </h2>
+
             <p className="text-muted-foreground max-w-xl mx-auto">
               {locale === "en"
-                ? "Everything you need to know before starting your project."
+                ? "Everything you need to know about working with startups, enterprises, and development teams — including technical SEO, metadata, schema, performance, and ongoing support."
                 : locale === "ar"
-                  ? "كل ما تحتاج لمعرفته قبل بدء مشروعك."
-                  : "Tout ce que vous devez savoir avant de démarrer votre projet."}
+                  ? "كل ما تحتاج معرفته حول العمل مع الشركات الناشئة والمؤسسات وفرق التطوير — بما في ذلك SEO التقني، والبيانات الوصفية، وSchema، والأداء، والدعم المستمر."
+                  : "Tout ce que vous devez savoir sur la collaboration avec les startups, les entreprises et les équipes de développement — SEO technique, métadonnées, schema, performance et support continu."}
             </p>
           </header>
 

@@ -41,7 +41,7 @@ export default function AboutMeSection({
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-10 sm:mb-12">
-          <p className="text-xl font-extrabold tracking-tight leading-[1.2] text-foreground max-w-4xl mx-auto">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mb-12 sm:mb-14">
             {translations.highlight}
           </p>
         </div>

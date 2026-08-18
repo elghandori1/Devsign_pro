@@ -103,7 +103,7 @@ return (
                 <button
                   type="button"
                   onClick={goPrev}
-                  className="w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
+                  className="btn-signal w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
                   aria-label={isRtl ? "Next project" : "Previous project"}
                 >
                   {isRtl ? (
@@ -115,13 +115,19 @@ return (
                 <button
                   type="button"
                   onClick={goNext}
-                  className="w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-border flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
+                  className="btn-signal w-10 h-10 rounded-full bg-background/90 backdrop-blur-sm border border-primary/50 text-primary flex items-center justify-center hover:bg-primary hover:text-primary-foreground hover:border-primary transition-colors duration-200 shadow-sm"
                   aria-label={isRtl ? "Previous project" : "Next project"}
                 >
                   {isRtl ? (
-                    <ChevronLeft className="w-5 h-5" aria-hidden="true" />
+                    <ChevronLeft
+                      className="w-5 h-5 arrow-signal arrow-signal-rev"
+                      aria-hidden="true"
+                    />
                   ) : (
-                    <ChevronRight className="w-5 h-5" aria-hidden="true" />
+                    <ChevronRight
+                      className="w-5 h-5 arrow-signal"
+                      aria-hidden="true"
+                    />
                   )}
                 </button>
               </div>

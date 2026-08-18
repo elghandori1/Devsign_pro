@@ -1,4 +1,4 @@
-// /app/[locale]/services/web-development/page.tsx
+// /app/[locale]/services/technical-seo/page.tsx
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import Link from "next/link";
@@ -8,10 +8,9 @@ import {
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  Rocket,
-  Shield,
-  Database,
-  Code2,
+  Search,
+  Gauge,
+  FileCode2,
   Globe,
   Zap,
   Sparkles,
@@ -19,6 +18,7 @@ import {
   Users,
   BarChart3,
   ChevronDown,
+  Bug,
 } from "lucide-react";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -32,55 +32,52 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const data = dict.pages.services_page.services.web_development;
+  const data = dict.pages.services_page.services.technical_seo;
   const keywords =
     locale === "ar"
       ? [
-          "تطوير مواقع المغرب",
-          "تطوير مواقع إلكترونية المغرب",
-          "موقع SEO محسن",
-          "مطور Next.js المغرب",
-          "مطور ويب مستقل المغرب",
-          "تصميم متجاوب",
-          "موقع آمن وسريع",
+          "خدمات SEO تقني المغرب",
+          "تدقيق SEO تقني",
+          "تحسين Core Web Vitals",
+          "تحسين سرعة الموقع",
+          "البيانات المنظمة Schema",
+          "إصلاح مشاكل الفهرسة",
+          "خبير SEO تقني المغرب",
           "تحسين محركات البحث",
-          "تحسين الذكاء الاصطناعي GEO",
-          "صفحة هبوط احترافية",
-          "تطبيق ويب مخصص",
+          "ملف Sitemap و robots.txt",
+          "تدقيق موقع إلكتروني",
         ]
       : locale === "fr"
         ? [
-            "développement web Maroc",
-            "création site web Maroc",
-            "site web SEO",
-            "développeur Next.js Maroc",
-            "développeur web freelance Maroc",
-            "design responsive",
-            "site sécurisé rapide",
-            "référencement naturel",
-            "optimisation IA GEO",
-            "landing page professionnelle",
-            "application web sur mesure",
+            "SEO technique Maroc",
+            "audit SEO technique",
+            "optimisation Core Web Vitals",
+            "vitesse site web",
+            "données structurées Schema",
+            "correction indexation Google",
+            "expert SEO technique Maroc",
+            "référencement naturel technique",
+            "sitemap robots.txt",
+            "audit site web",
           ]
         : [
-            "web development Morocco",
-            "website development Morocco",
-            "SEO website development",
-            "Next.js developer Morocco",
-            "freelance web developer Morocco",
-            "responsive web design",
-            "secure fast website",
-            "search engine optimization",
-          "GEO AI search optimization",
-          "professional landing page",
-          "custom web application",
+            "technical SEO services",
+            "technical SEO audit Morocco",
+            "Core Web Vitals optimization",
+            "website speed optimization",
+            "schema markup implementation",
+            "indexability fixes",
+            "technical SEO expert Morocco",
+            "crawlability optimization",
+            "sitemap robots.txt optimization",
+            "site audit services",
           ];
 
   return buildPageMetadata({
     locale,
     title: data.title_metadata,
     description: data.description_metadata,
-    route: "/services/web-development",
+    route: "/services/technical-seo",
     keywords: keywords,
     ogImagePath: data.image || "/cover/Designpro-cover.jpg",
     type: "website",
@@ -89,20 +86,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const BENEFIT_ICONS = [TrendingUp, Users, BarChart3];
 
+// Audit tools — what technical SEO buyers expect to see
 const TECH_STACK = [
-  { name: "Next.js", icon: Code2 },
-  { name: "TypeScript", icon: Shield },
-  { name: "Tailwind CSS", icon: Zap },
-  { name: "Nest.js", icon: Rocket },
-  { name: "MongoDB", icon: Database },
+  { name: "Google Search Console", icon: Search },
+  { name: "Lighthouse", icon: Gauge },
+  { name: "Screaming Frog", icon: Bug },
+  { name: "PageSpeed Insights", icon: Zap },
+  { name: "Schema.org / JSON-LD", icon: FileCode2 },
   { name: "Technical SEO", icon: Globe },
 ];
 
-export default async function WebDevelopmentPage({ params }: Props) {
+export default async function TechnicalSEO({ params }: Props) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const svc = dict.pages.services_page;
-  const data = svc.services.web_development;
+  const data = svc.services.technical_seo;
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
@@ -114,29 +112,30 @@ export default async function WebDevelopmentPage({ params }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": `${baseUrl}/${locale}/services/web-development#service`,
+    "@id": `${baseUrl}/${locale}/services/technical-seo#service`,
     name: data.title,
-    description: data.description_metadata,
+    description: data.description,
     image: data.image
       ? `${baseUrl}${data.image}`
       : `${baseUrl}/cover/Designpro-cover.jpg`,
-    url: `${baseUrl}/${locale}/services/web-development`,
+    url: `${baseUrl}/${locale}/services/technical-seo`,
     provider: { "@id": `${baseUrl}/#person` },
     isPartOf: { "@id": `${baseUrl}/#website` },
     inLanguage:
       locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
     serviceType:
       locale === "en"
-        ? "Web Development Services with SEO & AI Optimization"
+        ? "Technical SEO Services & Core Web Vitals Optimization"
         : locale === "fr"
-          ? "Services de Développement Web avec SEO et Optimisation IA"
-          : "خدمات تطوير الويب مع تحسين محركات البحث والذكاء الاصطناعي",
+          ? "Services de SEO Technique & Optimisation Core Web Vitals"
+          : "خدمات SEO التقني وتحسين Core Web Vitals",
     areaServed: [
       { "@type": "Country", name: "Morocco" },
       { "@type": "Place", name: "Worldwide" },
     ],
   };
 
+  // --- TECHNICAL SEO BREADCRUMB ---
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -164,11 +163,11 @@ export default async function WebDevelopmentPage({ params }: Props) {
         position: 3,
         name:
           locale === "en"
-            ? "Web Development"
+            ? "Technical SEO"
             : locale === "ar"
-              ? "تطوير الويب"
-              : "Développement Web",
-        item: `${getBaseUrl()}/${locale}/services/web-development`,
+              ? "SEO التقني"
+              : "SEO Technique",
+        item: `${getBaseUrl()}/${locale}/services/technical-seo`,
       },
     ],
   };
@@ -229,7 +228,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
           className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
-        {/* Geometric Squares Pattern */}
         <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
           <div className="absolute top-10 left-10 w-32 h-32 border border-white/[0.04] rotate-12" />
           <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
@@ -247,7 +245,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex flex-wrap items-center gap-2 text-sm">
               <li>
-              <Link
+                <Link
                   href={`/${locale}/services`}
                   className="inline-flex items-center gap-2 bg-primary/10 text-primary
              border border-primary/20 px-4 py-2 rounded-full font-medium
@@ -267,12 +265,12 @@ export default async function WebDevelopmentPage({ params }: Props) {
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
-                       leading-[1.1] text-foreground mb-5 max-w-5xl"
+                       leading-[1.1] text-foreground mb-5 max-w-4xl"
           >
             {data.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl mb-7">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
             {data.description}
           </p>
 
@@ -335,7 +333,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* ── Left: Text ── */}
             <div className="order-2 lg:order-1">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
                 <Sparkles size={12} aria-hidden="true" />
@@ -621,7 +618,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </section>
       )}
 
-      {/* ── 7. TECH STACK ── */}
+      {/* ── 7. TOOLS & TECHNOLOGIES ── */}
       <section
         aria-labelledby="tech-heading"
         className="py-12 sm:py-16 border-t border-border bg-muted/5"

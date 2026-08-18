@@ -1,4 +1,4 @@
-// /app/[locale]/services/ecommerce/page.tsx
+// /app/[locale]/services/business-dashboards/page.tsx
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import Link from "next/link";
@@ -8,23 +8,20 @@ import {
   ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  Rocket,
-  Database,
-  Code2,
-  Globe,
+  BarChart3,
   Zap,
+  Workflow,
+  Brain,
+  Database,
+  Globe,
   Sparkles,
   TrendingUp,
-  Users,
-  BarChart3,
+  Clock,
+  Shield,
   ChevronDown,
-  ShoppingCart,
-  LayoutDashboard,
-  CreditCard,
+  Users
 } from "lucide-react";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
-import { getBaseUrl } from "@/app/lib/buildPageMetadata";
-import infos from "@/app/dictionaries/global.json";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 
 type Props = { params: Promise<{ locale: Locale }> };
 
@@ -35,153 +32,148 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const data = dict.pages.services_page.services.ecommerce;
+  const data = dict.pages.services_page.services.business_dashboards;
   const keywords =
     locale === "ar"
       ? [
-          "تطوير متجر إلكتروني المغرب",
-          "إنشاء متجر إلكتروني المغرب",
-          "متجر إلكتروني احترافي",
-          "البيع عبر الإنترنت المغرب",
-          "الدفع عند الاستلام المغرب",
-          "بوابة الدفع CMI",
-          "SEO متجر إلكتروني",
-          "مطور متاجر إلكترونية المغرب",
-          "تكلفة متجر إلكتروني المغرب",
-          "متجر إلكتروني مخصص",
-          "بيع منتجات أونلاين المغرب",
-          "متجر سريع وآمن",
+          "أتمتة الأعمال المغرب",
+          "أنظمة أعمال مخصصة المغرب",
+          "أنظمة ذكاء اصطناعي للشركات",
+          "أتمتة سير العمل",
+          "لوحات تحكم مخصصة",
+          "لوحة تحكم إدارية",
+          "تحسين العمليات",
+          "تكامل الذكاء الاصطناعي",
+          "أتمتة المهام المتكررة",
+          "تقارير آلية",
+          "إدارة المخزون أتمتة",
+          "حلول برمجية للشركات المغرب",
         ]
       : locale === "fr"
         ? [
-            "développement e-commerce Maroc",
-            "création boutique en ligne Maroc",
-            "boutique en ligne Maroc",
-            "site e-commerce Maroc",
-            "vendre en ligne Maroc",
-            "paiement CMI Maroc",
-            "paiement à la livraison Maroc",
-            "SEO e-commerce Maroc",
-            "développeur e-commerce Maroc",
-            "prix site e-commerce Maroc",
-            "boutique en ligne sur mesure",
-            "boutique rapide et sécurisée",
+            "automatisation entreprise Maroc",
+            "systèmes d'entreprise sur mesure Maroc",
+            "systèmes IA entreprise",
+            "automatisation flux de travail",
+            "tableaux de bord personnalisés",
+            "tableau de bord gestion Maroc",
+            "optimisation processus",
+            "intégration IA entreprise",
+            "automatisation tâches répétitives",
+            "rapports automatisés",
+            "gestion stock automatisée",
+            "solutions logicielles PME Maroc",
           ]
         : [
-            "ecommerce development Morocco",
-            "online store Morocco",
-            "ecommerce website Morocco",
-            "custom online store",
-            "sell online Morocco",
-            "CMI payment integration Morocco",
-            "cash on delivery ecommerce Morocco",
-            "Shopify vs custom store",
-            "ecommerce SEO Morocco",
-            "online store developer Morocco",
-            "Next.js ecommerce",
-            "ecommerce website cost Morocco",
+            "business automation Morocco",
+            "custom business systems Morocco",
+            "AI systems for business",
+            "workflow automation Morocco",
+            "custom dashboards Morocco",
+            "management dashboard development",
+            "process optimization",
+            "AI integration for business",
+            "automate repetitive tasks",
+            "automated reporting system",
+            "inventory management automation",
+            "business software solutions Morocco",
           ];
 
   return buildPageMetadata({
     locale,
     title: data.title_metadata,
     description: data.description_metadata,
-    route: "/services/ecommerce",
+    route: "/services/business-dashboards",
     keywords: keywords,
     ogImagePath: data.image || "/cover/Designpro-cover.jpg",
     type: "website",
   });
 }
 
-const BENEFIT_ICONS = [ShoppingCart, TrendingUp, BarChart3];
+const BENEFIT_ICONS = [Clock, TrendingUp, BarChart3];
 const TECH_STACK = [
-  { name: "Next.js", icon: Code2 },
-  { name: "Stripe & CMI", icon: CreditCard },
-  { name: "Tailwind CSS", icon: Zap },
-  { name: "Express.js", icon: Rocket },
-  { name: "MongoDB", icon: Database },
-  { name: "Technical SEO", icon: Globe },
+  { name: "Next.js & React", icon: Globe },
+  { name: "Nest.js Backend", icon: Shield },
+  { name: "OpenAI & APIs", icon: Brain },
+  { name: "PostgreSQL & MongoDB", icon: Database },
+  { name: "REST & GraphQL APIs", icon: Workflow },
+  { name: "Docker & Cloud", icon: Zap },
 ];
 
-export default async function EcommercePage({ params }: Props) {
+export default async function BusinessDashboardPage({ params }: Props) {
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const svc = dict.pages.services_page;
-  const data = svc.services.ecommerce;
+  const data = svc.services.business_dashboards;
   const isRtl = locale === "ar";
   const Arr = isRtl ? ArrowRight : ArrowLeft;
   const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
 
-  const includedItems: string[] = data.included ?? data.features ?? [];
+  const includedItems: string[] = data.features ?? [];
   const faqs: { q: string; a: string }[] = data.faqs ?? [];
+  const baseUrl = getBaseUrl();
 
-  const schema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: data.title,
-    description: data.description,
-    image: data.image || `${getBaseUrl()}/cover/Designpro-cover.jpg`,
-    url: `${getBaseUrl()}/${locale}/services/ecommerce`,
-    provider: {
-      "@type": "Organization",
-      name: "Devsignpro",
-      url: `${getBaseUrl()}/${locale}`,
-      telephone: infos.phoneNumber,
-      email: infos.email,
-    },
-    serviceType:
+    "@id": `${baseUrl}/${locale}/services/business-dashboards#service`,
+    "name": data.title,
+    "description": data.description_metadata,
+    "image": data.image ? `${baseUrl}${data.image}` : `${baseUrl}/cover/Designpro-cover.jpg`,
+    "url": `${baseUrl}/${locale}/services/business-dashboards`,
+    "provider": { "@id": `${baseUrl}/#person` },
+    "isPartOf": { "@id": `${baseUrl}/#website` },
+    "inLanguage":
+      locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
+    "serviceType":
       locale === "en"
-        ? "E-commerce Development, SEO & AI Optimization"
+        ? "Custom Dashboards, Business Automation & AI Integration"
         : locale === "fr"
-          ? "Développement E-commerce, SEO & Optimisation IA"
-          : "تطوير التجارة الإلكترونية، SEO وتحسين الذكاء الاصطناعي",
-    areaServed: { "@type": "Country", name: "Morocco" },
-    offers: { "@type": "Offer", availability: "https://schema.org/InStock" },
+          ? "Tableaux de bord personnalisés, Automatisation & Intégration IA"
+          : "لوحات تحكم مخصصة، أتمتة الأعمال وتكامل الذكاء الاصطناعي",
+    "areaServed": [
+      { "@type": "Country", "name": "Morocco" },
+      { "@type": "Place", "name": "Worldwide" }
+    ],
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
+    "itemListElement": [
       {
-        "@type": "ListItem",
-        position: 1,
-        name: "Home",
-        item: `${getBaseUrl()}/${locale}`,
+        "@type": "ListItem", "position": 1,
+        "name": locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        "item": `${baseUrl}/${locale}`,
       },
       {
-        "@type": "ListItem",
-        position: 2,
-        name: locale === "ar" ? "خدمات" : "Services",
-        item: `${getBaseUrl()}/${locale}/services`,
+        "@type": "ListItem", "position": 2,
+        "name": locale === "en" ? "What I Do" : locale === "ar" ? "ما أقدمه" : "Ce que je fais",
+        "item": `${baseUrl}/${locale}/services`,
       },
       {
-        "@type": "ListItem",
-        position: 3,
-        name: data.title,
-        item: `${getBaseUrl()}/${locale}/services/ecommerce`,
+        "@type": "ListItem", "position": 3,
+        "name": locale === "en" ? "Business Dashboards" : locale === "ar" ? "لوحات التحكم" : "Tableaux de Bord",
+        "item": `${baseUrl}/${locale}/services/business-dashboards`,
       },
     ],
   };
 
-  const faqSchema =
-    faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((f) => ({
-            "@type": "Question",
-            name: f.q,
-            acceptedAnswer: { "@type": "Answer", text: f.a },
-          })),
-        }
-      : null;
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((f) => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": { "@type": "Answer", "text": f.a },
+    })),
+  } : null;
 
   return (
     <main className="min-h-screen bg-background">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <script
         type="application/ld+json"
@@ -226,10 +218,6 @@ export default async function EcommercePage({ params }: Props) {
           <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
           <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/[0.04] rotate-45" />
           <div className="absolute top-1/2 right-1/4 w-24 h-24 border border-white/[0.03] -rotate-12" />
-          <div className="absolute bottom-32 left-1/4 w-56 h-56 border border-white/[0.02] rotate-6" />
-          <div className="absolute top-16 right-16 w-8 h-8 bg-primary/10 rotate-12" />
-          <div className="absolute top-40 right-40 w-6 h-6 bg-primary/15 -rotate-6" />
-          <div className="absolute top-1/4 left-[15%] w-20 h-20 bg-primary/5 blur-2xl rounded-sm" />
           <div className="absolute bottom-1/4 right-[15%] w-28 h-28 bg-blue-500/5 blur-3xl rounded-sm" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/[0.03] blur-3xl rounded-sm" />
         </div>
@@ -238,14 +226,15 @@ export default async function EcommercePage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex flex-wrap items-center gap-2 text-sm">
               <li>
-                <Link
+               <Link
                   href={`/${locale}/services`}
                   className="inline-flex items-center gap-2 bg-primary/10 text-primary
-                             border border-primary/20 px-4 py-2 rounded-full font-medium
-                             hover:bg-primary/15 transition-colors"
+             border border-primary/20 px-4 py-2 rounded-full font-medium
+             hover:bg-primary/15 transition-colors"
                 >
                   <Arr size={14} aria-hidden="true" />
-                  {svc.title}
+                  {locale === "en" ? "All " : locale === "fr" ? "Tous " : "كل "}
+                  {svc.page_title}{" "}
                 </Link>
               </li>
               <li aria-current="page" className="sr-only">
@@ -257,12 +246,12 @@ export default async function EcommercePage({ params }: Props) {
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
-                       leading-[1.1] text-foreground mb-5 max-w-4xl"
+                       leading-[1.1] text-foreground mb-5 max-w-5xl"
           >
             {data.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl mb-7">
             {data.description}
           </p>
 
@@ -491,56 +480,76 @@ export default async function EcommercePage({ params }: Props) {
         </section>
       )}
 
-      {/* ── 5. PROCESS — 4 steps ── */}
-      {data.process?.length > 0 && (
-        <section
-          aria-labelledby="process-heading"
-          className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
-        >
-          <div className="text-center mb-10 sm:mb-12">
-            <h2
-              id="process-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-            >
-              {data.processTitle}
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              {data.processDesc}
-            </p>
+      {/* ── 5. USE CASES (specific to this service) ── */}
+        {data.useCases && (
+        <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20" aria-labelledby="usecases-heading">
+          <div className="text-center mb-12">
+            <h2 id="usecases-heading" className="text-2xl sm:text-3xl font-bold mb-3">{data.useCasesTitle}</h2>
+            <p className="text-muted-foreground">{data.useCasesDesc}</p>
           </div>
-
-          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 relative list-none p-0">
-            <div
-              className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-border"
-              aria-hidden="true"
-            />
-            {data.process.map(
-              (p: { step: string; title: string; text: string }, i: number) => (
-                <li
-                  key={i}
-                  className="flex flex-col items-center text-center gap-3 sm:gap-4"
-                >
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-card border border-primary/20 flex items-center justify-center z-10 shrink-0 shadow-sm">
-                    <span className="text-base sm:text-lg font-bold text-primary">
-                      {p.step}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1.5 sm:mb-2 text-base sm:text-lg">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed px-2">
-                      {p.text}
-                    </p>
-                  </div>
-                </li>
-              ),
-            )}
-          </ol>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {data.useCases.map((useCase, i) => (
+              <article key={i} className="p-6 rounded-2xl border border-border bg-card shadow-sm">
+                <h3 className="text-lg font-semibold mb-3">{useCase.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{useCase.text}</p>
+              </article>
+            ))}
+          </div>
         </section>
       )}
 
-      {/* ── 6. TECH STACK ── */}
+      {/* ── 6. PROCESS — 4 steps ── */}
+      {data.process?.length > 0 && (
+        <section
+          aria-labelledby="process-heading"
+          className="bg-muted/5 border-t border-border"
+        >
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+            <div className="text-center mb-10 sm:mb-12">
+              <h2
+                id="process-heading"
+                className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
+              >
+                {data.processTitle}
+              </h2>
+              <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
+                {data.processDesc}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 relative">
+              <div
+                className="hidden md:block absolute top-7 left-[16.66%] right-[16.66%] border-t-2 border-dashed border-border"
+                aria-hidden="true"
+              />
+
+              {data.process.map(
+                (p: { step: string; title: string; text: string }, i: number) => (
+                  <article
+                    key={i}
+                    className="flex flex-col items-center text-center gap-3 sm:gap-4"
+                  >
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-card border border-primary/20 flex items-center justify-center z-10 shrink-0 shadow-sm">
+                      <span className="text-base sm:text-lg font-bold text-primary">
+                        {p.step}
+                      </span>
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-foreground mb-1.5 sm:mb-2 text-base sm:text-lg">
+                        {p.title}
+                      </h3>
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed px-2">
+                        {p.text}
+                      </p>
+                    </div>
+                  </article>
+                ),
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+      {/* ── 7. TECH STACK ── */}
       <section
         aria-labelledby="tech-heading"
         className="py-12 sm:py-16 border-t border-border bg-muted/5"
@@ -579,7 +588,19 @@ export default async function EcommercePage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 7. FAQ — AEO / GEO section (native details = zero JS) ── */}
+    {/* ── CROSS LINK ── */}
+      {data.crossLink && (
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 py-12">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-6 rounded-2xl border border-border bg-card shadow-sm">
+            <p className="text-muted-foreground text-center sm:text-left">{data.crossLink.text}</p>
+            <Link href={`/${locale}${data.crossLink.href}`} className="inline-flex items-center gap-2 text-primary font-semibold hover:underline shrink-0">
+              {data.crossLink.linkText}
+            </Link>
+          </div>
+        </section>
+      )}
+
+      {/* ── 8. FAQ — AEO / GEO section (native details = zero JS) ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"
@@ -641,7 +662,7 @@ export default async function EcommercePage({ params }: Props) {
           />
           <div className="relative text-center py-10 sm:py-16 px-5 sm:px-12 z-10">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 max-w-2xl mx-auto leading-tight text-foreground">
-              {svc.ctat_title}
+              {svc.cta_title}
             </h2>
             <p className="text-muted-foreground mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
               {svc.cta_desc}

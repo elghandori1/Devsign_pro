@@ -1,13 +1,12 @@
 // components/PortfolioSchema.tsx
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
-import info from "@/app/dictionaries/global.json";
 
 interface Project {
   title: string;
   description: string;
-  href: string;
+  slug: string; 
   image: string;
-  tech?: string;
+  tech?: string[];
 }
 
 interface PortfolioSchemaProps {
@@ -24,85 +23,51 @@ export default function PortfolioSchema({
   projects,
 }: PortfolioSchemaProps) {
   const baseUrl = getBaseUrl();
+
   const collectionSchema = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    name: title,
-    description: description,
-    url: `${baseUrl}/${locale}/portfolio`,
-    provider: {
-      "@type": "ProfessionalService",
-      name: "Devsignpro",
-      url: baseUrl,
-      telephone: info.phoneNumber,
-      email: info.email,
-      address: {
-        "@type": "PostalAddress",
-        addressCountry: "MA",
-        addressLocality: info.address || "morocco",
-      },
-      serviceType:
-        locale === "en"
-          ? [
-              "Web Development",
-              "SEO Optimization",
-              "AI Automation",
-              "Dashboard Development",
-            ]
-          : locale === "ar"
-            ? [
-                "تطوير الويب",
-                "تحسين SEO",
-                "أتمتة الذكاء الاصطناعي",
-                "تطوير لوحات التحكم",
-              ]
-            : [
-                "Développement web",
-                "Optimisation SEO",
-                "Automatisation IA",
-                "Développement dashboards",
-              ],
-    },
-    mainEntity: {
+    "@id": `${baseUrl}/${locale}/portfolio#webpage`,
+    "url": `${baseUrl}/${locale}/portfolio`,
+    "name": title,
+    "description": description,
+    "inLanguage": locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
+    "isPartOf": { "@id": `${baseUrl}/#website` },
+    "about": { "@id": `${baseUrl}/#person` },
+    "mainEntity": {
       "@type": "ItemList",
-      itemListElement: projects.map((project, index) => ({
+      "@id": `${baseUrl}/${locale}/portfolio#projects-list`,
+      "itemListElement": projects.map((project, index) => ({
         "@type": "ListItem",
-        position: index + 1,
-        item: {
+        "position": index + 1,
+        "url": `${baseUrl}/${locale}/portfolio/${project.slug}`,
+        "name": project.title,
+        "item": {
           "@type": "CreativeWork",
-          name: project.title,
-          description: project.description,
-          url: `${baseUrl}/${locale}${project.href}`,
-          image: `${baseUrl}${project.image}`,
-          creator: {
-            "@type": "Person",
-            name: info.linkedinName || "devsignpro",
-            url: baseUrl,
-          },
-          ...(project.tech && {
-            keywords: project.tech.split(",").map((t) => t.trim()),
-          }),
-        },
-      })),
-    },
+          "name": project.title,
+          "url": `${baseUrl}/${locale}/portfolio/${project.slug}`,
+          "image": project.image,
+          "author": { "@id": `${baseUrl}/#person` }
+        }
+      }))
+    }
   };
   
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: [
+    "itemListElement": [
       {
         "@type": "ListItem",
-        position: 1,
-        name:
-        locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
-        item: `${baseUrl}/${locale}`,
+        "position": 1,
+        "name": locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        "item": `${baseUrl}/${locale}`,
       },
       {
         "@type": "ListItem",
-        position: 2,
-        name: title,
-        item: `${baseUrl}/${locale}/portfolio`,
+        "position": 2,
+        "name": locale === "ar" ? "معرض الأعمال" : "Portfolio",
+        "item": `${baseUrl}/${locale}/portfolio`,
       },
     ],
   };

@@ -1,5 +1,6 @@
 // components/ProjectsShowcase.tsx
 import { Locale } from "@/i18n-config";
+import { flattenPortfolioProjects } from "@/app/lib/portfolio";
 import ProjectsShowcaseSlider from "./ProjectsShowcaseSlider";
 
 export interface ProjectItem {
@@ -26,7 +27,7 @@ export default function ProjectsShowcase({
   locale,
 }: ProjectsShowcaseProps) {
   const isRtl = locale === "ar";
-  const professionalProjects = projectsData
+  const professionalProjects = flattenPortfolioProjects<ProjectItem>(projectsData)
     .filter((p) => p.type === "professional")
     .slice(0, 3);
 

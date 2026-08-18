@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Accueil",
-    "portfolio": "Projets",
+    "portfolio": "Portfolio",
     "services": "Ce que je fais",
     "about": "À Propos",
     "contact": "Contact"
@@ -9,23 +9,19 @@
   "homepage": {
     "hero": {
       "availability": "Disponible pour de nouveaux projets",
-      "title_line1": "Full-Stack Développeur",
-      "title_highlight": "& Spécialiste SEO Technique",
-      "description": "Je suis Développeur Web Full-Stack au Maroc, spécialisé en Next.js, SEO Technique et Optimisation pour la Recherche IA. J'aide les startups et les entreprises à créer des sites web rapides et modernes, des boutiques e-commerce et des applications web sur mesure optimisées pour la performance, les Core Web Vitals et la visibilité sur les moteurs de recherche.",
+      "title_line1": "Développeur Web",
+      "title_highlight": "et Expert SEO basé au Maroc",
+      "description": "Je suis un Développeur Web basé au Maroc, spécialisé en SEO et en optimisation pour la recherche IA. Je crée des sites web rapides, modernes et optimisés pour les moteurs de recherche, des boutiques e-commerce et des applications web sur mesure, conçus pour la performance, les Core Web Vitals et la visibilité en ligne.",
       "description_GEO": "J'optimise le contenu et les données structurées pour mieux se classer sur Google et être découverts par ChatGPT, Google AI Overviews, Perplexity et les autres moteurs de recherche IA — générant une visibilité réelle et une croissance durable.",
       "cta_primary": "Démarrer un projet",
-      "cta_secondary": "Voir mes projets",
+      "cta_secondary": "Voir mes réalisations",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Développeur Full-Stack & Optimisation SEO",
-      "cta_more_about": "En savoir plus",
-      "cta_download_cv": "Télécharger CV",
-      "cv_popup_title": "Télécharger CV Spécialisé",
-      "cv_popup_desc": "chacun contient des projets spécifiques",
+      "profile_role": "Développeur Full-Stack & Spécialiste SEO",
+      "cta_more_about": "En savoir plus sur moi",
+      "cta_download_cv": "Télécharger mon CV",
       "cv_popup_footer": "• Format PDF",
       "cv_web": "Développement Web",
-      "cv_web_desc": "MERN Stack, SEO Optimization",
-      "cv_devops": "DevOps & Cloud/Infrastructure",
-      "cv_devops_desc": "Docker, K8s, CI/CD, AWS/GCP"
+      "cv_web_desc": "Stack MERN & Optimisation SEO"
     },
     "stats": {
       "items": [
@@ -61,51 +57,73 @@
     },
     "services_section": {
       "sectionLabel": "Développement Web & Services Digitaux",
-      "heading": "Je développe des sites web performants, des boutiques e-commerce, des tableaux de bord sur mesure et des automatisations basées sur l'IA avec Next.js, le SEO technique, les Core Web Vitals et l'optimisation pour la recherche par IA afin d'améliorer la visibilité sur les moteurs de recherche, d'automatiser les processus et d'assurer une croissance durable en ligne.",
+      "heading": "Je développe des sites web performants, des boutiques e-commerce et des tableaux de bord sur mesure avec Next.js et React. Chaque projet est optimisé pour le SEO technique, les Core Web Vitals et la recherche IA, aidant ainsi les entreprises à améliorer leur visibilité et à assurer une croissance durable.",
       "viewAll": "Voir tous les services",
       "cta": "En savoir plus"
     },
     "about_section": {
       "sectionLabel": "À Propos",
-      "highlight": "Développeur Full-Stack, SEO Technique & Spécialiste Optimisation Recherche IA",
-      "paragraph1": "Je suis Développeur Web Full-Stack et Spécialiste SEO au Maroc, créant des sites web Next.js haute performance, des tableaux de bord personnalisés et des automatisations IA. J'aide les entreprises à améliorer leur visibilité sur les moteurs de recherche, optimiser leurs opérations et se développer en ligne avec des solutions propres et mesurables.",
-      "paragraph2": "Mon travail a été éprouvé sous pression, remportant la 1ère place aux hackathons de l'Université Al Akhawayn et de l'UM6P Ben Guerir, et la 2ème place à l'UM6P Rabat. Ces expériences ont affûté ma capacité à collaborer au sein d'équipes rapides, livrer du code production-ready avec Git, Docker et des pipelines CI/CD, et déployer des solutions fiables via des workflows agiles et des revues de code rigoureuses.",
+      "highlight": "Développeur Web Full-Stack, Expert SEO Technique & Optimisation Recherche IA",
+      "paragraph1": "Je suis Développeur Web Full-Stack et Spécialiste SEO basé au Maroc, spécialisé dans les applications Next.js haute performance, les tableaux de bord d'entreprise sur mesure et les automatisations IA. J'accompagne les entreprises pour améliorer leur visibilité search, optimiser leurs opérations et développer leur présence digitale grâce à une ingénierie propre et mesurable.",
+      "paragraph2": "Mes compétences techniques ont été éprouvées lors de compétitions d'ingénierie nationales sous haute pression, remportant la 1ère place à l'Université Al Akhawayn et à l'UM6P Ben Guerir, et la 2ème place à l'UM6P Rabat. Ces expériences ont affiné ma capacité à concevoir des solutions évolutives sous des délais stricts, à collaborer dans des équipes agiles et à déployer des logiciels prêts pour la production via des pipelines DevOps modernes.",
       "cta": "En Savoir Plus"
     },
     "why_we_are_section": {
-      "sectionLabel": "Pourquoi me choisir",
-      "description": "J'aide les startups, les entreprises et les entrepreneurs à créer des sites web performants, des boutiques e-commerce et des solutions digitales rapides, optimisées pour le SEO, prêtes pour les moteurs de recherche basés sur l'IA et conçues pour générer une croissance durable — bien au-delà d'un simple design attractif.",
+      "sectionLabel": "Pourquoi Me Choisir",
+      "description": "Je conçois des sites web performants, des boutiques e-commerce et des solutions digitales rapides, optimisés SEO et prêts pour l'IA, conçus pour une croissance durable — pas seulement de belles interfaces.",
       "reasons": [
         {
-          "title": "SEO Technique & Optimisation pour la Recherche IA",
-          "description": "Chaque projet est développé avec un SEO technique avancé, les Core Web Vitals, les données structurées et l'optimisation pour la recherche par IA afin d'améliorer votre visibilité sur Google, ChatGPT, Google AI Overviews, et les autres moteurs de recherche alimentés par l'IA."
+          "title": "SEO Technique & Optimisation IA",
+          "description": "SEO technique intégré, Core Web Vitals et optimisation pour la recherche IA afin de dominer Google et d'être cité par ChatGPT."
         },
         {
           "title": "Développement Full-Stack Moderne",
-          "description": "Sites web sur mesure, boutiques e-commerce, tableaux de bord et applications web développés avec Next.js, React et des technologies évolutives pour garantir performance, sécurité et croissance à long terme."
+          "description": "Sites, tableaux de bord et applications sur mesure avec Next.js et React pour la vitesse, la sécurité et l'évolutivité."
         },
         {
-          "title": "Automatisation & Optimisation des Processus",
-          "description": "Automatisez les tâches répétitives, centralisez vos opérations et intégrez des solutions basées sur l'IA afin de gagner du temps, d'améliorer la productivité et de faciliter la prise de décision."
+          "title": "Automatisation & Efficacité",
+          "description": "Automatisez les tâches répétitives et intégrez des workflows IA pour gagner du temps et améliorer la productivité."
         },
         {
-          "title": "Performance, Fiabilité & Accompagnement",
-          "description": "Des solutions rapides, sécurisées et évolutives, développées avec un code propre, une communication transparente et un accompagnement continu pour assurer la réussite de votre activité."
+          "title": "Performance & Support",
+          "description": "Solutions rapides, sécurisées et évolutives soutenues par un code propre, une communication claire et un support continu."
         }
       ]
     },
     "projects_section": {
-      "sectionLabel": "Projets Sélectionnés",
-      "heading": "Des Projets à Impact Réel",
-      "description": "Une sélection d'applications web, de sites corporate, d'optimisation SEO et de tableaux de bord d'automatisation IA. Chaque projet est construit avec un fort accent sur la performance, l'évolutivité, l'expérience utilisateur (UX) et l'application concrète — couvrant des projets clients, des initiatives personnelles et des travaux académiques."
+      "heading": "Des Projets qui Ont un Véritable Impact",
+      "description": "Découvrez une sélection de sites web d'entreprise performants, de solutions e-commerce et de tableaux de bord sur mesure développés avec Next.js et React.js. Chaque projet est conçu pour la vitesse, l'évolutivité et le SEO technique, offrant une expérience utilisateur exceptionnelle et des résultats commerciaux mesurables."
     },
-    "technology_stack": {
-      "sectionLabel": "Stack Technologique",
-      "description": "Je développe avec un écosystème full-stack moderne optimisé pour la performance, le SEO et la visibilité sur les moteurs de recherche IA — incluant Next.js, React, TypeScript, Node.js, MongoDB, Docker et l'infrastructure cloud."
+    "techStack": {
+      "title": "Les technologies avec lesquelles je travaille — et pourquoi",
+      "subtitle": "Chaque outil est choisi pour la sécurité, la rapidité, le SEO et la fiabilité à long terme",
+      "items": [
+        {
+          "name": "Next.js",
+          "use": "Sites web & E-commerce",
+          "why": "Le rendu côté serveur et le SEO intégré (métadonnées, sitemaps, données structurées) garantissent des pages rapides et bien classées sur Google dès le premier jour."
+        },
+        {
+          "name": "React",
+          "use": "Tableaux de bord & Applications web",
+          "why": "Des interfaces interactives, proches d'une application, qui se mettent à jour instantanément sans rechargement — parfaites pour les tableaux de bord d'entreprise et les panneaux d'administration."
+        },
+        {
+          "name": "Nest.js",
+          "use": "Backends & APIs",
+          "why": "Une architecture backend structurée et évolutive qui sécurise vos données et facilite la croissance et la maintenance de votre application."
+        },
+        {
+          "name": "TypeScript",
+          "use": "Chaque projet",
+          "why": "Détecte les erreurs avant qu'elles n'atteignent vos utilisateurs — moins de bugs, des coûts de maintenance réduits, plus de fiabilité."
+        }
+      ],
+      "extra": "Je travaille également avec Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions et d'autres outils modernes pour créer des solutions digitales rapides, sécurisées et évolutives."
     },
     "contact_section": {
       "sectionLabel": "Construisons Quelque Chose Ensemble",
-      "description": "Besoin d'un site web Next.js rapide, d'une optimisation SEO ou d'un tableau de bord IA ? Je suis disponible pour des projets freelance, des collaborations et des partenariats à long terme. Contactez-moi et discutons de votre projet.",
+      "description": "Besoin d'un site Next.js performant, d'un SEO technique ou d'un tableau de bord sur mesure ? Je suis disponible pour des projets freelance, des collaborations stratégiques et des opportunités à temps plein. Contactez-moi pour discuter de l'accélération de votre croissance digitale.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Discuter sur WhatsApp",
       "email": "Email",
@@ -120,390 +138,532 @@
   },
   "pages": {
     "services_page": {
-      "title": "Services",
-      "subtitle": "Mes services digitaux",
-      "heading": "Développement web, SEO technique et automatisation par l'IA au Maroc",
-      "description": "Développez votre entreprise avec des sites Next.js haute performance, du e-commerce, du SEO technique et l'optimisation pour l'IA (GEO/AEO). Je crée des solutions numériques rapides et évolutives depuis le Maroc qui améliorent votre visibilité sur Google, vous font référencer par ChatGPT et Perplexity, fluidifient vos opérations et génèrent une croissance mesurable.",
+      "page_title": "Services",
+      "title": "Services de Développement Web & SEO au Maroc",
+      "heading": "Développement Web, SEO Technique & Tableaux de Bord sur Mesure",
+      "description": "Explorez ma gamme complète de services digitaux conçus pour développer votre activité. Du développement web sur mesure à l'e-commerce, en passant par le SEO technique, l'optimisation IA et les tableaux de bord automatisés.",
+      "subtitle": "Développement Full-Stack, SEO Technique & Solutions IA",
+      "subtitle_description": "Des services digitaux complets conçus pour se classer sur Google, être cités par l'IA et optimiser vos opérations commerciales.",
       "hashtags": [
         "#DéveloppementWeb",
-        "#SEO",
-        "#AutomatisationIA",
-        "#SolutionsDigitales"
+        "#Nextjs",
+        "#SEOTechnique",
+        "#RechercheIA",
+        "#Automatisation",
+        "#TableauxDeBord"
       ],
       "services": {
-        "web": {
+        "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Développement de Sites Web sur Mesure avec SEO technique au Maroc",
-          "title_metadata": "Développement Web au Maroc | SEO, GEO & Optimisé IA",
-          "description_metadata": "Développement de sites web rapides et sécurisés au Maroc, avec SEO technique, Core Web Vitals et optimisation IA. Conçus pour Google et cités par l'IA.",
-          "description": "Sites web professionnels sur mesure, sites d'entreprise, landing pages et applications web conçus pour la vitesse, la scalabilité et une croissance durable. Chaque projet intègre le SEO technique, l'optimisation des Core Web Vitals, les données structurées (Schema.org) et l'optimisation pour la recherche IA, afin d'augmenter votre visibilité sur Google, ChatGPT, les aperçus IA de Google (AI Overviews), Perplexity et les autres moteurs de recherche propulsés par l'IA.",
-          "title_card": "Développement Web avec SEO & Optimisation IA",
-          "overviewHeadline": "Un Développement Web Qui Génère Trafic, Prospects & Croissance",
-          "startDescription": "Votre site web doit faire plus que paraître professionnel : il doit attirer des visiteurs qualifiés, expliquer clairement vos services et transformer vos prospects en clients réels.",
-          "longDescription": "Chaque projet est construit avec des technologies modernes comme Next.js et React, optimisé pour la vitesse, la sécurité, l'évolutivité, le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA. Je structure le contenu, les métadonnées et le schema markup pour que votre entreprise soit performante sur Google et comprise par les plateformes IA comme ChatGPT, Google AI Overviews et Perplexity. De la planification au déploiement, chaque décision vise la visibilité à long terme, la performance et une croissance mesurable de votre activité.",
-          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, avec une expérience des workflows Git, CI/CD, Docker et des pratiques de développement modernes.",
+          "title": "Services de Développement Web au Maroc — Rapides, Sécurisés, Optimisés SEO",
+          "title_metadata": "Services de Développement Web au Maroc | Rapides & SEO",
+          "description_metadata": "Développement web sur mesure au Maroc. Sites rapides avec Next.js, SEO technique et Core Web Vitals. Conçus pour classer et convertir.",
+          "description": "À la recherche des meilleurs services de développement web au Maroc ? Je crée des sites d'entreprise sur mesure, des plateformes e-commerce et des applications web haute performance, optimisés pour le SEO technique et les Core Web Vitals. Développez votre activité avec une présence en ligne conçue pour dominer Google et les moteurs de recherche IA.",
+          "title_card": "Développement Web avec SEO & Overview IA Intégrés",
+          "overviewHeadline": "Un Développement Web qui Génère du Trafic, des Leads et de la Croissance",
+          "startDescription": "Votre site web doit faire plus que paraître professionnel : il doit attirer des visiteurs qualifiés, présenter clairement vos services et transformer les prospects en clients.",
+          "longDescription": "Chaque projet est développé avec des technologies modernes comme Next.js et React, optimisé pour la vitesse, la sécurité, l'évolutivité, le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA. Je structure le contenu, les métadonnées et le schéma pour que votre entreprise performe sur Google et soit comprise par les plateformes IA comme ChatGPT, Google AI Overviews et Perplexity. De la planification au déploiement, chaque décision vise la visibilité à long terme et la croissance mesurable.",
+          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, apportant mon expérience avec les workflows Git, CI/CD, Docker et les pratiques de développement modernes.",
           "link": "/services/web-development",
           "start_btn": "Démarrer Votre Projet",
           "allServicesBtn": "Voir Tous les Services",
-          "overviewTitle": "Pourquoi Me Choisir ?",
+          "overviewTitle": "Pourquoi Choisir Mes Services de Développement Web ?",
           "includedTitle": "Ce Qui Est Inclus",
           "includedDesc": "Chaque projet de développement web inclut :",
           "benefitsTitle": "Ce Que Vous Gagnerez",
           "benefitsDesc": "En travaillant avec moi sur votre site web, vous pouvez vous attendre à :",
-          "processTitle": "Ma Méthode de Travail",
-          "processDesc": "Un processus clair et éprouvé qui livre votre projet dans les délais et selon vos objectifs :",
-          "techTitle": "Technologies Que J'Utilise",
-          "techDesc": "Je choisis les bonnes technologies selon les besoins de votre projet et vos objectifs business — pas selon les tendances.",
+          "processTitle": "Mon Processus de Développement",
+          "processDesc": "Un processus clair et éprouvé pour livrer votre projet à temps et atteindre vos objectifs :",
+          "techTitle": "La Stack Technologique",
+          "techDesc": "Je choisis les bonnes technologies en fonction des exigences de votre projet et de vos objectifs commerciaux — pas des tendances.",
           "faqTitle": "Questions Fréquentes",
-          "faqDesc": "Des réponses directes sur le développement web, le SEO et l'optimisation pour la recherche IA :",
-          "AnothersrvcBtn": "Voir Tous les Services",
+          "faqDesc": "Réponses directes sur le développement web, le SEO et l'optimisation de la recherche IA :",
+          "AnothersrvcBtn": "Explorer d'Autres Services",
           "features": [
-            "Structure Optimisée SEO",
-            "Prêt pour la Recherche IA (GEO)",
-            "Responsive",
+            "Architecture Optimisée SEO & GEO",
+            "Entièrement Responsive",
             "Core Web Vitals Optimisés"
           ],
           "included": [
-            "Design et développement sur mesure avec Next.js, React et TypeScript",
-            "SEO on-page : HTML sémantique, métadonnées, schema markup, sitemap et robots.txt",
+            "Design UI/UX sur mesure et développement frontend avec Next.js, React et TypeScript",
+            "SEO on-page : HTML sémantique, métadonnées, balisage schema, sitemaps XML et robots.txt",
             "Optimisation GEO & AEO pour que les assistants IA comprennent, citent et recommandent votre entreprise",
-            "Optimisation des Core Web Vitals : optimisation d'images, mise en cache et temps de chargement instantanés",
-            "Intégration de Google Search Console, Google Analytics et Bing Webmaster Tools dès le premier jour",
-            "Accessibilité (WCAG) et HTML sémantique pour une meilleure utilisabilité et visibilité sur les moteurs",
-            "Renforcement de la sécurité : HTTPS, en-têtes sécurisés et formulaires protégés",
-            "Support post-lancement, documentation et suivi des performances"
+            "Optimisation des Core Web Vitals : optimisation des images, stratégies de mise en cache et temps de chargement instantanés",
+            "Intégration de Google Search Console, Google Analytics 4 et Bing Webmaster Tools dès le premier jour",
+            "Renforcement de la sécurité : HTTPS, en-têtes HTTP sécurisés et soumissions de formulaires protégées"
           ],
           "benefits": [
             {
-              "title": "Améliorer la Visibilité sur les Moteurs",
-              "text": "Code sémantique, données structurées, métadonnées optimisées et Core Web Vitals rapides — tout ce que Google récompense, intégré dès la première ligne de code."
+              "title": "Visibilité Search Maximale",
+              "text": "Code sémantique, données structurées, métadonnées optimisées et Core Web Vitals impeccables — tout ce que Google récompense, conçu dès la première ligne de code."
             },
             {
-              "title": "Visibilité dans les résultats de recherche IA",
-              "text": "Contenu structuré pour le GEO et l'AEO, afin que ChatGPT, Gemini et Perplexity puissent citer et recommander votre entreprise quand les gens recherchent des services comme les vôtres."
+              "title": "Présence dans les Résultats IA",
+              "text": "Contenu structuré pour le GEO et l'AEO, garantissant que ChatGPT, Gemini et Perplexity peuvent citer et recommander votre entreprise aux utilisateurs."
             },
             {
-              "title": "Plus de conversions & une croissance mesurable",
-              "text": "Appels à l'action clairs, signaux de confiance et suivi analytique — chaque visiteur est guidé vers la conversion, et vous mesurez précisément ce qui fonctionne."
+              "title": "Conversions et ROI Mesurables",
+              "text": "Appels à l'action clairs, signaux de confiance et suivi analytique précis — guidant chaque visiteur vers la conversion."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Découverte & Recherche de Mots-Clés",
-              "text": "J'analyse vos objectifs, votre audience, vos concurrents et les mots-clés exacts que vos clients recherchent — avant d'écrire la moindre ligne de code."
+              "title": "Découverte & Stratégie",
+              "text": "J'analyse vos objectifs commerciaux, votre audience cible et les mots-clés exacts utilisés par vos clients — avant d'écrire la moindre ligne de code."
             },
             {
               "step": "02",
-              "title": "Design & Développement",
-              "text": "Un développement propre et rapide avec Next.js — HTML sémantique, design responsive et accessibilité intégrés dans chaque composant."
+              "title": "Design & Architecture",
+              "text": "Développement propre et évolutif avec Next.js — HTML sémantique, design responsive et accessibilité intégrés dans chaque composant."
             },
             {
               "step": "03",
-              "title": "Optimisation SEO & IA",
-              "text": "Schema markup, métadonnées, sitemap et contenu structuré pour le classement Google et les citations IA (GEO/AEO)."
+              "title": "Intégration SEO & IA",
+              "text": "Balisage schema, métadonnées, sitemaps et contenu structuré pour les classements Google traditionnels et les citations IA modernes."
             },
             {
               "step": "04",
-              "title": "Lancement, Analytics & Amélioration Continue",
-              "text": "Mise en ligne avec analytics configurés, Search Console connectée, sitemap soumis et benchmarks Core Web Vitals validés."
+              "title": "Lancement & Monitoring",
+              "text": "Mise en ligne avec analytiques configurées, Search Console connectée et benchmarks Core Web Vitals vérifiés pour un succès continu."
             }
           ],
           "caseStudy": {
-            "badge": "Projet client réel",
-            "title": "Un site corporate qui a triplé son trafic en deux mois",
-            "description": "Neodyne Group avait besoin d'un site vitrine rapide et professionnel, capable de se positionner sur Google et de transformer les visiteurs en prospects. Nous avons conçu et développé un site sur mesure — sans template ni page builder — avec une optimisation SEO et IA intégrée dès le premier jour.",
+            "badge": "Projet Client Réel",
+            "title": "Un Site Corporate qui a Triplé son Trafic en Deux Mois",
+            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de se classer sur Google et de transformer les visiteurs en leads. Nous avons conçu et construit un site sur mesure à partir de zéro — sans templates, sans page builders — avec une optimisation SEO et recherche IA complète intégrée dès le premier jour.",
+            "results": [
+              {
+                "value": "2 900+",
+                "label": "nouveaux utilisateurs dans les deux premiers mois"
+              },
+              {
+                "value": "3×",
+                "label": "croissance du trafic organique"
+              },
+              {
+                "value": "<1s",
+                "label": "temps de chargement moyen"
+              }
+            ],
+            "image": "/images/projects/Corporate-Website.png",
+            "imageAlt": "Page d'accueil du site corporate Neodyne Group développé par Devsignpro",
+            "link": {
+              "href": "/portfolio/corporate-website",
+              "label": "Voir l'étude de cas complète"
+            }
+          },
+          "crossLink": {
+            "text": "Vous avez déjà un site qui ne se classe pas ?",
+            "linkText": "Services de SEO Technique →",
+            "href": "/services/technical-seo"
+          },
+          "faqs": [
+            {
+              "q": "Combien de temps faut-il pour créer un site web professionnel ?",
+              "a": "La plupart des sites d'entreprise prennent de 3 à 6 semaines du lancement à la mise en ligne, selon l'envergure. Les landing pages peuvent être prêtes en une semaine, tandis que les applications web complexes prennent plus de temps. Vous recevez un calendrier clair avant de commencer."
+            },
+            {
+              "q": "Quelles technologies utilisez-vous ?",
+              "a": "Je développe principalement avec Next.js, React, TypeScript et Tailwind CSS. Cette stack moderne garantit que votre site est incroyablement rapide, sécurisé et facile à faire évoluer à mesure que votre entreprise grandit."
+            },
+            {
+              "q": "Pouvez-vous garantir la première page de Google ?",
+              "a": "Aucun développeur honnête ne peut garantir des positions spécifiques. Ce que je garantis, c'est une base technique impeccable que les moteurs de recherche adorent. Vous pouvez voir les résultats concrets de cette approche dans mes études de cas."
+            },
+            {
+              "q": "Proposez-vous de la maintenance après le lancement ?",
+              "a": "Oui. Je propose des forfaits de maintenance mensuels qui incluent le monitoring des performances, les mises à jour de sécurité et les bilans SEO pour garantir que votre site reste rapide, sécurisé et visible à mesure que les algorithmes évoluent."
+            },
+            {
+              "q": "Pouvez-vous refondre mon site existant au lieu d'en créer un nouveau ?",
+              "a": "Absolument. Je peux moderniser votre site actuel, corriger les problèmes de SEO technique, améliorer les Core Web Vitals et le préparer pour la recherche IA sans nécessairement tout reconstruire à partir de zéro."
+            }
+          ]
+        },
+        "technical_seo": {
+          "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+          "title": "Services SEO Technique & Audits: Corrigez, Optimisez, Classez",
+          "title_metadata": "Services SEO Technique & Audits | Corriger, Optimiser, Booster",
+          "description_metadata": "Audits SEO techniques, corrections d'indexabilité et optimisation Core Web Vitals pour améliorer vos classements Google.",
+          "description": "Votre site est-il techniquement sain mais toujours mal classé ? Je propose des audits SEO techniques, l'optimisation des Core Web Vitals et des corrections d'indexabilité pour maximiser vos performances sur Google et les moteurs IA.",
+          "title_card": "Audits SEO Technique & Optimisation Core Web Vitals",
+          "overviewHeadline": "Le SEO Technique qui Corrige ce qui Freine vos Classements",
+          "startDescription": "Un beau design et un excellent contenu ne servent à rien si les moteurs de recherche ne peuvent pas explorer, indexer ou comprendre votre site. Le SEO technique est la fondation qui fait fonctionner tout le reste.",
+          "longDescription": "J'audite et corrige les problèmes techniques qui empêchent les sites de se classer : Core Web Vitals lents, erreurs d'exploration, redirections cassées, données structurées manquantes et mauvaise indexabilité. Chaque correction est mise en œuvre avec précision — du balisage schema aux balises canoniques, en passant par l'optimisation des images et les stratégies de cache. Que vous ayez besoin d'un audit ponctuel ou d'un support SEO technique continu, je veille à ce que votre site réponde aux normes les plus élevées.",
+          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, apportant mon expérience avec les workflows Git, CI/CD, Docker et les pratiques de développement modernes.",
+          "link": "/services/technical-seo",
+          "start_btn": "Demander un Audit Technique",
+          "allServicesBtn": "Voir Tous les Services",
+          "overviewTitle": "Pourquoi Choisir Mes Services SEO Technique ?",
+          "includedTitle": "Ce Qui Est Inclus",
+          "includedDesc": "Chaque projet SEO technique inclut :",
+          "benefitsTitle": "Ce Que Vous Gagnerez",
+          "benefitsDesc": "En travaillant avec moi sur votre SEO technique, vous pouvez vous attendre à :",
+          "processTitle": "Mon Processus SEO Technique",
+          "processDesc": "Une approche systématique pour diagnostiquer, corriger et surveiller la santé technique de votre site :",
+          "techTitle": "Outils & Technologies Utilisés",
+          "techDesc": "Je combine des outils leaders du marché avec une inspection manuelle du code pour les audits les plus précis :",
+          "faqTitle": "Questions Fréquentes",
+          "faqDesc": "Réponses directes sur le SEO technique, les Core Web Vitals et la performance web :",
+          "AnothersrvcBtn": "Explorer d'Autres Services",
+          "features": [
+            "Corrections d'Explorabilité & Indexabilité",
+            "Optimisation Core Web Vitals",
+            "Données Structurées & Balisage Schema"
+          ],
+          "included": [
+            "Audit SEO technique complet : erreurs d'exploration, liens cassés, chaînes de redirection et pages orphelines",
+            "Optimisation Core Web Vitals : améliorations LCP, INP et CLS pour des temps de chargement plus rapides",
+            "Implémentation de balisage schema : données structurées JSON-LD pour les rich snippets et la compréhension IA",
+            "Optimisation du sitemap XML et du robots.txt pour une meilleure efficacité d'exploration",
+            "Balises canoniques et résolution de contenu dupliqué",
+            "Vérification HTTPS, en-têtes de sécurité et compatibilité mobile"
+          ],
+          "benefits": [
+            {
+              "title": "Meilleurs Classements Google",
+              "text": "Corrigez les barrières techniques qui empêchent votre contenu de se classer. Un code propre, des temps de chargement rapides et une indexation correcte donnent à Google toutes les raisons de vous classer plus haut."
+            },
+            {
+              "title": "Meilleure Expérience Utilisateur",
+              "text": "Des Core Web Vitals rapides signifient moins de rebonds, des sessions plus longues et plus de conversions. La vitesse n'est pas qu'une métrique SEO — c'est une métrique de revenus."
+            },
+            {
+              "title": "Préparation à la Recherche IA",
+              "text": "Les données structurées et une architecture propre aident les moteurs IA comme ChatGPT et Perplexity à comprendre, citer et recommander votre contenu."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Audit Technique & Découverte",
+              "text": "Je réalise un audit complet de votre site avec des outils leaders du marché, identifiant chaque problème technique qui freine vos classements."
+            },
+            {
+              "step": "02",
+              "title": "Priorisation & Stratégie",
+              "text": "Toutes les corrections ne se valent pas. Je priorise les problèmes par impact, vous donnant une feuille de route claire pour des résultats rapides."
+            },
+            {
+              "step": "03",
+              "title": "Implémentation & Corrections",
+              "text": "J'implémente les corrections directement dans votre codebase ou fournis une documentation développeur détaillée — balisage schema, optimisation vitesse, corrections d'exploration."
+            },
+            {
+              "step": "04",
+              "title": "Monitoring & Reporting",
+              "text": "Après l'implémentation, je surveille vos Core Web Vitals, votre couverture d'indexation et vos performances search pour garantir des résultats mesurables."
+            }
+          ],
+          "caseStudy": {
+            "badge": "Résultats Client Réels",
+            "title": "Le SEO Technique qui a Mené un Site Corporate à la #1 Position sur Google",
+            "description": "Le site corporate de Neodyne Group a été construit de zéro avec le SEO technique comme priorité. Nous avons implémenté des données structurées, optimisé les Core Web Vitals, corrigé les problèmes d'indexabilité et soumis un sitemap propre — résultant en une #1 position sur Google et 2 900+ nouveaux utilisateurs en deux mois.",
             "results": [
               {
                 "value": "2 900+",
                 "label": "nouveaux utilisateurs en deux mois"
               },
               {
-                "value": "3×",
-                "label": "de croissance du trafic organique"
+                "value": "#1",
+                "label": "position Google pour le mot-clé cible"
               },
               {
                 "value": "<1s",
-                "label": "de temps de chargement moyen"
+                "label": "temps de chargement moyen"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
-            "imageAlt": "Page d'accueil du site corporate de Neodyne Group réalisé par Devsignpro",
+            "imageAlt": "Page d'accueil du site corporate Neodyne Group optimisé avec SEO technique par Devsignpro",
             "link": {
               "href": "/portfolio/corporate-website",
               "label": "Voir l'étude de cas complète"
             }
           },
+          "crossLink": {
+            "text": "Besoin d'un nouveau site construit avec le SEO dès le départ ?",
+            "linkText": "Services de Développement Web →",
+            "href": "/services/web-development"
+          },
           "faqs": [
             {
-              "q": "Combien de temps faut-il pour créer un site web professionnel ?",
-              "a": "La plupart des sites vitrines prennent 2 à 4 semaines du lancement à la mise en ligne, selon le nombre de pages et de fonctionnalités. Une landing page peut être prête en une semaine environ, tandis qu'une application web sur mesure peut prendre 4 à 8 semaines. Vous recevez un calendrier clair avant de commencer."
+              "q": "Qu'est-ce que le SEO technique et pourquoi est-ce important ?",
+              "a": "Le SEO technique désigne les optimisations backend qui aident les moteurs de recherche à explorer, indexer et comprendre votre site. Sans cela, même le meilleur contenu ne se classera pas. Il inclut la vitesse, la compatibilité mobile, les données structurées et l'indexabilité."
             },
             {
-              "q": "Mon site web sera-t-il bien classé sur Google ?",
-              "a": "Oui — chaque site est construit avec le SEO technique dès le départ : HTML sémantique, schema markup, métadonnées optimisées, Core Web Vitals rapides et intégration de Google Search Console. Cela donne à votre site la meilleure base possible pour se classer sur les mots-clés que vos clients recherchent."
+              "q": "Combien de temps dure un audit SEO technique ?",
+              "a": "Un audit complet prend généralement 3 à 5 jours ouvrables, selon la taille de votre site. Vous recevrez un rapport détaillé avec des recommandations priorisées et un plan d'action clair."
             },
             {
-              "q": "Qu'est-ce que le GEO et pourquoi est-ce important pour mon entreprise ?",
-              "a": "Le GEO (Generative Engine Optimization) consiste à structurer votre site web pour que les assistants IA comme ChatGPT, Gemini et Perplexity puissent comprendre, citer et recommander votre entreprise. Comme de plus en plus de personnes interrogent l'IA au lieu de chercher sur Google, le GEO aide votre entreprise à apparaître dans ces réponses générées par l'IA."
+              "q": "Pouvez-vous corriger les problèmes Core Web Vitals sur mon site existant ?",
+              "a": "Oui. Je suis spécialisé dans le diagnostic et la correction des problèmes Core Web Vitals (LCP, INP, CLS) sur les sites existants. Cela inclut l'optimisation des images, les stratégies de cache, le code splitting et l'élimination des ressources bloquantes."
             },
             {
-              "q": "Quelles technologies utilisez-vous pour créer des sites web ?",
-              "a": "Je développe avec Next.js, React, TypeScript et Tailwind CSS — des technologies modernes choisies pour la vitesse, la sécurité et l'évolutivité. Ce stack alimente certains des sites les plus rapides au monde et rend votre site facile à maintenir et à faire évoluer."
+              "q": "Travaillez-vous avec WordPress, Shopify ou uniquement des sites sur mesure ?",
+              "a": "Je travaille avec toutes les plateformes, mais je suis spécialisé dans les sites sur mesure avec Next.js et React. Pour WordPress ou Shopify, je peux auditer et fournir des recommandations prêtes à être implémentées par votre équipe."
             },
             {
-              "q": "Combien coûte la création d'un site web au Maroc ?",
-              "a": "Le coût dépend de la complexité du projet, des fonctionnalités, du design, des exigences SEO et des intégrations. Un site vitrine simple coûte moins cher qu'une application web sur mesure ou une plateforme e-commerce. Je fournis des devis personnalisés selon vos objectifs, en garantissant que chaque projet est optimisé pour la performance, le SEO technique et la croissance à long terme."
+              "q": "Le SEO technique garantit-il de meilleurs classements ?",
+              "a": "Personne ne peut garantir des positions spécifiques. Cependant, le SEO technique supprime les barrières qui empêchent votre site de se classer. Combiné à un contenu de qualité, il vous donne la base la plus solide possible pour une croissance organique."
             },
             {
-              "q": "Proposez-vous une maintenance après le lancement du site ?",
-              "a": "Oui — je propose des forfaits de maintenance et de croissance couvrant les mises à jour, la sécurité, les sauvegardes, le suivi des performances et l'amélioration continue du SEO, pour que votre site reste performant bien après le jour du lancement."
-            },
-            {
-              "q": "Pouvez-vous refondre mon site existant au lieu d'en créer un nouveau ?",
-              "a": "Je peux refondre et moderniser des sites existants : améliorer les performances, corriger les problèmes de SEO technique, optimiser les Core Web Vitals, implémenter les données structurées et préparer le site pour la recherche IA — sans tout reconstruire de zéro lorsque c'est possible."
+              "q": "Quels outils utilisez-vous pour les audits SEO techniques ?",
+              "a": "J'utilise une combinaison de Google Search Console, Lighthouse, Screaming Frog, PageSpeed Insights et une inspection manuelle du code pour identifier chaque problème technique."
             }
           ]
         },
-        "ecommerce": {
+        "ecommerce_development": {
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
-          "title": "Développement E-commerce Sur Mesure au Maroc",
-          "title_metadata": "Développement E-commerce au Maroc | Des Boutiques en Ligne Qui Vendent",
-          "description_metadata": "Développement e-commerce sur mesure au Maroc — boutiques en ligne rapides et sécurisées avec paiements CMI, paiement à la livraison & SEO. Conçues pour se positionner sur Google et vendre plus.",
-          "description": "Des boutiques e-commerce sur mesure conçues pour vendre en ligne avec des paiements sécurisés, des performances rapides et une architecture évolutive. Chaque boutique intègre le SEO technique, les Core Web Vitals, des pages produits optimisées et l'optimisation pour la recherche IA, afin d'augmenter votre visibilité sur Google, ChatGPT, les aperçus IA de Google (AI Overviews), Perplexity et les autres moteurs de recherche propulsés par l'IA.",
-          "title_card": "Développement E-commerce",
-          "overviewHeadline": "Des Boutiques en Ligne Conçues pour Vendre, Performer et Grandir",
-          "startDescription": "Votre boutique en ligne doit faire bien plus que présenter des produits. Elle doit attirer les bons clients, instaurer la confiance, offrir une expérience d'achat fluide et transformer les visiteurs en acheteurs fidèles.",
-          "longDescription": "Que vous lanciez une nouvelle activité en ligne ou que vous modernisiez une boutique existante, je développe des sites e-commerce sur mesure pensés pour la croissance. Chaque boutique inclut l'intégration de paiements sécurisés, la gestion des produits, des pages produits optimisées, le SEO technique, l'optimisation des Core Web Vitals et l'optimisation pour la recherche IA. De la page d'accueil au paiement, chaque élément est conçu pour améliorer l'expérience utilisateur, augmenter les conversions et aider vos produits à être découverts sur Google, Google Shopping, ChatGPT, Perplexity et les autres moteurs de recherche propulsés par l'IA.",
-          "company_recruitment": "Je collabore également avec des marques, des agences et des équipes retail sur des projets e-commerce à long terme, incluant les migrations, les refontes et l'optimisation des performances.",
-          "link": "/services/ecommerce",
-          "start_btn": "Lancez Votre Boutique",
+          "title": "Développement de Sites E-commerce au Maroc",
+          "title_metadata": "Développement E-commerce au Maroc | Boutiques qui Vendent",
+          "description_metadata": "Développement e-commerce sur mesure au Maroc — boutiques rapides et sécurisées avec paiements CMI, paiement à la livraison & SEO. Conçues pour vendre plus.",
+          "description": "Sites e-commerce personnalisés conçus pour vendre en ligne avec des paiements sécurisés, des performances rapides et une architecture évolutive. Chaque boutique inclut le SEO technique, les Core Web Vitals, des pages produits optimisées et l'optimisation pour la recherche IA pour augmenter la visibilité sur Google, ChatGPT et Perplexity.",
+          "title_card": "Développement Boutique E-commerce",
+          "overviewHeadline": "Des Boutiques en Ligne Conçues pour les Ventes, la Vitesse et la Croissance",
+          "startDescription": "Votre boutique en ligne doit faire plus que présenter des produits. Elle doit attirer les bons clients, instaurer la confiance, offrir une expérience d'achat fluide et convertir les visiteurs en acheteurs fidèles.",
+          "longDescription": "Que vous lanciez une nouvelle activité en ligne ou modernisiez une boutique existante, je construis des sites e-commerce personnalisés conçus pour la croissance. Chaque boutique inclut l'intégration de paiements sécurisés, la gestion des produits, des pages produits optimisées, le SEO technique, l'optimisation des Core Web Vitals et l'optimisation pour la recherche IA. De la page d'accueil au checkout, chaque élément est conçu pour améliorer l'expérience utilisateur, augmenter les conversions et aider vos produits à être découverts sur Google, Google Shopping, ChatGPT et Perplexity.",
+          "company_recruitment": "Je collabore également avec des marques, des agences et des équipes retail sur des projets e-commerce à long terme, incluant les migrations, refontes et optimisations de performance.",
+          "link": "/services/ecommerce-development",
+          "start_btn": "Lancer Votre Boutique",
           "allServicesBtn": "Voir Tous les Services",
           "overviewTitle": "Pourquoi Me Choisir ?",
           "includedTitle": "Ce Qui Est Inclus",
           "includedDesc": "Chaque projet e-commerce inclut :",
-          "benefitsTitle": "Ce Que Vous Allez Gagner",
+          "benefitsTitle": "Ce Que Vous Gagnerez",
           "benefitsDesc": "En travaillant avec moi sur votre boutique en ligne, vous pouvez vous attendre à :",
-          "processTitle": "Ma Méthode de Travail",
-          "processDesc": "Un processus clair et éprouvé qui mène votre boutique de l'idée à la première vente :",
-          "techTitle": "Les Technologies Que J'utilise",
-          "techDesc": "Je choisis les bonnes technologies en fonction de vos produits, votre marché et vos objectifs de croissance — pas les tendances.",
+          "processTitle": "Comment Je Travaille",
+          "processDesc": "Un processus clair et éprouvé qui amène votre boutique de l'idée à la première vente :",
+          "techTitle": "Technologies Utilisées",
+          "techDesc": "Je choisis les bonnes technologies en fonction de vos produits, de votre marché et de vos objectifs de croissance — pas des tendances.",
           "faqTitle": "Questions Fréquentes",
-          "faqDesc": "Des réponses directes sur le développement e-commerce, les paiements et l'optimisation pour la recherche IA :",
+          "faqDesc": "Réponses directes sur le développement e-commerce, les paiements et l'optimisation IA :",
           "AnothersrvcBtn": "Voir Tous les Services",
           "features": [
             "Pages Produits Optimisées SEO",
             "Prêt pour la Recherche IA (GEO)",
-            "Responsive",
+            "Design Responsive",
             "Paiements Sécurisés (CMI & COD)"
           ],
           "included": [
-            "Design et développement sur mesure de la boutique avec Next.js, React et TypeScript",
-            "Système e-commerce complet : catalogue produits, catégories, recherche, panier, liste de souhaits, paiement sécurisé et gestion des commandes",
+            "Design et développement de boutique sur mesure avec Next.js, React et Nest.js",
+            "Système e-commerce complet : catalogue produits, catégories, recherche, panier, liste de souhaits, checkout sécurisé et gestion des commandes",
             "Paiements locaux et internationaux : CMI, paiement à la livraison (COD), Stripe et PayPal",
-            "SEO produits : pages produits optimisées, balisage Schema Product, sitemap et robots.txt",
-            "Optimisation GEO & AEO pour que les assistants IA puissent trouver, citer et recommander vos produits",
+            "SEO produit : pages produits optimisées, balisage schema Product, sitemap et robots.txt",
+            "Optimisation GEO & AEO pour que les assistants IA trouvent, citent et recommandent vos produits",
             "Optimisation Core Web Vitals : pages produits rapides, optimisation des images et temps de chargement instantanés",
-            "Tableau de bord de gestion des stocks, commandes et clients, utilisable sans connaissances techniques",
+            "Tableau de bord de gestion des stocks, commandes et clients utilisable sans connaissances techniques",
             "Intégration Google Search Console et Analytics, formation et support post-lancement"
           ],
           "benefits": [
             {
-              "title": "Une Boutique Qui Vend 24h/24, 7j/7",
-              "text": "Des pages produits rapides, des paiements locaux de confiance et un paiement sans friction — tout est conçu pour réduire les paniers abandonnés et transformer les visiteurs en acheteurs, jour et nuit."
+              "title": "Une Boutique Conçue pour Vendre 24/7",
+              "text": "Pages produits rapides, paiements locaux de confiance et checkout sans friction — tout est conçu pour réduire les paniers abandonnés et transformer les visiteurs en acheteurs, jour et nuit."
             },
             {
-              "title": "Plus de Visibilité Produits & Ventes Organiques",
-              "text": "Schema Product, métadonnées optimisées et structure GEO/AEO — pour que vos produits se positionnent sur Google, apparaissent dans les résultats Shopping et soient recommandés par ChatGPT et Perplexity."
+              "title": "Plus de Visibilité Produit & Ventes Organiques",
+              "text": "Schema produit, métadonnées optimisées et structure GEO/AEO — pour que vos produits se classent sur Google, apparaissent dans Shopping et soient recommandés par ChatGPT et Perplexity."
             },
             {
               "title": "Contrôle Total & Croissance Mesurable",
-              "text": "Vous êtes propriétaire de votre boutique, de vos données et de votre code — aucun frais mensuel de plateforme. Suivez chaque vente, produit et source de trafic avec des analytics configurés dès le premier jour."
+              "text": "Vous possédez votre boutique, vos données et votre code — pas de frais de plateforme mensuels. Suivez chaque vente, produit et source de trafic avec des analyses configurées dès le premier jour."
             }
           ],
           "process": [
             {
               "step": "01",
               "title": "Découverte & Étude de Marché",
-              "text": "J'analyse vos produits, vos clients cibles, vos concurrents et les mots-clés recherchés par les acheteurs — avant de concevoir quoi que ce soit."
+              "text": "J'analyse vos produits, clients cibles, concurrents et les mots-clés recherchés par les acheteurs — avant de concevoir quoi que ce soit."
             },
             {
               "step": "02",
               "title": "Design & Développement de la Boutique",
-              "text": "Développement propre et rapide avec Next.js — catalogue, panier, paiement et tableau de bord de gestion, le tout responsive et accessible."
+              "text": "Développement propre et rapide avec Next.js — catalogue, panier, checkout et tableau de bord de gestion, le tout responsive et accessible."
             },
             {
               "step": "03",
               "title": "Paiements, SEO & Optimisation IA",
-              "text": "Intégration CMI, COD, Stripe et PayPal — plus Schema Product, métadonnées et contenu structuré pour le positionnement Google et les citations IA."
+              "text": "Intégration CMI, COD, Stripe et PayPal — plus schema Product, métadonnées et contenu structuré pour les classements Google et les citations IA."
             },
             {
               "step": "04",
               "title": "Lancement, Analytics & Croissance",
-              "text": "Mise en ligne avec analytics configurés, Search Console connectée, sitemap soumis et un plan clair pour développer vos ventes."
+              "text": "Mise en ligne avec analyses configurées, Search Console connectée, sitemap soumis et un plan clair pour développer vos ventes."
             }
           ],
+          "crossLink": {
+            "text": "Besoin d'optimisation SEO pour votre boutique existante ?",
+            "linkText": "Services SEO Technique →",
+            "href": "/services/technical-seo"
+          },
           "faqs": [
             {
               "q": "Combien coûte la création d'une boutique en ligne au Maroc ?",
-              "a": "Le coût dépend du nombre de produits, des intégrations de paiement, de la complexité du design et des fonctionnalités personnalisées. Une boutique simple avec des paiements standards coûte moins qu'une plateforme sur mesure avec des fonctionnalités avancées. Je fournis un devis personnalisé basé sur vos objectifs — chaque boutique inclut le SEO, la sécurité et l'optimisation des performances dès le départ."
+              "a": "Le coût dépend du nombre de produits, des intégrations de paiement, de la complexité du design et des fonctionnalités personnalisées. Une boutique simple avec des paiements standard coûte moins cher qu'une plateforme personnalisée avec des fonctionnalités avancées. Je fournis un devis adapté à vos objectifs — chaque boutique inclut SEO, sécurité et optimisation des performances dès le départ."
             },
             {
-              "q": "Quels moyens de paiement ma boutique en ligne peut-elle accepter ?",
-              "a": "Votre boutique peut accepter les moyens de paiement que vos clients utilisent réellement : CMI pour les cartes bancaires marocaines, paiement à la livraison (COD) pour les acheteurs locaux, et Stripe ou PayPal pour les clients internationaux. Je vous aide à choisir et intégrer la bonne combinaison pour votre marché."
+              "q": "Quels modes de paiement ma boutique en ligne peut-elle accepter ?",
+              "a": "Votre boutique peut accepter les modes de paiement que vos clients utilisent réellement : CMI pour les cartes bancaires marocaines, paiement à la livraison (COD) pour les acheteurs locaux, et Stripe ou PayPal pour les clients internationaux. Je vous aide à choisir et intégrer la bonne combinaison pour votre marché."
             },
             {
               "q": "Ma boutique en ligne peut-elle supporter plusieurs langues et devises ?",
-              "a": "Oui. Je peux développer des boutiques en ligne multilingues et multi-devises pour que vous puissiez vendre localement au Maroc ou à l'international, tout en maintenant d'excellentes performances et un bon SEO."
+              "a": "Oui. Je peux construire des boutiques multilingues et multi-devises pour que vous puissiez vendre localement au Maroc ou à l'international tout en maintenant d'excellentes performances et un bon SEO."
             },
             {
-              "q": "Dois-je choisir Shopify, WooCommerce ou une boutique sur mesure ?",
-              "a": "Shopify et WooCommerce fonctionnent pour un démarrage rapide, mais ils impliquent des frais mensuels, des limitations de plugins et des performances plus lentes. Une boutique sur mesure développée avec Next.js est plus rapide, entièrement adaptée à votre activité, sans frais de plateforme, et obtient de meilleurs scores Core Web Vitals — ce qui améliore directement votre positionnement Google et vos conversions."
+              "q": "Dois-je choisir Shopify, WooCommerce ou une boutique personnalisée ?",
+              "a": "Shopify et WooCommerce fonctionnent pour des démarrages rapides, mais ils comportent des frais mensuels, des limitations de plugins et des performances plus lentes. Une boutique personnalisée construite avec Next.js est plus rapide, entièrement adaptée à votre activité, sans frais de plateforme, et obtient de meilleurs scores Core Web Vitals — ce qui améliore directement vos classements Google et conversions."
             },
             {
-              "q": "Puis-je gérer mes produits et commandes moi-même après le lancement ?",
-              "a": "Oui — votre boutique inclut un tableau de bord de gestion simple où vous pouvez ajouter des produits, mettre à jour les prix et les stocks, et suivre les commandes sans aucune connaissance technique. Vous recevez également une formation et une documentation pour garder le contrôle total."
+              "q": "Puis-je gérer les produits et commandes moi-même après le lancement ?",
+              "a": "Oui — votre boutique inclut un tableau de bord de gestion simple où vous pouvez ajouter des produits, mettre à jour les prix et stocks, et suivre les commandes sans aucune connaissance technique. Vous recevez également une formation et une documentation pour rester entièrement en contrôle."
             },
             {
               "q": "Mes produits apparaîtront-ils sur Google et dans les résultats de recherche IA ?",
-              "a": "Oui — chaque page produit est construite avec le balisage Schema Product, des métadonnées optimisées et des Core Web Vitals rapides, offrant à vos produits la meilleure base pour se positionner sur Google et apparaître dans les résultats Shopping. L'optimisation GEO et AEO structure également votre contenu pour que les assistants IA comme ChatGPT et Perplexity puissent citer et recommander vos produits."
+              "a": "Oui — chaque page produit est construite avec un balisage schema Product, des métadonnées optimisées et des Core Web Vitals rapides, donnant à vos produits la base la plus solide pour se classer sur Google et apparaître dans Shopping. L'optimisation GEO et AEO structure également votre contenu pour que les assistants IA comme ChatGPT et Perplexity puissent citer et recommander vos produits."
             },
             {
               "q": "Pouvez-vous améliorer ou refondre ma boutique en ligne existante ?",
-              "a": "Oui — je peux moderniser les boutiques existantes, corriger les pages produits lentes, améliorer la conversion du paiement, réparer les problèmes de SEO technique, implémenter les données structurées et préparer votre boutique pour la recherche propulsée par l'IA — sans perdre vos produits, clients ou positions existants."
+              "a": "Oui — je peux moderniser les boutiques existantes, corriger les pages produits lentes, améliorer la conversion du checkout, réparer les problèmes de SEO technique, implémenter des données structurées et préparer votre boutique pour la recherche IA — sans perdre vos produits, clients ou classements existants."
             }
           ]
         },
-        "systems": {
+        "business_dashboards": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "title": "Tableaux de Bord Sur Mesure, Automatisation des Processus & Intégration IA au Maroc",
-          "title_metadata": "Automatisation des Processus, Tableaux de Bord Sur Mesure & Intégration IA au Maroc",
-          "description_metadata": "Tableaux de bord sur mesure, systèmes d'automatisation des processus, automatisation des workflows et intégrations IA qui rationalisent les opérations, améliorent la productivité et aident les entreprises à croître.",
-          "title_card": "Automatisation des Processus & Intégration IA",
-          "description": "Tableaux de bord sur mesure, automatisation des workflows et systèmes métier propulsés par l'IA qui rationalisent les opérations, éliminent les tâches répétitives, améliorent la productivité et soutiennent des décisions business plus intelligentes.",
-          "overviewHeadline": "Travaillez Plus Intelligemment avec des Systèmes Métier Sur Mesure",
-          "startDescription": "Votre équipe ne devrait pas perdre de temps sur des tâches répétitives quand un logiciel peut les automatiser pour vous.",
-          "longDescription": "Je conçois et développe des tableaux de bord sur mesure, des systèmes métier internes, des automatisations de workflows et des intégrations IA adaptés au fonctionnement de votre entreprise. Que vous ayez besoin d'un logiciel CRM, de gestion des stocks, de tableaux de bord de reporting, d'automatisation de documents, d'assistants IA ou d'intégrations API, chaque solution est conçue pour gagner du temps, réduire le travail manuel, améliorer la précision et vous donner une visibilité complète sur votre activité. Le résultat : un système évolutif qui grandit avec votre entreprise tout en aidant votre équipe à se concentrer sur des tâches à plus forte valeur ajoutée.",
-          "company_recruitment": "Je collabore également avec des startups et des entreprises sur des projets de développement logiciel, d'automatisation et d'intégration IA à long terme.",
-          "link": "/services/business-systems",
-          "start_btn": "Automatisez Votre Entreprise",
+          "title": "Automatisation des Processus & Tableaux de Bord Sur Mesure au Maroc",
+          "title_metadata": "Automatisation & Tableaux de Bord Personnalisés Maroc",
+          "description_metadata": "Services d'automatisation, tableaux de bord personnalisés et intégration IA au Maroc. Rationalisez vos opérations et développez votre entreprise.",
+          "title_card": "Automatisation & Tableaux de Bord sur Mesure",
+          "description": "Tableaux de bord personnalisés, automatisation des workflows et systèmes d'entreprise alimentés par l'IA qui rationalisent les opérations, éliminent les tâches répétitives, améliorent la productivité et soutiennent des décisions commerciales plus intelligentes.",
+          "overviewHeadline": "Automatisez Vos Opérations & Travaillez Plus Intelligemment",
+          "startDescription": "Votre équipe ne devrait pas perdre de temps sur des tâches répétitives quand un logiciel peut les automatiser. Les tableaux de bord personnalisés et l'automatisation des workflows vous donnent une visibilité en temps réel, réduisent les erreurs et libèrent votre équipe pour se concentrer sur la croissance.",
+          "longDescription": "Je conçois et développe des tableaux de bord d'entreprise personnalisés, des systèmes de gestion internes, des automatisations de workflow et des intégrations IA adaptés à la façon dont votre entreprise fonctionne réellement. Que vous ayez besoin d'un logiciel CRM, de systèmes de gestion des stocks, de tableaux de bord de reporting, d'automatisation de documents, d'assistants IA ou d'intégrations API — chaque solution est conçue pour gagner du temps, réduire le travail manuel, améliorer la précision et vous donner un contrôle total sur vos opérations.",
+          "company_recruitment": "Je collabore également avec des startups, des agences et des entreprises sur des projets d'automatisation d'entreprise, de développement logiciel personnalisé et d'intégration IA à long terme.",
+          "link": "/services/business-dashboards",
+          "start_btn": "Automatiser Votre Entreprise",
           "allServicesBtn": "Voir Tous les Services",
-          "overviewTitle": "Pourquoi Me Choisir ?",
+          "overviewTitle": "Pourquoi Choisir Mes Services d'Automatisation ?",
           "includedTitle": "Ce Qui Est Inclus",
-          "includedDesc": "Chaque projet d'automatisation des processus inclut :",
-          "benefitsTitle": "Ce Que Vous Allez Gagner",
-          "benefitsDesc": "Automatiser votre entreprise vous aide à gagner du temps, réduire les coûts et améliorer la productivité.",
-          "useCasesTitle": "Solutions d'Automatisation des Processus",
-          "useCasesDesc": "Exemples de systèmes réels que je développe pour les entreprises.",
-          "processTitle": "Ma Méthode de Travail",
-          "processDesc": "Un processus de développement structuré, conçu autour de vos objectifs business.",
-          "techTitle": "Les Technologies Que J'utilise",
-          "techDesc": "Des technologies modernes sélectionnées selon les besoins de votre entreprise — pas les tendances.",
+          "includedDesc": "Chaque projet d'automatisation d'entreprise inclut :",
+          "benefitsTitle": "L'Impact Business",
+          "benefitsDesc": "En automatisant vos opérations commerciales, vous pouvez vous attendre à :",
+          "useCasesTitle": "Solutions d'Automatisation d'Entreprise",
+          "useCasesDesc": "Systèmes réels que je construis pour les entreprises de tous secteurs :",
+          "processTitle": "Mon Processus d'Automatisation",
+          "processDesc": "Un processus de développement structuré conçu autour de vos objectifs commerciaux :",
+          "techTitle": "Technologies Utilisées",
+          "techDesc": "Technologies modernes sélectionnées selon vos exigences commerciales — pas les tendances :",
           "faqTitle": "Questions Fréquentes",
-          "faqDesc": "Des réponses directes sur l'automatisation des processus, les tableaux de bord et l'intégration IA :",
-          "AnothersrvcBtn": "Voir Tous les Services",
+          "faqDesc": "Réponses directes sur l'automatisation d'entreprise, les tableaux de bord et l'intégration IA :",
+          "AnothersrvcBtn": "Explorer d'Autres Services",
           "features": [
-            "Tableaux de Bord Sur Mesure",
+            "Tableaux de Bord Personnalisés",
             "Automatisation des Workflows",
-            "Intégration IA",
-            "Reporting & Analytics",
-            "Intégrations API"
+            "Intégration & Assistants IA"
           ],
           "stats": [
             {
               "value": "~80%",
-              "label": "Réduction du temps consacré aux tâches manuelles — rapportée par les clients après l'automatisation"
+              "label": "Réduction du temps des tâches manuelles après automatisation"
             },
             {
               "value": "3×",
-              "label": "Opérations plus rapides une fois les processus répétitifs entièrement automatisés"
+              "label": "Opérations plus rapides avec des workflows automatisés"
             },
             {
               "value": "0",
-              "label": "Erreurs de saisie manuelle avec des pipelines automatisés en place"
+              "label": "Erreurs de saisie avec des pipelines automatisés"
             }
           ],
           "benefits": [
             {
-              "title": "Gagnez du Temps Chaque Jour",
-              "text": "Automatisez les tâches répétitives, les approbations, les notifications et les rapports pour que votre équipe puisse se concentrer sur des tâches à forte valeur ajoutée."
+              "title": "Gagnez des Heures Chaque Semaine",
+              "text": "Automatisez les tâches répétitives, approbations, notifications et rapports pour que votre équipe puisse se concentrer sur un travail stratégique à haute valeur ajoutée."
             },
             {
               "title": "Augmentez la Productivité",
-              "text": "Centralisez vos données métier, réduisez les processus manuels et donnez à votre équipe un accès plus rapide aux informations dont elle a besoin."
+              "text": "Centralisez les données commerciales, éliminez les processus manuels et donnez à votre équipe un accès instantané aux informations dont elle a besoin."
             },
             {
-              "title": "Prenez de Meilleures Décisions Business",
-              "text": "Des tableaux de bord en temps réel et des insights propulsés par l'IA vous aident à suivre vos KPIs, identifier les tendances et prendre des décisions éclairées."
+              "title": "Prenez des Décisions Basées sur les Données",
+              "text": "Des tableaux de bord en temps réel et des insights alimentés par l'IA vous aident à surveiller les KPI, identifier les tendances et prendre des décisions éclairées."
             }
           ],
           "useCases": [
             {
-              "title": "CRM & Gestion des Clients",
-              "text": "Gérez vos clients, prospects, contrats, factures et suivis depuis un tableau de bord centralisé."
+              "title": "Systèmes CRM & Gestion Client",
+              "text": "Gérez clients, prospects, contrats, factures et suivis depuis un tableau de bord centralisé avec des workflows et rapports automatisés."
             },
             {
-              "title": "Stocks & Opérations",
-              "text": "Suivez vos stocks, fournisseurs, achats, livraisons et alertes d'inventaire automatisées en temps réel."
+              "title": "Gestion des Stocks & Opérations",
+              "text": "Surveillez les niveaux de stock, fournisseurs, achats, livraisons et alertes d'inventaire automatisées en temps réel sur plusieurs emplacements."
             },
             {
-              "title": "Tableaux de Bord & Reporting",
-              "text": "Visualisez vos KPIs, ventes, revenus, productivité et données opérationnelles à travers des tableaux de bord interactifs."
+              "title": "Tableaux de Bord Business Intelligence",
+              "text": "Visualisez les KPI, performances de vente, revenus, métriques de productivité et données opérationnelles via des tableaux de bord interactifs en temps réel."
             },
             {
-              "title": "Automatisation IA & Intégrations",
-              "text": "Intégrez des assistants IA, du traitement de documents, de l'automatisation d'e-mails, des API et des workflows intelligents dans vos systèmes métier existants."
+              "title": "Automatisation IA & Intégration Workflow",
+              "text": "Intégrez des assistants IA, traitement de documents, automatisation d'emails, connexions API et workflows intelligents dans vos systèmes existants."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Analyse des Besoins Métier",
-              "text": "Comprendre votre workflow, identifier les goulots d'étranglement et définir les opportunités d'automatisation."
+              "title": "Analyse Business & Cartographie Workflow",
+              "text": "J'analyse vos workflows actuels, identifie les goulots d'étranglement et définit les opportunités d'automatisation qui offriront le meilleur ROI pour votre entreprise."
             },
             {
               "step": "02",
-              "title": "Conception & Développement du Système",
-              "text": "Développer des tableaux de bord sécurisés, des workflows d'automatisation, des API et des intégrations IA adaptés à votre entreprise."
+              "title": "Conception & Développement Système",
+              "text": "Construisez des tableaux de bord personnalisés sécurisés, workflows d'automatisation, intégrations API et fonctionnalités IA adaptés spécifiquement à vos opérations."
             },
             {
               "step": "03",
-              "title": "Déploiement & Support",
-              "text": "Déployer votre système, former votre équipe, surveiller les performances et améliorer continuellement la solution à mesure que votre entreprise grandit."
+              "title": "Déploiement, Formation & Optimisation",
+              "text": "Déployez votre système, formez votre équipe, surveillez les métriques de performance et améliorez continuellement la solution à mesure que votre entreprise évolue."
             }
           ],
           "techStackList": [
-            "Express.js",
-            "Python",
-            "OpenAI API",
-            "REST APIs",
-            "MongoDB",
-            "React"
+            "Next.js & React",
+            "Backend Nest.js",
+            "APIs OpenAI & Claude",
+            "APIs REST & GraphQL",
+            "PostgreSQL & MongoDB",
+            "Docker & Déploiement Cloud"
           ],
+          "crossLink": {
+            "text": "Besoin d'un site web ou boutique e-commerce pour compléter votre tableau de bord ?",
+            "linkText": "Services de Développement Web →",
+            "href": "/services/web-development"
+          },
           "faqs": [
             {
-              "q": "Qu'est-ce que l'automatisation des processus et comment aide-t-elle mon entreprise ?",
-              "a": "L'automatisation des processus consiste à utiliser des logiciels pour traiter automatiquement les tâches répétitives — comme la facturation, la saisie de données, le reporting et les suivis clients. Elle fait gagner des heures chaque semaine à votre équipe, réduit les erreurs humaines, diminue les coûts opérationnels et vous donne une visibilité en temps réel sur votre activité grâce à des tableaux de bord sur mesure."
+              "q": "Qu'est-ce que l'automatisation d'entreprise et comment aide-t-elle mon entreprise ?",
+              "a": "L'automatisation d'entreprise signifie utiliser un logiciel personnalisé pour gérer automatiquement les tâches répétitives — comme la facturation, la saisie de données, les rapports, les mises à jour d'inventaire et les suivis clients. Cela fait gagner des heures à votre équipe chaque semaine, réduit les erreurs humaines, diminue les coûts opérationnels et vous donne une visibilité en temps réel sur l'ensemble de votre entreprise."
             },
             {
               "q": "Combien de temps l'automatisation peut-elle réellement faire gagner à mon entreprise ?",
-              "a": "Cela dépend de vos processus, mais la plupart des entreprises récupèrent 5 à 15 heures par semaine et par employé en automatisant les tâches répétitives comme la saisie de données, le reporting et les suivis. Lors de la phase d'analyse, j'identifie vos pertes de temps spécifiques et j'estime les gains exacts avant tout développement."
+              "a": "Cela dépend de vos processus spécifiques, mais la plupart des entreprises récupèrent 5 à 15 heures par semaine par employé en automatisant des tâches répétitives comme la saisie de données, les rapports et les suivis. Pendant la phase d'analyse, j'identifie vos gaspilleurs de temps spécifiques et calcule les économies exactes avant tout développement."
             },
             {
               "q": "Pouvez-vous intégrer l'automatisation avec les outils que j'utilise déjà ?",
-              "a": "Oui — je connecte vos outils existants comme votre CRM, votre logiciel comptable, votre plateforme e-commerce, vos tableurs et vos e-mails. Les systèmes sont construits autour de votre workflow actuel, donc votre équipe garde les outils qu'elle connaît tandis que tout se synchronise automatiquement en arrière-plan."
+              "a": "Oui — je connecte vos outils existants comme votre CRM, logiciel comptable, plateforme e-commerce, tableurs, systèmes d'email et passerelles de paiement. Les systèmes sont construits autour de votre workflow actuel, pour que votre équipe garde les outils qu'elle connaît pendant que tout se synchronise automatiquement en arrière-plan."
             },
             {
-              "q": "Ai-je besoin de connaissances techniques pour utiliser ces systèmes ?",
-              "a": "Non — chaque système est livré avec une interface simple conçue pour les utilisateurs non techniques, plus une formation complète et une documentation en langage clair. Si votre équipe sait utiliser un tableur, elle saura utiliser les tableaux de bord et les outils que je développe."
+              "q": "Ai-je besoin de connaissances techniques pour utiliser ces tableaux de bord personnalisés ?",
+              "a": "Non — chaque système est livré avec une interface simple et intuitive conçue pour les utilisateurs non techniques, plus une formation complète et une documentation en langage clair. Si votre équipe peut utiliser un tableur ou un email, elle peut utiliser les tableaux de bord et outils d'automatisation que je construis."
             },
             {
               "q": "Comment l'IA peut-elle réellement aider les opérations de mon entreprise ?",
-              "a": "L'IA apporte une vraie valeur dans des domaines précis : répondre automatiquement aux questions fréquentes des clients, traiter et classer des documents, générer des rapports et du contenu, et extraire des insights de vos données. J'intègre l'IA uniquement là où elle résout un vrai problème — jamais comme un gadget — pour que vous obteniez des résultats mesurables, pas des buzzwords."
+              "a": "L'IA ajoute une valeur réelle dans des domaines spécifiques : répondre automatiquement aux questions courantes des clients, traiter et classifier des documents, générer des rapports et du contenu, extraire des insights de vos données et automatiser les workflows de décision. J'intègre l'IA uniquement là où elle résout un vrai problème — jamais comme un gadget."
             },
             {
-              "q": "Combien coûte un système métier sur mesure au Maroc ?",
-              "a": "Le coût dépend de la complexité : nombre d'intégrations, périmètre de l'automatisation et fonctionnalités du tableau de bord. Une automatisation ciblée d'un workflow coûte moins qu'un système de gestion complet. Après l'analyse initiale, vous recevez un devis clair — et comme la plupart des systèmes se rentabilisent grâce aux gains de temps, je vous aide à prioriser les automatisations avec le retour sur investissement le plus rapide."
+              "q": "Quelle est la différence entre un logiciel personnalisé et des outils comme Zapier ?",
+              "a": "Des outils comme Zapier sont excellents pour des automatisations simples, mais ils deviennent chers à grande échelle, ont une personnalisation limitée et ne peuvent pas gérer une logique commerciale complexe. Les tableaux de bord et systèmes d'automatisation personnalisés sont construits spécifiquement pour vos workflows, évoluent sans frais par tâche et vous donnent une propriété complète de vos données."
+            },
+            {
+              "q": "Pouvez-vous construire des tableaux de bord pour des industries spécifiques ?",
+              "a": "Oui — j'ai construit des solutions personnalisées pour le retail, l'e-commerce, les services professionnels, l'immobilier, la logistique et plus encore. Chaque tableau de bord est adapté aux KPI, workflows et exigences de reporting spécifiques de votre industrie."
             }
           ]
         }
@@ -531,14 +691,15 @@
           }
         ]
       },
-      "ctat_title": "Prêt à lancer votre prochain projet ?",
-      "cta_desc": "Que vous ayez besoin d'un site vitrine, d'une boutique e-commerce, d'un tableau de bord sur mesure ou d'une automatisation par l'IA, construisons ensemble une solution rapide et évolutive qui fera grandir votre entreprise.",
-      "cta_btn": "Démarrer votre projet"
+      "cta_title": "Prêt à démarrer votre prochain projet ?",
+      "cta_desc": "Que vous ayez besoin d’un site web performant, d’une boutique e-commerce ou d’une solution métier sur mesure, construisons ensemble un projet évolutif et optimisé pour les moteurs de recherche.",
+      "cta_btn": "Parlons de votre projet"
     },
     "about_page": {
       "title": "À propos",
-      "heading": "Développeur Web Full-Stack, Expert SEO & Optimisation de Recherche IA au Maroc",
-      "intro": "Je suis Mohammed Elghandori, développeur Web Full-Stack et expert SEO basé au Maroc. Je conçois des sites web performants, des boutiques e-commerce, des tableaux de bord métiers et des applications web alimentées par l'IA avec Next.js et des technologies modernes. Chaque projet est développé avec le SEO technique, les Core Web Vitals, les données structurées et l'optimisation pour les moteurs de recherche IA afin d'améliorer la visibilité sur Google, Google AI Overviews, ChatGPT, Perplexity et d'autres moteurs de recherche basés sur l'IA.",
+      "heading": "À propos de Mohammed Elghandori — Développeur Full-Stack & Spécialiste SEO",
+      "intro": "Je suis Mohammed Elghandori, développeur web Full-Stack et spécialiste SEO basé au Maroc. Je conçois et développe des sites web performants, des boutiques e-commerce et des tableaux de bord d'entreprise en utilisant Next.js, React.js, Nest.js et d'autres technologies modernes.",
+      "intro_2": "Chaque projet est développé avec un SEO technique, les Core Web Vitals, les données structurées (Schema.org) et une optimisation pour la recherche IA afin d'améliorer la visibilité sur Google, les aperçus IA, ChatGPT, Perplexity et autres moteurs IA.",
       "stats": {
         "years": "Ans d'expérience",
         "clients": "Clients satisfaits",
@@ -546,13 +707,16 @@
       },
       "whoIAm": {
         "title": "Qui Je Suis",
-        "paragraph1": "Je suis Mohammed, Développeur Web Full-Stack et Spécialiste SEO passionné par la création d'expériences web modernes qui résolvent de vrais problèmes business. J'ai étudié l'ingénierie logicielle à l'école 1337 UM6P (réseau 42), où j'ai acquis de solides bases en informatique, algorithmes, systèmes d'exploitation, réseaux, architecture logicielle et développement collaboratif. En parallèle, j'ai obtenu des certifications en développement web, marketing digital et intelligence artificielle, tout en perfectionnant continuellement mon expertise technique.",
+        "paragraph1": "Je suis Mohammed Elghandori, Développeur Web Full-Stack et Spécialiste SEO passionné par la création d'expériences web modernes qui résolvent de vrais problèmes business. J'ai étudié l'ingénierie logicielle à l'école 1337 UM6P (réseau 42), où j'ai acquis de solides bases en informatique, algorithmes, systèmes d'exploitation, réseaux, architecture logicielle et développement collaboratif. En parallèle, j'ai obtenu des certifications en développement web, marketing digital et intelligence artificielle, tout en perfectionnant continuellement mon expertise technique.",
         "paragraph2": "Je crois en un travail de qualité, une communication claire et des résultats mesurables. Que vous soyez une startup ou une grande entreprise visant les marchés internationaux, je m'engage à vous aider à réussir en ligne avec des solutions qui fonctionnent, car votre succès est le mien."
       },
+      "tech_philosophy": {
+        "title": "Ma Stack Technique et ma Philosophie d'Ingénierie",
+        "paragraph": "Je choisis les technologies en fonction des besoins réels de chaque projet, et pas simplement en suivant les tendances. J'utilise principalement Next.js et React pour créer des interfaces rapides, maintenables et optimisées pour le SEO, ainsi que Nest.js pour développer des systèmes backend évolutifs. Je travaille également avec Tailwind CSS, MongoDB, Docker et GitHub Actions pour favoriser un développement efficace, des déploiements fiables et une maintenance durable. En combinant le développement web moderne avec le SEO technique et l'optimisation pour la recherche IA, je conçois des produits numériques pensés pour la performance, la visibilité dans les moteurs de recherche et une croissance durable."
+      },
       "experience": {
-        "title": "Mon Expérience & Mon Parcours",
-        "paragraph": "J'ai travaillé sur des sites d'entreprise, des tableaux de bord, des plateformes e-commerce, des systèmes d'automatisation et des applications IA pour des entreprises, des startups et des projets personnels. Mon expérience couvre l'intégralité du cycle de développement : de la planification et l'implémentation UI au développement backend, en passant par le déploiement, le SEO technique et l'optimisation des performances. À travers les hackathons, les projets clients réels et l'apprentissage continu, j'ai renforcé ma capacité à collaborer avec des équipes pluridisciplinaires, à résoudre des problèmes complexes sous pression et à livrer des solutions numériques évolutives qui créent une valeur business mesurable.",
-        "paragraph2": "Je suis convaincu que les produits numériques performants reposent sur l'excellence technique, une communication fluide et une amélioration continue. Que vous soyez une startup, une PME ou une grande entreprise, mon objectif est de créer des solutions fiables, évolutives et optimisées pour le référencement, générant des résultats concrets et une croissance durable."
+        "title": "Mon Expérience et Mon Parcours Technique",
+        "paragraph": "J'ai de l'expérience dans le développement de tableaux de bord de gestion et de sites web corporate performants pour des entreprises, des startups et des projets personnels. Mon travail couvre l'ensemble du cycle de développement, de l'architecture système et de l'implémentation de l'interface utilisateur au développement backend, au déploiement, au SEO technique et à l'optimisation des performances. Grâce aux projets clients, aux hackathons et à mon apprentissage continu, j'ai renforcé ma capacité à résoudre des problèmes techniques complexes, à collaborer en équipe et à développer des logiciels fiables et évolutifs qui créent une réelle valeur pour les entreprises."
       },
       "storyMissionValues": {
         "title": "Découvrez l'histoire, la mission et les valeurs qui m'animent",
@@ -615,47 +779,27 @@
       },
       "howCanIHelp": {
         "title": "Comment puis-je vous aider ?",
-        "subtitle": "Façons de collaborer ensemble",
+        "subtitle": "Comment nous pouvons collaborer",
         "items": [
-          "Créer ou refondre votre site — rapide, optimisé SEO et mobile-first.",
-          "Mettre en place automatisation et outils IA pour gagner du temps et scaler.",
-          "Concevoir visuels publicitaires et contenus réseaux sociaux qui expliquent votre offre et génèrent des ventes.",
-          "Auditer et améliorer la vitesse, le SEO et la conversion de votre site existant."
+          "Créer des sites web corporatifs performants et des applications évolutives optimisées SEO & IA.",
+          "Développer des tableaux de bord de gestion complexes et des outils d'automatisation.",
+          "Auditer et optimiser les plateformes existantes pour le SEO technique et les Core Web Vitals.",
+          "Fournir un partenariat technique à long terme et des stratégies de recherche IA pour une croissance durable."
         ]
       },
-      "values": [
-        [
-          {
-            "title": "Excellence Technique",
-            "text": "Architecture moderne, code propre, scalabilité et maintenabilité à long terme."
-          },
-          {
-            "title": "SEO & Visibilité IA",
-            "text": "Chaque projet est optimisé pour Google Search, les moteurs de recherche IA et offre une excellente expérience utilisateur."
-          },
-          {
-            "title": "Communication & Collaboration",
-            "text": "Communication transparente, travail d'équipe et développement structuré tout au long du projet."
-          },
-          {
-            "title": "Impact Business",
-            "text": "La technologie doit générer une croissance mesurable, de l'efficacité et une valeur à long terme."
-          }
-        ]
-      ],
       "cta": {
-        "title": "Construisons votre prochain projet numérique ensemble",
-        "description": "Besoin d'un site web ultra-performant, de SEO technique, d'automatisation IA ou d'une application web sur mesure ? Discutons de la façon dont je peux aider votre entreprise à se développer.",
-        "button": "Lancer mon projet"
+        "title": "Prêt à Bâtir Quelque Chose d'Exceptionnel ?",
+        "description": "Que vous cherchiez un expert freelance pour architecturer une application web performante, ou un Ingénieur Full-Stack pour rejoindre votre équipe, connectons-nous pour discuter de vos objectifs techniques.",
+        "button": "Me Contacter"
       }
     },
     "portfolio_page": {
-      "subtitle": "Projets Sélectionnés",
-      "heading": "Sites Web Haute Performance, E-Commerce, Tableaux de Bord & Automatisation IA",
-      "description": "Découvrez 10+ projets réels incluant des sites corporate optimisés SEO, des boutiques e-commerce à fort taux de conversion, des dashboards d'automatisation d'entreprise et des outils IA. Chaque projet démontre une expertise en Next.js, SEO technique, Core Web Vitals et architecture cloud scalable — des projets clients aux initiatives personnelles et à la programmation système académique avancée.",
-      "viewCase": "Études de cas",
-      "cta": "Démarrer un projet",
-      "cta_other": "Voir autres projets",
+      "subtitle": "Travaux Sélectionnés",
+      "heading": "Projets Réels & Études Techniques Approfondies Conçus pour la Performance et le SEO",
+      "description": "Une sélection de projets concrets et d'études techniques : sites corporate optimisés SEO, tableaux de bord sur mesure et architectures systèmes complexes. Chaque étude de cas détaille l'objectif, l'approche technique et les résultats obtenus.",
+      "viewCase": "Voir l'Étude de Cas",
+      "cta": "Discuter de Votre Projet",
+      "cta_other": "Explorer Plus de Projets",
       "ui": {
         "filterBy": "Filtrer par",
         "displayModes": {
@@ -680,363 +824,502 @@
         },
         "emptyStateTitle": "Aucun projet trouvé",
         "emptyStateText": "Essayez une autre catégorie.",
+        "filterHint": "Sélectionnez une catégorie",
+        "showAll": "Tout afficher",
+        "showcaseLabel": "Vitrine des projets",
         "ctaTitle": "Vous avez un projet en tête ?",
         "ctaExplore": "Voir les détails",
-        "ctaDescription": "Je collabore avec des startups et entreprises pour créer des produits digitaux rapides, fiables et optimisés pour la croissance mesurable."
+        "ctaDescription": "Je collabore avec des startups et entreprises pour créer des produits digitaux rapides, fiables et optimisés pour la croissance mesurable.",
+        "statusLabels": {
+          "online": "En ligne",
+          "local enterprise": "Entreprise locale",
+          "completed": "Terminé"
+        }
       },
       "caseStudyUi": {
         "breadcrumbHome": "Accueil",
         "breadcrumbPortfolio": "Portfolio",
         "backToPortfolio": "Retour au portfolio",
-        "techHeading": "Technologies utilisées",
+        "techHeading": "Technologies Utilisées",
         "categoryLabel": "Catégorie",
-        "typeLabel": "Type de projet",
+        "typeLabel": "Type de Projet",
         "statusLabel": "Statut",
-        "collaborationTitle": "Envie de créer un projet similaire ?",
-        "collaborationBody": "Je suis disponible pour collaborer sur des applications web, des systèmes automatisés ou des sites performants."
+        "collaborationTitle": "Envie de Réaliser un Projet Similaire ?",
+        "collaborationBody": "Que vous ayez besoin d'une application performante, d'une optimisation SEO ou d'un tableau de bord métier, discutons ensemble de la meilleure façon de concevoir une solution évolutive adaptée à vos objectifs.",
+        "overviewHeading": "Aperçu",
+        "breadcrumbAria": "Fil d'Ariane",
+        "galleryHeading": "Galerie du projet",
+        "linksHeading": "Liens du projet",
+        "goalHeading": "Objectif du projet",
+        "learnedHeading": "Ce que nous avons appris",
+        "realWorldHeading": "Comment cela aide dans le monde réel"
       },
       "projects": [
         {
-          "title": "Site Web Corporate & Croissance SEO",
-          "description": "Conception et développement d’un site web d’entreprise performant pour présenter les services et produits. Optimisé pour la vitesse, le SEO et l’expérience utilisateur, ce projet a généré plus de 2 900 nouveaux utilisateurs en seulement 2 mois et amélioré la visibilité en ligne.",
-          "tech": "Next.js, SEO, MongoDB",
+          "title": "Site Corporate & Moteur de Croissance SEO",
+          "description": "Conception et développement d'un site vitrine haute performance avec Next.js pour présenter services et produits. Optimisé pour le SEO technique, les Core Web Vitals, l'accessibilité et l'expérience utilisateur — avec 2 900+ nouveaux utilisateurs en deux mois et une première position sur Google.",
+          "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir l'étude de cas",
           "category": "Développement Web & SEO",
           "type": "professional",
-          "status": "en ligne",
+          "status": "online",
           "href": "/portfolio/corporate-website",
-          "highlightsHeading": "Ce que nous avons livré",
+          "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Étude de cas : site corporate & SEO utilisant Next.js | Devsign",
-              "description": "Site Next.js avec SEO technique et performance : plus de 2 900 nouveaux utilisateurs en deux mois — conçu pour convertir et évoluer.",
+              "title": "Site Corporate & Moteur de Croissance SEO",
+              "description": "Étude de cas : un site vitrine Next.js avec SEO technique et optimisation des performances, ayant atteint 2 900+ nouveaux utilisateurs en deux mois — conçu",
               "keywords": [
-                "optimisation site web d'entreprise",
-                "Next.js SEO",
-                "développeur web",
-                "référencement technique",
-                "Devsign",
-                "performance web",
-                "création site entreprise"
+                "site vitrine optimisé",
+                "étude de cas SEO Next.js",
+                "développeur site entreprise",
+                "SEO technique Next.js",
+                "performance site web",
+                "portfolio Devsignpro"
               ]
             },
-            "intro": "Ce projet ne consistait pas seulement à créer une belle page d’accueil. L’objectif était de construire une présence digitale crédible, capable de bien se positionner sur les moteurs de recherche, de charger rapidement sur tous les appareils et de transformer les visiteurs en clients. Nous avons conçu une structure de site claire et optimisée pour le SEO, avec des pages de services et produits bien définies, des métadonnées pertinentes et un maillage interne adapté à la façon dont les utilisateurs recherchent réellement ces pages.",
+            "intro": "Ce projet allait bien au-delà d'une simple page d'accueil soignée : l'entreprise avait besoin d'une présence digitale crédible, capable de se positionner sur Google, de charger rapidement sur tout appareil et de transformer les visiteurs en clients. J'ai construit une structure claire et optimisée pour le crawl, avec des pages services et produits, des métadonnées et un maillage interne alignés sur la façon dont les gens recherchent réellement les offres de l'entreprise.",
             "sections": [
               {
                 "title": "Défi & approche",
-                "body": "Nous sommes partis de zéro, en commençant par une analyse approfondie de l’entreprise, de ses objectifs et de son audience cible. Ensuite, nous avons travaillé sur la phase de conception avec des parcours utilisateurs clairs, suivis de prototypes sur Figma pour visualiser l’expérience. Après validation, nous avons développé un site rapide et optimisé pour le SEO, en utilisant des technologies modernes, avec un accent sur la performance, une structure claire et une gestion de contenu simple pour les évolutions futures."
+                "body": "Je suis parti de zéro, en commençant par une analyse approfondie de l'entreprise, de ses objectifs et de son public cible. J'ai ensuite conçu des parcours utilisateurs clairs, puis des prototypes Figma pour visualiser l'expérience. Une fois validés, j'ai développé un site rapide et optimisé SEO avec des technologies modernes, en me concentrant sur la performance, une structure propre et une gestion de contenu simple pour les futures mises à jour."
               },
               {
                 "title": "Résultats & impact",
-                "body": "Au cours des deux premiers mois suivant le lancement, les analyses ont montré plus de 2 900 nouveaux utilisateurs — un signal fort que la visibilité et la performance fonctionnaient ensemble. Le site continue de servir de base solide et évolutive pour de nouveaux services et campagnes."
+                "body": "Dans les deux mois suivant le lancement, les analytics ont montré plus de 2 900 nouveaux utilisateurs — un signal fort que la visibilité et la performance travaillaient ensemble. Le site a atteint la première position sur Google pour son mot-clé cible (captures d'écran ci-dessous). Il continue de servir de base évolutive pour de nouveaux services et campagnes."
               }
             ],
             "highlights": [
-              "Implémentation orientée performance et SEO avec parcours clairs",
-              "Layout responsive testé sur les breakpoints courants",
-              "Architecture d'information pour services, preuves et conversion",
-              "Traction mesurable : 2 900+ nouveaux utilisateurs en deux mois"
+              "Implémentation axée performance avec routing et métadonnées optimisés SEO",
+              "Mise en page responsive testée sur les principaux breakpoints",
+              "Architecture de l'information claire pour les services, la confiance et la conversion",
+              "Traction mesurable : 2 900+ nouveaux utilisateurs en deux mois après lancement"
+            ],
+            "gallery": [
+              {
+                "src": "/images/Corporate-website/Generate-leads-overview.jpg",
+                "alt": "Vue d'ensemble de la génération de leads après optimisation SEO"
+              },
+              {
+                "src": "/images/Corporate-website/Result-google-search.jpg",
+                "alt": "Résultats Google Search montrant le positionnement du site vitrine"
+              },
+              {
+                "src": "/images/Corporate-website/first-at-google-search.jpg",
+                "alt": "Première position sur Google Search pour le mot-clé cible"
+              }
+            ],
+            "links": [
+              {
+                "url": "https://neodyngrp.com",
+                "label": "Voir le site en ligne"
+              }
             ]
           }
         },
         {
-          "title": "Landing Page E-commerce",
-          "description": "Conception d'une page de destination à haut taux de conversion pour la promotion de produits et les campagnes publicitaires. Optimisée pour un chargement rapide, une expérience mobile et une présentation claire des produits, aidant à augmenter l'engagement utilisateur et les taux de conversion. Intégrée à un tableau de bord pour les mises à jour de contenu en temps réel et l'optimisation des campagnes.",
-          "tech": "Next.js, Tailwind CSS, MongoDB",
+          "title": "Landing Page E-commerce — Rapide & Optimisée SEO",
+          "description": "Conception et développement d'une landing page e-commerce à forte conversion, optimisée pour la vitesse, le mobile, le SEO technique et la conversion. Intégrée à un dashboard sur mesure pour la gestion de contenu en temps réel et l'optimisation des campagnes.",
+          "tech": "Next.js, Tailwind CSS, Technical SEO",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
           "linkLabel": "Voir l'étude de cas",
           "category": "Développement Web & E-commerce",
           "type": "professional",
-          "status": "en ligne",
+          "status": "online",
           "href": "/portfolio/landing-page-ecommerce",
-          "highlightsHeading": "Ce que nous avons livré",
+          "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Page de Destination E-commerce Rapide, Mobile-friendly & SEO Optimisée | Devsign",
-              "description": "Une page de destination à haut taux de conversion conçue pour le commerce moderne. Axée sur des performances ultra-rapides, une adaptabilité mobile et une structure optimisée pour le SEO afin de maximiser l'engagement client.",
+              "title": "Landing Page E-commerce — Rapide & Optimisée SEO",
+              "description": "Une landing page à forte conversion conçue pour le retail moderne. Axée sur la performance, le responsive mobile et une structure SEO-friendly pour maximiser",
               "keywords": [
-                "page de destination ecommerce",
+                "landing page ecommerce",
                 "landing page haute conversion",
                 "landing page Tailwind CSS",
                 "site retail mobile-first",
-                "landing page SEO Maroc",
-                "embaucher développeur frontend"
+                "landing page SEO Maroc"
               ]
             },
-            "intro": "Le e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà des performances, nous avons construit cette page de destination avec un tableau de bord connecté qui permet aux équipes de mettre à jour le contenu, les promotions et les sections instantanément — sans toucher au code. Le résultat est une expérience rapide et optimisée pour mobile, combinée à un contrôle total sur le message et le flux de conversion.",
+            "intro": "L'e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà de la performance, j'ai construit cette landing page avec un dashboard connecté qui permet aux équipes de mettre à jour contenus, promotions et sections instantanément — sans toucher au code. Le résultat : une expérience rapide et optimisée mobile, combinée à un contrôle total sur le message et le parcours de conversion.",
             "sections": [
               {
                 "title": "Construction intelligente & contrôle du contenu",
-                "body": "La page est structurée avec des sections sémantiques propres, des ressources optimisées et un système évolutif pour les performances et la maintenabilité. Les animations et mouvements sont utilisés pour guider l'attention de l'utilisateur et améliorer l'engagement. Nous intégrons également des images et des formulaires pour expliquer clairement le service ou le produit. De plus, un tableau de bord personnalisé permet aux équipes d'éditer le texte, les images, les offres, les CTA et les paramètres d'animation en temps réel. Cela garantit que la page de destination reste fraîche, pertinente et alignée avec les campagnes marketing sur le SEO, les réseaux sociaux et les publicités payantes."
+                "body": "La page est structurée avec des sections sémantiques propres, des assets optimisés et un système évolutif pour la performance et la maintenabilité. Les animations guident l'attention de l'utilisateur et améliorent l'engagement, tandis que les images et formulaires présentent clairement le produit. En plus, un dashboard sur mesure permet aux équipes de modifier textes, images, offres, CTA et animations en temps réel — la landing page reste ainsi à jour et alignée avec les campagnes marketing sur le SEO, les réseaux sociaux et la publicité payante."
+              },
+              {
+                "title": "Résultats & Impact",
+                "body": "La page obtient un score parfait de 100/100 sur Lighthouse pour la Performance et le SEO, garantissant des temps de chargement rapides et une meilleure visibilité search. Le tableau de bord connecté permet aux équipes de mettre à jour les campagnes en quelques minutes — sans attendre un développeur."
               }
             ],
             "highlights": [
-              "Mise en page mobile-first et interactions adaptées au tactile",
-              "Stratégie de ressources et CSS axée sur les performances",
-              "Hiérarchie de contenu et titres orientés SEO",
-              "Chemin CTA clair du héros aux objections jusqu'à l'action"
+              "Mise en page mobile-first et interactions tactiles optimisées",
+              "Assets et stratégie CSS axés performance",
+              "Titres et hiérarchie de contenu orientés SEO",
+              "Parcours CTA clair, du hero jusqu'à l'action"
             ]
           }
         },
         {
-          "title": "Tableau de Bord d'Automatisation d'Entreprise",
-          "description": "Développement d'un tableau de bord personnalisé pour centraliser la gestion des clients, les abonnements et les opérations commerciales. Le suivi automatisé des cycles de facturation, des stocks et du statut des services a réduit le travail manuel, amélioré l'organisation et augmenté l'efficacité globale et la satisfaction client.",
-          "tech": "React JS, Express JS, REST API",
+          "title": "Dashboard d'Automatisation avec React & Express",
+          "description": "Développement d'un dashboard d'entreprise sur mesure pour centraliser la gestion des clients, abonnements, stocks et opérations quotidiennes. Automatisation des cycles de facturation, du suivi des stocks et des services pour réduire le travail manuel et fluidifier les processus métier.",
+          "tech": "React, Express.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
           "linkLabel": "Voir l'étude de cas",
           "category": "Systèmes & Automatisation",
           "type": "professional",
-          "status": "entreprise locale",
+          "status": "local enterprise",
           "href": "/portfolio/business-automation-dashboard",
-          "highlightsHeading": "Ce que nous avons livré",
+          "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Tableau de Bord d'Automatisation avec React JS & Express JS | Devsign",
-              "description": "Portail client et tableau de bord d'opérations personnalisés : abonnements, stocks, tarifs et alertes d'expiration — construits avec React JS, Express JS et des API REST pour de vraies entreprises.",
+              "title": "Dashboard d'Automatisation avec React & Express",
+              "description": "Portail client et dashboard opérationnel sur mesure : abonnements, stock, tarifs et alertes d'expiration — développé avec React, Express et des API REST pour",
               "keywords": [
-                "tableau de bord automatisation entreprise",
+                "dashboard automatisation entreprise",
                 "logiciel gestion abonnements",
-                "outils internes React Express JS",
-                "tableau de bord opérations Maroc",
-                "CRM dashboard personnalisé"
+                "outils internes React Express",
+                "dashboard opérationnel Maroc",
+                "dashboard CRM sur mesure"
               ]
             },
-            "intro": "Les opérations étaient dispersées entre des feuilles de calcul et des fichiers. Nous avons remplacé cela par un tableau de bord unique qui reflète le cycle de vie client de l'abonnement au renouvellement, avec des alertes avant de perdre du chiffre d'affaires.",
+            "intro": "Les opérations étaient dispersées entre tableurs et fichiers. J'ai remplacé tout cela par un dashboard unique qui reflète le cycle de vie client, de l'abonnement au renouvellement, avec des alertes avant que le revenu ne soit perdu.",
             "sections": [
               {
                 "title": "Solution",
-                "body": "Une interface affichant les plans actifs, les dates d'expiration, l'inventaire et l'historique des prix. Les alertes automatisées réduisent le suivi manuel, permettant à l'équipe de se concentrer sur les ventes et le service."
+                "body": "Une interface affichant les abonnements actifs, les dates d'expiration, le stock et l'historique des prix. Les alertes automatisées réduisent le suivi manuel, permettant à l'équipe de se concentrer sur les ventes et le service plutôt que sur l'administration."
+              },
+              {
+                "title": "Résultats & impact",
+                "body": "Le système a remplacé [X] tableurs par une source de vérité unique. Les alertes d'expiration automatisées détectent désormais les renouvellements avant échéance — auparavant suivis à la main et parfois manqués. Le dashboard est utilisé quotidiennement par l'entreprise aujourd'hui."
               }
             ],
             "highlights": [
               "Vue centralisée des clients, abonnements et stocks",
-              "Alertes automatisées pour les services expirants et les seuils critiques",
-              "Architecture basée sur REST prête à s'étendre avec de nouveaux modules",
-              "Conçu pour les opérations quotidiennes sur bureau et tablette"
+              "Alertes automatisées pour les services expirants et seuils critiques",
+              "Architecture REST prête à accueillir de nouveaux modules",
+              "Conçu pour les opérations quotidiennes sur desktop et tablette"
+            ],
+            "gallery": [
+              {
+                "src": "/images/Dashboard-automation/Dashboard-overview.jpg",
+                "alt": "Dashboard d'automatisation — vue d'ensemble des abonnements et du stock"
+              },
+              {
+                "src": "/images/Dashboard-automation/dashboard-login.jpg",
+                "alt": "Écran de connexion sécurisé du dashboard opérationnel interne"
+              },
+              {
+                "src": "/images/Dashboard-automation/dashboard-design.jpg",
+                "alt": "Interface du dashboard pour gérer clients, abonnements et stock"
+              }
             ]
           }
         },
         {
-          "title": "Conception de Publicités Réseaux Sociaux",
-          "description": "Visuels réseaux sociaux à haut taux de conversion qui transforment de simples photos de produits en contenu marketing percutant. Messages clairs, branding fort et CTA axés sur la conversion conçus pour les campagnes Facebook et Instagram.",
-          "tech": "Photoshop, Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "Voir plus de détails",
-          "category": "Conception Publicitaire & Branding",
+          "title": "Plateforme de Maintenance & Gestion Hôtelière",
+          "description": "Plateforme interne de maintenance hôtelière avec signalement structuré des incidents, alertes automatisées via PHPMailer, enregistrements MySQL et rapports d'audit PDF — conçue pour les équipes opérationnelles.",
+          "tech": "PHP, PHPMailer, MySQL, FPDF",
+          "image": "/images/projects/Hotel-Technical-Issue-Manager.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Gestion de Systèmes",
           "type": "professional",
-          "status": "Campagnes Publicitaires",
-          "href": "/portfolio/social-campaign",
-          "highlightsHeading": "Ce que nous avons livré",
+          "status": "local enterprise",
+          "href": "/portfolio/hotel-technical-issue-manager",
+          "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Conception de Publicités Réseaux Sociaux — Créatifs Facebook & Instagram | Devsign",
-              "description": "Publicités sociales et créatifs de flux conçus pour la clarté, le branding et la conversion — workflow Photoshop & Illustrator pour les campagnes qui ont besoin de visuels qui arrêtent le défilement.",
+              "title": "Plateforme de Maintenance & Gestion Hôtelière",
+              "description": "Plateforme interne de maintenance hôtelière avec signalement structuré des incidents, alertes automatisées via PHPMailer, enregistrements MySQL et rapports",
               "keywords": [
-                "conception publicités réseaux sociaux",
-                "créatif publicité Instagram",
-                "conception publicités Facebook Maroc",
-                "graphiques sociaux conversion",
-                "embaucher designer graphique publicités",
-                "créatifs de marque"
+                "logiciel maintenance hôtelière",
+                "système de tickets PHP",
+                "alertes PHPMailer",
+                "application opérationnelle MySQL",
+                "rapports PDF audit",
+                "outils internes entreprise Maroc"
               ]
             },
-            "intro": "Nous concevons des créatifs réseaux sociaux performants adaptés aux campagnes publicitaires Facebook et Instagram. Pour des clients de multiples industries, nous transformons les idées de produits et services en visuels clairs et engageants qui mettent en valeur l'offre, communiquent la valeur instantanément et incitent les utilisateurs à l'action.",
+            "intro": "Les hôtels ne peuvent pas se permettre les pannes silencieuses : les problèmes de climatisation, plomberie ou électricité exigent des tickets traçables, des responsables identifiés et des pistes d'audit. Ce système digitalise le flux complet, du signalement à la résolution — avec escalade par email quand chaque minute compte.",
             "sections": [
               {
-                "title": "Approche de conception axée sur la publicité",
-                "body": "Chaque création est conçue pour capturer l'attention dans des flux à défilement rapide en utilisant des visuels forts, des couleurs équilibrées et une typographie claire. Nous mettons en avant le produit ou le service, ajoutons des titres convaincants et intégrons des CTA efficaces comme 'Acheter Maintenant' ou 'Envoyer un Message'. Que ce soit pour promouvoir un produit ou un service, l'objectif est toujours le même : expliquer l'offre rapidement, attirer l'attention et générer des conversions grâce à une conception cohérente et percutante."
+                "title": "Impact opérationnel",
+                "body": "Les notifications automatisées ont transformé la coordination : fini les appels téléphoniques et les notes papier, place à un flux digital tracé. Chaque ticket est horodaté et attribué — une piste d'audit complète du signalement à la résolution, exportable en PDF pour les revues de direction et les échanges avec les prestataires."
               }
             ],
             "highlights": [
-              "Compositions centrées sur le produit avec des messages lisibles en petit format",
-              "Palettes et typographie alignées sur la marque pour des campagnes cohérentes",
-              "Mises en page axées sur le CTA optimisées pour les placements sociaux payants",
-              "Fichiers sources et exports adaptés aux spécifications publicitaires courantes"
+              "Cycle de vie structuré des incidents, du signalement à la clôture",
+              "Alertes email pour les événements critiques et les transferts",
+              "Rapports PDF pour les audits et revues de direction",
+              "Exemple concret d'automatisation de processus métier"
             ]
           }
         },
         {
           "title": "Pesscore — Suivi de Matchs eFootball",
-          "description": "Une plateforme sociale compétitive pour les joueurs eFootball permettant d'enregistrer les résultats des matchs, suivre les statistiques en face-à-face et vérifier les données de jeu via un système de notification et d'approbation en temps réel.",
+          "description": "Une plateforme sociale et compétitive permettant aux joueurs eFootball d'enregistrer leurs résultats, suivre leurs statistiques en face-à-face et vérifier les données de match via un système de notifications et de validation en temps réel.",
           "tech": "React, Express.js, REST API, MySQL, WebSocket",
           "image": "/images/projects/Pesscore-eFootball-Tracker.jpg",
-          "linkLabel": "Voir plus de détails",
+          "linkLabel": "Voir le projet",
           "category": "Application Web Full-Stack",
           "type": "personal",
-          "status": "en ligne",
+          "status": "online",
           "href": "/portfolio/pesscore-efootball-tracker",
           "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Pesscore Suivi de Matchs eFootball avec React, Express.js, MySQL, WebSockets | Devsign",
-              "description": "Plateforme communautaire eFootball full-stack avec résultats de matchs vérifiés, statistiques face-à-face, notifications en temps réel et système d'approbation bilatéral — construite avec React, Express.js et WebSockets.",
+              "title": "Pesscore — Suivi de Matchs eFootball",
+              "description": "Plateforme communautaire eFootball full-stack avec résultats vérifiés, statistiques face-à-face et notifications temps réel — développée avec React, Express",
               "keywords": [
                 "suivi matchs eFootball",
-                "application React Express.js MySQL",
+                "application React Express MySQL",
                 "plateforme sportive communautaire",
                 "notifications WebSocket",
                 "statistiques face à face",
                 "portfolio full stack"
               ]
             },
-            "intro": "Pesscore est né d'un problème réel : les résultats des matchs entre amis se perdaient dans les chats et les notes. Il a évolué en une plateforme sociale complète où les joueurs eFootball peuvent enregistrer des matchs, suivre les statistiques face-à-face et valider les résultats via un système d'approbation partagé — transformant les jeux occasionnels en compétition structurée et fiable.",
+            "intro": "Pesscore est né d'un problème réel : les résultats de matchs entre amis se perdaient dans les discussions et les notes. C'est devenu une plateforme sociale complète où les joueurs eFootball enregistrent leurs matchs, suivent leurs statistiques en face-à-face et valident les résultats via un système d'approbation partagé — transformant les parties occasionnelles en compétition structurée et fiable.",
             "sections": [
               {
                 "title": "Expérience produit",
-                "body": "La plateforme met l'accent sur la simplicité et la confiance. Les joueurs peuvent enregistrer des matchs, consulter l'historique avec des amis et suivre les performances au fil du temps. Chaque résultat est vérifié via un système d'approbation bilatéral : lorsqu'un match est soumis, l'adversaire reçoit une notification et doit le confirmer ou le rejeter, garantissant des classements précis et fiables."
+                "body": "La plateforme mise sur la simplicité et la confiance. Les joueurs peuvent enregistrer leurs matchs, consulter l'historique avec leurs amis et suivre leurs performances dans le temps. Chaque résultat est vérifié par un système de validation à deux parties : quand un match est soumis, l'adversaire reçoit une notification et doit confirmer ou rejeter le résultat, garantissant des classements précis et fiables."
               },
               {
                 "title": "Architecture & système temps réel",
-                "body": "L'application utilise une architecture découplée : un frontend React et un backend Express.js exposant des API REST. Les WebSockets permettent des notifications en temps réel pour la validation des matchs et les mises à jour. Un service Rust gère la logique critique pour les performances, tandis que MySQL assure un stockage de données cohérent et des relations fiables."
+                "body": "L'application utilise une architecture découplée : un frontend React et un backend Express.js exposant des API REST. Les WebSockets permettent les notifications en temps réel pour la validation des matchs et les mises à jour. Un service Rust gère la logique critique en performance, tandis que MySQL assure un stockage de données cohérent et relationnel."
               },
               {
-                "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre capacité à concevoir des produits réels de l'idée au déploiement. Nous avons acquis une expérience pratique dans la conception d'API REST, la séparation frontend-backend, la communication en temps réel avec WebSockets et la construction de systèmes basés sur la confiance avec des workflows de validation. Cela a également amélioré nos compétences en architecture évolutive, modélisation de base de données et livraison de fonctionnalités centrées sur l'utilisateur, motivées par les besoins réels de la communauté."
+                "title": "Ce que j'ai appris",
+                "body": "Ce projet a renforcé ma capacité à concevoir des produits réels, de l'idée au déploiement : conception d'API REST, séparation frontend-backend, communication temps réel avec WebSockets et systèmes de confiance basés sur des flux de validation. Il a aussi affiné mes compétences en architecture évolutive, modélisation de données et fonctionnalités centrées utilisateur, guidées par les besoins réels d'une communauté."
               }
             ],
+            "realWorld": "Ce sont exactement les compétences derrière les dashboards temps réel, les plateformes de réservation et tout système où plusieurs utilisateurs interagissent simultanément et où les données doivent être fiables.",
             "highlights": [
-              "Enregistrement de matchs avec historique face-à-face et profils de joueurs",
-              "Workflow d'approbation pour éliminer les faux rapports",
-              "Mises à jour en temps réel pour une expérience communautaire réactive",
-              "Architecture pilotée par API prête pour de futurs clients mobiles"
+              "Enregistrement des matchs avec historique face-à-face et profils joueurs",
+              "Flux de validation pour éliminer les faux résultats",
+              "Mises à jour temps réel pour une expérience communautaire réactive",
+              "Architecture API prête pour de futurs clients mobiles"
+            ],
+            "links": [
+              {
+                "url": "https://pesscore.vercel.app",
+                "label": "Voir la plateforme en ligne"
+              }
             ]
           }
         },
         {
-          "title": "Jeu de Pratique Mathématique — Outil d'Apprentissage Interactif",
-          "description": "Un jeu web éducatif interactif qui aide les élèves à maîtriser l'addition, la soustraction, la multiplication et la division grâce à des modes de pratique personnalisables, une difficulté adaptative, un retour immédiat et une interface propre et adaptée au mobile.",
+          "title": "Jeu de Maths — Addition, Soustraction & Plus",
+          "description": "Un jeu éducatif web interactif qui aide les élèves à maîtriser l'addition, la soustraction, la multiplication et la division grâce à des modes d'entraînement personnalisables, une difficulté adaptative et un retour instantané.",
           "tech": "Next.js, Tailwind CSS, MongoDB",
           "image": "/images/projects/math-practice-game.jpg",
-          "linkLabel": "Voir plus de détails",
+          "linkLabel": "Voir le projet",
           "category": "Application Web Éducative",
           "type": "personal",
-          "status": "en ligne",
+          "status": "online",
           "href": "/portfolio/math-practice-game",
           "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Jeu de Pratique Mathématique — Addition, Soustraction, Multiplication, Division | Devsign",
-              "description": "Jeu de pratique mathématique interactif pour enfants et élèves : addition, soustraction, multiplication, division et mode mixte avec difficulté adaptative, retour immédiat et interface responsive Next.js + Tailwind CSS.",
+              "title": "Jeu de Maths — Addition, Soustraction & Plus",
+              "description": "Jeu d'entraînement mathématique interactif pour enfants et élèves : quatre opérations plus un mode mixte, difficulté adaptative et retour instantané ",
               "keywords": [
-                "jeu pratique mathématique",
-                "jeu addition soustraction multiplication division",
-                "application web éducative",
-                "outil apprentissage mathématique enfants",
-                "jeu mathématique interactif",
+                "jeu de maths en ligne",
+                "application éducative web",
+                "jeu mathématique enfants",
+                "jeu de calcul interactif",
                 "jeu éducatif Next.js",
-                "interface responsive Tailwind CSS",
-                "jeu difficulté adaptative",
-                "portfolio frontend"
+                "difficulté adaptative"
               ]
             },
-            "intro": "Apprendre les mathématiques devrait être engageant et adaptable. Ce jeu permet aux élèves de se concentrer sur une opération spécifique — addition (+), soustraction (−), multiplication (×) ou division (÷) — ou de choisir le Mode Mixte pour des questions générées aléatoirement sur les quatre opérations. Avec un retour immédiat, une difficulté progressive et une interface adaptée au mobile, il encourage une pratique régulière de toutes les compétences arithmétiques fondamentales.",
+            "intro": "Apprendre les maths devrait être motivant et adaptable. Ce jeu permet aux élèves de se concentrer sur une opération précise — addition (+), soustraction (−), multiplication (×) ou division (÷) — ou de choisir le Mode Mixte pour des questions aléatoires sur les quatre opérations. Avec un retour instantané, une difficulté progressive et une interface mobile-friendly, il encourage une pratique régulière de toutes les compétences arithmétiques de base.",
             "sections": [
               {
                 "title": "Expérience d'apprentissage flexible",
-                "body": "Les élèves peuvent pratiquer une seule opération pour renforcer des compétences spécifiques ou passer au Mode Mixte pour des questions générées aléatoirement en addition, soustraction, multiplication et division. La difficulté adaptative maintient chaque session au niveau de défi approprié tout en préservant une expérience d'apprentissage agréable."
+                "body": "Les élèves peuvent s'entraîner sur une seule opération pour renforcer des compétences ciblées, ou passer au Mode Mixte pour des questions aléatoires sur les quatre opérations. La difficulté adaptative maintient chaque session au bon niveau de challenge tout en gardant l'expérience agréable."
               },
               {
                 "title": "Conçu pour la vitesse et l'évolutivité",
-                "body": "Développé avec Next.js et Tailwind CSS pour des performances rapides et une expérience responsive sur tous les appareils. L'architecture modulaire facilite l'extension avec de nouveaux modes de jeu, niveaux de difficulté, systèmes de score ou contenu éducatif supplémentaire."
+                "body": "Développé avec Next.js et Tailwind CSS pour des performances rapides et une expérience responsive sur tous les appareils. L'architecture modulaire permet d'ajouter facilement de nouveaux modes de jeu, niveaux de difficulté, systèmes de score ou contenus éducatifs."
               }
             ],
             "highlights": [
-              "Pratique de l'addition, soustraction, multiplication ou division individuellement",
-              "Mode Mixte avec opérations générées aléatoirement sur les quatre",
-              "Difficulté adaptative pour différents niveaux de compétence",
-              "Retour immédiat pour renforcer l'apprentissage",
+              "Entraînement individuel : addition, soustraction, multiplication ou division",
+              "Mode Mixte avec opérations aléatoires sur les quatre",
+              "Difficulté adaptative selon le niveau",
+              "Retour instantané pour renforcer l'apprentissage",
               "Design responsive mobile-first avec Tailwind CSS",
-              "Architecture Next.js modulaire et rapide, prête pour l'expansion future"
+              "Architecture Next.js modulaire, prête pour de futures extensions"
             ]
           }
         },
         {
-          "title": "Minishell — Shell Type Bash en C",
-          "description": "Un shell Unix personnalisé construit from scratch en C qui réplique les comportements fondamentaux de Bash : exécution de commandes, pipes, redirections, variables d'environnement et gestion des signaux — avec une discipline stricte de sécurité mémoire.",
-          "tech": "C, Linux, POSIX, Shell Scripting",
-          "image": "/images/projects/Minishell-Project.jpg",
-          "linkLabel": "Voir plus de détails",
-          "category": "Programmation Système",
-          "type": "academic",
-          "status": "terminé",
-          "href": "/portfolio/minishell-project",
-          "highlightsHeading": "Fonctionnalités clés & compétences",
+          "title": "Convertisseur de Devises & Application de Transfert",
+          "description": "Une application web rapide et sécurisée pour transférer de l'argent et convertir des devises dans le monde entier. Taux de change en temps réel, interface simple et résultats fiables pour des transactions internationales fluides.",
+          "tech": "JavaScript, Bootstrap, APIs",
+          "image": "/images/projects/Currency-Converter.jpg",
+          "linkLabel": "Voir le projet",
+          "category": "Application Web Full-Stack",
+          "type": "personal",
+          "status": "online",
+          "href": "/portfolio/money-transfer",
+          "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Minishell Shell Type Bash en C — Programmation Système Unix | Devsign",
-              "description": "Shell Unix personnalisé construit from scratch en C avec parsing de commandes type Bash, pipes, redirections, variables d'environnement et gestion des signaux. Projet approfondi de programmation système.",
+              "title": "Convertisseur de Devises & Application de Transfert",
+              "description": "Utilitaire web style fintech : taux de change en direct, flux de transfert simples et précision garantie par API — développé avec JavaScript, Bootstrap et",
+              "keywords": [
+                "convertisseur de devises",
+                "API taux de change",
+                "interface transfert d'argent",
+                "prototype fintech Bootstrap",
+                "intégration API JavaScript"
+              ]
+            },
+            "intro": "Les utilisateurs attendent des outils financiers qu'ils soient calmes et précis. Cette application combine une expérience de conversion claire avec des flux orientés transfert, alimentés par des taux en direct provenant d'API externes et une gestion rigoureuse des cas limites comme les fournisseurs indisponibles ou les données obsolètes.",
+            "sections": [
+              {
+                "title": "Fiabilité & clarté",
+                "body": "Les interfaces financières exigent des états explicites : chargement, succès, échec et actualisation. J'ai privilégié un formatage lisible des devises et des messages transparents pour que l'utilisateur sache toujours sur quel chiffre il s'appuie."
+              }
+            ],
+            "highlights": [
+              "Récupération des taux en temps réel via API REST",
+              "Mise en page responsive pour mobiles et desktops",
+              "Patterns UX adaptés aux équipes fintech et e-commerce",
+              "Démontre une discipline d'intégration API de bout en bout"
+            ]
+          }
+        },
+        {
+          "title": "ft_transcendence — Plateforme Pong Temps Réel",
+          "description": "Une plateforme de jeu et sociale multijoueur en temps réel avec matchmaking en direct, chat instantané et authentification OAuth2 sécurisée, déployée via une architecture Dockerisée évolutive.",
+          "tech": "TypeScript, PostgreSQL, Auth0, Docker, Node.js, Socket.io",
+          "image": "/images/projects/ft_transcendence.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Application Web Full-Stack",
+          "type": "academic",
+          "status": "completed",
+          "href": "/portfolio/ft_transcendence",
+          "highlightsHeading": "Fonctionnalités & compétences",
+          "detail": {
+            "seo": {
+              "title": "ft_transcendence — Plateforme Pong Temps Réel",
+              "description": "Plateforme full-stack temps réel : matchmaking, chat, authentification OAuth2, PostgreSQL, services Dockerisés et communication Socket.io.",
+              "keywords": [
+                "ft_transcendence",
+                "Socket.io temps réel",
+                "authentification OAuth2",
+                "TypeScript full stack",
+                "multijoueur PostgreSQL",
+                "application Docker"
+              ]
+            },
+            "intro": "Le défi était de concevoir une plateforme multi-utilisateurs de qualité production à partir d'un dépôt vide. L'objectif : créer une expérience temps réel fluide combinant jeu en direct, messagerie instantanée et gestion sécurisée des utilisateurs.",
+            "sections": [
+              {
+                "title": "L'Architecture",
+                "body": "Construit autour d'une communication WebSocket événementielle, le système gère la synchronisation instantanée des états pour le jeu et le chat. Il garantit la cohérence des données entre plusieurs sessions actives grâce à PostgreSQL, tandis que les conteneurs Docker maintiennent les microservices évolutifs et reproductibles."
+              },
+              {
+                "title": "Ce que j'ai maîtrisé",
+                "body": "L'ingénierie de systèmes temps réel à faible latence. J'ai appris à gérer des connexions WebSocket complexes, des flux d'authentification sécurisés (OAuth2) et à concevoir des schémas de base de données robustes pour des interactions concurrentes sans perte de données."
+              }
+            ],
+            "realWorld": "C'est exactement l'architecture derrière les dashboards métier en direct, les outils SaaS collaboratifs et les systèmes de réservation en temps réel. Cela prouve aux clients comme aux CTO que je peux construire des applications multi-utilisateurs hautement interactives qui fonctionnent parfaitement sous charge.",
+            "highlights": [
+              "Gameplay et chat temps réel avec des patterns d'événements évolutifs",
+              "Flux d'authentification sécurisés avec intégration OAuth2",
+              "Déploiement conteneurisé pour des environnements reproductibles",
+              "Architecture TypeScript/Node de bout en bout avec des limites de modules claires"
+            ]
+          }
+        },
+        {
+          "title": "Minishell — Shell de type Bash en C",
+          "description": "Un shell Unix personnalisé construit de zéro en C, reproduisant fidèlement les comportements fondamentaux de Bash : exécution de commandes, pipes, redirections et gestion des signaux, avec une sécurité mémoire stricte.",
+          "tech": "C, Linux, POSIX, Shell Scripting",
+          "image": "/images/projects/Minishell-Project.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "Programmation Système",
+          "type": "academic",
+          "status": "completed",
+          "href": "/portfolio/minishell-project",
+          "highlightsHeading": "Fonctionnalités & compétences",
+          "detail": {
+            "seo": {
+              "title": "Minishell — Shell de type Bash en C",
+              "description": "Shell Unix personnalisé construit de zéro en C : parsing de commandes façon Bash, pipes, redirections, variables d'environnement et gestion des signaux.",
               "keywords": [
                 "implémentation shell Unix",
                 "shell personnalisé C",
                 "projet shell type Bash",
                 "pipes redirections C",
                 "portfolio programmation système",
-                "fork exec C Linux",
-                "scripting shell POSIX",
-                "projet 42 école",
+                "projet école 42",
                 "programmation C bas niveau"
               ]
             },
-            "intro": "Ce projet est une immersion profonde dans la façon dont les systèmes d'exploitation gèrent l'exécution de commandes et le contrôle des processus. En construisant un shell type Bash from scratch en C, nous avons répliqué les comportements Unix fondamentaux — du parsing de l'entrée utilisateur à l'exécution des commandes, la gestion des processus et le traitement des pipes et redirections avec précision.",
+            "intro": "Pour vraiment comprendre comment les systèmes d'exploitation gèrent les ressources, j'ai reconstruit l'un de leurs outils les plus complexes : un shell. L'objectif était de maîtriser la gestion mémoire bas niveau, le contrôle des processus et les appels système sans m'appuyer sur des frameworks modernes.",
             "sections": [
               {
-                "title": "Profondeur technique",
-                "body": "Le shell implémente un comportement précis type Bash, incluant le parsing de commandes avec règles de guillemets, l'expansion des variables d'environnement et la gestion des signaux (Ctrl+C, Ctrl+D, Ctrl+\\). Il supporte les pipes, les redirections entrée/sortie et la création de processus via fork/exec, tout en assurant la sécurité mémoire et une gestion robuste des erreurs sur les cas limites."
+                "title": "Sous le capot",
+                "body": "J'ai conçu un parseur de commandes robuste qui gère les règles de quoting complexes, les variables d'environnement et les redirections d'entrée/sortie. Il gère la création de processus via fork et exec, la communication inter-processus par pipes et intercepte les signaux système (Ctrl+C, Ctrl+D) avec élégance."
               },
               {
-                "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre compréhension de la programmation système bas niveau : cycle de vie des processus, communication inter-processus via pipes, descripteurs de fichiers et standards POSIX. Nous avons approfondi nos connaissances en exécution de commandes Bash, fondamentaux du scripting shell et écriture de code C propre et fiable sous contraintes strictes — compétences essentielles pour l'ingénierie système et backend."
+                "title": "Ce que j'ai maîtrisé",
+                "body": "Une discipline stricte en programmation C. J'ai acquis une compréhension profonde du cycle de vie des processus, des descripteurs de fichiers, de l'allocation mémoire et des standards POSIX. J'ai appris à écrire du code très performant et sans fuites sous des contraintes strictes."
               }
             ],
+            "realWorld": "Pourquoi un développeur web a-t-il besoin de C et de connaissances bas niveau ? Maîtriser la mémoire, les I/O et les commandes Linux fait de moi un ingénieur backend plus solide. Cela me permet d'écrire du code Node.js optimisé, de déboguer des fuites mémoire en production et d'automatiser les déploiements avec Bash.",
             "highlights": [
-              "Exécution de commandes avec pipelines et redirections E/S",
+              "Exécution de commandes avec pipelines et redirections d'E/S",
               "Gestion des variables d'environnement alignée sur la sémantique Bash",
-              "Gestion des signaux (SIGINT, SIGQUIT, EOF) pour usage interactif",
-              "Code C sécurisé mémoire avec discipline stricte de gestion d'erreurs"
+              "Gestion des signaux (SIGINT, SIGQUIT, EOF) pour un usage interactif",
+              "Code C sécurisé en mémoire avec une discipline d'erreurs stricte"
             ]
           }
         },
         {
-          "title": "Webserver — Serveur HTTP Type Nginx",
-          "description": "Un serveur HTTP haute performance et non-bloquant construit en C++98 inspiré de Nginx. Utilise epoll() pour le multiplexage E/S et supporte CGI, uploads de fichiers et traitement de requêtes conforme aux RFC.",
+          "title": "Webserver — Serveur HTTP de type Nginx en C++",
+          "description": "Un serveur HTTP non-bloquant et haute performance construit en C++98, inspiré de Nginx. Conçu avec epoll() pour le multiplexage d'E/S afin de gérer des milliers de connexions simultanées.",
           "tech": "C++, Linux, HTTP/1.1, Socket Programming, epoll",
           "image": "/images/projects/Webserv-Project.jpg",
-          "linkLabel": "Voir plus de détails",
+          "linkLabel": "Voir l'étude de cas",
           "category": "Serveurs Web & Réseaux",
           "type": "academic",
-          "status": "terminé",
+          "status": "completed",
           "href": "/portfolio/webserv-project",
-          "highlightsHeading": "Fonctionnalités clés & compétences",
+          "highlightsHeading": "Fonctionnalités & compétences",
           "detail": {
             "seo": {
-              "title": "Serveur HTTP Type Nginx — C++ epoll & CGI | Devsign",
-              "description": "Serveur HTTP non-bloquant personnalisé en C++98 avec multiplexage epoll, support CGI, uploads de fichiers et traitement de requêtes orienté RFC — compétences fondamentales en ingénierie serveur et réseaux.",
+              "title": "Webserver — Serveur HTTP de type Nginx en C++",
+              "description": "Serveur HTTP non-bloquant en C++98 avec multiplexage epoll, support CGI, uploads de fichiers et traitement des requêtes orienté RFC.",
               "keywords": [
                 "serveur HTTP C++",
                 "serveur type Nginx",
                 "multiplexage epoll",
                 "serveur web non-bloquant",
-                "programmation sockets Linux",
+                "programmation socket Linux",
                 "implémentation CGI C++",
-                "serveur haute performance",
-                "serveur HTTP conforme RFC",
                 "serveur web from scratch"
               ]
             },
-            "intro": "Construire un serveur web de qualité production from scratch révèle ce que les frameworks modernes abstraient : gestion des connexions, parsing des requêtes, conformité protocolaire et maintien des performances sous charge concurrente. Inspiré par Nginx, ce projet implémente une architecture évolutive utilisant epoll pour gérer efficacement des milliers de connexions client simultanées.",
+            "intro": "Les frameworks modernes masquent la complexité du web. Mon objectif était de reconstruire un véritable serveur HTTP de zéro pour comprendre la gestion des connexions, le parsing des requêtes et la conformité au protocole au niveau le plus bas.",
             "sections": [
               {
-                "title": "Architecture & capacités",
-                "body": "Développé en C++98, le serveur est construit sur des sockets non-bloquants combinés à une boucle d'événements multiplexée pour des E/S haute performance. Il supporte les méthodes HTTP fondamentales (GET, POST, DELETE), un système de configuration flexible inspiré de Nginx (routes, ports, pages d'erreur) et l'exécution CGI pour le contenu dynamique (PHP, Python). Des fonctionnalités supplémentaires incluent des uploads de fichiers sécurisés et une validation stricte des requêtes selon les standards HTTP."
+                "title": "Architecture événementielle",
+                "body": "Inspiré de Nginx, j'ai implémenté une architecture non-bloquante et événementielle utilisant epoll() pour le multiplexage d'E/S. Cela permet au serveur de gérer efficacement des milliers de connexions clients simultanées. Il prend en charge les méthodes HTTP principales, l'exécution CGI pour le contenu dynamique et une validation stricte des requêtes conforme aux RFC."
               },
               {
-                "title": "Ce que nous avons appris",
-                "body": "Ce projet a fourni une compréhension profonde du fonctionnement interne des serveurs web : gestion de connexions concurrentes, traitement des détails du protocole HTTP et optimisation des performances avec des architectures orientées événements. Il a renforcé nos compétences en programmation réseau bas niveau, gestion des sockets et débogage de systèmes complexes, tout en mettant en lumière les compromis entre performance, évolutivité et complexité du code."
+                "title": "Ce que j'ai maîtrisé",
+                "body": "La programmation réseau bas niveau, la gestion des sockets et le protocole HTTP lui-même. J'ai appris à gérer des connexions concurrentes sans bloquer le thread principal, à parser des requêtes HTTP brutes, à optimiser les performances du serveur sous forte charge et à implémenter des codes de statut HTTP précis et conformes aux RFC pour chaque réponse."
               }
             ],
+            "realWorld": "Chaque application web et chaque API repose sur HTTP. Connaître ce protocole en profondeur me permet de prendre des décisions de cache plus intelligentes, d'optimiser les Core Web Vitals, de configurer des reverse proxies sans faille et de déboguer des goulots d'étranglement réseau que les développeurs web ordinaires ne voient tout simplement pas.",
             "highlights": [
-              "Design orienté événements avec epoll pour des milliers de connexions concurrentes",
+              "Conception événementielle avec epoll pour des milliers de connexions simultanées",
               "Parsing HTTP et génération de réponses orientés RFC",
               "Chemin CGI pour l'exécution de contenu dynamique et l'extensibilité",
               "Configuration inspirée de Nginx avec hôtes virtuels et correspondance de routes"
@@ -1044,170 +1327,48 @@
           }
         },
         {
-          "title": "Inception — Stack Infrastructure Docker",
-          "description": "Un environnement multi-conteneurs de type production déployé avec Docker Compose. Comprend un proxy inverse Nginx avec SSL, une couche applicative WordPress et une base de données MariaDB sur un réseau sécurisé et isolé.",
+          "title": "Inception — Stack d'Infrastructure Docker",
+          "description": "Une infrastructure multi-conteneurs prête pour la production, déployée avec Docker Compose. Reverse proxy Nginx avec terminaison SSL, WordPress et MariaDB sur des réseaux isolés et sécurisés.",
           "tech": "Docker, Docker Compose, Linux, Nginx, MariaDB, WordPress",
           "image": "/images/projects/Inception-Project.jpg",
-          "linkLabel": "Voir plus de détails",
+          "linkLabel": "Voir l'étude de cas",
           "category": "Infrastructure & DevOps",
           "type": "academic",
-          "status": "terminé",
+          "status": "completed",
           "href": "/portfolio/inception-project",
-          "highlightsHeading": "Fonctionnalités clés & compétences",
+          "highlightsHeading": "Fonctionnalités & compétences",
           "detail": {
             "seo": {
-              "title": "Stack Infrastructure Docker — Nginx, WordPress, MariaDB | Devsign",
-              "description": "Stack multi-conteneurs de type production avec Docker Compose : proxy inverse Nginx avec SSL, WordPress et MariaDB sur des réseaux isolés. Projet d'orchestration de conteneurs et infrastructure-as-code.",
+              "title": "Inception — Stack d'Infrastructure Docker",
+              "description": "Stack multi-conteneurs de type production avec Docker Compose : reverse proxy Nginx avec SSL, WordPress et MariaDB sur des réseaux isolés.",
               "keywords": [
                 "projet Docker Compose",
                 "stack Nginx WordPress MariaDB",
                 "orchestration de conteneurs",
                 "infrastructure Docker",
-                "proxy inverse SSL",
-                "réseaux conteneurs",
+                "reverse proxy SSL",
                 "projet Inception 42",
                 "portfolio DevOps",
-                "infrastructure as code",
-                "déploiement multi-conteneurs"
+                "infrastructure as code"
               ]
             },
-            "intro": "Ce projet recrée un environnement de type production utilisant Docker, où plusieurs services sont isolés, sécurisés et orchestrés ensemble. L'architecture comprend un proxy inverse avec SSL (HTTPS), des services applicatifs, une base de données et un stockage persistant — tous connectés via un réseau Docker explicite pour un contrôle total, une fiabilité et une parité d'environnement.",
+            "intro": "L'objectif était de recréer un environnement d'hébergement sécurisé de niveau entreprise en utilisant l'Infrastructure as Code. J'ai orchestré plusieurs services isolés — serveurs web, bases de données et reverse proxies — pour garantir une fiabilité totale et la parité des environnements.",
             "sections": [
               {
-                "title": "Conteneurisation & sécurité",
-                "body": "Chaque service s'exécute dans son propre conteneur, géré avec Docker Compose pour la reproductibilité et l'évolutivité. Nginx est configuré comme proxy inverse avec des certificats SSL pour sécuriser le trafic HTTPS. Les volumes nommés assurent la persistance des données entre les redémarrages de conteneurs, tandis que les variables d'environnement et les configurations personnalisées permettent un déploiement flexible entre les environnements de développement, staging et production."
+                "title": "Conteneurisation & Sécurité",
+                "body": "Chaque service s'exécute dans un conteneur isolé géré par Docker Compose. J'ai configuré Nginx comme reverse proxy avec des certificats SSL/TLS pour sécuriser tout le trafic en HTTPS. Les volumes nommés assurent la persistance des données, tandis que le réseau personnalisé isole la base de données de tout accès public, reproduisant les pratiques de sécurité cloud réelles."
               },
               {
-                "title": "Ce que nous avons appris",
-                "body": "Ce projet a construit une fondation DevOps solide : compréhension de la conteneurisation, isolation des services, réseaux inter-conteneurs et communication sécurisée. Nous avons appris à écrire des Dockerfiles et des fichiers Compose, configurer Nginx comme proxy inverse, gérer les certificats SSL/TLS et assurer la persistance des données avec des volumes. Cela a également souligné la reproductibilité — montrant comment des environnements complets peuvent être définis comme code et redéployés de manière cohérente, une pratique clé dans les workflows modernes CI/CD et infrastructure."
+                "title": "Ce que j'ai maîtrisé",
+                "body": "Le DevOps moderne et les pipelines de déploiement. J'ai appris à écrire des Dockerfiles optimisés, gérer le réseau inter-conteneurs, configurer la terminaison SSL et garantir des environnements 100 % reproductibles entre développement, staging et production."
               }
             ],
+            "realWorld": "C'est le déploiement moderne en miniature. Pour les clients, cela signifie que leur site web ou dashboard est hébergé sur une infrastructure sécurisée, évolutive et résistante aux pannes. Pour les entreprises, cela prouve que je peux mener un projet de ma machine locale à un serveur de production en ligne avec une seule commande, en m'intégrant parfaitement à tout pipeline CI/CD.",
             "highlights": [
               "Orchestration multi-services avec Docker Compose",
-              "Frontières réseau isolées entre Nginx, WordPress et MariaDB",
-              "Proxy inverse sécurisé SSL avec terminaison HTTPS",
-              "Stockage persistant et gestion de configuration basée sur l'environnement"
-            ]
-          }
-        },
-        {
-          "title": "ft_transcendence",
-          "description": "Une plateforme multijoueur Pong en temps réel avec matchmaking live, systèmes de chat social et authentification OAuth2 sécurisée. Construite avec une architecture évolutive et une communication WebSocket fluide.",
-          "tech": "TypeScript, PostgreSQL, Auth0, Docker, Node.js, Socket.io",
-          "image": "/images/projects/ft_transcendence.jpg",
-          "linkLabel": "Voir plus de détails",
-          "category": "Application Web Full-Stack",
-          "type": "academic",
-          "status": "terminé",
-          "href": "/portfolio/ft_transcendence",
-          "highlightsHeading": "Fonctionnalités clés & compétences",
-          "detail": {
-            "seo": {
-              "title": "ft_transcendence — Pong Temps Réel, OAuth2, WebSockets | Devsign",
-              "description": "Plateforme temps réel full-stack : matchmaking, chat, authentification OAuth2, PostgreSQL, services conteneurisés et communication Socket.io.",
-              "keywords": [
-                "ft_transcendence",
-                "Socket.io temps réel",
-                "authentification OAuth2",
-                "full stack TypeScript",
-                "multijoueur PostgreSQL",
-                "application web Docker"
-              ]
-            },
-            "intro": "ft_transcendence est une application temps réel full-stack combinant des technologies TypeScript modernes avec des WebSockets pour offrir un gameplay interactif et une communication live. La plateforme gère les utilisateurs authentifiés, les salles de jeu persistantes et la messagerie à faible latence, soutenue par PostgreSQL pour un stockage de données fiable.",
-            "sections": [
-              {
-                "title": "Architecture temps réel",
-                "body": "Le système est conçu autour de la communication WebSocket pour des mises à jour instantanées dans le gameplay et le chat. Il gère l'authentification des utilisateurs, le matchmaking et la synchronisation des états de jeu tout en assurant la cohérence des données via une base de données PostgreSQL. L'architecture équilibre réactivité et stabilité, même sous usage concurrent."
-              },
-              {
-                "title": "Ce que nous avons appris",
-                "body": "Ce projet a renforcé notre expertise dans la construction de systèmes temps réel : gestion des connexions WebSocket, synchronisation des états et assurance d'une communication à faible latence. Nous avons également acquis de l'expérience en développement full-stack TypeScript, authentification sécurisée, conception de base de données et déploiement d'applications évolutives — compétences clés pour les produits modernes comme les tableaux de bord live, les outils collaboratifs et les plateformes de messagerie."
-              }
-            ],
-            "highlights": [
-              "Gameplay et chat temps réel avec patterns d'événements évolutifs",
-              "Flux d'authentification sécurisés avec intégration OAuth2",
-              "Déploiement conteneurisé pour des environnements reproductibles",
-              "Architecture TypeScript/Node end-to-end avec frontières de modules claires"
-            ]
-          }
-        },
-        {
-          "title": "Transfert d'Argent & Convertisseur de Devises",
-          "description": "Une application web rapide et sécurisée pour transférer de l'argent et convertir des devises dans le monde entier. Elle offre des taux de change en temps réel, une interface simple et des résultats fiables pour des transactions internationales fluides.",
-          "tech": "JavaScript, Bootstrap, APIs",
-          "image": "/images/projects/Currency-Converter.jpg",
-          "linkLabel": "Voir plus de détails",
-          "category": "Application Web Full-Stack",
-          "type": "personal",
-          "status": "en ligne",
-          "href": "/portfolio/money-transfer",
-          "highlightsHeading": "Fonctionnalités clés",
-          "detail": {
-            "seo": {
-              "title": "Convertisseur de Devises & Transfert d'Argent Web App | APIs | Devsign",
-              "description": "Utilitaire web style fintech : taux de change live, flux de transfert d'argent simples et précision pilotée par API — construit avec JavaScript, Bootstrap et gestion robuste des erreurs.",
-              "keywords": [
-                "application web convertisseur devises",
-                "API taux de change",
-                "interface transfert d'argent",
-                "prototype fintech Bootstrap",
-                "intégration API JavaScript",
-                "embaucher développeur frontend Maroc"
-              ]
-            },
-            "intro": "Les utilisateurs s'attendent à ce que les outils financiers soient calmes et précis. Cette application associe une expérience de conversion propre à des flux orientés transfert, soutenus par des taux live provenant d'APIs externes et une gestion attentive des cas limites comme les fournisseurs indisponibles ou les données obsolètes.",
-            "sections": [
-              {
-                "title": "Fiabilité & clarté",
-                "body": "Les interfaces financières ont besoin d'états explicites : chargement, succès, échec et rafraîchissement. Nous avons priorisé un formatage lisible des devises et une messagerie transparente pour que les utilisateurs sachent toujours sur quel nombre ils agissent."
-              }
-            ],
-            "highlights": [
-              "Récupération de taux en temps réel via des API REST",
-              "Mise en page responsive pour téléphones et ordinateurs",
-              "Patterns UX adaptés aux équipes fintech et ecommerce",
-              "Démonstration de la discipline d'intégration API de bout en bout"
-            ]
-          }
-        },
-        {
-          "title": "Gestionnaire de Problèmes Techniques Hôtel",
-          "description": "Un système interne professionnel pour la maintenance hôtelière. Rationalise le signalement des problèmes, automatise les alertes email via PHPMailer et génère des rapports PDF numériques pour les audits techniques.",
-          "tech": "PHP, PHPMailer, MySQL, FPDF",
-          "image": "/images/projects/Hotel-Technical-Issue-Manager.jpg",
-          "linkLabel": "Voir plus de détails",
-          "category": "Gestion de Système",
-          "type": "professional",
-          "status": "entreprise locale",
-          "href": "/portfolio/hotel-technical-issue-manager",
-          "highlightsHeading": "Ce que nous avons livré",
-          "detail": {
-            "seo": {
-              "title": "Système de Tickets de Maintenance Hôtel avec PHP, MySQL, PDF | Devsign",
-              "description": "Plateforme interne de maintenance hôtelière : signalement de problèmes, alertes PHPMailer, enregistrements MySQL et rapports d'audit PDF — construite pour de vraies équipes d'opérations.",
-              "keywords": [
-                "logiciel maintenance hôtel",
-                "système de tickets PHP",
-                "alertes PHPMailer",
-                "application opérations MySQL",
-                "rapports audit PDF",
-                "outils internes entreprise Maroc"
-              ]
-            },
-            "intro": "Les hôtels ne peuvent pas se permettre des pannes silencieuses : les problèmes de CVC, plomberie ou électricité nécessitent des tickets traçables, des responsables identifiables et des pistes d'audit. Ce système digitalise le workflow du signalement à la résolution — avec une escalation par email quand chaque minute compte.",
-            "sections": [
-              {
-                "title": "Impact opérationnel",
-                "body": "Les notifications automatisées réduisent le temps de réponse, tandis que les exports PDF soutiennent les conversations de conformité et les transferts aux fournisseurs. Le modèle de base de données est construit autour des statuts, horodatages et responsabilités claires."
-              }
-            ],
-            "highlights": [
-              "Cycle de vie structuré du problème du signalement à la clôture",
-              "Alertes email pour les événements critiques et les transferts",
-              "Rapports PDF pour les audits et revues de gestion",
-              "Exemple pratique d'automatisation des processus métier"
+              "Limites réseau isolées entre Nginx, WordPress et MariaDB",
+              "Reverse proxy sécurisé SSL avec terminaison HTTPS",
+              "Stockage persistant et gestion de configuration par environnement"
             ]
           }
         }
@@ -1233,8 +1394,8 @@
       }
     },
     "contact_page": {
-      "heading": "Construisons Ensemble Votre Prochain Projet Digital Performant",
-      "description": "Vous recherchez un développeur Full-Stack pour créer un site web, une boutique e-commerce, un tableau de bord métier, une automatisation IA ou améliorer votre SEO technique ? J'aide les startups, les entreprises et les entrepreneurs à développer des solutions digitales rapides, évolutives et optimisées pour les moteurs de recherche. Parlez-moi de votre projet et construisons ensemble une solution adaptée à vos objectifs.",
+      "heading": "Construisons Votre Prochain Projet Digital Performant",
+      "description": "Vous cherchez un développeur Full-Stack pour créer un site corporate, un tableau de bord ou améliorer votre SEO technique ? J'aide les startups et entreprises à créer des solutions digitales rapides, évolutives et optimisées pour les moteurs de recherche. Parlez-moi de votre projet.",
       "subtitle": "Lancez votre projet dès aujourd'hui",
       "email": "E-mail",
       "whatsapp": "WhatsApp",
@@ -1312,7 +1473,7 @@
       "sectionLabel": "Articles & Guides",
       "subtitle": "Expérience réelle, conseils pratiques",
       "heading": "Articles sur le Développement Web, le SEO et l'Optimisation de la Recherche IA",
-      "description": "J'écris à partir d'une expérience terrain concrète : du choix du meilleur ordinateur portable pour coder en 2026, à l'inspection d'un PC d'occasion avant achat, en passant par le SEO technique, l'optimisation pour la recherche IA et la création de sites web rapides avec Next.js. Chaque article est conçu pour vous aider à prendre de meilleures décisions et à développer votre présence en ligne.",
+      "description": "J'écris à partir d'expérience réelle et de ce que j'ai appris en cours de route. Ces articles partagent des leçons pratiques tirées du développement de sites Next.js, de la résolution de défis SEO technique et de l'optimisation de sites pour les moteurs de recherche IA.",
       "cta_btn": "Lire l'Article",
       "articlesLabel": "Derniers Articles",
       "topics": [
@@ -1433,11 +1594,15 @@
       },
       {
         "label": "Développement E-commerce",
-        "href": "/services/ecommerce"
+        "href": "/services/ecommerce-development"
+      },
+      {
+        "label": "SEO Technique",
+        "href": "/services/technical-seo"
       },
       {
         "label": "Dashboards & Automatisation",
-        "href": "/services/business-systems"
+        "href": "/services/business-dashboards"
       }
     ],
     "legalLinks": [
@@ -1453,8 +1618,8 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Développeur Web Freelance Maroc | Next.js, SEO & Recherche IA",
-        "description": "Développeur web freelance au Maroc spécialisé en Next.js, SEO et optimisation recherche IA. Je crée des sites performants qui se classent et convertissent.",
+        "title": "Développeur Web & Expert SEO au Maroc | Freelance",
+        "description": "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.",
         "keywords": [
           "développeur web maroc",
           "développeur next.js maroc",
@@ -1466,29 +1631,6 @@
           "optimisation moteur génératif",
           "développeur full-stack maroc",
           "sites web performants"
-        ]
-      },
-      "generateOpenGraph": {
-        "personDescription": "Développeur web full-stack freelance basé au Maroc, spécialisé en Next.js, SEO technique, optimisation recherche IA, Core Web Vitals, et sites web performants pour entreprises et e-commerce.",
-        "orgDescription": "Sites web sur mesure et solutions e-commerce construits avec Next.js. Optimisés pour Google Search, les moteurs de recherche IA, Core Web Vitals, et la croissance business.",
-        "jobTitle": "Développeur Full-Stack, Expert SEO & Spécialiste Optimisation Recherche IA",
-        "services": [
-          {
-            "name": "Développement de Sites Web sur Mesure",
-            "description": "Création de sites web d'entreprise, sites corporate, landing pages et applications web avec SEO technique, Core Web Vitals et optimisation pour la recherche IA."
-          },
-          {
-            "name": "Automatisation des Processus, Tableaux de Bord & Intégration IA",
-            "description": "Développement de tableaux de bord, automatisation des processus métier, intégration de l'IA et systèmes de gestion personnalisés pour améliorer la productivité."
-          },
-          {
-            "name": "Développement de Boutiques E-commerce",
-            "description": "Création de boutiques en ligne performantes avec paiements sécurisés, SEO technique, optimisation des fiches produits et forte capacité de conversion."
-          },
-          {
-            "name": "SEO Technique & Optimisation pour la Recherche IA",
-            "description": "SEO technique, Core Web Vitals, données structurées et optimisation pour la recherche IA afin d'améliorer la visibilité sur Google et les moteurs de recherche IA."
-          }
         ]
       }
     }

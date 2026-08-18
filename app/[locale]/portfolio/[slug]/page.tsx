@@ -1,20 +1,20 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Locale, i18n } from "@/i18n-config";
+import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
-import { hrefToPortfolioSlug } from "@/app/lib/portfolio";
+import { flattenPortfolioProjects, hrefToPortfolioSlug, shortBreadcrumbName } from "@/app/lib/portfolio";
 import PortfolioProjectDetail, {
   type CaseStudyUi,
   type ProjectCaseStudyDetail,
 } from "@/app/components/PortfolioProjectDetail";
-import infos from "@/app/dictionaries/global.json";
+
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
 type PortfolioProject = {
   title: string;
   description: string;
-  tech: string;
+  tech: string | string[];
   image: string;
   category: string;
   type: string;
@@ -40,6 +40,11 @@ const defaultCaseStudyUi: CaseStudyUi = {
   categoryLabel: "Category",
   typeLabel: "Project type",
   statusLabel: "Status",
+  realWorldHeading: "Real-World Impact",
+  galleryHeading: "Project gallery",
+  linksHeading: "Project links",
+  overviewHeading: "Overview",
+  breadcrumbAria: "Breadcrumb",
   collaborationTitle: "Ready for a similar outcome?",
   collaborationBody:
     "Tell me about your goals — I design, build, and ship digital products for businesses in Morocco and worldwide.",
@@ -47,12 +52,16 @@ const defaultCaseStudyUi: CaseStudyUi = {
 
 export async function generateStaticParams() {
   const dict = await getDictionary(i18n.defaultLocale);
-  const projects = (dict.pages?.portfolio_page?.projects ?? []) as PortfolioProject[];
+  const projects = flattenPortfolioProjects<PortfolioProject>(
+    dict.pages?.portfolio_page?.projects,
+  );
   return i18n.locales.flatMap((locale) =>
-    projects.map((p) => ({
-      locale,
-      slug: hrefToPortfolioSlug(p.href),
-    })),
+    projects
+      .filter((p) => hrefToPortfolioSlug(p.href))
+      .map((p) => ({
+        locale,
+        slug: hrefToPortfolioSlug(p.href),
+      })),
   );
 }
 
@@ -63,7 +72,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : i18n.defaultLocale;
 
   const dict = await getDictionary(locale);
-  const projects = dict.pages?.portfolio_page?.projects as PortfolioProject[] | undefined;
+  const projects = flattenPortfolioProjects<PortfolioProject>(
+    dict.pages?.portfolio_page?.projects,
+  );
   const project = getProjectBySlug(projects, slug);
 
   if (!project?.detail?.seo) {
@@ -90,7 +101,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
 
   const dict = await getDictionary(locale);
   const portfolioPage = dict.pages?.portfolio_page;
-  const projects = portfolioPage?.projects as PortfolioProject[] | undefined;
+  const projects = flattenPortfolioProjects<PortfolioProject>(portfolioPage?.projects);
   const project = getProjectBySlug(projects, slug);
 
   if (!project?.detail) {
@@ -104,27 +115,26 @@ export default async function PortfolioProjectPage({ params }: Props) {
     ? project.image
     : `${baseUrl}${project.image.startsWith("/") ? "" : "/"}${project.image}`;
 
-  const caseStudyUi = {
+  const caseStudyUi: CaseStudyUi = {
     ...defaultCaseStudyUi,
     ...((portfolioPage as { caseStudyUi?: Partial<CaseStudyUi> } | undefined)
       ?.caseStudyUi ?? {}),
   };
 
+  const ui = (portfolioPage as { ui?: { typeLabels?: Record<string, string>; statusLabels?: Record<string, string> } } | undefined)?.ui;
+
   const creativeWorkSchema = {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    name: project.title,
+    "@id": `${pageUrl}#creativework`,
+    name: project.detail.seo.title,
     description: project.detail.seo.description,
     image: imageUrl,
     url: pageUrl,
-    inLanguage: locale,
-    creator: {
-      "@type": "Organization",
-      name: "Devsignpro",
-      url: baseUrl,
-      email: infos.email,
-      telephone: infos.phoneNumber,
-    },
+    inLanguage: localeToBcp47(locale),
+    isPartOf: { "@id": `${baseUrl}/#website` },
+    author: { "@id": `${baseUrl}/#person` },
+    creator: { "@id": `${baseUrl}/#person` },
   };
 
   const breadcrumbSchema = {
@@ -146,7 +156,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 3,
-        name: project.title,
+        name: shortBreadcrumbName(project.title),
         item: pageUrl,
       },
     ],
@@ -167,13 +177,19 @@ export default async function PortfolioProjectPage({ params }: Props) {
         }}
       />
       <PortfolioProjectDetail
-        project={{ ...project, detail: project.detail, highlightsHeading: project.highlightsHeading ?? "" }}
+        project={{
+          ...project,
+          detail: project.detail,
+          highlightsHeading: project.highlightsHeading ?? "",
+        }}
         caseStudyUi={caseStudyUi}
         portfolioHref={`/${locale}/portfolio`}
         ctaLabel={portfolioPage?.cta ?? "Contact"}
         ctaLabel_other={portfolioPage?.cta_other ?? "see other projects"}
         locale={locale}
         isRtl={isRtl}
+        typeLabels={ui?.typeLabels}
+        statusLabels={ui?.statusLabels}
       />
     </>
   );

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { i18n } from "@/i18n-config";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { getDictionary } from "@/app/lib/dictionary";
-import { hrefToPortfolioSlug } from "@/app/lib/portfolio";
+import { flattenPortfolioProjects, hrefToPortfolioSlug } from "@/app/lib/portfolio";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = getBaseUrl();
@@ -25,12 +25,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			priority: 0.7,
 		},
 		{
-			path: "/services/business-systems",
+			path: "/services/technical-seo",
 			changeFrequency: "monthly" as const,
 			priority: 0.7,
 		},
 		{
-			path: "/services/ecommerce",
+			path: "/services/ecommerce-development",
+			changeFrequency: "monthly" as const,
+			priority: 0.7,
+		},
+		{
+			path: "/services/business-dashboards",
 			changeFrequency: "monthly" as const,
 			priority: 0.7,
 		},
@@ -52,7 +57,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		},
 	];
 
-	const lastModified = new Date();
+	const lastModified = new Date("2026-08-18");
+	const articleLastModified: Record<string, Date> = {
+		"/articles": new Date("2026-06-02"),
+		"/articles/best-laptop-guide-2026": new Date("2026-05-07"),
+		"/articles/how-to-check-used-laptop-2026": new Date("2026-06-02"),
+	};
 
 	const staticEntries: MetadataRoute.Sitemap = routes.flatMap(
 		({ path, changeFrequency, priority }) =>
@@ -70,17 +80,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}${path}`,
 				alternates: localeAlternates(path),
-				lastModified,
+				lastModified: articleLastModified[path] ?? lastModified,
 				changeFrequency,
 				priority,
 			})),
 	);
 
 	const dict = await getDictionary(i18n.defaultLocale);
-	const portfolioProjects =
-		(dict.pages?.portfolio_page?.projects as
-			| Array<{ href?: string }>
-			| undefined) ?? [];
+	const portfolioProjects = flattenPortfolioProjects<{ href?: string }>(
+		dict.pages?.portfolio_page?.projects,
+	);
 
 	const portfolioEntries: MetadataRoute.Sitemap = portfolioProjects.flatMap(
 		(project) => {

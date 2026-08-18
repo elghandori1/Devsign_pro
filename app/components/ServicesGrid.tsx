@@ -98,8 +98,22 @@ export default function ServicesGrid({
                       ))}
                     </ul>
 
-                    <span className="text-primary font-semibold text-sm group-hover:text-primary/80 transition-colors duration-300 w-fit">
+                    <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:text-primary/80 transition-colors duration-300 w-fit">
                       {sectionData.cta}
+                      <svg
+                        className={`w-4 h-4 shrink-0 arrow-signal ${isRtl ? "rotate-180" : ""}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2.5}
+                          d="M13 6l6 6-6 6M5 12h14"
+                        />
+                      </svg>
                     </span>
                   </div>
 

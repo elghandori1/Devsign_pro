@@ -42,10 +42,6 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
     };
   }, [open]);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   return (
     <>
       <button
@@ -94,6 +90,7 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
                 <Link
                   key={item.href}
                   href={fullHref}
+                  onClick={() => setOpen(false)}
                   className={`flex items-center justify-between p-4 text-xl font-semibold rounded-xl transition-all border-b border-blue-500/30 ${
                     active
                       ? "bg-primary text-primary-foreground shadow-md border-blue-500"

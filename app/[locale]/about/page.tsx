@@ -6,8 +6,6 @@ import {
   ArrowRight,
   Target,
   Trophy,
-  HelpCircle,
-  Heart,
   BookOpen,
   ChevronRight,
   Sparkles,
@@ -15,7 +13,6 @@ import {
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
-import { FAQPageSchema } from "@/app/components/schemas/FAQPageSchema";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -31,17 +28,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title =
     locale === "en"
-      ? "About Mohammed Elghandori | Full-Stack Web Developer & SEO Expert in Morocco"
+      ? "About Mohammed Elghandori | Full-Stack & SEO Expert"
       : locale === "ar"
-        ? "مطور ويب Full-Stack وخبير SEO في المغرب | حول محمد الغنضوري"
-        : "À propos | Développeur Full-Stack & Expert SEO au Maroc";
+        ? "عن محمد الغنضوري | مطور ويب Full-Stack وخبير SEO"
+        : "À propos de Mohammed | Développeur Full-Stack & SEO";
 
   const description =
     locale === "en"
-      ? "Learn about Mohammed Elghandori, a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, AI Search Optimization, and scalable web solutions. Let's build your next project."
+      ? "Learn about Mohammed Elghandori, a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, and AI Search Optimization."
       : locale === "ar"
-        ? "تعرّف على محمد الغنضوري مطور ويب Full-Stack في المغرب متخصص في Next.js وSEO التقني وتحسين الظهور في محركات البحث بالذكاء الاصطناعي وبناء مواقع ويب عالية الأداء. لنبدأ مشروعك."
-        : "Découvrez Mohammed Elghandori, développeur Full-Stack au Maroc spécialisé en Next.js, SEO technique, optimisation de recherche IA et création de solutions web performantes. Parlons de votre projet.";
+        ? "تعرّف على محمد الغنضوري، مطور ويب Full-Stack في المغرب. متخصص في Next.js، SEO التقني، وتحسين البحث بالذكاء الاصطناعي لبناء مواقع عالية الأداء."
+        : "Découvrez Mohammed Elghandori, développeur Full-Stack au Maroc expert en Next.js, SEO technique et optimisation pour la recherche IA.";
 
   const keywords =
     locale === "en"
@@ -132,91 +129,14 @@ export default async function AboutPage({ params }: Props) {
   const isRtl = locale === "ar";
   const baseUrl = getBaseUrl();
 
-  const title =
-    locale === "en"
-      ? "About Mohammed Elghandori | Full-Stack Developer & SEO Specialist in Morocco"
-      : locale === "ar"
-        ? "عن محمد الغنضوري | مطور ويب Full-Stack وخبير SEO في المغرب"
-        : "À propos de Mohammed Elghandori | Développeur Full-Stack & Expert SEO au Maroc";
-
-  const description =
-    locale === "en"
-      ? "Learn about Mohammed Elghandori, a freelance Full-Stack Web Developer in Casablanca, Morocco. Specializing in Next.js, Technical SEO, GEO, AEO, and AI-powered solutions for businesses."
-      : locale === "ar"
-        ? "تعرّف على محمد الغنضوري مطور ويب Full-Stack مستقل في الدار البيضاء، المغرب. متخصص في Next.js وSEO التقني وGEO وAEO والحلول المدعومة بالذكاء الاصطناعي."
-        : "Découvrez Mohammed Elghandori, développeur Full-Stack freelance à Casablanca, Maroc. Spécialisé en Next.js, SEO technique, GEO, AEO et solutions IA pour entreprises.";
-
-  const faqs = [
-    {
-      question:
-        locale === "en"
-          ? "Who is Mohammed Elghandori?"
-          : locale === "ar"
-            ? "من هو محمد الغنضوري؟"
-            : "Qui est Mohammed Elghandori ?",
-
-      answer:
-        locale === "en"
-          ? "Mohammed Elghandori is a freelance Full-Stack Web Developer and SEO Specialist based in Morocco. He specializes in building high-performance websites, e-commerce stores, business dashboards, and custom web applications using Next.js, React, and TypeScript. Every project is optimized with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines. He is an alumnus of 1337 School (42 Network)."
-          : locale === "ar"
-            ? "محمد الغنضوري هو مطور ويب Full-Stack ومستشار SEO مستقل من المغرب. يتخصص في تطوير مواقع ويب عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات ويب مخصصة باستخدام Next.js وReact وTypeScript. يتم تحسين جميع المشاريع باستخدام SEO التقني وCore Web Vitals والبيانات المنظمة وتحسين الظهور في محركات البحث المعتمدة على الذكاء الاصطناعي مثل Google AI Overviews وChatGPT وPerplexity. وهو خريج مدرسة 1337 التابعة لشبكة 42 العالمية."
-            : "Mohammed Elghandori est un développeur web Full-Stack freelance et spécialiste SEO basé au Maroc. Il conçoit des sites web performants, des boutiques e-commerce, des tableaux de bord et des applications web sur mesure avec Next.js, React et TypeScript. Chaque projet est optimisé grâce au SEO technique, aux Core Web Vitals, aux données structurées et à l'optimisation pour les moteurs de recherche basés sur l'IA comme Google AI Overviews, ChatGPT et Perplexity. Il est diplômé de l'école 1337 (Réseau 42).",
-    },
-    {
-      question:
-        locale === "en"
-          ? "What is your process for building high-performance websites and web applications?"
-          : locale === "ar"
-            ? "ما هي منهجيتك في بناء مواقع الويب وتطبيقات الويب عالية الأداء؟"
-            : "Quelle est votre méthodologie pour créer des sites web et des applications performants ?",
-
-      answer:
-        locale === "en"
-          ? "Every project follows a structured development process to ensure quality and long-term success. I begin by understanding your business goals and user needs, then plan the project architecture, user experience, and technical requirements. Development focuses on clean, scalable code, responsive design, performance optimization, Technical SEO, accessibility, and security. Before launch, every website is tested across devices, optimized for Core Web Vitals, and prepared for search engines and AI-powered search platforms. After deployment, I continue providing support, maintenance, and future improvements when needed."
-          : locale === "ar"
-            ? "أتبع منهجية تطوير واضحة لضمان الجودة والأداء على المدى الطويل. أبدأ بفهم أهداف المشروع واحتياجات المستخدمين، ثم أخطط لبنية النظام وتجربة المستخدم والمتطلبات التقنية. أثناء التطوير أركز على كتابة كود نظيف وقابل للتوسع، وتصميم متجاوب، وتحسين الأداء، وSEO التقني، وإمكانية الوصول، والأمان. قبل الإطلاق يتم اختبار المشروع بالكامل وتحسينه وفق معايير Core Web Vitals وتجهيزه لمحركات البحث ومنصات البحث المعتمدة على الذكاء الاصطناعي. كما أقدم الدعم والصيانة والتطوير المستقبلي عند الحاجة."
-            : "Chaque projet suit une méthodologie claire afin de garantir qualité, performance et évolutivité. Je commence par comprendre vos objectifs métier et les besoins de vos utilisateurs, puis je définis l'architecture, l'expérience utilisateur et les aspects techniques. Le développement est réalisé avec un code propre, une conception responsive, des optimisations de performance, le SEO technique, l'accessibilité et la sécurité. Avant la mise en ligne, chaque projet est testé, optimisé pour les Core Web Vitals et préparé pour les moteurs de recherche ainsi que les plateformes de recherche basées sur l'IA. J'assure également le suivi et les améliorations après le lancement.",
-    },
-    {
-      question:
-        locale === "en"
-          ? "What technologies and tools do you work with?"
-          : locale === "ar"
-            ? "ما هي التقنيات والأدوات التي تستخدمها؟"
-            : "Quelles technologies et outils utilisez-vous ?",
-      answer:
-        locale === "en"
-          ? "I build high-performance solutions using a modern tech stack: Frontend & Backend (React, Next.js, TypeScript, Node.js, Express.js, NestJS), and Databases & DevOps (MySQL, MongoDB, Docker, Git, and modern cloud deployment workflows). Beyond core development, I specialize in SEO & AI Optimization (implementing Schema.org, structured data, Core Web Vitals tuning, and AI-ready content architecture) and Business Automation (using n8n, Make, and OpenAI APIs). I always select the technology stack tailored to your specific business requirements to deliver secure, scalable, and maintainable digital solutions."
-          : locale === "ar"
-            ? "أقوم ببناء حلول رقمية عالية الأداء باستخدام مجموعة تقنيات حديثة: الواجهات الأمامية والخلفية (React, Next.js, TypeScript, Node.js, Express.js, NestJS)، وقواعد البيانات وأدوات النشر (MySQL, MongoDB, Docker, Git، بالإضافة إلى أحدث أساليب النشر السحابي). بالإضافة إلى التطوير الأساسي، أتخصص في تحسين محركات البحث والذكاء الاصطناعي (تطبيق Schema.org، البيانات المنظمة، تحسين مقاييس ويب الأساسية Core Web Vitals، وهندسة محتوى جاهزة للذكاء الاصطناعي) وأتمتة الأعمال (باستخدام n8n, Make، وواجهات برمجة تطبيقات OpenAI). أختار دائماً مجموعة التقنيات الأنسب لمتطلبات عملك المحددة لضمان تقديم حلول رقمية آمنة، قابلة للتوسع، وسهلة الصيانة."
-            : "Je développe des solutions performantes en m'appuyant sur une stack technologique moderne : Frontend & Backend (React, Next.js, TypeScript, Node.js, Express.js, NestJS), et Bases de données & DevOps (MySQL, MongoDB, Docker, Git, ainsi que des workflows de déploiement cloud modernes). Au-delà du développement pur, je me spécialise dans l'optimisation SEO & IA (mise en place de Schema.org, données structurées, optimisation des Core Web Vitals et architecture de contenu prête pour l'IA) et l'automatisation des processus (via n8n, Make et les API OpenAI). Je choisis toujours la pile technologique la plus adaptée à vos besoins métier spécifiques afin de livrer des solutions numériques sécurisées, évolutives et maintenables.",
-    },
-    {
-      question:
-        locale === "en"
-          ? "Why choose a web developer in Morocco?"
-          : locale === "ar"
-            ? "لماذا تختار مطور ويب في المغرب؟"
-            : "Pourquoi choisir un développeur web au Maroc ?",
-      answer:
-        locale === "en"
-          ? "Hiring a web developer in Morocco gives you European-level quality at 40–70% lower cost than agencies in France, the UK, or the US — without compromising on code quality, security, or performance. With Morocco's GMT+1 timezone and trilingual developers (French, Arabic, English), collaboration is seamless. Mohammed Elghandori builds fast, secure, scalable websites, e-commerce stores, business dashboards, and AI-powered applications using Next.js and modern technologies. Every project includes Technical SEO, Core Web Vitals, and AI Search Optimization to improve your visibility on Google, ChatGPT, and Perplexity."
-          : locale === "ar"
-            ? "توظيف مطور ويب في المغرب يمنحك جودة بمستوى أوروبي بتكلفة أقل بنسبة 40–70% مقارنة بالوكالات في فرنسا أو المملكة المتحدة أو الولايات المتحدة — دون المساومة على جودة الكود أو الأمان أو الأداء. بفضل المنطقة الزمنية GMT+1 ومطورين يتقنون الفرنسية والعربية والإنجليزية، يكون التعاون سلساً وفعّالاً. محمد الغندوري يطور مواقع ويب سريعة وآمنة وقابلة للتوسع، ومتاجر إلكترونية، ولوحات تحكم، وتطبيقات مدعومة بالذكاء الاصطناعي باستخدام Next.js وأحدث التقنيات. يشمل كل مشروع تحسين محركات البحث التقني، ومقاييس ويب الأساسية، وتحسين البحث بالذكاء الاصطناعي لتعزيز ظهورك على Google وChatGPT وPerplexity."
-            : "Engager un développeur web au Maroc vous offre une qualité de niveau européen à un coût 40 à 70 % inférieur aux agences en France, au Royaume-Uni ou aux États-Unis — sans compromis sur la qualité du code, la sécurité ou les performances. Avec le fuseau horaire GMT+1 et des développeurs trilingues (français, arabe, anglais), la collaboration est fluide. Mohammed Elghandori conçoit des sites web rapides, sécurisés et évolutifs, des boutiques e-commerce, des tableaux de bord et des applications propulsées par l'IA avec Next.js et les technologies modernes. Chaque projet inclut le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA pour améliorer votre visibilité sur Google, ChatGPT et Perplexity.",
-    },
-  ];
-  const aboutSchema = {
+  const ProfileSchema = {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "@id": `${baseUrl}/${locale}/about#webpage`,
+    "@type": "ProfilePage",
+    "@id": `${baseUrl}/${locale}/about#profile`,
     url: `${baseUrl}/${locale}/about`,
-    name: title,
-    description,
-    inLanguage: locale,
-    isPartOf: { "@id": `${baseUrl}/#website` },
-    publisher: { "@id": `${baseUrl}/#organization` },
-    mainEntity: { "@id": `${baseUrl}/#person` },
+    mainEntity: {
+      "@id": `${baseUrl}/#person`,
+    },
   };
 
   const breadcrumbSchema = {
@@ -245,17 +165,14 @@ export default async function AboutPage({ params }: Props) {
     <main
       className="min-h-screen bg-background hero-section-light"
       dir={isRtl ? "rtl" : "ltr"}
-      itemScope
-      itemType="https://schema.org/AboutPage"
     >
-      <FAQPageSchema faqs={faqs} />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutSchema) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ProfileSchema) }}
       />
 
       <section
@@ -296,7 +213,9 @@ export default async function AboutPage({ params }: Props) {
           >
             {t.intro}
           </p>
-
+          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
+            {t.intro_2}
+          </p>
           <div
             className="grid grid-cols-3 gap-3 sm:gap-4 mt-10 max-w-sm sm:max-w-md"
             role="list"
@@ -327,18 +246,19 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
+      {/* 1. WHO I AM SECTION */}
       <section
         className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16"
         aria-labelledby="who-i-am-heading"
       >
         <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
           <div className="space-y-5">
-            <span
+            <h2
               id="who-i-am-heading"
               className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
             >
               {t.whoIAm?.title}
-            </span>
+            </h2>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
               {t.whoIAm?.paragraph1}
@@ -357,12 +277,18 @@ export default async function AboutPage({ params }: Props) {
               <meta itemProp="name" content="Mohammed Elghandori" />
               <meta
                 itemProp="jobTitle"
-                content="Full-Stack Web Developer & SEO Specialist"
+                content={
+                  locale === "en"
+                    ? "Web Developer & SEO Specialist"
+                    : locale === "ar"
+                      ? "مطور ويب وخبير تحسين محركات البحث"
+                      : "Développeur Web & Spécialiste SEO"
+                }
               />
               <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
               <figure className="relative rounded-2xl overflow-hidden border border-border shadow-xl aspect-[3/4]">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/mohammed-profile.png"
                   alt="Mohammed Elghandori - Full-Stack Web Developer and SEO Specialist in Morocco, founder of Devsignpro"
                   fill
                   className="object-cover"
@@ -376,21 +302,49 @@ export default async function AboutPage({ params }: Props) {
         </div>
       </section>
 
+      {/* 2. TECH PHILOSOPHY SECTION */}
+      {t.tech_philosophy && (
+        <section
+          className="max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-14"
+          aria-labelledby="tech-heading"
+        >
+          {/* Added relative, rounded card, border, and overflow-hidden to contain the gradient */}
+          <div className="relative rounded-2xl border border-primary/30 bg-primary/5 p-6 sm:p-10 overflow-hidden shadow-sm">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
+
+            {/* Added z-10 so the text sits cleanly ON TOP of the gradient */}
+            <div className="relative z-10">
+              <h2
+                id="tech-heading"
+                className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-3"
+              >
+                {t.tech_philosophy.title}
+              </h2>
+              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-4xl">
+                {t.tech_philosophy.paragraph}
+              </p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 3. EXPERIENCE SECTION */}
       {t.experience && (
         <section
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-14 sm:pb-20"
+          className="max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-16"
           aria-labelledby="experience-heading"
         >
-          <div className="relative rounded-2xl border border-primary/20 bg-primary/5 overflow-hidden">
+          <div className="relative rounded-2xl border border-primary/30 bg-primary/5 p-6 sm:p-10 overflow-hidden shadow-sm">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
-            <div className="relative text-center py-10 sm:py-14 px-6 sm:px-12">
+
+            <div className="relative z-10">
               <h2
                 id="experience-heading"
-                className="text-2xl sm:text-3xl font-bold mb-4"
+                className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-3"
               >
                 {t.experience.title}
               </h2>
-              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-3xl mx-auto">
+              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-4xl">
                 {t.experience.paragraph}
               </p>
             </div>
@@ -558,10 +512,6 @@ export default async function AboutPage({ params }: Props) {
               >
                 {t.howCanIHelp.title}
               </h2>
-              <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-                <HelpCircle className="w-4 h-4" aria-hidden="true" />
-                {t.howCanIHelp.subtitle}
-              </span>
             </header>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -587,72 +537,9 @@ export default async function AboutPage({ params }: Props) {
       )}
 
       <section
-        className="border-t border-border bg-primary/5"
-        aria-labelledby="faq-heading"
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-          <header className="text-center mb-10 sm:mb-14">
-            <h2
-              id="faq-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3"
-            >
-              {locale === "en"
-                ? "Frequently Asked Questions"
-                : locale === "ar"
-                  ? "الأسئلة الشائعة"
-                  : "Questions Fréquemment Posées"}
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto">
-              {locale === "en"
-                ? "Everything you need to know about working with me."
-                : locale === "ar"
-                  ? "كل ما تحتاج لمعرفته حول العمل معي."
-                  : "Tout ce que vous devez savoir sur la collaboration avec moi."}
-            </p>
-          </header>
-
-          <div className="space-y-4">
-            {faqs.map((faq, idx) => (
-              <details
-                key={idx}
-                className="group rounded-xl border border-border bg-card overflow-hidden"
-                itemScope
-                itemProp="mainEntity"
-                itemType="https://schema.org/Question"
-              >
-                <summary className="flex items-center justify-between p-5 cursor-pointer list-none hover:bg-primary/5 transition-colors">
-                  <h3
-                    className="font-semibold text-foreground pr-4"
-                    itemProp="name"
-                  >
-                    {faq.question}
-                  </h3>
-                  <span className="shrink-0 w-5 h-5 rounded-full border border-primary/30 flex items-center justify-center text-primary group-open:rotate-180 transition-transform">
-                    <ChevronRight
-                      size={12}
-                      className={isRtl ? "rotate-180" : ""}
-                    />
-                  </span>
-                </summary>
-                <div
-                  className="px-5 pb-5 text-sm text-muted-foreground leading-relaxed"
-                  itemScope
-                  itemProp="acceptedAnswer"
-                  itemType="https://schema.org/Answer"
-                >
-                  <div itemProp="text">{faq.answer}</div>
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        className="border-t border-border bg-muted/10"
         aria-labelledby="cta-heading"
       >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-14 sm:pb-20">
           <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
             <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />

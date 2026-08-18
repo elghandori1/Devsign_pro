@@ -202,6 +202,53 @@ body {
   animation: stat-fade-up 0.6s ease-out forwards;
 }
 
+/* Pulsing blue "signal" glow for service card arrows */
+@keyframes arrow-signal {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(0);
+    filter: drop-shadow(0 0 0 rgba(59, 130, 246, 0));
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(var(--signal-shift, 3px));
+    filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.9));
+  }
+}
+
+.arrow-signal {
+  animation: arrow-signal 2.5s ease-in-out infinite;
+}
+
+.arrow-signal-rev {
+  --signal-shift: -3px;
+}
+
+/* Pulsing blue ring for slider arrow buttons — signals swipeability */
+@keyframes btn-signal {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+  50% {
+    box-shadow:
+      0 0 0 5px rgba(59, 130, 246, 0.2),
+      0 0 14px rgba(59, 130, 246, 0.55);
+  }
+}
+
+.btn-signal {
+  animation: btn-signal 2.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrow-signal,
+  .btn-signal {
+    animation: none;
+  }
+}
+
 /* Respect users who prefer no motion — accessibility requirement */
 @media (prefers-reduced-motion: reduce) {
   .stat-animate {

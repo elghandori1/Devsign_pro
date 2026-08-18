@@ -1,22 +1,24 @@
 // app/components/schemas/WebSiteSchema.tsx
+import { localeToBcp47, type Locale } from "@/i18n-config";
 
 interface Props {
   baseUrl: string;
   locale: string;
-  name: string;
   description: string;
 }
 
-export function WebSiteSchema({ baseUrl, locale, name, description }: Props) {
+export function WebSiteSchema({ baseUrl, locale, description }: Props) {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${baseUrl}/#website`,
     url: baseUrl,
-    name,
+    name: "Devsignpro",
     description,
-    inLanguage: locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
-    publisher: { "@id": `${baseUrl}/#organization` }
+    inLanguage: localeToBcp47(locale as Locale),
+    publisher: {
+      "@id": `${baseUrl}/#person`,
+    },
   };
 
   return (

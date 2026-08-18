@@ -66,8 +66,9 @@ Schema markup, entity-first content, FAQ structure, sitemap/robots, Core Web Vit
 - About: https://www.devsignpro.com/en/about
 - Services: https://www.devsignpro.com/en/services
 - Web development: https://www.devsignpro.com/en/services/web-development
-- Business systems: https://www.devsignpro.com/en/services/business-systems
-- E-commerce: https://www.devsignpro.com/en/services/ecommerce
+- Technical SEO: https://www.devsignpro.com/en/services/technical-seo
+- E-commerce development: https://www.devsignpro.com/en/services/ecommerce-development
+- Business dashboards: https://www.devsignpro.com/en/services/business-dashboards
 - Portfolio: https://www.devsignpro.com/en/portfolio
 - Contact: https://www.devsignpro.com/en/contact
 - Articles: https://www.devsignpro.com/en/articles

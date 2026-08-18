@@ -3,7 +3,6 @@ import { Locale } from "@/i18n-config";
 import { MdEmail } from "react-icons/md";
 import { BsWhatsapp, BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
-import { Users } from "lucide-react";
 import infos from "@/app/dictionaries/global.json";
 
 interface ContactTranslations {

@@ -1,4 +1,7 @@
 import type { NextConfig } from "next";
+import { i18n } from "./i18n-config";
+
+const i18nDefaultLocale = i18n.defaultLocale;
 
 const securityHeaders = [
 	{ key: "X-DNS-Prefetch-Control", value: "on" },
@@ -29,6 +32,35 @@ const iconCacheHeaders = [
 const nextConfig: NextConfig = {
 	poweredByHeader: false,
 	compress: true,
+	// 301 permanent redirects for legacy service slugs that were already
+	// crawled/indexed — consolidates all SEO signals on the new URLs.
+	async redirects() {
+		return [
+			// Locale-prefixed legacy slugs
+			{
+				source: "/:locale(en|fr|ar)/services/ecommerce",
+				destination: "/:locale/services/ecommerce-development",
+				permanent: true,
+			},
+			{
+				source: "/:locale(en|fr|ar)/services/business-systems",
+				destination: "/:locale/services/business-dashboards",
+				permanent: true,
+			},
+			// Bare legacy slugs (no locale prefix) — send straight to the
+			// default-locale target to avoid a double redirect chain.
+			{
+				source: "/services/ecommerce",
+				destination: `/${i18nDefaultLocale}/services/ecommerce-development`,
+				permanent: true,
+			},
+			{
+				source: "/services/business-systems",
+				destination: `/${i18nDefaultLocale}/services/business-dashboards`,
+				permanent: true,
+			},
+		];
+	},
 	async headers() {
 		return [
 			{

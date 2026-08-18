@@ -13,6 +13,7 @@ import {
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { flattenPortfolioProjects, parseTechList } from "@/app/lib/portfolio";
 import Statistics from "../../components/Statistics";
 import { FAQPageSchema } from "@/app/components/schemas/FAQPageSchema";
 
@@ -54,15 +55,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : i18n.defaultLocale;
 
   const titles = {
-    en: "Web Development, Technical SEO & AI Automation Services| Devsignpro",
-    fr: "Services de Développement Web, SEO Technique & IA | Devsignpro",
-    ar: "خدمات تطوير الويب، SEO التقني وأتمتة الذكاء الاصطناعي | Devsignpro",
+    en: "Web, SEO & AI Services in Morocco | Devsignpro",
+    fr: "Services Web, SEO & IA au Maroc | Devsignpro",
+    ar: "خدمات الويب، SEO والذكاء الاصطناعي في المغرب",
   };
 
   const descriptions = {
-    en: "Freelance web developer Morocco specializing in Next.js, Technical SEO, GEO & AEO. Building high-performance websites, e-commerce & AI automation solutions.",
-    fr: "Développeur web freelance Maroc spécialisé en Next.js, SEO technique, GEO & AEO. Création de sites performants, e-commerce et automatisation IA.",
-    ar: "مطور ويب مستقل بالمغرب متخصص في Next.js، SEO تقني، GEO وAEO. بناء مواقع عالية الأداء، متاجر إلكترونية وحلول أتمتة الذكاء الاصطناعي.",
+    en: "Explore my digital services: web development, Technical SEO, e-commerce, and business dashboards — with AI Search Optimization built into every project.",
+    fr: "Développement web Next.js, e-commerce, tableaux de bord et SEO technique au Maroc, avec optimisation pour la recherche IA.",
+    ar: "استكشف خدماتي الرقمية: تطوير الويب، SEO التقني، تحسين البحث بالذكاء الاصطناعي، التجارة الإلكترونية، ولوحات التحكم. مبنية للأداء والظهور.",
   };
 
   return buildPageMetadata({
@@ -76,6 +77,28 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
+type ServiceCard = {
+  title?: string;
+  title_card?: string;
+  description?: string;
+  link?: string;
+  image?: string;
+  features?: string[];
+  category?: string;
+};
+
+type HubProject = {
+  type?: string;
+  title?: string;
+  href?: string;
+  image?: string;
+  category?: string;
+  description?: string;
+  tech?: string | string[];
+  status?: string;
+  linkLabel?: string;
+};
+
 const WHY_ICONS = [Award, Code2, FileCheck];
 
 export default async function ServicesPage({ params }: Props) {
@@ -86,123 +109,133 @@ export default async function ServicesPage({ params }: Props) {
 
   const dict = await getDictionary(locale);
   const data = dict.pages?.services_page;
-  const portfolioProjects = dict.pages?.portfolio_page?.projects ?? [];
+  const portfolioProjects = flattenPortfolioProjects<HubProject>(
+    dict.pages?.portfolio_page?.projects,
+  );
   if (!data) return null;
 
   const isRtl = locale === "ar";
   const baseUrl = getBaseUrl();
 
-  const servicesList = Object.entries(data.services || {}).map(
-    ([key, svc]: [string, any]) => ({
+  const servicesList = Object.entries(
+    (data.services || {}) as Record<string, ServiceCard>,
+  ).map(([key, svc]) => ({
       id: key,
       title: svc.title ?? "",
       title_card: svc.title_card,
       description: svc.description ?? "",
-      link: svc.link ?? `/${locale}/services/${key}`,
+      link: svc.link ?? "",
       image: svc.image ?? "",
       features: svc.features ?? [],
       category: svc.category ?? "digital-solutions",
     }),
   );
 
-  const faqs = [
-    {
-      question:
-        locale === "en"
-          ? "What is Generative Engine Optimization (GEO)?"
-          : locale === "ar"
-            ? "ما هو تحسين محرك التوليد (GEO)؟"
-            : "Qu'est-ce que l'Optimisation du Moteur Génératif (GEO) ?",
-      answer:
-        locale === "en"
-          ? "GEO is the practice of structuring your website and content so AI platforms like ChatGPT, Google AI Overviews, and Perplexity can discover, cite, and recommend your business in their answers. Unlike traditional SEO which targets blue links, GEO ensures your brand appears inside AI-generated responses—driving highly qualified traffic."
-          : locale === "ar"
-            ? "GEO هو ممارسة تنظيم موقعك والمحتوى بحيث تتمكن منصات الذكاء الاصطناعي مثل ChatGPT وGoogle AI Overviews وPerplexity من اكتشاف علامتك التجارية والإشارة إليها في إجاباتها."
-            : "Le GEO est la pratique consistant à structurer votre site et votre contenu pour que les plateformes IA comme ChatGPT, Google AI Overviews et Perplexity puissent découvrir et citer votre entreprise.",
-    },
-    {
-      question:
-        locale === "en"
-          ? "What is Answer Engine Optimization (AEO)?"
-          : locale === "ar"
-            ? "ما هو تحسين محرك الإجابات (AEO)؟"
-            : "Qu'est-ce que l'Optimisation du Moteur de Réponses (AEO) ?",
-      answer:
-        locale === "en"
-          ? "AEO focuses on formatting your content to directly answer user questions in featured snippets, voice search, and AI chatbots. By using schema markup, FAQ schema, and concise entity-first content, AEO helps you capture position zero and voice search results."
-          : locale === "ar"
-            ? "يركز AEO على تنسيق المحتوى للإجابة المباشرة على أسئلة المستخدمين في المقتطفات المميزة والبحث الصوتي وروبوتات الدردشة AI."
-            : "L'AEO se concentre sur le formatage de votre contenu pour répondre directement aux questions des utilisateurs dans les extraits enrichis, la recherche vocale et les chatbots IA.",
-    },
-    {
-      question:
-        locale === "en"
-          ? "Do you provide Technical SEO and Core Web Vitals optimization?"
-          : locale === "ar"
-            ? "هل تقدم تحسين SEO التقني وCore Web Vitals؟"
-            : "Proposez-vous du SEO technique et l'optimisation des Core Web Vitals ?",
-      answer:
-        locale === "en"
-          ? "Yes. Every project includes technical SEO audits, Lighthouse optimization, structured data implementation (Schema.org), crawl budget management, and Core Web Vitals tuning (LCP, INP, CLS) to ensure top rankings and user experience."
-          : locale === "ar"
-            ? "نعم. يتضمن كل مشروع تدقيقات SEO تقنية وتحسين Lighthouse وتنفيذ البيانات المنظمة وإدارة ميزانية الزحف وضبط Core Web Vitals."
-            : "Oui. Chaque projet inclut des audits SEO techniques, l'optimisation Lighthouse, l'implémentation de données structurées et le réglage des Core Web Vitals.",
-    },
-    {
-      question:
-        locale === "en"
-          ? "Do you offer Technical SEO, GEO, and AEO audits?"
-          : locale === "ar"
-            ? "هل تقدم عمليات تدقيق SEO تقني وGEO وAEO؟"
-            : "Proposez-vous des audits SEO technique, GEO et AEO ?",
-      answer:
-        locale === "en"
-          ? "Yes. I offer comprehensive audits covering Technical SEO (Core Web Vitals, structured data, indexability), Generative Engine Optimization (GEO) for ChatGPT and Perplexity visibility, and Answer Engine Optimization (AEO) for featured snippets and voice search. Perfect for businesses looking to improve both traditional and AI search presence."
-          : locale === "ar"
-            ? "نعم. أقدم عمليات تدقيق شاملة تغطي SEO التقني (Core Web Vitals والبيانات المنظمة وقابلية الفهرسة)، وGEO للظهور في ChatGPT وPerplexity، وAEO للمقتطفات المميزة والبحث الصوتي."
-            : "Oui. Je propose des audits complets couvrant le SEO technique (Core Web Vitals, données structurées, indexabilité), le GEO pour la visibilité sur ChatGPT et Perplexity, et l'AEO pour les featured snippets et la recherche vocale.",
-    },
-  ];
+  const faqs =
+    locale === "en"
+      ? [
+          {
+            question: "What types of websites and applications do you build?",
+            answer:
+              "I build business websites, e-commerce stores, custom web applications, and management dashboards using Next.js, React.js, Nest.js, and other modern web technologies.",
+          },
+          {
+            question:
+              "Do you provide Technical SEO and Core Web Vitals optimization?",
+            answer:
+              "Yes. I optimize websites for Technical SEO, Core Web Vitals, crawlability, indexability, structured data, and overall search performance. I also identify technical issues that can affect search visibility and user experience.",
+          },
+          {
+            question: "Do you offer AI Search Optimization services?",
+            answer:
+              "Yes. I offer AI Search Optimization focused on improving how websites, content, and structured data can be understood and surfaced by AI-powered search experiences such as Google AI Overviews, ChatGPT, and Perplexity.",
+          },
+          {
+            question:
+              "Do you offer business automation and custom dashboard development?",
+            answer:
+              "Yes. I develop custom management dashboards and business automation tools that help centralize information, streamline workflows, and improve operational efficiency.",
+          },
+        ]
+      : locale === "ar"
+        ? [
+            {
+              question: "ما أنواع المواقع والتطبيقات التي تقوم بتطويرها؟",
+              answer:
+                "أطوّر مواقع الشركات والمتاجر الإلكترونية وتطبيقات الويب المخصصة ولوحات التحكم الإدارية باستخدام Next.js وReact.js وNest.js وغيرها من تقنيات الويب الحديثة.",
+            },
+            {
+              question: "هل تقدم خدمات تحسين SEO التقني وCore Web Vitals؟",
+              answer:
+                "نعم. أعمل على تحسين المواقع من خلال SEO التقني، وCore Web Vitals، وقابلية الزحف والفهرسة، والبيانات المنظمة، والأداء العام في محركات البحث. كما أحدد المشكلات التقنية التي قد تؤثر في الظهور وتجربة المستخدم.",
+            },
+            {
+              question:
+                "هل تقدم خدمات تحسين الظهور في محركات البحث والأنظمة المدعومة بالذكاء الاصطناعي؟",
+              answer:
+                "نعم. أقدم خدمات تحسين البحث بالذكاء الاصطناعي بهدف تحسين فهم المواقع والمحتوى والبيانات المنظمة وظهورها في تجارب البحث المدعومة بالذكاء الاصطناعي مثل Google AI Overviews وChatGPT وPerplexity.",
+            },
+            {
+              question:
+                "هل تقدم خدمات أتمتة الأعمال وتطوير لوحات التحكم المخصصة؟",
+              answer:
+                "نعم. أطوّر لوحات تحكم مخصصة وأدوات لأتمتة الأعمال تساعد على تنظيم المعلومات، وتبسيط سير العمل، وتحسين الكفاءة التشغيلية.",
+            },
+          ]
+        : [
+            {
+              question:
+                "Quels types de sites web et d'applications développez-vous ?",
+              answer:
+                "Je développe des sites web professionnels, des boutiques e-commerce, des applications web sur mesure et des tableaux de bord de gestion avec Next.js, React.js, Nest.js et d'autres technologies web modernes.",
+            },
+            {
+              question:
+                "Proposez-vous des services de SEO technique et d'optimisation des Core Web Vitals ?",
+              answer:
+                "Oui. J'optimise les sites pour le SEO technique, les Core Web Vitals, l'exploration, l'indexation, les données structurées et les performances globales dans les moteurs de recherche. J'identifie également les problèmes techniques pouvant affecter la visibilité et l'expérience utilisateur.",
+            },
+            {
+              question:
+                "Proposez-vous des services d'optimisation pour la recherche IA ?",
+              answer:
+                "Oui. Je propose des services d'optimisation pour la recherche IA afin d'améliorer la compréhension et la visibilité des sites, du contenu et des données structurées dans les expériences de recherche alimentées par l'IA, comme Google AI Overviews, ChatGPT et Perplexity.",
+            },
+            {
+              question:
+                "Proposez-vous des services d'automatisation des entreprises et de développement de tableaux de bord sur mesure ?",
+              answer:
+                "Oui. Je développe des tableaux de bord de gestion et des outils d'automatisation sur mesure pour centraliser les informations, simplifier les flux de travail et améliorer l'efficacité opérationnelle.",
+            },
+          ];
 
   const serviceCollectionSchema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": `${baseUrl}/${locale}/services#page`,
+        "@id": `${baseUrl}/${locale}/services#webpage`,
         url: `${baseUrl}/${locale}/services`,
-        name: data.heading,
+        name: data.title,
         description: data.description,
-        inLanguage: locale,
-        isPartOf: { "@id": `${baseUrl}/#website` },
-        about: { "@id": `${baseUrl}/#organization` },
-        mainEntity: { "@id": `${baseUrl}/${locale}/services#list` },
+        inLanguage:
+          locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
+        isPartOf: {
+          "@id": `${baseUrl}/#website`,
+        },
+        mainEntity: {
+          "@id": `${baseUrl}/${locale}/services#service-list`,
+        },
       },
       {
         "@type": "ItemList",
-        "@id": `${baseUrl}/${locale}/services#list`,
-        itemListElement: servicesList.map((svc, i) => ({
+        "@id": `${baseUrl}/${locale}/services#service-list`,
+        name: data.title,
+        itemListElement: servicesList.map((service, index) => ({
           "@type": "ListItem",
-          position: i + 1,
-          item: {
-            "@type": "Service",
-            "@id": `${baseUrl}/${locale}/services/${svc.id}#service`,
-            name: svc.title_card,
-            description: svc.description,
-            image: svc.image.startsWith("http")
-              ? svc.image
-              : `${baseUrl}${svc.image}`,
-            provider: { "@id": `${baseUrl}/#organization` },
-            areaServed: {
-              "@type": "Place",
-              name: "Morocco",
-              address: {
-                "@type": "PostalAddress",
-                addressCountry: "MA",
-              },
-            },
-            url: `${baseUrl}/${locale}${svc.link}`,
-          },
+          position: index + 1,
+          name: service.title,
+          url: `${baseUrl}/${locale}${service.link}`,
         })),
       },
     ],
@@ -224,10 +257,10 @@ export default async function ServicesPage({ params }: Props) {
         position: 2,
         name:
           locale === "en"
-            ? "Services"
+            ? "What I Do"
             : locale === "ar"
-              ? "الخدمات"
-              : "Services",
+              ? "ما أقدمه"
+              : "Ce que je fais",
         item: `${baseUrl}/${locale}/services`,
       },
     ],
@@ -281,15 +314,15 @@ export default async function ServicesPage({ params }: Props) {
           {/* Category Pill */}
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-sm font-medium mb-6">
             <Sparkles size={13} aria-hidden="true" />
-            {data.subtitle}
+            {data.page_title}
           </div>
 
           <h1
             id="services-hero-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.1] mb-5 max-w-5xl"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.1] mb-5 max-w-5xl"
             itemProp="headline"
           >
-            {data.heading}
+            {data.title}
           </h1>
           <p
             className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7"
@@ -332,11 +365,7 @@ export default async function ServicesPage({ params }: Props) {
             {data.subtitle}
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto mt-2">
-            {locale === "en"
-              ? "Comprehensive digital solutions built for search engines, AI platforms, and business growth."
-              : locale === "ar"
-                ? "حلول رقمية شاملة مبنية لمحركات البحث ومنصات الذكاء الاصطناعي ونمو الأعمال."
-                : "Solutions digitales complètes conçues pour les moteurs de recherche, les plateformes IA et la croissance business."}
+            {data.subtitle_description}
           </p>
         </header>
 
@@ -453,9 +482,9 @@ export default async function ServicesPage({ params }: Props) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
             {portfolioProjects
-              .filter((p: any) => p.type === "professional")
+              .filter((p: HubProject) => p.type === "professional")
               .slice(0, 3)
-              .map((project: any, idx: number) => (
+              .map((project: HubProject, idx: number) => (
                 <article
                   key={project.title ?? idx}
                   className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10"
@@ -463,12 +492,12 @@ export default async function ServicesPage({ params }: Props) {
                   itemType="https://schema.org/CreativeWork"
                 >
                   <Link
-                    href={`/${locale}${project.href}`}
+                    href={`/${locale}${project.href || "/portfolio"}`}
                     className="flex flex-col h-full focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                   >
                     <figure className="relative h-48 sm:h-52 overflow-hidden bg-muted shrink-0">
                       <Image
-                        src={project.image}
+                        src={project.image || "/cover/Designpro-cover.jpg"}
                         alt={`${project.title} - ${locale === "en" ? "Case study by Devsignpro" : locale === "ar" ? "دراسة حالة من Devsignpro" : "Étude de cas par Devsignpro"}`}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -512,8 +541,7 @@ export default async function ServicesPage({ params }: Props) {
                       </p>
 
                       <div className="flex flex-wrap gap-1.5 mb-3">
-                        {project.tech
-                          .split(",")
+                        {parseTechList(project.tech)
                           .slice(0, 3)
                           .map((tech: string, i: number) => (
                             <span
@@ -658,10 +686,10 @@ export default async function ServicesPage({ params }: Props) {
             </h2>
             <p className="text-muted-foreground max-w-xl mx-auto">
               {locale === "en"
-                ? "Everything you need to know about GEO, AEO, and modern web development."
+                ? "Find answers to common questions about my services, SEO, and how we can work together."
                 : locale === "ar"
-                  ? "كل ما تحتاج لمعرفته حول GEO وAEO وتطوير الويب الحديث."
-                  : "Tout ce que vous devez savoir sur le GEO, l'AEO et le développement web moderne."}
+                  ? "إجابات على أكثر الأسئلة شيوعاً حول خدماتي، تحسين محركات البحث، وكيفية العمل معاً."
+                  : "Retrouvez les réponses aux questions les plus fréquentes sur mes services, le SEO et notre collaboration."}
             </p>
           </header>
 
@@ -703,9 +731,6 @@ export default async function ServicesPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ═══════════════════════════════════════════════════════
-          7. FINAL CTA
-          ═══════════════════════════════════════════════════════ */}
       <section aria-labelledby="cta-heading" className="border-t border-border">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
           <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
@@ -717,7 +742,7 @@ export default async function ServicesPage({ params }: Props) {
                 id="cta-heading"
                 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 max-w-2xl mx-auto leading-tight"
               >
-                {data.ctat_title}
+                {data.cta_title}
               </h2>
               <p className="text-muted-foreground mb-8 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
                 {data.cta_desc}

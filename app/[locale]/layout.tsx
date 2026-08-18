@@ -2,20 +2,16 @@
 import type { Metadata, Viewport } from "next";
 import { Roboto, Almarai } from "next/font/google";
 import Script from "next/script";
-// @ts-ignore
 import "@/app/globals.css";
 
-import { Locale, i18n } from "@/i18n-config";
+import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
 import Footer from "@/app/components/Footer";
 import { getDictionary } from "@/app/lib/dictionary";
 import { I18nProvider } from "@/app/providers/i18n-provider";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
-import { PersonSchema, ProfessionalServiceSchema, WebSiteSchema } from "@/app/components/schemas";
-
-import infos from "@/app/dictionaries/global.json";
-
+import { WebSiteSchema } from "@/app/components/schemas";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
@@ -62,15 +58,13 @@ export async function generateMetadata({
     authors: [{ name: "Mohammed elghandori", url: getBaseUrl() }],
     category: "technology",
     icons: {
-      // PNG first: Bing, Brave, Firefox, and most engines prefer these over SVG.
-      // The root SVG is a large embedded bitmap and is unreliable for search icons.
       icon: [
+        { url: "/favicon.ico", type: "image/x-icon" },
+        { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
         { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
         { url: "/favicon-48x48.png", type: "image/png", sizes: "48x48" },
-        { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
         { url: "/favicon-96x96.png", type: "image/png", sizes: "96x96" },
         { url: "/favicon-192x192.png", type: "image/png", sizes: "192x192" },
-        { url: "/favicon.ico", type: "image/x-icon", sizes: "48x48" },
         { url: "/favicon.png", type: "image/png", sizes: "32x32" },
       ],
       shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
@@ -85,14 +79,16 @@ export async function generateMetadata({
         {
           rel: "mask-icon",
           url: "/favicon-32x32.png",
+          color: "#0a0a0a",
         },
       ],
     },
+    
     manifest: "/site.webmanifest",
     other: {
       "msapplication-TileColor": "#0a0a0a",
-      "msapplication-config": "/browserconfig.xml",
       "msapplication-TileImage": "/mstile-150x150.png",
+      "msapplication-config": "/browserconfig.xml",
     },
     alternates: {
       types: {
@@ -139,20 +135,15 @@ export default async function RootLayout({
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-
   const dict = await getDictionary(locale as Locale);
   const footer = dict?.footer ?? null;
-  const layoutSeo = dict.SEO_content.layout_page;
-
-  const baseUrl = getBaseUrl();
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   const fontClassName = locale === "ar" ? almarai.className : roboto.className;
   const dir = locale === "ar" ? "rtl" : "ltr";
-  const metadata = layoutSeo.generateMetadata;
-  const openGraph = layoutSeo.generateOpenGraph;
-  const services = openGraph.services;
+  const baseUrl = getBaseUrl();
+  const layoutSeo = dict.SEO_content.layout_page.generateMetadata;
   return (
-    <html lang={locale} dir={dir} suppressHydrationWarning>
+    <html lang={localeToBcp47(locale)} dir={dir} suppressHydrationWarning>
       <body className={`${fontClassName} antialiased`}>
         {gaMeasurementId ? (
           <>
@@ -171,48 +162,15 @@ export default async function RootLayout({
           </>
         ) : null}
         <I18nProvider dictionary={dict}>
-          
-          <PersonSchema
-            baseUrl={baseUrl}
-            locale={locale}
-            name="Mohammed elghandori"
-            jobTitle={openGraph.jobTitle}
-            description={openGraph.personDescription}
-            image={`${baseUrl}/images/profile.png`}
-            social={{
-              linkedin: infos.social.linkedin,
-              github: infos.social.github,
-              facebook: infos.social.facebook}}
-          />
-
-          <ProfessionalServiceSchema
-            baseUrl={baseUrl}
-            locale={locale}
-            name="Devsignpro"
-            description={openGraph.orgDescription}
-            email={infos.email}
-            phone={infos.phoneNumber}
-            logoUrl={`${baseUrl}/logo/devsignpro-logo.jpg`}
-            founderId={`${baseUrl}/#person`}
-            services={services}
-            social={{
-              linkedin: infos.social.linkedin,
-              instagram: infos.social.instagram,
-              facebook: infos.social.facebook,
-              github: infos.social.github,
-            }}
-          />
-
-          <WebSiteSchema
-            baseUrl={baseUrl}
-            locale={locale}
-            name="Devsignpro"
-            description={metadata.description}
-          />
-
           <ThemeProvider attribute="class" defaultTheme="white" enableSystem>
+            <WebSiteSchema
+              baseUrl={baseUrl}
+              locale={locale}
+              description={layoutSeo.description}
+            />
+
             <Navbar locale={locale} />
-            <main>{children}</main>
+            {children}
             <Footer footer={footer} locale={locale} />
           </ThemeProvider>
         </I18nProvider>

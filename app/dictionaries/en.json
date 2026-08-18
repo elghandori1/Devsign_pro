@@ -1,7 +1,7 @@
 {
   "navbar": {
     "home": "Home",
-    "portfolio": "Projects",
+    "portfolio": "Portfolio",
     "services": "What I Do",
     "about": "About",
     "contact": "Contact"
@@ -9,23 +9,19 @@
   "homepage": {
     "hero": {
       "availability": "Available for new projects",
-      "title_line1": "Full-Stack Developer",
-      "title_highlight": "& Technical SEO Specialist",
-      "description": "I'm a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, and AI Search Optimization. I help startups and businesses build fast, modern websites, e-commerce stores, and custom web applications optimized for performance, Core Web Vitals, and search visibility.",
+      "title_line1": "Web Developer",
+      "title_highlight": "& SEO Expert Based in Morocco",
+      "description": "I'm a Web Developer based in Morocco specializing in SEO and AI Search Optimization. I build fast, modern, and search-optimized websites, e-commerce stores, and custom web applications designed for performance, Core Web Vitals, and search visibility.",
       "description_GEO": "I engineer content and structured data to rank higher on Google and get discovered by ChatGPT, Google AI Overviews, Perplexity, and other AI search engines—driving real visibility and long-term business growth.",
       "cta_primary": "Start a Project",
       "cta_secondary": "View My Work",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Full-Stack Developer & SEO optimization",
+      "profile_role": "Full-Stack Developer & SEO Specialist",
       "cta_more_about": "More About Me",
-      "cta_download_cv": "Download CV",
-      "cv_popup_title": "Download Specialized CV",
-      "cv_popup_desc": "Each one has specific projects",
+      "cta_download_cv": "Download Resume",
       "cv_popup_footer": "• PDF format",
       "cv_web": "Web Development",
-      "cv_web_desc": "MERN Stack, SEO Optimization",
-      "cv_devops": "DevOps & Cloud/Infrastructure",
-      "cv_devops_desc": "Docker, K8s, CI/CD, AWS/GCP"
+      "cv_web_desc": "MERN Stack & SEO Optimization"
     },
     "stats": {
       "items": [
@@ -61,50 +57,73 @@
     },
     "services_section": {
       "sectionLabel": "Web Development & Digital Services",
-      "heading": "I build high-performance websites, e-commerce stores, custom dashboards, and AI-powered automations with Next.js, Technical SEO, Core Web Vitals, and AI Search Optimization—helping businesses improve search visibility, streamline operations, and achieve sustainable online growth.",
+      "heading": "I build high-performance websites, e-commerce stores, and custom dashboards using Next.js and React. Every project is optimized for Technical SEO, Core Web Vitals, and AI Search to help businesses improve visibility, streamline operations, and achieve sustainable growth.",
       "viewAll": "View All Services",
       "cta": "Learn More"
     },
     "about_section": {
       "sectionLabel": "About Me",
-      "highlight": "Full-Stack Developer, Technical SEO & AI Search Optimization Specialist",
-      "paragraph1": "I'm a Full-Stack Web Developer and SEO Specialist based in Morocco, building high-performance Next.js websites, custom dashboards, and AI-powered automations. I help businesses improve search visibility, streamline operations, and scale online with clean, measurable solutions.",
-      "paragraph2": "My work has been tested under pressure, winning 1st place at Al Akhawayn University and UM6P Ben Guerir hackathons, and 2nd place at UM6P Rabat. These experiences sharpened my ability to collaborate in fast-paced teams, ship production-ready code using Git, Docker, and CI/CD pipelines, and deliver reliable software through agile workflows and rigorous code reviews.",
+      "highlight": "Full-Stack Web Developer, Technical SEO & AI Search Optimization Specialist",
+      "paragraph1": "I am a Full-Stack Web Developer and SEO Specialist based in Morocco, specializing in high-performance Next.js applications, custom business dashboards, and AI-driven automations. I partner with businesses to boost search visibility, streamline operations, and scale their digital presence through clean, measurable engineering.",
+      "paragraph2": "My technical skills have been proven in high-pressure national engineering competitions, where I secured 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat. These experiences honed my ability to architect scalable solutions under strict deadlines, collaborate in fast-paced agile teams, and ship production-ready software using modern DevOps pipelines.",
       "cta": "More About Me"
     },
     "why_we_are_section": {
       "sectionLabel": "Why Choose Me",
-      "description": "I help startups, businesses, and entrepreneurs build high-performance websites, e-commerce stores, and digital solutions that are fast, SEO-optimized, AI-ready, and designed to generate long-term business growth—not just beautiful interfaces.",
+      "description": "I build high-performance websites, e-commerce stores, and digital solutions that are fast, SEO-optimized, AI-ready, and designed for long-term business growth not just beautiful interfaces.",
       "reasons": [
         {
-          "title": "Technical SEO & AI Search Optimization",
-          "description": "Every project is built with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, ChatGPT, Google AI Overviews, and other AI-powered search engines."
+          "title": "Technical SEO & AI Optimization",
+          "description": "Built-in Technical SEO, Core Web Vitals, and AI Search Optimization to rank on Google and get cited by ChatGPT and AI engines."
         },
         {
           "title": "Modern Full-Stack Development",
-          "description": "Custom websites, e-commerce stores, dashboards, and web applications built with Next.js, React, and scalable technologies for speed, security, and long-term growth."
+          "description": "Custom websites, dashboards, and web apps built with Next.js and React for speed, security, and scalability."
         },
         {
-          "title": "Automation & Business Efficiency",
-          "description": "Automate repetitive tasks, centralize business operations, and integrate AI-powered workflows that save time, improve productivity, and support smarter decision-making."
+          "title": "Automation & Efficiency",
+          "description": "Automate repetitive tasks and integrate AI workflows to save time, boost productivity, and support smarter decisions."
         },
         {
-          "title": "Performance, Reliability & Support",
-          "description": "Fast-loading, secure, and scalable solutions backed by clean code, responsive communication, and ongoing support to keep your business performing at its best."
+          "title": "Performance & Support",
+          "description": "Fast, secure, and scalable solutions backed by clean code, clear communication, and ongoing support."
         }
       ]
     },
     "projects_section": {
       "heading": "Projects That Deliver Real Impact",
-      "description": "Explore a selection of business websites, e-commerce solutions, custom dashboards, and AI-powered automations built with Next.js, Technical SEO, and performance-first development. Every project focuses on speed, scalability, user experience, and measurable business results."
+      "description": "Explore a selection of high-performance business websites, e-commerce solutions, and custom dashboards built with Next.js and React.js. Every project is engineered for speed, scalability, and Technical SEO, delivering exceptional user experiences and measurable business results."
     },
-    "technology_stack": {
-      "sectionLabel": "Technology Stack",
-      "description": "I build with a modern full-stack ecosystem optimized for performance, SEO, and AI search visibility — including Next.js, React, TypeScript, Node.js, MongoDB, Docker, and cloud infrastructure."
+    "techStack": {
+      "title": "Technologies I Work With — and Why",
+      "subtitle": "Every tool is chosen for security, speed, SEO, and long-term reliability",
+      "items": [
+        {
+          "name": "Next.js",
+          "use": "Websites & E-commerce",
+          "why": "Server-side rendering and built-in SEO (metadata, sitemaps, structured data) mean your pages load fast and rank on Google from day one."
+        },
+        {
+          "name": "React",
+          "use": "Dashboards & Web Apps",
+          "why": "Interactive, app-like interfaces that update instantly without reloading — perfect for business dashboards and admin panels."
+        },
+        {
+          "name": "Nest.js",
+          "use": "Backends & APIs",
+          "why": "A structured, scalable backend architecture that keeps your data secure and your application easy to grow and maintain."
+        },
+        {
+          "name": "TypeScript",
+          "use": "Every Project",
+          "why": "Catches errors before they reach your users — fewer bugs, lower maintenance costs, more reliability."
+        }
+      ],
+      "extra": "I also work with Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions, and other modern tools to build fast, secure, and scalable digital solutions."
     },
     "contact_section": {
       "sectionLabel": "Let's Build Something Together",
-      "description": "Need a fast Next.js website, SEO optimization, or an AI-powered dashboard? I'm available for freelance projects, collaborations, and long-term partnerships. Reach out and let's discuss how I can help you grow online.",
+      "description": "Need a high-performance Next.js website, Technical SEO, or a custom dashboard? I'm available for freelance projects, strategic collaborations, and full-time opportunities. Reach out to discuss how we can accelerate your digital growth.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Chat on WhatsApp",
       "email": "Email",
@@ -119,26 +138,27 @@
   },
   "pages": {
     "services_page": {
-      "title": "Services",
-      "subtitle": "Web Development & Digital Solutions",
-      "heading": "Web Development, Technical SEO & AI Automation Services in Morocco",
-      "description": "Grow your business with high-performance Next.js websites, e-commerce stores, Technical SEO, and AI Search Optimization (GEO/AEO). I build fast, scalable digital solutions from Morocco that improve visibility on Google, get cited by ChatGPT and Perplexity, streamline operations, and generate measurable business growth.",
+      "page_title": "Services",
+      "title": "Web, SEO & AI Search Optimization Services",
+      "description": "Explore my complete suite of digital services designed to grow your business. From custom web development and e-commerce to Technical SEO, AI Optimization, and business automation dashboards — every solution is engineered for search engines and AI platforms.",
+      "subtitle": "Full-Stack Development, Technical SEO & AI Solutions",
+      "subtitle_description": "Comprehensive digital services designed to rank on Google, get cited by AI, and streamline your business operations.",
       "hashtags": [
         "#WebDevelopment",
         "#Nextjs",
         "#TechnicalSEO",
         "#AISearchOptimization",
         "#BusinessAutomation",
-        "#AIIntegration"
+        "#CustomDashboards"
       ],
       "services": {
-        "web": {
+        "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Custom Website Development with Technical SEO in Morocco",
-          "title_metadata": "Website Development in Morocco | SEO, GEO & AI-Optimized",
-          "description_metadata": "Fast, secure website development in Morocco with Technical SEO, Core Web Vitals & AI optimization. Custom websites built to rank on Google & get cited by AI.",
-          "description": "Custom business websites, corporate websites, landing pages, and web applications built for speed, scalability, and long-term growth. Every project includes Technical SEO, Core Web Vitals optimization, structured data, and AI Search Optimization to increase visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and other AI-powered search engines.",
-          "title_card": "Website Development with SEO & AI Optimization",
+          "title": "Web Development services in Morocco — Fast, Secure, Built to Rank",
+          "title_metadata": "Web Development Services in Morocco | Fast & SEO-Ready",
+          "description_metadata": "Custom web development services in Morocco. Fast, secure business websites built with Next.js, Technical SEO, and Core Web Vitals. Built to rank and convert.",
+          "description": "Looking for the best web development services in Morocco? I build high-performance custom business websites, e-commerce platforms, and web applications optimized for Technical SEO and Core Web Vitals. Scale your business with an online presence built for top rankings on Google and AI search engines.",
+          "title_card": "Website Development with Built-in SEO & AI Overview",
           "overviewHeadline": "Website Development That Drives Traffic, Leads & Business Growth",
           "startDescription": "Your website should do more than look professional, it should attract qualified visitors, explain your services clearly, and turn potential customers into real clients.",
           "longDescription": "Every project is built with modern technologies like Next.js and React, optimized for speed, security, scalability, Technical SEO, Core Web Vitals, and AI Search Optimization. I structure content, metadata, and schema so your business can perform well in Google Search and be understood by AI platforms like ChatGPT, Google AI Overviews, and Perplexity. From planning to deployment, every decision focuses on long-term visibility, performance, and measurable business growth.",
@@ -146,68 +166,65 @@
           "link": "/services/web-development",
           "start_btn": "Start Your Project",
           "allServicesBtn": "View All Services",
-          "overviewTitle": "Why Choose Me?",
+          "overviewTitle": "Why Choose My Web Development Services?",
           "includedTitle": "What's Included",
           "includedDesc": "Every web development project includes:",
           "benefitsTitle": "What You'll Gain",
           "benefitsDesc": "By working with me on your website, you can expect:",
-          "processTitle": "How I Work",
+          "processTitle": "My Development Process",
           "processDesc": "A clear, proven process that delivers your project on time and on target:",
-          "techTitle": "Technologies I Work With",
+          "techTitle": "The Technology Stack",
           "techDesc": "I choose the right technologies based on your project requirements and business goals — not trends.",
           "faqTitle": "Frequently Asked Questions",
           "faqDesc": "Direct answers about website development, SEO, and AI search optimization:",
-          "AnothersrvcBtn": "View All Services",
+          "AnothersrvcBtn": "Explore Other Services",
           "features": [
-            "SEO-Optimized Structure",
-            "AI Search Ready (GEO)",
+            "SEO & GEO Optimized Structure",
             "Responsive",
             "Core Web Vitals Optimized"
           ],
           "included": [
-            "Custom design and development with Next.js, React, and TypeScript",
-            "On-page SEO: semantic HTML, metadata, schema markup, sitemap and robots.txt",
+            "Custom UI/UX design and frontend development with Next.js, React, and TypeScript",
+            "On-page SEO: semantic HTML, metadata, schema markup, XML sitemaps, and robots.txt",
             "GEO & AEO optimization so AI assistants can understand, quote, and recommend your business",
-            "Core Web Vitals optimization: image optimization, caching, and instant load times",
-            "Google Search Console, Google Analytics, and Bing Webmaster Tools integration from day one",
-            "Accessibility (WCAG) and semantic HTML for better usability and search visibility",
-            "Security hardening: HTTPS, secure headers, and protected forms",
-            "Post-launch support, documentation, and performance monitoring"
+            "Core Web Vitals optimization: image optimization, caching strategies, and instant load times",
+            "Google Search Console, Google Analytics 4, and Bing Webmaster Tools integration from day one",
+            "Security hardening: HTTPS, secure HTTP headers, and protected form submissions"
           ],
           "benefits": [
             {
-              "title": "Improve Search Visibility",
-              "text": "Semantic code, structured data, optimized metadata, and fast Core Web Vitals — everything Google rewards, built in from the first line of code."
+              "title": "Maximum Search Visibility",
+              "text": "Semantic code, structured data, optimized metadata, and flawless Core Web Vitals — everything Google rewards, engineered from the first line of code."
             },
             {
-              "title": "Visibility in AI search results",
-              "text": "Content structured for GEO and AEO, so ChatGPT, Gemini, and Perplexity can cite and recommend your business when people ask for services like yours."
+              "title": "Presence in AI Search Results",
+              "text": "Content structured for GEO and AEO, ensuring ChatGPT, Gemini, and Perplexity can cite and recommend your business to users."
             },
             {
-              "title": "More conversions & measurable growth",
-              "text": "Clear calls-to-action, trust signals, and analytics tracking — so every visitor is guided toward becoming a client, and you can measure exactly what works."
+              "title": "Higher Conversions & Measurable ROI",
+              "text": "Clear calls-to-action, trust signals, and precise analytics tracking — guiding every visitor toward becoming a client."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Discovery & Keyword Research",
-              "text": "I analyze your goals, audience, competitors, and the exact keywords your customers search for — before writing a single line of code."
+              "title": "Discovery & Strategy",
+              "text": "I analyze your business goals, target audience, and the exact keywords your customers use — before writing a single line of code."
             },
             {
               "step": "02",
-              "title": "Design & Development",
-              "text": "Clean, fast development with Next.js — semantic HTML, responsive design, and accessibility built into every component."
+              "title": "Design & Architecture",
+              "text": "Clean, scalable development with Next.js — semantic HTML, responsive design, and accessibility built into every component."
             },
             {
               "step": "03",
-              "title": "SEO & AI Optimization",
-              "text": "Schema markup, metadata, sitemap, and content structured for Google rankings and AI citations (GEO/AEO)."
+              "title": "SEO & AI Integration",
+              "text": "Schema markup, metadata, sitemaps, and content structured for both traditional Google rankings and modern AI citations."
             },
             {
               "step": "04",
-              "title": "Launch, Analytics & Continuous Improvement",
-              "text": "Go live with analytics configured, Search Console connected, sitemap submitted, and Core Web Vitals benchmarks confirmed."
+              "title": "Launch & Monitoring",
+              "text": "Go live with analytics configured, Search Console connected, and Core Web Vitals benchmarks verified for ongoing success."
             }
           ],
           "caseStudy": {
@@ -235,49 +252,178 @@
               "label": "View the full case study"
             }
           },
+          "crossLink": {
+            "text": "Already have a website that's not ranking?",
+            "linkText": "Technical SEO services →",
+            "href": "/services/technical-seo"
+          },
           "faqs": [
             {
               "q": "How long does it take to build a professional website?",
-              "a": "Most business websites take 2 to 4 weeks from kickoff to launch, depending on the number of pages and features. Landing pages can be ready in about one week, while larger custom web applications may take 4 to 8 weeks. You get a clear timeline before we start."
+              "a": "Most business websites take 3 to 6 weeks from kickoff to launch, depending on the scope. Landing pages can be ready in a week, while complex web applications take longer. You receive a clear timeline before we begin."
             },
             {
-              "q": "Will my website rank on Google?",
-              "a": "Yes — every website is built with technical SEO from the start: semantic HTML, schema markup, optimized metadata, fast Core Web Vitals, and Google Search Console integration. This gives your site the strongest possible foundation to rank for the keywords your customers search."
+              "q": "Which technologies do you use?",
+              "a": "I primarily build with Next.js, React, TypeScript, and Tailwind CSS. This modern stack ensures your site is incredibly fast, secure, and easy to scale as your business grows."
             },
             {
-              "q": "What is GEO and why does it matter for my business?",
-              "a": "GEO (Generative Engine Optimization) means structuring your website so AI assistants like ChatGPT, Gemini, and Perplexity can understand, cite, and recommend your business. As more people ask AI instead of searching Google, GEO helps your business appear in those AI-generated answers."
+              "q": "Can you guarantee first-page rankings?",
+              "a": "No honest developer can guarantee specific rankings. What I guarantee is a flawless technical foundation that search engines love. You can see the real-world results of this approach in my case studies."
             },
             {
-              "q": "Which technologies do you use to build websites?",
-              "a": "I build with Next.js, React, TypeScript, and Tailwind CSS — modern technologies chosen for speed, security, and scalability. This stack powers some of the world's fastest websites and makes your site easy to maintain and grow over time."
-            },
-            {
-              "q": "How much does it cost to build a website in Morocco?",
-              "a": "The cost depends on the project's complexity, features, design, SEO requirements, and integrations. A simple business website costs less than a custom web application or e-commerce platform. I provide tailored quotes based on your goals, ensuring every project is optimized for performance, Technical SEO, and long-term business growth."
-            },
-            {
-              "q": "Do you provide maintenance after the website launches?",
-              "a": "Yes — I offer ongoing maintenance and growth plans covering updates, security, backups, performance monitoring, and continuous SEO improvements, so your website keeps performing long after launch day."
+              "q": "Do you provide maintenance after launch?",
+              "a": "Yes. I offer monthly maintenance retainers that include performance monitoring, security updates, and SEO health checks to ensure your website stays fast, secure, and visible as algorithms evolve."
             },
             {
               "q": "Can you redesign my existing website instead of building a new one?",
-              "a": "I can redesign and modernize existing websites, improve performance, fix Technical SEO issues, enhance Core Web Vitals, implement structured data, and prepare the website for AI-powered search without rebuilding everything from scratch when possible."
+              "a": "Absolutely. I can modernize your current site, fix Technical SEO issues, improve Core Web Vitals, and prepare it for AI search without necessarily rebuilding everything from scratch."
             }
           ]
         },
-        "ecommerce": {
+        "technical_seo": {
+          "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+          "title": "Technical SEO Services & Audits: Fix, Optimize & Rank",
+          "title_metadata": "Technical SEO Services & Audits | Fix, Optimize, Rank Higher",
+          "description_metadata": "Expert Technical SEO audits, indexability fixes, and Core Web Vitals optimization to improve Google rankings and crawlability.",
+          "description": "Is your website technically sound but still not ranking? I provide expert Technical SEO audits, Core Web Vitals optimization, and indexability fixes to help your website perform at its best on Google and AI search engines.",
+          "title_card": "Technical SEO Audits & Core Web Vitals Optimization",
+          "overviewHeadline": "Technical SEO That Fixes What's Holding Your Rankings Back",
+          "startDescription": "Beautiful design and great content mean nothing if search engines can't crawl, index, or understand your website. Technical SEO is the foundation that makes everything else work.",
+          "longDescription": "I audit and fix the technical issues that prevent websites from ranking: slow Core Web Vitals, crawl errors, broken redirects, missing structured data, and poor indexability. Every fix is implemented with precision — from schema markup and canonical tags to image optimization and caching strategies. Whether you need a one-time audit or ongoing Technical SEO support, I ensure your website meets the highest standards of Google and AI search engines.",
+          "company_recruitment": "I'm also available to collaborate with startups, agencies, and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker, and modern development practices.",
+          "link": "/services/technical-seo",
+          "start_btn": "Request a Technical Audit",
+          "allServicesBtn": "View All Services",
+          "overviewTitle": "Why Choose My Technical SEO Services?",
+          "includedTitle": "What's Included",
+          "includedDesc": "Every Technical SEO project includes:",
+          "benefitsTitle": "What You'll Gain",
+          "benefitsDesc": "By working with me on your Technical SEO, you can expect:",
+          "processTitle": "My Technical SEO Process",
+          "processDesc": "A systematic approach to diagnosing, fixing, and monitoring your website's technical health:",
+          "techTitle": "Tools & Technologies I Use",
+          "techDesc": "I combine industry-leading tools with manual code inspection for the most accurate audits:",
+          "faqTitle": "Frequently Asked Questions",
+          "faqDesc": "Direct answers about Technical SEO, Core Web Vitals, and website performance:",
+          "AnothersrvcBtn": "Explore Other Services",
+          "features": [
+            "Crawlability & Indexability Fixes",
+            "Core Web Vitals Optimization",
+            "Structured Data & Schema Markup"
+          ],
+          "included": [
+            "Full technical SEO audit: crawl errors, broken links, redirect chains, and orphan pages",
+            "Core Web Vitals optimization: LCP, INP, and CLS improvements for faster load times",
+            "Schema markup implementation: JSON-LD structured data for rich snippets and AI understanding",
+            "XML sitemap and robots.txt optimization for better crawl efficiency",
+            "Canonical tags and duplicate content resolution",
+            "HTTPS, security headers, and mobile-friendliness verification"
+          ],
+          "benefits": [
+            {
+              "title": "Higher Google Rankings",
+              "text": "Fix the technical barriers preventing your content from ranking. Clean code, fast load times, and proper indexing give Google every reason to rank you higher."
+            },
+            {
+              "title": "Better User Experience",
+              "text": "Fast Core Web Vitals mean lower bounce rates, longer session times, and more conversions. Speed isn't just an SEO metric — it's a revenue metric."
+            },
+            {
+              "title": "AI Search Readiness",
+              "text": "Structured data and clean architecture help AI engines like ChatGPT and Perplexity understand, cite, and recommend your content."
+            }
+          ],
+          "process": [
+            {
+              "step": "01",
+              "title": "Technical Audit & Discovery",
+              "text": "I run a comprehensive audit of your website using industry-leading tools, identifying every technical issue holding back your rankings."
+            },
+            {
+              "step": "02",
+              "title": "Prioritization & Strategy",
+              "text": "Not all fixes are equal. I prioritize issues by impact, giving you a clear roadmap of what to fix first for the fastest results."
+            },
+            {
+              "step": "03",
+              "title": "Implementation & Fixes",
+              "text": "I implement the fixes directly in your codebase or provide detailed developer documentation — schema markup, speed optimization, crawl fixes, and more."
+            },
+            {
+              "step": "04",
+              "title": "Monitoring & Reporting",
+              "text": "After implementation, I monitor your Core Web Vitals, index coverage, and search performance to ensure the fixes deliver measurable results."
+            }
+          ],
+          "caseStudy": {
+            "badge": "Real Client Results",
+            "title": "Technical SEO That Took a Corporate Site to #1 on Google",
+            "description": "Neodyne Group's corporate website was built from scratch with Technical SEO as the priority. We implemented structured data, optimized Core Web Vitals, fixed indexability issues, and submitted a clean sitemap — resulting in a #1 Google ranking and 2,900+ new users in two months.",
+            "results": [
+              {
+                "value": "2,900+",
+                "label": "new users in the first two months"
+              },
+              {
+                "value": "#1",
+                "label": "Google ranking for target keyword"
+              },
+              {
+                "value": "<1s",
+                "label": "average page load time"
+              }
+            ],
+            "image": "/images/projects/Corporate-Website.png",
+            "imageAlt": "Homepage of the Neodyne Group corporate website optimized with Technical SEO by Devsignpro",
+            "link": {
+              "href": "/portfolio/corporate-website",
+              "label": "View the full case study"
+            }
+          },
+          "crossLink": {
+            "text": "Need a new website built with SEO from day one?",
+            "linkText": "Web Development services →",
+            "href": "/services/web-development"
+          },
+          "faqs": [
+            {
+              "q": "What is Technical SEO and why does it matter?",
+              "a": "Technical SEO refers to the backend optimizations that help search engines crawl, index, and understand your website. Without it, even the best content won't rank. It includes site speed, mobile-friendliness, structured data, and indexability."
+            },
+            {
+              "q": "How long does a Technical SEO audit take?",
+              "a": "A comprehensive audit typically takes 3-5 business days, depending on the size of your website. You'll receive a detailed report with prioritized recommendations and a clear action plan."
+            },
+            {
+              "q": "Can you fix Core Web Vitals issues on my existing website?",
+              "a": "Yes. I specialize in diagnosing and fixing Core Web Vitals issues (LCP, INP, CLS) on existing websites. This includes image optimization, caching strategies, code splitting, and render-blocking resource elimination."
+            },
+            {
+              "q": "Do you work with WordPress, Shopify, or only custom sites?",
+              "a": "I work with all platforms, but I specialize in custom-built sites with Next.js and React. For WordPress or Shopify, I can audit and provide developer-ready recommendations for your team to implement."
+            },
+            {
+              "q": "Will Technical SEO guarantee higher rankings?",
+              "a": "No one can guarantee specific rankings. However, Technical SEO removes the barriers preventing your site from ranking. Combined with quality content, it gives you the strongest possible foundation for organic growth."
+            },
+            {
+              "q": "What tools do you use for Technical SEO audits?",
+              "a": "I use a combination of Google Search Console, Lighthouse, Screaming Frog, PageSpeed Insights, and manual code inspection to identify every technical issue."
+            }
+          ]
+        },
+        "ecommerce_development": {
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
-          "title": "Custom E-commerce Development in Morocco",
-          "title_metadata": "E-commerce Development in Morocco | Online Stores That Sell",
+          "title": "E-commerce Website Development in Morocco",
+          "title_metadata": "E-commerce Development in Morocco | Stores That Sell",
           "description_metadata": "Custom e-commerce development in Morocco — fast, secure online stores with CMI payments, cash on delivery & SEO. Built to rank on Google and sell more.",
           "description": "Custom e-commerce websites built to sell online with secure payments, fast performance, and scalable architecture. Every store includes Technical SEO, Core Web Vitals, optimized product pages, and AI Search Optimization to increase visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and other AI-powered search engines.",
-          "title_card": "E-commerce Development",
+          "title_card": "E-commerce Store Development",
           "overviewHeadline": "Online Stores Built for Sales, Speed & Growth",
           "startDescription": "Your online store should do more than showcase products. It should attract the right customers, build trust, provide a seamless shopping experience, and convert visitors into loyal buyers.",
           "longDescription": "Whether you're launching a new online business or modernizing an existing store, I build custom e-commerce websites designed for growth. Every store includes secure payment integration, product management, optimized product pages, Technical SEO, Core Web Vitals optimization, and AI Search Optimization. From the homepage to checkout, every element is designed to improve user experience, increase conversions, and help your products get discovered on Google, Google Shopping, ChatGPT, Perplexity, and other AI-powered search engines.",
           "company_recruitment": "I also collaborate with brands, agencies, and retail teams on long-term e-commerce projects, including migrations, redesigns, and performance optimization.",
-          "link": "/services/ecommerce",
+          "link": "/services/ecommerce-development",
           "start_btn": "Launch Your Store",
           "allServicesBtn": "View All Services",
           "overviewTitle": "Why Choose Me?",
@@ -295,11 +441,11 @@
           "features": [
             "SEO-Optimized Product Pages",
             "AI Search Ready (GEO)",
-            "Responsive",
+            "Responsive Design",
             "Secure Payments (CMI & COD)"
           ],
           "included": [
-            "Custom store design and development with Next.js, React, and TypeScript",
+            "Custom store design and development with Next.js, React, and Nest.js",
             "Complete e-commerce system: product catalog, categories, search, shopping cart, wishlist, secure checkout, and order management",
             "Local and international payments: CMI, cash on delivery (COD), Stripe, and PayPal",
             "Product SEO: optimized product pages, Product schema markup, sitemap and robots.txt",
@@ -344,6 +490,11 @@
               "text": "Go live with analytics configured, Search Console connected, sitemap submitted, and a clear plan to grow your sales."
             }
           ],
+          "crossLink": {
+            "text": "Need SEO optimization for your existing store?",
+            "linkText": "Technical SEO services →",
+            "href": "/services/technical-seo"
+          },
           "faqs": [
             {
               "q": "How much does it cost to build an online store in Morocco?",
@@ -375,136 +526,143 @@
             }
           ]
         },
-        "systems": {
+        "business_dashboards": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "title": "Custom Dashboards, Business Automation & AI Integration in Morocco",
-          "title_metadata": "Business Automation, Custom Dashboards & AI Integration Services in Morocco",
-          "description_metadata": "Custom dashboards, business automation systems, workflow automation, and AI integrations that streamline operations, improve productivity, and help businesses grow.",
-          "title_card": "Business Automation & AI Integration",
-          "description": "Custom dashboards, workflow automation, and AI-powered business systems that streamline operations, eliminate repetitive tasks, improve productivity, and support smarter business decisions.",
-          "overviewHeadline": "Work Smarter with Custom Business Systems",
-          "startDescription": "Your team shouldn't waste time on repetitive tasks when software can automate them for you.",
-          "longDescription": "I design and develop custom dashboards, internal business systems, workflow automations, and AI integrations tailored to the way your business operates. Whether you need CRM software, inventory management, reporting dashboards, document automation, AI assistants, or API integrations, every solution is built to save time, reduce manual work, improve accuracy, and give you complete visibility over your business. The result is a scalable system that grows with your company while helping your team focus on higher-value work.",
-          "company_recruitment": "I also collaborate with startups and companies on long-term software development, automation, and AI integration projects.",
-          "link": "/services/business-systems",
+          "title": "Business Automation & Custom Dashboards in Morocco",
+          "title_metadata": "Business Automation & Custom Dashboard Services Morocco",
+          "description_metadata": "Custom dashboards, workflow automation, and AI integration services in Morocco. Streamline operations, reduce manual work, and scale your business.",
+          "title_card": "Business Automation & Custom Dashboards",
+          "description": "Custom dashboards, workflow automation, and AI-powered business systems that streamline operations, eliminate repetitive tasks, improve productivity, and support smarter business decisions. Every solution is built to integrate with your existing tools and scale with your growth.",
+          "overviewHeadline": "Automate Your Business Operations & Work Smarter",
+          "startDescription": "Your team shouldn't waste time on repetitive tasks when software can automate them. Custom dashboards and workflow automation give you real-time visibility, reduce errors, and free your team to focus on growth.",
+          "longDescription": "I design and develop custom business dashboards, internal management systems, workflow automations, and AI integrations tailored to how your business actually operates. Whether you need CRM software, inventory management systems, reporting dashboards, document automation, AI assistants, or API integrations — every solution is engineered to save time, reduce manual work, improve accuracy, and give you complete control over your operations. The result is a scalable system that grows with your company while helping your team focus on high-value work instead of administrative tasks.",
+          "company_recruitment": "I also collaborate with startups, agencies, and enterprises on long-term business automation, custom software development, and AI integration projects.",
+          "link": "/services/business-dashboards",
           "start_btn": "Automate Your Business",
           "allServicesBtn": "View All Services",
-          "overviewTitle": "Why Choose Me?",
-          "includedTitle": "What's included?",
+          "overviewTitle": "Why Choose My Business Automation Services?",
+          "includedTitle": "What's Included",
           "includedDesc": "Every business automation project includes:",
-          "benefitsTitle": "What you'll gain",
-          "benefitsDesc": "Automating your business helps you save time, reduce costs, and improve productivity.",
+          "benefitsTitle": "The Business Impact",
+          "benefitsDesc": "By automating your business operations, you can expect:",
           "useCasesTitle": "Business Automation Solutions",
-          "useCasesDesc": "Examples of real-world systems I build for businesses.",
-          "processTitle": "How I Work",
-          "processDesc": "A structured development process designed around your business goals.",
+          "useCasesDesc": "Real-world systems I build for businesses across industries:",
+          "processTitle": "My Automation Process",
+          "processDesc": "A structured development process designed around your business goals:",
           "techTitle": "Technologies I Use",
-          "techDesc": "Modern technologies selected according to your business requirements—not trends.",
+          "techDesc": "Modern technologies selected based on your business requirements — not trends:",
           "faqTitle": "Frequently Asked Questions",
           "faqDesc": "Direct answers about business automation, dashboards, and AI integration:",
-          "AnothersrvcBtn": "View All Services",
+          "AnothersrvcBtn": "Explore Other Services",
           "features": [
-            "Custom Dashboards",
+            "Custom Business Dashboards",
             "Workflow Automation",
-            "AI Integration",
-            "Reporting & Analytics",
-            "API Integrations"
+            "AI Integration & Assistants"
           ],
           "stats": [
             {
               "value": "~80%",
-              "label": "Reduction in time spent on manual tasks — reported by clients after automation"
+              "label": "Reduction in manual task time after automation"
             },
             {
               "value": "3×",
-              "label": "Faster operations once repetitive processes are fully automated"
+              "label": "Faster operations with automated workflows"
             },
             {
               "value": "0",
-              "label": "Manual data entry errors with automated pipelines in place"
+              "label": "Data entry errors with automated pipelines"
             }
           ],
           "benefits": [
             {
-              "title": "Save Time Every Day",
-              "text": "Automate repetitive tasks, approvals, notifications, and reports so your team can focus on high-value work."
+              "title": "Save Hours Every Week",
+              "text": "Automate repetitive tasks, approvals, notifications, and reports so your team can focus on strategic, high-value work instead of administrative overhead."
             },
             {
-              "title": "Increase Productivity",
-              "text": "Centralize your business data, reduce manual processes, and give your team faster access to the information they need."
+              "title": "Boost Team Productivity",
+              "text": "Centralize business data, eliminate manual processes, and give your team instant access to the information they need — when they need it."
             },
             {
-              "title": "Make Better Business Decisions",
-              "text": "Real-time dashboards and AI-powered insights help you monitor KPIs, identify trends, and make informed decisions."
+              "title": "Make Data-Driven Decisions",
+              "text": "Real-time dashboards and AI-powered insights help you monitor KPIs, identify trends, spot opportunities, and make informed decisions with confidence."
             }
           ],
           "useCases": [
             {
-              "title": "CRM & Client Management",
-              "text": "Manage customers, leads, contracts, invoices, and follow-ups from one centralized dashboard."
+              "title": "CRM & Client Management Systems",
+              "text": "Manage customers, leads, contracts, invoices, and follow-ups from one centralized dashboard with automated workflows and reporting."
             },
             {
-              "title": "Inventory & Operations",
-              "text": "Monitor stock, suppliers, purchases, deliveries, and automated inventory alerts in real time."
+              "title": "Inventory & Operations Management",
+              "text": "Monitor stock levels, suppliers, purchases, deliveries, and automated inventory alerts in real time across multiple locations."
             },
             {
-              "title": "Business Dashboards & Reporting",
-              "text": "Visualize KPIs, sales, revenue, productivity, and operational data through interactive dashboards."
+              "title": "Business Intelligence Dashboards",
+              "text": "Visualize KPIs, sales performance, revenue, productivity metrics, and operational data through interactive, real-time dashboards."
             },
             {
-              "title": "AI Automation & Integrations",
-              "text": "Integrate AI assistants, document processing, email automation, APIs, and intelligent workflows into your existing business systems."
+              "title": "AI Automation & Workflow Integration",
+              "text": "Integrate AI assistants, document processing, email automation, API connections, and intelligent workflows into your existing business systems."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Business Analysis",
-              "text": "Understand your workflow, identify bottlenecks, and define automation opportunities."
+              "title": "Business Analysis & Workflow Mapping",
+              "text": "I analyze your current workflows, identify bottlenecks, and define the exact automation opportunities that will deliver the highest ROI for your business."
             },
             {
               "step": "02",
               "title": "System Design & Development",
-              "text": "Build secure dashboards, automation workflows, APIs, and AI integrations tailored to your business."
+              "text": "Build secure custom dashboards, automation workflows, API integrations, and AI features tailored specifically to your business operations and goals."
             },
             {
               "step": "03",
-              "title": "Deployment & Support",
-              "text": "Deploy your system, train your team, monitor performance, and continuously improve the solution as your business grows."
+              "title": "Deployment, Training & Optimization",
+              "text": "Deploy your system, train your team, monitor performance metrics, and continuously improve the solution as your business evolves and scales."
             }
           ],
           "techStackList": [
-            "Express.js",
-            "Python",
-            "OpenAI API",
-            "REST APIs",
-            "MongoDB",
-            "React"
+            "Next.js & React",
+            "Nest.js Backend",
+            "OpenAI & Claude APIs",
+            "REST & GraphQL APIs",
+            "PostgreSQL & MongoDB",
+            "Docker & Cloud Deployment"
           ],
+          "crossLink": {
+            "text": "Need a custom website or e-commerce store to complement your dashboard?",
+            "linkText": "Web Development services →",
+            "href": "/services/web-development"
+          },
           "faqs": [
             {
               "q": "What is business automation and how does it help my company?",
-              "a": "Business automation means using software to handle repetitive tasks automatically — like invoicing, data entry, reporting, and customer follow-ups. It saves your team hours every week, reduces human errors, lowers operational costs, and gives you real-time visibility over your business through custom dashboards."
+              "a": "Business automation means using custom software to handle repetitive tasks automatically — like invoicing, data entry, reporting, inventory updates, and customer follow-ups. It saves your team hours every week, reduces human errors, lowers operational costs, and gives you real-time visibility over your entire business through custom dashboards and reporting systems."
             },
             {
               "q": "How much time can automation actually save my business?",
-              "a": "It depends on your processes, but most businesses recover 5 to 15 hours per week per employee by automating repetitive tasks like data entry, reporting, and follow-ups. During the analysis phase, I identify your specific time-wasters and estimate the exact savings before any development starts."
+              "a": "It depends on your specific processes, but most businesses recover 5 to 15 hours per week per employee by automating repetitive tasks like data entry, reporting, and follow-ups. During the analysis phase, I identify your specific time-wasters and calculate the exact time and cost savings before any development begins."
             },
             {
               "q": "Can you integrate automation with the tools I already use?",
-              "a": "Yes — I connect your existing tools like your CRM, accounting software, e-commerce platform, spreadsheets, and email. Systems are built around your current workflow, so your team keeps the tools they know while everything synchronizes automatically in the background."
+              "a": "Yes — I connect your existing tools like your CRM, accounting software, e-commerce platform, spreadsheets, email systems, and payment gateways. Systems are built around your current workflow, so your team keeps the tools they know while everything synchronizes automatically in the background."
             },
             {
-              "q": "Do I need technical knowledge to use these systems?",
-              "a": "No — every system comes with a simple interface designed for non-technical users, plus complete training and documentation in clear language. If your team can use a spreadsheet, they can use the dashboards and tools I build."
+              "q": "Do I need technical knowledge to use these custom dashboards?",
+              "a": "No — every system comes with a simple, intuitive interface designed for non-technical users, plus complete training and documentation in clear language. If your team can use a spreadsheet or email, they can use the dashboards and automation tools I build."
             },
             {
               "q": "How can AI actually help my business operations?",
-              "a": "AI adds real value in specific areas: automatically answering common customer questions, processing and classifying documents, generating reports and content, and extracting insights from your data. I integrate AI only where it solves a real problem — never as a gimmick — so you get measurable results, not buzzwords."
+              "a": "AI adds real value in specific areas: automatically answering common customer questions, processing and classifying documents, generating reports and content, extracting insights from your data, and automating decision workflows. I integrate AI only where it solves a real problem — never as a gimmick — so you get measurable results, not buzzwords."
             },
             {
-              "q": "How much does a custom business system cost in Morocco?",
-              "a": "The cost depends on the complexity: number of integrations, automation scope, and dashboard features. A focused automation of one workflow costs less than a complete management system. After the initial analysis, you receive a clear quote — and since most systems pay for themselves through time savings, I help you prioritize the automations with the fastest return."
+              "q": "What's the difference between custom software and tools like Zapier?",
+              "a": "Tools like Zapier are great for simple automations, but they become expensive at scale, have limited customization, and can't handle complex business logic. Custom dashboards and automation systems are built specifically for your workflows, scale without per-task fees, and give you complete ownership of your data and processes."
+            },
+            {
+              "q": "Can you build dashboards for specific industries?",
+              "a": "Yes — I've built custom solutions for retail, e-commerce, professional services, real estate, logistics, and more. Every dashboard is tailored to your industry's specific KPIs, workflows, and reporting requirements."
             }
           ]
         }
@@ -532,14 +690,15 @@
           }
         ]
       },
-      "ctat_title": "Ready to Build Your Next Project?",
-      "cta_desc": "Whether you need a business website, e-commerce store, custom dashboard, or AI-powered automation, let's build a fast, scalable solution that helps your business grow.",
-      "cta_btn": "Start Your Project"
+      "cta_title": "Ready to Start Your Next Project?",
+      "cta_desc": "Whether you need a high-performance website, an e-commerce store, or a custom business solution, let's build a scalable and search-optimized project that supports your goals.",
+      "cta_btn": "Discuss Your Project"
     },
     "about_page": {
       "title": "About Me",
-      "heading": "Full-Stack Web Developer, SEO Specialist & AI Search Optimization Expert in Morocco",
-      "intro": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist based in Morocco. I design and build high-performance websites, e-commerce stores, business dashboards, and AI-powered web applications using Next.js and modern web technologies. Every project is developed with Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines.",
+      "heading": "About Mohammed Elghandori — Full-Stack Developer & SEO Specialist",
+      "intro": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist based in Morocco. I design and build high-performance websites, e-commerce stores, and business dashboards using Next.js, React.js, Nest.js, and other modern web technologies.",
+      "intro_2": "Every project is developed with Technical SEO, Core Web Vitals, structured data (Schema.org), and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines.",
       "stats": {
         "years": "Years of Experience",
         "clients": "Satisfied Clients",
@@ -550,10 +709,13 @@
         "paragraph1": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist passionate about building modern web experiences that solve real business problems. I studied software engineering at 1337 School UM6P (42 Network), where I developed strong foundations in computer science, algorithms, operating systems, networking, software architecture, and collaborative software development. Along the way, I earned certifications in web development, digital marketing, and artificial intelligence while continuously improving my technical expertise.",
         "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results.Whether you're a startup or an enterprise targeting global markets, I'm committed to helping you succeed online with solutions that work, because your success is my success"
       },
+      "tech_philosophy": {
+        "title": "My Technology Stack & Engineering Philosophy",
+        "paragraph": "I choose technologies based on what a project actually needs, not simply on trends. I primarily use Next.js and React to build fast, maintainable, and SEO-friendly frontends, and Nest.js for scalable backend systems. I also work with Tailwind CSS, MongoDB, Docker, and GitHub Actions to support efficient development, reliable deployment, and long-term maintainability. By combining modern web development with Technical SEO and AI Search Optimization, I build digital products that are designed for performance, search visibility, and sustainable growth."
+      },
       "experience": {
-        "title": "My Experience & Background",
-        "paragraph": "I've worked on corporate websites, business dashboards, e-commerce platforms, automation systems, and AI-powered applications for companies, startups, and personal projects. My experience spans the entire development lifecycle—from planning and UI implementation to backend development, deployment, Technical SEO, and performance optimization. Through hackathons, real client work, and continuous learning, I've strengthened my ability to collaborate with multidisciplinary teams, solve complex problems under pressure, and deliver scalable digital solutions that create measurable business value.",
-        "paragraph2": "I believe successful digital products are built through technical excellence, clear communication, and continuous improvement. Whether you're a startup, small business, or established company, my goal is to create reliable, scalable, and search-optimized solutions that generate measurable business results and long-term growth."
+        "title": "My Experience & Technical Background",
+        "paragraph": "I have experience developing management dashboards and high-performance corporate websites for businesses, startups, and personal projects. My work covers the full development lifecycle, from system architecture and UI implementation to backend development, deployment, Technical SEO, and performance optimization. Through client projects, hackathons, and continuous learning, I have strengthened my ability to solve complex technical challenges, collaborate with teams, and deliver reliable, scalable software that creates real business value."
       },
       "storyMissionValues": {
         "title": "Discover the story, mission, and values that drive me",
@@ -618,45 +780,25 @@
         "title": "How Can I Help?",
         "subtitle": "Ways we can work together",
         "items": [
-          "Build modern websites and e-commerce stores optimized for speed, SEO, and AI search.",
-          "Develop custom dashboards and business automation tools that improve productivity.",
-          "Integrate AI solutions and workflows that reduce manual work and support better decisions.",
-          "Audit and optimize existing websites for Technical SEO, Core Web Vitals, accessibility, and conversions."
+          "Build high-performance corporate websites and scalable web apps optimized for SEO & AI.",
+          "Develop complex management dashboards and business automation tools.",
+          "Audit and optimize existing platforms for Technical SEO and Core Web Vitals.",
+          "Provide long-term technical partnership and AI Search strategies for sustainable growth."
         ]
       },
-      "values": [
-        [
-          {
-            "title": "Technical Excellence",
-            "text": "Modern architecture, clean code, scalability, and long-term maintainability."
-          },
-          {
-            "title": "SEO & AI Visibility",
-            "text": "Every project is optimized for Google Search, AI search engines, and excellent user experience."
-          },
-          {
-            "title": "Communication & Collaboration",
-            "text": "Transparent communication, teamwork, and structured development throughout every project."
-          },
-          {
-            "title": "Business Impact",
-            "text": "Technology should generate measurable growth, efficiency, and long-term value."
-          }
-        ]
-      ],
       "cta": {
-        "title": "Let's Build Your Next Digital Project",
-        "description": "Need a high-performance website, Technical SEO, AI automation, or a custom web application? Let's discuss how I can help your business grow.",
-        "button": "Start Your Project"
+        "title": "Ready to Build Something Exceptional?",
+        "description": "Whether you need a freelance expert to architect a high-performance web app, or a Full-Stack Engineer to join your tech team, let's connect and discuss your technical goals.",
+        "button": "Let's Connect"
       }
     },
     "portfolio_page": {
       "subtitle": "Selected Work",
-      "heading": "High-Performance Websites, E-Commerce, Dashboards & AI Automation",
-      "description": "Explore 10+ real-world projects including SEO-optimized corporate websites, high-converting e-commerce stores, business automation dashboards, and AI-powered tools. Each project demonstrates expertise in Next.js, Technical SEO, Core Web Vitals, and scalable cloud architecture — from client work and personal initiatives to advanced academic systems programming.",
-      "viewCase": "View Project",
-      "cta": "Start Your Project",
-      "cta_other": "Explore More Projects",
+      "heading": "Real Projects & Technical Deep Dives Engineered for Performance & SEO",
+      "description": "A selection of real-world projects and engineering deep dives: SEO-optimized corporate websites, custom management dashboards, and complex system architecture. Each case study covers the goal, the technical approach, and the measurable results.",
+      "viewCase": "View Case Study",
+      "cta": "Discuss Your Project",
+      "cta_other": "Explore More Work",
       "ui": {
         "filterBy": "Filter by",
         "displayModes": {
@@ -681,56 +823,70 @@
         },
         "emptyStateTitle": "No projects found",
         "emptyStateText": "Try selecting another project category.",
+        "filterHint": "Select a category to view projects",
+        "showAll": "Show all",
+        "showcaseLabel": "Project showcase",
         "ctaTitle": "Have a project in mind?",
         "ctaExplore": "View details",
-        "ctaDescription": "I collaborate with startups and businesses to build fast, reliable, and search-optimized digital products that drive measurable growth."
+        "ctaDescription": "I collaborate with startups and businesses to build fast, reliable, and search-optimized digital products that drive measurable growth.",
+        "statusLabels": {
+          "online": "Online",
+          "local enterprise": "Local enterprise",
+          "completed": "Completed"
+        }
       },
       "caseStudyUi": {
         "breadcrumbHome": "Home",
         "breadcrumbPortfolio": "Portfolio",
         "backToPortfolio": "Back to portfolio",
-        "techHeading": "Technologies used",
+        "techHeading": "Technologies Used",
         "categoryLabel": "Category",
-        "typeLabel": "Project type",
+        "typeLabel": "Project Type",
         "statusLabel": "Status",
-        "collaborationTitle": "Want to build something similar?",
-        "collaborationBody": "I’m open to collaborating on web applications, automation systems, or performance-focused websites."
+        "collaborationTitle": "Want to Build Something Like This?",
+        "collaborationBody": "Whether you need a high-performance application, SEO optimization, or a business dashboard, let's discuss how we can design a scalable solution tailored to your goals.",
+        "overviewHeading": "Overview",
+        "breadcrumbAria": "Breadcrumb",
+        "galleryHeading": "Project gallery",
+        "linksHeading": "Project links",
+        "goalHeading": "Project goal",
+        "learnedHeading": "What we learned",
+        "realWorldHeading": "How this helps in the real world"
       },
       "projects": [
         {
-          "title": "Corporate Website & SEO Growth",
-          "description": "Designed and developed a high-performance corporate website with Next.js to showcase services and products. Optimized for Technical SEO, Core Web Vitals, accessibility, and user experience, resulting in more than 2,900 new users within two months while significantly improving search visibility and organic traffic.",
+          "title": "Corporate Website & SEO Growth Engine",
+          "description": "Designed and developed a high-performance website with Next.js to showcase services and products. Optimized for Technical SEO, Core Web Vitals, accessibility, and user experience — resulting in 2,900+ new users within two months and a first-position Google ranking.",
           "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
-          "linkLabel": "View case study",
+          "linkLabel": "View Case Study",
           "category": "Web Development & SEO",
           "type": "professional",
           "status": "online",
           "href": "/portfolio/corporate-website",
-          "highlightsHeading": "What we delivered",
+          "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "Corporate Website & SEO Case Study | Devsign Morocco",
-              "description": "Case study: a Next.js corporate website with technical SEO and performance tuning that reached 2,900+ new users in two months built to convert and scale.",
+              "title": "Corporate Website & SEO Growth Engine",
+              "description": "Case study: a Next.js corporate website with technical SEO and performance tuning that reached 2,900+ new users in two months — built to convert and scale.",
               "keywords": [
                 "optimized corporate website",
                 "Next.js SEO case study",
                 "business website developer",
                 "technical SEO Next.js",
-                "hire web developer Morocco",
                 "company site performance",
-                "Devsign portfolio"
+                "Devsignpro portfolio"
               ]
             },
-            "intro": "This engagement was about more than a polished homepage: the business needed a credible digital presence that could rank, loads fast on any device, and turns visitors into real clients. We built a structured, crawl-friendly site map with clear service and product pages, metadata, and internal linking patterns that match how people actually search for the company’s offerings.",
+            "intro": "This engagement was about more than a polished homepage: the business needed a credible digital presence that could rank, load fast on any device, and turn visitors into real clients. I built a structured, crawl-friendly sitemap with clear service and product pages, metadata, and internal linking patterns that match how people actually search for the company's offerings.",
             "sections": [
               {
                 "title": "Challenge & approach",
-                "body": "We started from scratch, beginning with a deep analysis of the business, its goals, and target audience. From there, we moved into the conception phase and designed clear user flows, followed by Figma prototypes to visualize the experience. Once validated, we built a fast, SEO-friendly website using modern technologies, focusing on performance, clean structure, and easy content management for future updates."
+                "body": "I started from scratch, beginning with a deep analysis of the business, its goals, and target audience. From there, I moved into the conception phase and designed clear user flows, followed by Figma prototypes to visualize the experience. Once validated, I built a fast, SEO-friendly website using modern technologies, focusing on performance, clean structure, and easy content management for future updates."
               },
               {
                 "title": "Results & impact",
-                "body": "Within the first two months after launch, analytics showed more than 2,900 new users — a strong signal that discoverability and performance were working together. The site continues to serve as a scalable foundation for new services and campaigns."
+                "body": "Within the first two months after launch, analytics showed more than 2,900 new users — a strong signal that discoverability and performance were working together. The site reached the first position on Google for its target keyword (screenshots below). It continues to serve as a scalable foundation for new services and campaigns."
               }
             ],
             "highlights": [
@@ -738,38 +894,61 @@
               "Mobile-responsive layout tested across common breakpoints",
               "Clear information architecture for services, trust, and conversion paths",
               "Measurable traction: 2,900+ new users in two months post-launch"
+            ],
+            "gallery": [
+              {
+                "src": "/images/Corporate-website/Generate-leads-overview.jpg",
+                "alt": "Lead generation overview of the corporate website after SEO optimization"
+              },
+              {
+                "src": "/images/Corporate-website/Result-google-search.jpg",
+                "alt": "Google Search results showing the corporate website ranking"
+              },
+              {
+                "src": "/images/Corporate-website/first-at-google-search.jpg",
+                "alt": "First position on Google Search for the target keyword"
+              }
+            ],
+            "links": [
+              {
+                "url": "https://neodyngrp.com",
+                "label": "View live website"
+              }
             ]
           }
         },
         {
-          "title": "E-commerce Landing Page",
-          "description": "Designed and developed a high-converting e-commerce landing page optimized for speed, mobile performance, Technical SEO, and conversion. Integrated with a custom dashboard for real-time content management, campaign optimization, and improved marketing performance.",
+          "title": "E-commerce Landing Page — Fast & SEO-Optimized",
+          "description": "Designed and developed a high-converting e-commerce landing page optimized for speed, mobile performance, Technical SEO, and conversion. Integrated with a custom dashboard for real-time content management and campaign optimization.",
           "tech": "Next.js, Tailwind CSS, Technical SEO",
           "image": "/images/projects/Landing-Page-Ecommerce.jpg",
-          "linkLabel": "View case study",
+          "linkLabel": "View Case Study",
           "category": "Web Development & E-commerce",
           "type": "professional",
           "status": "online",
           "href": "/portfolio/landing-page-ecommerce",
-          "highlightsHeading": "What we delivered",
+          "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "E-commerce Landing Page Fast & Mobile-friendly & SEO optimized | Devsign",
-              "description": "A high-conversion landing page designed for modern retail. Focused on lightning-fast performance, mobile responsiveness, and SEO-friendly structure to maximize customer engagement.",
+              "title": "E-commerce Landing Page — Fast & SEO-Optimized",
+              "description": "A high-conversion landing page designed for modern retail. Focused on lightning-fast performance, mobile responsiveness, and SEO-friendly structure to",
               "keywords": [
                 "ecommerce landing page",
                 "high conversion landing page",
                 "Tailwind CSS landing page",
                 "mobile-first retail site",
-                "SEO landing page Morocco",
-                "hire frontend developer"
+                "SEO landing page Morocco"
               ]
             },
-            "intro": "Modern e-commerce demands speed, clarity, and flexibility. Beyond performance, we built this landing page with a connected dashboard that lets teams update content, promotions, and sections instantly — without touching code. The result is a fast, mobile-optimized experience combined with full control over messaging and conversion flow.",
+            "intro": "Modern e-commerce demands speed, clarity, and flexibility. Beyond performance, I built this landing page with a connected dashboard that lets teams update content, promotions, and sections instantly — without touching code. The result is a fast, mobile-optimized experience combined with full control over messaging and conversion flow.",
             "sections": [
               {
                 "title": "Smart build & content control",
-                "body": "The page is structured with clean semantic sections, optimized assets, and a scalable system for performance and maintainability. Motion and animations are used throughout to guide user attention and improve engagement. We also integrate images and forms to clearly explain the service or product. On top of that, a custom dashboard empowers teams to edit text, images, offers, CTAs, and motion settings in real time. This ensures the landing page stays fresh, relevant, and aligned with marketing campaigns across SEO, social media, and paid ads."
+                "body": "The page is structured with clean semantic sections, optimized assets, and a scalable system for performance and maintainability. Motion and animations guide user attention and improve engagement, while images and forms clearly explain the product. On top of that, a custom dashboard empowers teams to edit text, images, offers, CTAs, and motion settings in real time — keeping the landing page fresh and aligned with marketing campaigns across SEO, social media, and paid ads."
+              },
+              {
+                "title": "Results & Impact",
+                "body": "The page achieves a perfect 100/100 Lighthouse score for Performance and SEO, delivering fast load times and stronger search visibility. The connected dashboard empowers teams to push campaign updates live in minutes — without waiting on a developer."
               }
             ],
             "highlights": [
@@ -781,33 +960,37 @@
           }
         },
         {
-          "title": "Business Automation Dashboard",
-          "description": "Developed a custom business dashboard to centralize client management, subscriptions, inventory, and daily operations. Automated billing cycles, stock monitoring, and service tracking to reduce manual work, improve productivity, and streamline business workflows through intelligent automation.",
+          "title": "Business Automation Dashboard with React & Express",
+          "description": "Developed a custom business dashboard to centralize client management, subscriptions, inventory, and daily operations. Automated billing cycles, stock monitoring, and service tracking to reduce manual work and streamline business workflows.",
           "tech": "React, Express.js, REST API",
           "image": "/images/projects/Business-Automation-Dashboard.jpg",
-          "linkLabel": "View case study",
+          "linkLabel": "View Case Study",
           "category": "Systems & Automation",
           "type": "professional",
           "status": "local enterprise",
           "href": "/portfolio/business-automation-dashboard",
-          "highlightsHeading": "What we delivered",
+          "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "Business Automation Dashboard with React JS & Express JS | Devsign",
-              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React JS, Express JS, and REST APIs for real enterprises.",
+              "title": "Business Automation Dashboard with React & Express",
+              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React, Express, and REST APIs for a real",
               "keywords": [
                 "business automation dashboard",
                 "subscription management software",
-                "React Express JS internal tools",
+                "React Express internal tools",
                 "operations dashboard Morocco",
                 "custom CRM dashboard"
               ]
             },
-            "intro": "Operations were spread across spreadsheets and files. We replaced this with a single dashboard that reflects the customer lifecycle from subscription to renewal, with alerts before revenue is lost.",
+            "intro": "Operations were spread across spreadsheets and files. I replaced this with a single dashboard that reflects the customer lifecycle from subscription to renewal, with alerts before revenue is lost.",
             "sections": [
               {
                 "title": "Solution",
-                "body": "An interface displaying active plans, expiration dates, inventory, and price history. Automated alerts reduce manual follow-up, allowing the team to focus on sales and service."
+                "body": "An interface displaying active plans, expiration dates, inventory, and price history. Automated alerts reduce manual follow-up, allowing the team to focus on sales and service instead of administration."
+              },
+              {
+                "title": "Results & impact",
+                "body": "The system replaced [X] spreadsheets with one source of truth. Automated expiry alerts now catch renewals before deadline — previously tracked by hand and sometimes missed entirely. The dashboard is used in daily operations by the business today."
               }
             ],
             "highlights": [
@@ -815,45 +998,59 @@
               "Automated alerts for expiring services and critical thresholds",
               "REST-backed architecture ready to extend with new modules",
               "Designed for daily operations on desktop and tablet"
+            ],
+            "gallery": [
+              {
+                "src": "/images/Dashboard-automation/Dashboard-overview.jpg",
+                "alt": "Business automation dashboard — subscriptions and inventory overview"
+              },
+              {
+                "src": "/images/Dashboard-automation/dashboard-login.jpg",
+                "alt": "Secure login screen of the internal operations dashboard"
+              },
+              {
+                "src": "/images/Dashboard-automation/dashboard-design.jpg",
+                "alt": "Dashboard interface for managing clients, plans, and stock"
+              }
             ]
           }
         },
         {
-          "title": "Social Media Ad Design",
-          "description": "High-converting social media visuals that turn simple product shots into scroll-stopping marketing content. Clear messaging, strong branding, and conversion-focused CTAs designed for Facebook and Instagram campaigns.",
-          "tech": "Photoshop, Illustrator",
-          "image": "/images/projects/Social-Media-Design.jpg",
-          "linkLabel": "See more details",
-          "category": "Ad Design & Branding",
+          "title": "Hotel Maintenance & Operations Platform",
+          "description": "Internal hotel maintenance platform with structured issue reporting, automated PHPMailer alerts, MySQL records, and PDF audit reports — built for real operations teams.",
+          "tech": "PHP, PHPMailer, MySQL, FPDF",
+          "image": "/images/projects/Hotel-Technical-Issue-Manager.jpg",
+          "linkLabel": "View Case Study",
+          "category": "System Management",
           "type": "professional",
-          "status": "Campaign Ads",
-          "href": "/portfolio/social-campaign",
-          "highlightsHeading": "What we delivered",
+          "status": "local enterprise",
+          "href": "/portfolio/hotel-technical-issue-manager",
+          "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "Social Media Ad Design High-Converting Facebook & Instagram Creatives | Devsign",
-              "description": "Social ads and feed creatives built for clarity, branding, and conversion — Photoshop & Illustrator workflow for campaigns that need scroll-stopping visuals.",
+              "title": "Hotel Maintenance Ticketing System",
+              "description": "Internal hotel maintenance platform: issue reporting, PHPMailer alerts, MySQL records, and PDF audit reports — built for real operations teams.",
               "keywords": [
-                "social media ad design",
-                "Instagram ad creative",
-                "Facebook ads design Morocco",
-                "conversion-focused social graphics",
-                "hire graphic designer ads",
-                "brand creatives"
+                "hotel maintenance software",
+                "PHP ticketing system",
+                "PHPMailer alerts",
+                "MySQL operations app",
+                "PDF audit reports",
+                "enterprise internal tools Morocco"
               ]
             },
-            "intro": "We design high-performing social media creatives tailored for Facebook and Instagram ad campaigns. For clients across multiple industries, we transform product and service ideas into clear, engaging visuals that highlight the offer, communicate value instantly, and drive users to action.",
+            "intro": "Hotels cannot afford silent failures: broken HVAC, plumbing, or electrical issues need traceable tickets, accountable owners, and audit trails. This system digitizes the workflow from report to resolution — with email escalation when minutes matter.",
             "sections": [
               {
-                "title": "Ad-focused design approach",
-                "body": "Each design is built to capture attention in fast-scrolling feeds using strong visuals, balanced colors, and clear typography. We highlight the product or service, add compelling headlines, and integrate effective CTAs like 'Shop Now' or 'Send Message'. Whether promoting a product or a service, the goal is always the same: explain the offer quickly, attract attention, and drive conversions through consistent, impactful design."
+                "title": "Operational impact",
+                "body": "Automated notifications reduced response coordination from phone calls and paper notes to a tracked digital workflow. Every ticket is timestamped and owned — a complete audit trail from report to resolution, exported as PDF for management reviews and vendor handoffs."
               }
             ],
             "highlights": [
-              "Product-forward compositions with readable messaging at small sizes",
-              "Brand-aligned palettes and typography for cohesive campaigns",
-              "CTA-forward layouts optimized for paid social placements",
-              "Source files and exports matched to common ad specs"
+              "Structured issue lifecycle from report to closure",
+              "Email alerts for critical events and handoffs",
+              "PDF reporting for audits and management reviews",
+              "Practical example of business process automation"
             ]
           }
         },
@@ -862,7 +1059,7 @@
           "description": "A social competitive platform for eFootball players to log match results, track head-to-head statistics, and verify game data through a real-time notification and approval system.",
           "tech": "React, Express.js, REST API, MySQL, WebSocket",
           "image": "/images/projects/Pesscore-eFootball-Tracker.jpg",
-          "linkLabel": "See more details",
+          "linkLabel": "View Project",
           "category": "Full-Stack Web Application",
           "type": "personal",
           "status": "online",
@@ -870,11 +1067,11 @@
           "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Pesscore eFootball Match Tracker With React, Express.js, MySQL, WebSockets | Devsign",
-              "description": "Full-stack eFootball community platform with verified match results, head-to-head stats, real-time notifications, and a two-sided approval system — built with React, Express.js, and WebSockets.",
+              "title": "Pesscore eFootball Match Tracker",
+              "description": "Full-stack eFootball community platform with verified match results, head-to-head stats, and real-time notifications — built with React, Express, and",
               "keywords": [
                 "eFootball match tracker",
-                "React Express.js MySQL app",
+                "React Express MySQL app",
                 "community sports platform",
                 "WebSocket notifications",
                 "head to head statistics",
@@ -892,24 +1089,31 @@
                 "body": "The application uses a decoupled architecture: a React frontend and an Express.js backend exposing REST APIs. WebSockets enable real-time notifications for match validation and updates. A Rust service handles performance-critical logic, while MySQL ensures consistent data storage and relationships."
               },
               {
-                "title": "What we learned",
-                "body": "This project strengthened our ability to design real-world products from idea to deployment. We gained hands-on experience in REST API design, frontend-backend separation, real-time communication with WebSockets, and building trust-based systems with validation workflows. It also improved our skills in scalable architecture, database modeling, and delivering user-focused features driven by actual community needs."
+                "title": "What I learned",
+                "body": "This project strengthened my ability to design real-world products from idea to deployment: REST API design, frontend-backend separation, real-time communication with WebSockets, and trust-based systems with validation workflows. It also sharpened my skills in scalable architecture, database modeling, and user-focused features driven by actual community needs."
               }
             ],
+            "realWorld": "The same patterns power client products: real-time dashboards, booking platforms, and any system where multiple users interact at once and data must be trusted.",
             "highlights": [
               "Match logging with head-to-head history and player profiles",
               "Approval workflow to eliminate false reporting",
               "Real-time updates for a responsive community experience",
               "API-driven architecture ready for future mobile clients"
+            ],
+            "links": [
+              {
+                "url": "https://pesscore.vercel.app",
+                "label": "View live platform"
+              }
             ]
           }
         },
         {
-          "title": "Math Practice Game — Interactive Learning Tool",
-          "description": "An interactive educational web game that helps students master addition, subtraction, multiplication, and division through customizable practice modes, adaptive difficulty, instant feedback, and a clean, mobile-friendly interface.",
+          "title": "Math Practice Game — Addition, Subtraction & More",
+          "description": "An interactive educational web game that helps students master addition, subtraction, multiplication, and division through customizable practice modes, adaptive difficulty, and instant feedback.",
           "tech": "Next.js, Tailwind CSS, MongoDB",
           "image": "/images/projects/math-practice-game.jpg",
-          "linkLabel": "See more details",
+          "linkLabel": "View Project",
           "category": "Educational Web Application",
           "type": "personal",
           "status": "online",
@@ -917,25 +1121,22 @@
           "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Math Practice Game — Addition, Subtraction, Multiplication, Division | Devsign",
-              "description": "Interactive math practice game for kids and students: addition, subtraction, multiplication, division, and mixed mode with adaptive difficulty, instant feedback, and a responsive Next.js + Tailwind CSS interface.",
+              "title": "Math Practice Game — Addition, Subtraction & More",
+              "description": "Interactive math practice game for kids and students: four operations plus mixed mode, adaptive difficulty, and instant feedback — built with Next.js and",
               "keywords": [
                 "math practice game",
-                "addition subtraction multiplication division game",
                 "educational web app",
                 "kids math learning tool",
                 "interactive math game",
                 "Next.js educational game",
-                "Tailwind CSS responsive UI",
-                "adaptive difficulty game",
-                "frontend portfolio project"
+                "adaptive difficulty game"
               ]
             },
             "intro": "Learning math should be engaging and adaptable. This game lets students focus on a specific operation — addition (+), subtraction (−), multiplication (×), or division (÷) — or choose Mixed Mode for randomly generated questions across all four. With instant feedback, progressive difficulty, and a mobile-friendly interface, it encourages consistent practice across all core arithmetic skills.",
             "sections": [
               {
                 "title": "Flexible learning experience",
-                "body": "Students can practice a single operation to strengthen specific skills or switch to Mixed Mode for randomly generated addition, subtraction, multiplication, and division questions. Adaptive difficulty keeps each session appropriately challenging while maintaining an enjoyable learning experience."
+                "body": "Students can practice a single operation to strengthen specific skills or switch to Mixed Mode for randomly generated questions across all four operations. Adaptive difficulty keeps each session appropriately challenging while maintaining an enjoyable learning experience."
               },
               {
                 "title": "Built for speed and scalability",
@@ -953,150 +1154,49 @@
           }
         },
         {
-          "title": "Minishell — Bash-like Shell in C",
-          "description": "A custom Unix shell built from scratch in C that replicates core Bash behaviors: command execution, piping, redirections, environment variables, and signal handling — with strict memory safety discipline.",
-          "tech": "C, Linux, POSIX, Shell Scripting",
-          "image": "/images/projects/Minishell-Project.jpg",
-          "linkLabel": "See more details",
-          "category": "Systems Programming",
-          "type": "academic",
-          "status": "completed",
-          "href": "/portfolio/minishell-project",
-          "highlightsHeading": "Key features & competencies",
+          "title": "Currency Converter & Money Transfer Web App",
+          "description": "A fast and secure web app for transferring money and converting currencies worldwide. It offers real-time exchange rates, a simple interface, and reliable results for seamless international transactions.",
+          "tech": "JavaScript, Bootstrap, APIs",
+          "image": "/images/projects/Currency-Converter.jpg",
+          "linkLabel": "View Project",
+          "category": "Full-Stack Web Application",
+          "type": "personal",
+          "status": "online",
+          "href": "/portfolio/money-transfer",
+          "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Minishell Bash-like Shell in C — Unix Systems Programming | Devsign",
-              "description": "Custom Unix shell built from scratch in C with Bash-like command parsing, pipes, redirections, environment variables, and signal handling. Deep systems programming portfolio project.",
+              "title": "Currency Converter & Money Transfer Web App",
+              "description": "Fintech-style web utility: live exchange rates, simple money transfer flows, and API-driven accuracy — built with JavaScript, Bootstrap, and robust error",
               "keywords": [
-                "Unix shell implementation",
-                "custom shell C",
-                "Bash-like shell project",
-                "pipes redirections C",
-                "systems programming portfolio",
-                "fork exec C Linux",
-                "POSIX shell scripting",
-                "42 school project",
-                "low-level C programming"
+                "currency converter web app",
+                "exchange rate API",
+                "money transfer UI",
+                "Bootstrap fintech prototype",
+                "JavaScript API integration"
               ]
             },
-            "intro": "This project is a deep dive into how operating systems handle command execution and process control. By building a Bash-like shell from scratch in C, we replicated core Unix behaviors — from parsing user input to executing commands, managing processes, and handling pipes and redirections with precision.",
+            "intro": "People expect financial tools to feel calm and precise. This app pairs a clean conversion experience with transfer-oriented flows, backed by live rates from external APIs and careful handling of edge cases like unavailable providers or stale data.",
             "sections": [
               {
-                "title": "Technical depth",
-                "body": "The shell implements accurate Bash-like behavior, including command parsing with quoting rules, environment variable expansion, and signal handling (Ctrl+C, Ctrl+D, Ctrl+\\). It supports pipes, input/output redirections, and process creation using fork/exec, while ensuring memory safety and robust error handling across edge cases."
-              },
-              {
-                "title": "What we learned",
-                "body": "This project strengthened our understanding of low-level systems programming: process lifecycle, inter-process communication through pipes, file descriptors, and POSIX standards. We deepened our knowledge of Bash command execution, shell scripting fundamentals, and how to write clean, reliable C code under strict constraints — essential skills for systems and backend engineering."
+                "title": "Reliability & clarity",
+                "body": "Financial interfaces need explicit states: loading, success, failure, and refresh. I prioritized readable formatting for currencies and transparent messaging so users always know what number they are acting on."
               }
             ],
             "highlights": [
-              "Command execution with pipelines and I/O redirections",
-              "Environment variable handling aligned with Bash semantics",
-              "Signal handling (SIGINT, SIGQUIT, EOF) for interactive use",
-              "Memory-safe C code with strict error handling discipline"
+              "Real-time rate retrieval via REST APIs",
+              "Responsive layout for phones and desktops",
+              "UX patterns suitable for fintech and e-commerce teams",
+              "Demonstrates API integration discipline end-to-end"
             ]
           }
         },
         {
-          "title": "Webserver — Nginx like HTTP Server",
-          "description": "A high-performance, non-blocking HTTP server built in C++98 inspired by Nginx. Uses epoll() for I/O multiplexing and supports CGI, file uploads, and RFC-compliant request handling.",
-          "tech": "C++, Linux, HTTP/1.1, Socket Programming, epoll",
-          "image": "/images/projects/Webserv-Project.jpg",
-          "linkLabel": "View case study",
-          "category": "Web Servers & Networking",
-          "type": "academic",
-          "status": "Completed",
-          "href": "/portfolio/webserv-project",
-          "highlightsHeading": "Key features & competencies",
-          "detail": {
-            "seo": {
-              "title": "Nginx-like HTTP Server C++ epoll & CGI High-Performance Web Server | Devsign",
-              "description": "Custom non-blocking HTTP server in C++98 with epoll multiplexing, CGI support, file uploads, and RFC-oriented request handling — core server engineering and networking skills.",
-              "keywords": [
-                "C++ HTTP server",
-                "Nginx-like server",
-                "epoll multiplexing",
-                "non-blocking web server",
-                "socket programming Linux",
-                "CGI implementation C++",
-                "high performance server",
-                "RFC compliant HTTP server",
-                "web server from scratch"
-              ]
-            },
-            "intro": "Building a production-grade web server from scratch reveals what modern frameworks abstract away: connection handling, request parsing, protocol compliance, and maintaining performance under concurrent load. Inspired by Nginx, this project implements a scalable architecture using epoll to efficiently manage thousands of simultaneous client connections.",
-            "sections": [
-              {
-                "title": "Architecture & capabilities",
-                "body": "Developed in C++98, the server is built on non-blocking sockets combined with a multiplexed event loop for high-performance I/O. It supports core HTTP methods (GET, POST, DELETE), a flexible configuration system inspired by Nginx (routes, ports, error pages), and CGI execution for dynamic content (PHP, Python). Additional features include secure file uploads and strict request validation against HTTP standards."
-              },
-              {
-                "title": "What we learned",
-                "body": "This project provided deep insight into how web servers operate internally: managing concurrent connections, handling HTTP protocol details, and optimizing performance with event-driven architectures. It strengthened our skills in low-level network programming, socket management, and debugging complex systems, while highlighting the trade-offs between performance, scalability, and code complexity."
-              }
-            ],
-            "highlights": [
-              "Event-driven design with epoll for thousands of concurrent connections",
-              "RFC-oriented HTTP parsing and response generation",
-              "CGI path for dynamic content execution and extensibility",
-              "Nginx-inspired configuration with virtual hosts and route matching"
-            ]
-          }
-        },
-        {
-          "title": "Inception — Docker Infrastructure stack",
-          "description": "A production-like multi-container environment deployed with Docker Compose. Features Nginx reverse proxy with SSL, WordPress application layer, and MariaDB database on a secure, isolated network.",
-          "tech": "Docker, Docker Compose, Linux, Nginx, MariaDB, WordPress",
-          "image": "/images/projects/Inception-Project.jpg",
-          "linkLabel": "View case study",
-          "category": "Infrastructure & DevOps",
-          "type": "academic",
-          "status": "Completed",
-          "href": "/portfolio/inception-project",
-          "highlightsHeading": "Key features & competencies",
-          "detail": {
-            "seo": {
-              "title": "Inception Docker-Based Infrastructure Nginx, WordPress, MariaDB with Docker Compose | Devsign",
-              "description": "Production-like multi-container stack with Docker Compose: Nginx reverse proxy with SSL, WordPress, and MariaDB on isolated networks. Infrastructure-as-code and container orchestration project.",
-              "keywords": [
-                "Docker Compose project",
-                "Nginx WordPress MariaDB stack",
-                "container orchestration",
-                "Docker infrastructure",
-                "reverse proxy SSL",
-                "container networking",
-                "Inception 42 project",
-                "DevOps portfolio",
-                "infrastructure as code",
-                "multi-container deployment"
-              ]
-            },
-            "intro": "This project recreates a production-like environment using Docker, where multiple services are isolated, secured, and orchestrated together. The architecture includes a reverse proxy with SSL (HTTPS), application services, a database, and persistent storage — all connected through explicit Docker networking for full control, reliability, and environment parity.",
-            "sections": [
-              {
-                "title": "Containerization & security",
-                "body": "Each service runs in its own container, managed with Docker Compose for reproducibility and scalability. Nginx is configured as a reverse proxy with SSL certificates to secure traffic over HTTPS. Named volumes ensure data persistence across container restarts, while environment variables and custom configurations allow flexible deployment across development, staging, and production environments."
-              },
-              {
-                "title": "What we learned",
-                "body": "This project built a strong DevOps foundation: understanding containerization, service isolation, inter-container networking, and secure communication. We learned how to write Dockerfiles and Compose files, configure Nginx as a reverse proxy, manage SSL/TLS certificates, and ensure data persistence with volumes. It also emphasized reproducibility — showing how entire environments can be defined as code and redeployed consistently, a key practice in modern CI/CD and infrastructure workflows."
-              }
-            ],
-            "highlights": [
-              "Multi-service container orchestration with Docker Compose",
-              "Isolated network boundaries between Nginx, WordPress, and MariaDB",
-              "SSL-secured reverse proxy with HTTPS termination",
-              "Persistent storage and environment-based configuration management"
-            ]
-          }
-        },
-        {
-          "title": "ft_transcendence",
-          "description": "A real-time multiplayer Pong platform featuring live matchmaking, social chat systems, and secure OAuth2 authentication. Built with a scalable architecture and seamless WebSocket communication.",
+          "title": "ft_transcendence — Real-Time Pong Platform",
+          "description": "A real-time multiplayer gaming and social platform featuring live matchmaking, instant chat, and secure OAuth2 authentication, deployed via a scalable Dockerized architecture.",
           "tech": "TypeScript, PostgreSQL, Auth0, Docker, Node.js, Socket.io",
           "image": "/images/projects/ft_transcendence.jpg",
-          "linkLabel": "See more details",
+          "linkLabel": "View Case Study",
           "category": "Full-Stack Web Application",
           "type": "academic",
           "status": "completed",
@@ -1104,8 +1204,8 @@
           "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "ft_transcendence — Real-Time Pong, OAuth2, WebSockets | Devsign",
-              "description": "Full-stack realtime platform: matchmaking, chat, OAuth2 authentication, PostgreSQL, Dockerized services, and Socket.io communication.",
+              "title": "ft_transcendence — Real-Time Pong Platform",
+              "description": "Full-stack real-time platform: matchmaking, chat, OAuth2 authentication, PostgreSQL, Dockerized services, and Socket.io communication.",
               "keywords": [
                 "ft_transcendence",
                 "Socket.io realtime",
@@ -1115,19 +1215,20 @@
                 "Docker web app"
               ]
             },
-            "intro": "ft_transcendence is a full-stack realtime application combining modern TypeScript technologies with WebSockets to deliver interactive gameplay and live communication. The platform handles authenticated users, persistent game rooms, and low-latency messaging, backed by PostgreSQL for reliable data storage.",
+            "intro": "The challenge was to architect a production-grade, multi-user platform from an empty repository. The goal: build a seamless real-time experience combining live gameplay, instant messaging, and secure user management.",
             "sections": [
               {
-                "title": "Realtime architecture",
-                "body": "The system is designed around WebSocket communication for instant updates in gameplay and chat. It manages user authentication, matchmaking, and synchronized game states while ensuring data consistency through a PostgreSQL database. The architecture balances responsiveness with stability, even under concurrent usage."
+                "title": "The Architecture",
+                "body": "Built around event-driven WebSocket communication, the system handles instant state synchronization for gameplay and chat. It ensures data consistency across multiple active sessions using PostgreSQL, while Docker containers keep the microservices scalable and reproducible."
               },
               {
-                "title": "What we learned",
-                "body": "This project strengthened our expertise in building realtime systems: handling WebSocket connections, managing state synchronization, and ensuring low-latency communication. We also gained experience in full-stack TypeScript development, secure authentication, database design, and deploying scalable applications — key skills for modern products like live dashboards, collaborative tools, and messaging platforms."
+                "title": "What I Mastered",
+                "body": "Engineering low-latency, real-time systems. I learned to manage complex WebSocket connections, secure authentication flows (OAuth2), and design robust database schemas for concurrent user interactions without data loss."
               }
             ],
+            "realWorld": "This is the exact architecture behind live business dashboards, collaborative SaaS tools, and real-time booking systems. It proves to clients and CTOs that I can build highly interactive, multi-user applications that perform flawlessly under load.",
             "highlights": [
-              "Realtime gameplay and chat with scalable event patterns",
+              "Real-time gameplay and chat with scalable event patterns",
               "Secure authentication flows with OAuth2 integration",
               "Containerized deployment for reproducible environments",
               "End-to-end TypeScript/Node architecture with clear module boundaries"
@@ -1135,80 +1236,138 @@
           }
         },
         {
-          "title": "Money Transfer & Currency Converter",
-          "description": "A fast and secure web app for transferring money and converting currencies worldwide. It offers real-time exchange rates, a simple interface, and reliable results for seamless international transactions.",
-          "tech": "JavaScript, Bootstrap, APIs",
-          "image": "/images/projects/Currency-Converter.jpg",
-          "linkLabel": "See more details",
-          "category": "Full-Stack Web Application",
-          "type": "personal",
-          "status": "online",
-          "href": "/portfolio/money-transfer",
-          "highlightsHeading": "Key features",
+          "title": "Minishell — Bash-like Shell in C",
+          "description": "A custom Unix shell built from scratch in C that perfectly replicates core Bash behaviors: command execution, piping, redirections, and signal handling, with strict memory safety.",
+          "tech": "C, Linux, POSIX, Shell Scripting",
+          "image": "/images/projects/Minishell-Project.jpg",
+          "linkLabel": "View Case Study",
+          "category": "Systems Programming",
+          "type": "academic",
+          "status": "completed",
+          "href": "/portfolio/minishell-project",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "Currency Converter & Money Transfer Web App | APIs | Devsign",
-              "description": "Fintech-style web utility: live exchange rates, simple money transfer flows, and API-driven accuracy — built with JavaScript, Bootstrap, and robust error handling.",
+              "title": "Minishell — Bash-like Shell in C",
+              "description": "Custom Unix shell built from scratch in C with Bash-like command parsing, pipes, redirections, environment variables, and signal handling.",
               "keywords": [
-                "currency converter web app",
-                "exchange rate API",
-                "money transfer UI",
-                "Bootstrap fintech prototype",
-                "JavaScript API integration",
-                "hire frontend developer Morocco"
+                "Unix shell implementation",
+                "custom shell C",
+                "Bash-like shell project",
+                "pipes redirections C",
+                "systems programming portfolio",
+                "42 school project",
+                "low-level C programming"
               ]
             },
-            "intro": "People expect financial tools to feel calm and precise. This app pairs a clean conversion experience with transfer-oriented flows, backed by live rates from external APIs and careful handling of edge cases like unavailable providers or stale data.",
+            "intro": "To truly understand how operating systems manage resources, I rebuilt one of their most complex tools: a shell. The goal was to master low-level memory management, process control, and system calls without relying on modern frameworks.",
             "sections": [
               {
-                "title": "Reliability & clarity",
-                "body": "Financial interfaces need explicit states: loading, success, failure, and refresh. We prioritized readable formatting for currencies and transparent messaging so users always know what number they are acting on."
+                "title": "Under the Hood",
+                "body": "I engineered a robust command parser that handles complex quoting rules, environment variables, and input/output redirections. It manages process creation using fork and exec, handles inter-process communication via pipes, and intercepts system signals (Ctrl+C, Ctrl+D) gracefully."
+              },
+              {
+                "title": "What I Mastered",
+                "body": "Strict discipline in C programming. I gained a deep understanding of the process lifecycle, file descriptors, memory allocation, and POSIX standards. I learned to write highly performant, leak-free code under strict constraints."
               }
             ],
+            "realWorld": "Why does a web developer need C and OS-level knowledge? Mastering memory, I/O, and Linux commands makes me a stronger backend engineer. It allows me to write highly optimized Node.js code, debug complex production memory leaks, and automate server deployments with Bash scripts.",
             "highlights": [
-              "Real-time rate retrieval via REST APIs",
-              "Responsive layout for phones and desktops",
-              "UX patterns suitable for fintech and ecommerce teams",
-              "Demonstrates API integration discipline end-to-end"
+              "Command execution with pipelines and I/O redirections",
+              "Environment variable handling aligned with Bash semantics",
+              "Signal handling (SIGINT, SIGQUIT, EOF) for interactive use",
+              "Memory-safe C code with strict error handling discipline"
             ]
           }
         },
         {
-          "title": "Hotel Technical Issue Manager",
-          "description": "A professional internal system for hotel maintenance. Streamlines issue reporting, automates email alerts via PHPMailer, and generates digital PDF reports for technical audits.",
-          "tech": "PHP, PHPMailer, MySQL, FPDF",
-          "image": "/images/projects/Hotel-Technical-Issue-Manager.jpg",
-          "linkLabel": "See more details",
-          "category": "System Management",
-          "type": "professional",
-          "status": "local enterprise",
-          "href": "/portfolio/hotel-technical-issue-manager",
-          "highlightsHeading": "What we delivered",
+          "title": "Webserver — Nginx-like HTTP Server in C++",
+          "description": "A high-performance, non-blocking HTTP server built in C++98 inspired by Nginx. Engineered with epoll() for I/O multiplexing to handle thousands of concurrent connections.",
+          "tech": "C++, Linux, HTTP/1.1, Socket Programming, epoll",
+          "image": "/images/projects/Webserv-Project.jpg",
+          "linkLabel": "View Case Study",
+          "category": "Web Servers & Networking",
+          "type": "academic",
+          "status": "completed",
+          "href": "/portfolio/webserv-project",
+          "highlightsHeading": "Key features & competencies",
           "detail": {
             "seo": {
-              "title": "Hotel Maintenance Ticketing System with PHP, MySQL, PDF | Devsign",
-              "description": "Internal hotel maintenance platform: issue reporting, PHPMailer alerts, MySQL records, and PDF audit reports — built for real operations teams.",
+              "title": "Webserver — Nginx-like HTTP Server in C++",
+              "description": "Custom non-blocking HTTP server in C++98 with epoll multiplexing, CGI support, file uploads, and RFC-oriented request handling.",
               "keywords": [
-                "hotel maintenance software",
-                "PHP ticketing system",
-                "PHPMailer alerts",
-                "MySQL operations app",
-                "PDF audit reports",
-                "enterprise internal tools Morocco"
+                "C++ HTTP server",
+                "Nginx-like server",
+                "epoll multiplexing",
+                "non-blocking web server",
+                "socket programming Linux",
+                "CGI implementation C++",
+                "web server from scratch"
               ]
             },
-            "intro": "Hotels cannot afford silent failures: broken HVAC, plumbing, or electrical issues need traceable tickets, accountable owners, and audit trails. This system digitizes the workflow from report to resolution — with email escalation when minutes matter.",
+            "intro": "Modern frameworks hide the complexity of the web. My goal was to rebuild an actual HTTP server from scratch to understand connection handling, request parsing, and protocol compliance at the lowest level.",
             "sections": [
               {
-                "title": "Operational impact",
-                "body": "Automated notifications reduce response time, while PDF exports support compliance conversations and vendor handoffs. The database model is built around statuses, timestamps, and clear ownership."
+                "title": "Event-Driven Architecture",
+                "body": "Inspired by Nginx, I implemented a non-blocking, event-driven architecture using epoll() for I/O multiplexing. This allows the server to manage thousands of simultaneous client connections efficiently. It supports core HTTP methods, CGI execution for dynamic content, and strict RFC-compliant request validation."
+              },
+              {
+                "title": "What I Mastered",
+                "body": "Low-level network programming, socket management, and the HTTP protocol itself. I learned how to handle concurrent connections without blocking the main thread, parse raw HTTP requests, optimize server performance under heavy load, and implement precise, RFC-compliant HTTP status codes for every response."
               }
             ],
+            "realWorld": "Every web application and API sits on top of HTTP. Knowing this protocol deeply means I can make smarter caching decisions, optimize Core Web Vitals, configure reverse proxies flawlessly, and debug network bottlenecks that ordinary web developers simply can't see.",
             "highlights": [
-              "Structured issue lifecycle from report to closure",
-              "Email alerts for critical events and handoffs",
-              "PDF reporting for audits and management reviews",
-              "Practical example of business process automation"
+              "Event-driven design with epoll for thousands of concurrent connections",
+              "RFC-oriented HTTP parsing and response generation",
+              "CGI path for dynamic content execution and extensibility",
+              "Nginx-inspired configuration with virtual hosts and route matching"
+            ]
+          }
+        },
+        {
+          "title": "Inception — Docker Infrastructure Stack",
+          "description": "A production-ready multi-container infrastructure deployed with Docker Compose. Features an Nginx reverse proxy with SSL termination, WordPress, and MariaDB on isolated, secure networks.",
+          "tech": "Docker, Docker Compose, Linux, Nginx, MariaDB, WordPress",
+          "image": "/images/projects/Inception-Project.jpg",
+          "linkLabel": "View Case Study",
+          "category": "Infrastructure & DevOps",
+          "type": "academic",
+          "status": "completed",
+          "href": "/portfolio/inception-project",
+          "highlightsHeading": "Key features & competencies",
+          "detail": {
+            "seo": {
+              "title": "Inception — Docker Infrastructure Stack",
+              "description": "Production-like multi-container stack with Docker Compose: Nginx reverse proxy with SSL, WordPress, and MariaDB on isolated networks.",
+              "keywords": [
+                "Docker Compose project",
+                "Nginx WordPress MariaDB stack",
+                "container orchestration",
+                "Docker infrastructure",
+                "reverse proxy SSL",
+                "Inception 42 project",
+                "DevOps portfolio",
+                "infrastructure as code"
+              ]
+            },
+            "intro": "The goal was to recreate a secure, enterprise-grade hosting environment using Infrastructure as Code. I orchestrated multiple isolated services—web servers, databases, and reverse proxies—to ensure total reliability and environment parity.",
+            "sections": [
+              {
+                "title": "Containerization & Security",
+                "body": "Each service runs in an isolated container managed by Docker Compose. I configured Nginx as a reverse proxy with SSL/TLS certificates to secure all traffic over HTTPS. Named volumes ensure data persistence, while custom networking isolates the database from public access, mimicking real-world cloud security practices."
+              },
+              {
+                "title": "What I Mastered",
+                "body": "Modern DevOps and deployment pipelines. I learned to write optimized Dockerfiles, manage inter-container networking, configure SSL termination, and ensure 100% reproducible environments across development, staging, and production."
+              }
+            ],
+            "realWorld": "This is modern deployment in miniature. For clients, it means their website or dashboard is hosted on a secure, scalable, and crash-resistant infrastructure. For companies, it proves I can take a project from my local machine to a live production server with a single command, integrating seamlessly into any CI/CD pipeline.",
+            "highlights": [
+              "Multi-service container orchestration with Docker Compose",
+              "Isolated network boundaries between Nginx, WordPress, and MariaDB",
+              "SSL-secured reverse proxy with HTTPS termination",
+              "Persistent storage and environment-based configuration management"
             ]
           }
         }
@@ -1235,7 +1394,7 @@
     },
     "contact_page": {
       "heading": "Let's Build Your Next High-Performance Digital Project",
-      "description": "Looking for a Full-Stack Web Developer to build a website, e-commerce store, business dashboard, AI automation, or improve your Technical SEO? I help startups, businesses, and entrepreneurs create fast, scalable, and search-optimized digital solutions that generate measurable results. Tell me about your project, and let's discuss how we can bring it to life.",
+      "description": "Looking for a Full-Stack Web Developer to build a corporate website, business dashboard, or improve your Technical SEO? I help startups and enterprises create fast, scalable, and search-optimized digital solutions. Tell me about your project, and let's discuss how we can bring it to life.",
       "subtitle": "Start Your Project Today",
       "email": "Email",
       "whatsapp": "WhatsApp",
@@ -1313,7 +1472,7 @@
       "sectionLabel": "Articles & Guides",
       "subtitle": "Real experience, practical insights",
       "heading": "Web Development, SEO & AI Search Optimization Articles",
-      "description": "I write based on real-world experience from choosing the best laptop for coding in 2026, to inspecting used laptops before buying, to Technical SEO, AI Search Optimization, and building fast websites with Next.js. Every article is built to help you make better decisions and grow online.",
+      "description": "I write based on real-world experience and what I've learned along the way. These articles share practical lessons from building Next.js websites, solving Technical SEO challenges, and optimizing websites for AI-powered search engines.",
       "cta_btn": "Read Article",
       "articlesLabel": "Latest Articles",
       "topics": [
@@ -1402,7 +1561,7 @@
     "brandName": "Devsignpro",
     "brandTagline": "Full-Stack Developer & SEO Specialist",
     "phone": "+212 7 78 18 03 06",
-    "address": "Morocco (GMT+1)",
+    "address": "Morocco",
     "ExplorerTitle": "Explore",
     "links": [
       {
@@ -1434,11 +1593,15 @@
       },
       {
         "label": "E-commerce Development",
-        "href": "/services/ecommerce"
+        "href": "/services/ecommerce-development"
+      },
+      {
+        "label": "Technical SEO",
+        "href": "/services/technical-seo"
       },
       {
         "label": "Dashboards & Automation",
-        "href": "/services/business-systems"
+        "href": "/services/business-dashboards"
       }
     ],
     "legalLinks": [
@@ -1454,8 +1617,8 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Freelance Web Developer Morocco | Next.js, SEO & AI Search",
-        "description": "Freelance web developer in Morocco specializing in Next.js, SEO, and AI Search Optimization. I build high-performance websites that rank and convert.",
+        "title": "Web Developer & SEO Expert in Morocco | Freelancer",
+        "description": "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization.",
         "keywords": [
           "web developer morocco",
           "next.js developer morocco",
@@ -1467,29 +1630,6 @@
           "generative engine optimization",
           "full stack developer morocco",
           "high performance websites"
-        ]
-      },
-      "generateOpenGraph": {
-        "personDescription": "Freelance Full-Stack Web Developer based in Morocco, specializing in Next.js, Technical SEO, AI Search Optimization, Core Web Vitals, and high-performance websites for businesses and e-commerce.",
-        "orgDescription": "Custom websites and e-commerce solutions built with Next.js. Optimized for Google Search, AI search engines, Core Web Vitals, and business growth.",
-        "jobTitle": "Full-Stack Developer, SEO Expert & AI Search Optimization Specialist",
-        "services": [
-          {
-            "name": "Custom Website Development",
-            "description": "Custom business websites, corporate websites, landing pages, and web applications built with Technical SEO, Core Web Vitals, and AI Search Optimization."
-          },
-          {
-            "name": "Business Automation, Custom Dashboards & AI Integration",
-            "description": "Custom dashboards, workflow automation, AI integrations, and internal business systems that improve productivity, streamline operations, and support business growth."
-          },
-          {
-            "name": "E-commerce Website Development",
-            "description": "Custom online stores with secure payments, optimized product pages, Technical SEO, and AI Search Optimization to increase traffic, sales, and conversions."
-          },
-          {
-            "name": "Technical SEO & AI Search Optimization",
-            "description": "Technical SEO, Core Web Vitals, structured data, and AI Search Optimization to improve visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and AI search engines."
-          }
         ]
       }
     }

@@ -9,7 +9,7 @@ export function getBaseUrl() {
     process.env.VERCEL_URL ||
     (process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
-      : "https://www.devsignpro.com");
+      : "https://devsignpro.com");
 
   const normalizedBaseUrl = rawBaseUrl.trim();
   if (
@@ -45,7 +45,7 @@ export function buildPageMetadata({
   const ogLocaleAlternate = i18n.locales
     .filter((currentLocale) => currentLocale !== locale)
     .map((currentLocale) =>
-      currentLocale === "en" ? "en_MA" : currentLocale === "ar" ? "ar_MA" : "fr_MA",
+      currentLocale === "en" ? "en_US" : currentLocale === "ar" ? "ar_MA" : "fr_MA",
     );
   const safeRoute = route ? (route.startsWith("/") ? route : `/${route}`) : "";
   const currentUrl = `${baseUrl}/${locale}${safeRoute}`;

@@ -2,12 +2,39 @@ import type { Metadata } from "next";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
+import {
+  flattenPortfolioProjects,
+  hrefToPortfolioSlug,
+  parseTechList,
+} from "@/app/lib/portfolio";
 import PortfolioSchema from "../../components/schemas/PortfolioSchema";
 import PortfolioContent from "../../components/PortfolioContent";
 
 type Props = {
   params: Promise<{ locale: string }>;
   searchParams: Promise<{ filter?: string }>;
+};
+
+type ProjectType = "professional" | "personal" | "academic";
+
+type DictionaryProject = {
+  title?: string;
+  description?: string;
+  detail?: {
+    seo: {
+      title: string;
+      description: string;
+      keywords: string[];
+    };
+  };
+  href?: string;
+  link?: string;
+  image?: string;
+  tech?: string | string[];
+  type?: ProjectType;
+  status?: string;
+  category?: string;
+  linkLabel?: string;
 };
 
 export async function generateStaticParams() {
@@ -19,18 +46,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
+
   const title =
     locale === "en"
-      ? "Portfolio | high-performance Websites, E-Commerce, Dashboards & AI Automation"
+      ? "Web Development Portfolio & Case Studies | Devsignpro"
       : locale === "ar"
-        ? "معرض الأعمال | مواقع عالية الأداء، متاجر إلكترونية، لوحات تحكم وحلول أتمتة الذكاء الاصطناعي"
-        : "Portfolio | Sites performants, E-Commerce, Dashboards & Automatisation IA";
+        ? "معرض أعمال تطوير الويب ودراسات الحالة | Devsignpro"
+        : "Portfolio Développement Web & Études de Cas | Devsignpro";
+
   const description =
     locale === "en"
-      ? "Discover high-performance websites, e-commerce stores, dashboards, and AI solutions. See how I help businesses grow online."
+      ? "Explore my portfolio of high-performance Next.js websites, custom dashboards, and Technical SEO projects. See real results and business impact."
       : locale === "ar"
-        ? "اكتشف مواقع عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم، وحلول الذكاء الاصطناعي. شاهد كيف أساعد الشركات على النمو عبر الإنترنت."
-        : "Découvrez des sites performants, boutiques e-commerce, dashboards et solutions d'IA. Boostez votre croissance.";
+        ? "استكشف معرض أعمالي لمواقع Next.js عالية الأداء، لوحات التحكم المخصصة، ومشاريع SEO التقني. شاهد نتائج حقيقية وتأثير ملموس على الأعمال."
+        : "Portfolio de sites Next.js, tableaux de bord et projets SEO technique. Résultats mesurables et impact business concret au Maroc.";
+
   const keywords =
     locale === "en"
       ? [
@@ -101,15 +131,18 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
   const data = dict.pages?.portfolio_page;
   const isRtl = locale === "ar";
 
-  if (!data || !data.projects) return null;
+  if (!data) return null;
 
-  const allProjects = Object.values(data.projects).map((p: any) => ({
-    title: p.title ?? "",
-    description: p.description ?? "",
+  const allProjects = flattenPortfolioProjects<DictionaryProject>(
+    data.projects,
+  ).map((p) => ({
+    slug: hrefToPortfolioSlug(p.href ?? ""),
+    title: p.detail?.seo?.title ?? p.title ?? "",
+    description: p.detail?.seo?.description ?? p.description ?? "",
     href: p.href || p.link || "#",
     image: p.image ?? "",
-    tech: p.tech ?? "",
-    type: p.type as "professional" | "personal" | "academic",
+    tech: parseTechList(p.tech),
+    type: (p.type ?? "personal") as ProjectType,
     status: p.status,
     category: p.category,
     linkLabel: p.linkLabel,
@@ -127,10 +160,10 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
         title={data.heading || "Portfolio"}
         description={
           locale === "en"
-            ? "Portfolio of high-performance Next.js websites, e-commerce stores, business dashboards, and AI-powered solutions built with Technical SEO and scalable architecture."
+            ? "Portfolio of high-performance Next.js websites, e-commerce, business dashboards, and solutions built with Technical SEO and scalable architecture."
             : locale === "ar"
-              ? "معرض أعمال يضم مواقع Next.js عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم للأعمال، وحلولاً مدعومة بالذكاء الاصطناعي، مع SEO تقني وبنية قابلة للتوسع."
-              : "Portfolio de sites Next.js performants, boutiques e-commerce, tableaux de bord métier et solutions d'IA, développés avec un SEO technique et une architecture évolutive."
+              ? "معرض أعمال يضم مواقع Next.js عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم للأعمال، وحلولاً رقمية مبنية على SEO تقني وبنية قابلة للتوسع."
+              : "Portfolio de sites Next.js performants, boutiques e-commerce, tableaux de bord et solutions digitales, développés avec un SEO technique et une architecture évolutive."
         }
         projects={allProjects}
       />

@@ -50,6 +50,7 @@ export default function robots(): MetadataRoute.Robots {
 			{
 				userAgent: [...AI_CRAWLERS],
 				allow: ["/", "/llms.txt", "/llms-full.txt"],
+				disallow: ["/api/"],
 			},
 		],
 		sitemap: `${baseUrl}/sitemap.xml`,

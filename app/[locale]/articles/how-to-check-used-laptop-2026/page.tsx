@@ -65,14 +65,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!article) notFound();
 
+  const seoTitle =
+    locale === "en"
+      ? "How to Check a Used Laptop (2026 Checklist)"
+      : locale === "ar"
+        ? "فحص لابتوب مستعمل قبل الشراء | قائمة 2026"
+        : "Vérifier un laptop d'occasion | Checklist 2026";
+
+  const seoDescription =
+    locale === "en"
+      ? "A complete 2026 checklist to inspect a used laptop: battery health, screen, keyboard, specs, and hidden hardware issues before you pay."
+      : locale === "ar"
+        ? "قائمة فحص كاملة لعام 2026 للابتوب المستعمل: البطارية، الشاشة، لوحة المفاتيح، المواصفات، والمشاكل المخفية قبل الدفع."
+        : "Checklist 2026 pour inspecter un laptop d'occasion : batterie, écran, clavier, specs et pannes cachées avant d'acheter.";
+
   return buildPageMetadata({
     locale,
-    title: article.title,
-    description: article.head || article.excerpt,
-    keywords: [
-      article.category,
-      article.title,
-    ],
+    title: seoTitle,
+    description: seoDescription,
+    keywords: [article.category, article.title],
     route: ARTICLE_PATH,
     ogImagePath: article.image,
     type: "article",
@@ -364,42 +375,39 @@ export default async function ArticleDetailsPage({ params }: Props) {
     article.text9,
   ].filter(Boolean) as string[];
 
-  const shareUrl = `${getBaseUrl()}/${locale}${ARTICLE_PATH}`;
+const shareUrl = `${getBaseUrl()}/${locale}${ARTICLE_PATH}`;
 
-  // Structured data
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: article.title,
-    description: article.excerpt,
-    image: article.image.startsWith("http")
-      ? article.image
-      : `${getBaseUrl()}${article.image.startsWith("/") ? "" : "/"}${article.image}`,
-    datePublished: article.published,
-    dateModified: article.published,
-    articleSection: article.category,
-    inLanguage: locale,
-    wordCount: contentBlocks.join(" ").split(/\s+/).length,
-    author: {
-      "@type": "Person",
-      name: "Mohammed Elghandori",
-      url: `${getBaseUrl()}/${locale}/about`,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "Devsignpro",
-      logo: {
-        "@type": "ImageObject",
-        url: `${getBaseUrl()}/logo/devsignpro-logo.jpg`,
-      },
-      url: getBaseUrl(),
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": shareUrl,
-    },
-  };
+const baseUrl = getBaseUrl();
+const langCode = locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
 
+// Structured data
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "@id": `${shareUrl}#article`,
+  "headline": article.title,
+  "description": article.excerpt,
+  "url": shareUrl, 
+  "image": article.image.startsWith("http")
+    ? article.image
+    : `${baseUrl}${article.image.startsWith("/") ? "" : "/"}${article.image}`,
+  "datePublished": article.published,
+  "dateModified": article.published,
+  "articleSection": article.category,
+  "inLanguage": langCode,
+  "wordCount": contentBlocks.join(" ").split(/\s+/).length,
+  "isPartOf": { "@id": `${baseUrl}/#website` },
+  "author": {
+    "@id": `${baseUrl}/#person`,
+  },
+  "publisher": {
+    "@id": `${baseUrl}/#person`,
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": shareUrl,
+  },
+};
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -469,10 +477,10 @@ export default async function ArticleDetailsPage({ params }: Props) {
           : "Mohammed Elghandori",
     authorRole:
       locale === "ar"
-        ? "مطور برمجيات"
+        ? "مطور ويب Full-Stack"
         : locale === "fr"
-          ? "développeur de logiciels"
-          : "software developer",
+          ? "Développeur Web Full-Stack"
+          : "Full-Stack Web Developer",
   };
 
   return (
@@ -616,7 +624,7 @@ export default async function ArticleDetailsPage({ params }: Props) {
             <div className="flex flex-col items-center sm:flex-row sm:items-center sm:justify-between gap-5">
               <div className="flex items-center gap-4">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/mohammed-profile.png"
                   alt="Mohammed Elghandori"
                   width={48}
                   height={48}

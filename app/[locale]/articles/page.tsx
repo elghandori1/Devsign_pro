@@ -15,6 +15,7 @@ import {
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { FAQPageSchema } from "@/app/components/schemas";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -89,10 +90,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const dict = await getDictionary(locale);
-  const data = (dict.pages as { articles_page?: ArticlesPageData } | undefined)
-    ?.articles_page;
-
   const title =
     locale === "en"
       ? "Web Development, SEO & AI Articles | Devsignpro"
@@ -102,10 +99,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "en"
-      ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and business automation — written from real project experience."
+      ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
       : locale === "ar"
-        ? "مقالات عملية حول تطوير الويب، تحسين محركات البحث التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأتمتة الأعمال — مبنية على خبرة مشاريع حقيقية."
-        : "Articles pratiques sur le développement web, le SEO technique, l'optimisation de la recherche IA, Next.js et l'automatisation — issus de projets réels.";
+        ? "مقالات عملية حول تطوير الويب، SEO التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأدوات التقنية الحديثة مكتوبة من تجربة مشاريع حقيقية."
+        : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.";
 
   return buildPageMetadata({
     locale,
@@ -137,53 +134,57 @@ export default async function ArticlesPage({ params }: Props) {
   const articles = data.articles ?? [];
   const categoryChips = data.categoryChips ?? [];
 
+  const baseUrl = getBaseUrl();
+  const langCode =
+    locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
+
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "CollectionPage",
-        "@id": `${getBaseUrl()}/${locale}/articles#page`,
-        url: `${getBaseUrl()}/${locale}/articles`,
+        "@id": `${baseUrl}/${locale}/articles#page`,
+        url: `${baseUrl}/${locale}/articles`,
         name: data.heading,
         description:
           locale === "en"
-            ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and business automation — written from real project experience."
+            ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
             : locale === "ar"
-              ? "مقالات عملية حول تطوير الويب، تحسين محركات البحث التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأتمتة الأعمال — مبنية على خبرة مشاريع حقيقية."
-              : "Articles pratiques sur le développement web, le SEO technique, l'optimisation de la recherche IA, Next.js et l'automatisation — issus de projets réels.",
-        inLanguage: locale,
+              ? "مقالات عملية حول تطوير الويب، SEO التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأدوات التقنية الحديثة مكتوبة من تجربة مشاريع حقيقية."
+              : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.",
+        inLanguage: langCode,
+        isPartOf: { "@id": `${baseUrl}/#website` },
+        about: { "@id": `${baseUrl}/#person` },
       },
       {
         "@type": "ItemList",
-        "@id": `${getBaseUrl()}/${locale}/articles#list`,
+        "@id": `${baseUrl}/${locale}/articles#list`,
         itemListElement: articles.map(
           (article: ArticleEntry, index: number) => ({
             "@type": "ListItem",
             position: index + 1,
             item: {
               "@type": "BlogPosting",
+              "@id": `${baseUrl}/${locale}/articles/${article.slug}#article`,
               headline: article.title,
               description: article.excerpt,
               articleSection: article.category,
               datePublished: article.published,
-              inLanguage: locale,
+              inLanguage: langCode,
+              url: `${baseUrl}/${locale}/articles/${article.slug}`,
               author: {
-                "@type": "Person",
-                name: "Mohammed Elghandori",
+                "@id": `${baseUrl}/#person`,
               },
               publisher: {
-                "@type": "Organization",
-                name: "Devsignpro",
-                url: getBaseUrl(),
+                "@id": `${baseUrl}/#person`,
               },
-              url: `${getBaseUrl()}/${locale}/articles/${article.slug}`,
             },
           }),
         ),
       },
     ],
   };
-
+  
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -193,18 +194,78 @@ export default async function ArticlesPage({ params }: Props) {
         position: 1,
         name:
           locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
-        item: `${getBaseUrl()}/${locale}`,
+        item: `${baseUrl}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: data.heading,
-        item: `${getBaseUrl()}/${locale}/articles`,
+        name:
+          locale === "ar"
+            ? "المقالات"
+            : locale === "fr"
+              ? "Articles"
+              : "Articles",
+        item: `${baseUrl}/${locale}/articles`,
       },
     ],
   };
 
   const heroTopics = topics.slice(0, 3);
+
+  const faqs =
+    locale === "en"
+      ? [
+          {
+            question: "What topics do you cover in these articles?",
+            answer:
+              "I write practical guides from real project work: web development with Next.js, Technical SEO and Core Web Vitals, AI search optimization, and buying advice for laptops used for study, coding, and business.",
+          },
+          {
+            question: "Are the articles written for businesses in Morocco?",
+            answer:
+              "Yes. The technical articles apply worldwide, and the buying guides are written for students, developers, and business owners in Morocco and similar markets who need clear, budget-aware advice.",
+          },
+          {
+            question: "How often do you publish new articles?",
+            answer:
+              "I publish when I have a complete, useful guide from real work — not filler. Subscribe via the contact page if you want a specific topic covered next.",
+          },
+        ]
+      : locale === "ar"
+        ? [
+            {
+              question: "ما المواضيع التي تغطيها هذه المقالات؟",
+              answer:
+                "أكتب أدلة عملية من مشاريع حقيقية: تطوير الويب بـ Next.js، والـ SEO التقني وCore Web Vitals، وتحسين البحث بالذكاء الاصطناعي، ونصائح شراء اللابتوب للدراسة والبرمجة والأعمال.",
+            },
+            {
+              question: "هل المقالات موجّهة للأعمال في المغرب؟",
+              answer:
+                "نعم. المقالات التقنية تنطبق عالمياً، وأدلة الشراء مكتوبة للطلاب والمطورين وأصحاب الأعمال في المغرب وأسواق مشابهة بنصائح واضحة ومراعية للميزانية.",
+            },
+            {
+              question: "كم مرة تنشر مقالات جديدة؟",
+              answer:
+                "أنشر عندما يكون الدليل مكتملاً ومفيداً من عمل حقيقي — دون حشو. تواصل عبر صفحة الاتصال إذا أردت موضوعاً محدداً قادماً.",
+            },
+          ]
+        : [
+            {
+              question: "Quels sujets abordez-vous dans ces articles ?",
+              answer:
+                "Je publie des guides issus de projets réels : développement web avec Next.js, SEO technique et Core Web Vitals, optimisation pour la recherche IA, et conseils d'achat de laptops pour étudier, coder et travailler.",
+            },
+            {
+              question: "Les articles ciblent-ils les entreprises au Maroc ?",
+              answer:
+                "Oui. Les articles techniques s'appliquent partout, et les guides d'achat sont écrits pour les étudiants, développeurs et entrepreneurs au Maroc et sur des marchés similaires, avec des conseils clairs et réalistes.",
+            },
+            {
+              question: "À quelle fréquence publiez-vous de nouveaux articles ?",
+              answer:
+                "Je publie lorsqu'un guide est vraiment utile, issu d'un travail réel — pas de contenu de remplissage. Contactez-moi si vous souhaitez un sujet précis.",
+            },
+          ];
 
   return (
     <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
@@ -216,6 +277,7 @@ export default async function ArticlesPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+      <FAQPageSchema faqs={faqs} />
 
       <section
         aria-labelledby="hero-heading"
@@ -240,12 +302,12 @@ export default async function ArticlesPage({ params }: Props) {
 
           <h1
             id="hero-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.1] mb-5 max-w-4xl"
+            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-[1.1] mb-5 max-w-5xl"
           >
             {data.heading}
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-5">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl mb-5">
             {data.description}
           </p>
 
@@ -415,6 +477,42 @@ export default async function ArticlesPage({ params }: Props) {
             </article>
           ))}
         </div>
+      </section>
+
+      <section
+        aria-labelledby="articles-faq-heading"
+        className="max-w-3xl mx-auto px-4 sm:px-6 pb-14 sm:pb-16"
+      >
+        <h2
+          id="articles-faq-heading"
+          className="text-2xl sm:text-3xl font-bold mb-6 text-center"
+        >
+          {locale === "ar"
+            ? "أسئلة شائعة"
+            : locale === "fr"
+              ? "Questions fréquentes"
+              : "Frequently asked questions"}
+        </h2>
+        <ul className="space-y-3 list-none p-0 m-0">
+          {faqs.map((faq) => (
+            <li key={faq.question}>
+              <details className="group rounded-xl border border-border bg-card overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5 text-sm sm:text-base font-semibold text-foreground list-none">
+                  <span className="leading-snug">{faq.question}</span>
+                  <span
+                    className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs group-open:rotate-180 transition-transform"
+                    aria-hidden="true"
+                  >
+                    ▼
+                  </span>
+                </summary>
+                <div className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed border-t border-border/50 pt-3">
+                  {faq.answer}
+                </div>
+              </details>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 sm:pb-24">
