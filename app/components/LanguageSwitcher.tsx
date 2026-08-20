@@ -55,7 +55,7 @@ export default function LanguageSwitcher({
 
       <button
         type="button"
-        className="flex items-center space-x-1 cursor-pointer text-zinc-500 hover:text-zinc-700 dark:hover:text-white transition-colors"
+        className="flex items-center space-x-1 cursor-pointer text-zinc-500 hover:text-zinc-700 dark:hover:text-blue-500 transition-colors"
         onClick={() => setLangOpen(!langOpen)}
         aria-expanded={langOpen}
         aria-haspopup="listbox"

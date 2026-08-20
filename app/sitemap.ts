@@ -46,12 +46,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const articleRoutes = [
 		{ path: "/articles", changeFrequency: "monthly" as const, priority: 0.7 },
 		{
-			path: "/articles/best-laptop-guide-2026",
+			path: "/articles/nextjs-seo-framework-guide-2026",
 			changeFrequency: "monthly" as const,
 			priority: 0.6,
 		},
 		{
-			path: "/articles/how-to-check-used-laptop-2026",
+			path: "/articles/laptop-buying-guide-2026",
 			changeFrequency: "monthly" as const,
 			priority: 0.6,
 		},
@@ -59,9 +59,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 	const lastModified = new Date("2026-08-18");
 	const articleLastModified: Record<string, Date> = {
-		"/articles": new Date("2026-06-02"),
-		"/articles/best-laptop-guide-2026": new Date("2026-05-07"),
-		"/articles/how-to-check-used-laptop-2026": new Date("2026-06-02"),
+		"/articles": new Date("2026-08-19"),
+		"/articles/nextjs-seo-framework-guide-2026": new Date("2026-08-19"),
+		"/articles/laptop-buying-guide-2026": new Date("2026-08-19"),
 	};
 
 	const staticEntries: MetadataRoute.Sitemap = routes.flatMap(

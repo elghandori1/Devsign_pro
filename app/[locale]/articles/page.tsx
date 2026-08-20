@@ -168,15 +168,25 @@ export default async function ArticlesPage({ params }: Props) {
               "@id": `${baseUrl}/${locale}/articles/${article.slug}#article`,
               headline: article.title,
               description: article.excerpt,
+              image: article.image.startsWith("http")
+                ? article.image
+                : `${baseUrl}${article.image.startsWith("/") ? "" : "/"}${article.image}`,
               articleSection: article.category,
               datePublished: article.published,
+              dateModified: article.published,
               inLanguage: langCode,
               url: `${baseUrl}/${locale}/articles/${article.slug}`,
               author: {
+                "@type": "Person",
                 "@id": `${baseUrl}/#person`,
+                name: "Mohammed Elghandori",
+                url: `${baseUrl}/${locale}/about`,
               },
               publisher: {
+                "@type": "Person",
                 "@id": `${baseUrl}/#person`,
+                name: "Mohammed Elghandori",
+                url: `${baseUrl}/${locale}/about`,
               },
             },
           }),
@@ -405,7 +415,7 @@ export default async function ArticlesPage({ params }: Props) {
           </p>
         </div>
 
-        <div className="grid gap-4 sm:gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-4 sm:gap-10 md:grid-cols-2 xl:grid-cols-2">
           {articles.map((article: ArticleEntry) => (
             <article
               key={article.href ?? article.slug}
