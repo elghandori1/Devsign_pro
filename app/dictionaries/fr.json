@@ -1155,40 +1155,51 @@
           }
         },
         {
-          "title": "Convertisseur de Devises & Application de Transfert",
-          "description": "Une application web rapide et sécurisée pour transférer de l'argent et convertir des devises dans le monde entier. Taux de change en temps réel, interface simple et résultats fiables pour des transactions internationales fluides.",
-          "tech": "JavaScript, Bootstrap, APIs",
-          "image": "/images/projects/Currency-Converter.jpg",
+          "title": "Convertisseur de Devises Gratuit — Taux de Change en Direct",
+          "description": "Convertissez entre des dizaines de devises mondiales avec des taux mid-market précis et en direct. Interface simple et adaptée aux mobiles pour des vérifications rapides, sans inscription ni frais.",
+          "tech": "Next.js, TypeScript, Tailwind CSS",
+          "image": "/images/projects/Free-Currency-Converter-Live-EUR-to-USD-Exchange-Rates.jpg",
           "linkLabel": "Voir le projet",
           "category": "Application Web Full-Stack",
-          "type": "personal",
-          "status": "online",
-          "href": "/portfolio/money-transfer",
+          "type": "personnel",
+          "status": "en ligne",
+          "href": "/portfolio/currency-converter",
           "highlightsHeading": "Fonctionnalités clés",
           "detail": {
             "seo": {
-              "title": "Convertisseur de Devises & Application de Transfert",
-              "description": "Utilitaire web style fintech : taux de change en direct, flux de transfert simples et précision garantie par API — développé avec JavaScript, Bootstrap et",
+              "title": "Convertisseur de Devises Gratuit — Taux de Change en Direct",
+              "description": "Convertissez entre des dizaines de devises mondiales avec des taux mid-market précis, mis à jour chaque heure. Construit avec Next.js, TypeScript et Tailwind CSS.",
               "keywords": [
-                "convertisseur de devises",
-                "API taux de change",
-                "interface transfert d'argent",
-                "prototype fintech Bootstrap",
-                "intégration API JavaScript"
+                "convertisseur de devises gratuit",
+                "taux de change en direct",
+                "convertisseur EUR en USD",
+                "application de devises Next.js",
+                "TypeScript Tailwind CSS"
               ]
             },
-            "intro": "Les utilisateurs attendent des outils financiers qu'ils soient calmes et précis. Cette application combine une expérience de conversion claire avec des flux orientés transfert, alimentés par des taux en direct provenant d'API externes et une gestion rigoureuse des cas limites comme les fournisseurs indisponibles ou les données obsolètes.",
+            "intro": "Un convertisseur de devises rapide, gratuit et simple qui vous permet de consulter instantanément les taux de change mid-market en direct. Convertissez entre des dizaines de devises mondiales sans inscription, sans frais, avec une interface adaptée aux mobiles conçue pour des vérifications rapides et précises.",
             "sections": [
               {
-                "title": "Fiabilité & clarté",
-                "body": "Les interfaces financières exigent des états explicites : chargement, succès, échec et actualisation. J'ai privilégié un formatage lisible des devises et des messages transparents pour que l'utilisateur sache toujours sur quel chiffre il s'appuie."
-              }
+                "title": "Conversions instantanées et précises",
+                "body": "Convertit l'EUR en USD et de nombreuses autres devises mondiales instantanément en utilisant des taux de change en direct avec des mises à jour fréquentes, garantissant des taux mid-market toujours précis."
+              },
+             {
+        "title": "Ce que j'ai appris",
+        "body": "L'objectif principal de ce projet était de maîtriser l'appel d'API réelles avec Next.js. J'ai appris à récupérer en toute sécurité des données de taux de change en direct, à implémenter l'algorithme de conversion efficacement, et à appliquer les meilleures pratiques de sécurité des API (comme la protection des clés API et la gestion des limites de requêtes) pour construire une application robuste et prête pour la production."
+      }
             ],
             "highlights": [
-              "Récupération des taux en temps réel via API REST",
-              "Mise en page responsive pour mobiles et desktops",
-              "Patterns UX adaptés aux équipes fintech et e-commerce",
-              "Démontre une discipline d'intégration API de bout en bout"
+              "Taux de change mid-market en direct, mis à jour fréquemment",
+              "Conversion instantanée de l'EUR en USD et de dizaines d'autres devises",
+              "Interface simple et adaptée aux mobiles, optimisée pour des vérifications rapides",
+              "100 % gratuit, sans inscription ni compte requis",
+              "Stack moderne et typé : Next.js, TypeScript et Tailwind CSS"
+            ],
+            "links": [
+              {
+                "url": "https://swiftconvert-zeta.vercel.app",
+                "label": "Voir le site en direct"
+              }
             ]
           }
         },

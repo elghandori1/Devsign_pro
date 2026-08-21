@@ -1154,40 +1154,51 @@
           }
         },
         {
-          "title": "Currency Converter & Money Transfer Web App",
-          "description": "A fast and secure web app for transferring money and converting currencies worldwide. It offers real-time exchange rates, a simple interface, and reliable results for seamless international transactions.",
-          "tech": "JavaScript, Bootstrap, APIs",
-          "image": "/images/projects/Currency-Converter.jpg",
+          "title": "Free Currency Converter — Live Exchange Rates",
+          "description": "Convert between dozens of world currencies with accurate, live mid-market rates. Features a simple, mobile-friendly interface for quick checks with no sign-up or fees required.",
+          "tech": "Next.js, TypeScript, Tailwind CSS",
+          "image": "/images/projects/Free-Currency-Converter-Live-EUR-to-USD-Exchange-Rates.jpg",
           "linkLabel": "View Project",
           "category": "Full-Stack Web Application",
           "type": "personal",
           "status": "online",
-          "href": "/portfolio/money-transfer",
+          "href": "/portfolio/currency-converter",
           "highlightsHeading": "Key features",
           "detail": {
             "seo": {
-              "title": "Currency Converter & Money Transfer Web App",
-              "description": "Fintech-style web utility: live exchange rates, simple money transfer flows, and API-driven accuracy — built with JavaScript, Bootstrap, and robust error",
+              "title": "Free Currency Converter — Live Exchange Rates",
+              "description": "Convert between dozens of world currencies with accurate, live mid-market rates updated every hour. Built with Next.js, TypeScript, and Tailwind CSS.",
               "keywords": [
-                "currency converter web app",
-                "exchange rate API",
-                "money transfer UI",
-                "Bootstrap fintech prototype",
-                "JavaScript API integration"
+                "free currency converter",
+                "live exchange rates",
+                "EUR to USD converter",
+                "Next.js currency app",
+                "TypeScript Tailwind CSS"
               ]
             },
-            "intro": "People expect financial tools to feel calm and precise. This app pairs a clean conversion experience with transfer-oriented flows, backed by live rates from external APIs and careful handling of edge cases like unavailable providers or stale data.",
+            "intro": "A fast, free, and simple currency converter that lets you check live mid-market exchange rates instantly. Convert between dozens of world currencies with no sign-up, no fees, and a mobile-friendly interface designed for quick, accurate checks.",
             "sections": [
               {
-                "title": "Reliability & clarity",
-                "body": "Financial interfaces need explicit states: loading, success, failure, and refresh. I prioritized readable formatting for currencies and transparent messaging so users always know what number they are acting on."
+                "title": "Instant & Accurate Conversions",
+                "body": "Converts EUR to USD and many other world currencies instantly using live exchange rates with frequent updates, ensuring you always get accurate mid-market rates."
+              },
+              {
+                "title": "What I Learned",
+                "body": "The primary goal of this project was to master calling real-world APIs in Next.js. I learned how to securely fetch live exchange rate data, implement the conversion algorithm efficiently, and apply API security best practices (like protecting API keys and handling rate limits) to build a robust, production-ready application."
               }
             ],
             "highlights": [
-              "Real-time rate retrieval via REST APIs",
-              "Responsive layout for phones and desktops",
-              "UX patterns suitable for fintech and e-commerce teams",
-              "Demonstrates API integration discipline end-to-end"
+              "Live mid-market exchange rates updated frequently",
+              "Instant conversion for EUR to USD and dozens of other currencies",
+              "Simple, mobile-friendly interface optimized for quick checks",
+              "100% free to use with no sign-up or account required",
+              "Modern, type-safe stack: Next.js, TypeScript, and Tailwind CSS"
+            ],
+            "links": [
+              {
+                "url": "https://swiftconvert-zeta.vercel.app",
+                "label": "View live website"
+              }
             ]
           }
         },
