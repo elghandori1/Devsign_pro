@@ -20,6 +20,7 @@ import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { buildArticleSchema } from "@/app/components/schemas";
 import ShareButton from "@/app/components/ShareButton";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -569,7 +570,7 @@ export default async function NextjsSeoFrameworkGuide2026({ params }: Props) {
                   >
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/YOUR-PROFILE/"
+                        href={infos.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="LinkedIn"
@@ -580,7 +581,7 @@ export default async function NextjsSeoFrameworkGuide2026({ params }: Props) {
                     </li>
                     <li>
                       <a
-                        href="https://github.com/YOUR-USERNAME"
+                        href={infos.social.github}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="GitHub"
@@ -591,7 +592,7 @@ export default async function NextjsSeoFrameworkGuide2026({ params }: Props) {
                     </li>
                     <li>
                       <a
-                        href="https://instagram.com/YOUR-USERNAME"
+                        href={infos.social.instagram}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="Instagram"

@@ -20,6 +20,7 @@ import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { buildArticleSchema } from "@/app/components/schemas";
 import ShareButton from "@/app/components/ShareButton";
+import infos from "@/app/dictionaries/global.json";
 
 type Props = { params: Promise<{ locale: string }> };
 const ARTICLE_PATH = "/articles/laptop-buying-guide-2026";
@@ -561,7 +562,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
                   <ul aria-label="Social media" className="flex items-center gap-4 mt-3">
                     <li>
                       <a
-                        href="https://www.linkedin.com/in/YOUR-PROFILE/"
+                        href={infos.social.linkedin}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="LinkedIn"
@@ -572,7 +573,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
                     </li>
                     <li>
                       <a
-                        href="https://github.com/YOUR-USERNAME"
+                        href={infos.social.github}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="GitHub"
@@ -583,7 +584,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
                     </li>
                     <li>
                       <a
-                        href="https://instagram.com/YOUR-USERNAME"
+                        href={infos.social.instagram}
                         target="_blank"
                         rel="noopener noreferrer me"
                         aria-label="Instagram"
