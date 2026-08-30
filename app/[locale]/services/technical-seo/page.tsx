@@ -657,31 +657,7 @@ export default async function TechnicalSEO({ params }: Props) {
         </div>
       </section>
 
-
-      {/* ── 8. CROSS-LINK (related service) ── */}
-      {data.crossLink && (
-        <section
-          aria-label="Related service"
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-4"
-        >
-          <Link
-            href={`/${locale}${data.crossLink.href}`}
-            className="group flex flex-col sm:flex-row items-center justify-between gap-3
-                       p-5 sm:p-6 rounded-2xl border border-primary/20 bg-primary/5
-                       hover:border-primary/40 hover:bg-primary/10 transition-all"
-          >
-            <p className="text-sm sm:text-base font-medium text-foreground text-center sm:text-start">
-              {data.crossLink.text}
-            </p>
-            <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base shrink-0">
-              {data.crossLink.linkText}
-        
-            </span>
-          </Link>
-        </section>
-      )}
-
-      {/* ── 9. FAQ ── */}
+      {/* ── 8. FAQ ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"
@@ -726,6 +702,29 @@ export default async function TechnicalSEO({ params }: Props) {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+  {/* ── 9. CROSS-LINK (related service) ── */}
+      {data.crossLink && (
+        <section
+          aria-label="Related service"
+          className="max-w-6xl mx-auto px-4 sm:px-6 pb-4"
+        >
+          <Link
+            href={`/${locale}${data.crossLink.href}`}
+            className="group flex flex-col sm:flex-row items-center justify-between gap-3
+                       p-5 sm:p-6 rounded-2xl border border-primary/20 bg-primary/5
+                       hover:border-primary/40 hover:bg-primary/10 transition-all"
+          >
+            <p className="text-sm sm:text-base font-medium text-foreground text-center sm:text-start">
+              {data.crossLink.text}
+            </p>
+            <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base shrink-0">
+              {data.crossLink.linkText}
+        
+            </span>
+          </Link>
         </section>
       )}
 
