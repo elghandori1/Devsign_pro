@@ -137,20 +137,20 @@
     }
   },
   "pages": {
-"services_page": {
-    "page_title": "Services",
-    "title": "Services de Développement Web & SEO au Maroc",
-    "description": "Explorez ma gamme complète de services digitaux conçus pour développer votre activité. Du développement web sur mesure à l'e-commerce, en passant par le SEO technique, l'optimisation IA et les tableaux de bord automatisés.",
-    "subtitle": "Développement Full-Stack, SEO Technique & Solutions IA",
-    "subtitle_description": "Des services numériques complets conçus pour se positionner sur Google, être cités par l'IA et optimiser les opérations de votre entreprise.",
-    "hashtags": [
-      "#DéveloppementWeb",
-      "#Nextjs",
-      "#SEOTechnique",
-      "#OptimisationIA",
-      "#Automatisation",
-      "#TableauxDeBord"
-    ],
+    "services_page": {
+      "page_title": "Services",
+      "title": "Services numériques au Maroc pour développer votre activité en ligne",
+      "description": "Découvrez mes services numériques pour les entreprises au Maroc : développement web, création de sites e-commerce, SEO technique, optimisation pour la recherche IA et tableaux de bord métier sur mesure.",
+      "subtitle": "Développement web, SEO & solutions pour la recherche IA",
+      "subtitle_description": "Des solutions numériques conçues pour renforcer votre présence en ligne, améliorer votre visibilité dans les moteurs de recherche et optimiser vos opérations.",
+      "hashtags": [
+        "#DéveloppementWeb",
+        "#Nextjs",
+        "#SEOTechnique",
+        "#OptimisationIA",
+        "#Automatisation",
+        "#TableauxDeBord"
+      ],
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -1447,12 +1447,12 @@
         "projectType": "Type de projet",
         "projectTypePlaceholder": "Sélectionnez un type de projet",
         "projectTypes": {
-          "website": "Développement de site web / E-commerce",
-          "automation": "Automatisation des processus & Workflows",
-          "ai": "Intégration IA & Chatbots",
-          "design": "Design publicitaire & Branding",
+          "website": "Développement Web / E-commerce",
           "seo": "Audit SEO Technique / GEO / AEO",
-          "other": "Autre / Pas encore sûr"
+          "ai": "Optimisation pour la recherche IA",
+          "automation": "Automatisation des processus métier & workflows",
+          "design": "Design publicitaire & image de marque",
+          "other": "Autre / Je ne sais pas encore"
         },
         "copy": "Copier",
         "copied": "Copié !",

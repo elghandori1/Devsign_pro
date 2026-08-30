@@ -139,10 +139,10 @@
   "pages": {
     "services_page": {
       "page_title": "Services",
-  "title": "Web Development & SEO Services in Morocco",
-  "description": "Explore my complete range of digital services designed to grow your business. From custom web development and e-commerce to technical SEO, AI optimization, and automated dashboards.",
-      "subtitle": "Full-Stack Development, Technical SEO & AI Solutions",
-      "subtitle_description": "Comprehensive digital services designed to rank on Google, get cited by AI, and streamline your business operations.",
+      "title": "Digital Services in Morocco to Grow Your Business Online",
+      "description": "Explore my digital services for businesses in Morocco, including web development, e-commerce development, technical SEO, AI Search Optimization, and custom business dashboards.",
+      "subtitle": "Web Development, SEO & AI Search Solutions",
+      "subtitle_description": "Digital solutions designed to strengthen your online presence, improve search visibility, and streamline your business operations.",
       "hashtags": [
         "#WebDevelopment",
         "#Nextjs",
@@ -1448,10 +1448,10 @@
         "projectTypePlaceholder": "Select a project type",
         "projectTypes": {
           "website": "Website / E-Commerce Development",
-          "automation": "Business Automation & Workflows",
-          "ai": "AI Integration & Chatbots",
-          "design": "Ad Design & Branding",
           "seo": "Technical SEO / GEO / AEO Audit",
+          "ai": "AI search optimization",
+          "automation": "Business Automation & Workflows",
+          "design": "Ad Design & Branding",
           "other": "Other / Not sure yet"
         },
         "copy": "Copy",

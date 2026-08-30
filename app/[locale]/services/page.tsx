@@ -54,11 +54,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const titles = {
-    en: "Web, SEO & AI Services in Morocco | Devsignpro",
-    fr: "Services Web, SEO & IA au Maroc | Devsignpro",
-    ar: "خدمات الويب، SEO والذكاء الاصطناعي في المغرب",
-  };
+const titles = {
+  en: "Digital Services in Morocco | Devsignpro",
+  fr: "Services digitaux au Maroc | Devsignpro",
+  ar: "الخدمات الرقمية في المغرب | Devsignpro",
+};
 
   const descriptions = {
     en: "Explore my digital services: web development, Technical SEO, e-commerce, and business dashboards — with AI Search Optimization built into every project.",
