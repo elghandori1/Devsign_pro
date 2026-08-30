@@ -137,21 +137,20 @@
     }
   },
   "pages": {
-    "services_page": {
-      "page_title": "Services",
-      "title": "Services de Développement Web & SEO au Maroc",
-      "heading": "Développement Web, SEO Technique & Tableaux de Bord sur Mesure",
-      "description": "Explorez ma gamme complète de services digitaux conçus pour développer votre activité. Du développement web sur mesure à l'e-commerce, en passant par le SEO technique, l'optimisation IA et les tableaux de bord automatisés.",
-      "subtitle": "Développement Full-Stack, SEO Technique & Solutions IA",
-      "subtitle_description": "Des services digitaux complets conçus pour se classer sur Google, être cités par l'IA et optimiser vos opérations commerciales.",
-      "hashtags": [
-        "#DéveloppementWeb",
-        "#Nextjs",
-        "#SEOTechnique",
-        "#RechercheIA",
-        "#Automatisation",
-        "#TableauxDeBord"
-      ],
+"services_page": {
+    "page_title": "Services",
+    "title": "Services de Développement Web & SEO au Maroc",
+    "description": "Explorez ma gamme complète de services digitaux conçus pour développer votre activité. Du développement web sur mesure à l'e-commerce, en passant par le SEO technique, l'optimisation IA et les tableaux de bord automatisés.",
+    "subtitle": "Développement Full-Stack, SEO Technique & Solutions IA",
+    "subtitle_description": "Des services numériques complets conçus pour se positionner sur Google, être cités par l'IA et optimiser les opérations de votre entreprise.",
+    "hashtags": [
+      "#DéveloppementWeb",
+      "#Nextjs",
+      "#SEOTechnique",
+      "#OptimisationIA",
+      "#Automatisation",
+      "#TableauxDeBord"
+    ],
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
