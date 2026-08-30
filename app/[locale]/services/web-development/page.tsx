@@ -71,9 +71,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "responsive web design",
             "secure fast website",
             "search engine optimization",
-          "GEO AI search optimization",
-          "professional landing page",
-          "custom web application",
+            "GEO AI search optimization",
+            "professional landing page",
+            "custom web application",
           ];
 
   return buildPageMetadata({
@@ -123,8 +123,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
     url: `${baseUrl}/${locale}/services/web-development`,
     provider: { "@id": `${baseUrl}/#person` },
     isPartOf: { "@id": `${baseUrl}/#website` },
-    inLanguage:
-      locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
+    inLanguage: locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
     serviceType:
       locale === "en"
         ? "Web Development Services with SEO & AI Optimization"
@@ -247,7 +246,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
           <nav aria-label="Breadcrumb" className="mb-6">
             <ol className="flex flex-wrap items-center gap-2 text-sm">
               <li>
-              <Link
+                <Link
                   href={`/${locale}/services`}
                   className="inline-flex items-center gap-2 bg-primary/10 text-primary
              border border-primary/20 px-4 py-2 rounded-full font-medium
@@ -660,7 +659,39 @@ export default async function WebDevelopmentPage({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 8. FAQ ── */}
+      {/* ── 8. CROSS-LINK (related service) ── */}
+      {data.growthTitle && data.growthDescription && (
+        <section
+          aria-labelledby="growth-heading"
+          className="border-t border-border"
+        >
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-18">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2
+                id="growth-heading"
+                className="text-2xl sm:text-3xl font-bold mb-4 text-foreground"
+              >
+                {data.growthTitle}
+              </h2>
+
+              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                {data.growthDescription}
+              </p>
+
+              {data.crossLink && (
+                <Link
+                  href={`/${locale}${data.crossLink.href}`}
+                  className="inline-flex items-center gap-2 mt-6 text-primary font-semibold hover:underline"
+                >
+                  {data.technicalSeoLinkText}
+                </Link>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── 9. FAQ ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"
@@ -705,33 +736,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
               </li>
             ))}
           </ul>
-        </section>
-      )}
-
-      {/* ── 9. CROSS-LINK (related service) ── */}
-      {data.crossLink && (
-        <section
-          aria-label="Related service"
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-4"
-        >
-          <Link
-            href={`/${locale}${data.crossLink.href}`}
-            className="group flex flex-col sm:flex-row items-center justify-between gap-3
-                       p-5 sm:p-6 rounded-2xl border border-primary/20 bg-primary/5
-                       hover:border-primary/40 hover:bg-primary/10 transition-all"
-          >
-            <p className="text-sm sm:text-base font-medium text-foreground text-center sm:text-start">
-              {data.crossLink.text}
-            </p>
-            <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base shrink-0">
-              {data.crossLink.linkText}
-              <ArrFwd
-                size={16}
-                className="group-hover:translate-x-0.5 transition-transform rtl:rotate-180"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
         </section>
       )}
 

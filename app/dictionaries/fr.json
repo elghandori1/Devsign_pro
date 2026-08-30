@@ -155,261 +155,271 @@
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Services de Développement Web au Maroc — Rapides, Sécurisés, Optimisés SEO",
-          "title_metadata": "Services de Développement Web au Maroc | Rapides & SEO",
-          "description_metadata": "Développement web sur mesure au Maroc. Sites rapides avec Next.js, SEO technique et Core Web Vitals. Conçus pour classer et convertir.",
-          "description": "À la recherche des meilleurs services de développement web au Maroc ? Je crée des sites d'entreprise sur mesure, des plateformes e-commerce et des applications web haute performance, optimisés pour le SEO technique et les Core Web Vitals. Développez votre activité avec une présence en ligne conçue pour dominer Google et les moteurs de recherche IA.",
-          "title_card": "Développement Web avec SEO & Overview IA Intégrés",
-          "overviewHeadline": "Un Développement Web qui Génère du Trafic, des Leads et de la Croissance",
-          "startDescription": "Votre site web doit faire plus que paraître professionnel : il doit attirer des visiteurs qualifiés, présenter clairement vos services et transformer les prospects en clients.",
-          "longDescription": "Chaque projet est développé avec des technologies modernes comme Next.js et React, optimisé pour la vitesse, la sécurité, l'évolutivité, le SEO technique, les Core Web Vitals et l'optimisation pour la recherche IA. Je structure le contenu, les métadonnées et le schéma pour que votre entreprise performe sur Google et soit comprise par les plateformes IA comme ChatGPT, Google AI Overviews et Perplexity. De la planification au déploiement, chaque décision vise la visibilité à long terme et la croissance mesurable.",
-          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, apportant mon expérience avec les workflows Git, CI/CD, Docker et les pratiques de développement modernes.",
+          "title": "Services de développement web au Maroc — Rapides, sécurisés et optimisés pour le SEO",
+          "title_metadata": "Développement web au Maroc | Devsignpro",
+          "description_metadata": "Services de développement web sur mesure au Maroc. Je crée des sites web et applications rapides, sécurisés et optimisés pour le SEO avec Next.js et React.",
+          "description": "Je crée des sites web performants et des applications web sur mesure avec Next.js, React et les technologies web modernes. Chaque projet est conçu dès le départ avec la performance, la sécurité et le SEO à l'esprit, notamment les bases du référencement technique, les Core Web Vitals et une structure de contenu évolutive.",
+          "title_card": "Développement web avec une architecture optimisée pour le SEO",
+          "overviewTitle": "Pourquoi choisir mes services de développement web ?",
+          "overviewHeadline": "Un développement web pensé pour la performance, le SEO et la croissance de votre activité",
+          "startDescription": "Votre site web doit faire plus que présenter votre entreprise. Il doit communiquer clairement votre offre, offrir une expérience rapide et accessible, attirer des visiteurs qualifiés et accompagner votre croissance à long terme.",
+          "longDescription": "Je développe des sites web performants et des applications web sur mesure avec Next.js, React et les technologies web modernes. De l'architecture initiale au déploiement, j'intègre dès le départ la performance, la sécurité, l'accessibilité et les fondamentaux du SEO. Cela comprend le HTML sémantique, des URL propres, les métadonnées, les données structurées, les Core Web Vitals et une organisation claire du contenu permettant aux utilisateurs et aux moteurs de recherche de comprendre votre activité.",
+          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, agences et équipes de développement sur des projets à long terme, en apportant mon expérience des workflows Git, de la CI/CD, de Docker et des pratiques modernes de développement.",
           "link": "/services/web-development",
-          "start_btn": "Démarrer Votre Projet",
-          "allServicesBtn": "Voir Tous les Services",
-          "overviewTitle": "Pourquoi Choisir Mes Services de Développement Web ?",
-          "includedTitle": "Ce Qui Est Inclus",
-          "includedDesc": "Chaque projet de développement web inclut :",
-          "benefitsTitle": "Ce Que Vous Gagnerez",
-          "benefitsDesc": "En travaillant avec moi sur votre site web, vous pouvez vous attendre à :",
-          "processTitle": "Mon Processus de Développement",
-          "processDesc": "Un processus clair et éprouvé pour livrer votre projet à temps et atteindre vos objectifs :",
-          "techTitle": "La Stack Technologique",
-          "techDesc": "Je choisis les bonnes technologies en fonction des exigences de votre projet et de vos objectifs commerciaux — pas des tendances.",
-          "faqTitle": "Questions Fréquentes",
-          "faqDesc": "Réponses directes sur le développement web, le SEO et l'optimisation de la recherche IA :",
-          "AnothersrvcBtn": "Explorer d'Autres Services",
+          "start_btn": "Démarrer votre projet",
+          "allServicesBtn": "Voir tous les services",
+          "includedTitle": "Ce qui est inclus",
+          "includedDesc": "Chaque projet de développement web est conçu avec une base technique et SEO solide :",
+          "benefitsTitle": "Ce que vous allez gagner",
+          "benefitsDesc": "Un site web conçu pour offrir de bonnes performances aux utilisateurs aujourd'hui et constituer une base solide pour votre croissance à long terme :",
+          "growthTitle": "Conçu pour le SEO et une croissance à long terme",
+          "growthDescription": "Le SEO ne doit pas être ajouté après coup. Lors de la création d'un nouveau site web, je structure dès le départ les fondations techniques, l'architecture de l'information et l'organisation du contenu en tenant compte de la visibilité dans les moteurs de recherche. Cela facilite ensuite l'ajout de nouveaux contenus, de pages de services et de sujets liés à votre activité au fur et à mesure de votre développement.",
+          "technicalSeoLinkText": "Vous avez déjà un site web à améliorer ? Découvrez mes services de SEO technique →",
+          "processTitle": "Mon processus de développement",
+          "processDesc": "Un processus structuré qui relie les objectifs de votre activité, l'expérience utilisateur, le développement, la performance et le SEO, de la planification au lancement :",
+          "techTitle": "Les technologies que j'utilise",
+          "techDesc": "Je choisis les technologies en fonction des besoins de votre projet, de vos objectifs commerciaux, des exigences de performance et de la maintenabilité à long terme — pas en fonction des tendances.",
+          "faqTitle": "Questions fréquentes",
+          "faqDesc": "Réponses aux questions sur le développement web, les sites optimisés pour le SEO et la croissance à long terme :",
+          "AnothersrvcBtn": "Découvrir les autres services",
           "features": [
-            "Architecture Optimisée SEO & GEO",
-            "Entièrement Responsive",
-            "Core Web Vitals Optimisés"
+            "Architecture optimisée pour le SEO",
+            "Responsive et accessible",
+            "Optimisé pour les Core Web Vitals"
           ],
           "included": [
-            "Design UI/UX sur mesure et développement frontend avec Next.js, React et TypeScript",
-            "SEO on-page : HTML sémantique, métadonnées, balisage schema, sitemaps XML et robots.txt",
-            "Optimisation GEO & AEO pour que les assistants IA comprennent, citent et recommandent votre entreprise",
-            "Optimisation des Core Web Vitals : optimisation des images, stratégies de mise en cache et temps de chargement instantanés",
-            "Intégration de Google Search Console, Google Analytics 4 et Bing Webmaster Tools dès le premier jour",
-            "Renforcement de la sécurité : HTTPS, en-têtes HTTP sécurisés et soumissions de formulaires protégées"
+            "Conception UI/UX sur mesure et développement frontend avec Next.js, React et TypeScript",
+            "Implémentation responsive, accessible et mobile-first",
+            "Architecture optimisée pour le SEO avec HTML sémantique, URL propres, métadonnées et sitemap XML",
+            "Implémentation des données structurées et de Schema.org lorsque cela est pertinent",
+            "Optimisation des performances et des Core Web Vitals",
+            "Configuration des outils d'analyse et de suivi avec Google Analytics, Google Search Console et Bing Webmaster Tools"
           ],
           "benefits": [
             {
-              "title": "Visibilité Search Maximale",
-              "text": "Code sémantique, données structurées, métadonnées optimisées et Core Web Vitals impeccables — tout ce que Google récompense, conçu dès la première ligne de code."
+              "title": "Une base SEO solide dès le départ",
+              "text": "J'intègre la crawlabilité, le HTML sémantique, les métadonnées, les données structurées, les bases du maillage interne et l'architecture du site dès le développement, plutôt que de traiter le SEO comme une étape secondaire."
             },
             {
-              "title": "Présence dans les Résultats IA",
-              "text": "Contenu structuré pour le GEO et l'AEO, garantissant que ChatGPT, Gemini et Perplexity peuvent citer et recommander votre entreprise aux utilisateurs."
+              "title": "Rapide et performant",
+              "text": "La performance est intégrée au processus de développement grâce à l'optimisation des images, un rendu efficace, une utilisation maîtrisée de JavaScript, un design responsive et l'optimisation des Core Web Vitals."
             },
             {
-              "title": "Conversions et ROI Mesurables",
-              "text": "Appels à l'action clairs, signaux de confiance et suivi analytique précis — guidant chaque visiteur vers la conversion."
+              "title": "Pensé pour évoluer",
+              "text": "L'architecture du site et l'organisation du contenu sont conçues pour accueillir de futurs services, pages et contenus utiles au fur et à mesure que votre activité se développe."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Découverte & Stratégie",
-              "text": "J'analyse vos objectifs commerciaux, votre audience cible et les mots-clés exacts utilisés par vos clients — avant d'écrire la moindre ligne de code."
+              "title": "Découverte et stratégie",
+              "text": "J'analyse vos objectifs commerciaux, votre audience cible, vos concurrents et les services que vous souhaitez mettre en avant. Nous définissons la structure du site, les priorités et les exigences techniques avant de commencer le développement."
             },
             {
               "step": "02",
-              "title": "Design & Architecture",
-              "text": "Développement propre et évolutif avec Next.js — HTML sémantique, design responsive et accessibilité intégrés dans chaque composant."
+              "title": "Design et architecture",
+              "text": "Je conçois et développe une architecture web évolutive avec Next.js, React et TypeScript, en mettant l'accent sur le responsive design, l'accessibilité, les URL propres et le HTML sémantique."
             },
             {
               "step": "03",
-              "title": "Intégration SEO & IA",
-              "text": "Balisage schema, métadonnées, sitemaps et contenu structuré pour les classements Google traditionnels et les citations IA modernes."
+              "title": "SEO et performance",
+              "text": "Les fondamentaux du SEO sont intégrés pendant le développement, notamment les métadonnées, les données structurées, une architecture facilement crawlable, les bases du maillage interne et l'optimisation des Core Web Vitals."
             },
             {
               "step": "04",
-              "title": "Lancement & Monitoring",
-              "text": "Mise en ligne avec analytiques configurées, Search Console connectée et benchmarks Core Web Vitals vérifiés pour un succès continu."
+              "title": "Mise en ligne et suivi",
+              "text": "Après la mise en ligne, je vérifie les performances techniques, les outils d'analyse, Google Search Console, l'indexation et les Core Web Vitals afin de garantir une base solide pour la croissance à long terme."
             }
           ],
           "caseStudy": {
-            "badge": "Projet Client Réel",
-            "title": "Un Site Corporate qui a Triplé son Trafic en Deux Mois",
-            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de se classer sur Google et de transformer les visiteurs en leads. Nous avons conçu et construit un site sur mesure à partir de zéro — sans templates, sans page builders — avec une optimisation SEO et recherche IA complète intégrée dès le premier jour.",
+            "badge": "Projet client réel",
+            "title": "Un site corporate qui a triplé son trafic organique en deux mois",
+            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de soutenir sa visibilité dans les moteurs de recherche et de transformer les visiteurs en prospects. J'ai conçu et développé le site avec Next.js en mettant l'accent sur la performance, le SEO technique, les données structurées, le responsive design et une architecture de contenu évolutive.",
             "results": [
               {
                 "value": "2 900+",
-                "label": "nouveaux utilisateurs dans les deux premiers mois"
+                "label": "nouveaux utilisateurs durant les deux premiers mois"
               },
               {
                 "value": "3×",
-                "label": "croissance du trafic organique"
+                "label": "de croissance du trafic organique"
               },
               {
-                "value": "<1s",
-                "label": "temps de chargement moyen"
+                "value": "<1 s",
+                "label": "de temps de chargement moyen"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
-            "imageAlt": "Page d'accueil du site corporate Neodyne Group développé par Devsignpro",
+            "imageAlt": "Page d'accueil du site corporate de Neodyne Group développé par Devsignpro",
             "link": {
               "href": "/portfolio/corporate-website",
               "label": "Voir l'étude de cas complète"
             }
           },
           "crossLink": {
-            "text": "Vous avez déjà un site qui ne se classe pas ?",
-            "linkText": "Services de SEO Technique →",
+            "text": "Vous avez déjà un site web qui ne se positionne pas correctement ?",
+            "linkText": "Découvrez mes services de SEO technique →",
             "href": "/services/technical-seo"
           },
           "faqs": [
             {
               "q": "Combien de temps faut-il pour créer un site web professionnel ?",
-              "a": "La plupart des sites d'entreprise prennent de 3 à 6 semaines du lancement à la mise en ligne, selon l'envergure. Les landing pages peuvent être prêtes en une semaine, tandis que les applications web complexes prennent plus de temps. Vous recevez un calendrier clair avant de commencer."
+              "a": "La plupart des sites web professionnels nécessitent entre 3 et 6 semaines, selon le périmètre et les besoins du projet. Les landing pages peuvent être réalisées plus rapidement, tandis que les applications web complexes peuvent demander davantage de temps. Un calendrier clair est défini avant le début du développement."
             },
             {
               "q": "Quelles technologies utilisez-vous ?",
-              "a": "Je développe principalement avec Next.js, React, TypeScript et Tailwind CSS. Cette stack moderne garantit que votre site est incroyablement rapide, sécurisé et facile à faire évoluer à mesure que votre entreprise grandit."
+              "a": "J'utilise principalement Next.js, React, TypeScript et Tailwind CSS. Je choisis la stack technique en fonction des besoins du projet, des performances attendues, de l'évolutivité et de la maintenabilité à long terme."
             },
             {
-              "q": "Pouvez-vous garantir la première page de Google ?",
-              "a": "Aucun développeur honnête ne peut garantir des positions spécifiques. Ce que je garantis, c'est une base technique impeccable que les moteurs de recherche adorent. Vous pouvez voir les résultats concrets de cette approche dans mes études de cas."
+              "q": "Le SEO est-il inclus dans votre service de développement web ?",
+              "a": "Oui. Les fondamentaux du SEO sont pris en compte dès le développement : HTML sémantique, architecture crawlable, URL propres, métadonnées, données structurées, bases du maillage interne et Core Web Vitals. Si vous avez déjà un site et avez besoin d'un audit ou d'une optimisation plus approfondie, je propose également des services de SEO technique."
             },
             {
-              "q": "Proposez-vous de la maintenance après le lancement ?",
-              "a": "Oui. Je propose des forfaits de maintenance mensuels qui incluent le monitoring des performances, les mises à jour de sécurité et les bilans SEO pour garantir que votre site reste rapide, sécurisé et visible à mesure que les algorithmes évoluent."
+              "q": "Proposez-vous une maintenance après la mise en ligne ?",
+              "a": "Oui. Je propose des contrats de maintenance pouvant inclure le suivi des performances, les mises à jour de sécurité et les contrôles SEO afin de maintenir votre site rapide, sécurisé et techniquement sain."
             },
             {
-              "q": "Pouvez-vous refondre mon site existant au lieu d'en créer un nouveau ?",
-              "a": "Absolument. Je peux moderniser votre site actuel, corriger les problèmes de SEO technique, améliorer les Core Web Vitals et le préparer pour la recherche IA sans nécessairement tout reconstruire à partir de zéro."
+              "q": "Pouvez-vous refaire mon site existant au lieu d'en créer un nouveau ?",
+              "a": "Oui. Je peux moderniser un site existant, améliorer ses performances et son expérience utilisateur et traiter les problèmes de SEO technique lorsque cela est nécessaire. Si votre site n'a pas besoin d'une refonte complète, un audit SEO technique peut être un meilleur point de départ."
             }
           ]
         },
         "technical_seo": {
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
-          "title": "Services SEO Technique & Audits: Corrigez, Optimisez, Classez",
-          "title_metadata": "Services SEO Technique & Audits | Corriger, Optimiser, Booster",
-          "description_metadata": "Audits SEO techniques, corrections d'indexabilité et optimisation Core Web Vitals pour améliorer vos classements Google.",
-          "description": "Votre site est-il techniquement sain mais toujours mal classé ? Je propose des audits SEO techniques, l'optimisation des Core Web Vitals et des corrections d'indexabilité pour maximiser vos performances sur Google et les moteurs IA.",
-          "title_card": "Audits SEO Technique & Optimisation Core Web Vitals",
-          "overviewHeadline": "Le SEO Technique qui Corrige ce qui Freine vos Classements",
-          "startDescription": "Un beau design et un excellent contenu ne servent à rien si les moteurs de recherche ne peuvent pas explorer, indexer ou comprendre votre site. Le SEO technique est la fondation qui fait fonctionner tout le reste.",
-          "longDescription": "J'audite et corrige les problèmes techniques qui empêchent les sites de se classer : Core Web Vitals lents, erreurs d'exploration, redirections cassées, données structurées manquantes et mauvaise indexabilité. Chaque correction est mise en œuvre avec précision — du balisage schema aux balises canoniques, en passant par l'optimisation des images et les stratégies de cache. Que vous ayez besoin d'un audit ponctuel ou d'un support SEO technique continu, je veille à ce que votre site réponde aux normes les plus élevées.",
-          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, apportant mon expérience avec les workflows Git, CI/CD, Docker et les pratiques de développement modernes.",
+          "title": "Services de SEO technique au Maroc — Auditer, corriger et optimiser les sites existants",
+          "title_metadata": "SEO technique au Maroc | Audit, correction et optimisation",
+          "description_metadata": "Services d'audit et d'optimisation SEO technique au Maroc. Je corrige les problèmes de crawl, d'indexation, de performance et les problèmes techniques qui peuvent limiter votre visibilité dans les moteurs de recherche.",
+          "description": "J'audite, corrige et optimise les sites web existants afin d'améliorer leur crawlabilité, leur indexation, leurs performances et leur visibilité dans les moteurs de recherche. J'identifie les problèmes techniques liés à la structure du site, aux Core Web Vitals, aux métadonnées, aux données structurées, au maillage interne et à l'organisation du contenu, puis je mets en place un plan d'optimisation priorisé.",
+          "title_card": "Audit SEO technique et optimisation de site web",
+          "overviewTitle": "Pourquoi choisir mes services de SEO technique ?",
+          "overviewHeadline": "Un SEO technique qui corrige ce qui freine votre site dans les résultats de recherche",
+          "startDescription": "Vous avez déjà un site web, mais il n'obtient pas les résultats attendus dans les moteurs de recherche ? J'audite votre site, j'identifie les problèmes techniques qui affectent les moteurs de recherche et les utilisateurs, puis je priorise les corrections qui peuvent avoir le plus d'impact.",
+          "longDescription": "J'interviens sur les sites web existants pour renforcer leurs fondations techniques en SEO. Cela comprend l'analyse de la crawlabilité, de l'indexation, de l'architecture du site, des Core Web Vitals, des métadonnées, des données structurées, des redirections, des URLs canoniques, du maillage interne et d'autres facteurs techniques. L'objectif est de rendre votre site plus facile à explorer et à comprendre pour les moteurs de recherche tout en améliorant l'expérience des visiteurs.",
+          "company_recruitment": "Je suis également disponible pour collaborer avec des startups, des agences et des équipes de développement sur des projets à long terme, avec une expérience des workflows Git, de la CI/CD, de Docker et des pratiques modernes de développement.",
           "link": "/services/technical-seo",
-          "start_btn": "Demander un Audit Technique",
-          "allServicesBtn": "Voir Tous les Services",
-          "overviewTitle": "Pourquoi Choisir Mes Services SEO Technique ?",
-          "includedTitle": "Ce Qui Est Inclus",
-          "includedDesc": "Chaque projet SEO technique inclut :",
-          "benefitsTitle": "Ce Que Vous Gagnerez",
-          "benefitsDesc": "En travaillant avec moi sur votre SEO technique, vous pouvez vous attendre à :",
-          "processTitle": "Mon Processus SEO Technique",
-          "processDesc": "Une approche systématique pour diagnostiquer, corriger et surveiller la santé technique de votre site :",
-          "techTitle": "Outils & Technologies Utilisés",
-          "techDesc": "Je combine des outils leaders du marché avec une inspection manuelle du code pour les audits les plus précis :",
-          "faqTitle": "Questions Fréquentes",
-          "faqDesc": "Réponses directes sur le SEO technique, les Core Web Vitals et la performance web :",
-          "AnothersrvcBtn": "Explorer d'Autres Services",
+          "start_btn": "Demander un audit SEO technique",
+          "allServicesBtn": "Voir tous les services",
+          "includedTitle": "Ce qui est inclus",
+          "includedDesc": "Un processus pratique d'audit et d'optimisation SEO technique axé sur l'identification et la résolution des problèmes pouvant affecter votre visibilité dans les moteurs de recherche :",
+          "benefitsTitle": "Ce que vous gagnez",
+          "benefitsDesc": "Un site techniquement plus sain, avec des bases plus solides pour la visibilité, la performance et la croissance SEO à long terme :",
+          "contentGrowthTitle": "SEO technique et croissance du contenu",
+          "contentGrowthDescription": "Le SEO technique n'est qu'une partie de la croissance à long terme dans les moteurs de recherche. J'analyse également la façon dont vos pages, vos services et vos contenus sont organisés afin que les moteurs de recherche et les utilisateurs comprennent mieux les relations entre vos sujets importants. Lorsque cela est nécessaire, j'identifie des opportunités d'amélioration du maillage interne, de l'organisation du contenu et de la couverture thématique.",
+          "webDevelopmentLinkText": "Vous avez besoin d'un nouveau site web ? Découvrez mes services de développement web →",
+          "aiSearchTitle": "Préparer votre site pour la recherche basée sur l'IA",
+          "aiSearchDescription": "Une architecture claire, un contenu accessible, des données structurées et de solides fondations SEO peuvent également aider les systèmes de recherche à mieux comprendre votre entreprise et vos contenus. Ces fondations constituent un point de départ pour une stratégie plus large d'optimisation pour les moteurs de recherche basés sur l'IA, notamment le GEO et l'AEO.",
+          "aiSearchLinkText": "Découvrir l'optimisation pour la recherche IA →",
+          "processTitle": "Mon processus de SEO technique",
+          "processDesc": "Une approche systématique pour identifier, prioriser et résoudre les problèmes techniques de votre site web :",
+          "techTitle": "Les outils et technologies que j'utilise",
+          "techDesc": "Je combine des outils SEO automatisés, les données des moteurs de recherche et une analyse technique manuelle pour comprendre ce qui se passe réellement sur votre site.",
+          "faqTitle": "Questions fréquentes",
+          "faqDesc": "Réponses aux questions sur les audits SEO techniques, les performances, la crawlabilité et la visibilité dans les moteurs de recherche :",
+          "AnothersrvcBtn": "Découvrir les autres services",
           "features": [
-            "Corrections d'Explorabilité & Indexabilité",
-            "Optimisation Core Web Vitals",
-            "Données Structurées & Balisage Schema"
+            "Crawlabilité et indexation",
+            "Optimisation des Core Web Vitals",
+            "Audits SEO techniques"
           ],
           "included": [
-            "Audit SEO technique complet : erreurs d'exploration, liens cassés, chaînes de redirection et pages orphelines",
-            "Optimisation Core Web Vitals : améliorations LCP, INP et CLS pour des temps de chargement plus rapides",
-            "Implémentation de balisage schema : données structurées JSON-LD pour les rich snippets et la compréhension IA",
-            "Optimisation du sitemap XML et du robots.txt pour une meilleure efficacité d'exploration",
-            "Balises canoniques et résolution de contenu dupliqué",
-            "Vérification HTTPS, en-têtes de sécurité et compatibilité mobile"
+            "Audit SEO technique couvrant la crawlabilité, l'indexation, les liens cassés, les redirections et l'architecture du site",
+            "Analyse et optimisation des Core Web Vitals, notamment LCP, INP et CLS",
+            "Analyse et optimisation du sitemap XML et du fichier robots.txt",
+            "Analyse des URLs canoniques et des problèmes de contenu dupliqué",
+            "Analyse des métadonnées, des titres et du maillage interne",
+            "Implémentation des données structurées et de Schema.org lorsque cela est pertinent",
+            "Vérification de la compatibilité mobile, du HTTPS et des éléments techniques liés à la sécurité"
           ],
           "benefits": [
             {
-              "title": "Meilleurs Classements Google",
-              "text": "Corrigez les barrières techniques qui empêchent votre contenu de se classer. Un code propre, des temps de chargement rapides et une indexation correcte donnent à Google toutes les raisons de vous classer plus haut."
+              "title": "Meilleure crawlabilité et indexation",
+              "text": "J'identifie les obstacles techniques qui peuvent empêcher les moteurs de recherche de découvrir, explorer ou indexer correctement les pages importantes de votre site."
             },
             {
-              "title": "Meilleure Expérience Utilisateur",
-              "text": "Des Core Web Vitals rapides signifient moins de rebonds, des sessions plus longues et plus de conversions. La vitesse n'est pas qu'une métrique SEO — c'est une métrique de revenus."
+              "title": "De meilleures performances",
+              "text": "J'améliore les performances de chargement et les Core Web Vitals afin d'offrir une expérience plus rapide et plus agréable sur différents appareils."
             },
             {
-              "title": "Préparation à la Recherche IA",
-              "text": "Les données structurées et une architecture propre aident les moteurs IA comme ChatGPT et Perplexity à comprendre, citer et recommander votre contenu."
+              "title": "Des bases SEO plus solides",
+              "text": "Je crée une base technique plus propre pour votre contenu, votre maillage interne et vos futurs travaux SEO afin que votre site puisse évoluer sans limitations techniques inutiles."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Audit Technique & Découverte",
-              "text": "Je réalise un audit complet de votre site avec des outils leaders du marché, identifiant chaque problème technique qui freine vos classements."
+              "title": "Audit et diagnostic",
+              "text": "J'analyse la structure technique de votre site, sa crawlabilité, son indexation, ses performances, ses métadonnées, ses données structurées, ses redirections et son maillage interne afin d'identifier les problèmes et les opportunités."
             },
             {
               "step": "02",
-              "title": "Priorisation & Stratégie",
-              "text": "Toutes les corrections ne se valent pas. Je priorise les problèmes par impact, vous donnant une feuille de route claire pour des résultats rapides."
+              "title": "Priorisation et stratégie",
+              "text": "Je priorise les problèmes selon leur impact potentiel, leur complexité technique et leur importance pour votre activité afin de vous fournir un plan d'action clair."
             },
             {
               "step": "03",
-              "title": "Implémentation & Corrections",
-              "text": "J'implémente les corrections directement dans votre codebase ou fournis une documentation développeur détaillée — balisage schema, optimisation vitesse, corrections d'exploration."
+              "title": "Mise en œuvre et corrections",
+              "text": "J'implémente les améliorations techniques convenues directement sur votre site ou je fournis des recommandations claires et prêtes à être mises en œuvre par votre équipe de développement, selon le projet."
             },
             {
               "step": "04",
-              "title": "Monitoring & Reporting",
-              "text": "Après l'implémentation, je surveille vos Core Web Vitals, votre couverture d'indexation et vos performances search pour garantir des résultats mesurables."
+              "title": "Validation et suivi",
+              "text": "Après les corrections, je valide les changements et surveille les signaux techniques et liés à la recherche afin de vérifier que les pages importantes restent accessibles, indexables et performantes."
             }
           ],
           "caseStudy": {
-            "badge": "Résultats Client Réels",
-            "title": "Le SEO Technique qui a Mené un Site Corporate à la #1 Position sur Google",
-            "description": "Le site corporate de Neodyne Group a été construit de zéro avec le SEO technique comme priorité. Nous avons implémenté des données structurées, optimisé les Core Web Vitals, corrigé les problèmes d'indexabilité et soumis un sitemap propre — résultant en une #1 position sur Google et 2 900+ nouveaux utilisateurs en deux mois.",
+            "badge": "Projet client réel",
+            "title": "Un site corporate conçu pour la performance et la visibilité dans les moteurs de recherche",
+            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de soutenir sa visibilité dans les moteurs de recherche et de transformer les visiteurs en prospects. J'ai conçu et développé le site avec Next.js, en mettant l'accent sur la performance, le SEO technique, les données structurées, le responsive design et une architecture de contenu évolutive.",
             "results": [
               {
                 "value": "2 900+",
-                "label": "nouveaux utilisateurs en deux mois"
+                "label": "nouveaux utilisateurs durant les deux premiers mois"
               },
               {
-                "value": "#1",
-                "label": "position Google pour le mot-clé cible"
+                "value": "3×",
+                "label": "de croissance du trafic organique"
               },
               {
-                "value": "<1s",
-                "label": "temps de chargement moyen"
+                "value": "<1 s",
+                "label": "de temps de chargement moyen"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
-            "imageAlt": "Page d'accueil du site corporate Neodyne Group optimisé avec SEO technique par Devsignpro",
+            "imageAlt": "Page d'accueil du site web corporate de Neodyne Group développé par Devsignpro",
             "link": {
               "href": "/portfolio/corporate-website",
               "label": "Voir l'étude de cas complète"
             }
           },
           "crossLink": {
-            "text": "Besoin d'un nouveau site construit avec le SEO dès le départ ?",
-            "linkText": "Services de Développement Web →",
+            "text": "Vous avez besoin d'un nouveau site web avec des fondations SEO solides dès le départ ?",
+            "linkText": "Découvrez mes services de développement web →",
             "href": "/services/web-development"
           },
           "faqs": [
             {
-              "q": "Qu'est-ce que le SEO technique et pourquoi est-ce important ?",
-              "a": "Le SEO technique désigne les optimisations backend qui aident les moteurs de recherche à explorer, indexer et comprendre votre site. Sans cela, même le meilleur contenu ne se classera pas. Il inclut la vitesse, la compatibilité mobile, les données structurées et l'indexabilité."
+              "q": "Qu'est-ce que le SEO technique ?",
+              "a": "Le SEO technique concerne les aspects techniques d'un site web qui permettent aux moteurs de recherche d'explorer, d'indexer et de comprendre ses pages. Il comprend notamment l'architecture du site, la crawlabilité, l'indexation, les performances, les données structurées, les redirections et les URLs canoniques."
             },
             {
-              "q": "Combien de temps dure un audit SEO technique ?",
-              "a": "Un audit complet prend généralement 3 à 5 jours ouvrables, selon la taille de votre site. Vous recevrez un rapport détaillé avec des recommandations priorisées et un plan d'action clair."
+              "q": "Que comprend un audit SEO technique ?",
+              "a": "Un audit SEO technique examine notamment la crawlabilité, l'indexation, les liens cassés, les redirections, l'architecture du site, les Core Web Vitals, les métadonnées, les données structurées, les sitemaps XML, le fichier robots.txt, les URLs canoniques et le maillage interne."
             },
             {
-              "q": "Pouvez-vous corriger les problèmes Core Web Vitals sur mon site existant ?",
-              "a": "Oui. Je suis spécialisé dans le diagnostic et la correction des problèmes Core Web Vitals (LCP, INP, CLS) sur les sites existants. Cela inclut l'optimisation des images, les stratégies de cache, le code splitting et l'élimination des ressources bloquantes."
+              "q": "Pouvez-vous corriger les problèmes de SEO technique de mon site existant ?",
+              "a": "Oui. Je peux auditer et corriger les problèmes de SEO technique d'un site existant, notamment les problèmes de performance, d'indexation, de crawlabilité, de données structurées et d'architecture. Les possibilités d'intervention dépendent de la plateforme utilisée et des accès disponibles."
             },
             {
-              "q": "Travaillez-vous avec WordPress, Shopify ou uniquement des sites sur mesure ?",
-              "a": "Je travaille avec toutes les plateformes, mais je suis spécialisé dans les sites sur mesure avec Next.js et React. Pour WordPress ou Shopify, je peux auditer et fournir des recommandations prêtes à être implémentées par votre équipe."
+              "q": "Le SEO technique peut-il améliorer mon classement sur Google ?",
+              "a": "Le SEO technique peut supprimer certains obstacles qui empêchent les moteurs de recherche d'accéder correctement à votre site et de le comprendre. Cependant, le classement dépend également de facteurs tels que l'intention de recherche, la qualité du contenu, la concurrence, la pertinence, l'autorité et le travail SEO continu."
             },
             {
-              "q": "Le SEO technique garantit-il de meilleurs classements ?",
-              "a": "Personne ne peut garantir des positions spécifiques. Cependant, le SEO technique supprime les barrières qui empêchent votre site de se classer. Combiné à un contenu de qualité, il vous donne la base la plus solide possible pour une croissance organique."
+              "q": "Proposez-vous une stratégie de contenu SEO ?",
+              "a": "Le SEO technique peut inclure l'analyse de l'organisation du contenu, du maillage interne et de l'architecture du site. Pour soutenir la croissance à long terme, je peux également identifier comment les sujets et les pages importantes doivent être reliés afin de renforcer la couverture thématique du site."
             },
             {
-              "q": "Quels outils utilisez-vous pour les audits SEO techniques ?",
-              "a": "J'utilise une combinaison de Google Search Console, Lighthouse, Screaming Frog, PageSpeed Insights et une inspection manuelle du code pour identifier chaque problème technique."
+              "q": "Le SEO technique peut-il préparer mon site à la recherche basée sur l'IA ?",
+              "a": "Des fondations SEO solides, telles qu'un contenu accessible, une architecture claire, des données structurées et des informations bien organisées, peuvent aider les systèmes de recherche à mieux comprendre votre site. Ces fondations peuvent ensuite soutenir une stratégie plus large d'optimisation pour la recherche IA, notamment le GEO et l'AEO."
             }
           ]
         },
@@ -1183,10 +1193,10 @@
                 "title": "Conversions instantanées et précises",
                 "body": "Convertit l'EUR en USD et de nombreuses autres devises mondiales instantanément en utilisant des taux de change en direct avec des mises à jour fréquentes, garantissant des taux mid-market toujours précis."
               },
-             {
-        "title": "Ce que j'ai appris",
-        "body": "L'objectif principal de ce projet était de maîtriser l'appel d'API réelles avec Next.js. J'ai appris à récupérer en toute sécurité des données de taux de change en direct, à implémenter l'algorithme de conversion efficacement, et à appliquer les meilleures pratiques de sécurité des API (comme la protection des clés API et la gestion des limites de requêtes) pour construire une application robuste et prête pour la production."
-      }
+              {
+                "title": "Ce que j'ai appris",
+                "body": "L'objectif principal de ce projet était de maîtriser l'appel d'API réelles avec Next.js. J'ai appris à récupérer en toute sécurité des données de taux de change en direct, à implémenter l'algorithme de conversion efficacement, et à appliquer les meilleures pratiques de sécurité des API (comme la protection des clés API et la gestion des limites de requêtes) pour construire une application robuste et prête pour la production."
+              }
             ],
             "highlights": [
               "Taux de change mid-market en direct, mis à jour fréquemment",

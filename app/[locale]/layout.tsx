@@ -9,7 +9,6 @@ import Navbar from "@/app/components/Navbar";
 import { ThemeProvider } from "@/app/components/ThemeProvider";
 import Footer from "@/app/components/Footer";
 import { getDictionary } from "@/app/lib/dictionary";
-import { I18nProvider } from "@/app/providers/i18n-provider";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { WebSiteSchema } from "@/app/components/schemas";
 const roboto = Roboto({
@@ -143,7 +142,7 @@ export default async function RootLayout({
   const baseUrl = getBaseUrl();
   const layoutSeo = dict.SEO_content.layout_page.generateMetadata;
   return (
-    <html lang={localeToBcp47(locale)} dir={dir} suppressHydrationWarning>
+    <html lang={locale} dir={dir} suppressHydrationWarning>
       <body className={`${fontClassName} antialiased`}>
         {gaMeasurementId ? (
           <>
@@ -161,7 +160,6 @@ export default async function RootLayout({
             </Script>
           </>
         ) : null}
-        <I18nProvider dictionary={dict}>
           <ThemeProvider attribute="class" defaultTheme="white" enableSystem>
             <WebSiteSchema
               baseUrl={baseUrl}
@@ -173,7 +171,6 @@ export default async function RootLayout({
             {children}
             <Footer footer={footer} locale={locale} />
           </ThemeProvider>
-        </I18nProvider>
       </body>
     </html>
   );

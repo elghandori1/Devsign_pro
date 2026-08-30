@@ -265,12 +265,12 @@ export default async function TechnicalSEO({ params }: Props) {
           <h1
             id="hero-heading"
             className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
-                       leading-[1.1] text-foreground mb-5 max-w-4xl"
+                       leading-[1.1] text-foreground mb-5 max-w-5xl"
           >
             {data.title}
           </h1>
 
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl mb-7">
+          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl mb-7">
             {data.description}
           </p>
 
@@ -657,7 +657,31 @@ export default async function TechnicalSEO({ params }: Props) {
         </div>
       </section>
 
-      {/* ── 8. FAQ ── */}
+
+      {/* ── 8. CROSS-LINK (related service) ── */}
+      {data.crossLink && (
+        <section
+          aria-label="Related service"
+          className="max-w-6xl mx-auto px-4 sm:px-6 pb-4"
+        >
+          <Link
+            href={`/${locale}${data.crossLink.href}`}
+            className="group flex flex-col sm:flex-row items-center justify-between gap-3
+                       p-5 sm:p-6 rounded-2xl border border-primary/20 bg-primary/5
+                       hover:border-primary/40 hover:bg-primary/10 transition-all"
+          >
+            <p className="text-sm sm:text-base font-medium text-foreground text-center sm:text-start">
+              {data.crossLink.text}
+            </p>
+            <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base shrink-0">
+              {data.crossLink.linkText}
+        
+            </span>
+          </Link>
+        </section>
+      )}
+
+      {/* ── 9. FAQ ── */}
       {faqs.length > 0 && (
         <section
           aria-labelledby="faq-heading"
@@ -702,33 +726,6 @@ export default async function TechnicalSEO({ params }: Props) {
               </li>
             ))}
           </ul>
-        </section>
-      )}
-
-      {/* ── 9. CROSS-LINK (related service) ── */}
-      {data.crossLink && (
-        <section
-          aria-label="Related service"
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-4"
-        >
-          <Link
-            href={`/${locale}${data.crossLink.href}`}
-            className="group flex flex-col sm:flex-row items-center justify-between gap-3
-                       p-5 sm:p-6 rounded-2xl border border-primary/20 bg-primary/5
-                       hover:border-primary/40 hover:bg-primary/10 transition-all"
-          >
-            <p className="text-sm sm:text-base font-medium text-foreground text-center sm:text-start">
-              {data.crossLink.text}
-            </p>
-            <span className="inline-flex items-center gap-2 text-primary font-semibold text-sm sm:text-base shrink-0">
-              {data.crossLink.linkText}
-              <ArrFwd
-                size={16}
-                className="group-hover:translate-x-0.5 transition-transform rtl:rotate-180"
-                aria-hidden="true"
-              />
-            </span>
-          </Link>
         </section>
       )}
 

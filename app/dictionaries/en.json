@@ -154,83 +154,86 @@
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Web Development services in Morocco — Fast, Secure, Built to Rank",
-          "title_metadata": "Web Development Services in Morocco | Fast & SEO-Ready",
-          "description_metadata": "Custom web development services in Morocco. Fast, secure business websites built with Next.js, Technical SEO, and Core Web Vitals. Built to rank and convert.",
-          "description": "Looking for the best web development services in Morocco? I build high-performance custom business websites, e-commerce platforms, and web applications optimized for Technical SEO and Core Web Vitals. Scale your business with an online presence built for top rankings on Google and AI search engines.",
-          "title_card": "Website Development with Built-in SEO & AI Overview",
-          "overviewHeadline": "Website Development That Drives Traffic, Leads & Business Growth",
-          "startDescription": "Your website should do more than look professional, it should attract qualified visitors, explain your services clearly, and turn potential customers into real clients.",
-          "longDescription": "Every project is built with modern technologies like Next.js and React, optimized for speed, security, scalability, Technical SEO, Core Web Vitals, and AI Search Optimization. I structure content, metadata, and schema so your business can perform well in Google Search and be understood by AI platforms like ChatGPT, Google AI Overviews, and Perplexity. From planning to deployment, every decision focuses on long-term visibility, performance, and measurable business growth.",
-          "company_recruitment": "I'm also available to collaborate with startups, agencies, and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker, and modern development practices.",
+          "title": "Web Development Services in Morocco — Fast, Secure & SEO-Ready",
+          "title_metadata": "Web Development Services in Morocco | Devsignpro",
+          "description_metadata": "Custom web development services in Morocco. I build fast, secure and SEO-ready websites and web applications with Next.js and React.",
+          "description": "I build high-performance websites and custom web applications using Next.js, React and modern web technologies. Every project is engineered with performance, security and SEO in mind from the beginning, including technical SEO foundations, Core Web Vitals and a scalable content structure.",
+          "title_card": "Web Development with SEO-Ready Architecture",
+          "overviewTitle": "Why Choose My Web Development Services?",
+          "overviewHeadline": "Web Development Built for Performance, SEO & Business Growth",
+          "startDescription": "Your website should do more than look professional. It should communicate your business clearly, provide a fast and accessible experience, attract qualified visitors and support your long-term growth.",
+          "longDescription": "I build high-performance websites and custom web applications using Next.js, React and modern web technologies. From the initial architecture to deployment, I consider performance, security, accessibility and SEO foundations from the beginning. This includes semantic HTML, clean URLs, metadata, structured data, Core Web Vitals and a clear content structure that helps users and search engines understand your business.",
+          "company_recruitment": "I'm also available to collaborate with startups, agencies and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker and modern development practices.",
           "link": "/services/web-development",
           "start_btn": "Start Your Project",
           "allServicesBtn": "View All Services",
-          "overviewTitle": "Why Choose My Web Development Services?",
           "includedTitle": "What's Included",
-          "includedDesc": "Every web development project includes:",
+          "includedDesc": "Every web development project is built with a strong technical and SEO foundation:",
           "benefitsTitle": "What You'll Gain",
-          "benefitsDesc": "By working with me on your website, you can expect:",
+          "benefitsDesc": "A website designed to perform well for users today and provide a strong foundation for long-term growth:",
+          "growthTitle": "Built for SEO & Long-Term Growth",
+          "growthDescription": "SEO should not be an afterthought. When building a new website, I structure the technical foundation, information architecture and content organization with search visibility in mind from the beginning. This makes it easier to expand your website with useful content, supporting pages and related topics as your business grows.",
+          "technicalSeoLinkText": "Need to improve an existing website? Explore Technical SEO services →",
           "processTitle": "My Development Process",
-          "processDesc": "A clear, proven process that delivers your project on time and on target:",
+          "processDesc": "A structured process that connects business goals, user experience, development, performance and SEO from planning to launch:",
           "techTitle": "The Technology Stack",
-          "techDesc": "I choose the right technologies based on your project requirements and business goals — not trends.",
+          "techDesc": "I choose technologies based on your project requirements, business goals, performance needs and long-term maintainability — not trends.",
           "faqTitle": "Frequently Asked Questions",
-          "faqDesc": "Direct answers about website development, SEO, and AI search optimization:",
+          "faqDesc": "Answers about web development, SEO-ready websites and long-term website growth:",
           "AnothersrvcBtn": "Explore Other Services",
           "features": [
-            "SEO & GEO Optimized Structure",
-            "Responsive",
+            "SEO-Ready Architecture",
+            "Responsive & Accessible",
             "Core Web Vitals Optimized"
           ],
           "included": [
-            "Custom UI/UX design and frontend development with Next.js, React, and TypeScript",
-            "On-page SEO: semantic HTML, metadata, schema markup, XML sitemaps, and robots.txt",
-            "GEO & AEO optimization so AI assistants can understand, quote, and recommend your business",
-            "Core Web Vitals optimization: image optimization, caching strategies, and instant load times",
-            "Google Search Console, Google Analytics 4, and Bing Webmaster Tools integration from day one",
-            "Security hardening: HTTPS, secure HTTP headers, and protected form submissions"
+            "Custom UI/UX and frontend development with Next.js, React and TypeScript",
+            "Responsive, accessible and mobile-first implementation",
+            "SEO-ready architecture with semantic HTML, clean URLs, metadata and XML sitemaps",
+            "Structured data and Schema.org implementation where appropriate",
+            "Core Web Vitals and performance optimization",
+            "Analytics and search monitoring setup with Google Analytics, Google Search Console and Bing Webmaster Tools"
           ],
           "benefits": [
             {
-              "title": "Maximum Search Visibility",
-              "text": "Semantic code, structured data, optimized metadata, and flawless Core Web Vitals — everything Google rewards, engineered from the first line of code."
+              "title": "SEO-Ready from the Beginning",
+              "text": "I consider crawlability, semantic HTML, metadata, structured data, internal linking foundations and site architecture during development rather than treating SEO as an afterthought."
             },
             {
-              "title": "Presence in AI Search Results",
-              "text": "Content structured for GEO and AEO, ensuring ChatGPT, Gemini, and Perplexity can cite and recommend your business to users."
+              "title": "Fast & High-Performing",
+              "text": "Performance is built into the development process through optimized images, efficient rendering, careful JavaScript usage, responsive design and Core Web Vitals optimization."
             },
             {
-              "title": "Higher Conversions & Measurable ROI",
-              "text": "Clear calls-to-action, trust signals, and precise analytics tracking — guiding every visitor toward becoming a client."
+              "title": "Built to Grow",
+              "text": "The website architecture and content structure are designed to support future services, landing pages and useful supporting content as your business grows."
             }
           ],
           "process": [
             {
               "step": "01",
               "title": "Discovery & Strategy",
-              "text": "I analyze your business goals, target audience, and the exact keywords your customers use — before writing a single line of code."
+              "text": "I analyze your business goals, target audience, competitors and the services you want to promote. We define the website structure, priorities and technical requirements before development begins."
             },
             {
               "step": "02",
               "title": "Design & Architecture",
-              "text": "Clean, scalable development with Next.js — semantic HTML, responsive design, and accessibility built into every component."
+              "text": "I design and build a scalable website architecture with Next.js, React and TypeScript, focusing on responsive design, accessibility, clean URLs and semantic HTML."
             },
             {
               "step": "03",
-              "title": "SEO & AI Integration",
-              "text": "Schema markup, metadata, sitemaps, and content structured for both traditional Google rankings and modern AI citations."
+              "title": "SEO & Performance",
+              "text": "SEO foundations are implemented during development, including metadata, structured data, crawlable architecture, internal linking foundations and Core Web Vitals optimization."
             },
             {
               "step": "04",
               "title": "Launch & Monitoring",
-              "text": "Go live with analytics configured, Search Console connected, and Core Web Vitals benchmarks verified for ongoing success."
+              "text": "After launch, I verify technical performance, analytics, Search Console, indexing and Core Web Vitals so the website has a strong foundation for ongoing growth."
             }
           ],
           "caseStudy": {
             "badge": "Real Client Project",
-            "title": "A Corporate Website That Tripled Traffic in Two Months",
-            "description": "Neodyne Group needed a fast, professional corporate website that could rank on Google and turn visitors into leads. We designed and built a custom website from scratch — no templates, no page builders — with full SEO and AI-search optimization built in from day one.",
+            "title": "A Corporate Website That Tripled Organic Traffic in Two Months",
+            "description": "Neodyne Group needed a fast, professional corporate website that could support search visibility and turn visitors into leads. I designed and built the website from scratch with Next.js, focusing on performance, technical SEO, structured data, responsive design and a scalable content architecture.",
             "results": [
               {
                 "value": "2,900+",
@@ -260,113 +263,120 @@
           "faqs": [
             {
               "q": "How long does it take to build a professional website?",
-              "a": "Most business websites take 3 to 6 weeks from kickoff to launch, depending on the scope. Landing pages can be ready in a week, while complex web applications take longer. You receive a clear timeline before we begin."
+              "a": "Most business websites take 3 to 6 weeks from kickoff to launch, depending on the scope and requirements. Landing pages can be completed faster, while complex web applications may take longer. You receive a clear project timeline before development begins."
             },
             {
               "q": "Which technologies do you use?",
-              "a": "I primarily build with Next.js, React, TypeScript, and Tailwind CSS. This modern stack ensures your site is incredibly fast, secure, and easy to scale as your business grows."
+              "a": "I primarily build with Next.js, React, TypeScript and Tailwind CSS. I choose the technology stack according to the project's requirements, performance needs, scalability and long-term maintainability."
             },
             {
-              "q": "Can you guarantee first-page rankings?",
-              "a": "No honest developer can guarantee specific rankings. What I guarantee is a flawless technical foundation that search engines love. You can see the real-world results of this approach in my case studies."
+              "q": "Does SEO come with your web development service?",
+              "a": "Yes. SEO foundations are considered during development, including semantic HTML, crawlable architecture, clean URLs, metadata, structured data, internal linking foundations and Core Web Vitals. If you already have a website and need a deeper audit or optimization, I offer Technical SEO services separately."
             },
             {
               "q": "Do you provide maintenance after launch?",
-              "a": "Yes. I offer monthly maintenance retainers that include performance monitoring, security updates, and SEO health checks to ensure your website stays fast, secure, and visible as algorithms evolve."
+              "a": "Yes. I offer maintenance retainers that can include performance monitoring, security updates and SEO health checks to help keep your website fast, secure and technically healthy after launch."
             },
             {
               "q": "Can you redesign my existing website instead of building a new one?",
-              "a": "Absolutely. I can modernize your current site, fix Technical SEO issues, improve Core Web Vitals, and prepare it for AI search without necessarily rebuilding everything from scratch."
+              "a": "Absolutely. I can modernize an existing website, improve its performance and user experience, and address technical SEO issues where appropriate. If the existing website does not need a complete rebuild, a Technical SEO audit may be a better starting point."
             }
           ]
         },
         "technical_seo": {
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
-          "title": "Technical SEO Services & Audits: Fix, Optimize & Rank",
-          "title_metadata": "Technical SEO Services & Audits | Fix, Optimize, Rank Higher",
-          "description_metadata": "Expert Technical SEO audits, indexability fixes, and Core Web Vitals optimization to improve Google rankings and crawlability.",
-          "description": "Is your website technically sound but still not ranking? I provide expert Technical SEO audits, Core Web Vitals optimization, and indexability fixes to help your website perform at its best on Google and AI search engines.",
-          "title_card": "Technical SEO Audits & Core Web Vitals Optimization",
-          "overviewHeadline": "Technical SEO That Fixes What's Holding Your Rankings Back",
-          "startDescription": "Beautiful design and great content mean nothing if search engines can't crawl, index, or understand your website. Technical SEO is the foundation that makes everything else work.",
-          "longDescription": "I audit and fix the technical issues that prevent websites from ranking: slow Core Web Vitals, crawl errors, broken redirects, missing structured data, and poor indexability. Every fix is implemented with precision — from schema markup and canonical tags to image optimization and caching strategies. Whether you need a one-time audit or ongoing Technical SEO support, I ensure your website meets the highest standards of Google and AI search engines.",
-          "company_recruitment": "I'm also available to collaborate with startups, agencies, and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker, and modern development practices.",
-          "link": "/services/technical-seo",
-          "start_btn": "Request a Technical Audit",
-          "allServicesBtn": "View All Services",
+          "title": "Technical SEO Services in Morocco — Audit, Fix & Optimize Existing Websites",
+          "title_metadata": "Technical SEO Services in Morocco | Audit, Fix & Optimize",
+          "description_metadata": "Technical SEO audits and optimization in Morocco. I fix crawlability, indexing, performance and technical issues that can limit your search visibility.",
+          "description": "I audit, fix and optimize existing websites to improve crawlability, indexing, performance and search visibility. I identify technical issues affecting your website structure, Core Web Vitals, metadata, structured data, internal linking and content organization, then create and implement a prioritized optimization plan.",
+          "title_card": "Technical SEO Audit & Website Optimization",
           "overviewTitle": "Why Choose My Technical SEO Services?",
+          "overviewHeadline": "Technical SEO That Fixes What's Holding Your Website Back",
+          "startDescription": "Already have a website but it's not performing well in search? I audit your website, identify the technical problems affecting search engines and users, and prioritize the fixes that can make the biggest difference.",
+          "longDescription": "I work on existing websites to improve their technical SEO foundation. This includes analyzing crawlability, indexability, site architecture, Core Web Vitals, metadata, structured data, redirects, canonical URLs, internal linking and other technical factors. The goal is to make your website easier for search engines to crawl and understand while providing a better experience for visitors.",
+          "company_recruitment": "I'm also available to collaborate with startups, agencies and development teams on long-term projects, bringing experience with Git workflows, CI/CD, Docker and modern development practices.",
+          "link": "/services/technical-seo",
+          "start_btn": "Request a Technical SEO Audit",
+          "allServicesBtn": "View All Services",
           "includedTitle": "What's Included",
-          "includedDesc": "Every Technical SEO project includes:",
+          "includedDesc": "A practical Technical SEO audit and optimization process focused on identifying and resolving issues that can affect search visibility:",
           "benefitsTitle": "What You'll Gain",
-          "benefitsDesc": "By working with me on your Technical SEO, you can expect:",
+          "benefitsDesc": "A technically healthier website with a clearer foundation for search visibility, performance and long-term SEO growth:",
+          "contentGrowthTitle": "Technical SEO & Content Growth",
+          "contentGrowthDescription": "Technical SEO is only part of long-term search growth. I also review how your website's pages, services and content are organized so search engines and users can understand the relationships between important topics. When needed, I can identify opportunities for improving internal linking, content organization and topical coverage.",
+          "webDevelopmentLinkText": "Need a new website instead? Explore Web Development services →",
+          "aiSearchTitle": "Preparing Your Website for AI Search",
+          "aiSearchDescription": "Clear site architecture, accessible content, structured data and strong SEO foundations can also help search systems better understand your business and content. These foundations provide a starting point for broader AI Search Optimization, including GEO and AEO.",
+          "aiSearchLinkText": "Learn about AI Search Optimization →",
           "processTitle": "My Technical SEO Process",
-          "processDesc": "A systematic approach to diagnosing, fixing, and monitoring your website's technical health:",
+          "processDesc": "A systematic approach to finding, prioritizing and resolving technical issues across your website:",
           "techTitle": "Tools & Technologies I Use",
-          "techDesc": "I combine industry-leading tools with manual code inspection for the most accurate audits:",
+          "techDesc": "I combine automated SEO tools, search-engine data and manual technical inspection to understand what is happening across your website.",
           "faqTitle": "Frequently Asked Questions",
-          "faqDesc": "Direct answers about Technical SEO, Core Web Vitals, and website performance:",
+          "faqDesc": "Answers about Technical SEO audits, website performance, crawlability and search visibility:",
           "AnothersrvcBtn": "Explore Other Services",
           "features": [
-            "Crawlability & Indexability Fixes",
+            "Crawlability & Indexability",
             "Core Web Vitals Optimization",
-            "Structured Data & Schema Markup"
+            "Technical SEO Audits"
           ],
           "included": [
-            "Full technical SEO audit: crawl errors, broken links, redirect chains, and orphan pages",
-            "Core Web Vitals optimization: LCP, INP, and CLS improvements for faster load times",
-            "Schema markup implementation: JSON-LD structured data for rich snippets and AI understanding",
-            "XML sitemap and robots.txt optimization for better crawl efficiency",
-            "Canonical tags and duplicate content resolution",
-            "HTTPS, security headers, and mobile-friendliness verification"
+            "Technical SEO audit covering crawlability, indexability, broken links, redirects and site architecture",
+            "Core Web Vitals analysis and performance optimization covering LCP, INP and CLS",
+            "XML sitemap and robots.txt review and optimization",
+            "Canonical URL and duplicate-content analysis",
+            "Metadata, headings and internal linking review",
+            "Structured data and Schema.org implementation where appropriate",
+            "Mobile-friendliness, HTTPS and technical security checks"
           ],
           "benefits": [
             {
-              "title": "Higher Google Rankings",
-              "text": "Fix the technical barriers preventing your content from ranking. Clean code, fast load times, and proper indexing give Google every reason to rank you higher."
+              "title": "Better Crawlability & Indexing",
+              "text": "Identify technical barriers that can prevent search engines from discovering, crawling or properly indexing important pages on your website."
             },
             {
-              "title": "Better User Experience",
-              "text": "Fast Core Web Vitals mean lower bounce rates, longer session times, and more conversions. Speed isn't just an SEO metric — it's a revenue metric."
+              "title": "Better Website Performance",
+              "text": "Improve loading performance and Core Web Vitals to provide a faster, more usable experience across devices."
             },
             {
-              "title": "AI Search Readiness",
-              "text": "Structured data and clean architecture help AI engines like ChatGPT and Perplexity understand, cite, and recommend your content."
+              "title": "Stronger SEO Foundation",
+              "text": "Create a cleaner technical foundation for your content, internal linking and future SEO work so the website can grow without unnecessary technical limitations."
             }
           ],
           "process": [
             {
               "step": "01",
-              "title": "Technical Audit & Discovery",
-              "text": "I run a comprehensive audit of your website using industry-leading tools, identifying every technical issue holding back your rankings."
+              "title": "Audit & Diagnosis",
+              "text": "I analyze your website's technical structure, crawlability, indexability, performance, metadata, structured data, redirects and internal linking to identify issues and opportunities."
             },
             {
               "step": "02",
               "title": "Prioritization & Strategy",
-              "text": "Not all fixes are equal. I prioritize issues by impact, giving you a clear roadmap of what to fix first for the fastest results."
+              "text": "I prioritize issues according to their potential impact, technical complexity and business importance, giving you a clear action plan."
             },
             {
               "step": "03",
               "title": "Implementation & Fixes",
-              "text": "I implement the fixes directly in your codebase or provide detailed developer documentation — schema markup, speed optimization, crawl fixes, and more."
+              "text": "I implement the agreed technical improvements or provide clear developer-ready recommendations for your team, depending on the project."
             },
             {
               "step": "04",
-              "title": "Monitoring & Reporting",
-              "text": "After implementation, I monitor your Core Web Vitals, index coverage, and search performance to ensure the fixes deliver measurable results."
+              "title": "Validation & Monitoring",
+              "text": "After implementation, I validate the changes and monitor relevant technical and search signals to make sure important pages remain accessible, indexable and performant."
             }
           ],
           "caseStudy": {
-            "badge": "Real Client Results",
-            "title": "Technical SEO That Took a Corporate Site to #1 on Google",
-            "description": "Neodyne Group's corporate website was built from scratch with Technical SEO as the priority. We implemented structured data, optimized Core Web Vitals, fixed indexability issues, and submitted a clean sitemap — resulting in a #1 Google ranking and 2,900+ new users in two months.",
+            "badge": "Real Client Project",
+            "title": "A Corporate Website Built for Performance & Search Visibility",
+            "description": "Neodyne Group needed a fast, professional corporate website that could support search visibility and turn visitors into leads. I designed and built the website with Next.js, focusing on performance, technical SEO, structured data, responsive design and a scalable content architecture.",
             "results": [
               {
                 "value": "2,900+",
                 "label": "new users in the first two months"
               },
               {
-                "value": "#1",
-                "label": "Google ranking for target keyword"
+                "value": "3×",
+                "label": "organic traffic growth"
               },
               {
                 "value": "<1s",
@@ -374,41 +384,41 @@
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
-            "imageAlt": "Homepage of the Neodyne Group corporate website optimized with Technical SEO by Devsignpro",
+            "imageAlt": "Homepage of the Neodyne Group corporate website built by Devsignpro",
             "link": {
               "href": "/portfolio/corporate-website",
               "label": "View the full case study"
             }
           },
           "crossLink": {
-            "text": "Need a new website built with SEO from day one?",
-            "linkText": "Web Development services →",
+            "text": "Need a new website built with SEO foundations from the beginning?",
+            "linkText": "Explore Web Development services →",
             "href": "/services/web-development"
           },
           "faqs": [
             {
-              "q": "What is Technical SEO and why does it matter?",
-              "a": "Technical SEO refers to the backend optimizations that help search engines crawl, index, and understand your website. Without it, even the best content won't rank. It includes site speed, mobile-friendliness, structured data, and indexability."
+              "q": "What is Technical SEO?",
+              "a": "Technical SEO focuses on the technical aspects of a website that help search engines crawl, index and understand its pages. It includes areas such as site architecture, crawlability, indexability, performance, structured data, redirects and canonical URLs."
             },
             {
-              "q": "How long does a Technical SEO audit take?",
-              "a": "A comprehensive audit typically takes 3-5 business days, depending on the size of your website. You'll receive a detailed report with prioritized recommendations and a clear action plan."
+              "q": "What does a Technical SEO audit include?",
+              "a": "A Technical SEO audit reviews areas such as crawlability, indexability, broken links, redirects, site architecture, Core Web Vitals, metadata, structured data, XML sitemaps, robots.txt, canonical URLs and internal linking."
             },
             {
-              "q": "Can you fix Core Web Vitals issues on my existing website?",
-              "a": "Yes. I specialize in diagnosing and fixing Core Web Vitals issues (LCP, INP, CLS) on existing websites. This includes image optimization, caching strategies, code splitting, and render-blocking resource elimination."
+              "q": "Can you fix Technical SEO issues on my existing website?",
+              "a": "Yes. I can audit and fix technical SEO issues on existing websites, including performance problems, indexing issues, crawlability problems, structured data and site architecture issues. The exact implementation depends on your website platform and access."
             },
             {
-              "q": "Do you work with WordPress, Shopify, or only custom sites?",
-              "a": "I work with all platforms, but I specialize in custom-built sites with Next.js and React. For WordPress or Shopify, I can audit and provide developer-ready recommendations for your team to implement."
+              "q": "Can Technical SEO improve my Google rankings?",
+              "a": "Technical SEO can remove technical barriers that make it harder for search engines to access and understand your website. However, rankings also depend on factors such as search intent, content quality, competition, relevance, authority and ongoing SEO work."
             },
             {
-              "q": "Will Technical SEO guarantee higher rankings?",
-              "a": "No one can guarantee specific rankings. However, Technical SEO removes the barriers preventing your site from ranking. Combined with quality content, it gives you the strongest possible foundation for organic growth."
+              "q": "Do you provide SEO content strategy?",
+              "a": "Technical SEO can include reviewing content organization, internal linking and website architecture. For long-term growth, I can also identify how important topics and pages should be connected so your website can build stronger topical coverage over time."
             },
             {
-              "q": "What tools do you use for Technical SEO audits?",
-              "a": "I use a combination of Google Search Console, Lighthouse, Screaming Frog, PageSpeed Insights, and manual code inspection to identify every technical issue."
+              "q": "Can Technical SEO help prepare my website for AI search?",
+              "a": "Strong SEO foundations such as accessible content, clear architecture, structured data and well-organized information can help search systems better understand your website. These foundations can support broader AI Search Optimization, including GEO and AEO."
             }
           ]
         },
