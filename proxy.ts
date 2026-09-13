@@ -14,7 +14,8 @@ export function proxy(request: NextRequest) {
 
   const pathnameHasValidLocale = LOCALE_PATH_PATTERN.test(pathname);
   if (!pathnameHasValidLocale) {
-    const newUrl = new URL(`/${i18n.defaultLocale}${pathname}`, request.url);
+    const newUrl = request.nextUrl.clone();
+    newUrl.pathname = `/${i18n.defaultLocale}${pathname === "/" ? "" : pathname}`;
     // 301 permanent redirect — consolidates all SEO signals to the /en URL
     return NextResponse.redirect(newUrl, 301);
   }

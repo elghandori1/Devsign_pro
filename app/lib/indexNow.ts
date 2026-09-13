@@ -25,8 +25,8 @@ export function getIndexNowUrls(baseUrl = getBaseUrl()): string[] {
 		"/portfolio",
 		"/contact",
 		"/articles",
-		"/articles/best-laptop-guide-2026",
-		"/articles/how-to-check-used-laptop-2026",
+		"/articles/laptop-buying-guide-2026",
+		"/articles/nextjs-seo-framework-guide-2026",
 	];
 
 	return i18n.locales.flatMap((locale) =>

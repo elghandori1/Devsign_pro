@@ -6,6 +6,7 @@ import {
   ArrowRight,
   Target,
   Trophy,
+  Award,
   BookOpen,
   ChevronRight,
   Sparkles,
@@ -490,7 +491,6 @@ const ProfileSchema = {
                 {t.hackathons.title}
               </h2>
               <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-                <Trophy className="w-4 h-4" aria-hidden="true" />
                 {t.hackathons.subtitle}
               </span>
             </header>
@@ -504,19 +504,21 @@ const ProfileSchema = {
                     location: string;
                     year: string;
                     place: string;
+                    kind?: string;
                   },
                   i: number,
                 ) => (
                   <li key={i}>
                     <article className="group flex items-start gap-4 p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300">
                       <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        <Trophy
-                          className="w-5 h-5 text-primary"
-                          aria-hidden="true"
-                        />
+                        {item.kind === "certificate" ? (
+                          <Award className="w-5 h-5 text-primary" aria-hidden="true" />
+                        ) : (
+                          <Trophy className="w-5 h-5 text-primary" aria-hidden="true" />
+                        )}
                       </div>
                       <div className="min-w-0">
-                        <h3 className="font-semibold text-foreground mb-1.5 truncate">
+                        <h3 className="font-semibold text-foreground mb-1.5 break-words">
                           {item.name}
                         </h3>
                         {/* CHANGED: text-muted-foreground to text-foreground/80 */}

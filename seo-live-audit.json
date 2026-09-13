@@ -1,0 +1,557 @@
+{
+  "checkedAt": "2026-09-13T13:10:59.143Z",
+  "results": [
+    {
+      "url": "https://devsignpro.com/en",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/about",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/about",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/about",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/about",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/about",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/about",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/services",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/services",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/services",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/services",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/services",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/services",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/services/web-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/services/web-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/services/web-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/services/web-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/services/web-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/services/web-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/services/technical-seo",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/services/technical-seo",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/services/technical-seo",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/services/technical-seo",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/services/technical-seo",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/services/technical-seo",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/services/ecommerce-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/services/ecommerce-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/services/ecommerce-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/services/ecommerce-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/services/ecommerce-development",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/services/ecommerce-development",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/services/business-dashboards",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/services/business-dashboards",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/services/business-dashboards",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/services/business-dashboards",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/services/business-dashboards",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/services/business-dashboards",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/contact",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/contact",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/contact",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/contact",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/contact",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/contact",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/articles",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/articles",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/articles",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/articles",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/articles",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/articles",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/articles/nextjs-seo-framework-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/articles/nextjs-seo-framework-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/articles/nextjs-seo-framework-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/articles/nextjs-seo-framework-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/articles/nextjs-seo-framework-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/articles/nextjs-seo-framework-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/articles/laptop-buying-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/articles/laptop-buying-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/articles/laptop-buying-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/articles/laptop-buying-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/articles/laptop-buying-guide-2026",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/articles/laptop-buying-guide-2026",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/corporate-website",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/corporate-website",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/corporate-website",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/corporate-website",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/corporate-website",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/corporate-website",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/landing-page-ecommerce",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/landing-page-ecommerce",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/landing-page-ecommerce",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/landing-page-ecommerce",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/landing-page-ecommerce",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/landing-page-ecommerce",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/business-automation-dashboard",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/business-automation-dashboard",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/business-automation-dashboard",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/business-automation-dashboard",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/business-automation-dashboard",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/business-automation-dashboard",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/hotel-technical-issue-manager",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/hotel-technical-issue-manager",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/hotel-technical-issue-manager",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/hotel-technical-issue-manager",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/hotel-technical-issue-manager",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/hotel-technical-issue-manager",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/pesscore-efootball-tracker",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/pesscore-efootball-tracker",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/pesscore-efootball-tracker",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/pesscore-efootball-tracker",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/pesscore-efootball-tracker",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/pesscore-efootball-tracker",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/math-practice-game",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/math-practice-game",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/math-practice-game",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/math-practice-game",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/math-practice-game",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/math-practice-game",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/currency-converter",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/currency-converter",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/currency-converter",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/currency-converter",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/currency-converter",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/currency-converter",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/ft_transcendence",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/ft_transcendence",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/ft_transcendence",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/ft_transcendence",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/ft_transcendence",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/ft_transcendence",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/minishell-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/minishell-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/minishell-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/minishell-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/minishell-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/minishell-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/webserv-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/webserv-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/webserv-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/webserv-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/webserv-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/webserv-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/en/portfolio/inception-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/en/portfolio/inception-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/fr/portfolio/inception-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/fr/portfolio/inception-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    },
+    {
+      "url": "https://devsignpro.com/ar/portfolio/inception-project",
+      "status": 200,
+      "canonical": "https://devsignpro.com/ar/portfolio/inception-project",
+      "canonicalOK": true,
+      "noindex": false,
+      "h1Count": 1
+    }
+  ]
+}

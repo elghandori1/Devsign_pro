@@ -11,32 +11,31 @@ Contact: devsignprofessional@gmail.com | +212 7 78 18 03 06
 
 ## Primary pages
 
-- [Home](https://www.devsignpro.com/en): Overview of services, results, and AI search positioning
-- [About](https://www.devsignpro.com/en/about): Background, skills, education (1337 School / UM6P), and credentials
-- [Services](https://www.devsignpro.com/en/services): Full service catalog with FAQs for AEO
-- [Web Development](https://www.devsignpro.com/en/services/web-development): Custom Next.js websites and landing pages
-- [Technical SEO](https://www.devsignpro.com/en/services/technical-seo): Technical audits, Core Web Vitals, and indexability
-- [E-commerce Development](https://www.devsignpro.com/en/services/ecommerce-development): Custom online stores optimized for SEO and conversions
-- [Business Dashboards](https://www.devsignpro.com/en/services/business-dashboards): Dashboards, automation, and AI integrations
-- [Portfolio](https://www.devsignpro.com/en/portfolio): Selected client and personal projects
-- [Contact](https://www.devsignpro.com/en/contact): Hire / project inquiry
-- [Articles](https://www.devsignpro.com/en/articles): Technical guides and practical insights
+- [Home](https://devsignpro.com/en): Overview of services, results, and AI search positioning
+- [About](https://devsignpro.com/en/about): Background, skills, education (1337 School / UM6P), and credentials
+- [Services](https://devsignpro.com/en/services): Full service catalog with FAQs for AEO
+- [Web Development](https://devsignpro.com/en/services/web-development): Custom Next.js websites and landing pages
+- [Technical SEO](https://devsignpro.com/en/services/technical-seo): Technical audits, Core Web Vitals, and indexability
+- [E-commerce Development](https://devsignpro.com/en/services/ecommerce-development): Custom online stores optimized for SEO and conversions
+- [Business Dashboards](https://devsignpro.com/en/services/business-dashboards): Dashboards, automation, and AI integrations
+- [Portfolio](https://devsignpro.com/en/portfolio): Selected client and personal projects
+- [Contact](https://devsignpro.com/en/contact): Hire / project inquiry
+- [Articles](https://devsignpro.com/en/articles): Technical guides and practical insights
 
 ## Locales
 
-- [English](https://www.devsignpro.com/en)
-- [French](https://www.devsignpro.com/fr)
-- [Arabic](https://www.devsignpro.com/ar)
+- [English](https://devsignpro.com/en)
+- [French](https://devsignpro.com/fr)
+- [Arabic](https://devsignpro.com/ar)
 
 ## Identity & trust
 
 - [LinkedIn](https://ma.linkedin.com/in/mohammed-elghandori-628b19209)
 - [GitHub](https://github.com/elghandori1)
 - [Instagram](https://www.instagram.com/devsign_pro)
-- [CV (PDF)](https://www.devsignpro.com/CV/mohammed-elghandori-full-stack-cv.pdf)
-- [Full LLM context](https://www.devsignpro.com/llms-full.txt): Expanded entity facts, services, and FAQ for AI citation
+- [Full LLM context](https://devsignpro.com/llms-full.txt): Expanded entity facts, services, and FAQ for AI citation
 
 ## Optional
 
-- [Sitemap](https://www.devsignpro.com/sitemap.xml)
-- [Robots](https://www.devsignpro.com/robots.txt)
+- [Sitemap](https://devsignpro.com/sitemap.xml)
+- [Robots](https://devsignpro.com/robots.txt)

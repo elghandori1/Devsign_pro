@@ -745,9 +745,16 @@
         "subtitle": "What I Stand For"
       },
       "hackathons": {
-        "title": "Hackathons & Events",
-        "subtitle": "Where I've competed and won",
+        "title": "Hackathons, Certifications & Events",
+        "subtitle": "Competitions, community events, and professional learning",
         "items": [
+          {
+            "name": "Google Digital Marketing",
+            "location": "Google",
+            "year": "2021",
+            "place": "Certificate earned",
+            "kind": "certificate"
+          },
           {
             "name": "DyslexAI Hackathon",
             "location": "Al Akhawayn University, Ifrane",
@@ -777,12 +784,6 @@
             "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
             "place": "1st Prize"
-          },
-          {
-            "name": "GITEX Africa 2026",
-            "location": "Marrakech, Morocco",
-            "year": "2026",
-            "place": "Visitor"
           }
         ]
       },

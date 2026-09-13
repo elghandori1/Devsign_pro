@@ -745,9 +745,16 @@
         "subtitle": "ما أؤمن به"
       },
       "hackathons": {
-        "title": "الهاكاثونات والفعاليات",
-        "subtitle": "حيث تنافست وحصلت على مراكز متقدمة",
+        "title": "الهاكاثونات والشهادات والفعاليات",
+        "subtitle": "مسابقات وفعاليات مجتمعية وتعلّم مهني",
         "items": [
+          {
+            "name": "التسويق الرقمي من Google",
+            "location": "Google",
+            "year": "2021",
+            "place": "شهادة مكتسبة",
+            "kind": "certificate"
+          },
           {
             "name": "هاكاثون DyslexAI",
             "location": "Al Akhawayn University, Ifrane",
@@ -777,12 +784,6 @@
             "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
             "place": "الجائزة الأولى"
-          },
-          {
-            "name": "GITEX Africa 2026",
-            "location": "Marrakech, Morocco",
-            "year": "2026",
-            "place": "زائر"
           }
         ]
       },

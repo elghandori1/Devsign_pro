@@ -5,12 +5,12 @@ import { Locale, i18n } from "@/i18n-config";
 export function getBaseUrl() {
   const rawBaseUrl =
     process.env.NEXT_PUBLIC_BASE_URL ||
-    process.env.VERCEL_PROJECT_PRODUCTION_URL ||
-    process.env.VERCEL_URL ||
     (process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
       : "https://devsignpro.com");
 
+  // Canonicals must remain on the public domain, including on Vercel previews.
+  // Override explicitly for another public site; never infer it from a deployment URL.
   const normalizedBaseUrl = rawBaseUrl.trim();
   if (
     normalizedBaseUrl.startsWith("http://") ||

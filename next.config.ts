@@ -32,10 +32,25 @@ const iconCacheHeaders = [
 const nextConfig: NextConfig = {
 	poweredByHeader: false,
 	compress: true,
-	// 301 permanent redirects for legacy service slugs that were already
+	// 308 permanent redirects for legacy slugs that were already
 	// crawled/indexed — consolidates all SEO signals on the new URLs.
 	async redirects() {
 		return [
+			// Both retired guides were consolidated into the buying and inspection guide.
+			...["best-laptop-guide-2026", "how-to-check-used-laptop-2026"].flatMap(
+				(slug) => [
+					{
+						source: `/:locale(en|fr|ar)/articles/${slug}`,
+						destination: "/:locale/articles/laptop-buying-guide-2026",
+						permanent: true,
+					},
+					{
+						source: `/articles/${slug}`,
+						destination: `/${i18nDefaultLocale}/articles/laptop-buying-guide-2026`,
+						permanent: true,
+					},
+				],
+			),
 			// Locale-prefixed legacy slugs
 			{
 				source: "/:locale(en|fr|ar)/services/ecommerce",

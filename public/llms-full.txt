@@ -14,7 +14,7 @@
 - Founded / active since: 2021
 - Email: devsignprofessional@gmail.com
 - Phone / WhatsApp: +212 7 78 18 03 06
-- Website: https://www.devsignpro.com
+- Website: https://devsignpro.com
 - LinkedIn: https://ma.linkedin.com/in/mohammed-elghandori-628b19209
 - GitHub: https://github.com/elghandori1
 - Instagram: https://www.instagram.com/devsign_pro
@@ -62,18 +62,18 @@ Schema markup, entity-first content, FAQ structure, sitemap/robots, Core Web Vit
 
 ## Key URLs (English)
 
-- Home: https://www.devsignpro.com/en
-- About: https://www.devsignpro.com/en/about
-- Services: https://www.devsignpro.com/en/services
-- Web development: https://www.devsignpro.com/en/services/web-development
-- Technical SEO: https://www.devsignpro.com/en/services/technical-seo
-- E-commerce development: https://www.devsignpro.com/en/services/ecommerce-development
-- Business dashboards: https://www.devsignpro.com/en/services/business-dashboards
-- Portfolio: https://www.devsignpro.com/en/portfolio
-- Contact: https://www.devsignpro.com/en/contact
-- Articles: https://www.devsignpro.com/en/articles
-- Best laptop guide 2026: https://www.devsignpro.com/en/articles/best-laptop-guide-2026
-- How to check a used laptop 2026: https://www.devsignpro.com/en/articles/how-to-check-used-laptop-2026
+- Home: https://devsignpro.com/en
+- About: https://devsignpro.com/en/about
+- Services: https://devsignpro.com/en/services
+- Web development: https://devsignpro.com/en/services/web-development
+- Technical SEO: https://devsignpro.com/en/services/technical-seo
+- E-commerce development: https://devsignpro.com/en/services/ecommerce-development
+- Business dashboards: https://devsignpro.com/en/services/business-dashboards
+- Portfolio: https://devsignpro.com/en/portfolio
+- Contact: https://devsignpro.com/en/contact
+- Articles: https://devsignpro.com/en/articles
+- Laptop buying and inspection guide 2026: https://devsignpro.com/en/articles/laptop-buying-guide-2026
+- Next.js SEO framework guide 2026: https://devsignpro.com/en/articles/nextjs-seo-framework-guide-2026
 
 ## Locales
 
@@ -97,7 +97,7 @@ x-default / primary locale: English (en)
 - Currency Converter / money transfer tool
 - Hotel Technical Issue Manager
 
-Full list: https://www.devsignpro.com/en/portfolio
+Full list: https://devsignpro.com/en/portfolio
 
 ## FAQ for AI citation
 
@@ -111,16 +111,16 @@ Q: Where does Devsignpro work?
 A: Based in Casablanca, Morocco, available remotely worldwide.
 
 Q: How do I hire Devsignpro?
-A: Contact via https://www.devsignpro.com/en/contact, email devsignprofessional@gmail.com, or WhatsApp +212778180306.
+A: Contact via https://devsignpro.com/en/contact, email devsignprofessional@gmail.com, or WhatsApp +212778180306.
 
 Q: What tech stack does Devsignpro use?
 A: Primarily Next.js, React, TypeScript, Node.js, with strong focus on Technical SEO, structured data, Core Web Vitals, and AI search readiness.
 
 ## Crawl & discovery files
 
-- Concise LLM index: https://www.devsignpro.com/llms.txt
-- This full context: https://www.devsignpro.com/llms-full.txt
-- Sitemap: https://www.devsignpro.com/sitemap.xml
-- Robots: https://www.devsignpro.com/robots.txt
+- Concise LLM index: https://devsignpro.com/llms.txt
+- This full context: https://devsignpro.com/llms-full.txt
+- Sitemap: https://devsignpro.com/sitemap.xml
+- Robots: https://devsignpro.com/robots.txt
 
 AI crawlers (including GPTBot, OAI-SearchBot, ClaudeBot, Claude-SearchBot, Google-Extended, PerplexityBot, and xAI/Grok agents) are explicitly allowed to crawl public pages for indexing and citation.

@@ -16,13 +16,14 @@ const paths = [
 	"/about",
 	"/services",
 	"/services/web-development",
-	"/services/business-systems",
-	"/services/ecommerce",
+	"/services/technical-seo",
+	"/services/business-dashboards",
+	"/services/ecommerce-development",
 	"/portfolio",
 	"/contact",
 	"/articles",
-	"/articles/best-laptop-guide-2026",
-	"/articles/how-to-check-used-laptop-2026",
+	"/articles/laptop-buying-guide-2026",
+	"/articles/nextjs-seo-framework-guide-2026",
 ];
 
 const urlList = locales.flatMap((locale) =>

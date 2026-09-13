@@ -57,19 +57,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		},
 	];
 
-	const lastModified = new Date("2026-08-18");
-	const articleLastModified: Record<string, Date> = {
-		"/articles": new Date("2026-08-19"),
-		"/articles/nextjs-seo-framework-guide-2026": new Date("2026-08-19"),
-		"/articles/laptop-buying-guide-2026": new Date("2026-08-19"),
-	};
+	// Omit lastModified until we track meaningful content changes per page.
+	// A fixed shared date or a build timestamp misrepresents content freshness.
 
 	const staticEntries: MetadataRoute.Sitemap = routes.flatMap(
 		({ path, changeFrequency, priority }) =>
 			i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}${path}`,
 				alternates: localeAlternates(path),
-				lastModified,
 				changeFrequency,
 				priority,
 			})),
@@ -80,7 +75,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}${path}`,
 				alternates: localeAlternates(path),
-				lastModified: articleLastModified[path] ?? lastModified,
 				changeFrequency,
 				priority,
 			})),
@@ -100,7 +94,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			return i18n.locales.map((locale) => ({
 				url: `${baseUrl}/${locale}/portfolio/${slug}`,
 				alternates: localeAlternates(`/portfolio/${slug}`),
-				lastModified,
 				changeFrequency: "monthly" as const,
 				priority: 0.7,
 			}));
