@@ -74,6 +74,12 @@ const replacements = [
   ["articles/how-to-check-used-laptop-2026", "articles/laptop-buying-guide-2026"],
   ["services/ecommerce", "services/ecommerce-development"],
   ["services/business-systems", "services/business-dashboards"],
+  ["projects", "portfolio"],
+  ["blog", "articles"],
+  ["portfolio/math-multiplication-game", "portfolio/math-practice-game"],
+  ["portfolio/money-transfer", "portfolio/currency-converter"],
+  ["portfolio/calucature-utility-tool", "portfolio/currency-converter"],
+  ["portfolio/ecommerce-platform", "portfolio/landing-page-ecommerce"],
 ];
 for (const [oldPath, newPath] of replacements) {
   redirects.push([`/${oldPath}`, `/en/${newPath}`]);

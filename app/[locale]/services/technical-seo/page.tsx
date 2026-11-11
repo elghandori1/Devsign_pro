@@ -519,7 +519,7 @@ export default async function TechnicalSEO({ params }: Props) {
             </header>
             <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto bg-card border border-border rounded-xl p-6 md:p-10">
               <Link
-                href={data.caseStudy.link.href}
+                href={`/${locale}${data.caseStudy.link.href}`}
                 className="block overflow-hidden rounded-xl group"
                 aria-label={`${data.caseStudy.link.label}: ${data.caseStudy.title}`}
               >
@@ -554,7 +554,7 @@ export default async function TechnicalSEO({ params }: Props) {
                 </ul>
 
                 <Link
-                  href={data.caseStudy.link.href}
+                  href={`/${locale}${data.caseStudy.link.href}`}
                   className="inline-flex items-center gap-2 font-medium text-primary hover:underline"
                 >
                   {data.caseStudy.link.label}

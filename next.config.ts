@@ -51,6 +51,30 @@ const nextConfig: NextConfig = {
 					},
 				],
 			),
+			// Retired sections and portfolio slugs that have an equivalent page.
+			// Each gets a locale-prefixed rule and a bare rule (straight to the
+			// default locale) so no URL goes through a redirect chain.
+			// social-campaign and services/social-design have no replacement and
+			// intentionally stay 404.
+			...[
+				["/projects", "/portfolio"],
+				["/blog", "/articles"],
+				["/portfolio/math-multiplication-game", "/portfolio/math-practice-game"],
+				["/portfolio/money-transfer", "/portfolio/currency-converter"],
+				["/portfolio/calucature-utility-tool", "/portfolio/currency-converter"],
+				["/portfolio/ecommerce-platform", "/portfolio/landing-page-ecommerce"],
+			].flatMap(([from, to]) => [
+				{
+					source: `/:locale(en|fr|ar)${from}`,
+					destination: `/:locale${to}`,
+					permanent: true,
+				},
+				{
+					source: from,
+					destination: `/${i18nDefaultLocale}${to}`,
+					permanent: true,
+				},
+			]),
 			// Locale-prefixed legacy slugs
 			{
 				source: "/:locale(en|fr|ar)/services/ecommerce",
