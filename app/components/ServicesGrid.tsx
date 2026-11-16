@@ -1,155 +1,116 @@
-// components/ServicesGrid.tsx
-import Link from "next/link";
 import Image from "next/image";
-import { Locale } from "@/i18n-config";
+import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import type { Locale } from "@/i18n-config";
+
+interface ServiceCard {
+  title: string;
+  description: string;
+  price?: string;
+  link: string;
+  image: string;
+  imageAlt: string;
+  proof: string;
+}
 
 interface SectionData {
   sectionLabel: string;
   heading: string;
   viewAll: string;
   cta: string;
-}
-
-interface ServiceItem {
-  image: string;
-  title: string;
-  title_card: string;
-  description: string;
-  link: string;
-  features: string[];
+  cards: ServiceCard[];
 }
 
 interface ServicesGridProps {
   sectionData: SectionData;
-  servicesData: Record<string, ServiceItem>;
   locale: Locale;
+  headingId?: string;
 }
 
 export default function ServicesGrid({
   sectionData,
-  servicesData,
   locale,
+  headingId = "services-heading",
 }: ServicesGridProps) {
-  const servicesList = Object.values(servicesData).slice(0, 3);
   const isRtl = locale === "ar";
+  const Arrow = isRtl ? ArrowLeft : ArrowRight;
+  const cards = sectionData.cards ?? [];
 
   return (
     <div
-      className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 sm:pt-4 fade-in-section"
+      className="px-4 pb-8 pt-14 sm:px-6 sm:pb-10 sm:pt-16 lg:pt-20"
       dir={isRtl ? "rtl" : "ltr"}
     >
-      <div className="max-w-7xl mx-auto">
-        {/* ── GEO/AEO Paragraph ── */}
-        <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mb-12 sm:mb-14">
-          {sectionData.heading}
-        </p>
+      <div className="mx-auto max-w-7xl">
+        <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
+          <h2
+            id={headingId}
+            className="text-2xl font-bold leading-tight tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+          >
+            {sectionData.sectionLabel}
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-lg">
+            {sectionData.heading}
+          </p>
+        </header>
 
-        {/* ── 3 Main Service Cards ── */}
-        <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3 fade-in-section">
-          {servicesList.map((service, idx) => {
-            return (
-              <article
-                key={service.link}
-                className="group flex flex-col h-full rounded-2xl border border-border/60 bg-card overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20"
-              >
-                <Link
-                  href={`/${locale}${service.link}`}
-                  className="flex flex-col h-full relative z-10 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-2xl"
-                  aria-label={`${
-                    isRtl
-                      ? "تعرف على"
-                      : locale === "fr"
-                        ? "En savoir plus sur"
-                        : "Learn more about"
-                  } ${service.title}`}
-                >
-                  {/* Service Image */}
-                  <div className="relative w-full aspect-16/10 overflow-hidden bg-linear-to-br from-muted to-muted/80">
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      loading={idx === 0 ? "eager" : "lazy"}
-                    />
-                  </div>
-
-                  {/* Content Area */}
-                  <div className="flex flex-col grow p-6 sm:p-8">
-                    <div className="mb-3">
-                      <h3 className="text-xl sm:text-2xl font-bold group-hover:text-primary transition-colors duration-300">
-                        {service.title_card}
-                      </h3>
-                    </div>
-
-                    <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 grow line-clamp-3">
-                      {service.description}
-                    </p>
-
-                    <ul className="flex flex-wrap gap-2 mb-4 lg:mb-6 list-none p-0 m-0">
-                      {service.features.map((feature, fIdx) => (
-                        <li
-                          key={fIdx}
-                          className="px-3 py-1 text-xs font-medium rounded-full bg-primary/5 text-primary border border-primary/20 group-hover:bg-primary/10 group-hover:border-primary/40 transition-all duration-300"
-                        >
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <span className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:text-primary/80 transition-colors duration-300 w-fit">
-                      {sectionData.cta}
-                      <svg
-                        className={`w-4 h-4 shrink-0 arrow-signal ${isRtl ? "rotate-180" : ""}`}
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2.5}
-                          d="M13 6l6 6-6 6M5 12h14"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-
-                  <div
-                    className="absolute inset-x-0 bottom-0 h-1 bg-linear-to-r from-primary/40 via-primary to-primary/40 scale-x-0 group-hover:scale-x-100 duration-500 origin-left rounded-b-full"
-                    style={{
-                      transitionProperty: "transform",
-                      transitionTimingFunction: "ease-out",
-                    }}
-                    aria-hidden="true"
+        <ul className="m-0 grid list-none gap-5 p-0 md:grid-cols-2 xl:grid-cols-4">
+          {cards.map((card) => (
+            <li key={card.link} className="flex">
+              <article className="group relative flex w-full flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/10">
+                <div className="relative aspect-[16/10] overflow-hidden bg-muted">
+                  <Image
+                    src={card.image}
+                    alt={card.imageAlt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 767px) calc(100vw - 2rem), (max-width: 1279px) calc(50vw - 2.5rem), 300px"
                   />
+                  {card.price ? (
+                    <span className="absolute end-3 top-3 rounded-full bg-background/95 px-3 py-1 text-xs font-bold text-foreground shadow-md">
+                      {card.price}
+                    </span>
+                  ) : null}
+                </div>
 
-                  <div
-                    className="absolute top-0 right-0 w-16 h-16 overflow-hidden pointer-events-none"
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <p className="text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-primary">
+                    {card.proof}
+                  </p>
+
+                  <h3 className="mt-2 text-lg font-bold leading-snug tracking-tight text-foreground sm:text-xl">
+                    <Link
+                      href={`/${locale}${card.link}`}
+                      className="after:absolute after:inset-0 after:rounded-2xl focus:outline-none focus-visible:after:ring-2 focus-visible:after:ring-primary focus-visible:after:ring-offset-2 focus-visible:after:ring-offset-background"
+                    >
+                      {card.title}
+                    </Link>
+                  </h3>
+
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {card.description}
+                  </p>
+
+                  <span
+                    className="mt-auto inline-flex items-center gap-2 border-t border-border pt-4 text-sm font-semibold text-primary"
                     aria-hidden="true"
                   >
-                    <div
-                      className="absolute top-0 right-0 w-20 h-20 bg-linear-to-bl from-primary/15 to-transparent rotate-45 translate-x-8 -translate-y-8 group-hover:translate-x-6 group-hover:-translate-y-6 duration-300"
-                      style={{
-                        transitionProperty: "transform",
-                        transitionTimingFunction: "ease-out",
-                      }}
+                    {sectionData.cta}
+                    <Arrow
+                      size={16}
+                      className="transition-transform duration-300 group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
                     />
-                  </div>
-                </Link>
+                  </span>
+                </div>
               </article>
-            );
-          })}
-        </div>
+            </li>
+          ))}
+        </ul>
 
-        {/* ── View All Services Button ── */}
-        <div className="mt-10 sm:mt-12 flex justify-center">
+        <div className="mt-10 flex justify-center sm:mt-12">
           <Link
             href={`/${locale}/services`}
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm sm:text-base bg-primary text-primary-foreground rounded-full font-semibold transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 shadow-md shadow-primary/20"
-            aria-label={sectionData.viewAll}
+            className="inline-flex min-h-11 items-center justify-center rounded-xl border border-primary/25 bg-primary/5 px-7 py-3 text-sm font-semibold text-primary transition-colors hover:bg-primary hover:text-primary-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:text-base"
           >
             {sectionData.viewAll}
           </Link>

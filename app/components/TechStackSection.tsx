@@ -1,8 +1,19 @@
-// components/TechStackSection.tsx
+import {
+  SiExpress,
+  SiNextdotjs,
+  SiReact,
+  SiShopify,
+  SiWordpress,
+} from "react-icons/si";
+import type { IconType } from "react-icons";
+import { Locale } from "@/i18n-config";
+
 interface TechStackItem {
   name: string;
   use: string;
   why: string;
+  href?: string;
+  linkLabel?: string;
 }
 
 interface TechStackData {
@@ -14,36 +25,77 @@ interface TechStackData {
 
 interface TechStackSectionProps {
   data: TechStackData;
-  headingId: string;
+  headingId?: string;
+  locale: Locale;
 }
+
+const TECH_ICONS: Record<string, IconType> = {
+  "Next.js": SiNextdotjs,
+  React: SiReact,
+  "Express.js": SiExpress,
+  Shopify: SiShopify,
+  WordPress: SiWordpress,
+};
 
 export default function TechStackSection({
   data,
+  headingId = "tech-heading",
 }: TechStackSectionProps) {
   return (
-    <div className="px-4 sm:px-6 pb-4 sm:pb-6 pt-2 sm:pt-4">
-      <div className="max-w-7xl mx-auto">
-          <p className="text-center mb-8 sm:mb-10 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+    <div
+      className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20"
+      dir="ltr"
+    >
+      <div className="mx-auto max-w-7xl">
+        <header className="mx-auto mb-8 max-w-4xl text-center sm:mb-10">
+          <h2
+            id={headingId}
+            className="text-2xl font-bold leading-tight tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+          >
+            {data.title}
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
             {data.subtitle}
           </p>
-        <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4 text-start">
-          {data.items.map((item) => (
-            <div
-              key={item.name}
-              className="rounded-2xl border border-border/60 bg-card p-5 sm:p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 hover:border-primary/20"
-            >
-              <h3 className="text-lg font-bold text-primary">{item.name}</h3>
-              <p className="mt-1 mb-2 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
-                {item.use}
-              </p>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {item.why}
-              </p>
-            </div>
-          ))}
-        </div>
+        </header>
 
-        <p className="text-xs sm:text-sm text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mt-8 sm:mt-10">
+        <ul className="m-0 grid list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-5">
+          {data.items.map((item) => {
+            const Icon = TECH_ICONS[item.name];
+
+            return (
+              <li key={item.name} className="flex">
+                <article className="flex w-full flex-col rounded-2xl border border-border bg-card p-4 transition duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-md sm:p-5">
+                  <div className="flex items-center gap-3">
+                    {Icon ? (
+                      <span
+                        className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"
+                        aria-hidden="true"
+                      >
+                        <Icon className="size-5" />
+                      </span>
+                    ) : null}
+                    <div className="min-w-0">
+                      <h3 className="text-base font-bold leading-tight text-foreground">
+                        {item.name}
+                      </h3>
+                      <p className="mt-0.5 text-xs font-medium text-primary">
+                        {item.use}
+                      </p>
+                    </div>
+                  </div>
+
+                  <p className="mt-3 text-[0.8125rem] leading-relaxed text-muted-foreground">
+                    {item.why}
+                  </p>
+
+                </article>
+              </li>
+            );
+          })}
+        </ul>
+
+        <p className="mx-auto mt-6 max-w-3xl text-center text-xs leading-relaxed text-muted-foreground sm:mt-8 sm:text-sm">
           {data.extra}
         </p>
       </div>

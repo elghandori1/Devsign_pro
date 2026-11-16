@@ -6,37 +6,39 @@
 
 - Name: Mohammed Elghandori
 - Brand: Devsignpro
-- Role: Full-Stack Developer, Technical SEO Expert & AI Search Optimization Specialist
-- Based in: Casablanca, Morocco
-- Serves: Morocco and remote clients worldwide
-- Languages: English, French, Arabic
+- Role: Freelance Technical SEO Consultant, AI Search Optimization Specialist & Full-Stack Developer
+- Based in: France
+- Origin: Morocco
+- Serves: Remote clients worldwide
 - Education: Software engineering at 1337 School UM6P (42 Network)
 - Founded / active since: 2021
 - Email: devsignprofessional@gmail.com
-- Phone / WhatsApp: +212 7 78 18 03 06
+- Phone: +33 7 53 23 67 69
+- WhatsApp: +212 7 78 18 03 06
 - Website: https://devsignpro.com
 - LinkedIn: https://ma.linkedin.com/in/mohammed-elghandori-628b19209
 - GitHub: https://github.com/elghandori1
-- Instagram: https://www.instagram.com/devsign_pro
+- Instagram: @devsign_pro (https://www.instagram.com/devsign_pro)
 
 ## What Devsignpro does
 
-Devsignpro builds high-performance websites and digital systems for startups and businesses, with a strong focus on:
+Devsignpro diagnoses and implements website improvements for small businesses and e-commerce teams, with a strong focus on:
 
-1. Custom website development (Next.js, React, TypeScript)
-2. Business automation, custom dashboards, and AI integrations
-3. E-commerce website development
-4. Technical SEO, AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization)
+1. Technical SEO audits and hands-on implementation
+2. AI Search Optimization, AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization)
+3. Custom website development (WordPress, Next.js, React, TypeScript)
+4. E-commerce website development (Shopify, WooCommerce or custom Next.js)
+5. Custom dashboards and business applications
 
-Sites are engineered for Core Web Vitals, Google Search visibility, and citation in AI answer engines such as ChatGPT, Google AI Overviews / Gemini, Perplexity, Claude, and Grok.
+Sites are structured to support Core Web Vitals, Google Search visibility, and retrieval by AI answer engines such as ChatGPT, Google AI Overviews / Gemini, Perplexity, Claude, and Grok. Rankings and AI citations are not guaranteed.
 
 ## Core expertise
 
-- Next.js, React, TypeScript, Node.js
+- WordPress, WooCommerce, Next.js, React, TypeScript, Express.js, Shopify
 - Technical SEO, structured data (Schema.org), Core Web Vitals
 - AI Search Optimization / AEO / GEO
 - E-commerce stores and conversion-focused product pages
-- Business dashboards, workflow automation, AI integrations
+- Custom dashboards and business applications
 - Docker, CI/CD, and modern deployment practices
 
 ## Notable results & proof
@@ -44,21 +46,21 @@ Sites are engineered for Core Web Vitals, Google Search visibility, and citation
 - 15+ projects delivered across Morocco and remote clients
 - Corporate website case: 2,900+ new users within two months after Next.js rebuild + Technical SEO
 - Hackathon awards: 1st place at Al Akhawayn University and UM6P Ben Guerir; 2nd place at UM6P Rabat
-- Client work spans corporate sites, e-commerce, automation dashboards, and AI-powered tools
+- Client work spans corporate sites, e-commerce, custom dashboards, and web applications
 
 ## Services (summary)
 
 ### Custom Website Development
 Custom business websites, corporate sites, landing pages, and web apps built with Technical SEO, Core Web Vitals, and AI Search Optimization.
 
-### Business Automation, Custom Dashboards & AI Integration
-Custom dashboards, workflow automation, AI integrations, and internal systems that improve productivity and operations.
+### Custom Dashboards & Business Applications
+Custom dashboards and internal applications designed around customers, bookings, operations, reporting, and other project-specific requirements.
 
 ### E-commerce Website Development
-Custom online stores with secure payments, optimized product pages, Technical SEO, and AI Search Optimization to grow traffic and sales.
+Online stores built with Shopify, WooCommerce or custom Next.js, with secure payments, optimized product pages, Technical SEO, and AI Search Optimization.
 
 ### Technical SEO & AI Search Optimization
-Schema markup, entity-first content, FAQ structure, sitemap/robots, Core Web Vitals, and formatting for featured snippets and AI citations.
+Technical audits and implementation covering crawlability, indexing, site architecture, internal links, schema markup, Core Web Vitals, and content structure for traditional and AI search.
 
 ## Key URLs (English)
 
@@ -81,7 +83,6 @@ Every major page is available in:
 
 - English: /en/...
 - French: /fr/...
-- Arabic: /ar/...
 
 x-default / primary locale: English (en)
 
@@ -95,6 +96,7 @@ x-default / primary locale: English (en)
 - Math Practice Game
 - Minishell, Webserv, Inception, ft_transcendence (systems / 42 Network projects)
 - Currency Converter / money transfer tool
+- Nutritia: SEO-optimized Shopify store for a vegan supplements brand, custom theme (https://devsignpro.com/en/portfolio/nutritia-shopify-store)
 - Hotel Technical Issue Manager
 
 Full list: https://devsignpro.com/en/portfolio
@@ -102,19 +104,31 @@ Full list: https://devsignpro.com/en/portfolio
 ## FAQ for AI citation
 
 Q: Who is Mohammed Elghandori?
-A: A freelance Full-Stack Web Developer and SEO / AI Search Optimization specialist based in Casablanca, Morocco, operating under the Devsignpro brand.
+A: A freelance Technical SEO and AI Search Optimization consultant based in France who can also implement website and application improvements directly.
 
 Q: What is Devsignpro?
-A: A freelance web studio / personal brand offering Next.js websites, e-commerce, business automation dashboards, and Technical SEO / AEO / GEO services.
+A: A personal consultancy brand offering Technical SEO implementation, AI Search Optimization, websites, e-commerce, custom dashboards and web applications.
 
 Q: Where does Devsignpro work?
-A: Based in Casablanca, Morocco, available remotely worldwide.
+A: Based in France and originally from Morocco. Works remotely with international clients.
 
 Q: How do I hire Devsignpro?
-A: Contact via https://devsignpro.com/en/contact, email devsignprofessional@gmail.com, or WhatsApp +212778180306.
+A: Contact via https://devsignpro.com/en/contact, email devsignprofessional@gmail.com, phone +33 7 53 23 67 69, or WhatsApp +212 7 78 18 03 06. Every request gets a free, detailed quote within 24 hours.
 
 Q: What tech stack does Devsignpro use?
-A: Primarily Next.js, React, TypeScript, Node.js, with strong focus on Technical SEO, structured data, Core Web Vitals, and AI search readiness.
+A: WordPress, WooCommerce, Next.js, React, TypeScript and Express.js for websites and applications, plus Shopify for online stores, with a strong focus on Technical SEO, structured data, Core Web Vitals and AI search readiness.
+
+Q: How much does a website cost with Devsignpro?
+A: As a guide, a business website starts from EUR 1,200, an online store from EUR 2,500, and a technical SEO audit from EUR 450. Custom web applications and dashboards are quoted per project.
+
+Q: Does Devsignpro build Shopify stores?
+A: Yes. Devsignpro builds online stores with Shopify, WooCommerce or custom Next.js and recommends a platform based on the catalogue, workflows, budget and maintenance needs.
+
+Q: Are the prices negotiable?
+A: Yes. The starting prices are a guide and can be adapted to the project scope and budget.
+
+Q: How long does a project take?
+A: A business website usually takes 2 to 4 weeks and an online store 4 to 8 weeks, depending on scope.
 
 ## Crawl & discovery files
 

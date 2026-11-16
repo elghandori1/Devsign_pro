@@ -1,6 +1,6 @@
 // app/[locale]/layout.tsx
 import type { Metadata, Viewport } from "next";
-import { Roboto, Almarai } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Script from "next/script";
 import "@/app/globals.css";
 
@@ -16,13 +16,6 @@ const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
   display: "swap",
   variable: "--font-roboto",
-});
-
-const almarai = Almarai({
-  subsets: ["arabic"],
-  weight: ["300", "400", "700", "800"],
-  display: "swap",
-  variable: "--font-almarai",
 });
 
 export const viewport: Viewport = {
@@ -137,20 +130,18 @@ export default async function RootLayout({
   const dict = await getDictionary(locale as Locale);
   const footer = dict?.footer ?? null;
   const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-  const fontClassName = locale === "ar" ? almarai.className : roboto.className;
-  const dir = locale === "ar" ? "rtl" : "ltr";
   const baseUrl = getBaseUrl();
   const layoutSeo = dict.SEO_content.layout_page.generateMetadata;
   return (
-    <html lang={locale} dir={dir} suppressHydrationWarning>
-      <body className={`${fontClassName} antialiased`}>
+    <html lang={localeToBcp47(locale)} dir="ltr" suppressHydrationWarning>
+      <body className={`${roboto.className} antialiased`}>
         {gaMeasurementId ? (
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
-            <Script id="google-analytics" strategy="afterInteractive">
+            <Script id="google-analytics" strategy="lazyOnload">
               {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}

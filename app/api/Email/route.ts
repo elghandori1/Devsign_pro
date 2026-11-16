@@ -8,6 +8,9 @@ let lastRequestTime = 0;
 export async function POST(request: Request) {
   try {
     const { email, projectType, message, company, formTime } = await request.json();
+    const normalizedEmail = String(email ?? "").trim();
+    const normalizedProjectType = String(projectType ?? "").trim();
+    const normalizedMessage = String(message ?? "").trim();
 
     if (company) {
       return NextResponse.json({ success: false }, { status: 400 });
@@ -30,15 +33,24 @@ export async function POST(request: Request) {
 
     const emailRegex = /^[A-Za-z](?!.*\.\.)[A-Za-z0-9._%+-]*@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 
-    if (!email || !emailRegex.test(email)) {
+    if (!normalizedEmail || normalizedEmail.length > 254 || !emailRegex.test(normalizedEmail)) {
       return NextResponse.json({ success: false, error: "Invalid email address" }, { status: 400 });
     }
 
-    if (!projectType) {
+    const allowedProjectTypes = new Set([
+      "seo",
+      "website",
+      "ecommerce",
+      "dashboard",
+      "collaboration",
+      "other",
+    ]);
+
+    if (!allowedProjectTypes.has(normalizedProjectType)) {
       return NextResponse.json({ success: false, error: "Project type is required" }, { status: 400 });
     }
 
-    if (!message || String(message).trim().length < 10) {
+    if (normalizedMessage.length < 10 || normalizedMessage.length > 5000) {
       return NextResponse.json(
         { success: false, error: "Message must be at least 10 characters" },
         { status: 400 },
@@ -63,14 +75,15 @@ export async function POST(request: Request) {
     await transporter.sendMail({
       from: `"Website Contact" <${process.env.EMAIL_USER}>`,
       to: process.env.EMAIL_USER,
-      replyTo: email,
-      subject: `New Project: ${projectType}`,
-      html: `
-        <h2>New Contact Message</h2>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Project:</strong> ${projectType}</p>
-        <p><strong>Message: </strong>${String(message).replace(/\n/g, "<br />")}</p>
-      `,
+      replyTo: normalizedEmail,
+      subject: `New Project: ${normalizedProjectType}`,
+      text: [
+        "New Contact Message",
+        `Email: ${normalizedEmail}`,
+        `Project: ${normalizedProjectType}`,
+        "",
+        normalizedMessage,
+      ].join("\n"),
     });
 
     return NextResponse.json({ success: true, message: "Email sent successfully" });

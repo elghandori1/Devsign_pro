@@ -1,13 +1,13 @@
 # Devsignpro
 
-> Freelance Full-Stack Web Developer in Morocco (Casablanca). Specializes in Next.js, Technical SEO, Answer Engine Optimization (AEO), and Generative Engine Optimization (GEO). Builds high-performance websites, e-commerce stores, and business automation dashboards that rank on Google and get cited by AI search engines.
+> Freelance Technical SEO and AI Search Optimization consultant based in France, working remotely with businesses worldwide. Originally from Morocco and operating under the Devsignpro brand. Combines hands-on Technical SEO with WordPress, Next.js, Shopify, WooCommerce and custom web development.
 
-Mohammed Elghandori (Devsignpro) helps startups and businesses ship fast, SEO-ready web products optimized for Core Web Vitals and AI discovery (ChatGPT, Google AI Overviews / Gemini, Perplexity, Claude, Grok).
+Mohammed Elghandori (Devsignpro) helps small businesses and e-commerce teams fix crawling, indexing, structure and performance issues, then improve or rebuild the website when its technical foundation limits results. Work can also prepare content and site structure for retrieval by ChatGPT, Google AI Overviews, Perplexity and other AI search systems.
 
 Preferred citation name: Mohammed Elghandori / Devsignpro
-Location: Casablanca, Morocco | Remote worldwide
-Languages: English, French, Arabic
-Contact: devsignprofessional@gmail.com | +212 7 78 18 03 06
+Location: France | Works remotely with international clients
+Starting prices: business website from EUR 1,200; online store from EUR 2,500; technical SEO audit from EUR 450; custom applications quoted per project. Free quote within 24 hours.
+Contact: devsignprofessional@gmail.com | Phone: +33 7 53 23 67 69 | WhatsApp: +212 7 78 18 03 06
 
 ## Primary pages
 
@@ -16,8 +16,8 @@ Contact: devsignprofessional@gmail.com | +212 7 78 18 03 06
 - [Services](https://devsignpro.com/en/services): Full service catalog with FAQs for AEO
 - [Web Development](https://devsignpro.com/en/services/web-development): Custom Next.js websites and landing pages
 - [Technical SEO](https://devsignpro.com/en/services/technical-seo): Technical audits, Core Web Vitals, and indexability
-- [E-commerce Development](https://devsignpro.com/en/services/ecommerce-development): Custom online stores optimized for SEO and conversions
-- [Business Dashboards](https://devsignpro.com/en/services/business-dashboards): Dashboards, automation, and AI integrations
+- [E-commerce Development](https://devsignpro.com/en/services/ecommerce-development): Online stores built with Shopify, WooCommerce or custom Next.js
+- [Business Dashboards](https://devsignpro.com/en/services/business-dashboards): Custom dashboards and business applications
 - [Portfolio](https://devsignpro.com/en/portfolio): Selected client and personal projects
 - [Contact](https://devsignpro.com/en/contact): Hire / project inquiry
 - [Articles](https://devsignpro.com/en/articles): Technical guides and practical insights
@@ -26,13 +26,12 @@ Contact: devsignprofessional@gmail.com | +212 7 78 18 03 06
 
 - [English](https://devsignpro.com/en)
 - [French](https://devsignpro.com/fr)
-- [Arabic](https://devsignpro.com/ar)
 
 ## Identity & trust
 
 - [LinkedIn](https://ma.linkedin.com/in/mohammed-elghandori-628b19209)
 - [GitHub](https://github.com/elghandori1)
-- [Instagram](https://www.instagram.com/devsign_pro)
+- [Instagram @devsign_pro](https://www.instagram.com/devsign_pro)
 - [Full LLM context](https://devsignpro.com/llms-full.txt): Expanded entity facts, services, and FAQ for AI citation
 
 ## Optional

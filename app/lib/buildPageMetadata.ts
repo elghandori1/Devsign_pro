@@ -1,6 +1,6 @@
 // lib/buildPageMetadata.ts
 import type { Metadata } from "next";
-import { Locale, i18n } from "@/i18n-config";
+import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 
 export function getBaseUrl() {
   const rawBaseUrl =
@@ -41,11 +41,11 @@ export function buildPageMetadata({
   type, 
 }: SEOProps): Metadata {
   const baseUrl = getBaseUrl();
-  const ogLocale = locale === "en" ? "en_US" : locale === "ar" ? "ar_MA" : "fr_MA";
+  const ogLocale = locale === "en" ? "en_US" : "fr_FR";
   const ogLocaleAlternate = i18n.locales
     .filter((currentLocale) => currentLocale !== locale)
     .map((currentLocale) =>
-      currentLocale === "en" ? "en_US" : currentLocale === "ar" ? "ar_MA" : "fr_MA",
+      currentLocale === "en" ? "en_US" : "fr_FR",
     );
   const safeRoute = route ? (route.startsWith("/") ? route : `/${route}`) : "";
   const currentUrl = `${baseUrl}/${locale}${safeRoute}`;
@@ -64,9 +64,8 @@ export function buildPageMetadata({
     alternates: {
       canonical: currentUrl,
       languages: {
-        en: `${baseUrl}/en${safeRoute}`,
-        fr: `${baseUrl}/fr${safeRoute}`,
-        ar: `${baseUrl}/ar${safeRoute}`,
+        [localeToBcp47("en")]: `${baseUrl}/en${safeRoute}`,
+        [localeToBcp47("fr")]: `${baseUrl}/fr${safeRoute}`,
         "x-default": defaultUrl,
       },
     },

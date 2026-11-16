@@ -15,7 +15,7 @@ export type ArticleSchemaInput = {
   datePublished: string;
   dateModified?: string;
   section?: string;
-  /** BCP 47 code, e.g. "en-US" */
+  /** BCP 47 code, e.g. "en" */
   langCode: string;
   wordCount?: number;
 };

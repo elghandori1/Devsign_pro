@@ -112,7 +112,7 @@ export default function Footer({ footer, locale }: FooterProps) {
                 <li>
                   <a
                     href={`mailto:${infos.email}`}
-                    className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="flex min-h-11 items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     <MdEmail
                       size={16}
@@ -125,8 +125,8 @@ export default function Footer({ footer, locale }: FooterProps) {
 
                 <li>
                   <a
-                    href={`tel:${infos.phoneNumberLink.replace(/\s/g, "")}`}
-                    className="flex items-center gap-2.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                    href={infos.phoneNumberLink}
+                    className="flex min-h-11 items-center gap-2.5 text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     <MdPhone
                       size={16}
@@ -162,7 +162,7 @@ export default function Footer({ footer, locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="inline-flex min-h-11 min-w-11 items-center text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.label}
                   </Link>
@@ -184,7 +184,7 @@ export default function Footer({ footer, locale }: FooterProps) {
                 <li key={link.href}>
                   <Link
                     href={`/${locale}${link.href}`}
-                    className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    className="inline-flex min-h-11 items-center text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
                     {link.label}
                   </Link>
@@ -207,7 +207,7 @@ export default function Footer({ footer, locale }: FooterProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={label}
-                      className={`w-10 h-10 rounded-lg ${bg} flex items-center justify-center text-white hover:opacity-80 transition-opacity`}
+                      className={`size-11 rounded-lg ${bg} flex items-center justify-center text-white hover:opacity-80 transition-opacity`}
                     >
                       <Icon size={16} aria-hidden="true" />
                     </a>
@@ -228,7 +228,7 @@ export default function Footer({ footer, locale }: FooterProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={label}
-                      className={`w-10 h-10 rounded-lg ${bg} flex items-center justify-center text-white hover:opacity-80 transition-opacity`}
+                      className={`size-11 rounded-lg ${bg} flex items-center justify-center text-white hover:opacity-80 transition-opacity`}
                     >
                       <Icon size={16} aria-hidden="true" />
                     </a>
@@ -253,14 +253,14 @@ export default function Footer({ footer, locale }: FooterProps) {
                   {link.href.endsWith(".xml") ? (
                     <a
                       href={link.href}
-                      className="text-xs sm:text-sm text-white hover:text-gray-200 transition-colors"
+                      className="inline-flex min-h-11 items-center text-xs text-white transition-colors hover:text-gray-200 sm:text-sm"
                     >
                       {link.label}
                     </a>
                   ) : (
                     <Link
                       href={`/${locale}${link.href}`}
-                      className="text-xs sm:text-sm text-white hover:text-gray-200 transition-colors"
+                      className="inline-flex min-h-11 items-center text-xs text-white transition-colors hover:text-gray-200 sm:text-sm"
                     >
                       {link.label}
                     </Link>

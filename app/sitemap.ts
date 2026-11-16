@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { i18n } from "@/i18n-config";
+import { i18n, localeToBcp47 } from "@/i18n-config";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { getDictionary } from "@/app/lib/dictionary";
 import { flattenPortfolioProjects, hrefToPortfolioSlug } from "@/app/lib/portfolio";
@@ -8,9 +8,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = getBaseUrl();
 	const localeAlternates = (path: string) => ({
 		languages: {
-			en: `${baseUrl}/en${path}`,
-			fr: `${baseUrl}/fr${path}`,
-			ar: `${baseUrl}/ar${path}`,
+			[localeToBcp47("en")]: `${baseUrl}/en${path}`,
+			[localeToBcp47("fr")]: `${baseUrl}/fr${path}`,
 			"x-default": `${baseUrl}/${i18n.defaultLocale}${path}`,
 		},
 	});

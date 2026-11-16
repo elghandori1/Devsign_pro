@@ -1,5 +1,7 @@
 // components/PortfolioSchema.tsx
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
+import { localeToBcp47, type Locale } from "@/i18n-config";
 
 interface Project {
   title: string;
@@ -10,7 +12,7 @@ interface Project {
 }
 
 interface PortfolioSchemaProps {
-  locale: string;
+  locale: Locale;
   title: string;
   description: string;
   projects: Project[];
@@ -31,7 +33,7 @@ export default function PortfolioSchema({
     "url": `${baseUrl}/${locale}/portfolio`,
     "name": title,
     "description": description,
-    "inLanguage": locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
+    "inLanguage": localeToBcp47(locale),
     "isPartOf": { "@id": `${baseUrl}/#website` },
     "about": { "@id": `${baseUrl}/#person` },
     "mainEntity": {
@@ -46,7 +48,9 @@ export default function PortfolioSchema({
           "@type": "CreativeWork",
           "name": project.title,
           "url": `${baseUrl}/${locale}/portfolio/${project.slug}`,
-          "image": project.image,
+          "image": project.image.startsWith("http")
+            ? project.image
+            : `${baseUrl}${project.image}`,
           "author": { "@id": `${baseUrl}/#person` }
         }
       }))
@@ -60,7 +64,7 @@ export default function PortfolioSchema({
       {
         "@type": "ListItem",
         "position": 1,
-        "name": locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        "name": locale === "fr" ? "Accueil" : "Home",
         "item": `${baseUrl}/${locale}`,
       },
       {
@@ -76,11 +80,11 @@ export default function PortfolioSchema({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(collectionSchema) }}
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(breadcrumbSchema) }}
       />
     </>
   );

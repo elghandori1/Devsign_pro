@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 // Run against a production build, or pass the deployed origin after release.
 const origin = new URL(process.argv[2] || "http://localhost:3000").origin;
 const canonicalOrigin = new URL(process.argv[3] || "https://devsignpro.com").origin;
-const locales = ["en", "fr", "ar"];
+const locales = ["en", "fr"];
+const hreflangByLocale = { en: "en", fr: "fr-FR" };
 const failures = [];
 let checks = 0;
 
@@ -37,6 +38,7 @@ const xml = await sitemapResponse.text();
 const urls = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(([, url]) => url);
 assert.ok(urls.length > 0, "Sitemap must contain pages");
 assert.equal(new Set(urls).size, urls.length, "Sitemap must not contain duplicates");
+assert.ok(!urls.some((url) => new URL(url).pathname === "/ar" || new URL(url).pathname.startsWith("/ar/")), "Retired Arabic URLs must not be in the sitemap");
 
 await check("robots.txt", async () => {
   const response = await get("/robots.txt");
@@ -59,10 +61,12 @@ for (const url of urls) {
     assert.equal(canonicals.length, 1, "Expected exactly one canonical");
     assert.equal(canonicals[0].href, url, "Incorrect canonical");
     assert.ok(!tags.some((tag) => /^(robots|googlebot)$/i.test(tag.name || "") && /noindex/i.test(tag.content || "")));
-    const suffix = page.pathname.replace(/^\/(en|fr|ar)(?=\/|$)/, "");
+    const suffix = page.pathname.replace(/^\/(en|fr)(?=\/|$)/, "");
     for (const locale of [...locales, "x-default"]) {
-      const expected = `${canonicalOrigin}/${locale === "x-default" ? "en" : locale}${suffix}`;
-      assert.ok(tags.some((tag) => tag.hreflang === locale && tag.href === expected), `Missing language alternate: ${locale}`);
+      const hrefLocale = locale === "x-default" ? "en" : locale;
+      const hreflang = locale === "x-default" ? "x-default" : hreflangByLocale[locale];
+      const expected = `${canonicalOrigin}/${hrefLocale}${suffix}`;
+      assert.ok(tags.some((tag) => tag.hreflang === hreflang && tag.href === expected), `Missing language alternate: ${hreflang}`);
       assert.ok(urls.includes(expected), "Language alternate absent from sitemap");
     }
   });
@@ -84,6 +88,17 @@ const replacements = [
 for (const [oldPath, newPath] of replacements) {
   redirects.push([`/${oldPath}`, `/en/${newPath}`]);
   for (const locale of locales) redirects.push([`/${locale}/${oldPath}`, `/${locale}/${newPath}`]);
+  redirects.push([`/ar/${oldPath}`, `/en/${newPath}`]);
+}
+
+// Every retired Arabic URL must resolve directly to the equivalent English
+// canonical while preserving query parameters. Derive this from the sitemap so
+// new public routes automatically receive migration coverage.
+for (const url of urls) {
+  const page = new URL(url);
+  if (!page.pathname.startsWith("/en")) continue;
+  const suffix = page.pathname.slice(3);
+  redirects.push([`/ar${suffix}`, page.pathname]);
 }
 for (const [source, target] of redirects) {
   await check(`Redirect ${source}`, async () => {

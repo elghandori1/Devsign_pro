@@ -37,10 +37,9 @@ export default function ContactSection({
       id: "whatsapp",
       href:
         infos.whatsappLink ||
-        `https://wa.me/${infos.phoneNumber?.replace(/\D/g, "")}`,
+        `https://wa.me/${infos.whatsappNumber?.replace(/\D/g, "")}`,
       icon: BsWhatsapp,
       title: translations.whatsapp,
-      detail: infos.phoneNumber,
       cta: translations.whatsappCta,
       colors: {
         bg: "bg-green-600",
@@ -55,7 +54,6 @@ export default function ContactSection({
       href: infos.emailHref_personal || `mailto:${infos.email_personal}`,
       icon: MdEmail,
       title: translations.email,
-      detail: infos.email_personal,
       cta: translations.emailCta,
       colors: {
         bg: "bg-orange-600",
@@ -70,7 +68,6 @@ export default function ContactSection({
       href: infos.social?.linkedin || "#",
       icon: BsLinkedin,
       title: translations.linkedin,
-      detail: infos.linkedinName || "LinkedIn",
       cta: translations.linkedinCta,
       colors: {
         bg: "bg-[#0A66C2]",
@@ -85,7 +82,6 @@ export default function ContactSection({
       href: infos.social?.instagram || "#",
       icon: FaInstagram,
       title: translations.brandName,
-      detail: infos.instagramHandle,
       cta: translations.instagramCta,
       colors: {
         bg: "bg-gradient-to-tr from-[#f9a825] via-[#f06292] to-[#7c4dff]",
@@ -121,7 +117,7 @@ export default function ContactSection({
                   href={channel.href}
                   {...linkProps}
                   className={`group flex flex-col items-center text-center gap-4 p-6 bg-card border ${channel.colors.border} rounded-2xl hover:shadow-md ${channel.colors.hoverBorder} transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2`}
-                  aria-label={`${channel.cta}: ${channel.detail}`}
+                  aria-label={`${channel.title}: ${channel.cta}`}
                 >
                   {/* Icon */}
                   <div
@@ -131,15 +127,9 @@ export default function ContactSection({
                     <Icon size={28} />
                   </div>
 
-                  {/* Info */}
-                  <div className="min-w-0 w-full">
-                    <p className="font-semibold text-base text-foreground">
-                      {channel.title}
-                    </p>
-                    <p className="text-sm text-muted-foreground mt-1 truncate px-2">
-                      {channel.detail}
-                    </p>
-                  </div>
+                  <p className="font-semibold text-base text-foreground">
+                    {channel.title}
+                  </p>
 
                   {/* CTA */}
                   <span

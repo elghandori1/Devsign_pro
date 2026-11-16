@@ -257,7 +257,7 @@ export default async function NextjsSeoFrameworkGuide2026({ params }: Props) {
   // Structured data
   const baseUrl = getBaseUrl();
   const langCode =
-    locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
+    locale === "en" ? "en" : locale === "ar" ? "ar-MA" : "fr-FR";
 
   const articleSchema = buildArticleSchema({
     type: "TechArticle",

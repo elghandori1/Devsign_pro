@@ -9,19 +9,18 @@
   "homepage": {
     "hero": {
       "availability": "Disponible pour de nouveaux projets",
-      "title_line1": "Développeur Web",
-      "title_highlight": "et Expert SEO basé au Maroc",
-      "description": "Je suis un Développeur Web basé au Maroc, spécialisé en SEO et en optimisation pour la recherche IA. Je crée des sites web rapides, modernes et optimisés pour les moteurs de recherche, des boutiques e-commerce et des applications web sur mesure, conçus pour la performance, les Core Web Vitals et la visibilité en ligne.",
-      "description_GEO": "J'optimise le contenu et les données structurées pour mieux se classer sur Google et être découverts par ChatGPT, Google AI Overviews, Perplexity et les autres moteurs de recherche IA — générant une visibilité réelle et une croissance durable.",
-      "cta_primary": "Démarrer un projet",
-      "cta_secondary": "Voir mes réalisations",
+      "title_line1": "Consultant SEO freelance en France",
+      "title_highlight": "pour sites web et boutiques en ligne",
+      "description": "J’identifie et corrige les problèmes qui empêchent votre site ou votre boutique en ligne d’être trouvé par vos futurs clients. J’améliore sa visibilité, sa rapidité et son contenu, et je peux aussi optimiser ou reconstruire le site lorsque sa base actuelle limite les résultats.",
+      "description_GEO": "Votre site est également préparé pour être compris et cité dans les réponses de ChatGPT, Google AI Overviews et Perplexity.",
+      "cta_primary": "Demander un devis gratuit",
+      "cta_secondary": "Découvrir mes services SEO",
+      "supporting_promise": "Réponse sous 24h · Pour les TPE, PME et e-commerçants en France",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Développeur Full-Stack & Spécialiste SEO",
+      "profile_role": "Consultant SEO technique, GEO & développeur web",
       "cta_more_about": "En savoir plus sur moi",
       "cta_download_cv": "Télécharger mon CV",
-      "cv_popup_footer": "• Format PDF",
-      "cv_web": "Développement Web",
-      "cv_web_desc": "Stack MERN & Optimisation SEO"
+      "cv_popup_footer": "• Format PDF"
     },
     "stats": {
       "items": [
@@ -30,7 +29,7 @@
           "prefix": "+",
           "suffix": "",
           "text": "Projets livrés",
-          "subtext": "À travers le Maroc"
+          "subtext": "Sites, boutiques et dashboards"
         },
         {
           "value": 3,
@@ -40,90 +39,178 @@
           "subtext": "Excellence digitale"
         },
         {
-          "value": 95,
+          "value": 4,
           "prefix": "",
-          "suffix": "%",
-          "text": "Taux de réussite",
-          "subtext": "Satisfaction client"
+          "suffix": "",
+          "text": "Expertises",
+          "subtext": "SEO, GEO, web, e-commerce"
         },
         {
           "value": 24,
           "prefix": "",
-          "suffix": "/7",
-          "text": "Support",
-          "subtext": "Assistance dédiée"
+          "suffix": "h",
+          "text": "Délai de réponse",
+          "subtext": "Devis gratuit et détaillé"
         }
       ]
     },
+    "customer_problems_section": {
+      "eyebrow": "Votre visibilité en ligne",
+      "heading": "Votre site existe, mais vous apporte-t-il vraiment des clients ?",
+      "introduction": "Un site peut être en ligne, agréable à regarder et pourtant rester presque invisible. Ces signaux indiquent souvent que sa structure, son contenu ou sa base technique freinent son référencement naturel et ses conversions.",
+      "items": [
+        {
+          "title": "Votre site reste invisible sur Google",
+          "description": "Vous avez investi dans un site, mais vos clients potentiels ne le trouvent pas lorsqu’ils recherchent vos services."
+        },
+        {
+          "title": "Vous obtenez des impressions, mais peu de clics",
+          "description": "Vos pages apparaissent parfois dans les résultats, sans attirer suffisamment de visiteurs qualifiés vers votre offre."
+        },
+        {
+          "title": "Votre site est lent ou mal indexé",
+          "description": "Des problèmes de performance, de structure ou d’exploration peuvent empêcher Google de comprendre et de positionner vos pages."
+        },
+        {
+          "title": "Votre entreprise est absente des réponses IA",
+          "description": "ChatGPT, Google AI Overviews et Perplexity ne trouvent pas encore les informations et les preuves nécessaires pour citer votre entreprise."
+        }
+      ],
+      "solutionTitle": "Un audit utile doit déboucher sur des corrections concrètes",
+      "solutionDescription": "J’identifie les problèmes prioritaires, je vous explique leur impact et je réalise les corrections techniques SEO directement sur votre site lorsque vous le souhaitez.",
+      "cta": "Découvrir l’audit SEO technique"
+    },
     "services_section": {
-      "sectionLabel": "Développement Web & Services Digitaux",
-      "heading": "Je développe des sites web performants, des boutiques e-commerce et des tableaux de bord sur mesure avec Next.js et React. Chaque projet est optimisé pour le SEO technique, les Core Web Vitals et la recherche IA, aidant ainsi les entreprises à améliorer leur visibilité et à assurer une croissance durable.",
-      "viewAll": "Voir tous les services",
-      "cta": "En savoir plus"
+      "sectionLabel": "Services SEO, GEO et développement web",
+      "heading": "Audit SEO, optimisation d’un site existant, création de site professionnel ou boutique en ligne : choisissez la solution adaptée à votre objectif. Chaque prestation relie visibilité, performance technique et conversion.",
+      "viewAll": "Voir tous mes services",
+      "cta": "Voir le service et le tarif",
+      "cards": [
+        {
+          "title": "Améliorer mon site et ma visibilité",
+          "description": "Votre site existe, mais il est lent, mal indexé ou peu visible. J’assure l’optimisation SEO du site, les corrections techniques prioritaires et l’amélioration de sa présence sur Google et dans les réponses IA.",
+          "price": "Dès 450 €",
+          "link": "/services/technical-seo",
+          "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+          "imageAlt": "Illustration d’un audit SEO technique et de l’amélioration de la visibilité d’un site",
+          "proof": "Audit et corrections SEO · Google et moteurs IA"
+        },
+        {
+          "title": "Créer un site professionnel optimisé SEO",
+          "description": "Un site vitrine WordPress ou Next.js, rapide et clair, pour présenter votre activité, rassurer vos prospects et recevoir des demandes de devis depuis Google.",
+          "price": "Dès 1 200 €",
+          "link": "/services/web-development",
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "imageAlt": "Exemple de site internet professionnel responsive développé pour une entreprise",
+          "proof": "Site d’entreprise · WordPress ou Next.js"
+        },
+        {
+          "title": "Vendre mes produits en ligne",
+          "description": "Une boutique Shopify, WooCommerce ou Next.js avec paiement sécurisé, fiches produits optimisées, gestion simple des commandes et base SEO solide.",
+          "price": "Dès 2 500 €",
+          "link": "/services/ecommerce-development",
+          "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+          "imageAlt": "Exemple de boutique en ligne avec page produit et tableau de bord de gestion",
+          "proof": "Réalisation · e-commerce et gestion de contenu"
+        },
+        {
+          "title": "Développer un outil web sur mesure",
+          "description": "Un tableau de bord ou une application métier pour gérer vos clients, vos réservations, vos dossiers ou vos indicateurs sans multiplier les outils.",
+          "price": "Sur devis",
+          "link": "/services/business-dashboards",
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "imageAlt": "Exemple de tableau de bord sur mesure pour suivre les demandes techniques d’un hôtel",
+          "proof": "Application métier et tableau de bord"
+        }
+      ]
     },
     "about_section": {
-      "sectionLabel": "À Propos",
-      "highlight": "Développeur Web Full-Stack, Expert SEO Technique & Optimisation Recherche IA",
-      "paragraph1": "Je suis Développeur Web Full-Stack et Spécialiste SEO basé au Maroc, spécialisé dans les applications Next.js haute performance, les tableaux de bord d'entreprise sur mesure et les automatisations IA. J'accompagne les entreprises pour améliorer leur visibilité search, optimiser leurs opérations et développer leur présence digitale grâce à une ingénierie propre et mesurable.",
-      "paragraph2": "Mes compétences techniques ont été éprouvées lors de compétitions d'ingénierie nationales sous haute pression, remportant la 1ère place à l'Université Al Akhawayn et à l'UM6P Ben Guerir, et la 2ème place à l'UM6P Rabat. Ces expériences ont affiné ma capacité à concevoir des solutions évolutives sous des délais stricts, à collaborer dans des équipes agiles et à déployer des logiciels prêts pour la production via des pipelines DevOps modernes.",
-      "cta": "En Savoir Plus"
+      "sectionLabel": "À propos de Mohammed Elghandori",
+      "highlight": "Consultant SEO et GEO freelance basé en France, j'aide les TPE, PME et e-commerçants à transformer leur site en un outil visible, rapide et utile pour leur activité.",
+      "paragraph1": "Je réunis le référencement naturel et le développement web dans une même prestation. Je peux identifier ce qui bloque votre visibilité, corriger directement la structure ou le code, puis construire les pages dont vos futurs clients ont réellement besoin.",
+      "paragraph2": "Originaire du Maroc et installé en France, j'ai étudié à 1337 UM6P, au sein du réseau 42, et je poursuis actuellement une formation certifiante RNCP à 42 Paris. J'ai remporté la 1re place à Al Akhawayn et à l'UM6P Ben Guerir, puis la 2e place à l'UM6P Rabat. Ces expériences m'ont appris à résoudre des problèmes complexes, à travailler en équipe et à livrer dans des délais courts.",
+      "cta": "Découvrir mon parcours",
+      "secondaryCta": "Parler de votre projet"
     },
     "why_we_are_section": {
-      "sectionLabel": "Pourquoi Me Choisir",
-      "description": "Je conçois des sites web performants, des boutiques e-commerce et des solutions digitales rapides, optimisés SEO et prêts pour l'IA, conçus pour une croissance durable — pas seulement de belles interfaces.",
+      "sectionLabel": "Pourquoi me choisir pour votre site et votre SEO ?",
+      "description": "Vous travaillez avec un seul interlocuteur capable d'analyser votre visibilité, de prioriser les actions et d'intervenir directement sur le contenu comme sur le code.",
       "reasons": [
         {
-          "title": "SEO Technique & Optimisation IA",
-          "description": "SEO technique intégré, Core Web Vitals et optimisation pour la recherche IA afin de dominer Google et d'être cité par ChatGPT."
+          "title": "Des recommandations réellement mises en œuvre",
+          "description": "Je ne m'arrête pas à une liste d'erreurs. Je réalise les corrections techniques SEO liées à l'indexation, la structure, les données structurées, le maillage interne et les performances.",
+          "href": "/services/technical-seo",
+          "linkLabel": "Découvrir l'audit SEO technique"
         },
         {
-          "title": "Développement Full-Stack Moderne",
-          "description": "Sites, tableaux de bord et applications sur mesure avec Next.js et React pour la vitesse, la sécurité et l'évolutivité."
+          "title": "Une stratégie reliée à vos objectifs",
+          "description": "Les priorités dépendent de votre activité : obtenir des demandes de devis, vendre des produits ou rendre vos services plus faciles à trouver. Le site est construit autour de cet objectif.",
+          "href": "/portfolio",
+          "linkLabel": "Voir des projets concrets"
         },
         {
-          "title": "Automatisation & Efficacité",
-          "description": "Automatisez les tâches répétitives et intégrez des workflows IA pour gagner du temps et améliorer la productivité."
+          "title": "Un interlocuteur technique accessible",
+          "description": "Vous échangez directement avec la personne qui analyse, conçoit et développe votre site. Les choix sont expliqués clairement, sans multiplier les intermédiaires.",
+          "href": "/about",
+          "linkLabel": "En savoir plus sur mon parcours"
         },
         {
-          "title": "Performance & Support",
-          "description": "Solutions rapides, sécurisées et évolutives soutenues par un code propre, une communication claire et un support continu."
+          "title": "Une base conçue pour évoluer",
+          "description": "Performance mobile, accessibilité, sécurité et structure SEO sont intégrées dès le départ afin de faciliter les futures pages, langues, produits et campagnes.",
+          "href": "/services/web-development",
+          "linkLabel": "Voir le service développement web"
         }
       ]
     },
     "projects_section": {
-      "heading": "Des Projets qui Ont un Véritable Impact",
-      "description": "Découvrez une sélection de sites web d'entreprise performants, de solutions e-commerce et de tableaux de bord sur mesure développés avec Next.js et React.js. Chaque projet est conçu pour la vitesse, l'évolutivité et le SEO technique, offrant une expérience utilisateur exceptionnelle et des résultats commerciaux mesurables."
+      "heading": "Réalisations : boutique Shopify, site web SEO et application sur mesure",
+      "description": "Découvrez une boutique Shopify optimisée SEO, un site d'entreprise conçu pour le référencement naturel et une application React et Express sur mesure avec tableau de bord."
     },
     "techStack": {
       "title": "Les technologies avec lesquelles je travaille — et pourquoi",
-      "subtitle": "Chaque outil est choisi pour la sécurité, la rapidité, le SEO et la fiabilité à long terme",
+      "subtitle": "La technologie n'est pas une fin en soi. Je choisis chaque outil selon votre besoin, votre budget, la facilité de gestion et les performances attendues.",
       "items": [
         {
           "name": "Next.js",
           "use": "Sites web & E-commerce",
-          "why": "Le rendu côté serveur et le SEO intégré (métadonnées, sitemaps, données structurées) garantissent des pages rapides et bien classées sur Google dès le premier jour."
+          "why": "Pour créer des sites rapides avec rendu serveur, métadonnées, sitemap, données structurées et contrôle précis de l'indexation.",
+          "href": "/services/web-development",
+          "linkLabel": "Création de site Next.js"
         },
         {
           "name": "React",
           "use": "Tableaux de bord & Applications web",
-          "why": "Des interfaces interactives, proches d'une application, qui se mettent à jour instantanément sans rechargement — parfaites pour les tableaux de bord d'entreprise et les panneaux d'administration."
+          "why": "Pour construire des interfaces interactives et claires : espace client, réservation, suivi d'activité ou outil métier sur mesure.",
+          "href": "/services/business-dashboards",
+          "linkLabel": "Applications web sur mesure"
         },
         {
-          "name": "Nest.js",
+          "name": "Express.js",
           "use": "Backends & APIs",
-          "why": "Une architecture backend structurée et évolutive qui sécurise vos données et facilite la croissance et la maintenance de votre application."
+          "why": "Pour créer des API rapides et maintenables, relier les données, gérer les comptes utilisateurs et intégrer les services nécessaires à votre application.",
+          "href": "/services/business-dashboards",
+          "linkLabel": "Découvrir les solutions sur mesure"
         },
         {
-          "name": "TypeScript",
-          "use": "Chaque projet",
-          "why": "Détecte les erreurs avant qu'elles n'atteignent vos utilisateurs — moins de bugs, des coûts de maintenance réduits, plus de fiabilité."
+          "name": "Shopify",
+          "use": "Boutiques en ligne",
+          "why": "Pour lancer rapidement une boutique facile à administrer, avec paiements, catalogue, commandes et thème optimisé pour le référencement naturel.",
+          "href": "/services/ecommerce-development",
+          "linkLabel": "Création de boutique Shopify"
+        },
+        {
+          "name": "WordPress",
+          "use": "Sites vitrines & WooCommerce",
+          "why": "Pour créer un site facile à administrer ou une boutique WooCommerce, avec une structure légère, sécurisée et optimisée pour le référencement naturel.",
+          "href": "/services/web-development",
+          "linkLabel": "Création de site WordPress"
         }
       ],
-      "extra": "Je travaille également avec Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions et d'autres outils modernes pour créer des solutions digitales rapides, sécurisées et évolutives."
+      "extra": "Selon le projet, j'utilise également TypeScript, Tailwind CSS, MySQL, MongoDB, Docker et GitHub Actions. La stack finale est expliquée dans le devis : vous savez pourquoi chaque technologie est utilisée."
     },
     "contact_section": {
-      "sectionLabel": "Construisons Quelque Chose Ensemble",
-      "description": "Besoin d'un site Next.js performant, d'un SEO technique ou d'un tableau de bord sur mesure ? Je suis disponible pour des projets freelance, des collaborations stratégiques et des opportunités à temps plein. Contactez-moi pour discuter de l'accélération de votre croissance digitale.",
+      "sectionLabel": "Parlons de Votre Projet",
+      "description": "Besoin d'un site internet, d'une boutique en ligne, d'un audit SEO ou d'une application sur mesure ? Décrivez-moi votre projet : vous recevez un devis gratuit et détaillé sous 24h. Je suis disponible en freelance, pour des missions longues ou des contrats.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Discuter sur WhatsApp",
       "email": "Email",
@@ -139,8 +226,8 @@
   "pages": {
     "services_page": {
       "page_title": "Services",
-      "title": "Services numériques au Maroc pour développer votre activité en ligne",
-      "description": "Découvrez mes services numériques pour les entreprises au Maroc : développement web, création de sites e-commerce, SEO technique, optimisation pour la recherche IA et tableaux de bord métier sur mesure.",
+      "title": "Services numériques en France pour développer votre activité en ligne",
+      "description": "Découvrez mes services numériques pour les entreprises en France et en Europe : développement web, création de sites e-commerce, SEO technique, optimisation pour la recherche IA et tableaux de bord métier sur mesure.",
       "subtitle": "Développement web, SEO & solutions pour la recherche IA",
       "subtitle_description": "Des solutions numériques conçues pour renforcer votre présence en ligne, améliorer votre visibilité dans les moteurs de recherche et optimiser vos opérations.",
       "hashtags": [
@@ -151,12 +238,437 @@
         "#Automatisation",
         "#TableauxDeBord"
       ],
+      "hub": {
+        "seo": {
+          "title": "Services SEO & Développement Web en France | Devsignpro",
+          "description": "Audit SEO technique, optimisation de site web, création de sites, e-commerce et applications sur mesure en France. Devis gratuit sous 24h.",
+          "keywords": [
+            "services SEO et développement web",
+            "consultant SEO et développeur web",
+            "optimisation SEO site web France",
+            "création site web optimisé SEO",
+            "développement e-commerce",
+            "application web sur mesure"
+          ]
+        },
+        "breadcrumb": {
+          "label": "Fil d'Ariane",
+          "home": "Accueil",
+          "current": "Services"
+        },
+        "hero": {
+          "eyebrow": "SEO, GEO et développement web",
+          "heading": "SEO, optimisation de site web et développement sur mesure",
+          "description": "J'aide les TPE, PME, e-commerçants et agences à corriger les problèmes qui limitent leur visibilité, puis à construire une base web rapide, claire et capable de convertir. Vous pouvez me confier un audit ciblé, une refonte ou un projet complet.",
+          "primaryCta": "Demander un devis gratuit",
+          "secondaryCta": "Choisir un service",
+          "promise": "Réponse sous 24h",
+          "location": "Basé en France · Projets en France et à distance",
+          "delivery": "Audit, conseil et mise en œuvre dans le code"
+        },
+        "servicesIntro": {
+          "eyebrow": "Choisir selon votre besoin",
+          "heading": "Quatre services, avec une page dédiée pour chaque objectif",
+          "description": "Cette page vous aide à choisir. Chaque service dispose ensuite de sa propre page avec le périmètre, les livrables, le processus et les questions spécifiques au projet.",
+          "pricingNote": "Tarifs indicatifs et négociables selon le périmètre, la plateforme existante et les délais."
+        },
+        "cards": [
+          {
+            "id": "technical-seo",
+            "problem": "Votre site existe, mais reste peu visible ?",
+            "title": "Audit et corrections SEO techniques",
+            "description": "J'identifie puis corrige les blocages liés à l'exploration, l'indexation, la structure, les performances, les données structurées et le maillage interne.",
+            "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+            "imageAlt": "Analyse technique SEO d'un site web et de ses performances",
+            "price": "À partir de 450 €",
+            "items": [
+              "Audit priorisé et compréhensible",
+              "Corrections techniques SEO",
+              "SEO, Core Web Vitals et recherche IA"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Découvrir l'audit SEO technique",
+            "featured": true
+          },
+          {
+            "id": "web-development",
+            "problem": "Vous avez besoin d'un site professionnel ?",
+            "title": "Site vitrine et développement web",
+            "description": "Je crée ou refonds des sites rapides, accessibles et faciles à faire évoluer, avec une architecture pensée dès le départ pour le référencement naturel.",
+            "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+            "imageAlt": "Site web professionnel responsive conçu pour la performance et le SEO",
+            "price": "À partir de 1 200 €",
+            "items": [
+              "Next.js, WordPress ou solution adaptée",
+              "Structure SEO et contenu administrable",
+              "Délai indicatif : 2 à 4 semaines"
+            ],
+            "href": "/services/web-development",
+            "linkLabel": "Voir le service de développement web",
+            "featured": false
+          },
+          {
+            "id": "ecommerce-development",
+            "problem": "Vous voulez vendre vos produits en ligne ?",
+            "title": "Boutique e-commerce optimisée pour le SEO",
+            "description": "Je développe des boutiques Shopify, WooCommerce ou Next.js avec des pages produits claires, des paiements sécurisés et une base technique adaptée à la croissance.",
+            "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+            "imageAlt": "Boutique en ligne avec catalogue, paiement sécurisé et pages produits optimisées",
+            "price": "À partir de 2 500 €",
+            "items": [
+              "Shopify, WooCommerce ou Next.js",
+              "Stripe, PayPal et paiements adaptés",
+              "Délai indicatif : 4 à 8 semaines"
+            ],
+            "href": "/services/ecommerce-development",
+            "linkLabel": "Voir le service e-commerce",
+            "featured": false
+          },
+          {
+            "id": "business-dashboards",
+            "problem": "Un outil générique ne correspond pas à votre activité ?",
+            "title": "Application web et tableau de bord sur mesure",
+            "description": "Je conçois des interfaces métier, espaces clients et tableaux de bord reliés à vos données, vos utilisateurs et vos règles de fonctionnement.",
+            "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+            "imageAlt": "Tableau de bord métier sur mesure pour suivre des données et des opérations",
+            "price": "Sur devis",
+            "items": [
+              "Interface adaptée à votre processus",
+              "API, rôles utilisateurs et base de données",
+              "Architecture maintenable et évolutive"
+            ],
+            "href": "/services/business-dashboards",
+            "linkLabel": "Voir les applications et dashboards",
+            "featured": false
+          }
+        ],
+        "decision": {
+          "eyebrow": "Orientation",
+          "heading": "Quel service correspond à votre situation ?",
+          "description": "Partez du problème à résoudre, pas de la technologie.",
+          "items": [
+            {
+              "need": "Mon site reçoit peu de trafic ou présente des erreurs dans Search Console.",
+              "answer": "Commencez par un audit SEO technique.",
+              "href": "/services/technical-seo"
+            },
+            {
+              "need": "Mon entreprise a besoin d'un site clair pour présenter son offre et recevoir des demandes.",
+              "answer": "Choisissez la création ou la refonte d'un site vitrine.",
+              "href": "/services/web-development"
+            },
+            {
+              "need": "Je veux vendre des produits avec un catalogue et un paiement en ligne.",
+              "answer": "Choisissez le développement e-commerce.",
+              "href": "/services/ecommerce-development"
+            },
+            {
+              "need": "Je dois gérer des clients, des données ou un processus propre à mon activité.",
+              "answer": "Parlons d'une application web ou d'un dashboard sur mesure.",
+              "href": "/services/business-dashboards"
+            }
+          ]
+        },
+        "process": {
+          "eyebrow": "Une méthode simple",
+          "heading": "Du problème à une solution mesurable",
+          "description": "Le périmètre reste clair avant de commencer, puis chaque décision est reliée à votre objectif commercial ou à un problème vérifié.",
+          "steps": [
+            {
+              "title": "Comprendre",
+              "text": "Nous clarifions votre activité, vos utilisateurs, votre site actuel et le résultat attendu."
+            },
+            {
+              "title": "Prioriser",
+              "text": "Je propose un périmètre, les livrables, le calendrier et un devis adapté à la valeur du projet."
+            },
+            {
+              "title": "Construire et vérifier",
+              "text": "Je réalise le travail, contrôle la qualité technique et vous remets une base que vous pouvez faire évoluer."
+            }
+          ]
+        },
+        "proof": {
+          "eyebrow": "Réalisations",
+          "heading": "Des projets qui relient développement, SEO et usage réel",
+          "description": "Consultez des études de cas pour voir les choix techniques, les fonctionnalités livrées et les résultats disponibles.",
+          "allProjects": "Voir toutes les réalisations",
+          "caseStudy": "Voir l'étude de cas"
+        },
+        "why": {
+          "eyebrow": "Pourquoi travailler avec moi",
+          "heading": "Le conseil SEO et l'implémentation technique au même endroit",
+          "items": [
+            {
+              "title": "Un contact direct",
+              "text": "Vous échangez avec la personne qui analyse, développe et vérifie le projet."
+            },
+            {
+              "title": "Une base pensée pour durer",
+              "text": "Performance, accessibilité, référencement naturel et maintenabilité sont traités dès la conception."
+            },
+            {
+              "title": "Des recommandations applicables",
+              "text": "Je distingue les priorités utiles des optimisations secondaires et peux intervenir directement dans le code."
+            }
+          ]
+        },
+        "faq": {
+          "eyebrow": "Questions fréquentes",
+          "heading": "Avant de choisir un service",
+          "items": [
+            {
+              "q": "Je ne sais pas quel service choisir. Pouvez-vous m'orienter ?",
+              "a": "Oui. Envoyez-moi l'adresse de votre site, votre objectif et le problème rencontré. Je vous indiquerai si vous avez besoin d'un audit, de corrections ciblées, d'une refonte ou d'un nouveau développement."
+            },
+            {
+              "q": "Pouvez-vous améliorer un site existant sans tout reconstruire ?",
+              "a": "Oui. Je commence par identifier ce qui fonctionne et ce qui bloque les résultats. Une correction ciblée est préférable lorsque la base actuelle peut être conservée ; une refonte est proposée seulement si elle est réellement justifiée."
+            },
+            {
+              "q": "Quels sont vos tarifs ?",
+              "a": "L'audit SEO technique débute à 450 €, le site vitrine à 1 200 € et la boutique en ligne à 2 500 €. Les applications sur mesure sont chiffrées après cadrage. Ces prix sont indicatifs et négociables selon le périmètre."
+            },
+            {
+              "q": "Le SEO et le GEO sont-ils inclus dans les projets web ?",
+              "a": "Chaque création inclut une base technique propre : structure, métadonnées, HTML sémantique, performance et données structurées lorsque cela est pertinent. Une stratégie SEO ou GEO complète demande ensuite un travail dédié sur les intentions, le contenu, l'autorité et le suivi."
+            },
+            {
+              "q": "Travaillez-vous uniquement avec des entreprises en France ?",
+              "a": "Je suis basé en France et je travaille à distance avec des entreprises, e-commerçants et agences en France, en Europe et à l'international."
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Quel problème voulez-vous résoudre en premier ?",
+          "description": "Présentez-moi votre site ou votre projet. Je vous réponds sous 24h avec une première orientation et, si le besoin est clair, un devis détaillé.",
+          "button": "Demander un devis gratuit"
+        }
+      },
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Services de développement web au Maroc — Rapides, sécurisés et optimisés pour le SEO",
-          "title_metadata": "Développement web au Maroc | Devsignpro",
-          "description_metadata": "Services de développement web sur mesure au Maroc. Je crée des sites web et applications rapides, sécurisés et optimisés pour le SEO avec Next.js et React.",
+          "landing": {
+            "seo": {
+              "title": "Création de site internet professionnel en France | Devsignpro",
+              "description": "Création et refonte de sites vitrines rapides, accessibles et optimisés pour le SEO. Développeur web freelance en France, dès 1 200 €.",
+              "keywords": [
+                "création site internet professionnel",
+                "création site vitrine",
+                "développeur web freelance France",
+                "refonte site internet",
+                "site web optimisé SEO",
+                "création site internet TPE PME"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Fil d’Ariane",
+              "home": "Accueil",
+              "services": "Services",
+              "current": "Création de site internet"
+            },
+            "hero": {
+              "eyebrow": "Développeur web freelance basé en France",
+              "heading": "Création de site internet professionnel, rapide et optimisé pour le SEO",
+              "description": "Je conçois des sites vitrines clairs et performants pour les TPE, PME et professionnels qui veulent mieux présenter leur offre, être trouvés sur Google et transformer davantage de visites en demandes de devis.",
+              "primaryCta": "Demander un devis gratuit",
+              "secondaryCta": "Voir ce qui est inclus",
+              "price": "À partir de 1 200 €",
+              "priceNote": "Tarif indicatif et négociable selon le projet",
+              "promise": [
+                "Livraison en 2 à 4 semaines",
+                "Conçu pour mobile et accessible",
+                "Réponse sous 24 h"
+              ],
+              "imageAlt": "Conception d’un site internet professionnel responsive et optimisé pour le référencement naturel",
+              "imageCaption": "Stratégie · Design · Développement · SEO · Mise en ligne"
+            },
+            "needs": {
+              "eyebrow": "Votre besoin",
+              "heading": "Vous avez besoin d’un site qui soutient réellement votre activité",
+              "description": "Une création ou une refonte est pertinente lorsque votre site ne représente plus votre entreprise, complique le parcours client ou limite votre visibilité.",
+              "items": [
+                "Vous lancez votre activité et avez besoin d’une présence professionnelle crédible.",
+                "Votre site paraît ancien, lent ou difficile à consulter sur mobile.",
+                "Votre offre n’est pas comprise rapidement et génère peu de contacts.",
+                "Vous ne pouvez pas facilement modifier vos pages ou publier du contenu.",
+                "La structure actuelle limite le référencement naturel et le maillage interne.",
+                "Vous préparez une refonte sans vouloir perdre les URL et la visibilité existantes."
+              ]
+            },
+            "value": {
+              "eyebrow": "L’objectif",
+              "heading": "À quoi sert un bon site vitrine ?",
+              "answer": "Un site internet professionnel doit aider un prospect à comprendre votre activité, vérifier votre sérieux et passer à l’action sans hésitation.",
+              "note": "Le design sert cette décision. La structure des pages, les contenus, la vitesse, l’accessibilité et les appels à l’action sont pensés ensemble pour soutenir votre acquisition."
+            },
+            "included": {
+              "eyebrow": "Périmètre",
+              "heading": "Ce qui est inclus dans la création de votre site",
+              "description": "Le périmètre exact est défini dans le devis. Chaque projet repose toutefois sur les mêmes fondamentaux de qualité, de visibilité et de conversion.",
+              "items": [
+                {
+                  "title": "Structure et parcours",
+                  "text": "Arborescence claire, hiérarchie des pages et parcours conçus autour de vos services et des questions de vos prospects."
+                },
+                {
+                  "title": "Design responsive",
+                  "text": "Interface sur mesure, lisible et cohérente sur mobile, tablette et ordinateur, avec des interactions accessibles."
+                },
+                {
+                  "title": "Fondations SEO",
+                  "text": "HTML sémantique, URL propres, métadonnées, sitemap, canonicals, données structurées pertinentes et bases du maillage interne."
+                },
+                {
+                  "title": "Performance web",
+                  "text": "Images, polices, rendu et JavaScript maîtrisés pour viser de bons Core Web Vitals et une navigation rapide."
+                },
+                {
+                  "title": "Formulaires et mesure",
+                  "text": "Demandes de contact testées, protection antispam et configuration des outils de mesure convenus dans le projet."
+                },
+                {
+                  "title": "Mise en ligne sereine",
+                  "text": "Contrôles avant lancement, redirections utiles, indexation, Search Console et transmission des accès."
+                }
+              ]
+            },
+            "platforms": {
+              "eyebrow": "La bonne solution",
+              "heading": "Next.js ou WordPress selon vos priorités",
+              "description": "Je ne vous impose pas une technologie. Le choix dépend de votre besoin d’autonomie, de personnalisation, de performance et d’évolution.",
+              "items": [
+                {
+                  "title": "Next.js",
+                  "text": "Pour un site rapide, très personnalisé et évolutif, avec un contrôle précis du rendu, du code et des fondations SEO."
+                },
+                {
+                  "title": "WordPress",
+                  "text": "Pour une gestion éditoriale familière et autonome, avec une configuration légère, sécurisée et adaptée à votre contenu."
+                },
+                {
+                  "title": "Refonte ou migration",
+                  "text": "Pour moderniser l’existant en conservant ce qui fonctionne, avec un plan de redirections et des contrôles avant bascule."
+                }
+              ],
+              "ecommerceText": "Vous souhaitez vendre des produits et gérer les commandes ?",
+              "ecommerceLabel": "Découvrir le service boutique en ligne"
+            },
+            "process": {
+              "eyebrow": "Méthode",
+              "heading": "Un projet cadré, du premier échange à la mise en ligne",
+              "description": "Vous savez ce qui est prévu, ce dont j’ai besoin et ce qui sera vérifié avant chaque étape.",
+              "steps": [
+                {
+                  "title": "Cadrage",
+                  "text": "Objectifs, clients cibles, contenus, fonctionnalités, références et critères de réussite."
+                },
+                {
+                  "title": "Structure et design",
+                  "text": "Arborescence, contenus prioritaires, wireframes et direction visuelle adaptés à votre activité."
+                },
+                {
+                  "title": "Développement",
+                  "text": "Intégration responsive, SEO technique, performance, formulaires et contrôles d’accessibilité."
+                },
+                {
+                  "title": "Lancement",
+                  "text": "Recette, corrections, mise en ligne, suivi de l’indexation et prise en main de votre site."
+                }
+              ]
+            },
+            "seoBridge": {
+              "eyebrow": "Site web et référencement naturel",
+              "heading": "Le SEO est intégré à la construction, pas ajouté à la fin",
+              "description": "Un nouveau site doit offrir aux moteurs une base claire et explorable. Cette base ne remplace toutefois pas une stratégie SEO continue ni un audit approfondi d’un site existant.",
+              "includedTitle": "Fondations prévues dans la création",
+              "included": [
+                "Structure sémantique et pages accessibles au rendu initial",
+                "Métadonnées, canonicals, sitemap et directives d’indexation",
+                "Données structurées cohérentes avec le contenu visible",
+                "Architecture prête pour de futurs contenus et liens internes"
+              ],
+              "auditTitle": "Vous avez déjà un site qui ne progresse pas ?",
+              "auditText": "S’il fonctionne correctement et n’a pas besoin d’une refonte complète, commencez par identifier les blocages d’exploration, d’indexation, de performance ou de contenu.",
+              "auditLabel": "Voir l’audit SEO technique"
+            },
+            "fit": {
+              "eyebrow": "Pour qui ?",
+              "heading": "Une création de site adaptée aux entreprises qui vendent un service",
+              "items": [
+                {
+                  "title": "TPE et PME",
+                  "text": "Pour présenter clairement vos services, vos zones d’intervention et générer des demandes qualifiées."
+                },
+                {
+                  "title": "Commerces, hôtels et indépendants",
+                  "text": "Pour rassurer avant une visite, une réservation ou une prise de contact, avec un parcours simple sur mobile."
+                },
+                {
+                  "title": "Agences et équipes",
+                  "text": "Pour renforcer une équipe sur le développement, la performance ou la mise en œuvre technique du SEO."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Questions fréquentes",
+              "heading": "Avant de lancer votre site internet",
+              "items": [
+                {
+                  "q": "Combien coûte la création d’un site vitrine professionnel ?",
+                  "a": "Mes sites vitrines démarrent à 1 200 €. Le prix dépend du nombre de pages, du contenu, du design, des fonctionnalités et des intégrations. Ce tarif est indicatif et négociable ; vous recevez un devis détaillé avant le démarrage."
+                },
+                {
+                  "q": "Quel délai prévoir pour créer le site ?",
+                  "a": "Un site vitrine prend généralement 2 à 4 semaines après validation du périmètre et réception des contenus. Le calendrier précis dépend des retours, des langues et des fonctionnalités."
+                },
+                {
+                  "q": "Le référencement naturel est-il inclus ?",
+                  "a": "La création inclut les fondations SEO : structure sémantique, métadonnées, URL, sitemap, canonicals, données structurées pertinentes, performance et bases du maillage interne. Une stratégie de contenu, une recherche de mots-clés étendue ou la correction d’un site existant font l’objet d’un accompagnement distinct."
+                },
+                {
+                  "q": "Pourrai-je modifier le site moi-même ?",
+                  "a": "Oui, si l’autonomie éditoriale fait partie de vos priorités. Je peux proposer WordPress ou une interface de gestion adaptée et vous montrer comment mettre à jour les contenus essentiels."
+                },
+                {
+                  "q": "Pouvez-vous refaire mon site sans perdre son référencement ?",
+                  "a": "Oui. Une refonte est préparée avec un inventaire des URL, la conservation des contenus utiles, des redirections 301 et des contrôles après mise en ligne. Aucun prestataire ne peut garantir l’absence totale de fluctuations, mais ces mesures réduisent le risque de perte."
+                },
+                {
+                  "q": "Proposez-vous l’hébergement et la maintenance ?",
+                  "a": "Je peux vous accompagner pour le domaine, l’hébergement, le déploiement et la maintenance. Les coûts récurrents et responsabilités sont précisés séparément dans le devis."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Services liés à votre projet",
+              "items": [
+                {
+                  "title": "Analyser les blocages d’un site existant",
+                  "href": "/services/technical-seo",
+                  "label": "Audit SEO technique"
+                },
+                {
+                  "title": "Créer une boutique Shopify, WooCommerce ou Next.js",
+                  "href": "/services/ecommerce-development",
+                  "label": "Boutique en ligne"
+                },
+                {
+                  "title": "Comparer toutes les prestations",
+                  "href": "/services",
+                  "label": "Voir les services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Parlons du site dont votre activité a réellement besoin",
+              "description": "Expliquez-moi votre offre, votre site actuel et votre objectif. Je vous réponds sous 24 h avec les prochaines étapes et un périmètre adapté.",
+              "button": "Demander un devis gratuit"
+            }
+          },
+          "title": "Services de développement web en France — Rapides, sécurisés et optimisés pour le SEO",
+          "title_metadata": "Développement web en France | Devsignpro",
+          "description_metadata": "Services de développement web sur mesure en France. Je crée des sites web et applications rapides, sécurisés et optimisés pour le SEO avec Next.js et React.",
           "description": "Je crée des sites web performants et des applications web sur mesure avec Next.js, React et les technologies web modernes. Chaque projet est conçu dès le départ avec la performance, la sécurité et le SEO à l'esprit, notamment les bases du référencement technique, les Core Web Vitals et une structure de contenu évolutive.",
           "title_card": "Développement web avec une architecture optimisée pour le SEO",
           "overviewTitle": "Pourquoi choisir mes services de développement web ?",
@@ -284,10 +796,254 @@
           ]
         },
         "technical_seo": {
+          "landing": {
+            "seo": {
+              "title": "Audit SEO Technique en France | Corrections & Optimisation",
+              "description": "Audit SEO technique dès 450 € : indexation, performances, structure et données structurées. Corrections possibles directement dans le code.",
+              "keywords": [
+                "audit SEO technique",
+                "consultant SEO technique",
+                "consultant SEO freelance France",
+                "optimisation SEO site web",
+                "correction problèmes indexation Google",
+                "Core Web Vitals",
+                "référencement naturel technique",
+                "audit SEO site e-commerce"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Fil d'Ariane",
+              "home": "Accueil",
+              "services": "Services",
+              "current": "Audit SEO technique"
+            },
+            "hero": {
+              "eyebrow": "Consultant SEO technique freelance en France",
+              "heading": "Audit SEO technique et corrections pour votre site web",
+              "description": "Votre site est lent, mal indexé ou difficile à faire progresser ? J'identifie ce qui bloque Google et vos utilisateurs, je hiérarchise les actions utiles et je peux appliquer les corrections directement dans le code.",
+              "primaryCta": "Demander un audit SEO",
+              "secondaryCta": "Voir ce qui est analysé",
+              "price": "À partir de 450 €",
+              "priceNote": "Tarif indicatif et négociable selon la taille et la complexité du site.",
+              "promise": [
+                "Réponse sous 24h",
+                "Rapport priorisé, sans jargon inutile",
+                "Audit seul ou audit avec corrections"
+              ],
+              "imageAlt": "Illustration d'un audit SEO technique analysant l'indexation, la performance et la visibilité d'un site web",
+              "imageCaption": "Diagnostic → priorités → corrections → validation"
+            },
+            "symptoms": {
+              "eyebrow": "Quand demander un audit ?",
+              "heading": "Les signes que la base technique freine votre visibilité",
+              "description": "Un audit SEO technique est utile lorsqu'un problème de structure, de rendu ou de performance empêche les bonnes pages d'être trouvées, comprises ou utilisées correctement.",
+              "items": [
+                "Des pages importantes n'apparaissent pas dans Google",
+                "Search Console signale des pages exclues ou des erreurs",
+                "Le site est lent ou instable sur mobile",
+                "Le trafic a baissé après une refonte ou une migration",
+                "Les redirections, canonicals ou sitemaps sont incohérents",
+                "Votre équipe possède un rapport SEO, mais personne n'applique les corrections"
+              ]
+            },
+            "definition": {
+              "eyebrow": "Réponse directe",
+              "heading": "Qu'est-ce qu'un audit SEO technique ?",
+              "answer": "Un audit SEO technique examine si les moteurs de recherche peuvent explorer, rendre, comprendre et indexer correctement un site. Il contrôle aussi la performance, l'architecture, les signaux HTML et les données structurées, puis transforme les problèmes détectés en actions classées par priorité.",
+              "note": "Il ne remplace pas une stratégie de contenu ou de popularité. Il supprime les obstacles techniques pour que ces efforts puissent produire de meilleurs résultats."
+            },
+            "coverage": {
+              "eyebrow": "Périmètre de l'audit",
+              "heading": "Ce que j'analyse sur votre site",
+              "description": "Le périmètre final dépend de votre plateforme, du nombre de pages et du problème observé. L'analyse se concentre sur les éléments qui peuvent réellement affecter la visibilité ou l'expérience utilisateur.",
+              "items": [
+                {
+                  "title": "Exploration et indexation",
+                  "text": "Robots.txt, sitemaps, statuts HTTP, pages exclues, budget d'exploration et signaux disponibles dans Search Console."
+                },
+                {
+                  "title": "Rendu JavaScript et HTML",
+                  "text": "Contenu rendu côté serveur ou client, balises essentielles, liens accessibles et différences entre le code source et la page rendue."
+                },
+                {
+                  "title": "Architecture et maillage interne",
+                  "text": "Hiérarchie des pages, profondeur de clic, pages orphelines, ancres de liens et circulation de l'autorité interne."
+                },
+                {
+                  "title": "Performance et Core Web Vitals",
+                  "text": "LCP, INP, CLS, images, polices, JavaScript et causes techniques qui ralentissent l'expérience sur mobile."
+                },
+                {
+                  "title": "Métadonnées et données structurées",
+                  "text": "Titles, descriptions, canonicals, hreflang, HTML sémantique, accessibilité et Schema.org lorsque cela est pertinent."
+                },
+                {
+                  "title": "Redirections, refontes et migrations",
+                  "text": "Chaînes de redirections, anciennes URL, changement de domaine ou de CMS et contrôles avant et après mise en ligne."
+                }
+              ]
+            },
+            "deliverables": {
+              "eyebrow": "Ce que vous recevez",
+              "heading": "Un plan applicable, pas seulement une liste d'erreurs",
+              "description": "Chaque problème est relié à une URL, un gabarit ou un comportement vérifiable, avec une priorité et une prochaine action claire.",
+              "items": [
+                {
+                  "title": "Diagnostic priorisé",
+                  "text": "Les blocages critiques sont séparés des améliorations secondaires selon l'impact, l'effort et le risque."
+                },
+                {
+                  "title": "Plan de correction",
+                  "text": "Vous recevez des recommandations compréhensibles et, lorsque nécessaire, des indications prêtes pour un développeur."
+                },
+                {
+                  "title": "Mise en œuvre possible",
+                  "text": "Je peux appliquer les corrections sur Next.js, React, WordPress, WooCommerce, Shopify et d'autres plateformes selon les accès."
+                },
+                {
+                  "title": "Validation après correction",
+                  "text": "Je vérifie les statuts, canonicals, sitemaps, données structurées, rendu et performances après la mise en ligne."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Méthode",
+              "heading": "Comment se déroule l'audit SEO technique",
+              "steps": [
+                {
+                  "title": "Cadrage",
+                  "text": "Vous partagez le site, vos objectifs, les symptômes observés et, si possible, un accès en lecture à Search Console."
+                },
+                {
+                  "title": "Analyse",
+                  "text": "Je croise le crawl, les données disponibles, le rendu et une inspection manuelle du code et des gabarits."
+                },
+                {
+                  "title": "Priorisation",
+                  "text": "Je classe les actions selon leur impact potentiel, leur urgence et leur coût de mise en œuvre."
+                },
+                {
+                  "title": "Correction et contrôle",
+                  "text": "Vous choisissez entre un audit seul, un accompagnement de votre équipe ou une intervention directe dans le code."
+                }
+              ]
+            },
+            "implementation": {
+              "eyebrow": "Mon approche",
+              "heading": "Le consultant qui peut aussi corriger le code",
+              "description": "Beaucoup d'audits s'arrêtent au rapport. Mon expérience en développement me permet de vérifier si une recommandation est réaliste, d'expliquer le correctif à votre équipe ou de l'implémenter directement. Cela réduit les allers-retours entre le SEO et les développeurs.",
+              "platformLabel": "Plateformes et environnements :",
+              "platforms": [
+                "Next.js",
+                "React",
+                "WordPress",
+                "WooCommerce",
+                "Shopify",
+                "Express.js"
+              ],
+              "toolsLabel": "Outils utilisés selon le besoin :",
+              "tools": [
+                "Google Search Console",
+                "Lighthouse",
+                "PageSpeed Insights",
+                "Semrush",
+                "Keyword Planner",
+                "inspection manuelle"
+              ]
+            },
+            "aiSearch": {
+              "eyebrow": "SEO et recherche IA",
+              "heading": "Une base compréhensible par Google et les moteurs IA",
+              "description": "Une structure claire, un contenu accessible, des entités cohérentes et des données structurées pertinentes facilitent la compréhension du site par Google, ChatGPT, Google AI Overviews et Perplexity. Ces fondations soutiennent le GEO et le référencement IA, mais aucune optimisation ne garantit une citation ou une position.",
+              "items": [
+                "Contenu principal accessible sans interaction inutile",
+                "Réponses claires reliées à l'intention de recherche",
+                "Entités, auteurs et informations commerciales cohérents",
+                "Données structurées alignées avec le contenu visible"
+              ]
+            },
+            "fit": {
+              "eyebrow": "Pour qui ?",
+              "heading": "Un audit adapté aux sites qui doivent progresser ou changer sans perdre leur visibilité",
+              "items": [
+                {
+                  "title": "TPE et PME",
+                  "text": "Pour comprendre pourquoi un site vitrine ne génère pas assez de visibilité ou de demandes."
+                },
+                {
+                  "title": "E-commerce",
+                  "text": "Pour contrôler les catégories, produits, filtres, données structurées et performances d'une boutique."
+                },
+                {
+                  "title": "Agences et équipes web",
+                  "text": "Pour obtenir un renfort technique, sécuriser une migration ou transformer un audit en corrections déployables."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Questions fréquentes",
+              "heading": "Avant de demander un audit SEO technique",
+              "items": [
+                {
+                  "q": "Combien coûte un audit SEO technique ?",
+                  "a": "L'audit débute à 450 €. Le prix final dépend du nombre de pages, de la plateforme, de la complexité du rendu et du niveau d'analyse nécessaire. Le devis précise si les corrections sont incluses ou chiffrées séparément."
+                },
+                {
+                  "q": "De quels accès avez-vous besoin ?",
+                  "a": "Une URL publique suffit pour un premier cadrage. Un accès en lecture à Google Search Console aide à analyser l'indexation et les performances. Un accès au CMS ou au code n'est demandé que si vous me confiez les corrections."
+                },
+                {
+                  "q": "Pouvez-vous appliquer les corrections vous-même ?",
+                  "a": "Oui, selon la plateforme et les accès disponibles. Je peux intervenir directement sur Next.js, React, WordPress, WooCommerce ou Shopify, ou préparer des recommandations et tickets pour votre équipe."
+                },
+                {
+                  "q": "Quand verrai-je des résultats ?",
+                  "a": "Les erreurs techniques peuvent être corrigées rapidement, mais Google doit ensuite réexplorer et réévaluer les pages. Les délais varient selon la fréquence de crawl, la concurrence, le contenu et l'autorité du site. Je ne garantis pas une position précise."
+                },
+                {
+                  "q": "L'audit comprend-il les Core Web Vitals ?",
+                  "a": "Oui lorsqu'ils sont pertinents pour le problème. J'analyse LCP, INP et CLS ainsi que les images, polices, scripts et choix de rendu qui peuvent affecter l'expérience réelle."
+                },
+                {
+                  "q": "Pouvez-vous auditer une boutique Shopify ou WooCommerce ?",
+                  "a": "Oui. L'audit peut couvrir les produits, collections ou catégories, filtres, variantes, duplication, données structurées, pagination, maillage interne et performance du thème."
+                },
+                {
+                  "q": "Le GEO remplace-t-il le SEO technique ?",
+                  "a": "Non. La visibilité dans les moteurs IA repose d'abord sur un contenu accessible, une architecture compréhensible et des signaux de confiance cohérents. Le GEO complète ces fondations ; il ne remplace pas le référencement naturel."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Votre besoin dépasse l'audit ?",
+              "items": [
+                {
+                  "title": "Créer ou refondre un site avec une base SEO solide",
+                  "href": "/services/web-development",
+                  "label": "Voir le développement web"
+                },
+                {
+                  "title": "Améliorer une boutique en ligne ou préparer une migration",
+                  "href": "/services/ecommerce-development",
+                  "label": "Voir le développement e-commerce"
+                },
+                {
+                  "title": "Comparer tous les services disponibles",
+                  "href": "/services",
+                  "label": "Revenir au hub des services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Vous voulez savoir ce qui bloque réellement votre site ?",
+              "description": "Envoyez-moi l'URL et le problème observé. Je vous réponds sous 24h avec les informations nécessaires pour cadrer l'audit et préparer un devis clair.",
+              "button": "Demander un audit SEO"
+            }
+          },
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
-          "title": "Services de SEO technique au Maroc — Auditer, corriger et optimiser les sites existants",
-          "title_metadata": "SEO technique au Maroc | Audit, correction et optimisation",
-          "description_metadata": "Services d'audit et d'optimisation SEO technique au Maroc. Je corrige les problèmes de crawl, d'indexation, de performance et les problèmes techniques qui peuvent limiter votre visibilité dans les moteurs de recherche.",
+          "title": "Services de SEO technique en France — Auditer, corriger et optimiser les sites existants",
+          "title_metadata": "SEO technique en France | Audit, correction et optimisation",
+          "description_metadata": "Services d'audit et d'optimisation SEO technique en France. Je corrige les problèmes de crawl, d'indexation, de performance et les problèmes techniques qui peuvent limiter votre visibilité dans les moteurs de recherche.",
           "description": "J'audite, corrige et optimise les sites web existants afin d'améliorer leur crawlabilité, leur indexation, leurs performances et leur visibilité dans les moteurs de recherche. J'identifie les problèmes techniques liés à la structure du site, aux Core Web Vitals, aux métadonnées, aux données structurées, au maillage interne et à l'organisation du contenu, puis je mets en place un plan d'optimisation priorisé.",
           "title_card": "Audit SEO technique et optimisation de site web",
           "overviewTitle": "Pourquoi choisir mes services de SEO technique ?",
@@ -424,9 +1180,236 @@
         },
         "ecommerce_development": {
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
-          "title": "Développement de Sites E-commerce au Maroc",
-          "title_metadata": "Développement E-commerce au Maroc | Boutiques qui Vendent",
-          "description_metadata": "Développement e-commerce sur mesure au Maroc — boutiques rapides et sécurisées avec paiements CMI, paiement à la livraison & SEO. Conçues pour vendre plus.",
+          "landing": {
+            "seo": {
+              "title": "Création de boutique en ligne en France | Devsignpro",
+              "description": "Création de boutiques Shopify, WooCommerce ou Next.js rapides, sécurisées et optimisées pour le SEO. Développement e-commerce dès 2 500 €.",
+              "keywords": [
+                "création boutique en ligne",
+                "création site e-commerce",
+                "développeur e-commerce freelance France",
+                "création boutique Shopify",
+                "création boutique WooCommerce",
+                "boutique en ligne optimisée SEO"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Fil d’Ariane",
+              "home": "Accueil",
+              "services": "Services",
+              "current": "Création de boutique en ligne"
+            },
+            "hero": {
+              "eyebrow": "Développement e-commerce en France",
+              "heading": "Création de boutique en ligne rapide, claire et optimisée pour le SEO",
+              "description": "Je crée ou refonds des boutiques Shopify, WooCommerce et Next.js pour les marques et commerçants qui veulent présenter leurs produits clairement, rassurer au moment de l’achat et disposer d’une base technique adaptée au référencement naturel.",
+              "primaryCta": "Demander un devis gratuit",
+              "secondaryCta": "Voir ce qui est inclus",
+              "price": "À partir de 2 500 €",
+              "priceNote": "Tarif indicatif et négociable selon le catalogue et les intégrations",
+              "promise": [
+                "Délai indicatif : 4 à 8 semaines",
+                "Paiements et parcours mobile",
+                "Réponse sous 24 h"
+              ],
+              "imageAlt": "Boutique en ligne responsive avec catalogue produits, panier et paiement sécurisé",
+              "imageCaption": "Catalogue · Fiches produits · Panier · Paiement · Suivi"
+            },
+            "problems": {
+              "eyebrow": "Votre projet",
+              "heading": "Votre boutique doit simplifier l’achat, pas ajouter des obstacles",
+              "description": "Le choix de la plateforme et des fonctionnalités part de votre catalogue, de votre équipe et du parcours réel de vos clients.",
+              "items": [
+                "Vous voulez vendre en ligne sans savoir quelle plateforme choisir.",
+                "Votre boutique actuelle est lente ou difficile à utiliser sur mobile.",
+                "Les produits sont mal organisés et les clients trouvent difficilement ce qu’ils cherchent.",
+                "Le panier ou le paiement crée des abandons et des demandes d’assistance.",
+                "Vous dépendez d’un développeur pour modifier chaque produit ou contenu.",
+                "Une refonte ou migration doit préserver les URL et les données utiles."
+              ]
+            },
+            "definition": {
+              "eyebrow": "L’objectif",
+              "heading": "Qu’est-ce qu’une boutique en ligne efficace ?",
+              "answer": "C’est un parcours cohérent entre la découverte d’un produit, la vérification des informations, l’ajout au panier, le paiement et le suivi de commande.",
+              "note": "Le design ne suffit pas : catalogue, recherche, livraison, moyens de paiement, contenus produits, performance et mesure doivent fonctionner ensemble."
+            },
+            "deliverables": {
+              "eyebrow": "Périmètre",
+              "heading": "Les fondations prévues dans votre projet e-commerce",
+              "description": "Le devis précise le nombre de produits, les règles de livraison, les paiements, les langues et les intégrations retenues.",
+              "items": [
+                {
+                  "title": "Catalogue structuré",
+                  "text": "Catégories, variantes, filtres et recherche organisés pour aider les clients et les moteurs à comprendre vos produits."
+                },
+                {
+                  "title": "Parcours mobile",
+                  "text": "Pages produits, panier et paiement conçus pour rester simples et lisibles sur les petits écrans."
+                },
+                {
+                  "title": "SEO e-commerce",
+                  "text": "URL, métadonnées, canonicals, sitemap, maillage interne et données Product lorsque les informations le permettent."
+                },
+                {
+                  "title": "Performance",
+                  "text": "Images produits, polices, scripts et rendu maîtrisés pour limiter les ralentissements et les décalages de mise en page."
+                },
+                {
+                  "title": "Paiement et livraison",
+                  "text": "Stripe, PayPal ou moyens adaptés, avec règles de livraison et messages transactionnels définis dans le projet."
+                },
+                {
+                  "title": "Gestion et mesure",
+                  "text": "Accès aux produits et commandes, analytics convenus, Search Console, tests et prise en main avant lancement."
+                }
+              ]
+            },
+            "choices": {
+              "eyebrow": "Choix de plateforme",
+              "heading": "Shopify, WooCommerce ou Next.js selon votre fonctionnement",
+              "description": "La meilleure solution n’est pas la plus technique : c’est celle que votre équipe peut exploiter et maintenir durablement.",
+              "items": [
+                {
+                  "title": "Shopify",
+                  "text": "Pour lancer avec un environnement e-commerce hébergé, une administration accessible et un écosystème d’applications."
+                },
+                {
+                  "title": "WooCommerce",
+                  "text": "Pour vendre depuis WordPress avec une forte liberté éditoriale, en prévoyant l’hébergement et la maintenance."
+                },
+                {
+                  "title": "Next.js sur mesure",
+                  "text": "Pour un parcours, des intégrations ou des contraintes de performance qui dépassent les besoins d’une boutique standard."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Méthode",
+              "heading": "De votre catalogue à une boutique prête à recevoir des commandes",
+              "description": "Chaque étape est validée avant de passer à la suivante afin de limiter les changements tardifs.",
+              "steps": [
+                {
+                  "title": "Cadrage",
+                  "text": "Catalogue, marchés, règles de vente, livraison, paiements, contenus et responsabilités."
+                },
+                {
+                  "title": "Parcours et design",
+                  "text": "Architecture, catégories, fiches produits, panier, paiement et expérience mobile."
+                },
+                {
+                  "title": "Développement",
+                  "text": "Configuration, intégrations, SEO technique, performance, mesure et import des contenus convenus."
+                },
+                {
+                  "title": "Tests et lancement",
+                  "text": "Commandes tests, emails, taxes, livraison, redirections, indexation et formation."
+                }
+              ]
+            },
+            "considerations": {
+              "eyebrow": "SEO et conversion",
+              "heading": "Des pages produits compréhensibles avant de chercher à les positionner",
+              "description": "Une base technique aide les moteurs à explorer la boutique, mais la visibilité dépend aussi de la demande, de la qualité du catalogue, du contenu et de la réputation de la marque.",
+              "items": [
+                "Titres, descriptions, prix, disponibilité et variantes cohérents",
+                "Catégories utiles plutôt que des pages générées sans intention claire",
+                "Données structurées fidèles aux informations visibles",
+                "Liens internes entre catégories, produits et contenus de conseil",
+                "Mesure des vues produit, ajouts au panier, débuts de paiement et achats"
+              ]
+            },
+            "bridge": {
+              "heading": "Votre boutique existe déjà mais reste peu visible ?",
+              "description": "Si le catalogue et la plateforme conviennent encore, un audit peut être plus pertinent qu’une refonte complète pour identifier les problèmes d’indexation, de facettes, de données structurées ou de performance.",
+              "href": "/services/technical-seo",
+              "label": "Voir l’audit SEO technique"
+            },
+            "useCases": {
+              "eyebrow": "Projets adaptés",
+              "heading": "Des boutiques conçues autour d’un modèle de vente précis",
+              "items": [
+                {
+                  "title": "Marques et créateurs",
+                  "text": "Catalogue maîtrisé, univers de marque, contenus produits et parcours direct jusqu’au paiement."
+                },
+                {
+                  "title": "Commerces et distributeurs",
+                  "text": "Stocks, variantes, catégories, retraits ou livraisons selon les règles réelles de l’activité."
+                },
+                {
+                  "title": "Catalogue B2B",
+                  "text": "Présentation de gammes, demandes de devis ou accès réservés lorsque l’achat direct n’est pas adapté."
+                },
+                {
+                  "title": "Refonte et migration",
+                  "text": "Modernisation d’une boutique existante avec inventaire des URL, redirections et contrôles après bascule."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Questions fréquentes",
+              "heading": "Avant de créer votre boutique en ligne",
+              "items": [
+                {
+                  "q": "Combien coûte la création d’une boutique en ligne ?",
+                  "a": "Mes projets e-commerce démarrent à 2 500 €. Le prix dépend du catalogue, du design, des langues, des paiements, de la livraison et des intégrations. Le tarif est indicatif et négociable ; le périmètre est détaillé dans le devis."
+                },
+                {
+                  "q": "Combien de temps faut-il pour mettre la boutique en ligne ?",
+                  "a": "Une boutique nécessite généralement 4 à 8 semaines après validation du périmètre et réception des contenus. Une migration, un catalogue important ou des règles de vente complexes peuvent demander davantage de temps."
+                },
+                {
+                  "q": "Shopify, WooCommerce ou Next.js : lequel choisir ?",
+                  "a": "Shopify facilite l’exploitation d’une boutique hébergée, WooCommerce convient aux entreprises déjà organisées autour de WordPress, et Next.js répond aux parcours ou intégrations très spécifiques. Je recommande la solution après étude du catalogue, du budget et de l’équipe."
+                },
+                {
+                  "q": "Pourrai-je gérer les produits et les commandes ?",
+                  "a": "Oui. La gestion quotidienne doit rester accessible à votre équipe. Les accès, rôles et opérations courantes sont définis pendant le cadrage, puis vérifiés lors de la prise en main."
+                },
+                {
+                  "q": "Le SEO e-commerce est-il inclus ?",
+                  "a": "Les fondations techniques sont incluses : structure, métadonnées, canonicals, sitemap, performance, maillage de base et données structurées pertinentes. La production continue de contenus, le netlinking ou un audit approfondi sont des prestations distinctes."
+                },
+                {
+                  "q": "Pouvez-vous migrer ma boutique sans perdre mes URL ?",
+                  "a": "Oui. Une migration sérieuse comprend un inventaire des URL, un mapping de redirections 301, la conservation des contenus utiles et des contrôles après lancement. Des fluctuations restent possibles ; aucune migration ne permet de garantir des positions inchangées."
+                },
+                {
+                  "q": "Qui prépare les CGV, mentions légales et règles de confidentialité ?",
+                  "a": "Je peux intégrer les pages et mécanismes prévus, mais les textes juridiques doivent être fournis ou validés par un professionnel compétent. Le devis précise aussi les responsabilités liées aux taxes, livraisons et données personnelles."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Services liés à votre boutique",
+              "items": [
+                {
+                  "title": "Diagnostiquer une boutique existante",
+                  "href": "/services/technical-seo",
+                  "label": "Audit SEO technique"
+                },
+                {
+                  "title": "Créer un site vitrine sans vente en ligne",
+                  "href": "/services/web-development",
+                  "label": "Développement web"
+                },
+                {
+                  "title": "Comparer toutes les prestations",
+                  "href": "/services",
+                  "label": "Voir les services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Parlons de votre catalogue, de vos clients et de votre façon de vendre",
+              "description": "Décrivez vos produits, votre boutique actuelle et les intégrations nécessaires. Je vous réponds sous 24 h avec les prochaines étapes.",
+              "button": "Demander un devis gratuit"
+            }
+          },
+          "title": "Développement de Sites E-commerce en France",
+          "title_metadata": "Développement E-commerce en France | Boutiques qui Vendent",
+          "description_metadata": "Développement e-commerce sur mesure en France — boutiques rapides et sécurisées avec paiement Stripe, PayPal & SEO. Conçues pour vendre plus.",
           "description": "Sites e-commerce personnalisés conçus pour vendre en ligne avec des paiements sécurisés, des performances rapides et une architecture évolutive. Chaque boutique inclut le SEO technique, les Core Web Vitals, des pages produits optimisées et l'optimisation pour la recherche IA pour augmenter la visibilité sur Google, ChatGPT et Perplexity.",
           "title_card": "Développement Boutique E-commerce",
           "overviewHeadline": "Des Boutiques en Ligne Conçues pour les Ventes, la Vitesse et la Croissance",
@@ -452,12 +1435,12 @@
             "Pages Produits Optimisées SEO",
             "Prêt pour la Recherche IA (GEO)",
             "Design Responsive",
-            "Paiements Sécurisés (CMI & COD)"
+            "Paiements Sécurisés (Stripe & PayPal)"
           ],
           "included": [
-            "Design et développement de boutique sur mesure avec Next.js, React et Nest.js",
+            "Design et développement de boutique sur mesure avec Next.js, React et Express.js",
             "Système e-commerce complet : catalogue produits, catégories, recherche, panier, liste de souhaits, checkout sécurisé et gestion des commandes",
-            "Paiements locaux et internationaux : CMI, paiement à la livraison (COD), Stripe et PayPal",
+            "Paiements par carte bancaire, Stripe, PayPal, Apple Pay et virement SEPA",
             "SEO produit : pages produits optimisées, balisage schema Product, sitemap et robots.txt",
             "Optimisation GEO & AEO pour que les assistants IA trouvent, citent et recommandent vos produits",
             "Optimisation Core Web Vitals : pages produits rapides, optimisation des images et temps de chargement instantanés",
@@ -492,7 +1475,7 @@
             {
               "step": "03",
               "title": "Paiements, SEO & Optimisation IA",
-              "text": "Intégration CMI, COD, Stripe et PayPal — plus schema Product, métadonnées et contenu structuré pour les classements Google et les citations IA."
+              "text": "Intégration Stripe, PayPal et carte bancaire — plus schema Product, métadonnées et contenu structuré pour les classements Google et les citations IA."
             },
             {
               "step": "04",
@@ -507,20 +1490,20 @@
           },
           "faqs": [
             {
-              "q": "Combien coûte la création d'une boutique en ligne au Maroc ?",
+              "q": "Combien coûte la création d'une boutique en ligne en France ?",
               "a": "Le coût dépend du nombre de produits, des intégrations de paiement, de la complexité du design et des fonctionnalités personnalisées. Une boutique simple avec des paiements standard coûte moins cher qu'une plateforme personnalisée avec des fonctionnalités avancées. Je fournis un devis adapté à vos objectifs — chaque boutique inclut SEO, sécurité et optimisation des performances dès le départ."
             },
             {
               "q": "Quels modes de paiement ma boutique en ligne peut-elle accepter ?",
-              "a": "Votre boutique peut accepter les modes de paiement que vos clients utilisent réellement : CMI pour les cartes bancaires marocaines, paiement à la livraison (COD) pour les acheteurs locaux, et Stripe ou PayPal pour les clients internationaux. Je vous aide à choisir et intégrer la bonne combinaison pour votre marché."
+              "a": "Votre boutique peut accepter les modes de paiement que vos clients utilisent réellement : carte bancaire (CB, Visa, Mastercard) via Stripe, PayPal, Apple Pay et Google Pay, ou encore le virement SEPA. Je vous aide à choisir et intégrer la bonne combinaison pour votre marché."
             },
             {
               "q": "Ma boutique en ligne peut-elle supporter plusieurs langues et devises ?",
-              "a": "Oui. Je peux construire des boutiques multilingues et multi-devises pour que vous puissiez vendre localement au Maroc ou à l'international tout en maintenant d'excellentes performances et un bon SEO."
+              "a": "Oui. Je peux construire des boutiques multilingues et multi-devises pour que vous puissiez vendre en France, en Europe ou à l'international tout en maintenant d'excellentes performances et un bon SEO."
             },
             {
               "q": "Dois-je choisir Shopify, WooCommerce ou une boutique personnalisée ?",
-              "a": "Shopify et WooCommerce fonctionnent pour des démarrages rapides, mais ils comportent des frais mensuels, des limitations de plugins et des performances plus lentes. Une boutique personnalisée construite avec Next.js est plus rapide, entièrement adaptée à votre activité, sans frais de plateforme, et obtient de meilleurs scores Core Web Vitals — ce qui améliore directement vos classements Google et conversions."
+              "a": "Shopify convient pour lancer rapidement une boutique avec un écosystème e-commerce géré. WooCommerce est adapté aux entreprises qui souhaitent vendre avec WordPress et garder une grande liberté sur leurs contenus. Une boutique Next.js répond aux besoins très spécifiques de parcours, d'intégrations ou de performance. Le bon choix dépend du catalogue, du budget, de l'équipe et de la maintenance souhaitée."
             },
             {
               "q": "Puis-je gérer les produits et commandes moi-même après le lancement ?",
@@ -538,11 +1521,234 @@
         },
         "business_dashboards": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "title": "Automatisation des Processus & Tableaux de Bord Sur Mesure au Maroc",
-          "title_metadata": "Automatisation & Tableaux de Bord Personnalisés Maroc",
-          "description_metadata": "Services d'automatisation, tableaux de bord personnalisés et intégration IA au Maroc. Rationalisez vos opérations et développez votre entreprise.",
-          "title_card": "Automatisation & Tableaux de Bord sur Mesure",
-          "description": "Tableaux de bord personnalisés, automatisation des workflows et systèmes d'entreprise alimentés par l'IA qui rationalisent les opérations, éliminent les tâches répétitives, améliorent la productivité et soutiennent des décisions commerciales plus intelligentes.",
+          "landing": {
+            "seo": {
+              "title": "Application web et tableau de bord sur mesure | Devsignpro",
+              "description": "Développement d’applications web métier, espaces clients et tableaux de bord sur mesure en France. Interfaces sécurisées, API et bases de données.",
+              "keywords": [
+                "application web sur mesure",
+                "développement application métier",
+                "tableau de bord sur mesure",
+                "dashboard métier",
+                "développeur application web freelance",
+                "espace client sur mesure"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Fil d’Ariane",
+              "home": "Accueil",
+              "services": "Services",
+              "current": "Applications et tableaux de bord"
+            },
+            "hero": {
+              "eyebrow": "Développement full-stack sur mesure",
+              "heading": "Application web et tableau de bord sur mesure pour votre activité",
+              "description": "Je développe des outils internes, espaces clients et interfaces métier adaptés à vos utilisateurs, vos données et vos règles de fonctionnement lorsque les logiciels standards ne correspondent pas au besoin.",
+              "primaryCta": "Parler de votre projet",
+              "secondaryCta": "Voir les possibilités",
+              "price": "Sur devis",
+              "priceNote": "Périmètre, calendrier et budget définis après cadrage",
+              "promise": [
+                "Interface adaptée aux utilisateurs",
+                "Rôles, API et données sécurisés",
+                "Réponse sous 24 h"
+              ],
+              "imageAlt": "Tableau de bord métier sur mesure avec indicateurs, utilisateurs et données opérationnelles",
+              "imageCaption": "Utilisateurs · Données · Rôles · API · Déploiement"
+            },
+            "problems": {
+              "eyebrow": "Votre besoin",
+              "heading": "Un outil sur mesure devient utile quand le logiciel générique crée plus de contraintes qu’il n’en résout",
+              "description": "L’objectif n’est pas de remplacer tous vos outils, mais de construire l’interface nécessaire autour d’un besoin métier clairement défini.",
+              "items": [
+                "Les informations sont dispersées entre plusieurs fichiers ou outils.",
+                "Votre équipe ressaisit les mêmes données et perd le contexte.",
+                "Un logiciel standard impose un processus qui ne correspond pas à votre activité.",
+                "Clients, partenaires ou collaborateurs ont besoin d’un espace dédié.",
+                "Vous devez gérer des rôles, validations ou règles métier spécifiques.",
+                "Un prototype doit évoluer vers une application fiable et maintenable."
+              ]
+            },
+            "definition": {
+              "eyebrow": "La solution",
+              "heading": "Qu’est-ce qu’une application métier sur mesure ?",
+              "answer": "C’est une application web conçue autour d’un processus précis : consulter et modifier des données, suivre une activité, gérer des utilisateurs ou fournir un service en ligne.",
+              "note": "Elle peut prendre la forme d’un back-office, d’un espace client, d’un tableau de bord ou d’un outil métier complet. Les fonctionnalités sont priorisées selon leur valeur réelle."
+            },
+            "deliverables": {
+              "eyebrow": "Périmètre",
+              "heading": "Une base complète pour une application exploitable",
+              "description": "Le périmètre dépend du niveau de complexité, des données existantes, des intégrations et des exigences de sécurité.",
+              "items": [
+                {
+                  "title": "Cadrage fonctionnel",
+                  "text": "Utilisateurs, objectifs, données, parcours, règles métier et critères d’acceptation documentés avant développement."
+                },
+                {
+                  "title": "Interface responsive",
+                  "text": "Écrans clairs pour les tâches quotidiennes, utilisables sur les appareils réellement prévus dans le projet."
+                },
+                {
+                  "title": "Comptes et permissions",
+                  "text": "Authentification et rôles définis selon ce que chaque profil peut consulter, créer, modifier ou exporter."
+                },
+                {
+                  "title": "API et intégrations",
+                  "text": "Connexion aux services et outils convenus, avec gestion explicite des erreurs et des données échangées."
+                },
+                {
+                  "title": "Backend et données",
+                  "text": "Modèle de données, validations, journaux utiles et architecture adaptée au volume et aux opérations attendues."
+                },
+                {
+                  "title": "Tests et déploiement",
+                  "text": "Scénarios essentiels vérifiés, environnement configuré, documentation et prise en main avant livraison."
+                }
+              ]
+            },
+            "choices": {
+              "eyebrow": "Formats possibles",
+              "heading": "Le bon type d’application dépend de la tâche à accomplir",
+              "description": "Le projet peut commencer par un périmètre réduit puis évoluer après validation de l’usage.",
+              "items": [
+                {
+                  "title": "Tableau de bord interne",
+                  "text": "Suivre des indicateurs, consulter des opérations et donner à l’équipe une vue commune sur les données utiles."
+                },
+                {
+                  "title": "Espace client ou partenaire",
+                  "text": "Partager des documents, statuts, demandes ou informations dans un environnement authentifié."
+                },
+                {
+                  "title": "Application métier",
+                  "text": "Gérer un processus spécifique avec formulaires, règles, rôles, historique et connexions à d’autres systèmes."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Méthode",
+              "heading": "Construire d’abord le parcours essentiel, puis faire évoluer l’outil",
+              "description": "Le découpage réduit le risque de développer des fonctionnalités coûteuses avant de confirmer leur utilité.",
+              "steps": [
+                {
+                  "title": "Découverte",
+                  "text": "Entretiens, utilisateurs, processus actuel, contraintes, données et objectifs."
+                },
+                {
+                  "title": "Spécification",
+                  "text": "Parcours, maquettes, modèle de données, rôles et périmètre de la première version."
+                },
+                {
+                  "title": "Développement",
+                  "text": "Frontend, backend Express.js, base de données, API, tests et retours réguliers."
+                },
+                {
+                  "title": "Livraison",
+                  "text": "Recette, déploiement, documentation, formation et plan des évolutions prioritaires."
+                }
+              ]
+            },
+            "considerations": {
+              "eyebrow": "Qualité technique",
+              "heading": "Sécurité, maintenabilité et performance prévues dès le cadrage",
+              "description": "Une application interne n’a pas les mêmes objectifs SEO qu’un site public, mais elle exige une architecture compréhensible et des accès correctement protégés.",
+              "items": [
+                "Contrôles d’accès côté serveur et séparation claire des rôles",
+                "Validation des entrées et traitement explicite des erreurs",
+                "Pages privées exclues de l’indexation et protégées par authentification",
+                "Chargement progressif des données et interfaces stables",
+                "Documentation des intégrations, variables et étapes de déploiement"
+              ]
+            },
+            "bridge": {
+              "heading": "Vous avez surtout besoin d’un site public pour présenter votre offre ?",
+              "description": "Un tableau de bord privé et un site destiné à être trouvé sur Google répondent à des objectifs différents. Pour une présence commerciale, commencez par le service de création de site internet.",
+              "href": "/services/web-development",
+              "label": "Voir le développement web"
+            },
+            "useCases": {
+              "eyebrow": "Exemples d’usage",
+              "heading": "Des interfaces construites autour d’un besoin opérationnel",
+              "items": [
+                {
+                  "title": "Suivi clients et dossiers",
+                  "text": "Centraliser contacts, statuts, documents, notes et prochaines actions avec des droits adaptés."
+                },
+                {
+                  "title": "Stocks et commandes",
+                  "text": "Consulter les mouvements, niveaux, fournisseurs et commandes depuis une interface reliée aux données utiles."
+                },
+                {
+                  "title": "Reporting et indicateurs",
+                  "text": "Regrouper des sources définies et présenter des indicateurs compréhensibles avec filtres et exports."
+                },
+                {
+                  "title": "Portail client ou partenaire",
+                  "text": "Donner un accès sécurisé à des demandes, livrables, factures, réservations ou informations de suivi."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Questions fréquentes",
+              "heading": "Avant de développer votre application sur mesure",
+              "items": [
+                {
+                  "q": "Combien coûte une application web ou un tableau de bord sur mesure ?",
+                  "a": "Le prix dépend des utilisateurs, écrans, rôles, données, intégrations et exigences de sécurité. Cette prestation est sur devis. Je propose d’abord un périmètre priorisé afin de distinguer la première version des évolutions futures."
+                },
+                {
+                  "q": "Combien de temps faut-il pour développer l’application ?",
+                  "a": "Le calendrier est défini après cadrage. Une première version limitée peut être livrée plus rapidement qu’un système complet avec plusieurs rôles et intégrations. Les étapes et dépendances sont précisées avant le développement."
+                },
+                {
+                  "q": "Pouvez-vous connecter mes outils et données existants ?",
+                  "a": "Oui, lorsque les outils fournissent une API, un export ou un moyen d’intégration fiable. Je vérifie la documentation, les limites, les coûts et la qualité des données avant de confirmer l’intégration."
+                },
+                {
+                  "q": "Comment protégez-vous les comptes et les données ?",
+                  "a": "Le projet peut inclure authentification, rôles, validations côté serveur, gestion sécurisée des secrets, journalisation utile et sauvegardes selon l’hébergement retenu. Les exigences particulières doivent être identifiées pendant le cadrage."
+                },
+                {
+                  "q": "L’application sera-t-elle optimisée pour le SEO ?",
+                  "a": "Les espaces authentifiés et données privées ne doivent généralement pas être indexés. Si le produit a aussi des pages publiques destinées à Google, elles sont traitées séparément avec rendu, métadonnées, structure et maillage adaptés."
+                },
+                {
+                  "q": "Qui possède le code et peut maintenir l’application ?",
+                  "a": "La propriété, les accès, l’hébergement et les conditions de maintenance sont définis dans le devis. Le code est organisé et documenté pour permettre une reprise raisonnable par un autre développeur."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Services liés à votre application",
+              "items": [
+                {
+                  "title": "Créer le site public de votre entreprise",
+                  "href": "/services/web-development",
+                  "label": "Développement web"
+                },
+                {
+                  "title": "Créer une boutique avec gestion des commandes",
+                  "href": "/services/ecommerce-development",
+                  "label": "Développement e-commerce"
+                },
+                {
+                  "title": "Comparer toutes les prestations",
+                  "href": "/services",
+                  "label": "Voir les services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Décrivez le processus que votre outil doit réellement faciliter",
+              "description": "Indiquez les utilisateurs, les données, les écrans essentiels et les outils à connecter. Je vous réponds sous 24 h pour organiser le cadrage.",
+              "button": "Parler de votre projet"
+            }
+          },
+          "title": "Applications Web & Tableaux de Bord Sur Mesure en France",
+          "title_metadata": "Application Web & Tableau de Bord Sur Mesure",
+          "description_metadata": "Développement d'applications web métier, espaces clients et tableaux de bord sur mesure avec React, Next.js, Express.js, API et bases de données.",
+          "title_card": "Applications Web & Tableaux de Bord",
+          "description": "Applications métier, espaces clients et tableaux de bord personnalisés reliés à vos utilisateurs, vos données et vos règles de fonctionnement.",
           "overviewHeadline": "Automatisez Vos Opérations & Travaillez Plus Intelligemment",
           "startDescription": "Votre équipe ne devrait pas perdre de temps sur des tâches répétitives quand un logiciel peut les automatiser. Les tableaux de bord personnalisés et l'automatisation des workflows vous donnent une visibilité en temps réel, réduisent les erreurs et libèrent votre équipe pour se concentrer sur la croissance.",
           "longDescription": "Je conçois et développe des tableaux de bord d'entreprise personnalisés, des systèmes de gestion internes, des automatisations de workflow et des intégrations IA adaptés à la façon dont votre entreprise fonctionne réellement. Que vous ayez besoin d'un logiciel CRM, de systèmes de gestion des stocks, de tableaux de bord de reporting, d'automatisation de documents, d'assistants IA ou d'intégrations API — chaque solution est conçue pour gagner du temps, réduire le travail manuel, améliorer la précision et vous donner un contrôle total sur vos opérations.",
@@ -634,7 +1840,7 @@
           ],
           "techStackList": [
             "Next.js & React",
-            "Backend Nest.js",
+            "Backend Express.js",
             "APIs OpenAI & Claude",
             "APIs REST & GraphQL",
             "PostgreSQL & MongoDB",
@@ -705,110 +1911,308 @@
       "cta_btn": "Parlons de votre projet"
     },
     "about_page": {
-      "title": "À propos",
-      "heading": "À propos de Mohammed Elghandori — Développeur Full-Stack & Spécialiste SEO",
-      "intro": "Je suis Mohammed Elghandori, développeur web Full-Stack et spécialiste SEO basé au Maroc. Je conçois et développe des sites web performants, des boutiques e-commerce et des tableaux de bord d'entreprise en utilisant Next.js, React.js, Nest.js et d'autres technologies modernes.",
-      "intro_2": "Chaque projet est développé avec un SEO technique, les Core Web Vitals, les données structurées (Schema.org) et une optimisation pour la recherche IA afin d'améliorer la visibilité sur Google, les aperçus IA, ChatGPT, Perplexity et autres moteurs IA.",
-      "stats": {
-        "years": "Ans d'expérience",
-        "clients": "Clients satisfaits",
-        "projects": "Projets livrés"
+      "seo": {
+        "title": "Mohammed Elghandori | Consultant SEO & Développeur Web",
+        "description": "Découvrez Mohammed Elghandori, consultant SEO technique et développeur web basé en France : parcours, compétences, projets et distinctions.",
+        "keywords": [
+          "Mohammed Elghandori",
+          "Devsignpro",
+          "Mohammed Elghandori SEO",
+          "consultant SEO technique",
+          "consultant SEO et développeur web",
+          "développeur Next.js SEO",
+          "consultant GEO France",
+          "renfort SEO technique freelance"
+        ]
       },
-      "whoIAm": {
-        "title": "Qui Je Suis",
-        "paragraph1": "Je suis Mohammed Elghandori, Développeur Web Full-Stack et Spécialiste SEO passionné par la création d'expériences web modernes qui résolvent de vrais problèmes business. J'ai étudié l'ingénierie logicielle à l'école 1337 UM6P (réseau 42), où j'ai acquis de solides bases en informatique, algorithmes, systèmes d'exploitation, réseaux, architecture logicielle et développement collaboratif. En parallèle, j'ai obtenu des certifications en développement web, marketing digital et intelligence artificielle, tout en perfectionnant continuellement mon expertise technique.",
-        "paragraph2": "Je crois en un travail de qualité, une communication claire et des résultats mesurables. Que vous soyez une startup ou une grande entreprise visant les marchés internationaux, je m'engage à vous aider à réussir en ligne avec des solutions qui fonctionnent, car votre succès est le mien."
+      "breadcrumb": {
+        "label": "Fil d'Ariane",
+        "home": "Accueil",
+        "current": "À propos"
       },
-      "tech_philosophy": {
-        "title": "Ma Stack Technique et ma Philosophie d'Ingénierie",
-        "paragraph": "Je choisis les technologies en fonction des besoins réels de chaque projet, et pas simplement en suivant les tendances. J'utilise principalement Next.js et React pour créer des interfaces rapides, maintenables et optimisées pour le SEO, ainsi que Nest.js pour développer des systèmes backend évolutifs. Je travaille également avec Tailwind CSS, MongoDB, Docker et GitHub Actions pour favoriser un développement efficace, des déploiements fiables et une maintenance durable. En combinant le développement web moderne avec le SEO technique et l'optimisation pour la recherche IA, je conçois des produits numériques pensés pour la performance, la visibilité dans les moteurs de recherche et une croissance durable."
+      "hero": {
+        "eyebrow": "À propos de Mohammed Elghandori",
+        "heading": "Mohammed Elghandori, consultant SEO technique et développeur web",
+        "intro": "Basé en France et originaire du Maroc, j'aide les entreprises à comprendre pourquoi leur site reste peu visible, puis à corriger les problèmes qui bloquent son référencement naturel, ses performances ou ses conversions.",
+        "differentiator": "Mon avantage est de réunir le conseil SEO et l'implémentation technique : je peux analyser l'indexation, la structure et le contenu, puis intervenir directement sur le code lorsque la solution l'exige.",
+        "primaryCta": "Demander un devis gratuit",
+        "secondaryCta": "Découvrir mon audit SEO",
+        "portraitAlt": "Portrait de Mohammed Elghandori, consultant SEO technique et développeur web basé en France",
+        "caption": "Mohammed Elghandori · Devsignpro"
       },
-      "experience": {
-        "title": "Mon Expérience et Mon Parcours Technique",
-        "paragraph": "J'ai de l'expérience dans le développement de tableaux de bord de gestion et de sites web corporate performants pour des entreprises, des startups et des projets personnels. Mon travail couvre l'ensemble du cycle de développement, de l'architecture système et de l'implémentation de l'interface utilisateur au développement backend, au déploiement, au SEO technique et à l'optimisation des performances. Grâce aux projets clients, aux hackathons et à mon apprentissage continu, j'ai renforcé ma capacité à résoudre des problèmes techniques complexes, à collaborer en équipe et à développer des logiciels fiables et évolutifs qui créent une réelle valeur pour les entreprises."
+      "facts": [
+        {
+          "label": "Localisation",
+          "value": "Basé en France, originaire du Maroc"
+        },
+        {
+          "label": "Outils",
+          "value": "Search Console, Lighthouse, Semrush, Keyword Planner"
+        },
+        {
+          "label": "Spécialisation",
+          "value": "SEO technique, recherche IA et développement web"
+        },
+        {
+          "label": "Disponibilité",
+          "value": "Mission freelance, temps partiel ou temps plein"
+        }
+      ],
+      "approach": {
+        "eyebrow": "Ma façon de travailler",
+        "heading": "Du diagnostic SEO à la correction dans le code",
+        "description": "Un audit n'est utile que s'il débouche sur des décisions claires. Je relie chaque recommandation à un problème réel de visibilité, d'expérience utilisateur ou de conversion.",
+        "steps": [
+          {
+            "title": "Analyser",
+            "text": "J'examine l'exploration, l'indexation, le rendu JavaScript, les performances, l'architecture, le contenu et les données structurées."
+          },
+          {
+            "title": "Prioriser",
+            "text": "Je distingue les blocages importants des optimisations secondaires pour concentrer le temps et le budget sur ce qui peut réellement aider le site."
+          },
+          {
+            "title": "Corriger",
+            "text": "Je peux mettre en œuvre les corrections SEO, améliorer les gabarits ou reconstruire une base technique lorsque le site actuel limite les résultats."
+          },
+          {
+            "title": "Mesurer",
+            "text": "Après la mise en ligne, je contrôle les réponses HTTP, les canonicals, les sitemaps, les données structurées et les signaux disponibles dans Search Console."
+          }
+        ]
       },
-      "storyMissionValues": {
-        "title": "Découvrez l'histoire, la mission et les valeurs qui m'animent",
-        "story": "Mon parcours dans le développement logiciel a commencé par une curiosité pour le fonctionnement des sites web, des serveurs et d'Internet. Cette curiosité s'est rapidement transformée en passion pour la création de produits alliant code propre, excellente expérience utilisateur et impact business mesurable. Aujourd'hui, je continue d'apprendre de nouvelles technologies tout en aidant les entreprises à se développer grâce à des solutions numériques modernes.",
-        "mission": "Ma mission est d'aider les entreprises, les startups et les entrepreneurs à créer des sites web et des produits numériques rapides, visibles, évolutifs et prêts pour l'avenir de la recherche. Chaque projet que je crée combine performance, SEO technique, optimisation pour la recherche IA et design centré sur l'utilisateur pour apporter une valeur à long terme.",
-        "valuesTitle": "Ce que je défends",
-        "values": [
-          "La qualité avant les raccourcis — chaque projet est construit pour une fiabilité à long terme.",
-          "La transparence — une communication claire de la planification jusqu'au lancement.",
-          "Le partenariat — votre succès est la mesure du mien."
+      "background": {
+        "heading": "Un parcours d'ingénierie appliqué au référencement",
+        "paragraphs": [
+          "J'ai étudié l'ingénierie logicielle à 1337 UM6P, au sein du réseau 42. Cette formation par projets m'a donné des bases solides en algorithmique, systèmes, réseaux, architecture logicielle et travail en équipe.",
+          "Je poursuis actuellement un cursus certifiant RNCP à 42 Paris. Les compétitions d'ingénierie, les projets clients et le développement continuent de renforcer ma capacité à résoudre des problèmes techniques sous contrainte et à livrer des solutions maintenables."
         ],
-        "storyLabel": "Mon Histoire",
-        "missionLabel": "Ma Mission"
+        "educationHeading": "Formation",
+        "education": [
+          {
+            "name": "1337 UM6P · Réseau 42",
+            "detail": "Ingénierie logicielle par projets : algorithmique, systèmes, réseaux et développement collaboratif."
+          },
+          {
+            "name": "42 Paris",
+            "detail": "Cursus certifiant RNCP actuellement en cours."
+          },
+          {
+            "name": "Apprentissage continu",
+            "detail": "SEO technique, développement web, marketing digital, recherche IA et déploiement."
+          }
+        ]
       },
-      "valuesSection": {
-        "title": "Valeurs Fondamentales",
-        "subtitle": "Ce en quoi je crois"
+      "capabilities": {
+        "eyebrow": "Compétences",
+        "heading": "Ce que je peux prendre en charge",
+        "intro": "Je combine analyse, stratégie et développement pour éviter le décalage entre les recommandations SEO et leur mise en œuvre technique.",
+        "groups": [
+          {
+            "title": "SEO technique",
+            "description": "Identifier et corriger ce qui empêche les moteurs de recherche de trouver, comprendre et évaluer correctement un site.",
+            "items": [
+              "Exploration, indexation et rendu JavaScript",
+              "Canonicals, redirections, sitemaps et migrations",
+              "Métadonnées, HTML sémantique et accessibilité",
+              "Schema.org et données structurées",
+              "Core Web Vitals et performance web"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Voir l'audit SEO technique"
+          },
+          {
+            "title": "Contenu et recherche IA",
+            "description": "Organiser l'information pour répondre à l'intention de recherche et faciliter son extraction par Google et les moteurs IA.",
+            "items": [
+              "Recherche d'intention et architecture éditoriale",
+              "Maillage interne et hiérarchie des pages",
+              "Contenu clair pour Google et les utilisateurs",
+              "Signaux d'entité et de confiance",
+              "Visibilité dans ChatGPT, AI Overviews et Perplexity"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Découvrir l'optimisation SEO et GEO"
+          },
+          {
+            "title": "Développement web",
+            "description": "Construire ou améliorer la plateforme lorsque les performances, le CMS ou le code limitent la visibilité et l'évolution du projet.",
+            "items": [
+              "Next.js, React et Express.js",
+              "WordPress, WooCommerce et Shopify",
+              "Sites vitrines et boutiques en ligne",
+              "API, tableaux de bord et applications web",
+              "Déploiement, maintenance et sécurité"
+            ],
+            "href": "/services/web-development",
+            "linkLabel": "Voir mes services de développement web"
+          }
+        ]
       },
-      "hackathons": {
-        "title": "Hackathons, certifications et événements",
-        "subtitle": "Compétitions, événements communautaires et formation professionnelle",
+      "work": {
+        "eyebrow": "Preuves par les projets",
+        "heading": "Trois réalisations que je peux présenter",
+        "intro": "Ces études de cas montrent les dimensions de mon profil : créer une boutique Shopify optimisée pour le référencement, améliorer la visibilité d'un site d'entreprise et développer un outil métier complet.",
+        "caseStudy": "Voir l'étude de cas",
+        "allProjects": "Explorer le portfolio"
+      },
+      "credentials": {
+        "heading": "Compétitions, rôles et certification",
+        "intro": "Ces expériences complètent les projets clients : elles montrent ma capacité à travailler en équipe, expliquer une solution et livrer sous contrainte.",
         "items": [
           {
             "name": "Marketing digital Google",
             "location": "Google",
             "year": "2021",
-            "place": "Certificat obtenu",
+            "result": "Certificat obtenu",
             "kind": "certificate"
           },
           {
             "name": "DyslexAI Hackathon",
             "location": "Al Akhawayn University, Ifrane",
             "year": "2024",
-            "place": "1er Prix"
+            "result": "1er prix",
+            "kind": "award"
           },
           {
             "name": "Attijari Business Hackathon",
-            "location": "Attijariwafa Bank Headquarters, Casablanca",
+            "location": "Attijariwafa Bank, Casablanca",
             "year": "2024",
-            "place": "2e Prix"
+            "result": "2e prix",
+            "kind": "award"
           },
           {
             "name": "Le Hubckathon",
-            "location": "UM6P, casablanca",
+            "location": "UM6P, Casablanca",
             "year": "2025",
-            "place": "Mentor"
+            "result": "Mentor",
+            "kind": "role"
           },
           {
             "name": "HackAI",
             "location": "UM6P, Ben Guerir",
             "year": "2025",
-            "place": "Organisateur"
+            "result": "Organisateur",
+            "kind": "role"
           },
           {
-            "name": "CureCode Hackathon",
+            "name": "Cursor Hackathon",
             "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
-            "place": "1er Prix"
+            "result": "1er prix",
+            "kind": "award"
           }
         ]
       },
-      "howCanIHelp": {
-        "title": "Comment puis-je vous aider ?",
-        "subtitle": "Comment nous pouvons collaborer",
+      "tools": {
+        "eyebrow": "Outils et méthode",
+        "heading": "Les outils que j'utilise pour mesurer et diagnostiquer",
+        "intro": "Un outil fournit des données, pas un diagnostic. Je croise les rapports avec une vérification manuelle du site, du code et des résultats de recherche avant de recommander une correction.",
         "items": [
-          "Créer des sites web corporatifs performants et des applications évolutives optimisées SEO & IA.",
-          "Développer des tableaux de bord de gestion complexes et des outils d'automatisation.",
-          "Auditer et optimiser les plateformes existantes pour le SEO technique et les Core Web Vitals.",
-          "Fournir un partenariat technique à long terme et des stratégies de recherche IA pour une croissance durable."
+          {
+            "name": "Google Search Console",
+            "text": "Indexation, requêtes, pages exclues, Core Web Vitals et suivi des corrections après la mise en ligne."
+          },
+          {
+            "name": "Lighthouse",
+            "text": "Performance, accessibilité, bonnes pratiques et contrôles SEO sur chaque type de page."
+          },
+          {
+            "name": "Semrush, Keyword Planner et Google Trends",
+            "text": "Recherche de mots-clés et volumes de recherche, analyse de la concurrence, tendances saisonnières, audit de site et suivi des positions."
+          },
+          {
+            "name": "Mesure et diagnostic manuels",
+            "text": "Lecture du code source et du rendu, réponses HTTP, canonicals, données structurées et vérification directe dans les résultats de recherche."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Questions fréquentes",
+        "heading": "Ce que les entreprises et les agences me demandent",
+        "items": [
+          {
+            "q": "Sous quelle forme pouvez-vous intervenir ?",
+            "a": "En mission freelance, à temps partiel ou à temps plein. Je travaille à distance depuis la France, avec un périmètre défini avant le démarrage."
+          },
+          {
+            "q": "Que contient un audit SEO technique ?",
+            "a": "Un diagnostic de l'exploration, de l'indexation, du rendu, des performances, de la structure et des données structurées, avec des corrections classées par priorité. Chaque point est expliqué et relié à un problème concret du site."
+          },
+          {
+            "q": "Pouvez-vous appliquer vous-même les corrections ?",
+            "a": "Oui. J'interviens directement dans le code ou le CMS : Next.js, React, WordPress, WooCommerce et Shopify. Cela évite le décalage entre les recommandations de l'audit et leur mise en œuvre."
+          },
+          {
+            "q": "Travaillez-vous avec des agences web et SEO ?",
+            "a": "Oui. J'interviens en renfort technique : audit d'une plateforme, sécurisation d'une migration, correction du rendu ou implémentation de recommandations SEO dans le projet du client."
+          },
+          {
+            "q": "Garantissez-vous une position sur Google ?",
+            "a": "Non. Personne ne peut garantir un classement. Je m'engage sur un diagnostic précis, des corrections vérifiables et un suivi des résultats dans Search Console."
+          }
+        ]
+      },
+      "collaboration": {
+        "eyebrow": "Collaborations",
+        "heading": "Pour les entreprises, les agences et les équipes techniques",
+        "intro": "Je peux intervenir sur un besoin ponctuel ou rejoindre un projet plus long, avec un périmètre clair et un contact direct avec la personne qui réalise le travail.",
+        "audiences": [
+          {
+            "title": "TPE, PME et e-commerce",
+            "text": "Audit et corrections SEO, amélioration d'un site existant, refonte ou création d'une base plus rapide et plus simple à faire évoluer."
+          },
+          {
+            "title": "Agences web et SEO",
+            "text": "Renfort technique pour auditer une plateforme, sécuriser une migration, corriger le rendu ou implémenter des recommandations SEO directement dans le projet."
+          },
+          {
+            "title": "Équipes et missions longues",
+            "text": "Collaboration à distance pour une mission freelance, un contrat ou un besoin régulier mêlant SEO technique, développement et suivi de production."
+          }
         ]
       },
       "cta": {
-        "title": "Prêt à Bâtir Quelque Chose d'Exceptionnel ?",
-        "description": "Que vous cherchiez un expert freelance pour architecturer une application web performante, ou un Ingénieur Full-Stack pour rejoindre votre équipe, connectons-nous pour discuter de vos objectifs techniques.",
-        "button": "Me Contacter"
+        "heading": "Vous cherchez un profil capable d'analyser et d'implémenter ?",
+        "description": "Expliquez-moi votre site, votre problème ou votre mission. Je vous réponds sous 24h avec les prochaines étapes et, si le besoin est clair, un devis détaillé.",
+        "button": "Demander un devis gratuit"
+      },
+      "schema": {
+        "jobTitle": "Consultant SEO technique et développeur web",
+        "description": "Consultant SEO technique et développeur web freelance basé en France, spécialisé dans l'indexation, les performances, la structure des sites et la recherche IA.",
+        "currentEducation": "Cursus certifiant RNCP actuellement en cours à 42 Paris.",
+        "knowsAbout": [
+          "SEO technique",
+          "Référencement naturel",
+          "Optimisation pour la recherche IA",
+          "Next.js",
+          "React",
+          "Express.js",
+          "WordPress",
+          "Shopify",
+          "Core Web Vitals",
+          "Schema.org"
+        ]
       }
     },
     "portfolio_page": {
-      "subtitle": "Travaux Sélectionnés",
-      "heading": "Projets Réels & Études Techniques Approfondies Conçus pour la Performance et le SEO",
-      "description": "Une sélection de projets concrets et d'études techniques : sites corporate optimisés SEO, tableaux de bord sur mesure et architectures systèmes complexes. Chaque étude de cas détaille l'objectif, l'approche technique et les résultats obtenus.",
-      "viewCase": "Voir l'Étude de Cas",
-      "cta": "Discuter de Votre Projet",
+      "seo": {
+        "title": "Portfolio Web, SEO & Applications Sur Mesure | Devsignpro",
+        "description": "Découvrez mes réalisations : sites web, SEO technique, boutiques en ligne, applications sur mesure et projets d’ingénierie.",
+        "keywords": [
+          "portfolio développeur web freelance",
+          "réalisations développement web",
+          "études de cas SEO",
+          "projets Next.js",
+          "portfolio application web",
+          "projets e-commerce"
+        ]
+      },
+      "subtitle": "Portfolio & études de cas",
+      "heading": "Des projets web conçus pour résoudre un problème concret",
+      "description": "Découvrez une sélection de sites web, boutiques en ligne, applications sur mesure et projets d’ingénierie. Chaque fiche présente le besoin, les choix techniques et les résultats vérifiables lorsque des données sont disponibles.",
+      "viewCase": "Voir le projet",
+      "cta": "Demander un devis gratuit",
       "cta_other": "Explorer Plus de Projets",
       "ui": {
         "filterBy": "Filtrer par",
@@ -836,10 +2240,13 @@
         "emptyStateText": "Essayez une autre catégorie.",
         "filterHint": "Sélectionnez une catégorie",
         "showAll": "Tout afficher",
-        "showcaseLabel": "Vitrine des projets",
-        "ctaTitle": "Vous avez un projet en tête ?",
-        "ctaExplore": "Voir les détails",
-        "ctaDescription": "Je collabore avec des startups et entreprises pour créer des produits digitaux rapides, fiables et optimisés pour la croissance mesurable.",
+        "showcaseLabel": "Réalisations et études de cas",
+        "projectsEyebrow": "Travaux sélectionnés",
+        "projectsHeading": "Parcourez les projets selon le type de réalisation",
+        "projectsDescription": "Les projets clients montrent une mission réelle publiée avec accord. Les projets personnels et académiques démontrent des compétences techniques complémentaires.",
+        "ctaTitle": "Vous cherchez une solution similaire pour votre activité ?",
+        "ctaExplore": "Voir les réalisations",
+        "ctaDescription": "Expliquez-moi votre objectif, votre site actuel ou l’outil à construire. Je vous réponds sous 24 h avec les prochaines étapes adaptées.",
         "statusLabels": {
           "online": "En ligne",
           "local enterprise": "Entreprise locale",
@@ -850,18 +2257,23 @@
         "breadcrumbHome": "Accueil",
         "breadcrumbPortfolio": "Portfolio",
         "backToPortfolio": "Retour au portfolio",
-        "techHeading": "Technologies Utilisées",
+        "techHeading": "Technologies et compétences",
         "categoryLabel": "Catégorie",
         "typeLabel": "Type de Projet",
         "statusLabel": "Statut",
-        "collaborationTitle": "Envie de Réaliser un Projet Similaire ?",
-        "collaborationBody": "Que vous ayez besoin d'une application performante, d'une optimisation SEO ou d'un tableau de bord métier, discutons ensemble de la meilleure façon de concevoir une solution évolutive adaptée à vos objectifs.",
-        "overviewHeading": "Aperçu",
+        "collaborationTitle": "Vous avez un projet similaire ?",
+        "collaborationBody": "Présentez-moi votre besoin, votre site actuel ou l'outil à construire. Je vous réponds sous 24 h avec une première orientation et les prochaines étapes adaptées.",
+        "technicalCollaborationTitle": "Vous cherchez un développeur capable d'aller au fond des problèmes ?",
+        "technicalCollaborationBody": "Ces projets montrent ma façon de raisonner, de construire et de tester. Je suis disponible pour une mission freelance, un contrat ou une collaboration avec une équipe technique.",
+        "technicalCtaLabel": "Discuter d'une mission",
+        "overviewHeading": "Contexte",
         "breadcrumbAria": "Fil d'Ariane",
-        "galleryHeading": "Galerie du projet",
+        "galleryHeading": "Le projet en images",
+        "galleryDescription": "Captures du produit, de son fonctionnement ou des résultats disponibles.",
         "linksHeading": "Liens du projet",
         "goalHeading": "Objectif du projet",
-        "learnedHeading": "Ce que nous avons appris",
+        "evidenceHeading": "Preuves du travail réalisé",
+        "learnedHeading": "Ce que j'ai appris",
         "realWorldHeading": "Comment cela aide dans le monde réel"
       },
       "projects": [
@@ -879,7 +2291,7 @@
           "detail": {
             "seo": {
               "title": "Site Corporate & Moteur de Croissance SEO",
-              "description": "Étude de cas : un site vitrine Next.js avec SEO technique et optimisation des performances, ayant atteint 2 900+ nouveaux utilisateurs en deux mois — conçu",
+              "description": "Étude de cas d'un site vitrine Next.js avec SEO technique et optimisation des performances, ayant atteint plus de 2 900 nouveaux utilisateurs en deux mois.",
               "keywords": [
                 "site vitrine optimisé",
                 "étude de cas SEO Next.js",
@@ -929,6 +2341,65 @@
           }
         },
         {
+          "title": "Nutritia — Boutique Shopify de compléments alimentaires optimisée SEO",
+          "description": "Création d'une boutique Shopify pour une marque de compléments alimentaires vegan : thème sur mesure, quiz produit, abonnements, multi-devises et base SEO technique complète avec données structurées.",
+          "tech": "Shopify, Liquid, SEO technique, Schema.org",
+          "image": "/images/projects/Nutritia-Shopify-Store.jpg",
+          "linkLabel": "Voir l'étude de cas",
+          "category": "E-commerce & SEO",
+          "type": "professional",
+          "status": "online",
+          "href": "/portfolio/nutritia-shopify-store",
+          "highlightsHeading": "Ce que j'ai livré",
+          "detail": {
+            "seo": {
+              "title": "Étude de cas : boutique Shopify Nutritia optimisée SEO",
+              "description": "Création de nutritia.co, une boutique Shopify de compléments alimentaires : thème sur mesure, quiz, abonnements et SEO technique avec données structurées.",
+              "keywords": [
+                "création boutique Shopify",
+                "développeur Shopify freelance",
+                "boutique Shopify optimisée SEO",
+                "SEO e-commerce Shopify",
+                "thème Shopify sur mesure",
+                "étude de cas e-commerce"
+              ]
+            },
+            "intro": "Nutritia est une marque de compléments alimentaires vegan : gummies, gélules et poudres. L'objectif était de lancer une boutique en ligne claire, rapide et prête pour le référencement naturel dès le premier jour, sans dépendre d'un thème générique.",
+            "sections": [
+              {
+                "title": "Défi & approche",
+                "body": "Le marché des compléments alimentaires est très concurrentiel, et les acheteurs comparent beaucoup avant de commander. J'ai donc construit la boutique autour du parcours d'achat : une page d'accueil qui présente l'offre par objectif (cheveux, peau, digestion, énergie), des collections par format et des fiches produits qui répondent aux questions avant l'ajout au panier. Le thème Shopify a été développé sur mesure pour garder un code léger et un contrôle total sur la structure des pages."
+              },
+              {
+                "title": "SEO technique et données structurées",
+                "body": "Chaque page a un titre, une description et un titre principal alignés sur une intention de recherche. La boutique déclare ses données structurées Schema.org : boutique en ligne, politique de retour, FAQ, listes de produits et fil d'Ariane. Les versions anglaise et espagnole sont reliées par des balises hreflang pour éviter le contenu dupliqué entre les marchés."
+              },
+              {
+                "title": "Fonctionnalités de vente",
+                "body": "La boutique comprend un quiz qui oriente le visiteur vers le bon produit, des abonnements avec remise (Subscribe & Save), les avis clients, le choix de la langue et de la devise, ainsi qu'une offre de lancement mise en avant dans le bandeau. Le site est en ligne sur nutritia.co."
+              }
+            ],
+            "highlights": [
+              "Thème Shopify sur mesure, sans thème générique du Theme Store",
+              "Données structurées : boutique en ligne, politique de retour, FAQ et listes de produits",
+              "Quiz produit, abonnements, avis clients, multi-langue et multi-devises",
+              "Métadonnées, hreflang anglais/espagnol et structure de pages pensées pour le référencement naturel"
+            ],
+            "gallery": [
+              {
+                "src": "/images/projects/Nutritia-Shopify-Store.jpg",
+                "alt": "Page d'accueil de la boutique Shopify Nutritia avec ses gummies pour les cheveux, la peau et la digestion"
+              }
+            ],
+            "links": [
+              {
+                "url": "https://nutritia.co",
+                "label": "Voir la boutique en ligne"
+              }
+            ]
+          }
+        },
+        {
           "title": "Landing Page E-commerce — Rapide & Optimisée SEO",
           "description": "Conception et développement d'une landing page e-commerce à forte conversion, optimisée pour la vitesse, le mobile, le SEO technique et la conversion. Intégrée à un dashboard sur mesure pour la gestion de contenu en temps réel et l'optimisation des campagnes.",
           "tech": "Next.js, Tailwind CSS, Technical SEO",
@@ -948,7 +2419,7 @@
                 "landing page haute conversion",
                 "landing page Tailwind CSS",
                 "site retail mobile-first",
-                "landing page SEO Maroc"
+                "landing page SEO France"
               ]
             },
             "intro": "L'e-commerce moderne exige vitesse, clarté et flexibilité. Au-delà de la performance, j'ai construit cette landing page avec un dashboard connecté qui permet aux équipes de mettre à jour contenus, promotions et sections instantanément — sans toucher au code. Le résultat : une expérience rapide et optimisée mobile, combinée à un contrôle total sur le message et le parcours de conversion.",
@@ -989,7 +2460,7 @@
                 "dashboard automatisation entreprise",
                 "logiciel gestion abonnements",
                 "outils internes React Express",
-                "dashboard opérationnel Maroc",
+                "dashboard opérationnel France",
                 "dashboard CRM sur mesure"
               ]
             },
@@ -1047,7 +2518,7 @@
                 "alertes PHPMailer",
                 "application opérationnelle MySQL",
                 "rapports PDF audit",
-                "outils internes entreprise Maroc"
+                "outils internes entreprise France"
               ]
             },
             "intro": "Les hôtels ne peuvent pas se permettre les pannes silencieuses : les problèmes de climatisation, plomberie ou électricité exigent des tickets traçables, des responsables identifiés et des pistes d'audit. Ce système digitalise le flux complet, du signalement à la résolution — avec escalade par email quand chaque minute compte.",
@@ -1171,7 +2642,7 @@
           "image": "/images/projects/Free-Currency-Converter-Live-EUR-to-USD-Exchange-Rates.jpg",
           "linkLabel": "Voir le projet",
           "category": "Application Web Full-Stack",
-          "type": "personnel",
+          "type": "personal",
           "status": "en ligne",
           "href": "/portfolio/currency-converter",
           "highlightsHeading": "Fonctionnalités clés",
@@ -1223,7 +2694,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/ft_transcendence",
-          "highlightsHeading": "Fonctionnalités & compétences",
+          "highlightsHeading": "Compétences démontrées",
           "detail": {
             "seo": {
               "title": "ft_transcendence — Plateforme Pong Temps Réel",
@@ -1267,7 +2738,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/minishell-project",
-          "highlightsHeading": "Fonctionnalités & compétences",
+          "highlightsHeading": "Compétences démontrées",
           "detail": {
             "seo": {
               "title": "Minishell — Shell de type Bash en C",
@@ -1312,7 +2783,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/webserv-project",
-          "highlightsHeading": "Fonctionnalités & compétences",
+          "highlightsHeading": "Compétences démontrées",
           "detail": {
             "seo": {
               "title": "Webserver — Serveur HTTP de type Nginx en C++",
@@ -1357,7 +2828,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/inception-project",
-          "highlightsHeading": "Fonctionnalités & compétences",
+          "highlightsHeading": "Compétences démontrées",
           "detail": {
             "seo": {
               "title": "Inception — Stack d'Infrastructure Docker",
@@ -1396,74 +2867,133 @@
       ],
       "Warning": "Les projets clients présentés le sont avec autorisation. Certains travaux ne figurent pas ici par respect de la confidentialité et des accords de non-divulgation.",
       "whyChooseUs": {
-        "title": "Pourquoi Travailler Avec Moi",
-        "subtitle": "Je crée des solutions qui se classent sur Google, convertissent les visiteurs et évoluent avec votre entreprise — pas seulement du code qui fonctionne.",
+        "title": "Ce que chaque étude de cas doit vous permettre d’évaluer",
+        "subtitle": "Un portfolio utile ne montre pas seulement une capture d’écran : il explique le contexte, les décisions et le travail réellement réalisé.",
         "reasons": [
           {
-            "title": "Développement Orienté Résultats",
-            "text": "Chaque fonctionnalité, choix de design et décision technique vise un objectif mesurable : meilleur classement grâce au SEO technique, plus de conversions, ou automatisation IA qui élimine les tâches manuelles."
+            "title": "Le problème à résoudre",
+            "text": "Le besoin initial, les utilisateurs concernés et les contraintes qui ont guidé la réalisation."
           },
           {
-            "title": "Maîtrise End-to-End",
-            "text": "Du SEO technique, de l'UI/UX et du développement Next.js au déploiement et à l'optimisation des Core Web Vitals, je gère l'ensemble. Aucun intermédiaire, aucune perte de contexte — juste une exécution propre et cohérente."
+            "title": "Les choix de réalisation",
+            "text": "L’architecture, le design, le SEO technique, la performance et les technologies retenues, avec leur raison d’être."
           },
           {
-            "title": "Architecture Évolutive",
-            "text": "Construit avec Next.js, une infrastructure cloud moderne et des patterns scalables pour que votre site ou tableau de bord accompagne la croissance de votre entreprise."
+            "title": "Les résultats et limites",
+            "text": "Les résultats mesurables disponibles, ce qui a été livré et les informations qui ne peuvent pas être publiées."
+          }
+        ]
+      },
+      "relatedServices": {
+        "title": "Vous avez un projet proche de ces réalisations ?",
+        "items": [
+          {
+            "title": "Site web professionnel",
+            "description": "Créer ou refondre un site vitrine rapide avec une base adaptée au référencement naturel.",
+            "href": "/services/web-development",
+            "label": "Voir le développement web"
+          },
+          {
+            "title": "Boutique en ligne",
+            "description": "Créer une boutique Shopify, WooCommerce ou Next.js avec catalogue et paiement sécurisé.",
+            "href": "/services/ecommerce-development",
+            "label": "Voir le développement e-commerce"
+          },
+          {
+            "title": "Audit SEO technique",
+            "description": "Identifier les problèmes qui limitent l’exploration, l’indexation et les performances d’un site.",
+            "href": "/services/technical-seo",
+            "label": "Voir l’audit SEO"
           }
         ]
       }
     },
     "contact_page": {
-      "heading": "Construisons Votre Prochain Projet Digital Performant",
-      "description": "Vous cherchez un développeur Full-Stack pour créer un site corporate, un tableau de bord ou améliorer votre SEO technique ? J'aide les startups et entreprises à créer des solutions digitales rapides, évolutives et optimisées pour les moteurs de recherche. Parlez-moi de votre projet.",
-      "subtitle": "Lancez votre projet dès aujourd'hui",
+      "seo": {
+        "title": "Contact Consultant SEO & Développeur Web | Devsignpro",
+        "description": "Présentez votre besoin en SEO technique, site web, e-commerce ou application sur mesure. Devis gratuit et réponse sous 24 h.",
+        "keywords": [
+          "contact consultant SEO freelance",
+          "demander devis SEO",
+          "devis création site web",
+          "contact développeur web freelance",
+          "devis boutique en ligne"
+        ]
+      },
+      "heading": "Parlons de votre visibilité et de votre projet web",
+      "description": "Expliquez-moi ce qui vous bloque ou ce que vous souhaitez construire : audit SEO technique, amélioration d'un site, boutique en ligne ou application sur mesure. Je vous réponds sous 24 h avec une première orientation claire.",
+      "heroCta": "Demander mon devis gratuit",
+      "benefitsLabel": "Informations sur la prise de contact",
+      "formEyebrow": "Votre demande",
+      "subtitle": "Expliquez-moi ce que vous souhaitez améliorer",
+      "formIntro": "Quelques lignes suffisent pour commencer. Si vous avez déjà un site, ajoutez son adresse et indiquez le principal problème rencontré.",
       "email": "E-mail",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
-      "location": "Maroc (GMT+1)",
-      "sendMessage": "Envoyer un message",
-      "orWrite": "Ou écrivez directement à",
+      "location": "France (heure de Paris)",
+      "sendMessage": "Demander mon devis gratuit",
+      "orWrite": "Vous préférez l'e-mail ?",
       "chooseWay": "Choisissez votre méthode préférée",
       "getInTouch": "Prenez contact",
       "quickResponses": {
-        "response24h": "Réponse sous 24h",
-        "freeConsultation": "Consultation gratuite",
-        "noObligation": "Devis sans engagement",
-        "worldwide": "International & à distance"
+        "items": [
+          "Réponse sous 24 h",
+          "Devis gratuit et sans engagement",
+          "France et missions à distance"
+        ]
       },
       "channels": {
-        "emailDescription": "Réponse garantie sous 24 heures",
-        "whatsappDescription": "Le moyen le plus rapide pour me joindre",
+        "emailDescription": "Pour envoyer un brief ou des documents",
+        "whatsappDescription": "Pour une première question rapide",
         "instagramDescription": "Découvrez mes dernières réalisations et les coulisses",
         "linkedinDescription": "Réseau professionnel et recommandations"
       },
+      "beforeContact": {
+        "title": "Pour recevoir une réponse utile",
+        "items": [
+          {
+            "title": "Votre situation actuelle",
+            "text": "Partagez l'adresse du site existant ou décrivez brièvement le projet à créer."
+          },
+          {
+            "title": "Votre objectif principal",
+            "text": "Plus de visibilité, correction d'un problème SEO, vente en ligne ou création d'un outil métier."
+          },
+          {
+            "title": "Vos contraintes connues",
+            "text": "Indiquez le délai souhaité et une fourchette de budget si vous en avez déjà une."
+          }
+        ]
+      },
       "form": {
-        "heading": "Lancez votre projet",
-        "subheading": "Parlez-moi de vos objectifs et je vous répondrai sous 24h avec un devis gratuit.",
+        "heading": "Décrivez votre projet",
+        "subheading": "Trois informations suffisent pour préparer une première réponse.",
         "fullNamePlaceholder": "Prénom Nom",
         "emailAddress": "Adresse e-mail",
         "emailPlaceholder": "votre.nom@exemple.com",
         "projectType": "Type de projet",
         "projectTypePlaceholder": "Sélectionnez un type de projet",
         "projectTypes": {
-          "website": "Développement Web / E-commerce",
-          "seo": "Audit SEO Technique / GEO / AEO",
-          "ai": "Optimisation pour la recherche IA",
-          "automation": "Automatisation des processus métier & workflows",
-          "design": "Design publicitaire & image de marque",
+          "seo": "Audit ou corrections SEO technique",
+          "website": "Création ou refonte de site web",
+          "ecommerce": "Boutique en ligne",
+          "dashboard": "Application web ou dashboard sur mesure",
+          "collaboration": "Mission freelance ou contrat",
           "other": "Autre / Je ne sais pas encore"
         },
         "copy": "Copier",
         "copied": "Copié !",
         "availability": "Disponible pour de nouveaux projets",
-        "message": "Message",
-        "messagePlaceholder": "Parlez-moi de votre projet, de vos délais et de votre budget...",
-        "successMessage": "Message envoyé ! Je vous répondrai très bientôt.",
+        "message": "Votre besoin",
+        "messagePlaceholder": "Exemple : mon site est peu visible sur Google. Je souhaite identifier les problèmes techniques et obtenir un plan de corrections. Voici son adresse...",
+        "successMessage": "Votre demande a bien été envoyée. Je vous répondrai sous 24 h.",
         "sending": "Envoi en cours...",
+        "responseNote": "Je lis personnellement chaque demande et réponds sous 24 h.",
+        "privacyNote": "Vos informations sont utilisées uniquement pour répondre à votre demande.",
         "errors": {
           "emailRequired": "L'adresse e-mail est requise",
+          "emailInvalid": "Saisissez une adresse e-mail valide",
           "projectTypeRequired": "Le type de projet est requis",
           "messageRequired": "Le message doit contenir au moins 10 caractères",
           "networkError": "Erreur réseau",
@@ -1471,21 +3001,61 @@
           "selectProjectType": "Veuillez sélectionner un type de projet"
         }
       },
+      "process": {
+        "eyebrow": "Après votre message",
+        "title": "Que se passe-t-il ensuite ?",
+        "steps": [
+          {
+            "title": "J'analyse votre demande",
+            "text": "Je vérifie votre objectif, les informations disponibles et les premiers points techniques utiles."
+          },
+          {
+            "title": "Je vous réponds sous 24 h",
+            "text": "Vous recevez les questions nécessaires, une première recommandation et la prochaine étape proposée."
+          },
+          {
+            "title": "Nous définissons le périmètre",
+            "text": "Si le besoin correspond à mes services, je prépare un devis clair avec les livrables, le délai et le prix."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions avant de me contacter",
+        "description": "Les réponses essentielles pour envoyer votre demande sereinement.",
+        "items": [
+          {
+            "question": "Que dois-je mettre dans mon message ?",
+            "answer": "Décrivez votre objectif, le problème rencontré et, si vous en avez un, ajoutez le lien de votre site. Vous pouvez aussi indiquer votre délai et votre budget estimé."
+          },
+          {
+            "question": "Sous combien de temps vais-je recevoir une réponse ?",
+            "answer": "Je réponds généralement sous 24 heures avec les premières questions ou la prochaine étape adaptée à votre demande."
+          },
+          {
+            "question": "Puis-je vous contacter sans budget précisément défini ?",
+            "answer": "Oui. Expliquez simplement votre besoin. Je pourrai vous indiquer si le projet correspond à mes services et vous donner un premier ordre de priorité."
+          },
+          {
+            "question": "Travaillez-vous uniquement avec des clients en France ?",
+            "answer": "Non. Je suis basé en France et je travaille également à distance avec des entreprises, agences et équipes situées en Europe ou ailleurs."
+          }
+        ]
+      },
       "whyReachOut": {
         "title": "Pourquoi travailler avec moi",
         "subtitle": "Ce que vous pouvez attendre de notre collaboration",
         "reasons": [
           {
-            "title": "Développement prêt pour l'IA et axé sur le SEO",
-            "text": "Chaque projet est conçu avec le SEO technique, les données structurées (Schema.org), les Core Web Vitals et l'optimisation GEO/AEO, afin que votre entreprise soit bien classée sur Google et citée par ChatGPT et Perplexity."
+            "title": "SEO et développement réunis",
+            "text": "J'analyse la structure, le contenu, les performances et le code afin de proposer des corrections cohérentes et vérifiables."
           },
           {
-            "title": "Livraison fiable et communication claire",
-            "text": "Des mises à jour hebdomadaires, des délais transparents et un code rapide, évolutif et maintenable. Pas de mauvaises surprises, uniquement des résultats mesurables."
+            "title": "Périmètre et communication clairs",
+            "text": "Les livrables, le délai et le prix sont définis avant le démarrage, avec un contact direct pendant la mission."
           },
           {
-            "title": "Partenariat à long terme",
-            "text": "Je ne me contente pas de développer et de disparaître. J'offre un support continu, un suivi des performances et des optimisations pour garantir que votre produit numérique évolue avec votre entreprise."
+            "title": "Solutions adaptées au besoin",
+            "text": "Je peux corriger un site existant, réaliser un audit ou construire une nouvelle base lorsque la situation le justifie."
           }
         ]
       }
@@ -1590,8 +3160,8 @@
   "footer": {
     "brandName": "Devsignpro",
     "brandTagline": "Développeur Full-Stack & Spécialiste SEO",
-    "phone": "+212 7 78 18 03 06",
-    "address": "Maroc (GMT+1)",
+    "phone": "+33 7 53 23 67 69",
+    "address": "France (heure de Paris)",
     "ExplorerTitle": "Explorer",
     "links": [
       {
@@ -1630,7 +3200,7 @@
         "href": "/services/technical-seo"
       },
       {
-        "label": "Dashboards & Automatisation",
+        "label": "Applications & Dashboards",
         "href": "/services/business-dashboards"
       }
     ],
@@ -1647,19 +3217,19 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Développeur Web & Expert SEO au Maroc | Freelance",
-        "description": "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.",
+        "title": "Consultant SEO Freelance en France | Devsignpro",
+        "description": "Consultant SEO technique et GEO freelance en France. J’optimise sites web et boutiques en ligne pour Google, ChatGPT et Perplexity. Devis sous 24h.",
         "keywords": [
-          "développeur web maroc",
-          "développeur next.js maroc",
-          "développeur web freelance",
-          "création site web maroc",
-          "site e-commerce maroc",
-          "expert seo maroc",
-          "optimisation recherche ia",
-          "optimisation moteur génératif",
-          "développeur full-stack maroc",
-          "sites web performants"
+          "consultant seo freelance france",
+          "consultant seo technique",
+          "consultant geo france",
+          "audit seo technique",
+          "optimisation seo site web",
+          "optimisation seo boutique en ligne",
+          "référencement naturel",
+          "référencement ia",
+          "visibilité chatgpt",
+          "google ai overviews"
         ]
       }
     }

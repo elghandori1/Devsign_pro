@@ -262,7 +262,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
   const shareUrl = `${getBaseUrl()}/${locale}${ARTICLE_PATH}`;
   const baseUrl = getBaseUrl();
   const langCode =
-    locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
+    locale === "en" ? "en" : locale === "ar" ? "ar-MA" : "fr-FR";
 
   const articleSchema = buildArticleSchema({
     type: "Article",

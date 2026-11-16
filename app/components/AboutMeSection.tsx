@@ -1,67 +1,76 @@
-// components/AboutMeSection.tsx
-import { Locale } from "@/i18n-config";
 import Link from "next/link";
+import { ArrowLeft, ArrowRight } from "lucide-react";
+import { Locale } from "@/i18n-config";
 import AboutMeImageSlider from "./AboutMeImageSlider";
 
 interface AboutMeTranslations {
-  sectionLabel?: string;
+  sectionLabel: string;
   highlight: string;
   paragraph1: string;
   paragraph2: string;
   cta: string;
+  secondaryCta?: string;
 }
 
 interface AboutMeSectionProps {
   translations: AboutMeTranslations;
   locale: Locale;
+  headingId?: string;
 }
-
-const ABOUT_IMAGES = [
-  "/images/about/profile1.png",
-  "/images/about/profile2.jpg",
-  "/images/about/profile3.jpg",
-  "/images/about/profile4.jpg",
-  "/images/about/profile5.jpg",
-];
 
 export default function AboutMeSection({
   translations,
   locale,
+  headingId = "about-heading",
 }: AboutMeSectionProps) {
   const isRtl = locale === "ar";
-
+  const Arrow = isRtl ? ArrowLeft : ArrowRight;
   return (
     <div
-      className="relative pt-4 pb-8 sm:pb-10 overflow-hidden"
+      className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20"
       dir={isRtl ? "rtl" : "ltr"}
     >
-      <div
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-muted/20 to-transparent"
-        aria-hidden="true"
-      />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="text-center mb-10 sm:mb-12">
-          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-3xl mx-auto text-center leading-relaxed mb-12 sm:mb-14">
+      <div className="mx-auto max-w-7xl">
+        <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
+          <h2
+            id={headingId}
+            className="text-2xl font-bold leading-tight tracking-tight text-foreground sm:text-3xl lg:text-4xl"
+          >
+            {translations.sectionLabel}
+          </h2>
+          <p className="mx-auto mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base lg:text-lg">
             {translations.highlight}
           </p>
-        </div>
-        <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
-          {/* ── Image Slider (Client Component) ── */}
-          <AboutMeImageSlider images={ABOUT_IMAGES} locale={locale} />
-          {/* ── Text Content ── */}
-          <div className={isRtl ? "text-right" : "text-left"}>
-            <p className="text-sm sm:text-base lg:text-lg text-foreground leading-relaxed mb-4 sm:mb-6">
+        </header>
+
+        <div className="grid overflow-hidden rounded-3xl border border-border bg-card shadow-sm lg:grid-cols-[0.8fr_1.2fr]">
+          <AboutMeImageSlider locale={locale} />
+
+          <div className="flex flex-col justify-center p-6 sm:p-8 lg:p-12">
+            <p className="text-base leading-relaxed text-foreground sm:text-lg">
               {translations.paragraph1}
             </p>
-            <p className="text-sm sm:text-base lg:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-10 max-w-xl">
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground sm:text-base">
               {translations.paragraph2}
             </p>
-            <Link
-              href={`/${locale}/about`}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-primary/40 hover:-translate-y-1 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-            >
-              {translations.cta}
-            </Link>
+
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <Link
+                href={`/${locale}/about`}
+                className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+              >
+                {translations.cta}
+                <Arrow size={17} aria-hidden="true" />
+              </Link>
+              {translations.secondaryCta ? (
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex min-h-11 items-center justify-center rounded-xl border border-border px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary/35 hover:text-primary"
+                >
+                  {translations.secondaryCta}
+                </Link>
+              ) : null}
+            </div>
           </div>
         </div>
       </div>

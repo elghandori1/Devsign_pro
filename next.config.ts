@@ -32,6 +32,13 @@ const iconCacheHeaders = [
 const nextConfig: NextConfig = {
 	poweredByHeader: false,
 	compress: true,
+	images: {
+		formats: ["image/avif", "image/webp"],
+	},
+	experimental: {
+		// Inline the small critical stylesheet instead of a render-blocking request.
+		inlineCss: true,
+	},
 	// 308 permanent redirects for legacy slugs that were already
 	// crawled/indexed — consolidates all SEO signals on the new URLs.
 	async redirects() {
@@ -40,8 +47,13 @@ const nextConfig: NextConfig = {
 			...["best-laptop-guide-2026", "how-to-check-used-laptop-2026"].flatMap(
 				(slug) => [
 					{
-						source: `/:locale(en|fr|ar)/articles/${slug}`,
+						source: `/:locale(en|fr)/articles/${slug}`,
 						destination: "/:locale/articles/laptop-buying-guide-2026",
+						permanent: true,
+					},
+					{
+						source: `/ar/articles/${slug}`,
+						destination: "/en/articles/laptop-buying-guide-2026",
 						permanent: true,
 					},
 					{
@@ -65,8 +77,13 @@ const nextConfig: NextConfig = {
 				["/portfolio/ecommerce-platform", "/portfolio/landing-page-ecommerce"],
 			].flatMap(([from, to]) => [
 				{
-					source: `/:locale(en|fr|ar)${from}`,
+					source: `/:locale(en|fr)${from}`,
 					destination: `/:locale${to}`,
+					permanent: true,
+				},
+				{
+					source: `/ar${from}`,
+					destination: `/en${to}`,
 					permanent: true,
 				},
 				{
@@ -77,13 +94,35 @@ const nextConfig: NextConfig = {
 			]),
 			// Locale-prefixed legacy slugs
 			{
-				source: "/:locale(en|fr|ar)/services/ecommerce",
+				source: "/:locale(en|fr)/services/ecommerce",
 				destination: "/:locale/services/ecommerce-development",
 				permanent: true,
 			},
 			{
-				source: "/:locale(en|fr|ar)/services/business-systems",
+				source: "/:locale(en|fr)/services/business-systems",
 				destination: "/:locale/services/business-dashboards",
+				permanent: true,
+			},
+			{
+				source: "/ar/services/ecommerce",
+				destination: "/en/services/ecommerce-development",
+				permanent: true,
+			},
+			{
+				source: "/ar/services/business-systems",
+				destination: "/en/services/business-dashboards",
+				permanent: true,
+			},
+			// Arabic has been retired. Preserve each current path and consolidate
+			// its signals into the equivalent English URL in one permanent hop.
+			{
+				source: "/ar",
+				destination: "/en",
+				permanent: true,
+			},
+			{
+				source: "/ar/:path*",
+				destination: "/en/:path*",
 				permanent: true,
 			},
 			// Bare legacy slugs (no locale prefix) — send straight to the

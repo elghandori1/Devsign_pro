@@ -56,17 +56,17 @@ type ArticlesPageData = {
 
 const FALLBACK_KEYWORDS: Record<Locale, string[]> = {
   en: [
-    "web development articles Morocco",
-    "SEO blog Morocco",
+    "web development articles France",
+    "SEO blog France",
     "business automation insights",
-    "working online in Morocco",
+    "working online in France",
     "tech and business blog",
   ],
   fr: [
-    "articles développement web Maroc",
-    "blog SEO Maroc",
+    "articles développement web France",
+    "blog SEO France",
     "automatisation business",
-    "travailler en ligne Maroc",
+    "travailler en ligne France",
     "blog tech et business",
   ],
   ar: [
@@ -136,7 +136,7 @@ export default async function ArticlesPage({ params }: Props) {
 
   const baseUrl = getBaseUrl();
   const langCode =
-    locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA";
+    locale === "en" ? "en" : locale === "ar" ? "ar-MA" : "fr-FR";
 
   const schema = {
     "@context": "https://schema.org",
@@ -231,9 +231,9 @@ export default async function ArticlesPage({ params }: Props) {
               "I write practical guides from real project work: web development with Next.js, Technical SEO and Core Web Vitals, AI search optimization, and buying advice for laptops used for study, coding, and business.",
           },
           {
-            question: "Are the articles written for businesses in Morocco?",
+            question: "Are the articles written for businesses in France and across Europe?",
             answer:
-              "Yes. The technical articles apply worldwide, and the buying guides are written for students, developers, and business owners in Morocco and similar markets who need clear, budget-aware advice.",
+              "Yes. The technical articles apply worldwide, and the buying guides are written for students, developers, and business owners in France, Europe and similar markets who need clear, budget-aware advice.",
           },
           {
             question: "How often do you publish new articles?",
@@ -266,9 +266,9 @@ export default async function ArticlesPage({ params }: Props) {
                 "Je publie des guides issus de projets réels : développement web avec Next.js, SEO technique et Core Web Vitals, optimisation pour la recherche IA, et conseils d'achat de laptops pour étudier, coder et travailler.",
             },
             {
-              question: "Les articles ciblent-ils les entreprises au Maroc ?",
+              question: "Les articles ciblent-ils les entreprises en France ?",
               answer:
-                "Oui. Les articles techniques s'appliquent partout, et les guides d'achat sont écrits pour les étudiants, développeurs et entrepreneurs au Maroc et sur des marchés similaires, avec des conseils clairs et réalistes.",
+                "Oui. Les articles techniques s'appliquent partout, et les guides d'achat sont écrits pour les étudiants, développeurs et entrepreneurs en France et sur des marchés similaires, avec des conseils clairs et réalistes.",
             },
             {
               question: "À quelle fréquence publiez-vous de nouveaux articles ?",

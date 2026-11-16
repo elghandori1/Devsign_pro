@@ -1,794 +1,258 @@
-// /app/[locale]/services/web-development/page.tsx
-import { getDictionary } from "@/app/lib/dictionary";
-import { Locale, i18n } from "@/i18n-config";
-import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   CheckCircle2,
-  Rocket,
-  Shield,
-  Database,
-  Code2,
-  Globe,
-  Zap,
-  Sparkles,
-  TrendingUp,
-  Users,
-  BarChart3,
   ChevronDown,
+  Code2,
+  Gauge,
+  LayoutTemplate,
+  PenTool,
+  Search,
+  ShieldCheck,
+  Smartphone,
 } from "lucide-react";
-import { buildPageMetadata } from "@/app/lib/buildPageMetadata";
-import { getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { getDictionary } from "@/app/lib/dictionary";
+import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
+import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
 
-type Props = { params: Promise<{ locale: Locale }> };
+type Props = { params: Promise<{ locale: string }> };
+type TextCard = { title: string; text: string };
+type FAQ = { q: string; a: string };
+type Landing = {
+  seo: { title: string; description: string; keywords: string[] };
+  breadcrumb: { label: string; home: string; services: string; current: string };
+  hero: { eyebrow: string; heading: string; description: string; primaryCta: string; secondaryCta: string; price: string; priceNote: string; promise: string[]; imageAlt: string; imageCaption: string };
+  needs: { eyebrow: string; heading: string; description: string; items: string[] };
+  value: { eyebrow: string; heading: string; answer: string; note: string };
+  included: { eyebrow: string; heading: string; description: string; items: TextCard[] };
+  platforms: { eyebrow: string; heading: string; description: string; items: TextCard[]; ecommerceText: string; ecommerceLabel: string };
+  process: { eyebrow: string; heading: string; description: string; steps: TextCard[] };
+  seoBridge: { eyebrow: string; heading: string; description: string; includedTitle: string; included: string[]; auditTitle: string; auditText: string; auditLabel: string };
+  fit: { eyebrow: string; heading: string; items: TextCard[] };
+  faq: { eyebrow: string; heading: string; items: FAQ[] };
+  related: { heading: string; items: { title: string; href: string; label: string }[] };
+  cta: { heading: string; description: string; button: string };
+};
+type CaseStudy = { badge: string; title: string; description: string; results: { value: string; label: string }[]; image: string; imageAlt: string; link: { href: string; label: string } };
+
+const INCLUDED_ICONS = [LayoutTemplate, Smartphone, Search, Gauge, ShieldCheck, Code2] as const;
+const PAGE_UPDATED = "2026-11-15";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
 }
 
+function resolveLocale(rawLocale: string): Locale {
+  return i18n.locales.includes(rawLocale as Locale) ? (rawLocale as Locale) : i18n.defaultLocale;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
+  const { locale: rawLocale } = await params;
+  const locale = resolveLocale(rawLocale);
   const dict = await getDictionary(locale);
-  const data = dict.pages.services_page.services.web_development;
-  const keywords =
-    locale === "ar"
-      ? [
-          "تطوير مواقع المغرب",
-          "تطوير مواقع إلكترونية المغرب",
-          "موقع SEO محسن",
-          "مطور Next.js المغرب",
-          "مطور ويب مستقل المغرب",
-          "تصميم متجاوب",
-          "موقع آمن وسريع",
-          "تحسين محركات البحث",
-          "تحسين الذكاء الاصطناعي GEO",
-          "صفحة هبوط احترافية",
-          "تطبيق ويب مخصص",
-        ]
-      : locale === "fr"
-        ? [
-            "développement web Maroc",
-            "création site web Maroc",
-            "site web SEO",
-            "développeur Next.js Maroc",
-            "développeur web freelance Maroc",
-            "design responsive",
-            "site sécurisé rapide",
-            "référencement naturel",
-            "optimisation IA GEO",
-            "landing page professionnelle",
-            "application web sur mesure",
-          ]
-        : [
-            "web development Morocco",
-            "website development Morocco",
-            "SEO website development",
-            "Next.js developer Morocco",
-            "freelance web developer Morocco",
-            "responsive web design",
-            "secure fast website",
-            "search engine optimization",
-            "GEO AI search optimization",
-            "professional landing page",
-            "custom web application",
-          ];
+  const service = dict.pages.services_page.services.web_development;
+  const landing = service.landing as Landing;
 
   return buildPageMetadata({
     locale,
-    title: data.title_metadata,
-    description: data.description_metadata,
+    title: landing.seo.title,
+    description: landing.seo.description,
+    keywords: landing.seo.keywords,
     route: "/services/web-development",
-    keywords: keywords,
-    ogImagePath: data.image || "/cover/Designpro-cover.jpg",
+    ogImagePath: service.image,
     type: "website",
   });
 }
 
-const BENEFIT_ICONS = [TrendingUp, Users, BarChart3];
-
-const TECH_STACK = [
-  { name: "Next.js", icon: Code2 },
-  { name: "TypeScript", icon: Shield },
-  { name: "Tailwind CSS", icon: Zap },
-  { name: "Nest.js", icon: Rocket },
-  { name: "MongoDB", icon: Database },
-  { name: "Technical SEO", icon: Globe },
-];
-
 export default async function WebDevelopmentPage({ params }: Props) {
-  const { locale } = await params;
+  const { locale: rawLocale } = await params;
+  const locale = resolveLocale(rawLocale);
   const dict = await getDictionary(locale);
-  const svc = dict.pages.services_page;
-  const data = svc.services.web_development;
-  const isRtl = locale === "ar";
-  const Arr = isRtl ? ArrowRight : ArrowLeft;
-  const ArrFwd = isRtl ? ArrowLeft : ArrowRight;
-
-  const includedItems: string[] = data.included ?? data.features ?? [];
-  const faqs: { q: string; a: string }[] = data.faqs ?? [];
-
+  const service = dict.pages.services_page.services.web_development;
+  const landing = service.landing as Landing;
+  const caseStudy = service.caseStudy as CaseStudy;
   const baseUrl = getBaseUrl();
+  const pageUrl = `${baseUrl}/${locale}/services/web-development`;
+
   const schema = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": `${baseUrl}/${locale}/services/web-development#service`,
-    name: data.title,
-    description: data.description_metadata,
-    image: data.image
-      ? `${baseUrl}${data.image}`
-      : `${baseUrl}/cover/Designpro-cover.jpg`,
-    url: `${baseUrl}/${locale}/services/web-development`,
-    provider: { "@id": `${baseUrl}/#person` },
-    isPartOf: { "@id": `${baseUrl}/#website` },
-    inLanguage: locale === "en" ? "en-US" : locale === "ar" ? "ar-MA" : "fr-MA",
-    serviceType:
-      locale === "en"
-        ? "Web Development Services with SEO & AI Optimization"
-        : locale === "fr"
-          ? "Services de Développement Web avec SEO et Optimisation IA"
-          : "خدمات تطوير الويب مع تحسين محركات البحث والذكاء الاصطناعي",
-    areaServed: [
-      { "@type": "Country", name: "Morocco" },
-      { "@type": "Place", name: "Worldwide" },
-    ],
-  };
-
-  const breadcrumbSchema = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+    "@graph": [
       {
-        "@type": "ListItem",
-        position: 1,
-        name:
-          locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
-        item: `${getBaseUrl()}/${locale}`,
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`,
+        url: pageUrl,
+        name: landing.seo.title,
+        description: landing.seo.description,
+        inLanguage: localeToBcp47(locale),
+        dateModified: PAGE_UPDATED,
+        isPartOf: { "@id": `${baseUrl}/#website` },
+        about: { "@id": `${pageUrl}#service` },
+        breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
       },
       {
-        "@type": "ListItem",
-        position: 2,
-        name:
-          locale === "en"
-            ? "What I Do"
-            : locale === "ar"
-              ? "ما أقدمه"
-              : "Ce que je fais",
-        item: `${getBaseUrl()}/${locale}/services`,
+        "@type": "Service",
+        "@id": `${pageUrl}#service`,
+        name: landing.hero.heading,
+        description: landing.seo.description,
+        url: pageUrl,
+        image: `${baseUrl}${service.image}`,
+        serviceType: locale === "fr" ? "Création et refonte de site internet professionnel" : "Professional website design and development",
+        provider: { "@id": `${baseUrl}/#person` },
+        areaServed: locale === "fr"
+          ? [{ "@type": "Country", name: "France" }, { "@type": "Place", name: "Europe" }]
+          : { "@type": "Place", name: "Worldwide" },
+        offers: {
+          "@type": "Offer",
+          priceCurrency: "EUR",
+          url: pageUrl,
+          availability: "https://schema.org/InStock",
+          priceSpecification: { "@type": "UnitPriceSpecification", minPrice: 1200, priceCurrency: "EUR" },
+        },
       },
       {
-        "@type": "ListItem",
-        position: 3,
-        name:
-          locale === "en"
-            ? "Web Development"
-            : locale === "ar"
-              ? "تطوير الويب"
-              : "Développement Web",
-        item: `${getBaseUrl()}/${locale}/services/web-development`,
+        "@type": "FAQPage",
+        "@id": `${pageUrl}#faq`,
+        mainEntity: landing.faq.items.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: landing.breadcrumb.home, item: `${baseUrl}/${locale}` },
+          { "@type": "ListItem", position: 2, name: landing.breadcrumb.services, item: `${baseUrl}/${locale}/services` },
+          { "@type": "ListItem", position: 3, name: landing.breadcrumb.current, item: pageUrl },
+        ],
       },
     ],
   };
-
-  const faqSchema =
-    faqs.length > 0
-      ? {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqs.map((f) => ({
-            "@type": "Question",
-            name: f.q,
-            acceptedAnswer: { "@type": "Answer", text: f.a },
-          })),
-        }
-      : null;
 
   return (
-    <main className="min-h-screen bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      {faqSchema && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-      )}
+    <main className="bg-background text-foreground">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }} />
 
-      {/* ── 1. HERO ── */}
-      <section
-        aria-labelledby="hero-heading"
-        className="relative overflow-hidden border-b border-border"
-      >
-        <div
-          className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 opacity-[0.04] pointer-events-none"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right,currentColor 1px,transparent 1px),linear-gradient(to bottom,currentColor 1px,transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/8 rounded-full blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute -bottom-20 right-0 w-72 h-72 bg-primary/8 rounded-full blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
-        {/* Geometric Squares Pattern */}
-        <div className="absolute inset-0 overflow-hidden" aria-hidden="true">
-          <div className="absolute top-10 left-10 w-32 h-32 border border-white/[0.04] rotate-12" />
-          <div className="absolute top-24 left-32 w-48 h-48 border border-white/[0.03] -rotate-6" />
-          <div className="absolute bottom-20 right-20 w-40 h-40 border border-white/[0.04] rotate-45" />
-          <div className="absolute top-1/2 right-1/4 w-24 h-24 border border-white/[0.03] -rotate-12" />
-          <div className="absolute bottom-32 left-1/4 w-56 h-56 border border-white/[0.02] rotate-6" />
-          <div className="absolute top-16 right-16 w-8 h-8 bg-primary/10 rotate-12" />
-          <div className="absolute top-40 right-40 w-6 h-6 bg-primary/15 -rotate-6" />
-          <div className="absolute top-1/4 left-[15%] w-20 h-20 bg-primary/5 blur-2xl rounded-sm" />
-          <div className="absolute bottom-1/4 right-[15%] w-28 h-28 bg-blue-500/5 blur-3xl rounded-sm" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary/[0.03] blur-3xl rounded-sm" />
-        </div>
-
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20 lg:py-24">
-          <nav aria-label="Breadcrumb" className="mb-6">
-            <ol className="flex flex-wrap items-center gap-2 text-sm">
-              <li>
-                <Link
-                  href={`/${locale}/services`}
-                  className="inline-flex items-center gap-2 bg-primary/10 text-primary
-             border border-primary/20 px-4 py-2 rounded-full font-medium
-             hover:bg-primary/15 transition-colors"
-                >
-                  <Arr size={14} aria-hidden="true" />
-                  {locale === "en" ? "All " : locale === "fr" ? "Tous " : "كل "}
-                  {svc.page_title}{" "}
-                </Link>
-              </li>
-              <li aria-current="page" className="sr-only">
-                {data.title}
-              </li>
+      <section aria-labelledby="web-development-heading" className="relative overflow-hidden border-b border-border hero-section-light">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_20%,color-mix(in_srgb,var(--primary)_14%,transparent),transparent_34%),radial-gradient(circle_at_88%_74%,color-mix(in_srgb,var(--primary)_9%,transparent),transparent_30%)]" aria-hidden="true" />
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16 lg:py-20">
+          <nav aria-label={landing.breadcrumb.label} className="mb-8 text-sm text-muted-foreground">
+            <ol className="flex flex-wrap items-center gap-2">
+              <li><Link href={`/${locale}`} className="inline-flex min-h-11 min-w-11 items-center hover:text-primary">{landing.breadcrumb.home}</Link></li>
+              <li aria-hidden="true">/</li>
+              <li><Link href={`/${locale}/services`} className="inline-flex min-h-11 items-center hover:text-primary">{landing.breadcrumb.services}</Link></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="text-foreground">{landing.breadcrumb.current}</li>
             </ol>
           </nav>
-
-          <h1
-            id="hero-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight
-                       leading-[1.1] text-foreground mb-5 max-w-5xl"
-          >
-            {data.title}
-          </h1>
-
-          <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-4xl mb-7">
-            {data.description}
-          </p>
-
-          {/* Keyword chips */}
-          <ul className="flex flex-wrap gap-2 mb-8 list-none p-0">
-            {(data.features ?? []).map((tag: string) => (
-              <li
-                key={tag}
-                className="px-3 py-1.5 bg-primary/10 text-primary rounded-full
-                           text-xs sm:text-sm font-medium border border-primary/20
-                           hover:bg-primary/15 transition-colors"
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-            <Link
-              href={`/${locale}/contact`}
-              className="group inline-flex items-center justify-center gap-2
-                         px-7 py-3.5 rounded-xl bg-primary text-primary-foreground
-                         font-bold text-sm sm:text-base
-                         hover:brightness-110 active:scale-[0.98] transition-all
-                         shadow-lg shadow-primary/20"
-            >
-              {data.start_btn}
-              <ArrFwd
-                size={16}
-                className="group-hover:translate-x-0.5 transition-transform"
-                aria-hidden="true"
-              />
-            </Link>
-            <Link
-              href={`/${locale}/services`}
-              className="inline-flex items-center justify-center gap-2
-                         px-7 py-3.5 rounded-xl border border-border bg-background
-                         text-foreground font-semibold text-sm sm:text-base
-                         hover:bg-muted active:scale-[0.98] transition-all"
-            >
-              {data.allServicesBtn}
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 2. OVERVIEW ── */}
-      <section
-        aria-labelledby="overview-heading"
-        className="relative overflow-hidden"
-      >
-        <div
-          className="absolute inset-0 bg-gradient-to-b from-muted/10 via-background to-background"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/5 rounded-full blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
-
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* ── Left: Text ── */}
-            <div className="order-2 lg:order-1">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-6">
-                <Sparkles size={12} aria-hidden="true" />
-                {data.overviewTitle}
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(340px,0.75fr)] lg:gap-16">
+            <header>
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.hero.eyebrow}</p>
+              <h1 id="web-development-heading" className="mt-4 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl">{landing.hero.heading}</h1>
+              <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">{landing.hero.description}</p>
+              <div className="mt-7 flex flex-wrap items-center gap-3">
+                <span className="rounded-full border border-primary/20 bg-primary/10 px-4 py-2 font-semibold text-primary">{landing.hero.price}</span>
+                <span className="text-sm text-muted-foreground">{landing.hero.priceNote}</span>
               </div>
-
-              <h2
-                id="overview-heading"
-                className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground leading-[1.30] mb-6"
-              >
-                {data.overviewHeadline}
-              </h2>
-
-              <div className="flex items-center gap-2 mb-6" aria-hidden="true">
-                <div className="w-14 h-1 bg-primary rounded-full" />
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Link href={`/${locale}/contact`} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2">{landing.hero.primaryCta}<ArrowRight size={17} aria-hidden="true" /></Link>
+                <a href="#included" className="inline-flex min-h-12 items-center justify-center rounded-xl border border-border bg-card px-6 py-3 font-semibold transition hover:border-primary/40 hover:text-primary">{landing.hero.secondaryCta}</a>
               </div>
-
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6">
-                <span className="font-semibold text-foreground">
-                  {data.startDescription}
-                </span>{" "}
-                <br />
-                {data.longDescription}
-              </p>
-
-              {data.company_recruitment && (
-                <div className="flex items-start gap-3 p-4 rounded-xl border border-primary/20 bg-primary/5">
-                  <div
-                    className="w-8 h-8 rounded-lg bg-primary/15 flex items-center justify-center shrink-0 mt-0.5"
-                    aria-hidden="true"
-                  >
-                    <Users
-                      className="w-4 h-4 text-primary"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <p className="text-sm sm:text-base text-foreground/90 font-medium leading-relaxed">
-                    {data.company_recruitment}
-                  </p>
-                </div>
-              )}
-            </div>
-
-            <div className="order-1 lg:order-2 relative max-w-md mx-auto lg:max-w-none w-full">
-              <div
-                className="absolute -inset-3 sm:-inset-4 rounded-3xl border-2 border-primary/20"
-                aria-hidden="true"
-              />
-
-              <div className="relative aspect-square w-full rounded-2xl overflow-hidden border border-border shadow-2xl shadow-primary/10">
-                <Image
-                  src={data.image}
-                  alt={data.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                />
-                <div
-                  className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
-                  aria-hidden="true"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── 3. WHAT'S INCLUDED ── */}
-      {includedItems.length > 0 && (
-        <section
-          aria-labelledby="included-heading"
-          className="max-w-6xl mx-auto px-4 py-10 sm:pb-12 sm:pt-0"
-        >
-          <div className="text-center mb-8 sm:mb-10">
-            <h2
-              id="included-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-            >
-              {data.includedTitle}
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              {data.includedDesc}
-            </p>
-          </div>
-
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 list-none p-0">
-            {includedItems.map((item: string, i: number) => (
-              <li
-                key={i}
-                className="group flex items-start gap-4 p-4 sm:p-5 rounded-xl border border-border
-                           bg-card hover:border-primary/30 hover:shadow-md hover:-translate-y-0.5
-                           transition-all duration-200"
-              >
-                <div
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-primary/10 flex items-center justify-center
-                                shrink-0 group-hover:bg-primary/20 transition-colors"
-                >
-                  <CheckCircle2
-                    className="w-4 h-4 sm:w-5 sm:h-5 text-primary"
-                    aria-hidden="true"
-                  />
-                </div>
-                <span className="text-sm sm:text-base font-medium text-foreground leading-relaxed">
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* ── 4. WHAT YOU'LL GAIN ── */}
-      {data.benefits?.length > 0 && (
-        <section
-          aria-labelledby="benefits-heading"
-          className="bg-muted/5 border-t border-border"
-        >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-            <div className="text-center mb-8 sm:mb-10">
-              <h2
-                id="benefits-heading"
-                className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-              >
-                {data.benefitsTitle}
-              </h2>
-              <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-                {data.benefitsDesc}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5 lg:gap-6">
-              {data.benefits.map(
-                (b: { title: string; text: string }, i: number) => {
-                  const Icon = BENEFIT_ICONS[i % BENEFIT_ICONS.length];
-                  return (
-                    <article
-                      key={i}
-                      className="group relative p-5 sm:p-6 rounded-2xl border border-border bg-background
-                               hover:border-primary/30 hover:shadow-lg hover:-translate-y-1
-                               transition-all duration-300 overflow-hidden flex flex-col"
-                    >
-                      <div
-                        className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"
-                        aria-hidden="true"
-                      />
-                      <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 sm:mb-5">
-                        <Icon
-                          className="w-5 h-5 sm:w-6 sm:h-6 text-primary"
-                          aria-hidden="true"
-                        />
-                      </div>
-                      <h3 className="font-semibold text-foreground mb-2 text-base sm:text-lg">
-                        {b.title}
-                      </h3>
-                      <p className="text-sm sm:text-base text-foreground/80 leading-relaxed flex-grow">
-                        {b.text}
-                      </p>
-                    </article>
-                  );
-                },
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ── 5. CLIENT CASE STUDY ── */}
-      {data.caseStudy && (
-        <section
-          aria-labelledby="case-study-heading"
-          className="py-16 md:py-20"
-        >
-          <div className="container mx-auto px-4">
-            <header className="text-center max-w-3xl mx-auto mb-10">
-              <p className="inline-block text-sm font-medium text-primary bg-primary/10 rounded-full px-4 py-1.5 mb-4">
-                {data.caseStudy.badge}
-              </p>
-              <h2
-                id="case-study-heading"
-                className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-              >
-                {data.caseStudy.title}
-              </h2>
+              <ul className="mt-7 grid gap-3 text-sm sm:grid-cols-3">
+                {landing.hero.promise.map((item) => <li key={item} className="flex gap-2 leading-relaxed"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" /><span>{item}</span></li>)}
+              </ul>
             </header>
-            <article className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl mx-auto bg-card border border-border rounded-xl p-6 md:p-10">
-              <Link
-                href={`/${locale}${data.caseStudy.link.href}`}
-                className="block overflow-hidden rounded-xl group"
-                aria-label={`${data.caseStudy.link.label}: ${data.caseStudy.title}`}
-              >
-                <Image
-                  src={data.caseStudy.image}
-                  alt={data.caseStudy.imageAlt}
-                  width={800}
-                  height={600}
-                  className="w-full aspect-[4/3] object-cover transition-transform duration-300 group-hover:scale-105"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </Link>
-
-              <div>
-                <p className="text-muted-foreground leading-relaxed mb-8">
-                  {data.caseStudy.description}
-                </p>
-
-                <ul className="grid grid-cols-3 gap-4 list-none p-0 mb-8">
-                  {data.caseStudy.results.map(
-                    (r: { value: string; label: string }) => (
-                      <li key={r.label} className="text-center">
-                        <p className="text-xl md:text-2xl font-bold text-primary">
-                          {r.value}
-                        </p>
-                        <p className="text-xs md:text-sm text-muted-foreground mt-1">
-                          {r.label}
-                        </p>
-                      </li>
-                    ),
-                  )}
-                </ul>
-
-                <Link
-                  href={`/${locale}${data.caseStudy.link.href}`}
-                  className="inline-flex items-center gap-2 font-medium text-primary hover:underline"
-                >
-                  {data.caseStudy.link.label}
-                  <ArrowRight
-                    className="h-4 w-4 rtl:rotate-180"
-                    aria-hidden="true"
-                  />
-                </Link>
+            <figure className="mx-auto w-full max-w-lg">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-card shadow-2xl shadow-black/10">
+                <Image src={service.image} alt={landing.hero.imageAlt} fill priority quality={75} sizes="(max-width: 1024px) 92vw, 38vw" className="object-cover" />
+                <div className="absolute inset-x-4 bottom-4 rounded-xl border border-white/20 bg-black/70 px-4 py-3 text-center text-sm font-medium text-white backdrop-blur-sm">{landing.hero.imageCaption}</div>
               </div>
-            </article>
+            </figure>
           </div>
-        </section>
-      )}
+        </div>
+      </section>
 
-      {/* ── 6. PROCESS — 4 steps ── */}
-      {data.process?.length > 0 && (
-        <section
-          aria-labelledby="process-heading"
-          className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
-        >
-          <div className="text-center mb-10 sm:mb-12">
-            <h2
-              id="process-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-            >
-              {data.processTitle}
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              {data.processDesc}
-            </p>
-          </div>
+      <section aria-labelledby="needs-heading" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
+          <header className="max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.needs.eyebrow}</p><h2 id="needs-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.needs.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.needs.description}</p></header>
+          <ul className="mt-9 grid gap-x-8 md:grid-cols-2">{landing.needs.items.map((item) => <li key={item} className="flex gap-3 border-t border-border py-5"><PenTool className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" /><span className="font-medium leading-relaxed">{item}</span></li>)}</ul>
+        </div>
+      </section>
 
-          <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-6 relative list-none p-0">
-            <div
-              className="hidden lg:block absolute top-7 left-[12.5%] right-[12.5%] border-t-2 border-dashed border-border"
-              aria-hidden="true"
-            />
-            {data.process.map(
-              (p: { step: string; title: string; text: string }, i: number) => (
-                <li
-                  key={i}
-                  className="flex flex-col items-center text-center gap-3 sm:gap-4"
-                >
-                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-card border border-primary/20 flex items-center justify-center z-10 shrink-0 shadow-sm">
-                    <span className="text-base sm:text-lg font-bold text-primary">
-                      {p.step}
-                    </span>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground mb-1.5 sm:mb-2 text-base sm:text-lg">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed px-2">
-                      {p.text}
-                    </p>
-                  </div>
-                </li>
-              ),
-            )}
-          </ol>
-        </section>
-      )}
+      <section aria-labelledby="value-heading" className="border-b border-border bg-card">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-12 sm:px-6 sm:py-16 lg:grid-cols-[0.62fr_1.38fr] lg:gap-16">
+          <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.value.eyebrow}</p><h2 id="value-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">{landing.value.heading}</h2></header>
+          <div><p className="text-lg font-medium leading-relaxed sm:text-xl">{landing.value.answer}</p><p className="mt-5 border-l-2 border-primary pl-4 leading-relaxed text-muted-foreground">{landing.value.note}</p></div>
+        </div>
+      </section>
 
-      {/* ── 7. TECH STACK ── */}
-      <section
-        aria-labelledby="tech-heading"
-        className="py-12 sm:py-16 border-t border-border bg-muted/5"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10 sm:mb-12">
-            <h2
-              id="tech-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-            >
-              {data.techTitle}
-            </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto text-sm sm:text-base">
-              {data.techDesc}
-            </p>
-          </div>
-
-          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 sm:gap-4 list-none p-0">
-            {TECH_STACK.map((tech, i) => (
-              <li
-                key={i}
-                className="flex flex-col items-center justify-center gap-2 sm:gap-2.5 p-3 sm:p-4 rounded-xl
-                           border border-border bg-muted/10 hover:border-primary/30 hover:bg-primary/5
-                           transition-all group cursor-default"
-              >
-                <tech.icon
-                  className="w-5 h-5 sm:w-6 sm:h-6 text-primary group-hover:scale-110 transition-transform"
-                  aria-hidden="true"
-                />
-                <span className="text-xs sm:text-sm font-medium text-foreground text-center leading-tight">
-                  {tech.name}
-                </span>
-              </li>
-            ))}
+      <section id="included" aria-labelledby="included-heading" className="scroll-mt-24 border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
+          <header className="max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.included.eyebrow}</p><h2 id="included-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.included.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.included.description}</p></header>
+          <ul className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {landing.included.items.map((item, index) => {
+              const Icon = INCLUDED_ICONS[index] ?? Code2;
+              return <li key={item.title} className="rounded-2xl border border-border bg-card p-6 sm:p-7"><span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true"><Icon size={21} /></span><h3 className="mt-5 text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.text}</p></li>;
+            })}
           </ul>
         </div>
       </section>
 
-      {/* ── 8. CROSS-LINK (related service) ── */}
-      {data.growthTitle && data.growthDescription && (
-        <section
-          aria-labelledby="growth-heading"
-          className="border-t border-border"
-        >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-18">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2
-                id="growth-heading"
-                className="text-2xl sm:text-3xl font-bold mb-4 text-foreground"
-              >
-                {data.growthTitle}
-              </h2>
+      <section aria-labelledby="platforms-heading" className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
+          <header className="max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.platforms.eyebrow}</p><h2 id="platforms-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.platforms.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.platforms.description}</p></header>
+          <ul className="mt-9 grid gap-5 md:grid-cols-3">{landing.platforms.items.map((item) => <li key={item.title} className="rounded-2xl border border-border bg-background p-6"><h3 className="text-xl font-semibold">{item.title}</h3><p className="mt-3 leading-relaxed text-muted-foreground">{item.text}</p></li>)}</ul>
+          <p className="mt-7 text-sm leading-relaxed text-muted-foreground">{landing.platforms.ecommerceText} <Link href={`/${locale}/services/ecommerce-development`} className="inline-flex min-h-11 items-center font-semibold text-primary hover:underline">{landing.platforms.ecommerceLabel}</Link></p>
+        </div>
+      </section>
 
-              <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
-                {data.growthDescription}
-              </p>
+      <section aria-labelledby="process-heading" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
+          <header className="max-w-3xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.process.eyebrow}</p><h2 id="process-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.process.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.process.description}</p></header>
+          <ol className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-4">{landing.process.steps.map((step, index) => <li key={step.title} className="rounded-2xl border border-border bg-card p-6"><span className="text-sm font-semibold text-primary" aria-hidden="true">{String(index + 1).padStart(2, "0")}</span><h3 className="mt-5 text-xl font-semibold">{step.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{step.text}</p></li>)}</ol>
+        </div>
+      </section>
 
-              {data.crossLink && (
-                <Link
-                  href={`/${locale}${data.crossLink.href}`}
-                  className="inline-flex items-center gap-2 mt-6 text-primary font-semibold hover:underline"
-                >
-                  {data.technicalSeoLinkText}
-                </Link>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ── 9. FAQ ── */}
-      {faqs.length > 0 && (
-        <section
-          aria-labelledby="faq-heading"
-          className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 border-t border-border"
-        >
-          <div className="text-center mb-8 sm:mb-10">
-            <h2
-              id="faq-heading"
-              className="text-2xl sm:text-3xl font-bold mb-3 text-foreground"
-            >
-              {data.faqTitle}
-            </h2>
-            <p className="text-foreground/80 max-w-xl mx-auto text-sm sm:text-base">
-              {data.faqDesc}
-            </p>
-          </div>
-
-          <ul className="space-y-3 list-none p-0 m-0">
-            {faqs.map((f, i) => (
-              <li key={i}>
-                <details className="group rounded-xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-colors">
-                  <summary
-                    className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5
-                           font-semibold text-foreground text-sm sm:text-base
-                           list-none [&::-webkit-details-marker]:hidden
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                  >
-                    <h3
-                      className={`flex-1 ${isRtl ? "text-right" : "text-left"}`}
-                    >
-                      {f.q}
-                    </h3>
-                    <ChevronDown
-                      className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180"
-                      aria-hidden="true"
-                    />
-                  </summary>
-                  <p className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    {f.a}
-                  </p>
-                </details>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {/* ── 10. CTA ── */}
-      <section
-        aria-label="Call to Action"
-        className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16"
-      >
-        <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
-          <div
-            className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none"
-            aria-hidden="true"
-          />
-          <div
-            className="absolute -top-16 left-1/2 -translate-x-1/2 w-72 h-72 bg-primary/10 rounded-full blur-3xl pointer-events-none"
-            aria-hidden="true"
-          />
-          <div className="relative text-center py-10 sm:py-16 px-5 sm:px-12 z-10">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-3 sm:mb-4 max-w-2xl mx-auto leading-tight text-foreground">
-              {svc.cta_title}
-            </h2>
-            <p className="text-foreground/80 mb-6 sm:mb-8 max-w-lg mx-auto leading-relaxed text-sm sm:text-base">
-              {svc.cta_desc}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center">
-              <Link
-                href={`/${locale}/contact`}
-                className="w-full sm:w-auto group inline-flex items-center justify-center gap-2
-                           px-8 py-3.5 rounded-xl bg-primary text-primary-foreground
-                           font-semibold text-sm sm:text-base
-                           hover:opacity-90 active:scale-95 transition-all
-                           shadow-lg shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                {svc.cta_btn}
-                <ArrFwd
-                  size={16}
-                  className="group-hover:translate-x-0.5 transition-transform"
-                  aria-hidden="true"
-                />
-              </Link>
-              <Link
-                href={`/${locale}/services`}
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2
-                           px-8 py-3.5 rounded-xl border border-border bg-background
-                           text-foreground font-semibold text-sm sm:text-base
-                           hover:border-primary/30 hover:bg-muted/50 active:scale-95 transition-all
-                           focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                {data.AnothersrvcBtn}
-              </Link>
-            </div>
+      <section aria-labelledby="seo-bridge-heading" className="border-b border-border bg-card">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+          <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.seoBridge.eyebrow}</p><h2 id="seo-bridge-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.seoBridge.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.seoBridge.description}</p></header>
+          <div className="grid gap-5">
+            <div className="rounded-2xl border border-border bg-background p-6"><h3 className="text-lg font-semibold">{landing.seoBridge.includedTitle}</h3><ul className="mt-4 space-y-3">{landing.seoBridge.included.map((item) => <li key={item} className="flex gap-3 text-sm leading-relaxed"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />{item}</li>)}</ul></div>
+            <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6"><h3 className="text-lg font-semibold">{landing.seoBridge.auditTitle}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{landing.seoBridge.auditText}</p><Link href={`/${locale}/services/technical-seo`} className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{landing.seoBridge.auditLabel}<ArrowRight size={16} aria-hidden="true" /></Link></div>
           </div>
         </div>
+      </section>
+
+      <section aria-labelledby="proof-heading" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
+          <div className="grid overflow-hidden rounded-3xl border border-border bg-card lg:grid-cols-[0.95fr_1.05fr]">
+            <div className="relative min-h-64 border-b border-border lg:min-h-full lg:border-b-0 lg:border-r"><Image src={caseStudy.image} alt={caseStudy.imageAlt} fill sizes="(max-width: 1024px) 100vw, 48vw" className="object-cover" /></div>
+            <div className="p-6 sm:p-8 lg:p-10"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{caseStudy.badge}</p><h2 id="proof-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">{caseStudy.title}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{caseStudy.description}</p><dl className="mt-7 grid gap-4 sm:grid-cols-3">{caseStudy.results.map((result) => <div key={result.label} className="border-t border-border pt-4"><dt className="text-2xl font-bold text-primary">{result.value}</dt><dd className="mt-1 text-sm leading-relaxed text-muted-foreground">{result.label}</dd></div>)}</dl><Link href={`/${locale}${caseStudy.link.href}`} className="mt-7 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{caseStudy.link.label}<ArrowRight size={16} aria-hidden="true" /></Link></div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="fit-heading" className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20"><header className="max-w-4xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.fit.eyebrow}</p><h2 id="fit-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.fit.heading}</h2></header><ul className="mt-9 grid gap-5 md:grid-cols-3">{landing.fit.items.map((item) => <li key={item.title} className="rounded-2xl border border-border bg-background p-6 sm:p-7"><h3 className="text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.text}</p></li>)}</ul></div>
+      </section>
+
+      <section aria-labelledby="faq-heading" className="border-b border-border">
+        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+          <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.faq.eyebrow}</p><h2 id="faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.faq.heading}</h2></header>
+          <div>{landing.faq.items.map((item, index) => <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0"><summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden"><h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3><ChevronDown className="size-5 shrink-0 text-primary transition-transform group-open:rotate-180" aria-hidden="true" /></summary><p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p></details>)}</div>
+        </div>
+      </section>
+
+      <section aria-labelledby="related-heading" className="border-b border-border bg-card">
+        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16"><h2 id="related-heading" className="text-2xl font-bold tracking-tight sm:text-3xl">{landing.related.heading}</h2><ul className="mt-7 grid gap-4 md:grid-cols-3">{landing.related.items.map((item) => <li key={item.href}><Link href={`/${locale}${item.href}`} className="group flex h-full flex-col rounded-2xl border border-border bg-background p-5 transition hover:border-primary/35"><span className="font-semibold leading-relaxed">{item.title}</span><span className="mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-primary">{item.label}<ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" /></span></Link></li>)}</ul></div>
+      </section>
+
+      <section aria-labelledby="web-development-cta-heading" className="px-4 py-12 sm:px-6 sm:py-20">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl border border-border hero-section-light px-6 py-12 sm:px-10 sm:py-16 lg:px-16"><div className="absolute right-0 top-0 size-72 translate-x-1/3 -translate-y-1/3 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" /><div className="relative flex flex-col justify-between gap-8 lg:flex-row lg:items-end"><div className="max-w-3xl"><h2 id="web-development-cta-heading" className="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.cta.heading}</h2><p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{landing.cta.description}</p></div><Link href={`/${locale}/contact`} className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:brightness-110">{landing.cta.button}<ArrowRight size={17} aria-hidden="true" /></Link></div></div>
       </section>
     </main>
   );

@@ -1,614 +1,636 @@
-// /app/[locale]/about/page.tsx
 import type { Metadata } from "next";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import {
   ArrowRight,
-  Target,
+  ArrowUpRight,
+  BriefcaseBusiness,
+  Building2,
+  CheckCircle2,
+  ChevronDown,
+  Code2,
+  GraduationCap,
+  Network,
+  Search,
   Trophy,
-  Award,
-  BookOpen,
-  ChevronRight,
-  Sparkles,
+  Users,
 } from "lucide-react";
-import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { flattenPortfolioProjects } from "@/app/lib/portfolio";
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
 import infos from "@/app/dictionaries/global.json";
+import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
 
 type Props = { params: Promise<{ locale: string }> };
+
+/** Date of the last meaningful content update. Change it when the page copy changes. */
+const PAGE_UPDATED = "2026-11-15";
+
+/**
+ * Card lists become a horizontal swipe row on phones (the next card peeks in
+ * as the hint) and a normal grid from the `sm` breakpoint up. Everything stays
+ * in the HTML, so crawlers read every card.
+ */
+const SWIPE_ROW =
+  "flex list-none snap-x snap-mandatory scroll-px-4 overflow-x-auto -mx-4 px-4 pb-3 sm:mx-0 sm:grid sm:snap-none sm:overflow-visible sm:px-0 sm:pb-0";
+const SWIPE_ITEM = "w-[86%] shrink-0 snap-start sm:w-auto sm:shrink";
+
+/** Tools named on the page, also declared in the Person schema's knowsAbout. */
+const SEO_TOOLS = [
+  "Google Search Console",
+  "Lighthouse",
+  "Semrush",
+  "Google Keyword Planner",
+  "Google Trends",
+];
+
+const PROFILE_LABELS = {
+  fr: { profiles: "Profils vérifiables :" },
+  en: { profiles: "Verifiable profiles:" },
+} as const;
+
+interface AboutProject {
+  title: string;
+  description: string;
+  tech: string;
+  image: string;
+  href: string;
+}
+
+const FEATURED_PROJECTS = [
+  "/portfolio/corporate-website",
+  "/portfolio/nutritia-shopify-store",
+  "/portfolio/business-automation-dashboard",
+];
+
+const CAPABILITY_ICONS = [Search, Network, Code2] as const;
+const COLLABORATION_ICONS = [Building2, Users, BriefcaseBusiness] as const;
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale: rawLocale } = await params;
-  const locale: Locale = i18n.locales.includes(rawLocale as Locale)
+function resolveLocale(rawLocale: string): Locale {
+  return i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
+}
 
-  const title =
-    locale === "en"
-      ? "About Mohammed Elghandori | Full-Stack & SEO Expert"
-      : locale === "ar"
-        ? "عن محمد الغنضوري | مطور ويب Full-Stack وخبير SEO"
-        : "À propos de Mohammed | Développeur Full-Stack & SEO";
-
-  const description =
-    locale === "en"
-      ? "Learn about Mohammed Elghandori, a Full-Stack Web Developer in Morocco specializing in Next.js, Technical SEO, and AI Search Optimization."
-      : locale === "ar"
-        ? "تعرّف على محمد الغنضوري، مطور ويب Full-Stack في المغرب. متخصص في Next.js، SEO التقني، وتحسين البحث بالذكاء الاصطناعي لبناء مواقع عالية الأداء."
-        : "Découvrez Mohammed Elghandori, développeur Full-Stack au Maroc expert en Next.js, SEO technique et optimisation pour la recherche IA.";
-
-  const keywords =
-    locale === "en"
-      ? [
-          "Mohammed Elghandori",
-          "freelance web developer Morocco",
-          "Next.js developer Casablanca",
-          "full-stack developer Morocco",
-          "Technical SEO expert Morocco",
-          "GEO specialist",
-          "AEO specialist",
-          "AI search optimization Morocco",
-          "hire web developer Morocco",
-          "1337 School developer",
-          "42 Network Morocco",
-          "ISTA NTIC",
-          "web developer portfolio",
-          "software engineer Morocco",
-          "React developer Morocco",
-        ]
-      : locale === "ar"
-        ? [
-            "محمد الغنضوري",
-            "مطور ويب مستقل المغرب",
-            "مطور Next.js الدار البيضاء",
-            "مطور متكامل المغرب",
-            "خبير SEO تقني المغرب",
-            "متخصص GEO",
-            "متخصص AEO",
-            "تحسين البحث بالذكاء الاصطناعي",
-            "توظيف مطور ويب المغرب",
-            "مطور 1337 School",
-            "شبكة 42 المغرب",
-            "معرض أعمال مطور",
-          ]
-        : [
-            "Mohammed Elghandori",
-            "développeur web freelance Maroc",
-            "développeur Next.js Casablanca",
-            "développeur full-stack Maroc",
-            "expert SEO technique Maroc",
-            "spécialiste GEO",
-            "spécialiste AEO",
-            "optimisation recherche IA Maroc",
-            "embaucher développeur web Maroc",
-            "développeur 1337 School",
-            "réseau 42 Maroc",
-            "portfolio développeur web",
-          ];
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale: rawLocale } = await params;
+  const locale = resolveLocale(rawLocale);
+  const dict = await getDictionary(locale);
+  const seo = dict.pages.about_page.seo;
 
   return buildPageMetadata({
     locale,
-    title,
-    description,
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
     route: "/about",
-    keywords,
     ogImagePath: "/cover/Designpro-mohammed-cover.jpg",
     type: "website",
   });
 }
 
-function CheckCircle({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-      />
-    </svg>
-  );
-}
-
 export default async function AboutPage({ params }: Props) {
   const { locale: rawLocale } = await params;
-  const locale: Locale = i18n.locales.includes(rawLocale as Locale)
-    ? (rawLocale as Locale)
-    : i18n.defaultLocale;
-
+  const locale = resolveLocale(rawLocale);
   const dict = await getDictionary(locale);
-  const t = dict.pages?.about_page;
-  const isRtl = locale === "ar";
+  const t = dict.pages.about_page;
+  const profileLang = locale === "fr" ? "fr" : "en";
   const baseUrl = getBaseUrl();
+  const projects = flattenPortfolioProjects<AboutProject>(
+    dict.pages.portfolio_page.projects,
+  )
+    .filter((project) => FEATURED_PROJECTS.includes(project.href))
+    .sort(
+      (first, second) =>
+        FEATURED_PROJECTS.indexOf(first.href) - FEATURED_PROJECTS.indexOf(second.href),
+    );
 
-const ProfileSchema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfilePage",
-      "@id": `${baseUrl}/${locale}/about#profile`,
-      "url": `${baseUrl}/${locale}/about`,
-      "mainEntity": {
-        "@id": `${baseUrl}/#person`,
-      },
-      "about": {
-        "@id": `${baseUrl}/#person`,
-      },
-    },
-    {
-      "@type": "Person",
-      "@id": `${baseUrl}/#person`,
-      "name": "Mohammed Elghandori",
-      "url": `${baseUrl}/${locale}/about`,
-      "image": `${baseUrl}/images/mohammed-profile.png`,
-      "jobTitle": locale === "ar" 
-        ? "مطور ويب Full-Stack وخبير SEO" 
-        : locale === "fr" 
-          ? "Développeur Web Full-Stack & Expert SEO" 
-          : "Full-Stack Web Developer & SEO Expert",
-      "description": locale === "ar"
-        ? "مطور ويب مقيم في المغرب متخصص في SEO وتحسين البحث بالذكاء الاصطناعي. أبني مواقع سريعة وحديثة ومُحسّنة للبحث."
-        : locale === "fr"
-          ? "Développeur web basé au Maroc spécialisé en SEO et optimisation recherche IA. Je construis des sites rapides, modernes et optimisés pour la recherche."
-          : "Web Developer based in Morocco specializing in SEO and AI Search Optimization. I build fast, modern, and search-optimized websites.",
-         "sameAs": [infos.social.linkedin, infos.social.github, infos.social.facebook].filter(Boolean),
-
-      "knowsAbout": [
-        "Web Development",
-        "Next.js",
-        "Technical SEO",
-        "AI Search Optimization",
-        "Core Web Vitals",
-        "Schema.org",
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "MA",
-        "addressLocality": locale === "ar" ? "المغرب" : locale === "fr" ? "Maroc" : "Morocco",
-      },
-    },
-  ],
-};
-
-  const breadcrumbSchema = {
+  const profileSchema = {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
+    "@graph": [
       {
-        "@type": "ListItem",
-        position: 1,
-        name:
-          locale === "en" ? "Home" : locale === "ar" ? "الرئيسية" : "Accueil",
-        item: `${baseUrl}/${locale}`,
+        "@type": "ProfilePage",
+        "@id": `${baseUrl}/${locale}/about#profile-page`,
+        "url": `${baseUrl}/${locale}/about`,
+        "name": t.seo.title,
+        "description": t.seo.description,
+        "inLanguage": localeToBcp47(locale),
+        "isPartOf": { "@id": `${baseUrl}/#website` },
+        "dateModified": PAGE_UPDATED,
+        "mainEntity": { "@id": `${baseUrl}/#person` },
+        "breadcrumb": { "@id": `${baseUrl}/${locale}/about#breadcrumb` },
       },
       {
-        "@type": "ListItem",
-        position: 2,
-        name: locale === "en" ? "About" : locale === "ar" ? "عنّي" : "À propos",
-        item: `${baseUrl}/${locale}/about`,
+        "@type": "FAQPage",
+        "@id": `${baseUrl}/${locale}/about#faq`,
+        "inLanguage": localeToBcp47(locale),
+        "mainEntity": t.faq.items.map((item) => ({
+          "@type": "Question",
+          "name": item.q,
+          "acceptedAnswer": { "@type": "Answer", "text": item.a },
+        })),
+      },
+      {
+        "@type": "Person",
+        "@id": `${baseUrl}/#person`,
+        "name": "Mohammed Elghandori",
+        "alternateName": "Devsignpro",
+        "url": `${baseUrl}/${locale}/about`,
+        "image": `${baseUrl}/images/about/profile1.png`,
+        "jobTitle": t.schema.jobTitle,
+        "description": t.schema.description,
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "FR",
+        },
+        "nationality": {
+          "@type": "Country",
+          "name": "Morocco",
+        },
+        "worksFor": { "@id": `${baseUrl}/#business` },
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "1337 UM6P",
+          "parentOrganization": {
+            "@type": "EducationalOrganization",
+            "name": "42 Network",
+          },
+        },
+        "affiliation": {
+          "@type": "EducationalOrganization",
+          "name": "42 Paris",
+          "description": t.schema.currentEducation,
+        },
+        "award": t.credentials.items
+          .filter((item) => item.kind === "award")
+          .map((item) => `${item.result}, ${item.name} (${item.year})`),
+        "knowsAbout": [...t.schema.knowsAbout, ...SEO_TOOLS],
+        "hasCredential": t.credentials.items
+          .filter((item) => item.kind === "certificate")
+          .map((item) => ({
+            "@type": "EducationalOccupationalCredential",
+            "name": item.name,
+            "credentialCategory": "certificate",
+            "recognizedBy": { "@type": "Organization", "name": item.location },
+          })),
+        "sameAs": [
+          infos.social.linkedin,
+          infos.social.github,
+          infos.social.instagram,
+        ].filter(Boolean),
+        "workExample": projects.map((project) => ({
+          "@type": "CreativeWork",
+          "name": project.title,
+          "url": `${baseUrl}/${locale}${project.href}`,
+        })),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${baseUrl}/${locale}/about#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": t.breadcrumb.home,
+            "item": `${baseUrl}/${locale}`,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": t.breadcrumb.current,
+            "item": `${baseUrl}/${locale}/about`,
+          },
+        ],
       },
     ],
   };
 
-  if (!t) return null;
-
   return (
-    <main
-      className="min-h-screen bg-background hero-section-light"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <main className="bg-background text-foreground">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ProfileSchema) }}
+        dangerouslySetInnerHTML={{ __html: serializeJsonLd(profileSchema) }}
       />
 
       <section
+        aria-labelledby="about-heading"
         className="relative overflow-hidden border-b border-border"
-        aria-labelledby="about-hero-heading"
       >
         <div
-          className="absolute inset-0 opacity-[0.03] pointer-events-none"
-          style={{
-            backgroundImage:
-              "linear-gradient(to right,currentColor 1px,transparent 1px),linear-gradient(to bottom,currentColor 1px,transparent 1px)",
-            backgroundSize: "48px 48px",
-          }}
+          className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,color-mix(in_srgb,var(--primary)_12%,transparent),transparent_34%),radial-gradient(circle_at_85%_75%,color-mix(in_srgb,var(--primary)_8%,transparent),transparent_30%)]"
           aria-hidden="true"
         />
-        <div
-          className="absolute -top-24 -left-24 w-96 h-96 bg-primary/15 rounded-full blur-3xl pointer-events-none"
-          aria-hidden="true"
-        />
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:py-20">
+          <nav aria-label={t.breadcrumb.label} className="mb-8 text-sm text-muted-foreground">
+            <ol className="flex items-center gap-2">
+              <li>
+                <Link className="inline-flex min-h-11 items-center transition-colors hover:text-primary" href={`/${locale}`}>
+                  {t.breadcrumb.home}
+                </Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" className="text-foreground">
+                {t.breadcrumb.current}
+              </li>
+            </ol>
+          </nav>
 
-        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-14">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 border border-primary/20">
-            <Sparkles size={13} aria-hidden="true" />
-            {t.title ?? "About me"}
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.72fr)] lg:gap-16">
+            <header>
+              <p className="mb-4 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+                {t.hero.eyebrow}
+              </p>
+              <h1
+                id="about-heading"
+                className="max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl"
+              >
+                {t.hero.heading}
+              </h1>
+              <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                {t.hero.intro}
+              </p>
+              <p className="mt-4 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+                {t.hero.differentiator}
+              </p>
+
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Link
+                  href={`/${locale}/contact`}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  {t.hero.primaryCta}
+                  <ArrowRight size={17} aria-hidden="true" />
+                </Link>
+                <Link
+                  href={`/${locale}/services/technical-seo`}
+                  className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-card px-6 py-3 font-semibold transition hover:border-primary/40 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+                >
+                  {t.hero.secondaryCta}
+                  <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
+              </div>
+
+              {/* Verifiable profiles: the visible counterpart of the Person schema's sameAs. */}
+              <p className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground">
+                  {PROFILE_LABELS[profileLang].profiles}
+                </span>
+                {[
+                  { name: "LinkedIn", href: infos.social.linkedin },
+                  { name: "GitHub", href: infos.social.github },
+                ].map((profile) => (
+                  <a
+                    key={profile.name}
+                    href={profile.href}
+                    target="_blank"
+                    rel="me noopener noreferrer"
+                    className="inline-flex min-h-11 items-center gap-1 font-semibold text-foreground underline decoration-primary/40 underline-offset-4 transition hover:text-primary sm:min-h-0"
+                  >
+                    {profile.name}
+                    <ArrowUpRight size={14} aria-hidden="true" />
+                  </a>
+                ))}
+              </p>
+            </header>
+
+            <figure className="mx-auto w-full max-w-md">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-muted shadow-2xl shadow-black/10">
+                <Image
+                  src="/images/about/profile1.png"
+                  alt={t.hero.portraitAlt}
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 90vw, 34vw"
+                  className="object-cover object-center"
+                />
+                <div
+                  className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent"
+                  aria-hidden="true"
+                />
+                <figcaption className="absolute inset-x-5 bottom-5 text-sm font-medium text-white">
+                  {t.hero.caption}
+                </figcaption>
+              </div>
+            </figure>
           </div>
 
-          <h1
-            id="about-hero-heading"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6 max-w-5xl leading-[1.15]"
-            itemProp="headline"
-          >
-            {t.heading}
-          </h1>
-
-          <p
-            className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl"
-            itemProp="description"
-          >
-            {t.intro}
-          </p>
-          <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-3xl">
-            {t.intro_2}
-          </p>
-          <div
-            className="grid grid-cols-3 gap-3 sm:gap-4 mt-10 max-w-sm sm:max-w-md"
-            role="list"
-            aria-label="Key statistics"
-          >
-            {[
-              { value: "3+", label: t.stats?.years ?? "Years Experience" },
-              { value: "98%", label: t.stats?.clients ?? "Happy Clients" },
-              { value: "15+", label: t.stats?.projects ?? "Projects" },
-            ].map((s) => (
+          <dl className="mt-8 grid border-y sm:mt-12 border-border sm:grid-cols-2 lg:grid-cols-4">
+            {t.facts.map((fact) => (
               <div
-                key={s.label}
-                className="text-center py-4 px-2 rounded-xl bg-primary/5 border border-primary/10"
-                role="listitem"
-                itemScope
-                itemType="https://schema.org/QuantitativeValue"
+                key={fact.label}
+                className="border-b border-border px-0 py-5 last:border-b-0 sm:px-5 sm:[&:nth-child(odd)]:border-r lg:border-b-0 lg:border-r lg:first:pl-0 lg:last:border-r-0"
               >
-                <meta itemProp="value" content={s.value} />
-                <div className="text-2xl sm:text-3xl font-bold text-primary">
-                  {s.value}
-                </div>
-                <div className="text-[11px] sm:text-xs text-muted-foreground mt-1 leading-tight">
-                  {s.label}
-                </div>
+                <dt className="text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                  {fact.label}
+                </dt>
+                <dd className="mt-2 text-sm font-semibold leading-relaxed sm:text-base">
+                  {fact.value}
+                </dd>
               </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
+      <section aria-labelledby="approach-heading" className="border-b border-border">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+          <header>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+              {t.approach.eyebrow}
+            </p>
+            <h2 id="approach-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.approach.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              {t.approach.description}
+            </p>
+          </header>
+
+          <ol className="divide-y divide-border border-y border-border">
+            {t.approach.steps.map((step, index) => (
+              <li key={step.title} className="grid gap-3 py-5 sm:grid-cols-[3rem_1fr] sm:py-6">
+                <span className="text-sm font-semibold text-primary" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="text-lg font-semibold">{step.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                    {step.text}
+                  </p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section aria-labelledby="background-heading" className="bg-card">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[1fr_0.8fr] lg:gap-16">
+          <div>
+            <div className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+              <GraduationCap size={23} />
+            </div>
+            <h2 id="background-heading" className="mt-5 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.background.heading}
+            </h2>
+            {t.background.paragraphs.map((paragraph) => (
+              <p key={paragraph} className="mt-5 max-w-3xl text-base leading-relaxed text-muted-foreground">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+
+          <div className="rounded-2xl border border-border bg-background p-6 sm:p-8">
+            <h3 className="text-lg font-semibold">{t.background.educationHeading}</h3>
+            <ol className="mt-6 space-y-0">
+              {t.background.education.map((item, index) => (
+                <li key={item.name} className="relative grid grid-cols-[1.75rem_1fr] gap-4 pb-7 last:pb-0">
+                  {index < t.background.education.length - 1 ? (
+                    <span className="absolute left-[0.4375rem] top-4 h-full w-px bg-border" aria-hidden="true" />
+                  ) : null}
+                  <span className="relative mt-1 size-3 rounded-full border-2 border-primary bg-background" aria-hidden="true" />
+                  <div>
+                    <p className="font-semibold">{item.name}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="capabilities-heading" className="border-y border-border">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-20">
+          <header className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">
+              {t.capabilities.eyebrow}
+            </p>
+            <h2 id="capabilities-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.capabilities.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              {t.capabilities.intro}
+            </p>
+          </header>
+
+          <ul className={`mt-7 gap-5 sm:mt-10 lg:grid-cols-3 ${SWIPE_ROW}`}>
+            {t.capabilities.groups.map((group, index) => {
+              const Icon = CAPABILITY_ICONS[index] ?? Code2;
+              return (
+                <li key={group.title} className={`flex ${SWIPE_ITEM}`}>
+                  <article className="flex w-full flex-col rounded-2xl border border-border bg-card p-6 sm:p-7">
+                    <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+                      <Icon size={22} />
+                    </span>
+                    <h3 className="mt-5 text-xl font-semibold">{group.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                      {group.description}
+                    </p>
+                    <ul className="mt-5 space-y-3">
+                      {group.items.map((item) => (
+                        <li key={item} className="flex gap-3 text-sm leading-relaxed text-foreground/85">
+                          <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      href={`/${locale}${group.href}`}
+                      className="mt-auto inline-flex items-center gap-2 pt-7 text-sm font-semibold text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                    >
+                      {group.linkLabel}
+                      <ArrowUpRight size={16} aria-hidden="true" />
+                    </Link>
+                  </article>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="tools-heading" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-20">
+          <header className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{t.tools.eyebrow}</p>
+            <h2 id="tools-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.tools.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.tools.intro}</p>
+          </header>
+
+          <ul
+            className={`mt-7 gap-4 sm:mt-10 sm:grid-cols-2 lg:grid-cols-4 ${SWIPE_ROW}`}
+            aria-labelledby="tools-heading"
+            tabIndex={0}
+          >
+            {t.tools.items.map((tool) => (
+              <li key={tool.name} className={`rounded-2xl border border-border bg-card p-5 ${SWIPE_ITEM}`}>
+                <h3 className="font-semibold leading-snug">{tool.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{tool.text}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="work-heading">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-20">
+          <header className="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{t.work.eyebrow}</p>
+              <h2 id="work-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+                {t.work.heading}
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.work.intro}</p>
+            </div>
+            <Link href={`/${locale}/portfolio`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">
+              {t.work.allProjects}
+              <ArrowRight size={17} aria-hidden="true" />
+            </Link>
+          </header>
+
+          <ul className={`mt-7 gap-6 sm:mt-10 md:grid-cols-2 xl:grid-cols-3 ${SWIPE_ROW}`}>
+            {projects.map((project) => (
+              <li key={project.href} className={SWIPE_ITEM}>
+                <article className="group h-full overflow-hidden rounded-2xl border border-border bg-card">
+                  <Link href={`/${locale}${project.href}`} className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary">
+                    <div className="relative aspect-[16/9] overflow-hidden border-b border-border bg-muted">
+                      <Image
+                        src={project.image}
+                        alt=""
+                        fill
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                        className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="p-6 sm:p-7">
+                      <p className="text-xs font-semibold uppercase tracking-[0.12em] text-primary">{project.tech}</p>
+                      <h3 className="mt-3 text-xl font-semibold leading-snug sm:text-2xl">{project.title}</h3>
+                      <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                        {project.description}
+                      </p>
+                      <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary">
+                        {t.work.caseStudy}
+                        <ArrowUpRight size={16} aria-hidden="true" />
+                      </span>
+                    </div>
+                  </Link>
+                </article>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="credentials-heading" className="border-y border-border bg-card">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+          <header>
+            <div className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+              <Trophy size={22} />
+            </div>
+            <h2 id="credentials-heading" className="mt-5 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.credentials.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.credentials.intro}</p>
+          </header>
+
+          <ol className="grid gap-x-8 gap-y-0 sm:grid-cols-2">
+            {t.credentials.items.map((item) => (
+              <li key={`${item.year}-${item.name}`} className="border-t border-border py-5">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="font-semibold leading-snug">{item.name}</h3>
+                  <time className="shrink-0 text-sm font-semibold text-foreground" dateTime={item.year}>{item.year}</time>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground">{item.location}</p>
+                <p className="mt-1 text-sm font-medium">{item.result}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <section aria-labelledby="collaboration-heading">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-20">
+          <header className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{t.collaboration.eyebrow}</p>
+            <h2 id="collaboration-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.collaboration.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.collaboration.intro}</p>
+          </header>
+
+          <ul className="mt-10 divide-y divide-border border-y border-border">
+            {t.collaboration.audiences.map((audience, index) => {
+              const Icon = COLLABORATION_ICONS[index] ?? Users;
+              return (
+                <li key={audience.title} className="grid gap-4 py-6 sm:grid-cols-[3rem_0.7fr_1.3fr] sm:items-start sm:gap-6">
+                  <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+                    <Icon size={21} />
+                  </span>
+                  <h3 className="text-lg font-semibold">{audience.title}</h3>
+                  <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">{audience.text}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="about-faq-heading" className="border-t border-border">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+          <header>
+            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{t.faq.eyebrow}</p>
+            <h2 id="about-faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.faq.heading}
+            </h2>
+          </header>
+
+          {/* Native <details>: tap to open, no JavaScript, and the answers stay in the HTML for crawlers. */}
+          <div>
+            {t.faq.items.map((item, index) => (
+              <details
+                key={item.q}
+                open={index === 0}
+                className="group border-t border-border first:border-t-0"
+              >
+                <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
+                  <h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3>
+                  <ChevronDown
+                    className="size-5 shrink-0 text-primary transition-transform duration-200 group-open:rotate-180"
+                    aria-hidden="true"
+                  />
+                </summary>
+                <p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p>
+              </details>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 1. WHO I AM SECTION */}
-      <section
-        className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16"
-        aria-labelledby="who-i-am-heading"
-      >
-        <div className="grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10 lg:gap-16 items-center">
-          <div className="space-y-5">
-            <h2
-              id="who-i-am-heading"
-              className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20"
+      <section aria-labelledby="about-cta-heading" className="px-4 pb-14 sm:px-6 sm:pb-20">
+        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl border border-border bg-background hero-section-light px-6 py-12 text-foreground sm:px-10 sm:py-16 lg:px-16">
+          <div className="absolute right-0 top-0 size-72 translate-x-1/3 -translate-y-1/3 rounded-full bg-primary/10 blur-3xl" aria-hidden="true" />
+          <div className="relative flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+            <div className="max-w-3xl">
+              <h2 id="about-cta-heading" className="text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+                {t.cta.heading}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">{t.cta.description}</p>
+            </div>
+            <Link
+              href={`/${locale}/contact`}
+              className="inline-flex min-h-12 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             >
-              {t.whoIAm?.title}
-            </h2>
-
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              {t.whoIAm?.paragraph1}
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              {t.whoIAm?.paragraph2}
-            </p>
-          </div>
-
-          <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
-            <div
-              className="relative max-w-xs mx-auto lg:max-w-none"
-              itemScope
-              itemType="https://schema.org/Person"
-            >
-              <meta itemProp="name" content="Mohammed Elghandori" />
-              <meta
-                itemProp="jobTitle"
-                content={
-                  locale === "en"
-                    ? "Web Developer & SEO Specialist"
-                    : locale === "ar"
-                      ? "مطور ويب وخبير تحسين محركات البحث"
-                      : "Développeur Web & Spécialiste SEO"
-                }
-              />
-              <div className="absolute -inset-3 rounded-3xl border border-primary/10" />
-              <figure className="relative rounded-2xl overflow-hidden border border-border shadow-xl aspect-[3/4]">
-                <Image
-                  src="/images/mohammed-profile.png"
-                  alt="Mohammed Elghandori - Full-Stack Web Developer and SEO Specialist in Morocco, founder of Devsignpro"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 30vw"
-                  priority
-                  itemProp="image"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* 2. TECH PHILOSOPHY SECTION */}
-      {t.tech_philosophy && (
-        <section
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-14"
-          aria-labelledby="tech-heading"
-        >
-          {/* Added relative, rounded card, border, and overflow-hidden to contain the gradient */}
-          <div className="relative rounded-2xl border border-primary/30 bg-primary/5 p-6 sm:p-10 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
-
-            {/* Added z-10 so the text sits cleanly ON TOP of the gradient */}
-            <div className="relative z-10">
-              <h2
-                id="tech-heading"
-                className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-3"
-              >
-                {t.tech_philosophy.title}
-              </h2>
-              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-4xl">
-                {t.tech_philosophy.paragraph}
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* 3. EXPERIENCE SECTION */}
-      {t.experience && (
-        <section
-          className="max-w-6xl mx-auto px-4 sm:px-6 pb-10 sm:pb-16"
-          aria-labelledby="experience-heading"
-        >
-          <div className="relative rounded-2xl border border-primary/30 bg-primary/5 p-6 sm:p-10 overflow-hidden shadow-sm">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
-
-            <div className="relative z-10">
-              <h2
-                id="experience-heading"
-                className="text-xl sm:text-2xl font-bold mb-4 flex items-center gap-3"
-              >
-                {t.experience.title}
-              </h2>
-              <p className="text-muted-foreground leading-relaxed text-base sm:text-lg max-w-4xl">
-                {t.experience.paragraph}
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
-
-      {t.storyMissionValues && (
-        <section
-          className="border-t border-border"
-          aria-labelledby="story-heading"
-        >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-            <h2
-              id="story-heading"
-              className="text-2xl sm:text-3xl font-bold text-center mb-12"
-            >
-              {t.storyMissionValues.title}
-            </h2>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-              <div className={`space-y-8 ${isRtl ? "lg:order-2" : ""}`}>
-                {[
-                  {
-                    icon: BookOpen,
-                    label: t.storyMissionValues.storyLabel ?? "My Story",
-                    text: t.storyMissionValues.story,
-                  },
-                  {
-                    icon: Target,
-                    label: t.storyMissionValues.missionLabel ?? "My Mission",
-                    text: t.storyMissionValues.mission,
-                  },
-                ].map(({ icon: Icon, label, text }) => (
-                  <article key={label} className="flex gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mt-0.5">
-                      <Icon
-                        className="w-5 h-5 text-primary"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold mb-2">{label}</h3>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {text}
-                      </p>
-                    </div>
-                  </article>
-                ))}
-              </div>
-
-              <div className={`relative ${isRtl ? "lg:order-1" : ""}`}>
-                <figure className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl border border-border">
-                  <Image
-                    src="/images/about/profile1.png"
-                    alt="Mohammed Elghandori working on web development and SEO projects in Morocco"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
-                </figure>
-              </div>
-            </div>
-
-            {t.storyMissionValues.values?.length > 0 && (
-              <div className="mt-14">
-                <h3 className="text-xl font-semibold text-center mb-8">
-                  {t.storyMissionValues.valuesTitle}
-                </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {t.storyMissionValues.values.map(
-                    (item: string, i: number) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-3 p-4 rounded-xl bg-card border border-border hover:border-primary/30 hover:shadow-md transition-all duration-200"
-                      >
-                        <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
-                        <span className="text-sm text-foreground/80">
-                          {item}
-                        </span>
-                      </div>
-                    ),
-                  )}
-                </div>
-              </div>
-            )}
-          </div>
-        </section>
-      )}
-
-      {t.hackathons?.items?.length > 0 && (
-        <section
-          className="border-t border-border bg-muted/10"
-          aria-labelledby="hackathons-heading"
-        >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-            <header className="text-center mb-10">
-              <h2
-                id="hackathons-heading"
-                className="text-2xl sm:text-3xl font-bold mb-3"
-              >
-                {t.hackathons.title}
-              </h2>
-              <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium border border-primary/20">
-                {t.hackathons.subtitle}
-              </span>
-            </header>
-
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none p-0 m-0">
-              {" "}
-              {t.hackathons.items.map(
-                (
-                  item: {
-                    name: string;
-                    location: string;
-                    year: string;
-                    place: string;
-                    kind?: string;
-                  },
-                  i: number,
-                ) => (
-                  <li key={i}>
-                    <article className="group flex items-start gap-4 p-5 rounded-2xl bg-card border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-                      <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                        {item.kind === "certificate" ? (
-                          <Award className="w-5 h-5 text-primary" aria-hidden="true" />
-                        ) : (
-                          <Trophy className="w-5 h-5 text-primary" aria-hidden="true" />
-                        )}
-                      </div>
-                      <div className="min-w-0">
-                        <h3 className="font-semibold text-foreground mb-1.5 break-words">
-                          {item.name}
-                        </h3>
-                        {/* CHANGED: text-muted-foreground to text-foreground/80 */}
-                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-foreground/80">
-                          <time dateTime={item.year}>{item.year}</time>
-                          <span className="text-border">•</span>
-                          <span>{item.location}</span>
-                          <span className="text-border">•</span>
-                          <span className="text-primary font-medium">
-                            {item.place}
-                          </span>
-                        </div>
-                      </div>
-                    </article>
-                  </li>
-                ),
-              )}
-            </ul>
-          </div>
-        </section>
-      )}
-
-      {t.howCanIHelp?.items?.length > 0 && (
-        <section
-          className="border-t border-border"
-          aria-labelledby="help-heading"
-        >
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
-            <header className="text-center mb-10">
-              <h2
-                id="help-heading"
-                className="text-2xl sm:text-3xl font-bold mb-3"
-              >
-                {t.howCanIHelp.title}
-              </h2>
-            </header>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {t.howCanIHelp.items.map((item: string, i: number) => (
-                <div
-                  key={i}
-                  className="group flex items-start gap-3 p-4 sm:p-5 rounded-xl bg-card border border-border hover:border-primary/30 hover:shadow-md transition-all duration-200"
-                >
-                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors mt-0.5">
-                    <ChevronRight
-                      className="w-4 h-4 text-primary"
-                      aria-hidden="true"
-                    />
-                  </div>
-                  <span className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    {item}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
-      <section
-        aria-labelledby="cta-heading"
-      >
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-14 sm:pb-20">
-          <div className="relative rounded-2xl border border-primary/20 bg-card overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10 pointer-events-none" />
-            <div className="absolute -top-16 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
-
-            <div className="relative text-center py-12 sm:py-16 px-6 sm:px-12">
-              <h2
-                id="cta-heading"
-                className="text-2xl sm:text-3xl font-bold mb-4"
-              >
-                {t.cta?.title ?? "Ready to Bring Your Vision to Life?"}
-              </h2>
-              <p className="text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed">
-                {t.cta?.description ??
-                  "Let's work together to create something amazing."}
-              </p>
-              <Link
-                href={`/${locale}/contact`}
-                className="group inline-flex items-center gap-2 px-8 py-3.5 bg-primary text-primary-foreground font-semibold rounded-xl hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-primary/20"
-              >
-                {t.cta?.button ?? t.cta}
-                <ArrowRight
-                  size={17}
-                  className={`transition-transform group-hover:${isRtl ? "-translate-x-1" : "translate-x-1"} ${isRtl ? "rotate-180" : ""}`}
-                  aria-hidden="true"
-                />
-              </Link>
-            </div>
+              {t.cta.button}
+              <ArrowRight size={17} aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </section>

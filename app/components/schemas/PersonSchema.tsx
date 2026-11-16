@@ -1,4 +1,6 @@
 // app/components/schemas/PersonSchema.tsx
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
+
 interface PersonSchemaProps {
   baseUrl: string;
   locale: string;
@@ -9,7 +11,8 @@ interface PersonSchemaProps {
     linkedin?: string;
     github?: string;
     facebook?: string;
-  };
+    instagram?: string;
+    };
 }
 
 export function PersonSchema({
@@ -34,7 +37,9 @@ export function PersonSchema({
         ? [
             "Next.js",
             "React.js",
-            "Nest.js",
+            "Express.js",
+            "Shopify",
+            "WordPress",
             "Technical SEO",
             "AI Search Optimization",
             "Core Web Vitals",
@@ -45,6 +50,8 @@ export function PersonSchema({
               "تطوير الويب",
               "Next.js",
               "React.js",
+              "Express.js",
+              "WordPress",
               "تحسين محركات البحث (SEO)",
               "تحسين البحث بالذكاء الاصطناعي",
               "أداء المواقع (Core Web Vitals)",
@@ -53,6 +60,9 @@ export function PersonSchema({
               "Développement Web",
               "Next.js",
               "React.js",
+              "Express.js",
+              "Shopify",
+              "WordPress",
               "SEO Technique",
               "Optimisation de la recherche IA",
               "Core Web Vitals",
@@ -60,16 +70,17 @@ export function PersonSchema({
 
     "address": {
       "@type": "PostalAddress",
-      "addressCountry": "Morocco",
+      "addressCountry": "FR",
     },
-    "knowsLanguage": ["English", "French", "Arabic"],
-    "sameAs": [social.linkedin, social.github, social.facebook].filter(Boolean),
+    "nationality": { "@type": "Country", "name": "Morocco" },
+    "worksFor": { "@id": `${baseUrl}/#business` },
+    "sameAs": [social.linkedin, social.github, social.facebook, social.instagram].filter(Boolean),
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
     />
   );
 }

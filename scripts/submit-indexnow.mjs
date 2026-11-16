@@ -10,7 +10,7 @@ const key = (
 	readFileSync(join(process.cwd(), "public", "indexnow-key.txt"), "utf8")
 ).trim();
 
-const locales = ["en", "fr", "ar"];
+const locales = ["en", "fr"];
 const paths = [
 	"",
 	"/about",

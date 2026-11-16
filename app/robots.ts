@@ -12,7 +12,7 @@ const AI_CRAWLERS = [
 	"Claude-User",
 	"Claude-SearchBot",
 	"anthropic-ai",
-	// Google — Gemini / AI Overviews training token (Googlebot remains under *)
+	// Google — Gemini training controls (Google Search remains under *)
 	"Google-Extended",
 	// Perplexity
 	"PerplexityBot",

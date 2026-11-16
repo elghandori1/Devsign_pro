@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
 import { flattenPortfolioProjects, hrefToPortfolioSlug, shortBreadcrumbName } from "@/app/lib/portfolio";
 import PortfolioProjectDetail, {
   type CaseStudyUi,
@@ -47,7 +48,7 @@ const defaultCaseStudyUi: CaseStudyUi = {
   breadcrumbAria: "Breadcrumb",
   collaborationTitle: "Ready for a similar outcome?",
   collaborationBody:
-    "Tell me about your goals — I design, build, and ship digital products for businesses in Morocco and worldwide.",
+    "Tell me about your goals — I design, build, and ship digital products for businesses in France, across Europe and worldwide.",
 };
 
 export async function generateStaticParams() {
@@ -108,7 +109,7 @@ export default async function PortfolioProjectPage({ params }: Props) {
     notFound();
   }
 
-  const isRtl = locale === "ar";
+  const isRtl = false;
   const baseUrl = getBaseUrl();
   const pageUrl = `${baseUrl}/${locale}/portfolio/${slug}`;
   const imageUrl = project.image.startsWith("http")
@@ -135,6 +136,8 @@ export default async function PortfolioProjectPage({ params }: Props) {
     isPartOf: { "@id": `${baseUrl}/#website` },
     author: { "@id": `${baseUrl}/#person` },
     creator: { "@id": `${baseUrl}/#person` },
+    genre: project.category,
+    keywords: project.detail.seo.keywords.join(", "),
   };
 
   const breadcrumbSchema = {
@@ -167,13 +170,13 @@ export default async function PortfolioProjectPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(creativeWorkSchema),
+          __html: serializeJsonLd(creativeWorkSchema),
         }}
       />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbSchema),
+          __html: serializeJsonLd(breadcrumbSchema),
         }}
       />
       <PortfolioProjectDetail

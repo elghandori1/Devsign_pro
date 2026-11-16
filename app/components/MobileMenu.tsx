@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -21,6 +22,7 @@ type MobileMenuProps = {
 
 export default function MobileMenu({ locale, t }: MobileMenuProps) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
 
   const navItems = [
@@ -46,15 +48,24 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
     <>
       <button
         type="button"
-        onClick={() => setOpen(true)}
+        onClick={() => {
+          setMounted(true);
+          setOpen(true);
+        }}
         aria-label="Open mobile menu"
         aria-expanded={open}
-        className="flex items-center justify-center w-10 h-10 rounded-lg text-foreground hover:bg-muted transition-colors"
+        className="flex size-11 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted"
       >
         <Menu className="w-6 h-6" aria-hidden="true" />
       </button>
 
+      {/* Rendered in <body>: the navbar's backdrop-filter would otherwise
+          confine this fixed panel to the navbar's own 64px box. */}
+      {mounted &&
+        createPortal(
       <div
+        dir="ltr"
+        aria-hidden={!open}
         className={`fixed inset-0 z-[100] bg-background transition-all duration-300 ease-in-out ${
           open
             ? "translate-x-0 opacity-100 visible"
@@ -71,7 +82,7 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
               type="button"
               onClick={() => setOpen(false)}
               aria-label="Close mobile menu"
-              className="flex items-center justify-center w-10 h-10 rounded-lg text-foreground hover:bg-muted transition-colors"
+              className="flex size-11 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-muted"
             >
               <X className="w-6 h-6" aria-hidden="true" />
             </button>
@@ -127,7 +138,9 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
             </div>
           </div>
         </div>
-      </div>
+      </div>,
+          document.body,
+        )}
     </>
   );
 }

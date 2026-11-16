@@ -1,33 +1,29 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 interface ScrollRevealProps {
   children: React.ReactNode;
   className?: string;
+  /** Kept for call-site compatibility; the CSS reveal is driven by scroll position. */
   delay?: number;
   subtle?: boolean;
 }
 
+/**
+ * Fade-and-rise on scroll with no JavaScript.
+ *
+ * The animation is a CSS scroll-driven animation (see `.scroll-reveal` in
+ * globals.css). Content is fully visible in the HTML, so crawlers, browsers
+ * without `animation-timeline` support and users who prefer reduced motion all
+ * see it immediately.
+ */
 export default function ScrollReveal({
   children,
   className = "",
-  delay = 0,
   subtle = false,
 }: ScrollRevealProps) {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: subtle ? 16 : 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-40px" }}
-      transition={{
-        duration: 0.45,
-        delay,
-        ease: "easeOut",
-      }}
-      className={className}
+    <div
+      className={`scroll-reveal ${subtle ? "scroll-reveal-subtle" : ""} ${className}`.trim()}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

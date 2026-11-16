@@ -47,65 +47,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
 
-  const title =
-    locale === "en"
-      ? "Web Development Portfolio & Case Studies | Devsignpro"
-      : locale === "ar"
-        ? "معرض أعمال تطوير الويب ودراسات الحالة | Devsignpro"
-        : "Portfolio Développement Web & Études de Cas | Devsignpro";
-
-  const description =
-    locale === "en"
-      ? "Explore my portfolio of high-performance Next.js websites, custom dashboards, and Technical SEO projects. See real results and business impact."
-      : locale === "ar"
-        ? "استكشف معرض أعمالي لمواقع Next.js عالية الأداء، لوحات التحكم المخصصة، ومشاريع SEO التقني. شاهد نتائج حقيقية وتأثير ملموس على الأعمال."
-        : "Portfolio de sites Next.js, tableaux de bord et projets SEO technique. Résultats mesurables et impact business concret au Maroc.";
-
-  const keywords =
-    locale === "en"
-      ? [
-          "portfolio",
-          "web development projects morocco",
-          "Next.js portfolio",
-          "SEO case studies",
-          "AI automation projects",
-          "dashboard development",
-          "full-stack developer portfolio",
-          "client projects",
-          "academic projects",
-          "web applications",
-        ]
-      : locale === "ar"
-        ? [
-            "معرض أعمال",
-            "مشاريع تطوير ويب المغرب",
-            "مشاريع Next.js",
-            "دراسات SEO",
-            "مشاريع أتمتة IA",
-            "تطوير لوحات التحكم",
-            "مطور متكامل",
-            "أعمال العملاء",
-            "مشاريع أكاديمية",
-            "تطبيقات ويب",
-          ]
-        : [
-            "portfolio",
-            "projets développement web maroc",
-            "projets Next.js",
-            "études de cas SEO",
-            "projets automatisation IA",
-            "développement dashboards",
-            "développeur full-stack",
-            "projets clients",
-            "projets académiques",
-            "applications web",
-          ];
+  const dict = await getDictionary(locale);
+  const data = dict.pages.portfolio_page;
+  const seo = data.seo as {
+    title: string;
+    description: string;
+    keywords: string[];
+  };
 
   return buildPageMetadata({
     locale,
-    title,
-    description,
-    keywords,
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
     route: "/portfolio",
     ogImagePath: "/cover/Designpro-cover.jpg",
     type: "website",
@@ -129,7 +83,7 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
 
   const dict = await getDictionary(locale);
   const data = dict.pages?.portfolio_page;
-  const isRtl = locale === "ar";
+  const isRtl = false;
 
   if (!data) return null;
 
@@ -160,10 +114,8 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
         title={data.heading || "Portfolio"}
         description={
           locale === "en"
-            ? "Portfolio of high-performance Next.js websites, e-commerce, business dashboards, and solutions built with Technical SEO and scalable architecture."
-            : locale === "ar"
-              ? "معرض أعمال يضم مواقع Next.js عالية الأداء، ومتاجر إلكترونية، ولوحات تحكم للأعمال، وحلولاً رقمية مبنية على SEO تقني وبنية قابلة للتوسع."
-              : "Portfolio de sites Next.js performants, boutiques e-commerce, tableaux de bord et solutions digitales, développés avec un SEO technique et une architecture évolutive."
+            ? "Selected websites, e-commerce stores, custom applications and engineering projects with clear context, implementation decisions and verified outcomes where available."
+            : "Sélection de sites web, boutiques en ligne, applications sur mesure et projets techniques, avec leur contexte, les choix de réalisation et les résultats vérifiables disponibles."
         }
         projects={allProjects}
       />

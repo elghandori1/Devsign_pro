@@ -1,5 +1,7 @@
 // app/components/schemas/FAQPageSchema.tsx
 
+import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
+
 interface FAQItem {
   question: string;
   answer: string;
@@ -26,7 +28,7 @@ export function FAQPageSchema({ faqs }: Props) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: serializeJsonLd(schema) }}
     />
   );
 }

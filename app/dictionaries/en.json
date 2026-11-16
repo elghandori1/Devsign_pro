@@ -9,14 +9,15 @@
   "homepage": {
     "hero": {
       "availability": "Available for new projects",
-      "title_line1": "Web Developer",
-      "title_highlight": "& SEO Expert Based in Morocco",
-      "description": "I'm a Web Developer based in Morocco specializing in SEO and AI Search Optimization. I build fast, modern, and search-optimized websites, e-commerce stores, and custom web applications designed for performance, Core Web Vitals, and search visibility.",
-      "description_GEO": "I engineer content and structured data to rank higher on Google and get discovered by ChatGPT, Google AI Overviews, Perplexity, and other AI search engines—driving real visibility and long-term business growth.",
-      "cta_primary": "Start a Project",
-      "cta_secondary": "View My Work",
+      "title_line1": "Freelance technical SEO consultant",
+      "title_highlight": "for websites and online stores",
+      "description": "I find and fix the technical, structural and content issues that keep your website from being crawled, indexed and found by potential customers. If the platform itself is holding performance back, I can improve or rebuild it.",
+      "description_GEO": "I also prepare your website for visibility in ChatGPT, Google AI Overviews and Perplexity through clear content, structured data and stronger trust signals.",
+      "cta_primary": "Get a Free Quote",
+      "cta_secondary": "Explore My SEO Services",
+      "supporting_promise": "Reply within 24 hours · Remote support for small businesses and e-commerce teams worldwide",
       "profile_name": "Mohammed Elghandori",
-      "profile_role": "Full-Stack Developer & SEO Specialist",
+      "profile_role": "Technical SEO, AI Search & Web Development",
       "cta_more_about": "More About Me",
       "cta_download_cv": "Download Resume",
       "cv_popup_footer": "• PDF format",
@@ -30,7 +31,7 @@
           "prefix": "+",
           "suffix": "",
           "text": "Projects Delivered",
-          "subtext": "Across Morocco"
+          "subtext": "Websites, stores & dashboards"
         },
         {
           "value": 3,
@@ -40,90 +41,178 @@
           "subtext": "Digital Excellence"
         },
         {
-          "value": 95,
+          "value": 4,
           "prefix": "",
-          "suffix": "%",
-          "text": "Success Rate",
-          "subtext": "Client Satisfaction"
+          "suffix": "",
+          "text": "Areas of Expertise",
+          "subtext": "SEO, GEO, web, e-commerce"
         },
         {
           "value": 24,
           "prefix": "",
-          "suffix": "/7",
-          "text": "Support",
-          "subtext": "Dedicated Assistance"
+          "suffix": "h",
+          "text": "Response Time",
+          "subtext": "Free, detailed quote"
         }
       ]
     },
+    "customer_problems_section": {
+      "eyebrow": "Your online visibility",
+      "heading": "Your website exists, but does it actually bring you customers?",
+      "introduction": "A website can be live and look professional while remaining almost invisible. These signals often mean its structure, content or technical foundation is limiting organic visibility and conversions.",
+      "items": [
+        {
+          "title": "Your website is hard to find on Google",
+          "description": "You invested in a website, but potential customers cannot find it when they search for your services."
+        },
+        {
+          "title": "You get impressions but very few clicks",
+          "description": "Your pages sometimes appear in search results without attracting enough qualified visitors to your offer."
+        },
+        {
+          "title": "Your website is slow or poorly indexed",
+          "description": "Performance, structure or crawling problems can prevent Google from understanding and ranking your pages."
+        },
+        {
+          "title": "Your business is absent from AI answers",
+          "description": "ChatGPT, Google AI Overviews and Perplexity may not yet find the information and evidence needed to cite your business."
+        }
+      ],
+      "solutionTitle": "A useful audit must lead to concrete improvements",
+      "solutionDescription": "I identify the highest-priority problems, explain their impact and implement the technical SEO fixes directly on your website when required.",
+      "cta": "View the technical SEO audit"
+    },
     "services_section": {
-      "sectionLabel": "Web Development & Digital Services",
-      "heading": "I build high-performance websites, e-commerce stores, and custom dashboards using Next.js and React. Every project is optimized for Technical SEO, Core Web Vitals, and AI Search to help businesses improve visibility, streamline operations, and achieve sustainable growth.",
+      "sectionLabel": "Technical SEO, AI Search & Web Development",
+      "heading": "Improve an existing website, fix technical SEO issues, build a search-ready business site or launch an online store. Each service connects search visibility, technical performance and conversions.",
       "viewAll": "View All Services",
-      "cta": "Learn More"
+      "cta": "Explore this service",
+      "cards": [
+        {
+          "title": "Improve My Website's Search Visibility",
+          "description": "A technical SEO audit with hands-on fixes for crawling, indexing, site structure, internal links, schema and Core Web Vitals, plus preparation for AI search.",
+          "price": "From €450",
+          "link": "/services/technical-seo",
+          "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+          "imageAlt": "Illustration of a technical SEO audit and website visibility improvement",
+          "proof": "Technical SEO audit and implementation · Google and AI search"
+        },
+        {
+          "title": "Build a Search-Ready Business Website",
+          "description": "A fast WordPress or Next.js website that explains your offer clearly, supports organic search and turns qualified visitors into enquiries.",
+          "price": "From €1,200",
+          "link": "/services/web-development",
+          "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+          "imageAlt": "Example of a responsive professional website built for a business",
+          "proof": "Business website · WordPress or Next.js"
+        },
+        {
+          "title": "Sell Products Online",
+          "description": "A Shopify, WooCommerce or Next.js store with secure payments, optimized product pages, straightforward order management and a solid SEO foundation.",
+          "price": "From €2,500",
+          "link": "/services/ecommerce-development",
+          "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+          "imageAlt": "Example of an online store with a product page and management dashboard",
+          "proof": "E-commerce · Shopify, WooCommerce or Next.js"
+        },
+        {
+          "title": "Build a Custom Web Application",
+          "description": "A dashboard or business application designed around your customers, bookings, operations or reporting requirements.",
+          "price": "On quote",
+          "link": "/services/business-dashboards",
+          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+          "imageAlt": "Example of a custom dashboard for tracking hotel maintenance requests",
+          "proof": "Custom application and dashboard"
+        }
+      ]
     },
     "about_section": {
-      "sectionLabel": "About Me",
-      "highlight": "Full-Stack Web Developer, Technical SEO & AI Search Optimization Specialist",
-      "paragraph1": "I am a Full-Stack Web Developer and SEO Specialist based in Morocco, specializing in high-performance Next.js applications, custom business dashboards, and AI-driven automations. I partner with businesses to boost search visibility, streamline operations, and scale their digital presence through clean, measurable engineering.",
-      "paragraph2": "My technical skills have been proven in high-pressure national engineering competitions, where I secured 1st place at Al Akhawayn University and UM6P Ben Guerir, and 2nd place at UM6P Rabat. These experiences honed my ability to architect scalable solutions under strict deadlines, collaborate in fast-paced agile teams, and ship production-ready software using modern DevOps pipelines.",
-      "cta": "More About Me"
+      "sectionLabel": "About Mohammed Elghandori",
+      "highlight": "A freelance technical SEO consultant and full-stack web developer based in France, helping small businesses and e-commerce teams improve websites that are difficult to find, slow or hard to grow.",
+      "paragraph1": "I combine organic search strategy and web development in one service. I can identify what limits your visibility, fix the structure or code directly, and build the pages your potential customers actually need.",
+      "paragraph2": "Originally from Morocco and now based in France, I studied at 1337 UM6P within the 42 Network and am currently continuing an RNCP-certified course at 42 Paris. I won first place at engineering competitions hosted by Al Akhawayn University and UM6P Ben Guerir, and second place at UM6P Rabat. These experiences strengthened my ability to solve complex problems, work with a team and deliver under tight deadlines.",
+      "cta": "Read About My Background",
+      "secondaryCta": "Discuss Your Project"
     },
     "why_we_are_section": {
-      "sectionLabel": "Why Choose Me",
-      "description": "I build high-performance websites, e-commerce stores, and digital solutions that are fast, SEO-optimized, AI-ready, and designed for long-term business growth not just beautiful interfaces.",
+      "sectionLabel": "Why Work With Me on Your Website and SEO?",
+      "description": "You work directly with one person who can diagnose visibility problems, prioritize the work and implement improvements across content, structure and code.",
       "reasons": [
         {
-          "title": "Technical SEO & AI Optimization",
-          "description": "Built-in Technical SEO, Core Web Vitals, and AI Search Optimization to rank on Google and get cited by ChatGPT and AI engines."
+          "title": "Recommendations That Get Implemented",
+          "description": "I do not stop at an error report. I can fix crawling, indexing, site structure, internal linking, schema and performance issues directly on your website.",
+          "href": "/services/technical-seo",
+          "linkLabel": "Explore the technical SEO audit"
         },
         {
-          "title": "Modern Full-Stack Development",
-          "description": "Custom websites, dashboards, and web apps built with Next.js and React for speed, security, and scalability."
+          "title": "Priorities Tied to Business Goals",
+          "description": "The plan reflects what the website needs to achieve: generate enquiries, sell products or make your services easier for qualified buyers to find.",
+          "href": "/portfolio",
+          "linkLabel": "View relevant project work"
         },
         {
-          "title": "Automation & Efficiency",
-          "description": "Automate repetitive tasks and integrate AI workflows to save time, boost productivity, and support smarter decisions."
+          "title": "One Technical Point of Contact",
+          "description": "You speak directly with the person auditing, planning and developing your website, without layers of account management or handoffs.",
+          "href": "/about",
+          "linkLabel": "Learn more about my background"
         },
         {
-          "title": "Performance & Support",
-          "description": "Fast, secure, and scalable solutions backed by clean code, clear communication, and ongoing support."
+          "title": "A Foundation Built to Grow",
+          "description": "Mobile performance, accessibility, security and search-friendly structure are built in so future pages, products, languages and campaigns are easier to add.",
+          "href": "/services/web-development",
+          "linkLabel": "Explore web development"
         }
       ]
     },
     "projects_section": {
-      "heading": "Projects That Deliver Real Impact",
-      "description": "Explore a selection of high-performance business websites, e-commerce solutions, and custom dashboards built with Next.js and React.js. Every project is engineered for speed, scalability, and Technical SEO, delivering exceptional user experiences and measurable business results."
+      "heading": "Recent Work: Shopify Store, SEO Website and Custom Web Application",
+      "description": "Explore an SEO-optimized Shopify store, a business website built for organic search visibility and a custom React and Express application with a management dashboard."
     },
     "techStack": {
       "title": "Technologies I Work With — and Why",
-      "subtitle": "Every tool is chosen for security, speed, SEO, and long-term reliability",
+      "subtitle": "Each platform is selected for your content, operations, budget, search requirements and long-term maintenance needs.",
       "items": [
         {
           "name": "Next.js",
           "use": "Websites & E-commerce",
-          "why": "Server-side rendering and built-in SEO (metadata, sitemaps, structured data) mean your pages load fast and rank on Google from day one."
+          "why": "For fast websites that need server rendering, controlled metadata, sitemaps, structured data and reliable indexable HTML.",
+          "href": "/services/web-development",
+          "linkLabel": "Next.js website development"
         },
         {
           "name": "React",
           "use": "Dashboards & Web Apps",
-          "why": "Interactive, app-like interfaces that update instantly without reloading — perfect for business dashboards and admin panels."
+          "why": "For clear interactive interfaces such as customer portals, booking tools, dashboards and custom business applications.",
+          "href": "/services/business-dashboards",
+          "linkLabel": "Custom web applications"
         },
         {
-          "name": "Nest.js",
+          "name": "Express.js",
           "use": "Backends & APIs",
-          "why": "A structured, scalable backend architecture that keeps your data secure and your application easy to grow and maintain."
+          "why": "For maintainable APIs that connect data, user accounts and the external services a custom application needs.",
+          "href": "/services/business-dashboards",
+          "linkLabel": "Custom backend development"
         },
         {
-          "name": "TypeScript",
-          "use": "Every Project",
-          "why": "Catches errors before they reach your users — fewer bugs, lower maintenance costs, more reliability."
+          "name": "Shopify",
+          "use": "Online Stores",
+          "why": "For launching a manageable online store with payments, inventory, orders and a theme structured for search and performance.",
+          "href": "/services/ecommerce-development",
+          "linkLabel": "Shopify store development"
+        },
+        {
+          "name": "WordPress",
+          "use": "Business Sites & WooCommerce",
+          "why": "For manageable business websites and WooCommerce stores with a lightweight, secure and search-friendly foundation.",
+          "href": "/services/web-development",
+          "linkLabel": "WordPress website development"
         }
       ],
-      "extra": "I also work with Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions, and other modern tools to build fast, secure, and scalable digital solutions."
+      "extra": "I also work with TypeScript, Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions, and other modern tools to build fast, secure, and scalable digital solutions."
     },
     "contact_section": {
-      "sectionLabel": "Let's Build Something Together",
-      "description": "Need a high-performance Next.js website, Technical SEO, or a custom dashboard? I'm available for freelance projects, strategic collaborations, and full-time opportunities. Reach out to discuss how we can accelerate your digital growth.",
+      "sectionLabel": "Let's Talk About Your Project",
+      "description": "Need technical SEO fixes, a stronger website, an online store or a custom application? Describe the project and receive a free, detailed quote within 24 hours. Remote freelance projects, longer engagements and contract work are welcome.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Chat on WhatsApp",
       "email": "Email",
@@ -139,8 +228,8 @@
   "pages": {
     "services_page": {
       "page_title": "Services",
-      "title": "Digital Services in Morocco to Grow Your Business Online",
-      "description": "Explore my digital services for businesses in Morocco, including web development, e-commerce development, technical SEO, AI Search Optimization, and custom business dashboards.",
+      "title": "Web Development & SEO Services to Grow Your Business Online",
+      "description": "Explore my digital services for businesses in France and across Europe, including web development, e-commerce development, technical SEO, AI Search Optimization, and custom business dashboards.",
       "subtitle": "Web Development, SEO & AI Search Solutions",
       "subtitle_description": "Digital solutions designed to strengthen your online presence, improve search visibility, and streamline your business operations.",
       "hashtags": [
@@ -151,12 +240,437 @@
         "#BusinessAutomation",
         "#CustomDashboards"
       ],
+      "hub": {
+        "seo": {
+          "title": "Technical SEO & Web Development Services | Devsignpro",
+          "description": "Technical SEO audits, website optimization, web development, e-commerce and custom applications from a France-based freelance specialist.",
+          "keywords": [
+            "technical SEO and web development services",
+            "freelance technical SEO consultant",
+            "website SEO optimization services",
+            "SEO friendly web development",
+            "ecommerce development services",
+            "custom web application development"
+          ]
+        },
+        "breadcrumb": {
+          "label": "Breadcrumb",
+          "home": "Home",
+          "current": "Services"
+        },
+        "hero": {
+          "eyebrow": "SEO, AI search and web development",
+          "heading": "Technical SEO, website optimization and custom development",
+          "description": "I help small and medium-sized businesses, e-commerce teams and agencies fix the issues limiting their visibility, then build a fast, clear web foundation that can convert. Engage me for a focused audit, a rebuild or a complete project.",
+          "primaryCta": "Get a Free Quote",
+          "secondaryCta": "Choose a service",
+          "promise": "Response within 24 hours",
+          "location": "Based in France · Available remotely worldwide",
+          "delivery": "Audit, advice and hands-on implementation"
+        },
+        "servicesIntro": {
+          "eyebrow": "Choose by need",
+          "heading": "Four services, each with a focused detail page",
+          "description": "Use this page to choose the right direction. Each service page then explains its scope, deliverables, process and project-specific questions.",
+          "pricingNote": "Guide prices are negotiable and depend on scope, the existing platform and delivery requirements."
+        },
+        "cards": [
+          {
+            "id": "technical-seo",
+            "problem": "Your website exists, but is difficult to find?",
+            "title": "Technical SEO audits and fixes",
+            "description": "I identify and fix problems affecting crawling, indexing, site architecture, performance, structured data and internal linking.",
+            "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
+            "imageAlt": "Technical SEO analysis of a website and its performance",
+            "price": "From €450",
+            "items": [
+              "Prioritized audit in plain language",
+              "Hands-on technical SEO fixes",
+              "SEO, Core Web Vitals and AI search foundations"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Explore technical SEO audits",
+            "featured": true
+          },
+          {
+            "id": "web-development",
+            "problem": "You need a professional business website?",
+            "title": "Business websites and web development",
+            "description": "I build or redesign fast, accessible websites that are easy to extend, with an architecture created for organic search from the beginning.",
+            "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
+            "imageAlt": "Responsive business website designed for performance and SEO",
+            "price": "From €1,200",
+            "items": [
+              "Next.js, WordPress or the right platform",
+              "SEO-ready structure and manageable content",
+              "Typical delivery: 2 to 4 weeks"
+            ],
+            "href": "/services/web-development",
+            "linkLabel": "Explore web development",
+            "featured": false
+          },
+          {
+            "id": "ecommerce-development",
+            "problem": "You want to sell products online?",
+            "title": "SEO-ready e-commerce development",
+            "description": "I develop Shopify, WooCommerce or Next.js stores with clear product pages, secure payments and a technical foundation designed for growth.",
+            "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
+            "imageAlt": "Online store with a product catalogue, secure checkout and optimized product pages",
+            "price": "From €2,500",
+            "items": [
+              "Shopify, WooCommerce or Next.js",
+              "Stripe, PayPal and suitable payment methods",
+              "Typical delivery: 4 to 8 weeks"
+            ],
+            "href": "/services/ecommerce-development",
+            "linkLabel": "Explore e-commerce development",
+            "featured": false
+          },
+          {
+            "id": "business-dashboards",
+            "problem": "Generic software does not fit your operation?",
+            "title": "Custom web applications and dashboards",
+            "description": "I design business interfaces, client portals and dashboards connected to your data, users and operating rules.",
+            "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
+            "imageAlt": "Custom business dashboard for monitoring data and operations",
+            "price": "Custom quote",
+            "items": [
+              "Interface designed around your workflow",
+              "APIs, user roles and databases",
+              "Maintainable, scalable architecture"
+            ],
+            "href": "/services/business-dashboards",
+            "linkLabel": "Explore custom apps and dashboards",
+            "featured": false
+          }
+        ],
+        "decision": {
+          "eyebrow": "Find your direction",
+          "heading": "Which service matches your situation?",
+          "description": "Start with the problem you need to solve, not a technology.",
+          "items": [
+            {
+              "need": "My site gets little organic traffic or shows errors in Search Console.",
+              "answer": "Start with a technical SEO audit.",
+              "href": "/services/technical-seo"
+            },
+            {
+              "need": "My business needs a clear website to explain its offer and generate enquiries.",
+              "answer": "Choose a new business website or redesign.",
+              "href": "/services/web-development"
+            },
+            {
+              "need": "I want to sell products through a catalogue and online checkout.",
+              "answer": "Choose e-commerce development.",
+              "href": "/services/ecommerce-development"
+            },
+            {
+              "need": "I need to manage clients, data or a process specific to my business.",
+              "answer": "Let's discuss a custom application or dashboard.",
+              "href": "/services/business-dashboards"
+            }
+          ]
+        },
+        "process": {
+          "eyebrow": "A straightforward process",
+          "heading": "From a business problem to a measurable solution",
+          "description": "The scope is clear before work begins, and each decision is tied to a business goal or a verified problem.",
+          "steps": [
+            {
+              "title": "Understand",
+              "text": "We clarify your business, users, current website and the outcome you need."
+            },
+            {
+              "title": "Prioritize",
+              "text": "I propose the scope, deliverables, timeline and a quote suited to the project."
+            },
+            {
+              "title": "Build and verify",
+              "text": "I deliver the work, check technical quality and hand over a foundation you can continue to grow."
+            }
+          ]
+        },
+        "proof": {
+          "eyebrow": "Selected work",
+          "heading": "Projects connecting development, SEO and real use",
+          "description": "Review case studies to understand the technical decisions, delivered features and available results.",
+          "allProjects": "View all projects",
+          "caseStudy": "View case study"
+        },
+        "why": {
+          "eyebrow": "Why work with me",
+          "heading": "SEO advice and technical implementation in one place",
+          "items": [
+            {
+              "title": "Direct communication",
+              "text": "You work with the same person who investigates, builds and verifies the project."
+            },
+            {
+              "title": "A foundation built to last",
+              "text": "Performance, accessibility, organic search and maintainability are considered from the start."
+            },
+            {
+              "title": "Recommendations that can be implemented",
+              "text": "I separate meaningful priorities from secondary improvements and can work directly in the code."
+            }
+          ]
+        },
+        "faq": {
+          "eyebrow": "Frequently asked questions",
+          "heading": "Before choosing a service",
+          "items": [
+            {
+              "q": "I am not sure which service I need. Can you advise me?",
+              "a": "Yes. Send me your website, your objective and the problem you are experiencing. I will explain whether you need an audit, targeted fixes, a rebuild or a new development project."
+            },
+            {
+              "q": "Can you improve an existing website without rebuilding everything?",
+              "a": "Yes. I first identify what works and what limits results. Targeted improvements are preferable when the current foundation can be retained; I recommend a rebuild only when it is justified."
+            },
+            {
+              "q": "How much do your services cost?",
+              "a": "Technical SEO audits start at €450, business websites at €1,200 and online stores at €2,500. Custom applications are quoted after scoping. These are guide prices and can be negotiated based on the project."
+            },
+            {
+              "q": "Are SEO and AI search optimization included in web projects?",
+              "a": "Every new build includes a clean technical foundation: structure, metadata, semantic HTML, performance and structured data where relevant. A complete SEO or GEO strategy requires dedicated work on search intent, content, authority and measurement."
+            },
+            {
+              "q": "Do you only work with businesses in France?",
+              "a": "I am based in France and work remotely with businesses, e-commerce teams and agencies across Europe and worldwide."
+            }
+          ]
+        },
+        "cta": {
+          "heading": "Which problem should we solve first?",
+          "description": "Tell me about your website or project. I will reply within 24 hours with an initial direction and, when the scope is clear, a detailed quote.",
+          "button": "Get a Free Quote"
+        }
+      },
       "services": {
         "web_development": {
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
-          "title": "Web Development Services in Morocco — Fast, Secure & SEO-Ready",
-          "title_metadata": "Web Development Services in Morocco | Devsignpro",
-          "description_metadata": "Custom web development services in Morocco. I build fast, secure and SEO-ready websites and web applications with Next.js and React.",
+          "landing": {
+            "seo": {
+              "title": "Freelance Web Developer for SEO-Friendly Websites | Devsignpro",
+              "description": "Professional website design and development for small businesses worldwide. Fast, accessible, SEO-ready websites from €1,200.",
+              "keywords": [
+                "freelance web developer",
+                "professional website development",
+                "small business website developer",
+                "SEO friendly website development",
+                "business website redesign",
+                "Next.js WordPress developer"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Breadcrumb",
+              "home": "Home",
+              "services": "Services",
+              "current": "Web development"
+            },
+            "hero": {
+              "eyebrow": "Freelance web developer · Remote worldwide",
+              "heading": "Professional websites built for search visibility and enquiries",
+              "description": "I design and develop fast business websites for small companies, independent professionals and agencies that need to explain their offer clearly, earn trust and turn more visits into qualified enquiries.",
+              "primaryCta": "Get a Free Quote",
+              "secondaryCta": "See what’s included",
+              "price": "From €1,200",
+              "priceNote": "Guide price, negotiable to match the project",
+              "promise": [
+                "Typical delivery in 2–4 weeks",
+                "Mobile-first and accessible",
+                "Reply within 24 hours"
+              ],
+              "imageAlt": "Professional responsive business website designed with search engine optimization foundations",
+              "imageCaption": "Strategy · Design · Development · SEO · Launch"
+            },
+            "needs": {
+              "eyebrow": "Your situation",
+              "heading": "You need a website that supports the way your business sells",
+              "description": "A new website or redesign makes sense when the current experience no longer reflects your business, creates friction or limits organic growth.",
+              "items": [
+                "You are launching a business and need a credible professional presence.",
+                "Your website feels dated, loads slowly or is difficult to use on mobile.",
+                "Visitors do not understand the offer quickly and few become enquiries.",
+                "Publishing or updating essential content depends on a developer.",
+                "The current structure limits SEO, supporting pages and internal links.",
+                "You need to redesign without discarding valuable URLs and content."
+              ]
+            },
+            "value": {
+              "eyebrow": "The objective",
+              "heading": "What should a professional business website achieve?",
+              "answer": "It should help a prospect understand what you do, verify that you are credible and take the next step without unnecessary uncertainty.",
+              "note": "Design supports that decision. Page structure, content, speed, accessibility and calls to action are planned together to support acquisition—not treated as separate extras."
+            },
+            "included": {
+              "eyebrow": "Scope",
+              "heading": "What is included in your website project",
+              "description": "The final scope is documented in your quote, but every project follows the same foundations for usability, search visibility and conversion.",
+              "items": [
+                {
+                  "title": "Structure and journeys",
+                  "text": "A clear sitemap, page hierarchy and journeys built around your services and the questions potential clients ask."
+                },
+                {
+                  "title": "Responsive design",
+                  "text": "A tailored, accessible interface that remains clear and usable across mobile, tablet and desktop."
+                },
+                {
+                  "title": "SEO foundations",
+                  "text": "Semantic HTML, clean URLs, metadata, sitemap, canonicals, relevant structured data and internal-linking foundations."
+                },
+                {
+                  "title": "Web performance",
+                  "text": "Optimized images, fonts, rendering and JavaScript choices designed to support strong Core Web Vitals."
+                },
+                {
+                  "title": "Forms and measurement",
+                  "text": "Tested enquiry forms, anti-spam protection and the agreed analytics and search-monitoring setup."
+                },
+                {
+                  "title": "A controlled launch",
+                  "text": "Pre-launch checks, required redirects, indexability checks, Search Console and a clear handover."
+                }
+              ]
+            },
+            "platforms": {
+              "eyebrow": "The right solution",
+              "heading": "Next.js or WordPress, selected around your priorities",
+              "description": "I do not force every project into one stack. The choice depends on editing needs, customization, performance and how the website must evolve.",
+              "items": [
+                {
+                  "title": "Next.js",
+                  "text": "For a fast, highly tailored and scalable website with precise control over rendering, code and technical SEO foundations."
+                },
+                {
+                  "title": "WordPress",
+                  "text": "For a familiar editing experience and content autonomy, configured to remain focused, secure and maintainable."
+                },
+                {
+                  "title": "Redesign or migration",
+                  "text": "For modernizing an existing website while preserving what works, with redirect planning and checks before the switch."
+                }
+              ],
+              "ecommerceText": "Need to sell products and manage orders?",
+              "ecommerceLabel": "Explore online store development"
+            },
+            "process": {
+              "eyebrow": "Process",
+              "heading": "A clear path from the first conversation to launch",
+              "description": "You know what is included, what input is needed and what will be checked at each stage.",
+              "steps": [
+                {
+                  "title": "Discovery",
+                  "text": "Business goals, audiences, content, functionality, references and success criteria."
+                },
+                {
+                  "title": "Structure and design",
+                  "text": "Sitemap, priority content, wireframes and a visual direction aligned with the business."
+                },
+                {
+                  "title": "Development",
+                  "text": "Responsive implementation, technical SEO, performance, forms and accessibility checks."
+                },
+                {
+                  "title": "Launch",
+                  "text": "Quality assurance, revisions, deployment, indexability monitoring and handover."
+                }
+              ]
+            },
+            "seoBridge": {
+              "eyebrow": "Web development and SEO",
+              "heading": "SEO is built into the foundation, not added at the end",
+              "description": "A new website should give search engines a clear, crawlable foundation. That foundation does not replace ongoing content strategy or a deeper audit of an established website.",
+              "includedTitle": "Foundations included in the build",
+              "included": [
+                "Semantic structure and important content in the initial render",
+                "Metadata, canonicals, sitemap and indexing directives",
+                "Structured data that matches visible page content",
+                "Architecture prepared for future content and internal links"
+              ],
+              "auditTitle": "Already have a website that is not improving?",
+              "auditText": "If the website still serves the business and does not require a complete rebuild, start by finding crawl, indexing, performance or content-structure blockers.",
+              "auditLabel": "Explore the technical SEO audit"
+            },
+            "fit": {
+              "eyebrow": "Who it is for",
+              "heading": "Website development for service-led businesses",
+              "items": [
+                {
+                  "title": "Small and medium businesses",
+                  "text": "Explain services and markets clearly, build trust and generate more relevant enquiries."
+                },
+                {
+                  "title": "Shops, hotels and professionals",
+                  "text": "Help customers decide before a visit, booking or call with a simple mobile experience."
+                },
+                {
+                  "title": "Agencies and product teams",
+                  "text": "Add development, performance or technical SEO implementation capacity to an existing team."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Frequently asked questions",
+              "heading": "Before starting your website",
+              "items": [
+                {
+                  "q": "How much does a professional business website cost?",
+                  "a": "Business websites start from €1,200. The price depends on page count, content, design, functionality and integrations. This is a guide price and can be negotiated; you receive a detailed quote before work begins."
+                },
+                {
+                  "q": "How long does website development take?",
+                  "a": "A typical business website takes 2–4 weeks after the scope is agreed and content is available. The exact schedule depends on feedback cycles, languages and functionality."
+                },
+                {
+                  "q": "Is SEO included in web development?",
+                  "a": "The build includes technical foundations such as semantic structure, metadata, clean URLs, sitemap, canonicals, relevant structured data, performance and internal-linking foundations. Extended keyword research, content strategy or correcting an existing website is scoped separately."
+                },
+                {
+                  "q": "Will I be able to edit the website?",
+                  "a": "Yes, when editing autonomy is a priority. I can use WordPress or provide an appropriate content-management interface and show you how to update essential content."
+                },
+                {
+                  "q": "Can you redesign my website without losing its rankings?",
+                  "a": "Yes. A redesign includes URL inventory, retention of valuable content, 301 redirects and post-launch checks. No provider can guarantee zero ranking fluctuations, but these controls reduce migration risk."
+                },
+                {
+                  "q": "Do you provide hosting and maintenance?",
+                  "a": "I can help with domains, hosting, deployment and ongoing maintenance. Recurring costs and responsibilities are stated separately in the quote."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Related services for your project",
+              "items": [
+                {
+                  "title": "Find what is blocking an existing website",
+                  "href": "/services/technical-seo",
+                  "label": "Technical SEO audit"
+                },
+                {
+                  "title": "Build a Shopify, WooCommerce or Next.js store",
+                  "href": "/services/ecommerce-development",
+                  "label": "Online store development"
+                },
+                {
+                  "title": "Compare all available services",
+                  "href": "/services",
+                  "label": "View all services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Let’s define the website your business actually needs",
+              "description": "Tell me about your offer, current website and objective. I will reply within 24 hours with the next steps and a suitable project scope.",
+              "button": "Get a Free Quote"
+            }
+          },
+          "title": "Web Development Services in France — Fast, Secure & SEO-Ready",
+          "title_metadata": "Web Development Services in France | Devsignpro",
+          "description_metadata": "Custom web development services in France. I build fast, secure and SEO-ready websites and web applications with Next.js and React.",
           "description": "I build high-performance websites and custom web applications using Next.js, React and modern web technologies. Every project is engineered with performance, security and SEO in mind from the beginning, including technical SEO foundations, Core Web Vitals and a scalable content structure.",
           "title_card": "Web Development with SEO-Ready Architecture",
           "overviewTitle": "Why Choose My Web Development Services?",
@@ -284,10 +798,254 @@
           ]
         },
         "technical_seo": {
+          "landing": {
+            "seo": {
+              "title": "Freelance Technical SEO Consultant | Audits & Fixes",
+              "description": "Technical SEO audits from €450. Fix crawling, indexing, performance, architecture and schema issues with hands-on implementation available.",
+              "keywords": [
+                "freelance technical SEO consultant",
+                "technical SEO audit service",
+                "website SEO optimization service",
+                "technical SEO fixes",
+                "indexing issue consultant",
+                "Core Web Vitals consultant",
+                "Shopify technical SEO audit",
+                "Next.js technical SEO"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Breadcrumb",
+              "home": "Home",
+              "services": "Services",
+              "current": "Technical SEO"
+            },
+            "hero": {
+              "eyebrow": "Freelance technical SEO consultant based in France",
+              "heading": "Technical SEO audits and fixes for websites that should perform better",
+              "description": "Is your website slow, poorly indexed or difficult to grow? I identify what is holding search engines and users back, prioritize the work that matters and can implement the fixes directly in the code.",
+              "primaryCta": "Request a Technical SEO Audit",
+              "secondaryCta": "See What I Audit",
+              "price": "From €450",
+              "priceNote": "Guide price, negotiable based on website size and technical complexity.",
+              "promise": [
+                "Response within 24 hours",
+                "Prioritized report in plain language",
+                "Audit only or audit with implementation"
+              ],
+              "imageAlt": "Technical SEO audit illustration covering indexing, performance and website search visibility",
+              "imageCaption": "Diagnose → prioritize → fix → validate"
+            },
+            "symptoms": {
+              "eyebrow": "When to request an audit",
+              "heading": "Signs that technical issues are limiting your search visibility",
+              "description": "A technical SEO audit is useful when site structure, rendering or performance prevents valuable pages from being found, understood or used correctly.",
+              "items": [
+                "Important pages do not appear in Google",
+                "Search Console reports excluded pages or errors",
+                "The website is slow or unstable on mobile",
+                "Traffic dropped after a redesign or migration",
+                "Redirects, canonicals or sitemaps are inconsistent",
+                "Your team has an SEO report, but the fixes are not being implemented"
+              ]
+            },
+            "definition": {
+              "eyebrow": "Direct answer",
+              "heading": "What is a technical SEO audit?",
+              "answer": "A technical SEO audit checks whether search engines can crawl, render, understand and index a website correctly. It also reviews performance, architecture, HTML signals and structured data, then turns verified problems into a prioritized action plan.",
+              "note": "It does not replace content strategy or authority building. It removes technical barriers so those efforts have a stronger foundation."
+            },
+            "coverage": {
+              "eyebrow": "Audit scope",
+              "heading": "What I investigate across your website",
+              "description": "The final scope depends on your platform, site size and the symptoms you are seeing. The audit focuses on issues that can materially affect search visibility or user experience.",
+              "items": [
+                {
+                  "title": "Crawling and indexing",
+                  "text": "Robots.txt, sitemaps, HTTP status codes, excluded pages, crawl paths and signals available in Search Console."
+                },
+                {
+                  "title": "JavaScript rendering and HTML",
+                  "text": "Server or client rendering, essential tags, accessible links and differences between source HTML and the rendered page."
+                },
+                {
+                  "title": "Architecture and internal linking",
+                  "text": "Page hierarchy, click depth, orphan pages, anchor text and how internal authority moves through the site."
+                },
+                {
+                  "title": "Performance and Core Web Vitals",
+                  "text": "LCP, INP, CLS, images, fonts, JavaScript and technical causes of poor mobile experience."
+                },
+                {
+                  "title": "Metadata and structured data",
+                  "text": "Titles, descriptions, canonicals, hreflang, semantic HTML, accessibility and relevant Schema.org markup."
+                },
+                {
+                  "title": "Redirects, redesigns and migrations",
+                  "text": "Redirect chains, retired URLs, domain or CMS changes, and checks before and after launch."
+                }
+              ]
+            },
+            "deliverables": {
+              "eyebrow": "What you receive",
+              "heading": "An actionable plan, not just a list of errors",
+              "description": "Every issue is connected to a URL, template or verifiable behavior, with a clear priority and next action.",
+              "items": [
+                {
+                  "title": "Prioritized diagnosis",
+                  "text": "Critical blockers are separated from secondary improvements according to impact, effort and risk."
+                },
+                {
+                  "title": "Fix plan",
+                  "text": "You receive clear recommendations and developer-ready guidance where technical implementation is required."
+                },
+                {
+                  "title": "Implementation available",
+                  "text": "I can implement fixes on Next.js, React, WordPress, WooCommerce, Shopify and other platforms where access allows."
+                },
+                {
+                  "title": "Post-fix validation",
+                  "text": "I recheck status codes, canonicals, sitemaps, structured data, rendering and performance after deployment."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Process",
+              "heading": "How the technical SEO audit works",
+              "steps": [
+                {
+                  "title": "Scope",
+                  "text": "You share the website, business goal, symptoms and, when available, read-only Search Console access."
+                },
+                {
+                  "title": "Investigate",
+                  "text": "I combine crawl data, available search data, rendered output and manual inspection of code and templates."
+                },
+                {
+                  "title": "Prioritize",
+                  "text": "I rank actions by potential impact, urgency, risk and implementation effort."
+                },
+                {
+                  "title": "Fix and validate",
+                  "text": "Choose an audit only, support for your team or direct implementation followed by technical validation."
+                }
+              ]
+            },
+            "implementation": {
+              "eyebrow": "My approach",
+              "heading": "A consultant who can also fix the code",
+              "description": "Many audits stop at the report. My development background lets me test whether a recommendation is realistic, explain the change to your team or implement it directly. This reduces the handoff between SEO and developers.",
+              "platformLabel": "Platforms and environments:",
+              "platforms": [
+                "Next.js",
+                "React",
+                "WordPress",
+                "WooCommerce",
+                "Shopify",
+                "Express.js"
+              ],
+              "toolsLabel": "Tools used when relevant:",
+              "tools": [
+                "Google Search Console",
+                "Lighthouse",
+                "PageSpeed Insights",
+                "Semrush",
+                "Keyword Planner",
+                "manual inspection"
+              ]
+            },
+            "aiSearch": {
+              "eyebrow": "SEO and AI search",
+              "heading": "A foundation that Google and AI search systems can understand",
+              "description": "Clear architecture, accessible content, consistent entities and relevant structured data make a website easier to understand for Google, ChatGPT, Google AI Overviews and Perplexity. These foundations support GEO and AI search visibility, but no optimization can guarantee a citation or ranking.",
+              "items": [
+                "Main content accessible without unnecessary interaction",
+                "Clear answers aligned with search intent",
+                "Consistent entities, authors and business information",
+                "Structured data aligned with visible content"
+              ]
+            },
+            "fit": {
+              "eyebrow": "Who it is for",
+              "heading": "An audit for websites that need to grow or change without losing visibility",
+              "items": [
+                {
+                  "title": "Small and medium-sized businesses",
+                  "text": "Understand why a business website is not generating enough search visibility or enquiries."
+                },
+                {
+                  "title": "E-commerce teams",
+                  "text": "Review categories, products, filters, structured data and storefront performance."
+                },
+                {
+                  "title": "Agencies and web teams",
+                  "text": "Add technical expertise, protect a migration or turn an audit into deployable fixes."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Frequently asked questions",
+              "heading": "Before requesting a technical SEO audit",
+              "items": [
+                {
+                  "q": "How much does a technical SEO audit cost?",
+                  "a": "Audits start at €450. The final price depends on page count, platform, rendering complexity and the depth of analysis required. The quote states whether implementation is included or priced separately."
+                },
+                {
+                  "q": "What access do you need?",
+                  "a": "A public URL is enough for initial scoping. Read-only Google Search Console access helps with indexing and search performance analysis. CMS or code access is only needed when you ask me to implement fixes."
+                },
+                {
+                  "q": "Can you implement the fixes yourself?",
+                  "a": "Yes, depending on the platform and available access. I can work directly with Next.js, React, WordPress, WooCommerce or Shopify, or prepare recommendations and tickets for your team."
+                },
+                {
+                  "q": "How quickly will I see results?",
+                  "a": "Technical errors can be fixed quickly, but search engines must recrawl and reassess the pages. Timing varies with crawl frequency, competition, content and site authority. I do not guarantee a specific ranking."
+                },
+                {
+                  "q": "Does the audit include Core Web Vitals?",
+                  "a": "Yes when they are relevant to the problem. I review LCP, INP and CLS along with images, fonts, scripts and rendering decisions that can affect real user experience."
+                },
+                {
+                  "q": "Can you audit Shopify and WooCommerce stores?",
+                  "a": "Yes. The audit can cover products, collections or categories, filters, variants, duplicate URLs, structured data, pagination, internal linking and theme performance."
+                },
+                {
+                  "q": "Does GEO replace technical SEO?",
+                  "a": "No. AI search visibility begins with accessible content, understandable architecture and consistent trust signals. GEO extends those foundations; it does not replace traditional search optimization."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Need more than an audit?",
+              "items": [
+                {
+                  "title": "Build or redesign a website with strong SEO foundations",
+                  "href": "/services/web-development",
+                  "label": "Explore web development"
+                },
+                {
+                  "title": "Improve an online store or prepare a migration",
+                  "href": "/services/ecommerce-development",
+                  "label": "Explore e-commerce development"
+                },
+                {
+                  "title": "Compare every available service",
+                  "href": "/services",
+                  "label": "Return to the services hub"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Want to know what is really holding your website back?",
+              "description": "Send me the URL and the problem you have noticed. I will reply within 24 hours with what I need to scope the audit and prepare a clear quote.",
+              "button": "Request a Technical SEO Audit"
+            }
+          },
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
-          "title": "Technical SEO Services in Morocco — Audit, Fix & Optimize Existing Websites",
-          "title_metadata": "Technical SEO Services in Morocco | Audit, Fix & Optimize",
-          "description_metadata": "Technical SEO audits and optimization in Morocco. I fix crawlability, indexing, performance and technical issues that can limit your search visibility.",
+          "title": "Technical SEO Services in France — Audit, Fix & Optimize Existing Websites",
+          "title_metadata": "Technical SEO Services in France | Audit, Fix & Optimize",
+          "description_metadata": "Technical SEO audits and optimization in France. I fix crawlability, indexing, performance and technical issues that can limit your search visibility.",
           "description": "I audit, fix and optimize existing websites to improve crawlability, indexing, performance and search visibility. I identify technical issues affecting your website structure, Core Web Vitals, metadata, structured data, internal linking and content organization, then create and implement a prioritized optimization plan.",
           "title_card": "Technical SEO Audit & Website Optimization",
           "overviewTitle": "Why Choose My Technical SEO Services?",
@@ -424,9 +1182,236 @@
         },
         "ecommerce_development": {
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
-          "title": "E-commerce Website Development in Morocco",
-          "title_metadata": "E-commerce Development in Morocco | Stores That Sell",
-          "description_metadata": "Custom e-commerce development in Morocco — fast, secure online stores with CMI payments, cash on delivery & SEO. Built to rank on Google and sell more.",
+          "landing": {
+            "seo": {
+              "title": "Online Store Development for Shopify & WooCommerce | Devsignpro",
+              "description": "SEO-ready Shopify, WooCommerce and Next.js store development for brands worldwide. Secure, fast online stores from €2,500.",
+              "keywords": [
+                "online store development",
+                "ecommerce website developer",
+                "freelance ecommerce developer",
+                "Shopify store development",
+                "WooCommerce development",
+                "SEO friendly ecommerce website"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Breadcrumb",
+              "home": "Home",
+              "services": "Services",
+              "current": "Online store development"
+            },
+            "hero": {
+              "eyebrow": "Freelance e-commerce developer · Remote worldwide",
+              "heading": "Online stores built for clear product discovery and confident checkout",
+              "description": "I build and redesign Shopify, WooCommerce and Next.js stores for brands and retailers that need clear product pages, secure payments, a smooth mobile journey and a technical foundation ready for organic search.",
+              "primaryCta": "Get a Free Quote",
+              "secondaryCta": "See what’s included",
+              "price": "From €2,500",
+              "priceNote": "Guide price, negotiable according to catalogue and integrations",
+              "promise": [
+                "Typical delivery: 4–8 weeks",
+                "Mobile shopping and payments",
+                "Reply within 24 hours"
+              ],
+              "imageAlt": "Responsive online store with product catalogue, shopping cart and secure checkout",
+              "imageCaption": "Catalogue · Product pages · Cart · Checkout · Tracking"
+            },
+            "problems": {
+              "eyebrow": "Your project",
+              "heading": "Your store should make buying easier, not introduce more friction",
+              "description": "Platform and feature decisions should reflect your catalogue, team and the real journey your customers take.",
+              "items": [
+                "You want to sell online but are unsure which platform fits the business.",
+                "The current store is slow or difficult to use on mobile.",
+                "Products are poorly organized and shoppers cannot find the right option.",
+                "Cart or checkout friction creates abandonment and support requests.",
+                "Simple product and content updates still depend on a developer.",
+                "A redesign or migration must preserve useful URLs and data."
+              ]
+            },
+            "definition": {
+              "eyebrow": "The objective",
+              "heading": "What makes an online store effective?",
+              "answer": "It provides a coherent path from finding a product and checking its details to adding it to the cart, paying and receiving order updates.",
+              "note": "Design alone is not enough. Catalogue structure, search, delivery, payments, product content, performance and measurement need to work together."
+            },
+            "deliverables": {
+              "eyebrow": "Scope",
+              "heading": "Foundations included in your e-commerce project",
+              "description": "Your quote defines product volume, delivery rules, payments, languages and selected integrations.",
+              "items": [
+                {
+                  "title": "Structured catalogue",
+                  "text": "Categories, variants, filters and search organized so customers and search engines can understand the products."
+                },
+                {
+                  "title": "Mobile shopping journey",
+                  "text": "Product pages, cart and checkout designed to remain clear and usable on smaller screens."
+                },
+                {
+                  "title": "E-commerce SEO",
+                  "text": "Clean URLs, metadata, canonicals, sitemap, internal links and Product data when the available information supports it."
+                },
+                {
+                  "title": "Performance",
+                  "text": "Product images, fonts, scripts and rendering managed to reduce delays and unexpected layout movement."
+                },
+                {
+                  "title": "Payments and delivery",
+                  "text": "Stripe, PayPal or suitable methods, with delivery rules and transactional messaging defined in the project."
+                },
+                {
+                  "title": "Management and measurement",
+                  "text": "Product and order access, agreed analytics, Search Console, testing and handover before launch."
+                }
+              ]
+            },
+            "choices": {
+              "eyebrow": "Platform choice",
+              "heading": "Shopify, WooCommerce or Next.js based on how you operate",
+              "description": "The best solution is not the most technical one. It is the platform your team can run and maintain over time.",
+              "items": [
+                {
+                  "title": "Shopify",
+                  "text": "For launching with hosted commerce, an accessible administration interface and a broad application ecosystem."
+                },
+                {
+                  "title": "WooCommerce",
+                  "text": "For selling through WordPress with flexible content control while managing hosting and maintenance."
+                },
+                {
+                  "title": "Custom Next.js",
+                  "text": "For customer journeys, integrations or performance requirements that go beyond a standard storefront."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Process",
+              "heading": "From catalogue planning to a store ready to accept orders",
+              "description": "Each stage is reviewed before the next begins, reducing expensive late changes.",
+              "steps": [
+                {
+                  "title": "Discovery",
+                  "text": "Catalogue, markets, selling rules, delivery, payments, content and responsibilities."
+                },
+                {
+                  "title": "Journey and design",
+                  "text": "Architecture, categories, product pages, cart, checkout and mobile experience."
+                },
+                {
+                  "title": "Development",
+                  "text": "Configuration, integrations, technical SEO, performance, measurement and agreed content imports."
+                },
+                {
+                  "title": "Testing and launch",
+                  "text": "Test orders, emails, taxes, delivery, redirects, indexability and team handover."
+                }
+              ]
+            },
+            "considerations": {
+              "eyebrow": "SEO and conversion",
+              "heading": "Make product pages understandable before trying to rank them",
+              "description": "A technical foundation helps search engines crawl the store, but visibility also depends on demand, catalogue quality, content and brand authority.",
+              "items": [
+                "Consistent titles, descriptions, prices, availability and variants",
+                "Useful categories instead of generated pages with no clear search intent",
+                "Structured data that matches information shoppers can see",
+                "Internal links across categories, products and useful buying content",
+                "Measurement for product views, cart additions, checkout starts and purchases"
+              ]
+            },
+            "bridge": {
+              "heading": "Already have a store that remains difficult to find?",
+              "description": "If the catalogue and platform still fit, an audit may be more appropriate than a complete rebuild for finding indexing, faceted-navigation, structured-data or performance problems.",
+              "href": "/services/technical-seo",
+              "label": "Explore the technical SEO audit"
+            },
+            "useCases": {
+              "eyebrow": "Suitable projects",
+              "heading": "Stores designed around a specific selling model",
+              "items": [
+                {
+                  "title": "Brands and creators",
+                  "text": "A focused catalogue, clear brand presentation, useful product content and a direct path to checkout."
+                },
+                {
+                  "title": "Retailers and distributors",
+                  "text": "Stock, variants, categories, collection or delivery rules aligned with real operations."
+                },
+                {
+                  "title": "B2B catalogues",
+                  "text": "Product ranges, quote requests or restricted access when direct online purchasing is not appropriate."
+                },
+                {
+                  "title": "Redesigns and migrations",
+                  "text": "Modernize an existing store with URL inventory, redirect mapping and checks after the switch."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Frequently asked questions",
+              "heading": "Before building your online store",
+              "items": [
+                {
+                  "q": "How much does online store development cost?",
+                  "a": "E-commerce projects start from €2,500. Price depends on catalogue size, design, languages, payments, delivery and integrations. This is a negotiable guide price; the final scope is documented in your quote."
+                },
+                {
+                  "q": "How long does it take to launch the store?",
+                  "a": "A typical store takes 4–8 weeks after the scope is approved and content is available. A migration, large catalogue or complex selling rules may require more time."
+                },
+                {
+                  "q": "Should I choose Shopify, WooCommerce or Next.js?",
+                  "a": "Shopify simplifies operating hosted commerce, WooCommerce suits companies organized around WordPress, and Next.js fits highly specific journeys or integrations. I recommend a platform after reviewing catalogue, budget and team needs."
+                },
+                {
+                  "q": "Can I manage products and orders myself?",
+                  "a": "Yes. Daily store management should remain accessible to your team. Access, roles and routine operations are agreed during discovery and checked during handover."
+                },
+                {
+                  "q": "Is e-commerce SEO included?",
+                  "a": "Technical foundations are included: architecture, metadata, canonicals, sitemap, performance, basic internal linking and relevant structured data. Ongoing content production, link acquisition or a deep audit is scoped separately."
+                },
+                {
+                  "q": "Can you migrate my store without losing its URLs?",
+                  "a": "Yes. A controlled migration includes URL inventory, 301 redirect mapping, retention of useful content and post-launch checks. Fluctuations are still possible; no migration can guarantee unchanged rankings."
+                },
+                {
+                  "q": "Who prepares terms, privacy policies and legal store content?",
+                  "a": "I can implement the agreed pages and mechanisms, but legal wording should be supplied or approved by a qualified professional. The quote also defines responsibilities for taxes, delivery and personal data."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Services related to your store",
+              "items": [
+                {
+                  "title": "Diagnose an existing online store",
+                  "href": "/services/technical-seo",
+                  "label": "Technical SEO audit"
+                },
+                {
+                  "title": "Build a business website without online sales",
+                  "href": "/services/web-development",
+                  "label": "Web development"
+                },
+                {
+                  "title": "Compare all available services",
+                  "href": "/services",
+                  "label": "View all services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Let’s discuss your catalogue, customers and selling model",
+              "description": "Tell me about your products, current store and required integrations. I will reply within 24 hours with the next steps.",
+              "button": "Get a Free Quote"
+            }
+          },
+          "title": "E-commerce Website Development in France",
+          "title_metadata": "E-commerce Development in France | Stores That Sell",
+          "description_metadata": "Custom e-commerce development in France — fast, secure online stores with Stripe, PayPal payments & SEO. Built to rank on Google and sell more.",
           "description": "Custom e-commerce websites built to sell online with secure payments, fast performance, and scalable architecture. Every store includes Technical SEO, Core Web Vitals, optimized product pages, and AI Search Optimization to increase visibility on Google, ChatGPT, Google AI Overviews, Perplexity, and other AI-powered search engines.",
           "title_card": "E-commerce Store Development",
           "overviewHeadline": "Online Stores Built for Sales, Speed & Growth",
@@ -452,12 +1437,12 @@
             "SEO-Optimized Product Pages",
             "AI Search Ready (GEO)",
             "Responsive Design",
-            "Secure Payments (CMI & COD)"
+            "Secure Payments (Stripe & PayPal)"
           ],
           "included": [
-            "Custom store design and development with Next.js, React, and Nest.js",
+            "Custom store design and development with Next.js, React, and Express.js",
             "Complete e-commerce system: product catalog, categories, search, shopping cart, wishlist, secure checkout, and order management",
-            "Local and international payments: CMI, cash on delivery (COD), Stripe, and PayPal",
+            "Card payments, Stripe, PayPal, Apple Pay, and SEPA transfers",
             "Product SEO: optimized product pages, Product schema markup, sitemap and robots.txt",
             "GEO & AEO optimization so AI assistants can find, cite, and recommend your products",
             "Core Web Vitals optimization: fast product pages, image optimization, and instant load times",
@@ -492,7 +1477,7 @@
             {
               "step": "03",
               "title": "Payments, SEO & AI Optimization",
-              "text": "CMI, COD, Stripe, and PayPal integration — plus Product schema, metadata, and content structured for Google rankings and AI citations."
+              "text": "Stripe, PayPal, and card payment integration — plus Product schema, metadata, and content structured for Google rankings and AI citations."
             },
             {
               "step": "04",
@@ -507,20 +1492,20 @@
           },
           "faqs": [
             {
-              "q": "How much does it cost to build an online store in Morocco?",
+              "q": "How much does it cost to build an online store?",
               "a": "The cost depends on the number of products, payment integrations, design complexity, and custom features. A simple store with standard payments costs less than a custom platform with advanced features. I provide a tailored quote based on your goals — every store includes SEO, security, and performance optimization from the start."
             },
             {
               "q": "Which payment methods can my online store accept?",
-              "a": "Your store can accept the payment methods your customers actually use: CMI for Moroccan bank cards, cash on delivery (COD) for local buyers, and Stripe or PayPal for international customers. I help you choose and integrate the right combination for your market."
+              "a": "Your store can accept the payment methods your customers actually use: bank cards (Visa, Mastercard) through Stripe, PayPal, Apple Pay and Google Pay, or SEPA transfers. I help you choose and integrate the right combination for your market."
             },
             {
               "q": "Can my online store support multiple languages and currencies?",
-              "a": "Yes. I can build multilingual and multi-currency online stores so you can sell locally in Morocco or internationally while maintaining excellent performance and SEO."
+              "a": "Yes. I can build multilingual and multi-currency online stores so you can sell in France, across Europe or internationally while maintaining excellent performance and SEO."
             },
             {
               "q": "Should I choose Shopify, WooCommerce, or a custom store?",
-              "a": "Shopify and WooCommerce work for quick starts, but they come with monthly fees, plugin limitations, and slower performance. A custom store built with Next.js is faster, fully tailored to your business, free of platform fees, and scores higher on Core Web Vitals — which directly improves your Google rankings and conversions."
+              "a": "Shopify is useful for launching quickly with a managed commerce ecosystem. WooCommerce suits businesses that want to sell through WordPress and retain flexible content control. A Next.js store fits highly specific customer journeys, integrations, or performance needs. The right choice depends on your catalogue, budget, team, and maintenance requirements."
             },
             {
               "q": "Can I manage products and orders myself after launch?",
@@ -538,11 +1523,234 @@
         },
         "business_dashboards": {
           "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "title": "Business Automation & Custom Dashboards in Morocco",
-          "title_metadata": "Business Automation & Custom Dashboard Services Morocco",
-          "description_metadata": "Custom dashboards, workflow automation, and AI integration services in Morocco. Streamline operations, reduce manual work, and scale your business.",
-          "title_card": "Business Automation & Custom Dashboards",
-          "description": "Custom dashboards, workflow automation, and AI-powered business systems that streamline operations, eliminate repetitive tasks, improve productivity, and support smarter business decisions. Every solution is built to integrate with your existing tools and scale with your growth.",
+          "landing": {
+            "seo": {
+              "title": "Custom Web Application & Dashboard Development | Devsignpro",
+              "description": "Custom web applications, client portals and business dashboard development worldwide. Secure interfaces, APIs and databases built around your workflow.",
+              "keywords": [
+                "custom web application development",
+                "business dashboard development",
+                "custom internal tools",
+                "client portal development",
+                "freelance full stack developer",
+                "custom admin dashboard"
+              ]
+            },
+            "breadcrumb": {
+              "label": "Breadcrumb",
+              "home": "Home",
+              "services": "Services",
+              "current": "Custom applications and dashboards"
+            },
+            "hero": {
+              "eyebrow": "Custom full-stack development · Remote worldwide",
+              "heading": "Custom web applications and dashboards built around your operation",
+              "description": "I develop internal tools, client portals and business interfaces around your users, data and operating rules when generic software does not fit the job.",
+              "primaryCta": "Discuss Your Project",
+              "secondaryCta": "Explore the scope",
+              "price": "Custom quote",
+              "priceNote": "Scope, timeline and budget defined after discovery",
+              "promise": [
+                "Interfaces designed for real users",
+                "Secure roles, APIs and data",
+                "Reply within 24 hours"
+              ],
+              "imageAlt": "Custom business dashboard with operational data, users and performance indicators",
+              "imageCaption": "Users · Data · Roles · APIs · Deployment"
+            },
+            "problems": {
+              "eyebrow": "Your need",
+              "heading": "Custom software makes sense when a generic tool creates more constraints than it solves",
+              "description": "The goal is not to replace every tool. It is to build the interface required for one clearly defined business need.",
+              "items": [
+                "Important information is spread across multiple files or tools.",
+                "Teams re-enter the same data and lose the surrounding context.",
+                "Off-the-shelf software forces a process that does not fit the operation.",
+                "Clients, partners or staff need a dedicated authenticated space.",
+                "You require specific roles, approvals or business rules.",
+                "A prototype needs to become a reliable, maintainable application."
+              ]
+            },
+            "definition": {
+              "eyebrow": "The solution",
+              "heading": "What is a custom business web application?",
+              "answer": "It is a browser-based application built around a specific process: viewing and updating data, monitoring activity, managing users or delivering an online service.",
+              "note": "It may be an admin panel, client portal, dashboard or complete business tool. Features are prioritized according to their actual value."
+            },
+            "deliverables": {
+              "eyebrow": "Scope",
+              "heading": "A complete foundation for an application people can operate",
+              "description": "Scope depends on complexity, existing data, integrations and security requirements.",
+              "items": [
+                {
+                  "title": "Functional discovery",
+                  "text": "Users, goals, data, journeys, business rules and acceptance criteria documented before development."
+                },
+                {
+                  "title": "Responsive interface",
+                  "text": "Clear screens for daily work, usable on the devices that are actually part of the project."
+                },
+                {
+                  "title": "Accounts and permissions",
+                  "text": "Authentication and roles based on what each profile may view, create, edit or export."
+                },
+                {
+                  "title": "APIs and integrations",
+                  "text": "Connections to agreed services and tools, with explicit handling for errors and exchanged data."
+                },
+                {
+                  "title": "Backend and data",
+                  "text": "Data model, validation, useful logs and architecture matched to expected volume and operations."
+                },
+                {
+                  "title": "Testing and deployment",
+                  "text": "Essential scenarios verified, environment configured, documentation and handover before delivery."
+                }
+              ]
+            },
+            "choices": {
+              "eyebrow": "Possible formats",
+              "heading": "The right application type depends on the task",
+              "description": "A project can begin with a focused first version and expand after its usefulness is confirmed.",
+              "items": [
+                {
+                  "title": "Internal dashboard",
+                  "text": "Monitor indicators and operations while giving the team a shared view of useful data."
+                },
+                {
+                  "title": "Client or partner portal",
+                  "text": "Share documents, statuses, requests or information in an authenticated environment."
+                },
+                {
+                  "title": "Business web application",
+                  "text": "Manage a specific process with forms, rules, roles, history and connections to other systems."
+                }
+              ]
+            },
+            "process": {
+              "eyebrow": "Process",
+              "heading": "Build the essential journey first, then evolve the tool",
+              "description": "Phased delivery reduces the risk of building expensive features before their usefulness is confirmed.",
+              "steps": [
+                {
+                  "title": "Discovery",
+                  "text": "Interviews, users, current process, constraints, data and objectives."
+                },
+                {
+                  "title": "Specification",
+                  "text": "Journeys, wireframes, data model, roles and first-version scope."
+                },
+                {
+                  "title": "Development",
+                  "text": "Frontend, Express.js backend, database, APIs, testing and regular feedback."
+                },
+                {
+                  "title": "Delivery",
+                  "text": "Acceptance testing, deployment, documentation, training and prioritized next steps."
+                }
+              ]
+            },
+            "considerations": {
+              "eyebrow": "Technical quality",
+              "heading": "Security, maintainability and performance planned during discovery",
+              "description": "An internal application has different SEO goals from a public website, but it still requires understandable architecture and properly protected access.",
+              "items": [
+                "Server-side authorization checks and clear separation of roles",
+                "Input validation and explicit error handling",
+                "Private pages excluded from indexing and protected by authentication",
+                "Progressive data loading and stable interfaces",
+                "Documented integrations, environment variables and deployment steps"
+              ]
+            },
+            "bridge": {
+              "heading": "Do you mainly need a public website to present your offer?",
+              "description": "A private dashboard and a website intended to rank in search have different goals. For a commercial online presence, start with professional website development.",
+              "href": "/services/web-development",
+              "label": "Explore web development"
+            },
+            "useCases": {
+              "eyebrow": "Example use cases",
+              "heading": "Interfaces designed around an operational need",
+              "items": [
+                {
+                  "title": "Client and case tracking",
+                  "text": "Centralize contacts, statuses, documents, notes and next actions with appropriate permissions."
+                },
+                {
+                  "title": "Stock and order management",
+                  "text": "View movements, quantities, suppliers and orders through an interface connected to relevant data."
+                },
+                {
+                  "title": "Reporting and indicators",
+                  "text": "Combine defined sources and present understandable metrics with filters and exports."
+                },
+                {
+                  "title": "Client or partner portal",
+                  "text": "Provide secure access to requests, deliverables, invoices, bookings or progress information."
+                }
+              ]
+            },
+            "faq": {
+              "eyebrow": "Frequently asked questions",
+              "heading": "Before developing custom software",
+              "items": [
+                {
+                  "q": "How much does a custom web application or dashboard cost?",
+                  "a": "Price depends on users, screens, roles, data, integrations and security requirements. This service is quoted individually. I first propose a prioritized scope that separates the initial version from future improvements."
+                },
+                {
+                  "q": "How long does custom application development take?",
+                  "a": "The schedule is defined after discovery. A focused first version can be delivered sooner than a complete system with many roles and integrations. Stages and dependencies are documented before development."
+                },
+                {
+                  "q": "Can you connect our existing tools and data?",
+                  "a": "Yes, when those tools provide a reliable API, export or integration method. I review documentation, limitations, costs and data quality before confirming the integration."
+                },
+                {
+                  "q": "How are accounts and business data protected?",
+                  "a": "The project can include authentication, roles, server-side validation, secure secret management, useful logging and backups according to the selected infrastructure. Specific compliance needs must be identified during discovery."
+                },
+                {
+                  "q": "Will the application be optimized for SEO?",
+                  "a": "Authenticated areas and private data generally should not be indexed. If the product also includes public pages intended for search, those pages are handled separately with appropriate rendering, metadata, structure and internal links."
+                },
+                {
+                  "q": "Who owns the code and can maintain the application?",
+                  "a": "Ownership, access, hosting and maintenance terms are defined in the quote. The code is organized and documented so another developer can reasonably take over."
+                }
+              ]
+            },
+            "related": {
+              "heading": "Services related to your application",
+              "items": [
+                {
+                  "title": "Build your company’s public website",
+                  "href": "/services/web-development",
+                  "label": "Web development"
+                },
+                {
+                  "title": "Build an online store with order management",
+                  "href": "/services/ecommerce-development",
+                  "label": "E-commerce development"
+                },
+                {
+                  "title": "Compare all available services",
+                  "href": "/services",
+                  "label": "View all services"
+                }
+              ]
+            },
+            "cta": {
+              "heading": "Describe the process your application needs to support",
+              "description": "Tell me about the users, data, essential screens and tools to connect. I will reply within 24 hours to organize discovery.",
+              "button": "Discuss Your Project"
+            }
+          },
+          "title": "Custom Web Applications & Business Dashboards",
+          "title_metadata": "Custom Web Application & Dashboard Development",
+          "description_metadata": "Custom business web applications, client portals and dashboards built with React, Next.js, Express.js, APIs and databases.",
+          "title_card": "Custom Web Applications & Dashboards",
+          "description": "Business applications, client portals and custom dashboards connected to your users, data and operating rules.",
           "overviewHeadline": "Automate Your Business Operations & Work Smarter",
           "startDescription": "Your team shouldn't waste time on repetitive tasks when software can automate them. Custom dashboards and workflow automation give you real-time visibility, reduce errors, and free your team to focus on growth.",
           "longDescription": "I design and develop custom business dashboards, internal management systems, workflow automations, and AI integrations tailored to how your business actually operates. Whether you need CRM software, inventory management systems, reporting dashboards, document automation, AI assistants, or API integrations — every solution is engineered to save time, reduce manual work, improve accuracy, and give you complete control over your operations. The result is a scalable system that grows with your company while helping your team focus on high-value work instead of administrative tasks.",
@@ -634,7 +1842,7 @@
           ],
           "techStackList": [
             "Next.js & React",
-            "Nest.js Backend",
+            "Express.js Backend",
             "OpenAI & Claude APIs",
             "REST & GraphQL APIs",
             "PostgreSQL & MongoDB",
@@ -705,110 +1913,308 @@
       "cta_btn": "Discuss Your Project"
     },
     "about_page": {
-      "title": "About Me",
-      "heading": "About Mohammed Elghandori — Full-Stack Developer & SEO Specialist",
-      "intro": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist based in Morocco. I design and build high-performance websites, e-commerce stores, and business dashboards using Next.js, React.js, Nest.js, and other modern web technologies.",
-      "intro_2": "Every project is developed with Technical SEO, Core Web Vitals, structured data (Schema.org), and AI Search Optimization to improve visibility on Google, Google AI Overviews, ChatGPT, Perplexity, and other AI-powered search engines.",
-      "stats": {
-        "years": "Years of Experience",
-        "clients": "Satisfied Clients",
-        "projects": "Projects Delivered"
+      "seo": {
+        "title": "Mohammed Elghandori | Technical SEO Consultant & Developer",
+        "description": "Learn about Mohammed Elghandori, a technical SEO consultant and web developer based in France: skills, education, selected work and engineering awards.",
+        "keywords": [
+          "Mohammed Elghandori",
+          "Devsignpro",
+          "Mohammed Elghandori SEO consultant",
+          "technical SEO consultant and web developer",
+          "freelance technical SEO developer",
+          "Next.js SEO consultant",
+          "technical SEO consultant for agencies",
+          "AI search optimization consultant"
+        ]
       },
-      "whoIAm": {
-        "title": "Who I Am",
-        "paragraph1": "I'm Mohammed Elghandori, a Full-Stack Web Developer and SEO Specialist passionate about building modern web experiences that solve real business problems. I studied software engineering at 1337 School UM6P (42 Network), where I developed strong foundations in computer science, algorithms, operating systems, networking, software architecture, and collaborative software development. Along the way, I earned certifications in web development, digital marketing, and artificial intelligence while continuously improving my technical expertise.",
-        "paragraph2": "I believe in quality craftsmanship, clear communication, and measurable results.Whether you're a startup or an enterprise targeting global markets, I'm committed to helping you succeed online with solutions that work, because your success is my success"
+      "breadcrumb": {
+        "label": "Breadcrumb",
+        "home": "Home",
+        "current": "About"
       },
-      "tech_philosophy": {
-        "title": "My Technology Stack & Engineering Philosophy",
-        "paragraph": "I choose technologies based on what a project actually needs, not simply on trends. I primarily use Next.js and React to build fast, maintainable, and SEO-friendly frontends, and Nest.js for scalable backend systems. I also work with Tailwind CSS, MongoDB, Docker, and GitHub Actions to support efficient development, reliable deployment, and long-term maintainability. By combining modern web development with Technical SEO and AI Search Optimization, I build digital products that are designed for performance, search visibility, and sustainable growth."
+      "hero": {
+        "eyebrow": "About Mohammed Elghandori",
+        "heading": "Mohammed Elghandori, technical SEO consultant and web developer",
+        "intro": "Based in France and originally from Morocco, I help businesses understand why their websites are difficult to find, then fix the technical, structural and content issues limiting organic visibility, performance or conversions.",
+        "differentiator": "My advantage is combining SEO consulting with hands-on development. I can investigate indexing, structure and content, then work directly in the code when implementation is required.",
+        "primaryCta": "Get a Free Quote",
+        "secondaryCta": "Explore My SEO Audit",
+        "portraitAlt": "Portrait of Mohammed Elghandori, technical SEO consultant and web developer based in France",
+        "caption": "Mohammed Elghandori · Devsignpro"
       },
-      "experience": {
-        "title": "My Experience & Technical Background",
-        "paragraph": "I have experience developing management dashboards and high-performance corporate websites for businesses, startups, and personal projects. My work covers the full development lifecycle, from system architecture and UI implementation to backend development, deployment, Technical SEO, and performance optimization. Through client projects, hackathons, and continuous learning, I have strengthened my ability to solve complex technical challenges, collaborate with teams, and deliver reliable, scalable software that creates real business value."
+      "facts": [
+        {
+          "label": "Location",
+          "value": "Based in France (CET), remote worldwide"
+        },
+        {
+          "label": "Tools",
+          "value": "Search Console, Lighthouse, Semrush, Keyword Planner"
+        },
+        {
+          "label": "Specialism",
+          "value": "Technical SEO, AI search and web development"
+        },
+        {
+          "label": "Availability",
+          "value": "Freelance, part-time or full-time"
+        }
+      ],
+      "approach": {
+        "eyebrow": "How I work",
+        "heading": "From technical SEO diagnosis to code-level fixes",
+        "description": "An audit is only useful when it leads to clear decisions. I connect each recommendation to a real visibility, user-experience or conversion problem.",
+        "steps": [
+          {
+            "title": "Investigate",
+            "text": "I review crawling, indexing, JavaScript rendering, performance, site architecture, content and structured data."
+          },
+          {
+            "title": "Prioritize",
+            "text": "I separate important blockers from secondary improvements so time and budget go toward work that can genuinely help the website."
+          },
+          {
+            "title": "Implement",
+            "text": "I can apply the SEO fixes, improve templates or rebuild the technical foundation when the current platform is holding results back."
+          },
+          {
+            "title": "Verify",
+            "text": "After release, I check HTTP responses, canonicals, sitemaps, structured data and the available signals in Google Search Console."
+          }
+        ]
       },
-      "storyMissionValues": {
-        "title": "Discover the story, mission, and values that drive me",
-        "story": "My journey into software development began with a curiosity about how websites, servers, and the internet work. That curiosity quickly became a passion for building products that combine clean code, great user experiences, and measurable business impact. Today I continue learning new technologies while helping businesses grow through modern digital solutions.",
-        "mission": "My mission is to help businesses, startups, and entrepreneurs build websites and digital products that are fast, visible, scalable, and ready for the future of search. Every project I create combines performance, Technical SEO, AI Search Optimization, and user-focused design to deliver long-term value.",
-        "valuesTitle": "What I stand for",
-        "values": [
-          "Quality before shortcuts — every project is built for long-term reliability.",
-          "Transparency — clear communication from planning to launch.",
-          "Partnership — your success is the measure of mine."
+      "background": {
+        "heading": "An engineering background applied to search visibility",
+        "paragraphs": [
+          "I studied software engineering at 1337 UM6P within the 42 Network. Its project-based model gave me strong foundations in algorithms, systems, networking, software architecture and collaborative development.",
+          "I am currently continuing an RNCP-certified course at 42 Paris. Engineering competitions, client projects and ongoing development work continue to strengthen my ability to solve technical problems under pressure and deliver maintainable solutions."
         ],
-        "storyLabel": "My Story",
-        "missionLabel": "My Mission"
+        "educationHeading": "Education",
+        "education": [
+          {
+            "name": "1337 UM6P · 42 Network",
+            "detail": "Project-based software engineering covering algorithms, systems, networking and collaborative development."
+          },
+          {
+            "name": "42 Paris",
+            "detail": "RNCP-certified course currently in progress."
+          },
+          {
+            "name": "Ongoing learning",
+            "detail": "Technical SEO, web development, digital marketing, AI search and deployment."
+          }
+        ]
       },
-      "valuesSection": {
-        "title": "Core Values",
-        "subtitle": "What I Stand For"
+      "capabilities": {
+        "eyebrow": "Capabilities",
+        "heading": "What I can take responsibility for",
+        "intro": "I combine analysis, strategy and development so technical recommendations do not get separated from implementation.",
+        "groups": [
+          {
+            "title": "Technical SEO",
+            "description": "Identify and fix the issues preventing search engines from finding, understanding and evaluating a website correctly.",
+            "items": [
+              "Crawling, indexing and JavaScript rendering",
+              "Canonicals, redirects, sitemaps and migrations",
+              "Metadata, semantic HTML and accessibility",
+              "Schema.org and structured data",
+              "Core Web Vitals and web performance"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Explore the technical SEO audit"
+          },
+          {
+            "title": "Content and AI search",
+            "description": "Organize information around search intent and make it easier for Google and AI-powered search systems to retrieve and understand.",
+            "items": [
+              "Search-intent research and content architecture",
+              "Internal linking and page hierarchy",
+              "Clear content for search engines and users",
+              "Entity and trust signals",
+              "Visibility in ChatGPT, AI Overviews and Perplexity"
+            ],
+            "href": "/services/technical-seo",
+            "linkLabel": "Explore SEO and AI search optimization"
+          },
+          {
+            "title": "Web development",
+            "description": "Build or improve the platform when performance, the CMS or the codebase is limiting organic visibility and future development.",
+            "items": [
+              "Next.js, React and Express.js",
+              "WordPress, WooCommerce and Shopify",
+              "Business websites and online stores",
+              "APIs, dashboards and custom applications",
+              "Deployment, maintenance and security"
+            ],
+            "href": "/services/web-development",
+            "linkLabel": "Explore web development services"
+          }
+        ]
       },
-      "hackathons": {
-        "title": "Hackathons, Certifications & Events",
-        "subtitle": "Competitions, community events, and professional learning",
+      "work": {
+        "eyebrow": "Proof through projects",
+        "heading": "Three projects I can currently share",
+        "intro": "These case studies show the sides of my work: building an SEO-optimized Shopify store, improving the search foundation of a business website, and engineering a complete operational application.",
+        "caseStudy": "View the case study",
+        "allProjects": "Explore the portfolio"
+      },
+      "credentials": {
+        "heading": "Competitions, roles and certification",
+        "intro": "These experiences complement client work by demonstrating how I collaborate, explain solutions and deliver under constraints.",
         "items": [
           {
             "name": "Google Digital Marketing",
             "location": "Google",
             "year": "2021",
-            "place": "Certificate earned",
+            "result": "Certificate earned",
             "kind": "certificate"
           },
           {
             "name": "DyslexAI Hackathon",
             "location": "Al Akhawayn University, Ifrane",
             "year": "2024",
-            "place": "1st Prize"
+            "result": "1st prize",
+            "kind": "award"
           },
           {
             "name": "Attijari Business Hackathon",
-            "location": "Attijariwafa Bank Headquarters, Casablanca",
+            "location": "Attijariwafa Bank, Casablanca",
             "year": "2024",
-            "place": "2nd Prize"
+            "result": "2nd prize",
+            "kind": "award"
           },
           {
             "name": "Le Hubckathon",
-            "location": "UM6P, casablanca",
+            "location": "UM6P, Casablanca",
             "year": "2025",
-            "place": "Mentor"
+            "result": "Mentor",
+            "kind": "role"
           },
           {
             "name": "HackAI",
             "location": "UM6P, Ben Guerir",
             "year": "2025",
-            "place": "Organizer"
+            "result": "Organizer",
+            "kind": "role"
           },
           {
-            "name": "CureCode Hackathon",
+            "name": "Cursor Hackathon",
             "location": "UM6P SHCC, Faculty of Medical Sciences",
             "year": "2026",
-            "place": "1st Prize"
+            "result": "1st prize",
+            "kind": "award"
           }
         ]
       },
-      "howCanIHelp": {
-        "title": "How Can I Help?",
-        "subtitle": "Ways we can work together",
+      "tools": {
+        "eyebrow": "Tools and method",
+        "heading": "The tools I use to measure and diagnose",
+        "intro": "A tool gives you data, not a diagnosis. I cross-check reports with a manual review of the site, the code and the search results before recommending a fix.",
         "items": [
-          "Build high-performance corporate websites and scalable web apps optimized for SEO & AI.",
-          "Develop complex management dashboards and business automation tools.",
-          "Audit and optimize existing platforms for Technical SEO and Core Web Vitals.",
-          "Provide long-term technical partnership and AI Search strategies for sustainable growth."
+          {
+            "name": "Google Search Console",
+            "text": "Indexing, queries, excluded pages, Core Web Vitals and monitoring after fixes go live."
+          },
+          {
+            "name": "Lighthouse",
+            "text": "Performance, accessibility, best practices and SEO checks on every page type."
+          },
+          {
+            "name": "Semrush, Keyword Planner and Google Trends",
+            "text": "Keyword research and search volumes, competitor analysis, seasonal trends, site audits and position tracking."
+          },
+          {
+            "name": "Manual measurement and diagnosis",
+            "text": "Reading the source and rendered HTML, HTTP responses, canonicals, structured data and checking the live search results directly."
+          }
+        ]
+      },
+      "faq": {
+        "eyebrow": "Frequently asked questions",
+        "heading": "What businesses and agencies ask me",
+        "items": [
+          {
+            "q": "How can we work together?",
+            "a": "On a freelance project, part-time or full-time. I work remotely from France, with the scope agreed before the work starts."
+          },
+          {
+            "q": "What does a technical SEO audit include?",
+            "a": "A diagnosis of crawling, indexing, rendering, performance, site structure and structured data, with fixes ranked by priority. Every finding is explained and tied to a concrete problem on the site."
+          },
+          {
+            "q": "Can you implement the fixes yourself?",
+            "a": "Yes. I work directly in the code or the CMS: Next.js, React, WordPress, WooCommerce and Shopify. That removes the gap between audit recommendations and their implementation."
+          },
+          {
+            "q": "Do you work with web and SEO agencies?",
+            "a": "Yes. I provide technical support: auditing a platform, securing a migration, fixing rendering issues or implementing SEO recommendations inside the client's project."
+          },
+          {
+            "q": "Do you guarantee a Google ranking?",
+            "a": "No. Nobody can guarantee a ranking. I commit to an accurate diagnosis, verifiable fixes and follow-up of the results in Search Console."
+          }
+        ]
+      },
+      "collaboration": {
+        "eyebrow": "Collaboration",
+        "heading": "For businesses, agencies and technical teams",
+        "intro": "I can handle a focused requirement or join a longer engagement, with a clear scope and direct access to the person doing the work.",
+        "audiences": [
+          {
+            "title": "Small businesses and e-commerce teams",
+            "text": "Technical SEO audits and fixes, improvements to an existing website, or a rebuild on a faster and easier-to-maintain foundation."
+          },
+          {
+            "title": "Web and SEO agencies",
+            "text": "Technical support to audit a platform, protect a migration, repair rendering problems or implement SEO recommendations directly in the project."
+          },
+          {
+            "title": "Teams and longer engagements",
+            "text": "Remote collaboration for freelance projects, contracts or ongoing requirements combining technical SEO, development and production follow-up."
+          }
         ]
       },
       "cta": {
-        "title": "Ready to Build Something Exceptional?",
-        "description": "Whether you need a freelance expert to architect a high-performance web app, or a Full-Stack Engineer to join your tech team, let's connect and discuss your technical goals.",
-        "button": "Let's Connect"
+        "heading": "Need someone who can investigate and implement?",
+        "description": "Tell me about your website, technical problem or project. I will reply within 24 hours with practical next steps and, when the scope is clear, a detailed quote.",
+        "button": "Get a Free Quote"
+      },
+      "schema": {
+        "jobTitle": "Technical SEO consultant and web developer",
+        "description": "Freelance technical SEO consultant and web developer based in France, specializing in indexing, web performance, site architecture and AI search.",
+        "currentEducation": "RNCP-certified course currently in progress at 42 Paris.",
+        "knowsAbout": [
+          "Technical SEO",
+          "Organic search",
+          "AI search optimization",
+          "Next.js",
+          "React",
+          "Express.js",
+          "WordPress",
+          "Shopify",
+          "Core Web Vitals",
+          "Schema.org"
+        ]
       }
     },
     "portfolio_page": {
-      "subtitle": "Selected Work",
-      "heading": "Real Projects & Technical Deep Dives Engineered for Performance & SEO",
-      "description": "A selection of real-world projects and engineering deep dives: SEO-optimized corporate websites, custom management dashboards, and complex system architecture. Each case study covers the goal, the technical approach, and the measurable results.",
-      "viewCase": "View Case Study",
-      "cta": "Discuss Your Project",
+      "seo": {
+        "title": "Web Development, SEO & Custom App Portfolio | Devsignpro",
+        "description": "Explore selected websites, technical SEO work, online stores, custom applications and engineering projects by Devsignpro.",
+        "keywords": [
+          "freelance web developer portfolio",
+          "web development case studies",
+          "technical SEO case studies",
+          "Next.js projects",
+          "custom web application portfolio",
+          "ecommerce development projects"
+        ]
+      },
+      "subtitle": "Portfolio & case studies",
+      "heading": "Web projects built to solve a real problem",
+      "description": "Explore selected websites, online stores, custom applications and engineering projects. Each project page explains the need, implementation decisions and verified outcomes when reliable data is available.",
+      "viewCase": "View project",
+      "cta": "Get a Free Quote",
       "cta_other": "Explore More Work",
       "ui": {
         "filterBy": "Filter by",
@@ -836,10 +2242,13 @@
         "emptyStateText": "Try selecting another project category.",
         "filterHint": "Select a category to view projects",
         "showAll": "Show all",
-        "showcaseLabel": "Project showcase",
-        "ctaTitle": "Have a project in mind?",
-        "ctaExplore": "View details",
-        "ctaDescription": "I collaborate with startups and businesses to build fast, reliable, and search-optimized digital products that drive measurable growth.",
+        "showcaseLabel": "Projects and case studies",
+        "projectsEyebrow": "Selected work",
+        "projectsHeading": "Browse projects by type of work",
+        "projectsDescription": "Client work represents real engagements published with permission. Personal and academic projects demonstrate complementary engineering skills.",
+        "ctaTitle": "Looking for a similar solution for your business?",
+        "ctaExplore": "View the projects",
+        "ctaDescription": "Tell me about your goal, current website or the application you need to build. I will reply within 24 hours with suitable next steps.",
         "statusLabels": {
           "online": "Online",
           "local enterprise": "Local enterprise",
@@ -850,18 +2259,23 @@
         "breadcrumbHome": "Home",
         "breadcrumbPortfolio": "Portfolio",
         "backToPortfolio": "Back to portfolio",
-        "techHeading": "Technologies Used",
+        "techHeading": "Technologies and skills",
         "categoryLabel": "Category",
         "typeLabel": "Project Type",
         "statusLabel": "Status",
-        "collaborationTitle": "Want to Build Something Like This?",
-        "collaborationBody": "Whether you need a high-performance application, SEO optimization, or a business dashboard, let's discuss how we can design a scalable solution tailored to your goals.",
-        "overviewHeading": "Overview",
+        "collaborationTitle": "Planning a similar project?",
+        "collaborationBody": "Tell me about your goal, current website or the application you need to build. I will reply within 24 hours with an initial direction and suitable next steps.",
+        "technicalCollaborationTitle": "Looking for a developer who can solve problems below the surface?",
+        "technicalCollaborationBody": "These projects show how I reason, build and test. I am available for freelance work, contracts or collaboration with an engineering team.",
+        "technicalCtaLabel": "Discuss a role or project",
+        "overviewHeading": "Context",
         "breadcrumbAria": "Breadcrumb",
-        "galleryHeading": "Project gallery",
+        "galleryHeading": "The project in images",
+        "galleryDescription": "Screenshots of the product, how it works or the results currently available.",
         "linksHeading": "Project links",
         "goalHeading": "Project goal",
-        "learnedHeading": "What we learned",
+        "evidenceHeading": "Evidence of the work",
+        "learnedHeading": "What I learned",
         "realWorldHeading": "How this helps in the real world"
       },
       "projects": [
@@ -929,6 +2343,65 @@
           }
         },
         {
+          "title": "Nutritia — SEO-Optimized Shopify Store for Wellness Supplements",
+          "description": "A Shopify store built for a vegan supplements brand: custom theme, product quiz, subscriptions, multi-currency and a complete technical SEO foundation with structured data.",
+          "tech": "Shopify, Liquid, Technical SEO, Schema.org",
+          "image": "/images/projects/Nutritia-Shopify-Store.jpg",
+          "linkLabel": "View Case Study",
+          "category": "E-commerce & SEO",
+          "type": "professional",
+          "status": "online",
+          "href": "/portfolio/nutritia-shopify-store",
+          "highlightsHeading": "What I delivered",
+          "detail": {
+            "seo": {
+              "title": "Case Study: Nutritia, an SEO-Optimized Shopify Store",
+              "description": "How I built nutritia.co, a Shopify supplements store: custom theme, product quiz, subscriptions and technical SEO with structured data.",
+              "keywords": [
+                "Shopify store development",
+                "freelance Shopify developer",
+                "SEO optimized Shopify store",
+                "Shopify ecommerce SEO",
+                "custom Shopify theme",
+                "ecommerce case study"
+              ]
+            },
+            "intro": "Nutritia is a vegan wellness supplements brand: gummies, capsules and powders. The goal was to launch an online store that is clear, fast and ready for organic search from day one, without depending on a generic theme.",
+            "sections": [
+              {
+                "title": "Challenge & approach",
+                "body": "The supplements market is highly competitive, and buyers compare a lot before ordering. So I built the store around the buying journey: a homepage that presents the range by goal (hair, skin, gut health, energy), collections by format, and product pages that answer questions before the add-to-cart. The Shopify theme was custom-built to keep the code light and keep full control over page structure."
+              },
+              {
+                "title": "Technical SEO and structured data",
+                "body": "Every page has a title, description and main heading aligned with one search intent. The store declares its Schema.org structured data: online store, return policy, FAQ, product lists and breadcrumbs. The English and Spanish versions are connected with hreflang tags to avoid duplicate content across markets."
+              },
+              {
+                "title": "Selling features",
+                "body": "The store includes a quiz that guides visitors to the right product, discounted subscriptions (Subscribe & Save), customer reviews, language and currency selection, and a launch offer highlighted in the announcement bar. The site is live at nutritia.co."
+              }
+            ],
+            "highlights": [
+              "Custom-built Shopify theme, not a generic Theme Store template",
+              "Structured data: online store, return policy, FAQ and product lists",
+              "Product quiz, subscriptions, customer reviews, multi-language and multi-currency",
+              "Metadata, English/Spanish hreflang and page structure built for organic search"
+            ],
+            "gallery": [
+              {
+                "src": "/images/projects/Nutritia-Shopify-Store.jpg",
+                "alt": "Homepage of the Nutritia Shopify store showing its hair, skin and gut health gummies"
+              }
+            ],
+            "links": [
+              {
+                "url": "https://nutritia.co",
+                "label": "View the live store"
+              }
+            ]
+          }
+        },
+        {
           "title": "E-commerce Landing Page — Fast & SEO-Optimized",
           "description": "Designed and developed a high-converting e-commerce landing page optimized for speed, mobile performance, Technical SEO, and conversion. Integrated with a custom dashboard for real-time content management and campaign optimization.",
           "tech": "Next.js, Tailwind CSS, Technical SEO",
@@ -948,7 +2421,7 @@
                 "high conversion landing page",
                 "Tailwind CSS landing page",
                 "mobile-first retail site",
-                "SEO landing page Morocco"
+                "SEO landing page France"
               ]
             },
             "intro": "Modern e-commerce demands speed, clarity, and flexibility. Beyond performance, I built this landing page with a connected dashboard that lets teams update content, promotions, and sections instantly — without touching code. The result is a fast, mobile-optimized experience combined with full control over messaging and conversion flow.",
@@ -989,7 +2462,7 @@
                 "business automation dashboard",
                 "subscription management software",
                 "React Express internal tools",
-                "operations dashboard Morocco",
+                "operations dashboard France",
                 "custom CRM dashboard"
               ]
             },
@@ -1047,7 +2520,7 @@
                 "PHPMailer alerts",
                 "MySQL operations app",
                 "PDF audit reports",
-                "enterprise internal tools Morocco"
+                "enterprise internal tools France"
               ]
             },
             "intro": "Hotels cannot afford silent failures: broken HVAC, plumbing, or electrical issues need traceable tickets, accountable owners, and audit trails. This system digitizes the workflow from report to resolution — with email escalation when minutes matter.",
@@ -1223,7 +2696,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/ft_transcendence",
-          "highlightsHeading": "Key features & competencies",
+          "highlightsHeading": "Skills demonstrated",
           "detail": {
             "seo": {
               "title": "ft_transcendence — Real-Time Pong Platform",
@@ -1267,7 +2740,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/minishell-project",
-          "highlightsHeading": "Key features & competencies",
+          "highlightsHeading": "Skills demonstrated",
           "detail": {
             "seo": {
               "title": "Minishell — Bash-like Shell in C",
@@ -1312,7 +2785,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/webserv-project",
-          "highlightsHeading": "Key features & competencies",
+          "highlightsHeading": "Skills demonstrated",
           "detail": {
             "seo": {
               "title": "Webserver — Nginx-like HTTP Server in C++",
@@ -1357,7 +2830,7 @@
           "type": "academic",
           "status": "completed",
           "href": "/portfolio/inception-project",
-          "highlightsHeading": "Key features & competencies",
+          "highlightsHeading": "Skills demonstrated",
           "detail": {
             "seo": {
               "title": "Inception — Docker Infrastructure Stack",
@@ -1396,74 +2869,133 @@
       ],
       "Warning": "Client projects shown here are published with authorization. Some work is not displayed to respect confidentiality and non-disclosure agreements.",
       "whyChooseUs": {
-        "title": "Why Work With Me",
-        "subtitle": "I build solutions that rank on Google, convert visitors, and scale with your business — not just code that runs.",
+        "title": "What each case study should help you evaluate",
+        "subtitle": "A useful portfolio shows more than a screenshot. It explains the context, decisions and work that was actually delivered.",
         "reasons": [
           {
-            "title": "Business-First Development",
-            "text": "Every feature, design choice, and tech decision is tied to a measurable outcome: higher search rankings through Technical SEO, more conversions, or AI-powered workflows that save hours of manual work."
+            "title": "The problem",
+            "text": "The original need, intended users and constraints that guided the project."
           },
           {
-            "title": "Full-Stack Ownership",
-            "text": "From Technical SEO, UI/UX design, and Next.js development to deployment and Core Web Vitals tuning, I handle the entire build. No handoffs, no gaps — just clean, consistent delivery."
+            "title": "Implementation decisions",
+            "text": "Architecture, design, technical SEO, performance and technology choices, with the reasoning behind them."
           },
           {
-            "title": "Future-Proof Architecture",
-            "text": "Built with Next.js, modern cloud infrastructure, and scalable patterns so your website or dashboard grows with your ambitions, not against them."
+            "title": "Results and limits",
+            "text": "Available measurable outcomes, what was delivered and information that cannot be published."
+          }
+        ]
+      },
+      "relatedServices": {
+        "title": "Planning a project similar to this work?",
+        "items": [
+          {
+            "title": "Professional website",
+            "description": "Build or redesign a fast business website with a solid organic-search foundation.",
+            "href": "/services/web-development",
+            "label": "Explore web development"
+          },
+          {
+            "title": "Online store",
+            "description": "Build a Shopify, WooCommerce or Next.js store with catalogue and secure checkout.",
+            "href": "/services/ecommerce-development",
+            "label": "Explore e-commerce development"
+          },
+          {
+            "title": "Technical SEO audit",
+            "description": "Find problems affecting crawling, indexing and website performance.",
+            "href": "/services/technical-seo",
+            "label": "Explore technical SEO"
           }
         ]
       }
     },
     "contact_page": {
-      "heading": "Let's Build Your Next High-Performance Digital Project",
-      "description": "Looking for a Full-Stack Web Developer to build a corporate website, business dashboard, or improve your Technical SEO? I help startups and enterprises create fast, scalable, and search-optimized digital solutions. Tell me about your project, and let's discuss how we can bring it to life.",
-      "subtitle": "Start Your Project Today",
+      "seo": {
+        "title": "Contact a Technical SEO & Web Consultant | Devsignpro",
+        "description": "Discuss your technical SEO, website, e-commerce or custom application project. Get a free quote and a response within 24 hours.",
+        "keywords": [
+          "contact technical SEO consultant",
+          "request SEO quote",
+          "website development quote",
+          "hire freelance web developer",
+          "ecommerce development quote"
+        ]
+      },
+      "heading": "Let's discuss your visibility and web project",
+      "description": "Tell me what is holding you back or what you need to build: a technical SEO audit, website improvements, an online store or a custom application. I will reply within 24 hours with a clear initial direction.",
+      "heroCta": "Request my free quote",
+      "benefitsLabel": "Contact information",
+      "formEyebrow": "Your request",
+      "subtitle": "Tell me what you want to improve",
+      "formIntro": "A few lines are enough to begin. If you already have a website, include its address and describe the main problem.",
       "email": "Email",
       "whatsapp": "WhatsApp",
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
-      "location": "Morocco (GMT+1)",
-      "sendMessage": "Send a message",
-      "orWrite": "Or write directly to",
+      "location": "France (CET)",
+      "sendMessage": "Request my free quote",
+      "orWrite": "Prefer email?",
       "chooseWay": "Choose your preferred way",
       "getInTouch": "Get in touch",
       "quickResponses": {
-        "response24h": "Response within 24h",
-        "freeConsultation": "Free consultation",
-        "noObligation": "No obligation quotes",
-        "worldwide": "Worldwide & remote"
+        "items": [
+          "Response within 24 hours",
+          "Free, no-obligation quote",
+          "France and remote projects"
+        ]
       },
       "channels": {
-        "emailDescription": "Response within 24 hours",
-        "whatsappDescription": "Fastest response",
+        "emailDescription": "Best for briefs or documents",
+        "whatsappDescription": "Best for a quick first question",
         "instagramDescription": "See latest work & behind the scenes",
         "linkedinDescription": "Professional network & referrals"
       },
+      "beforeContact": {
+        "title": "To receive a useful response",
+        "items": [
+          {
+            "title": "Your current situation",
+            "text": "Share the existing website address or briefly describe what you need to build."
+          },
+          {
+            "title": "Your main objective",
+            "text": "More visibility, an SEO fix, online sales or a custom business tool."
+          },
+          {
+            "title": "Known constraints",
+            "text": "Include your preferred timeline and a budget range if you already have one."
+          }
+        ]
+      },
       "form": {
-        "heading": "Start Your Project",
-        "subheading": "Tell me about your goals and I'll reply within 24 hours with a free quote.",
+        "heading": "Describe your project",
+        "subheading": "Three details are enough to prepare an initial response.",
         "fullNamePlaceholder": "Jane Smith",
         "emailAddress": "Email Address",
         "emailPlaceholder": "yourname@example.com",
         "projectType": "Project Type",
         "projectTypePlaceholder": "Select a project type",
         "projectTypes": {
-          "website": "Website / E-Commerce Development",
-          "seo": "Technical SEO / GEO / AEO Audit",
-          "ai": "AI search optimization",
-          "automation": "Business Automation & Workflows",
-          "design": "Ad Design & Branding",
+          "seo": "Technical SEO audit or fixes",
+          "website": "Website creation or redesign",
+          "ecommerce": "Online store",
+          "dashboard": "Custom web application or dashboard",
+          "collaboration": "Freelance mission or contract",
           "other": "Other / Not sure yet"
         },
         "copy": "Copy",
         "copied": "Copied!",
         "availability": "Available for new projects",
-        "message": "Message",
-        "messagePlaceholder": "Tell me about your project, timeline, and budget...",
-        "successMessage": "Message sent! I'll get back to you soon.",
+        "message": "What do you need?",
+        "messagePlaceholder": "Example: my website receives little visibility from Google. I need to identify technical issues and receive a prioritized correction plan. Here is the URL...",
+        "successMessage": "Your request has been sent. I will reply within 24 hours.",
         "sending": "Sending...",
+        "responseNote": "I personally review every request and reply within 24 hours.",
+        "privacyNote": "Your information is used only to respond to your request.",
         "errors": {
           "emailRequired": "Email is required",
+          "emailInvalid": "Enter a valid email address",
           "projectTypeRequired": "Project type is required",
           "messageRequired": "Message must be at least 10 characters",
           "networkError": "Network error",
@@ -1471,21 +3003,61 @@
           "selectProjectType": "Please select a project type"
         }
       },
+      "process": {
+        "eyebrow": "After your message",
+        "title": "What happens next?",
+        "steps": [
+          {
+            "title": "I review your request",
+            "text": "I assess your objective, the information available and the first relevant technical points."
+          },
+          {
+            "title": "I reply within 24 hours",
+            "text": "You receive any necessary questions, an initial recommendation and the proposed next step."
+          },
+          {
+            "title": "We define the scope",
+            "text": "If the requirement matches my services, I prepare a clear quote covering deliverables, timeline and price."
+          }
+        ]
+      },
+      "faq": {
+        "title": "Questions before contacting me",
+        "description": "The essential answers you need before sending your request.",
+        "items": [
+          {
+            "question": "What should I include in my message?",
+            "answer": "Describe your objective, the problem you are facing and include your website URL if you have one. You can also mention your timeline and estimated budget."
+          },
+          {
+            "question": "How quickly will I receive a response?",
+            "answer": "I generally reply within 24 hours with initial questions or the most suitable next step for your request."
+          },
+          {
+            "question": "Can I contact you without a defined budget?",
+            "answer": "Yes. Explain what you need. I can tell you whether the project matches my services and provide an initial order of priorities."
+          },
+          {
+            "question": "Do you only work with clients in France?",
+            "answer": "No. I am based in France and also work remotely with businesses, agencies and engineering teams across Europe and worldwide."
+          }
+        ]
+      },
       "whyReachOut": {
         "title": "Why Work With Me",
         "subtitle": "What you can expect from our collaboration",
         "reasons": [
           {
-            "title": "AI-Ready & SEO-First Development",
-            "text": "Every project is built with Technical SEO, structured data (Schema.org), Core Web Vitals, and GEO/AEO optimization so your business ranks on Google and gets cited by ChatGPT and Perplexity."
+            "title": "SEO and development together",
+            "text": "I review structure, content, performance and code to provide coherent, verifiable recommendations and fixes."
           },
           {
-            "title": "Reliable Delivery & Clear Communication",
-            "text": "Weekly updates, transparent timelines, and code that is fast, scalable, and maintainable. No surprises—just measurable results."
+            "title": "Clear scope and communication",
+            "text": "Deliverables, timeline and price are defined before work begins, with direct communication throughout the project."
           },
           {
-            "title": "Long-Term Partnership",
-            "text": "I don't just build and disappear. I provide ongoing support, performance monitoring, and optimization to ensure your digital product grows with your business."
+            "title": "A solution matched to the need",
+            "text": "I can fix an existing website, conduct an audit or build a new foundation when the situation requires it."
           }
         ]
       }
@@ -1590,8 +3162,8 @@
   "footer": {
     "brandName": "Devsignpro",
     "brandTagline": "Full-Stack Developer & SEO Specialist",
-    "phone": "+212 7 78 18 03 06",
-    "address": "Morocco",
+    "phone": "+33 7 53 23 67 69",
+    "address": "France",
     "ExplorerTitle": "Explore",
     "links": [
       {
@@ -1630,7 +3202,7 @@
         "href": "/services/technical-seo"
       },
       {
-        "label": "Dashboards & Automation",
+        "label": "Custom Apps & Dashboards",
         "href": "/services/business-dashboards"
       }
     ],
@@ -1647,19 +3219,20 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Web Developer & SEO Expert in Morocco | Freelancer",
-        "description": "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization.",
+        "title": "Freelance Technical SEO & AI Search Consultant | Devsignpro",
+        "description": "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide fix indexing, performance and visibility. Free quote.",
         "keywords": [
-          "web developer morocco",
-          "next.js developer morocco",
-          "freelance web developer morocco",
-          "website design morocco",
-          "ecommerce website morocco",
-          "seo specialist morocco",
-          "ai search optimization",
-          "generative engine optimization",
-          "full stack developer morocco",
-          "high performance websites"
+          "freelance technical seo consultant",
+          "technical seo consultant",
+          "technical seo freelancer",
+          "technical seo audit",
+          "website seo optimization",
+          "technical seo fixes",
+          "ecommerce seo consultant",
+          "ai search optimization consultant",
+          "geo consultant",
+          "core web vitals optimization",
+          "international seo consultant"
         ]
       }
     }

@@ -1,6 +1,7 @@
 {
-    "phoneNumber": "+212778180306",
-    "phoneNumberLink": "tel:+212778180306",
+    "phoneNumber": "+33753236769",
+    "phoneNumberLink": "tel:+33753236769",
+    "phoneNumberDisplay": "+33 7 53 23 67 69",
     "whatsappNumber": "+212778180306",
     "whatsappLink": "https://wa.me/+212778180306",
     "email": "devsignprofessional@gmail.com",
@@ -10,12 +11,12 @@
     "instagramHandle": "@devsign_pro",
     "instagramFollowers": "+2K",
     "linkedinName":"Mohammed Elghandori",
-    "address": "Casablanca, Maroc",
+    "address": "France",
     "githubHandle": "elghandori1",
     "social": {
         "linkedin": "https://ma.linkedin.com/in/mohammed-elghandori-628b19209",
         "facebook": "https://www.facebook.com/share/183VzHWBBd/?mibextid=wwXIfr",
-        "instagram": "https://www.instagram.com/devsign_pro?igsh=MWc4cjVzNDAzdWh6Mg%3D%3D&utm_source=qr",
+        "instagram": "https://www.instagram.com/devsign_pro",
         "github": "https://github.com/elghandori1"
     }
 }

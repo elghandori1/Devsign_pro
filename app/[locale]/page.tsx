@@ -6,7 +6,6 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
-import Statistics from "../components/Statistics";
 import SubTitle from "../components/SubTitles";
 import ServicesGrid from "../components/ServicesGrid";
 import AboutMeSection from "../components/AboutMeSection";
@@ -14,11 +13,15 @@ import WhyWeAreSection from "../components/WhyWeAreSection";
 import ProjectsShowcase from "../components/ProjectsShowcase";
 import ContactSection from "../components/ContactSection";
 import ScrollReveal from "../components/ScrollReveal";
-import ArticlesSection from "../components/ArticlesSection";
 import TechStackSection from "../components/TechStackSection";
-import CVDownloadPopup from "../components/CVDownloadPopup";
 import FAQSection from "../components/FAQSection";
-import { FAQPageSchema, PersonSchema } from "@/app/components/schemas";
+import CustomerProblemsSection from "../components/CustomerProblemsSection";
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import {
+  FAQPageSchema,
+  PersonSchema,
+  ProfessionalServiceSchema,
+} from "@/app/components/schemas";
 import infos from "@/app/dictionaries/global.json";
 
 type Props = {
@@ -26,7 +29,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return [{ locale: "en" }, { locale: "fr" }, { locale: "ar" }];
+  return i18n.locales.map((locale) => ({ locale }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -39,31 +42,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const isArabic = locale === "ar";
 
   const title = isEnglish
-    ? "Web Developer & SEO Expert in Morocco | Freelancer"
+    ? "Freelance Technical SEO & AI Search Consultant | Devsignpro"
     : isArabic
       ? "مطور ويب وخبير SEO في المغرب | مستقل"
-      : "Développeur Web & Expert SEO au Maroc | Freelance";
+      : "Consultant SEO Freelance en France | Devsignpro";
 
   const description = isEnglish
-    ? "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization."
+    ? "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide fix indexing, performance and visibility. Free quote."
     : isArabic
       ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
-      : "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.";
+      : "Consultant SEO technique et GEO freelance en France. J’optimise sites web et boutiques en ligne pour Google, ChatGPT et Perplexity. Devis sous 24h.";
 
   const keywords = isEnglish
     ? [
-        "next.js developer morocco",
-        "full stack developer morocco",
-        "web developer morocco",
-        "seo specialist morocco",
-        "ai engine optimization",
-        "ai search optimization",
-        "freelance web developer morocco",
-        "website optimization morocco",
-        "business dashboard automation",
-        "social media design morocco",
-        "next.js seo",
-        "high performance websites",
+        "freelance technical seo consultant",
+        "technical seo consultant",
+        "technical seo freelancer",
+        "technical seo audit",
+        "website seo optimization",
+        "technical seo fixes",
+        "ecommerce seo consultant",
+        "ai search optimization consultant",
+        "geo consultant",
+        "core web vitals optimization",
+        "international seo consultant",
       ]
     : isArabic
       ? [
@@ -79,16 +81,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "تحسين المواقع",
         ]
       : [
-          "développeur next.js maroc",
-          "développeur full-stack maroc",
-          "développeur web maroc",
-          "expert seo maroc",
-          "optimisation ia maroc",
-          "optimisation moteur ia",
-          "développeur web freelance",
-          "automatisation tableau bord",
-          "design social media maroc",
-          "optimisation site web maroc",
+          "consultant seo freelance france",
+          "consultant seo technique",
+          "consultant geo france",
+          "audit seo technique",
+          "optimisation seo site web",
+          "optimisation seo boutique en ligne",
+          "référencement naturel",
+          "référencement ia",
+          "visibilité chatgpt",
+          "google ai overviews",
+          "optimisation core web vitals",
         ];
 
   return buildPageMetadata({
@@ -110,44 +113,53 @@ export default async function Home({ params }: Props) {
 
   const dict = await getDictionary(locale);
   const t = dict.homepage;
-  const articlesPage = dict.pages.articles_page;
   const baseUrl = getBaseUrl();
   const jobTitle =
     locale === "en"
-      ? "Web Developer & SEO Specialist"
+      ? "Freelance Technical SEO and AI Search Consultant"
       : locale === "ar"
         ? "مطور ويب وخبير تحسين محركات البحث"
-        : "Développeur Web & Spécialiste SEO";
+        : "Consultant SEO et GEO en France";
 
   const isEnglish = locale === "en";
   const isArabic = locale === "ar";
   const description = isEnglish
-    ? "Freelance Web Developer & SEO Expert in Morocco. I build high-performance websites with Technical SEO & AI Search Optimization."
+    ? "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide improve website indexing, performance and search visibility."
     : isArabic
       ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
-      : "Développeur Web Freelance & Expert SEO au Maroc. Je crée des sites performants, optimisés SEO technique et recherche IA. Boostez votre visibilité.";
+      : "Consultant SEO technique et GEO freelance en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT, Google AI Overviews et Perplexity.";
   const faqs = isEnglish
     ? [
         {
           question:
             "What is AI Search Optimization and how is it different from SEO?",
           answer:
-            "AI Search Optimization ensures your website appears in AI-powered search engines like ChatGPT, Google AI Overviews, and Perplexity. While traditional SEO focuses on ranking in Google Search, AIO structures your content so AI engines can understand, cite, and recommend your business as a trusted source.",
+            "AI Search Optimization helps systems such as ChatGPT, Google AI Overviews and Perplexity understand and retrieve your content. It builds on traditional SEO with clear answer-focused content, structured data, accessible pages and stronger entity and trust signals. It improves eligibility and visibility, but no consultant can guarantee a citation.",
         },
         {
-          question: "Why should I choose Next.js for my business website?",
+          question: "Should I choose WordPress or Next.js for my business website?",
           answer:
-            "Next.js delivers superior performance, SEO-friendliness, and scalability out of the box. With server-side rendering, static generation, and built-in Core Web Vitals optimization, Next.js sites load faster, rank higher, and convert better than traditional WordPress or plain React sites.",
+            "WordPress is a practical choice when your team wants to manage pages and content through a familiar dashboard. Next.js is better suited to highly customized experiences, advanced performance requirements, and web applications. I recommend the solution that fits your content, budget, and maintenance needs.",
         },
         {
-          question: "How much does it cost to hire a web developer in Morocco?",
+          question: "Should I use Shopify, WooCommerce or Next.js for my online store?",
           answer:
-            "Pricing depends on project scope and complexity. A professional business website typically starts from 8,000 MAD, while full-stack applications and AI-integrated dashboards are quoted based on specific requirements. Contact me for a free consultation and detailed estimate.",
+            "Shopify is ideal for launching quickly with a reliable commerce back office. WooCommerce is useful when you want a WordPress store with flexible content management. A custom Next.js store fits unique workflows, performance goals, or specific features. I recommend the right option for your budget and operations.",
         },
         {
-          question: "Do you work with international clients or only Morocco?",
+          question: "How long does it take to build a website?",
           answer:
-            "While I'm based in Morocco, I work with startups and businesses globally. My websites are built with international SEO, multilingual support, and global performance standards — ready to serve customers anywhere in the world.",
+            "A business website usually takes 2 to 4 weeks, and an online store 4 to 8 weeks, depending on the number of pages, the content and the features. You get a clear schedule with your quote before the project starts.",
+        },
+        {
+        question: "How much does a website cost with a freelance web developer?",
+          answer:
+            "It depends on the scope. As a guide, a business website starts from €1,200, an online store from €2,500, and a technical SEO audit from €450. Custom web applications and dashboards are quoted per project. These prices are a guide and can be adapted to your budget. Every request gets a free, detailed quote within 24 hours.",
+        },
+        {
+          question: "Do you work with international clients?",
+          answer:
+            "Yes. I am based in France and work remotely with businesses in Europe and worldwide. A project can include multilingual architecture, hreflang and international SEO when the website needs to reach customers in several countries.",
         },
       ]
     : isArabic
@@ -158,9 +170,9 @@ export default async function Home({ params }: Props) {
               "تحسين البحث بالذكاء الاصطناعي يضمن ظهور موقعك في محركات البحث المدعومة بالذكاء الاصطناعي مثل ChatGPT وGoogle AI Overviews وPerplexity. بينما يركز SEO التقليدي على الترتيب في بحث Google، يقوم AIO بتنظيم محتواك بحيث يمكن لمحركات الذكاء الاصطناعي فهمه والاستشهاد به والتوصية بعملك كمصدر موثوق.",
           },
           {
-            question: "لماذا يجب أن أختار Next.js لموقع أعمالي؟",
+            question: "هل أختار WordPress أم Next.js لموقع شركتي؟",
             answer:
-              "Next.js يوفر أداءً فائقًا، وسهولة تحسين محركات البحث، وقابلية التوسع من البداية. مع العرض من جانب الخادم، والتوليد الثابت، وتحسين Core Web Vitals المدمج، فإن مواقع Next.js يتم تحميلها بشكل أسرع، وتحصل على ترتيب أعلى، وتحقق معدلات تحويل أفضل من مواقع WordPress التقليدية أو React العادية.",
+              "WordPress مناسب عندما تريد إدارة الصفحات والمحتوى من لوحة تحكم مألوفة، بينما يناسب Next.js التجارب المخصصة ومتطلبات الأداء المتقدمة وتطبيقات الويب. أختار التقنية وفق محتوى المشروع وميزانيته واحتياجات صيانته.",
           },
           {
             question: "كم تكلفة توظيف مطور ويب في المغرب؟",
@@ -178,31 +190,46 @@ export default async function Home({ params }: Props) {
             question:
               "Qu'est-ce que l'Optimisation de Recherche par IA et en quoi est-elle différente du SEO ?",
             answer:
-              "L'Optimisation de Recherche par IA garantit que votre site web apparaît dans les moteurs de recherche alimentés par l'IA tels que ChatGPT, Google AI Overviews et Perplexity. Alors que le SEO traditionnel se concentre sur le classement dans la recherche Google, l'AIO structure votre contenu pour que les moteurs d'IA puissent comprendre, citer et recommander votre entreprise comme source fiable.",
+              "L'optimisation pour la recherche IA aide ChatGPT, Google AI Overviews et Perplexity à comprendre et retrouver les informations de votre site. Elle complète le référencement naturel avec un contenu clair, des données structurées, des pages accessibles et des signaux de confiance cohérents, sans pouvoir garantir une citation.",
           },
           {
             question:
-              "Pourquoi devrais-je choisir Next.js pour mon site web d'entreprise ?",
+              "WordPress ou Next.js : quelle solution pour mon site d'entreprise ?",
             answer:
-              "Next.js offre des performances supérieures, une optimisation SEO et une évolutivité dès le départ. Avec le rendu côté serveur, la génération statique et l'optimisation intégrée des Core Web Vitals, les sites Next.js se chargent plus rapidement, se classent mieux et convertissent mieux que les sites WordPress traditionnels ou React simples.",
+              "WordPress convient si vous souhaitez gérer facilement vos pages et vos contenus depuis une interface connue. Next.js est adapté aux expériences très personnalisées, aux exigences de performance avancées et aux applications web. Je recommande la solution selon vos contenus, votre budget et vos besoins de maintenance.",
+          },
+          {
+            question: "Shopify, WooCommerce ou Next.js : que choisir pour ma boutique en ligne ?",
+            answer:
+              "Shopify permet de lancer rapidement une boutique avec un back-office e-commerce fiable. WooCommerce convient si vous souhaitez vendre avec WordPress et gérer librement vos contenus. Une boutique Next.js répond aux parcours, performances ou fonctionnalités très spécifiques. Je recommande la solution adaptée à votre budget et à votre organisation.",
+          },
+          {
+            question: "Combien de temps faut-il pour créer un site internet ?",
+            answer:
+              "Un site vitrine demande en général 2 à 4 semaines, et une boutique en ligne 4 à 8 semaines, selon le nombre de pages, les contenus et les fonctionnalités. Vous recevez un planning clair avec votre devis avant le démarrage du projet.",
+          },
+          {
+          question:
+          "Combien coûte la création d'un site internet avec un développeur freelance ?",
+            answer:
+              "Tout dépend du projet. À titre indicatif, un site vitrine démarre à partir de 1 200 €, une boutique en ligne à partir de 2 500 € et un audit SEO technique à partir de 450 €. Les applications web et tableaux de bord sur mesure sont chiffrés au cas par cas. Ces tarifs sont indicatifs et s'adaptent à votre budget. Chaque demande reçoit un devis gratuit et détaillé sous 24h.",
           },
           {
             question:
-              "Combien coûte l'embauche d'un développeur web au Maroc ?",
+              "Travaillez-vous avec des clients hors de France, notamment au Maroc ?",
             answer:
-              "Les prix dépendent de la portée et de la complexité du projet. Un site web professionnel commence généralement à partir de 8000 MAD, tandis que les applications full-stack et les tableaux de bord intégrés à l'IA sont devisés en fonction des exigences spécifiques. Contactez-moi pour une consultation gratuite et un devis détaillé.",
-          },
-          {
-            question:
-              "Travaillez-vous avec des clients internationaux ou seulement au Maroc ?",
-            answer:
-              "Bien que je sois basé au Maroc, je travaille avec des startups et des entreprises à l'échelle mondiale. Mes sites web sont construits avec un SEO international, un support multilingue et des normes de performance mondiales — prêts à servir les clients partout dans le monde.",
+              "Oui. Basé en France et originaire du Maroc, je travaille à distance avec des entreprises en France, en Europe et au Maroc. Selon le projet, je peux construire un site multilingue avec un SEO international pour toucher des clients dans plusieurs pays.",
           },
         ];
 
   return (
     <main className="bg-background text-foreground transition-colors duration-300 min-h-screen">
       <FAQPageSchema faqs={faqs} />
+      <ProfessionalServiceSchema
+        baseUrl={baseUrl}
+        locale={locale}
+        description={description}
+      />
       <PersonSchema
         baseUrl={baseUrl}
         locale={locale}
@@ -213,6 +240,7 @@ export default async function Home({ params }: Props) {
           linkedin: infos.social.linkedin,
           github: infos.social.github,
           facebook: infos.social.facebook,
+          instagram: infos.social.instagram.split("?")[0],
         }}
       />
       <section
@@ -238,8 +266,8 @@ export default async function Home({ params }: Props) {
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-16 lg:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
-            <div className="flex flex-col gap-5 sm:gap-6 self-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 lg:items-stretch">
+            <div className="flex flex-col justify-center gap-5 sm:gap-6">
               <div
                 className="inline-flex items-center gap-2 bg-primary/10 text-primary
   border border-primary/20 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium w-fit"
@@ -291,7 +319,7 @@ export default async function Home({ params }: Props) {
 
               {/* CTA buttons */}
               <div
-                className={`flex flex-col xs:flex-row sm:flex-row gap-3 w-full sm:w-auto`}
+                className="flex flex-col xs:flex-row sm:flex-row gap-3 w-full sm:w-auto"
               >
                 <Link
                   href={`/${locale}/contact`}
@@ -305,7 +333,7 @@ export default async function Home({ params }: Props) {
                 </Link>
 
                 <Link
-                  href={`/${locale}/portfolio`}
+                  href={`/${locale}/services`}
                   className="inline-flex items-center justify-center gap-2
                px-5 sm:px-7 py-2.5 sm:py-3.5 bg-card border border-border
                text-foreground font-semibold rounded-xl text-sm sm:text-base
@@ -320,13 +348,20 @@ export default async function Home({ params }: Props) {
                   )}
                 </Link>
               </div>
+
+              <p className="text-xs sm:text-sm text-muted-foreground">
+                {t.hero.supporting_promise}
+              </p>
             </div>
 
-            {/* ── PROFILE SIDE - ENLARGED IMAGE ── */}
             <div
-              className={`flex justify-center ${isArabic ? "lg:order-1" : "lg:order-2"}`}
+              className={`flex h-full justify-center ${
+                isArabic
+                  ? "lg:order-1 lg:justify-start"
+                  : "lg:order-2 lg:justify-end"
+              }`}
             >
-              <div className="relative w-full max-w-[260px] sm:max-w-[300px] lg:max-w-[360px] xl:max-w-[400px]">
+              <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:h-full lg:max-w-[440px] xl:max-w-[480px]">
                 <div
                   className="absolute -inset-4 rounded-3xl border border-primary/10"
                   aria-hidden="true"
@@ -336,9 +371,8 @@ export default async function Home({ params }: Props) {
                   aria-hidden="true"
                 />
 
-                <div className="relative rounded-2xl border border-border bg-card overflow-hidden shadow-xl">
-                  {/* image — better portrait proportions */}
-                  <div className="relative aspect-[4/5] overflow-hidden">
+                <figure className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-xl">
+                  <div className="relative aspect-[4/5] overflow-hidden lg:aspect-auto lg:min-h-[340px] lg:flex-1">
                     <Image
                       src="/images/mohammed-profile.png"
                       alt={
@@ -351,10 +385,11 @@ export default async function Home({ params }: Props) {
                       }
                       width={420}
                       height={525}
-                      className="w-full h-full object-cover object-top
-                       transition-transform duration-700 hover:scale-105"
-                      priority
-                      sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 420px"
+                      className="h-full w-full object-cover object-top"
+                      preload
+                      fetchPriority="high"
+                      loading="eager"
+                      sizes="(max-width: 640px) 320px, (max-width: 1024px) 380px, (max-width: 1280px) calc(50vw - 4rem), 560px"
                     />
                     <div
                       className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"
@@ -362,15 +397,15 @@ export default async function Home({ params }: Props) {
                     />
                   </div>
 
-                  <div className="px-4 py-3 border-t border-border">
-                    <p className="font-semibold text-foreground text-sm truncate">
+                  <figcaption className="border-t border-border px-4 py-3">
+                    <p className="font-semibold text-foreground text-sm">
                       {t.hero.profile_name}
                     </p>
-                    <p className="text-xs text-muted-foreground truncate mt-2">
+                    <p className="mt-1 text-xs text-muted-foreground">
                       {t.hero.profile_role}
                     </p>
 
-                    <div className="mt-3 space-y-2">
+                    <div className="mt-3">
                       <Link
                         href={`/${locale}/about`}
                         className="w-full inline-flex items-center justify-center gap-2
@@ -379,49 +414,35 @@ export default async function Home({ params }: Props) {
                       >
                         {t.hero.cta_more_about}
                       </Link>
-                      <CVDownloadPopup
-                        buttonText={t.hero.cta_download_cv || "Download CV"}
-                        fileName="mohammed-elghandori-full-stack-cv.pdf"
-                      />
                     </div>
-                  </div>
-                </div>
+                  </figcaption>
+                </figure>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section aria-labelledby="statistics-heading">
-        <ScrollReveal>
-          <Statistics
-            translations={t.stats}
-            locale={locale}
-            id="statistics-heading"
-          />
-        </ScrollReveal>
-      </section>
+
+      <CustomerProblemsSection
+        content={t.customer_problems_section}
+        locale={locale}
+      />
 
       <section aria-labelledby="services-heading">
         <ScrollReveal delay={0.04}>
-          <SubTitle
-            sectionLabel={t.services_section.sectionLabel}
-            id="services-heading"
-          />
           <ServicesGrid
             sectionData={t.services_section}
-            servicesData={dict.pages.services_page.services}
             locale={locale}
+            headingId="services-heading"
           />
         </ScrollReveal>
       </section>
 
       <section aria-labelledby="projects-heading">
         <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={t.projects_section.heading}
-            id="projects-heading"
-          />
           <ProjectsShowcase
+            heading={t.projects_section.heading}
+            headingId="projects-heading"
             description={t.projects_section.description}
             projectsData={dict.pages.portfolio_page.projects}
             locale={locale}
@@ -429,45 +450,31 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="why-us-heading">
+      <section aria-labelledby="about-heading">
         <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={t.why_we_are_section.sectionLabel}
-            id="why-us-heading"
-          />
-          <WhyWeAreSection
-            translations={t.why_we_are_section}
+          <AboutMeSection
+            translations={t.about_section}
             locale={locale}
+            headingId="about-heading"
           />
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="about-heading">
+      <section aria-labelledby="why-us-heading">
         <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={t.about_section.sectionLabel}
-            id="about-heading"
+          <WhyWeAreSection
+            translations={t.why_we_are_section}
+            locale={locale}
+            headingId="why-us-heading"
           />
-          <AboutMeSection translations={t.about_section} locale={locale} />
         </ScrollReveal>
       </section>
 
       <section aria-labelledby="tech-heading">
         <ScrollReveal delay={0.05}>
-          <SubTitle sectionLabel={t.techStack.title} id="tech-heading" />
-          <TechStackSection data={t.techStack} headingId="tech-heading" />
-        </ScrollReveal>
-      </section>
-
-      <section aria-labelledby="articles-heading">
-        <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={articlesPage.sectionLabel}
-            id="articles-heading"
-          />
-          <ArticlesSection
-            description={articlesPage.description}
-            articles={articlesPage.articles.slice(0, 3)}
+          <TechStackSection
+            data={t.techStack}
+            headingId="tech-heading"
             locale={locale}
           />
         </ScrollReveal>
@@ -494,6 +501,8 @@ export default async function Home({ params }: Props) {
           <ContactSection translations={t.contact_section} locale={locale} />
         </ScrollReveal>
       </section>
+
+      <FloatingWhatsApp locale={locale} />
     </main>
   );
 }
