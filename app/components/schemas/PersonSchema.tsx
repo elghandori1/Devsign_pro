@@ -45,18 +45,7 @@ export function PersonSchema({
             "Core Web Vitals",
             "Schema.org",
           ]
-        : locale === "ar"
-          ? [
-              "تطوير الويب",
-              "Next.js",
-              "React.js",
-              "Express.js",
-              "WordPress",
-              "تحسين محركات البحث (SEO)",
-              "تحسين البحث بالذكاء الاصطناعي",
-              "أداء المواقع (Core Web Vitals)",
-            ]
-          : [
+        : [
               "Développement Web",
               "Next.js",
               "React.js",

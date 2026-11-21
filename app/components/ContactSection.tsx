@@ -27,11 +27,8 @@ interface ContactSectionProps {
 
 export default function ContactSection({
   translations,
-  locale,
 }: ContactSectionProps) {
   if (!translations) return null;
-  const isRtl = locale === "ar";
-
   const channels = [
     {
       id: "whatsapp",
@@ -94,17 +91,17 @@ export default function ContactSection({
   ];
 
   return (
-    <div className="pb-10 sm:pb-14 md:pb-20" dir={isRtl ? "rtl" : "ltr"}>
+    <div className="pb-4 sm:pb-8 md:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* ── Heading & Description ── */}
-        <div className="text-center mb-10 sm:mb-12">
+        <div className="mb-7 text-center sm:mb-10">
           <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             {translations.description}
           </p>
         </div>
 
         {/* ── Contact Cards ── */}
-        <ul className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 list-none p-0 m-0">
+        <ul className="m-0 mx-auto grid max-w-5xl list-none grid-cols-1 gap-3 p-0 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
           {channels.map((channel) => {
             const Icon = channel.icon;
             const linkProps = channel.external
@@ -116,12 +113,12 @@ export default function ContactSection({
                 <Link
                   href={channel.href}
                   {...linkProps}
-                  className={`group flex flex-col items-center text-center gap-4 p-6 bg-card border ${channel.colors.border} rounded-2xl hover:shadow-md ${channel.colors.hoverBorder} transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2`}
+                  className={`group flex min-h-40 flex-col items-center gap-3 rounded-2xl border bg-card p-5 text-center ${channel.colors.border} hover:shadow-md ${channel.colors.hoverBorder} transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:min-h-44 sm:gap-4 sm:p-6`}
                   aria-label={`${channel.title}: ${channel.cta}`}
                 >
                   {/* Icon */}
                   <div
-                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl ${channel.colors.bg} flex items-center justify-center text-white shrink-0`}
+                    className={`flex size-13 shrink-0 items-center justify-center rounded-2xl text-white sm:size-14 ${channel.colors.bg}`}
                     aria-hidden="true"
                   >
                     <Icon size={28} />

@@ -7,12 +7,7 @@ interface FloatingWhatsAppProps {
 }
 
 export default function FloatingWhatsApp({ locale }: FloatingWhatsAppProps) {
-  const label =
-    locale === "fr"
-      ? "Discuter sur WhatsApp"
-      : locale === "ar"
-        ? "تواصل عبر واتساب"
-        : "Chat on WhatsApp";
+  const label = locale === "fr" ? "Discuter sur WhatsApp" : "Chat on WhatsApp";
 
   return (
     <aside

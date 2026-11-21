@@ -7,7 +7,7 @@ export default function NotFound() {
   const pathname = usePathname();
   const segment = pathname?.split("/")[1];
   const isFrench = segment === "fr";
-  const locale = isFrench ? "fr" : segment === "ar" ? "ar" : "en";
+  const locale = isFrench ? "fr" : "en";
   const content = isFrench
     ? {
         title: "Désolé, cette page n'a pas été trouvée",
@@ -15,14 +15,7 @@ export default function NotFound() {
           "La page que vous recherchez a peut-être été supprimée, son nom a changé ou elle est temporairement indisponible.",
         buttonText: "Retour à l'accueil",
       }
-    : segment === "ar"
-      ? {
-          title: "عذراً، لم يتم العثور على هذه الصفحة",
-          description:
-            "قد تكون الصفحة التي تبحث عنها قد تم حذفها، أو تم تغيير اسمها، أو أنها غير متاحة مؤقتاً.",
-          buttonText: "العودة إلى الصفحة الرئيسية",
-        }
-      : {
+    : {
           title: "Sorry, this page was not found",
           description:
             "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",

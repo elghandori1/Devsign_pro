@@ -189,7 +189,7 @@ export default async function TechnicalSEOPage({ params }: Props) {
         "@type": "FAQPage",
         "@id": `${pageUrl}#faq`,
         "inLanguage": localeToBcp47(locale),
-        "mainEntity": landing.faq.items.map((item) => ({
+        "mainEntity": landing.faq.items.slice(0, 3).map((item) => ({
           "@type": "Question",
           "name": item.q,
           "acceptedAnswer": { "@type": "Answer", "text": item.a },
@@ -305,6 +305,27 @@ export default async function TechnicalSEOPage({ params }: Props) {
           <div>
             <p className="text-lg font-medium leading-relaxed sm:text-xl">{landing.definition.answer}</p>
             <p className="mt-5 border-l-2 border-primary pl-4 text-base leading-relaxed text-muted-foreground">{landing.definition.note}</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="complete-seo-heading" className="border-b border-border">
+        <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14">
+          <div className="grid gap-6 rounded-2xl border border-primary/25 bg-primary/5 p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div className="max-w-3xl">
+              <h2 id="complete-seo-heading" className="text-xl font-semibold sm:text-2xl">
+                {locale === "fr" ? "Un audit technique ne suffit pas toujours" : "A technical audit is not always the complete solution"}
+              </h2>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                {locale === "fr"
+                  ? "Si le site est techniquement accessible mais que ses pages répondent mal aux recherches ou convainquent peu, il faut aussi travailler les intentions, les contenus, le maillage interne et les CTA."
+                  : "If the website is technically accessible but its pages miss search intent or fail to persuade, the next step is improving content, internal links and CTAs."}
+              </p>
+            </div>
+            <Link href={`/${locale}/services/seo-content-optimization`} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-primary/30 bg-background px-5 py-3 font-semibold text-primary hover:border-primary/50 hover:bg-primary/5">
+              {locale === "fr" ? "Voir l’optimisation de contenu SEO et GEO" : "Explore SEO content and AI search optimization"}
+              <ArrowRight size={16} aria-hidden="true" />
+            </Link>
           </div>
         </div>
       </section>
@@ -440,7 +461,7 @@ export default async function TechnicalSEOPage({ params }: Props) {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.faq.eyebrow}</p><h2 id="faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.faq.heading}</h2></header>
           <div>
-            {landing.faq.items.map((item, index) => (
+            {landing.faq.items.slice(0, 3).map((item, index) => (
               <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden"><h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3><ChevronDown className="size-5 shrink-0 text-primary transition-transform group-open:rotate-180" aria-hidden="true" /></summary>
                 <p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p>

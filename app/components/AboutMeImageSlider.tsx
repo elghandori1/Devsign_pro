@@ -32,13 +32,6 @@ const ALT_TEXT: Record<Locale, string[]> = {
     "Mohammed Elghandori holding a second-place engineering competition award",
     "Technical project presentation during an engineering competition",
   ],
-  ar: [
-    "Portrait of Mohammed Elghandori, SEO consultant and web developer",
-    "Mohammed Elghandori receiving a certificate at Al Akhawayn University",
-    "Mohammed Elghandori at an UM6P event",
-    "Mohammed Elghandori holding a second-place engineering competition award",
-    "Technical project presentation during an engineering competition",
-  ],
 };
 
 export default function AboutMeImageSlider({

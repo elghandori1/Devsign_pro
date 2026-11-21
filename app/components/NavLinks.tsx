@@ -33,10 +33,7 @@ export default function NavLinks({ locale, t }: NavLinksProps) {
   ];
 
   return (
-    <div
-      dir={locale === "ar" ? "rtl" : "ltr"}
-      className="hidden md:flex items-center gap-8 text-sm font-medium"
-    >
+    <div className="hidden md:flex items-center gap-8 text-sm font-medium">
       {navItems.map((item) => {
         const fullHref = `/${locale}${item.href}`;
         const active = isActive(item.href);

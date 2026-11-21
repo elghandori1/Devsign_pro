@@ -51,15 +51,6 @@ const LABELS: Record<
     preview: "Project preview:",
     goTo: "Go to project",
   },
-  ar: {
-    previous: "المشروع السابق",
-    next: "المشروع التالي",
-    viewAll: "عرض جميع المشاريع",
-    scrollHint: "مرّر لاستكشاف المشاريع",
-    tech: "التقنيات المستخدمة",
-    preview: "معاينة المشروع",
-    goTo: "الانتقال إلى المشروع",
-  },
 };
 
 export default function ProjectsShowcaseScroller({
@@ -69,7 +60,6 @@ export default function ProjectsShowcaseScroller({
   const listRef = useRef<HTMLOListElement>(null);
   const scrollFrameRef = useRef<number | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const isRtl = locale === "ar";
   const labels = LABELS[locale];
 
   const scrollToProject = (index: number) => {
@@ -112,11 +102,8 @@ export default function ProjectsShowcaseScroller({
     [],
   );
 
-  const PreviousArrow = isRtl ? ArrowRight : ArrowLeft;
-  const NextArrow = isRtl ? ArrowLeft : ArrowRight;
-
   return (
-    <div className="mx-auto max-w-7xl" dir={isRtl ? "rtl" : "ltr"}>
+    <div className="mx-auto max-w-7xl">
       <div className="mb-4 flex items-center justify-between gap-4">
         <p className="text-xs font-medium text-muted-foreground sm:text-sm">
           {labels.scrollHint}
@@ -130,7 +117,7 @@ export default function ProjectsShowcaseScroller({
             aria-label={labels.previous}
             className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:translate-y-0"
           >
-            <PreviousArrow size={18} aria-hidden="true" />
+            <ArrowLeft size={18} aria-hidden="true" />
           </button>
           <button
             type="button"
@@ -139,7 +126,7 @@ export default function ProjectsShowcaseScroller({
             aria-label={labels.next}
             className="inline-flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground shadow-sm transition-all hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:translate-y-0"
           >
-            <NextArrow size={18} aria-hidden="true" />
+            <ArrowRight size={18} aria-hidden="true" />
           </button>
         </div>
       </div>
@@ -226,7 +213,7 @@ export default function ProjectsShowcaseScroller({
                     className="mt-7 inline-flex min-h-11 w-fit items-center gap-2 font-semibold text-primary underline-offset-4 transition-colors hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-4 focus-visible:ring-offset-background md:mt-auto"
                   >
                     {project.linkLabel}
-                    <NextArrow size={17} aria-hidden="true" />
+                    <ArrowRight size={17} aria-hidden="true" />
                   </Link>
                 </div>
               </article>
@@ -261,7 +248,7 @@ export default function ProjectsShowcaseScroller({
           className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:border-primary/35 hover:text-primary"
         >
           {labels.viewAll}
-          <NextArrow size={16} aria-hidden="true" />
+          <ArrowRight size={16} aria-hidden="true" />
         </Link>
       </div>
     </div>

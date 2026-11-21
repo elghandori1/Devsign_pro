@@ -129,7 +129,7 @@ export default async function AboutPage({ params }: Props) {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/about#faq`,
         "inLanguage": localeToBcp47(locale),
-        "mainEntity": t.faq.items.map((item) => ({
+        "mainEntity": t.faq.items.slice(0, 3).map((item) => ({
           "@type": "Question",
           "name": item.q,
           "acceptedAnswer": { "@type": "Answer", "text": item.a },
@@ -383,6 +383,35 @@ export default async function AboutPage({ params }: Props) {
                 {paragraph}
               </p>
             ))}
+            {locale === "fr" ? (
+              <aside className="mt-7 max-w-3xl rounded-2xl border border-primary/25 bg-primary/5 p-5 sm:p-6">
+                <h3 className="text-lg font-semibold">Vous développez une activité au Maroc ?</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  Mon parcours marocain et mon activité actuelle en France me permettent d’accompagner à distance les entreprises qui recherchent un interlocuteur unique pour le SEO technique et le développement web.
+                </p>
+                <Link
+                  href="/fr/consultant-seo-developpeur-web-maroc"
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline"
+                >
+                  Découvrir les services web et SEO pour le Maroc
+                  <ArrowRight size={16} aria-hidden="true" />
+                </Link>
+              </aside>
+            ) : (
+              <aside className="mt-7 max-w-3xl rounded-2xl border border-primary/25 bg-primary/5 p-5 sm:p-6">
+                <h3 className="text-lg font-semibold">Growing a business in Morocco?</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  My Moroccan background and current base in France allow me to support businesses remotely through one point of contact for technical SEO and web development.
+                </p>
+                <Link
+                  href="/en/consultant-seo-developpeur-web-maroc"
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline"
+                >
+                  Explore web development and SEO services for Morocco
+                  <ArrowRight size={16} aria-hidden="true" />
+                </Link>
+              </aside>
+            )}
           </div>
 
           <div className="rounded-2xl border border-border bg-background p-6 sm:p-8">
@@ -594,7 +623,7 @@ export default async function AboutPage({ params }: Props) {
 
           {/* Native <details>: tap to open, no JavaScript, and the answers stay in the HTML for crawlers. */}
           <div>
-            {t.faq.items.map((item, index) => (
+            {t.faq.items.slice(0, 3).map((item, index) => (
               <details
                 key={item.q}
                 open={index === 0}

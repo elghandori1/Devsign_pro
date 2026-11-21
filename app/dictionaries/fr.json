@@ -8,14 +8,14 @@
   },
   "homepage": {
     "hero": {
-      "availability": "Disponible pour de nouveaux projets",
-      "title_line1": "Consultant SEO freelance en France",
+      "availability": "Disponible pour un poste étudiant, un CDD ou un CDI",
+      "title_line1": "Consultant SEO technique en France",
       "title_highlight": "pour sites web et boutiques en ligne",
       "description": "J’identifie et corrige les problèmes qui empêchent votre site ou votre boutique en ligne d’être trouvé par vos futurs clients. J’améliore sa visibilité, sa rapidité et son contenu, et je peux aussi optimiser ou reconstruire le site lorsque sa base actuelle limite les résultats.",
       "description_GEO": "Votre site est également préparé pour être compris et cité dans les réponses de ChatGPT, Google AI Overviews et Perplexity.",
-      "cta_primary": "Demander un devis gratuit",
-      "cta_secondary": "Découvrir mes services SEO",
-      "supporting_promise": "Réponse sous 24h · Pour les TPE, PME et e-commerçants en France",
+      "cta_primary": "Discuter d'une opportunité",
+      "cta_secondary": "Découvrir mes compétences SEO",
+      "supporting_promise": "Réponse sous 24 h · Poste étudiant, CDD ou CDI en France",
       "profile_name": "Mohammed Elghandori",
       "profile_role": "Consultant SEO technique, GEO & développeur web",
       "cta_more_about": "En savoir plus sur moi",
@@ -76,9 +76,10 @@
           "description": "ChatGPT, Google AI Overviews et Perplexity ne trouvent pas encore les informations et les preuves nécessaires pour citer votre entreprise."
         }
       ],
-      "solutionTitle": "Un audit utile doit déboucher sur des corrections concrètes",
-      "solutionDescription": "J’identifie les problèmes prioritaires, je vous explique leur impact et je réalise les corrections techniques SEO directement sur votre site lorsque vous le souhaitez.",
-      "cta": "Découvrir l’audit SEO technique"
+      "solutionTitle": "La technique et le contenu doivent travailler ensemble",
+      "solutionDescription": "Un audit technique repère les blocages d’exploration, d’indexation et de performance. Mais si les pages répondent mal aux recherches ou ne convainquent pas, l’optimisation du contenu, du GEO et des CTA est tout aussi importante.",
+      "cta": "Auditer la base technique",
+      "secondaryCta": "Optimiser le contenu et le GEO"
     },
     "services_section": {
       "sectionLabel": "Services SEO, GEO et développement web",
@@ -87,17 +88,26 @@
       "cta": "Voir le service et le tarif",
       "cards": [
         {
-          "title": "Améliorer mon site et ma visibilité",
-          "description": "Votre site existe, mais il est lent, mal indexé ou peu visible. J’assure l’optimisation SEO du site, les corrections techniques prioritaires et l’amélioration de sa présence sur Google et dans les réponses IA.",
+          "title": "Auditer et corriger mon site",
+          "description": "J’identifie puis corrige les problèmes d’exploration, d’indexation, de structure, de performance et de données structurées qui limitent votre visibilité.",
           "price": "Dès 450 €",
           "link": "/services/technical-seo",
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
           "imageAlt": "Illustration d’un audit SEO technique et de l’amélioration de la visibilité d’un site",
-          "proof": "Audit et corrections SEO · Google et moteurs IA"
+          "proof": "Audit SEO technique et corrections"
+        },
+        {
+          "title": "Améliorer mon contenu et mon référencement GEO",
+          "description": "J’aligne les intentions de recherche, les mots-clés, les contenus, le maillage interne et les CTA pour mieux répondre aux clients, à Google et aux moteurs IA.",
+          "price": "Sur devis",
+          "link": "/services/seo-content-optimization",
+          "image": "/cover/Designpro-cover.jpg",
+          "imageAlt": "Optimisation de contenu SEO, GEO, maillage interne et conversion",
+          "proof": "Contenu SEO · GEO · CRO"
         },
         {
           "title": "Créer un site professionnel optimisé SEO",
-          "description": "Un site vitrine WordPress ou Next.js, rapide et clair, pour présenter votre activité, rassurer vos prospects et recevoir des demandes de devis depuis Google.",
+          "description": "Je construis un site WordPress ou Next.js rapide et clair, avec les fondations techniques, le contenu et les parcours de conversion pensés ensemble.",
           "price": "Dès 1 200 €",
           "link": "/services/web-development",
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -112,25 +122,21 @@
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
           "imageAlt": "Exemple de boutique en ligne avec page produit et tableau de bord de gestion",
           "proof": "Réalisation · e-commerce et gestion de contenu"
-        },
-        {
-          "title": "Développer un outil web sur mesure",
-          "description": "Un tableau de bord ou une application métier pour gérer vos clients, vos réservations, vos dossiers ou vos indicateurs sans multiplier les outils.",
-          "price": "Sur devis",
-          "link": "/services/business-dashboards",
-          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "imageAlt": "Exemple de tableau de bord sur mesure pour suivre les demandes techniques d’un hôtel",
-          "proof": "Application métier et tableau de bord"
         }
       ]
     },
     "about_section": {
       "sectionLabel": "À propos de Mohammed Elghandori",
-      "highlight": "Consultant SEO et GEO freelance basé en France, j'aide les TPE, PME et e-commerçants à transformer leur site en un outil visible, rapide et utile pour leur activité.",
+      "highlight": "Consultant SEO et GEO basé en France, j'aide les TPE, PME et e-commerçants à transformer leur site en un outil visible, rapide et utile pour leur activité.",
       "paragraph1": "Je réunis le référencement naturel et le développement web dans une même prestation. Je peux identifier ce qui bloque votre visibilité, corriger directement la structure ou le code, puis construire les pages dont vos futurs clients ont réellement besoin.",
       "paragraph2": "Originaire du Maroc et installé en France, j'ai étudié à 1337 UM6P, au sein du réseau 42, et je poursuis actuellement une formation certifiante RNCP à 42 Paris. J'ai remporté la 1re place à Al Akhawayn et à l'UM6P Ben Guerir, puis la 2e place à l'UM6P Rabat. Ces expériences m'ont appris à résoudre des problèmes complexes, à travailler en équipe et à livrer dans des délais courts.",
       "cta": "Découvrir mon parcours",
-      "secondaryCta": "Parler de votre projet"
+      "secondaryCta": "Discuter d'une opportunité",
+      "marketLink": {
+        "intro": "Vous développez une activité au Maroc ?",
+        "label": "Découvrir mes services web et SEO pour le marché marocain",
+        "href": "/consultant-seo-developpeur-web-maroc"
+      }
     },
     "why_we_are_section": {
       "sectionLabel": "Pourquoi me choisir pour votre site et votre SEO ?",
@@ -143,22 +149,22 @@
           "linkLabel": "Découvrir l'audit SEO technique"
         },
         {
-          "title": "Une stratégie reliée à vos objectifs",
-          "description": "Les priorités dépendent de votre activité : obtenir des demandes de devis, vendre des produits ou rendre vos services plus faciles à trouver. Le site est construit autour de cet objectif.",
-          "href": "/portfolio",
-          "linkLabel": "Voir des projets concrets"
+          "title": "Un contenu conçu pour être trouvé et convaincre",
+          "description": "J’aligne l’intention de recherche, les mots-clés, les preuves, le maillage interne et les CTA pour relier visibilité SEO, recherche IA et conversion.",
+          "href": "/services/seo-content-optimization",
+          "linkLabel": "Voir l’optimisation de contenu SEO et GEO"
         },
         {
-          "title": "Un interlocuteur technique accessible",
-          "description": "Vous échangez directement avec la personne qui analyse, conçoit et développe votre site. Les choix sont expliqués clairement, sans multiplier les intermédiaires.",
-          "href": "/about",
-          "linkLabel": "En savoir plus sur mon parcours"
+          "title": "Un site construit comme un système complet",
+          "description": "Je peux réunir développement full-stack, SEO technique, contenu et CRO dès la conception, ou intervenir uniquement sur la couche qui bloque votre site actuel.",
+          "href": "/services/web-development",
+          "linkLabel": "Voir la création de site optimisé"
         },
         {
           "title": "Une base conçue pour évoluer",
           "description": "Performance mobile, accessibilité, sécurité et structure SEO sont intégrées dès le départ afin de faciliter les futures pages, langues, produits et campagnes.",
-          "href": "/services/web-development",
-          "linkLabel": "Voir le service développement web"
+          "href": "/services/ecommerce-development",
+          "linkLabel": "Voir le développement e-commerce"
         }
       ]
     },
@@ -209,8 +215,8 @@
       "extra": "Selon le projet, j'utilise également TypeScript, Tailwind CSS, MySQL, MongoDB, Docker et GitHub Actions. La stack finale est expliquée dans le devis : vous savez pourquoi chaque technologie est utilisée."
     },
     "contact_section": {
-      "sectionLabel": "Parlons de Votre Projet",
-      "description": "Besoin d'un site internet, d'une boutique en ligne, d'un audit SEO ou d'une application sur mesure ? Décrivez-moi votre projet : vous recevez un devis gratuit et détaillé sous 24h. Je suis disponible en freelance, pour des missions longues ou des contrats.",
+      "sectionLabel": "Parlons d'une opportunité",
+      "description": "Besoin de compétences en SEO technique, développement web, e-commerce ou applications sur mesure ? Présentez-moi votre besoin ou votre opportunité : je réponds sous 24 h. Je suis disponible pour un poste étudiant, un CDD ou un CDI.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Discuter sur WhatsApp",
       "email": "Email",
@@ -268,7 +274,7 @@
         },
         "servicesIntro": {
           "eyebrow": "Choisir selon votre besoin",
-          "heading": "Quatre services, avec une page dédiée pour chaque objectif",
+          "heading": "Cinq services, avec une page dédiée pour chaque objectif",
           "description": "Cette page vous aide à choisir. Chaque service dispose ensuite de sa propre page avec le périmètre, les livrables, le processus et les questions spécifiques au projet.",
           "pricingNote": "Tarifs indicatifs et négociables selon le périmètre, la plateforme existante et les délais."
         },
@@ -288,6 +294,23 @@
             ],
             "href": "/services/technical-seo",
             "linkLabel": "Découvrir l'audit SEO technique",
+            "featured": true
+          },
+          {
+            "id": "seo-content-optimization",
+            "problem": "Votre site est visible, mais ses pages convainquent peu ?",
+            "title": "Optimisation de contenu SEO, GEO et CRO",
+            "description": "J'aligne les intentions de recherche, les mots-clés, la structure, le maillage interne, les preuves et les appels à l'action pour améliorer la visibilité et la conversion.",
+            "image": "/cover/Designpro-cover.jpg",
+            "imageAlt": "Stratégie de contenu SEO, GEO, maillage interne et conversion",
+            "price": "Sur devis",
+            "items": [
+              "Carte intentions, mots-clés et pages",
+              "Contenu extractible et signaux E-E-A-T",
+              "Maillage interne et parcours de conversion"
+            ],
+            "href": "/services/seo-content-optimization",
+            "linkLabel": "Découvrir l'optimisation de contenu",
             "featured": true
           },
           {
@@ -351,6 +374,11 @@
               "need": "Mon site reçoit peu de trafic ou présente des erreurs dans Search Console.",
               "answer": "Commencez par un audit SEO technique.",
               "href": "/services/technical-seo"
+            },
+            {
+              "need": "Mes pages sont indexées, mais les contenus ciblent mal les recherches ou génèrent peu de demandes.",
+              "answer": "Optimisez le contenu, le maillage et les parcours de conversion.",
+              "href": "/services/seo-content-optimization"
             },
             {
               "need": "Mon entreprise a besoin d'un site clair pour présenter son offre et recevoir des demandes.",
@@ -451,11 +479,11 @@
           "landing": {
             "seo": {
               "title": "Création de site internet professionnel en France | Devsignpro",
-              "description": "Création et refonte de sites vitrines rapides, accessibles et optimisés pour le SEO. Développeur web freelance en France, dès 1 200 €.",
+              "description": "Création et refonte de sites vitrines rapides, accessibles et optimisés pour le SEO. Développeur web basé en France, dès 1 200 €.",
               "keywords": [
                 "création site internet professionnel",
                 "création site vitrine",
-                "développeur web freelance France",
+                "développeur web France",
                 "refonte site internet",
                 "site web optimisé SEO",
                 "création site internet TPE PME"
@@ -468,7 +496,7 @@
               "current": "Création de site internet"
             },
             "hero": {
-              "eyebrow": "Développeur web freelance basé en France",
+              "eyebrow": "Développeur web et SEO basé en France",
               "heading": "Création de site internet professionnel, rapide et optimisé pour le SEO",
               "description": "Je conçois des sites vitrines clairs et performants pour les TPE, PME et professionnels qui veulent mieux présenter leur offre, être trouvés sur Google et transformer davantage de visites en demandes de devis.",
               "primaryCta": "Demander un devis gratuit",
@@ -649,14 +677,14 @@
                   "label": "Audit SEO technique"
                 },
                 {
+                  "title": "Structurer les contenus, les mots-clés et les parcours de conversion",
+                  "href": "/services/seo-content-optimization",
+                  "label": "Optimisation SEO, GEO et CRO"
+                },
+                {
                   "title": "Créer une boutique Shopify, WooCommerce ou Next.js",
                   "href": "/services/ecommerce-development",
                   "label": "Boutique en ligne"
-                },
-                {
-                  "title": "Comparer toutes les prestations",
-                  "href": "/services",
-                  "label": "Voir les services"
                 }
               ]
             },
@@ -803,7 +831,7 @@
               "keywords": [
                 "audit SEO technique",
                 "consultant SEO technique",
-                "consultant SEO freelance France",
+                "consultant SEO France",
                 "optimisation SEO site web",
                 "correction problèmes indexation Google",
                 "Core Web Vitals",
@@ -818,7 +846,7 @@
               "current": "Audit SEO technique"
             },
             "hero": {
-              "eyebrow": "Consultant SEO technique freelance en France",
+              "eyebrow": "Consultant SEO technique en France",
               "heading": "Audit SEO technique et corrections pour votre site web",
               "description": "Votre site est lent, mal indexé ou difficile à faire progresser ? J'identifie ce qui bloque Google et vos utilisateurs, je hiérarchise les actions utiles et je peux appliquer les corrections directement dans le code.",
               "primaryCta": "Demander un audit SEO",
@@ -1018,6 +1046,11 @@
               "heading": "Votre besoin dépasse l'audit ?",
               "items": [
                 {
+                  "title": "Aligner les intentions, les contenus et les parcours de conversion",
+                  "href": "/services/seo-content-optimization",
+                  "label": "Optimisation SEO, GEO et CRO"
+                },
+                {
                   "title": "Créer ou refondre un site avec une base SEO solide",
                   "href": "/services/web-development",
                   "label": "Voir le développement web"
@@ -1026,11 +1059,6 @@
                   "title": "Améliorer une boutique en ligne ou préparer une migration",
                   "href": "/services/ecommerce-development",
                   "label": "Voir le développement e-commerce"
-                },
-                {
-                  "title": "Comparer tous les services disponibles",
-                  "href": "/services",
-                  "label": "Revenir au hub des services"
                 }
               ]
             },
@@ -1187,7 +1215,7 @@
               "keywords": [
                 "création boutique en ligne",
                 "création site e-commerce",
-                "développeur e-commerce freelance France",
+                "développeur e-commerce France",
                 "création boutique Shopify",
                 "création boutique WooCommerce",
                 "boutique en ligne optimisée SEO"
@@ -1530,7 +1558,7 @@
                 "développement application métier",
                 "tableau de bord sur mesure",
                 "dashboard métier",
-                "développeur application web freelance",
+                "développeur application web",
                 "espace client sur mesure"
               ]
             },
@@ -1922,7 +1950,7 @@
           "consultant SEO et développeur web",
           "développeur Next.js SEO",
           "consultant GEO France",
-          "renfort SEO technique freelance"
+          "renfort SEO technique"
         ]
       },
       "breadcrumb": {
@@ -1955,7 +1983,7 @@
         },
         {
           "label": "Disponibilité",
-          "value": "Mission freelance, temps partiel ou temps plein"
+          "value": "Poste étudiant, CDD ou CDI"
         }
       ],
       "approach": {
@@ -2031,7 +2059,7 @@
               "Signaux d'entité et de confiance",
               "Visibilité dans ChatGPT, AI Overviews et Perplexity"
             ],
-            "href": "/services/technical-seo",
+            "href": "/services/seo-content-optimization",
             "linkLabel": "Découvrir l'optimisation SEO et GEO"
           },
           {
@@ -2133,7 +2161,7 @@
         "items": [
           {
             "q": "Sous quelle forme pouvez-vous intervenir ?",
-            "a": "En mission freelance, à temps partiel ou à temps plein. Je travaille à distance depuis la France, avec un périmètre défini avant le démarrage."
+            "a": "Je suis disponible pour un poste étudiant, un CDD ou un CDI, avec un rôle centré sur le SEO technique, le développement web ou les deux."
           },
           {
             "q": "Que contient un audit SEO technique ?",
@@ -2168,7 +2196,7 @@
           },
           {
             "title": "Équipes et missions longues",
-            "text": "Collaboration à distance pour une mission freelance, un contrat ou un besoin régulier mêlant SEO technique, développement et suivi de production."
+            "text": "Intégration à une équipe pour un poste étudiant, un CDD ou un CDI mêlant SEO technique, développement et suivi de production."
           }
         ]
       },
@@ -2179,7 +2207,7 @@
       },
       "schema": {
         "jobTitle": "Consultant SEO technique et développeur web",
-        "description": "Consultant SEO technique et développeur web freelance basé en France, spécialisé dans l'indexation, les performances, la structure des sites et la recherche IA.",
+        "description": "Consultant SEO technique et développeur web basé en France, spécialisé dans l'indexation, les performances, la structure des sites et la recherche IA.",
         "currentEducation": "Cursus certifiant RNCP actuellement en cours à 42 Paris.",
         "knowsAbout": [
           "SEO technique",
@@ -2197,10 +2225,11 @@
     },
     "portfolio_page": {
       "seo": {
-        "title": "Portfolio Web, SEO & Applications Sur Mesure | Devsignpro",
-        "description": "Découvrez mes réalisations : sites web, SEO technique, boutiques en ligne, applications sur mesure et projets d’ingénierie.",
+        "title": "Portfolio SEO Technique & Développement Web | France",
+        "description": "Découvrez les réalisations de Mohammed Elghandori, consultant SEO technique et développeur web basé en France : sites, e-commerce et applications.",
         "keywords": [
-          "portfolio développeur web freelance",
+          "portfolio consultant SEO France",
+          "portfolio développeur web France",
           "réalisations développement web",
           "études de cas SEO",
           "projets Next.js",
@@ -2209,8 +2238,8 @@
         ]
       },
       "subtitle": "Portfolio & études de cas",
-      "heading": "Des projets web conçus pour résoudre un problème concret",
-      "description": "Découvrez une sélection de sites web, boutiques en ligne, applications sur mesure et projets d’ingénierie. Chaque fiche présente le besoin, les choix techniques et les résultats vérifiables lorsque des données sont disponibles.",
+      "heading": "Des projets SEO technique et développement web conçus pour résoudre des problèmes concrets",
+      "description": "Basé en France, je présente ici une sélection de sites web, boutiques en ligne, applications sur mesure et projets d’ingénierie. Chaque fiche explique le besoin, les choix techniques et les résultats vérifiables lorsque des données sont disponibles.",
       "viewCase": "Voir le projet",
       "cta": "Demander un devis gratuit",
       "cta_other": "Explorer Plus de Projets",
@@ -2264,7 +2293,7 @@
         "collaborationTitle": "Vous avez un projet similaire ?",
         "collaborationBody": "Présentez-moi votre besoin, votre site actuel ou l'outil à construire. Je vous réponds sous 24 h avec une première orientation et les prochaines étapes adaptées.",
         "technicalCollaborationTitle": "Vous cherchez un développeur capable d'aller au fond des problèmes ?",
-        "technicalCollaborationBody": "Ces projets montrent ma façon de raisonner, de construire et de tester. Je suis disponible pour une mission freelance, un contrat ou une collaboration avec une équipe technique.",
+        "technicalCollaborationBody": "Ces projets montrent ma façon de raisonner, de construire et de tester. Je suis disponible pour un poste étudiant, un CDD, un CDI ou une collaboration avec une équipe technique.",
         "technicalCtaLabel": "Discuter d'une mission",
         "overviewHeading": "Contexte",
         "breadcrumbAria": "Fil d'Ariane",
@@ -2357,7 +2386,7 @@
               "description": "Création de nutritia.co, une boutique Shopify de compléments alimentaires : thème sur mesure, quiz, abonnements et SEO technique avec données structurées.",
               "keywords": [
                 "création boutique Shopify",
-                "développeur Shopify freelance",
+                "développeur Shopify",
                 "boutique Shopify optimisée SEO",
                 "SEO e-commerce Shopify",
                 "thème Shopify sur mesure",
@@ -2911,18 +2940,18 @@
     "contact_page": {
       "seo": {
         "title": "Contact Consultant SEO & Développeur Web | Devsignpro",
-        "description": "Présentez votre besoin en SEO technique, site web, e-commerce ou application sur mesure. Devis gratuit et réponse sous 24 h.",
+        "description": "Contactez un consultant SEO technique et développeur web basé en France pour un poste étudiant, un CDD, un CDI ou un besoin web.",
         "keywords": [
-          "contact consultant SEO freelance",
+          "contact consultant SEO",
           "demander devis SEO",
           "devis création site web",
-          "contact développeur web freelance",
+          "contact développeur web",
           "devis boutique en ligne"
         ]
       },
-      "heading": "Parlons de votre visibilité et de votre projet web",
-      "description": "Expliquez-moi ce qui vous bloque ou ce que vous souhaitez construire : audit SEO technique, amélioration d'un site, boutique en ligne ou application sur mesure. Je vous réponds sous 24 h avec une première orientation claire.",
-      "heroCta": "Demander mon devis gratuit",
+      "heading": "Parlons d'une opportunité ou d'un besoin web",
+      "description": "Vous recrutez en SEO technique ou en développement web, ou vous avez un site à améliorer ? Présentez-moi le contexte et l'objectif. Je vous réponds sous 24 h avec une première orientation claire.",
+      "heroCta": "Me contacter",
       "benefitsLabel": "Informations sur la prise de contact",
       "formEyebrow": "Votre demande",
       "subtitle": "Expliquez-moi ce que vous souhaitez améliorer",
@@ -2932,15 +2961,15 @@
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "location": "France (heure de Paris)",
-      "sendMessage": "Demander mon devis gratuit",
+      "sendMessage": "Envoyer ma demande",
       "orWrite": "Vous préférez l'e-mail ?",
       "chooseWay": "Choisissez votre méthode préférée",
       "getInTouch": "Prenez contact",
       "quickResponses": {
         "items": [
           "Réponse sous 24 h",
-          "Devis gratuit et sans engagement",
-          "France et missions à distance"
+          "SEO technique et développement web",
+          "Poste étudiant, CDD ou CDI en France"
         ]
       },
       "channels": {
@@ -2979,12 +3008,12 @@
           "website": "Création ou refonte de site web",
           "ecommerce": "Boutique en ligne",
           "dashboard": "Application web ou dashboard sur mesure",
-          "collaboration": "Mission freelance ou contrat",
+          "collaboration": "Poste étudiant, CDD ou CDI",
           "other": "Autre / Je ne sais pas encore"
         },
         "copy": "Copier",
         "copied": "Copié !",
-        "availability": "Disponible pour de nouveaux projets",
+        "availability": "Disponible pour un poste étudiant, un CDD ou un CDI",
         "message": "Votre besoin",
         "messagePlaceholder": "Exemple : mon site est peu visible sur Google. Je souhaite identifier les problèmes techniques et obtenir un plan de corrections. Voici son adresse...",
         "successMessage": "Votre demande a bien été envoyée. Je vous répondrai sous 24 h.",
@@ -3014,8 +3043,8 @@
             "text": "Vous recevez les questions nécessaires, une première recommandation et la prochaine étape proposée."
           },
           {
-            "title": "Nous définissons le périmètre",
-            "text": "Si le besoin correspond à mes services, je prépare un devis clair avec les livrables, le délai et le prix."
+            "title": "Nous définissons la prochaine étape",
+            "text": "Selon votre besoin, nous organisons un entretien ou nous précisons le périmètre, les livrables et le calendrier."
           }
         ]
       },
@@ -3042,8 +3071,8 @@
         ]
       },
       "whyReachOut": {
-        "title": "Pourquoi travailler avec moi",
-        "subtitle": "Ce que vous pouvez attendre de notre collaboration",
+        "title": "Pourquoi me contacter",
+        "subtitle": "Ce que je peux apporter à votre équipe ou à votre projet",
         "reasons": [
           {
             "title": "SEO et développement réunis",
@@ -3217,10 +3246,10 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Consultant SEO Freelance en France | Devsignpro",
-        "description": "Consultant SEO technique et GEO freelance en France. J’optimise sites web et boutiques en ligne pour Google, ChatGPT et Perplexity. Devis sous 24h.",
+        "title": "Consultant SEO Technique en France | Devsignpro",
+        "description": "Consultant SEO technique et GEO en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT et Perplexity.",
         "keywords": [
-          "consultant seo freelance france",
+          "consultant seo france",
           "consultant seo technique",
           "consultant geo france",
           "audit seo technique",

@@ -11,31 +11,27 @@ interface FAQSectionProps {
   locale: Locale;
 }
 
-export default function FAQSection({ faqs, locale }: FAQSectionProps) {
+export default function FAQSection({ faqs }: FAQSectionProps) {
   if (!faqs?.length) return null;
-  const isRtl = locale === "ar";
 
   return (
-    <div
-      className="max-w-3xl mx-auto px-4 sm:px-6"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <div className="mx-auto max-w-3xl px-4 pb-10 sm:px-6 sm:pb-14">
       <ul className="space-y-3 sm:space-y-4 list-none p-0 m-0">
         {faqs.map((faq, idx) => (
           <li key={idx}>
             <details
-              className="group rounded-xl border border-border bg-card overflow-hidden open:border-primary/30 open:shadow-sm transition-colors duration-200"
+              className="group overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-colors duration-200 open:border-primary/30"
             >
-              <summary className="flex items-center justify-between gap-4 cursor-pointer p-4 sm:p-5 text-sm sm:text-base font-semibold text-foreground list-none hover:bg-muted/30 transition-colors">
+              <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-3 p-4 text-sm font-semibold text-foreground transition-colors hover:bg-muted/30 sm:min-h-16 sm:gap-4 sm:p-5 sm:text-base">
                 <span className="leading-snug">{faq.question}</span>
                 <span
-                  className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs group-open:rotate-180 transition-transform duration-200"
+                  className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs text-primary transition-transform duration-200 group-open:rotate-180"
                   aria-hidden="true"
                 >
                   ▼
                 </span>
               </summary>
-              <div className="px-4 sm:px-5 pb-4 sm:pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed border-t border-border/50 pt-3 sm:pt-4">
+              <div className="border-t border-border/50 px-4 pb-4 pt-3 text-sm leading-relaxed text-muted-foreground sm:px-5 sm:pb-5 sm:pt-4 sm:text-base">
                 {faq.answer}
               </div>
             </details>

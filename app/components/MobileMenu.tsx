@@ -122,11 +122,7 @@ export default function MobileMenu({ locale, t }: MobileMenuProps) {
               <div className="flex items-center justify-between bg-card p-5 rounded-2xl border border-border shadow-sm">
                 <div className="flex flex-col">
                   <span className="text-xs font-bold text-card-foreground">
-                    {locale == "en"
-                      ? "Language & Theme"
-                      : locale == "fr"
-                        ? "Langue et Thème"
-                        : "اللغة والسمة"}
+                    {locale === "fr" ? "Langue et Thème" : "Language & Theme"}
                   </span>
                 </div>
                 <div className="flex items-center gap-3">

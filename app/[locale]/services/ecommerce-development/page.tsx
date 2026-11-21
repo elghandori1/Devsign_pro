@@ -96,7 +96,7 @@ export default async function EcommerceDevelopmentPage({ params }: Props) {
       {
         "@type": "FAQPage",
         "@id": `${pageUrl}#faq`,
-        mainEntity: landing.faq.items.map((item) => ({
+        mainEntity: landing.faq.items.slice(0, 3).map((item) => ({
           "@type": "Question",
           name: item.q,
           acceptedAnswer: { "@type": "Answer", text: item.a },

@@ -357,7 +357,7 @@ export default function ServiceDetailLanding({
             <h2 id={`${headingId}-faq`} className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.faq.heading}</h2>
           </header>
           <div>
-            {landing.faq.items.map((item, index) => (
+            {landing.faq.items.slice(0, 3).map((item, index) => (
               <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
                   <h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3>

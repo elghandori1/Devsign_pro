@@ -5,7 +5,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   ArrowLeft,
-  ArrowRight,
   CalendarDays,
   Clock3,
   Tag,
@@ -75,16 +74,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const seoTitle =
     locale === "en"
       ? "How to Choose a Laptop in 2026 | Students & Business Owners"
-      : locale === "ar"
-        ? "كيفية اختيار لابتوب في 2026 | للطلاب وأصحاب الأعمال"
-        : "Comment choisir un laptop en 2026 | Étudiants et entrepreneurs";
+      : "Comment choisir un laptop en 2026 | Étudiants et entrepreneurs";
 
   const seoDescription =
     locale === "en"
       ? "Learn how to choose a laptop in 2026 for study or business. Compare CPU, RAM, SSD specs and learn how to inspect a used laptop before you buy."
-      : locale === "ar"
-        ? "دليلك الشامل لاختيار لابتوب في 2026 للدراسة والعمل. قارن المواصفات وتعلم كيفية فحص اللابتوب المستعمل قبل الشراء لضمان أفضل صفقة."
-        : "Apprenez à choisir le bon laptop en 2026. Comparez les specs et découvrez comment vérifier un PC portable d'occasion avant l'achat.";
+      : "Apprenez à choisir le bon laptop en 2026. Comparez les specs et découvrez comment vérifier un PC portable d'occasion avant l'achat.";
 
   return buildPageMetadata({
     locale,
@@ -231,10 +226,6 @@ export default async function BestLaptopGuide2026({ params }: Props) {
 
   if (!data || !article) notFound();
 
-  const isRtl = locale === "ar";
-  const Arr = isRtl ? ArrowRight : ArrowLeft;
-  const Chev = isRtl ? ArrowLeft : ChevronRight;
-
   // article.text = intro (no heading); text1..text10 = sections with headings
   const sectionBlocks = [
     article.text1,
@@ -261,8 +252,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
 
   const shareUrl = `${getBaseUrl()}/${locale}${ARTICLE_PATH}`;
   const baseUrl = getBaseUrl();
-  const langCode =
-    locale === "en" ? "en" : locale === "ar" ? "ar-MA" : "fr-FR";
+  const langCode = locale === "en" ? "en" : "fr-FR";
 
   const articleSchema = buildArticleSchema({
     type: "Article",
@@ -285,24 +275,22 @@ export default async function BestLaptopGuide2026({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name: locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        name: locale === "fr" ? "Accueil" : "Home",
         item: `${getBaseUrl()}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name: locale === "ar" ? "المقالات" : locale === "fr" ? "Articles" : "Articles",
+        name: "Articles",
         item: `${getBaseUrl()}/${locale}/articles`,
       },
       {
         "@type": "ListItem",
         position: 3,
         name:
-          locale === "ar"
-            ? "كيفية اختيار لابتوب في 2026"
-            : locale === "fr"
-              ? "Comment choisir un laptop en 2026"
-              : "How to Choose a Laptop in 2026",
+          locale === "fr"
+            ? "Comment choisir un laptop en 2026"
+            : "How to Choose a Laptop in 2026",
         item: shareUrl,
       },
     ],
@@ -310,42 +298,24 @@ export default async function BestLaptopGuide2026({ params }: Props) {
 
   // Labels
   const labels = {
-    back:
-      locale === "ar"
-        ? "الرجوع إلى المقالات"
-        : locale === "fr"
-          ? "Retour aux articles"
-          : "Back to articles",
-    home: locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
-    articles: locale === "ar" ? "المقالات" : locale === "fr" ? "Articles" : "Articles",
-    keyTakeaways:
-      locale === "ar" ? "أبرز النقاط" : locale === "fr" ? "Points clés" : "Key Takeaways",
-    contactme:
-      locale === "ar" ? "تواصل معي" : locale === "fr" ? "Contacter" : "Contact Me",
-    share: locale === "ar" ? "مشاركة" : locale === "fr" ? "Partager" : "Share",
-    allArticles:
-      locale === "ar"
-        ? "جميع المقالات"
-        : locale === "fr"
-          ? "Tous les articles"
-          : "All articles",
+    back: locale === "fr" ? "Retour aux articles" : "Back to articles",
+    home: locale === "fr" ? "Accueil" : "Home",
+    articles: "Articles",
+    keyTakeaways: locale === "fr" ? "Points clés" : "Key Takeaways",
+    contactme: locale === "fr" ? "Contacter" : "Contact Me",
+    share: locale === "fr" ? "Partager" : "Share",
+    allArticles: locale === "fr" ? "Tous les articles" : "All articles",
     relatedArticles:
-      locale === "ar"
-        ? "مقالات مفيدة أخرى"
-        : locale === "fr"
-          ? "Autres articles utiles"
-          : "Other Helpful Articles",
-    authorName: locale === "ar" ? "محمد الغنضوري" : "Mohammed Elghandori",
+      locale === "fr" ? "Autres articles utiles" : "Other Helpful Articles",
+    authorName: "Mohammed Elghandori",
     authorRole:
-      locale === "ar"
-        ? "مطور ويب Full-Stack وخبير SEO"
-        : locale === "fr"
-          ? "Développeur Web Full-Stack & Spécialiste SEO"
-          : "Full-Stack Web Developer & SEO Specialist",
+      locale === "fr"
+        ? "Développeur Web Full-Stack & Spécialiste SEO"
+        : "Full-Stack Web Developer & SEO Specialist",
   };
 
   return (
-    <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       {/* Structured Data */}
       <script
         type="application/ld+json"
@@ -371,7 +341,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
             </Link>
           </li>
           <li aria-hidden="true">
-            <Chev size={14} className={isRtl ? "rotate-180" : ""} />
+            <ChevronRight size={14} />
           </li>
           <li>
             <Link
@@ -382,17 +352,15 @@ export default async function BestLaptopGuide2026({ params }: Props) {
             </Link>
           </li>
           <li aria-hidden="true">
-            <Chev size={14} className={isRtl ? "rotate-180" : ""} />
+            <ChevronRight size={14} />
           </li>
           <li
             aria-current="page"
             className="text-foreground font-medium truncate max-w-50 sm:max-w-xs"
           >
-            {locale === "ar"
-              ? "كيفية اختيار لابتوب في 2026"
-              : locale === "fr"
-                ? "Comment choisir un laptop en 2026"
-                : "How to Choose a Laptop in 2026"}
+            {locale === "fr"
+              ? "Comment choisir un laptop en 2026"
+              : "How to Choose a Laptop in 2026"}
           </li>
         </ol>
       </nav>
@@ -404,7 +372,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
             href={`/${locale}/articles`}
             className="group inline-flex items-center gap-2 text-sm font-semibold text-primary hover:underline underline-offset-4"
           >
-            <Arr
+            <ArrowLeft
               size={16}
               aria-hidden="true"
               className="transition-transform duration-200 group-hover:-translate-x-0.5"
@@ -624,7 +592,7 @@ export default async function BestLaptopGuide2026({ params }: Props) {
             href={`/${locale}/articles`}
             className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
           >
-            <Arr size={16} aria-hidden="true" />
+            <ArrowLeft size={16} aria-hidden="true" />
             {labels.allArticles}
           </Link>
         </nav>

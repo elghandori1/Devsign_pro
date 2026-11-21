@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   BriefcaseBusiness,
   CalendarDays,
@@ -69,13 +68,6 @@ const FALLBACK_KEYWORDS: Record<Locale, string[]> = {
     "travailler en ligne France",
     "blog tech et business",
   ],
-  ar: [
-    "مقالات تطوير الويب المغرب",
-    "مدونة SEO المغرب",
-    "رؤى أتمتة الأعمال",
-    "العمل عبر الإنترنت في المغرب",
-    "مدونة تقنية وأعمال",
-  ],
 };
 
 const TOPIC_ICONS = [Code2, BriefcaseBusiness, Globe2] as const;
@@ -93,16 +85,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title =
     locale === "en"
       ? "Web Development, SEO & AI Articles | Devsignpro"
-      : locale === "ar"
-        ? "مقالات تطوير الويب وSEO والذكاء الاصطناعي | Devsignpro"
-        : "Articles Développement Web, SEO & IA | Devsignpro";
+      : "Articles Développement Web, SEO & IA | Devsignpro";
 
   const description =
     locale === "en"
       ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
-      : locale === "ar"
-        ? "مقالات عملية حول تطوير الويب، SEO التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأدوات التقنية الحديثة مكتوبة من تجربة مشاريع حقيقية."
-        : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.";
+      : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.";
 
   return buildPageMetadata({
     locale,
@@ -127,16 +115,12 @@ export default async function ArticlesPage({ params }: Props) {
 
   if (!data) return null;
 
-  const isRtl = locale === "ar";
-  const Arr = isRtl ? ArrowLeft : ArrowRight;
-
   const topics = data.topics ?? [];
   const articles = data.articles ?? [];
   const categoryChips = data.categoryChips ?? [];
 
   const baseUrl = getBaseUrl();
-  const langCode =
-    locale === "en" ? "en" : locale === "ar" ? "ar-MA" : "fr-FR";
+  const langCode = locale === "en" ? "en" : "fr-FR";
 
   const schema = {
     "@context": "https://schema.org",
@@ -149,9 +133,7 @@ export default async function ArticlesPage({ params }: Props) {
         description:
           locale === "en"
             ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
-            : locale === "ar"
-              ? "مقالات عملية حول تطوير الويب، SEO التقني، تحسين البحث بالذكاء الاصطناعي، Next.js، وأدوات التقنية الحديثة مكتوبة من تجربة مشاريع حقيقية."
-              : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.",
+            : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.",
         inLanguage: langCode,
         isPartOf: { "@id": `${baseUrl}/#website` },
         about: { "@id": `${baseUrl}/#person` },
@@ -202,19 +184,13 @@ export default async function ArticlesPage({ params }: Props) {
       {
         "@type": "ListItem",
         position: 1,
-        name:
-          locale === "ar" ? "الرئيسية" : locale === "fr" ? "Accueil" : "Home",
+        name: locale === "fr" ? "Accueil" : "Home",
         item: `${baseUrl}/${locale}`,
       },
       {
         "@type": "ListItem",
         position: 2,
-        name:
-          locale === "ar"
-            ? "المقالات"
-            : locale === "fr"
-              ? "Articles"
-              : "Articles",
+        name: "Articles",
         item: `${baseUrl}/${locale}/articles`,
       },
     ],
@@ -241,25 +217,7 @@ export default async function ArticlesPage({ params }: Props) {
               "I publish when I have a complete, useful guide from real work — not filler. Subscribe via the contact page if you want a specific topic covered next.",
           },
         ]
-      : locale === "ar"
-        ? [
-            {
-              question: "ما المواضيع التي تغطيها هذه المقالات؟",
-              answer:
-                "أكتب أدلة عملية من مشاريع حقيقية: تطوير الويب بـ Next.js، والـ SEO التقني وCore Web Vitals، وتحسين البحث بالذكاء الاصطناعي، ونصائح شراء اللابتوب للدراسة والبرمجة والأعمال.",
-            },
-            {
-              question: "هل المقالات موجّهة للأعمال في المغرب؟",
-              answer:
-                "نعم. المقالات التقنية تنطبق عالمياً، وأدلة الشراء مكتوبة للطلاب والمطورين وأصحاب الأعمال في المغرب وأسواق مشابهة بنصائح واضحة ومراعية للميزانية.",
-            },
-            {
-              question: "كم مرة تنشر مقالات جديدة؟",
-              answer:
-                "أنشر عندما يكون الدليل مكتملاً ومفيداً من عمل حقيقي — دون حشو. تواصل عبر صفحة الاتصال إذا أردت موضوعاً محدداً قادماً.",
-            },
-          ]
-        : [
+      : [
             {
               question: "Quels sujets abordez-vous dans ces articles ?",
               answer:
@@ -278,7 +236,7 @@ export default async function ArticlesPage({ params }: Props) {
           ];
 
   return (
-    <main dir={isRtl ? "rtl" : "ltr"} className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -341,17 +299,13 @@ export default async function ArticlesPage({ params }: Props) {
               className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:-translate-y-0.5"
             >
               {data.cta.button}
-              <Arr size={16} aria-hidden="true" />
+              <ArrowRight size={16} aria-hidden="true" />
             </Link>
             <a
               href="#articles"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-primary/40 hover:text-primary"
             >
-              {locale === "ar"
-                ? "تصفح المقالات"
-                : locale === "fr"
-                  ? "Explorer les articles"
-                  : "Browse articles"}
+              {locale === "fr" ? "Explorer les articles" : "Browse articles"}
             </a>
           </div>
         </div>
@@ -407,11 +361,9 @@ export default async function ArticlesPage({ params }: Props) {
             {data.articlesLabel}
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto">
-            {locale === "ar"
-              ? "ملاحظات عملية ودراسات قصيرة أشارك فيها ما أتعلمه من المشاريع، الأتمتة، والنمو الرقمي."
-              : locale === "fr"
-                ? "Des notes pratiques et des analyses courtes tirées de projets, d'automatisation et de croissance digitale."
-                : "Practical notes and short breakdowns from client work, automation, and digital growth."}
+            {locale === "fr"
+              ? "Des notes pratiques et des analyses courtes tirées de projets, d'automatisation et de croissance digitale."
+              : "Practical notes and short breakdowns from client work, automation, and digital growth."}
           </p>
         </div>
 
@@ -474,12 +426,10 @@ export default async function ArticlesPage({ params }: Props) {
                   </div>
                   <div>
                     <span className="inline-flex items-center gap-1.5 text-primary font-medium">
-                      {locale === "ar"
-                        ? "إكتشف المزيد"
-                        : locale === "fr"
-                          ? "Découvrir cet article"
-                          : "Explore This Articles"}
-                      <Arr size={16} aria-hidden="true" />
+                      {locale === "fr"
+                        ? "Découvrir cet article"
+                        : "Explore This Article"}
+                      <ArrowRight size={16} aria-hidden="true" />
                     </span>
                   </div>
                 </div>
@@ -497,11 +447,7 @@ export default async function ArticlesPage({ params }: Props) {
           id="articles-faq-heading"
           className="text-2xl sm:text-3xl font-bold mb-6 text-center"
         >
-          {locale === "ar"
-            ? "أسئلة شائعة"
-            : locale === "fr"
-              ? "Questions fréquentes"
-              : "Frequently asked questions"}
+          {locale === "fr" ? "Questions fréquentes" : "Frequently asked questions"}
         </h2>
         <ul className="space-y-3 list-none p-0 m-0">
           {faqs.map((faq) => (
@@ -547,7 +493,7 @@ export default async function ArticlesPage({ params }: Props) {
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-200 hover:-translate-y-0.5"
             >
               {data.cta.button}
-              <Arr size={16} aria-hidden="true" />
+              <ArrowRight size={16} aria-hidden="true" />
             </Link>
           </div>
         </div>

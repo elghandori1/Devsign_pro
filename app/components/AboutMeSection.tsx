@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Locale } from "@/i18n-config";
 import AboutMeImageSlider from "./AboutMeImageSlider";
 
@@ -10,6 +10,11 @@ interface AboutMeTranslations {
   paragraph2: string;
   cta: string;
   secondaryCta?: string;
+  marketLink?: {
+    intro: string;
+    label: string;
+    href: string;
+  };
 }
 
 interface AboutMeSectionProps {
@@ -23,13 +28,8 @@ export default function AboutMeSection({
   locale,
   headingId = "about-heading",
 }: AboutMeSectionProps) {
-  const isRtl = locale === "ar";
-  const Arrow = isRtl ? ArrowLeft : ArrowRight;
   return (
-    <div
-      className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <div className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
           <h2
@@ -60,7 +60,7 @@ export default function AboutMeSection({
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
               >
                 {translations.cta}
-                <Arrow size={17} aria-hidden="true" />
+                <ArrowRight size={17} aria-hidden="true" />
               </Link>
               {translations.secondaryCta ? (
                 <Link
@@ -71,6 +71,18 @@ export default function AboutMeSection({
                 </Link>
               ) : null}
             </div>
+            {translations.marketLink ? (
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground">
+                {translations.marketLink.intro}{" "}
+                <Link
+                  href={`/${locale}${translations.marketLink.href}`}
+                  className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary underline decoration-primary/35 underline-offset-4 hover:decoration-primary sm:min-h-0"
+                >
+                  {translations.marketLink.label}
+                  <ArrowRight size={15} aria-hidden="true" />
+                </Link>
+              </p>
+            ) : null}
           </div>
         </div>
       </div>

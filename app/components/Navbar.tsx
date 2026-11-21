@@ -16,7 +16,6 @@ type NavbarProps = {
 const CALL_LABEL: Record<Locale, string> = {
   en: "Call",
   fr: "Appeler le",
-  ar: "Call",
 };
 
 export default async function Navbar({ locale }: NavbarProps) {

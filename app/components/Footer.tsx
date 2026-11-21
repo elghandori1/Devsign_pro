@@ -86,15 +86,11 @@ const contacts = [
 export default function Footer({ footer, locale }: FooterProps) {
   if (!footer) return null;
 
-  const isRtl = locale === "ar";
   const year = new Date().getFullYear();
   const copyright = footer.copyright.replace("{year}", String(year));
 
   return (
-    <footer
-      dir={isRtl ? "rtl" : "ltr"}
-      className="border-t border-border bg-background hero-section-light"
-    >
+    <footer className="border-t border-border bg-background hero-section-light">
       <div className="max-w-7xl mx-auto px-8 sm:px-10 py-12 sm:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
           {/* ── Brand & Contact (NAP — local SEO) ── */}

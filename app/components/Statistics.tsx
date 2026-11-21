@@ -26,11 +26,9 @@ export default function Statistics({
   const icons = [Users, Clock, BarChart3, Shield];
 
   const headingText =
-    locale === "en"
-      ? "Key Business Metrics and Achievements"
-      : locale === "fr"
-        ? "Principaux indicateurs et réalisations"
-        : "المقاييس والإنجازات الرئيسية";
+    locale === "fr"
+      ? "Principaux indicateurs et réalisations"
+      : "Key Business Metrics and Achievements";
 
   return (
     <section

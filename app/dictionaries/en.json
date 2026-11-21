@@ -8,14 +8,14 @@
   },
   "homepage": {
     "hero": {
-      "availability": "Available for new projects",
-      "title_line1": "Freelance technical SEO consultant",
+      "availability": "Open to student roles, fixed-term or permanent contracts",
+      "title_line1": "Technical SEO consultant based in France",
       "title_highlight": "for websites and online stores",
       "description": "I find and fix the technical, structural and content issues that keep your website from being crawled, indexed and found by potential customers. If the platform itself is holding performance back, I can improve or rebuild it.",
       "description_GEO": "I also prepare your website for visibility in ChatGPT, Google AI Overviews and Perplexity through clear content, structured data and stronger trust signals.",
-      "cta_primary": "Get a Free Quote",
-      "cta_secondary": "Explore My SEO Services",
-      "supporting_promise": "Reply within 24 hours · Remote support for small businesses and e-commerce teams worldwide",
+      "cta_primary": "Discuss an opportunity",
+      "cta_secondary": "Explore my SEO skills",
+      "supporting_promise": "Reply within 24 hours · Student, fixed-term or permanent roles in France",
       "profile_name": "Mohammed Elghandori",
       "profile_role": "Technical SEO, AI Search & Web Development",
       "cta_more_about": "More About Me",
@@ -78,9 +78,10 @@
           "description": "ChatGPT, Google AI Overviews and Perplexity may not yet find the information and evidence needed to cite your business."
         }
       ],
-      "solutionTitle": "A useful audit must lead to concrete improvements",
-      "solutionDescription": "I identify the highest-priority problems, explain their impact and implement the technical SEO fixes directly on your website when required.",
-      "cta": "View the technical SEO audit"
+      "solutionTitle": "Technical foundations and content must work together",
+      "solutionDescription": "A technical audit finds crawling, indexing and performance blockers. But if pages miss the search intent or fail to persuade, content, AI-search and CTA optimization are equally important.",
+      "cta": "Audit the technical foundation",
+      "secondaryCta": "Optimize content and AI search"
     },
     "services_section": {
       "sectionLabel": "Technical SEO, AI Search & Web Development",
@@ -89,17 +90,26 @@
       "cta": "Explore this service",
       "cards": [
         {
-          "title": "Improve My Website's Search Visibility",
-          "description": "A technical SEO audit with hands-on fixes for crawling, indexing, site structure, internal links, schema and Core Web Vitals, plus preparation for AI search.",
+          "title": "Audit and Fix My Website",
+          "description": "I identify and fix crawling, indexing, architecture, performance and structured-data problems that limit search visibility.",
           "price": "From €450",
           "link": "/services/technical-seo",
           "image": "/images/services/technical-seo-audit-core-web-vitals-optimization.png",
           "imageAlt": "Illustration of a technical SEO audit and website visibility improvement",
-          "proof": "Technical SEO audit and implementation · Google and AI search"
+          "proof": "Technical SEO audit and fixes"
+        },
+        {
+          "title": "Improve My Content and AI Search Visibility",
+          "description": "I align search intent, keywords, content, internal links and CTAs so pages answer customers, Google and AI search systems more clearly.",
+          "price": "Custom quote",
+          "link": "/services/seo-content-optimization",
+          "image": "/cover/Designpro-cover.jpg",
+          "imageAlt": "SEO content optimization, AI search, internal linking and conversion",
+          "proof": "SEO content · AI search · CRO"
         },
         {
           "title": "Build a Search-Ready Business Website",
-          "description": "A fast WordPress or Next.js website that explains your offer clearly, supports organic search and turns qualified visitors into enquiries.",
+          "description": "I build a fast WordPress or Next.js website with technical foundations, content structure and conversion journeys planned together.",
           "price": "From €1,200",
           "link": "/services/web-development",
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
@@ -114,25 +124,21 @@
           "image": "/images/services/custom-ecommerce-development-online-store-morocco.jpeg",
           "imageAlt": "Example of an online store with a product page and management dashboard",
           "proof": "E-commerce · Shopify, WooCommerce or Next.js"
-        },
-        {
-          "title": "Build a Custom Web Application",
-          "description": "A dashboard or business application designed around your customers, bookings, operations or reporting requirements.",
-          "price": "On quote",
-          "link": "/services/business-dashboards",
-          "image": "/images/services/business-automation-ai-powered-systems-workflow-analytics-dashboard.jpeg",
-          "imageAlt": "Example of a custom dashboard for tracking hotel maintenance requests",
-          "proof": "Custom application and dashboard"
         }
       ]
     },
     "about_section": {
       "sectionLabel": "About Mohammed Elghandori",
-      "highlight": "A freelance technical SEO consultant and full-stack web developer based in France, helping small businesses and e-commerce teams improve websites that are difficult to find, slow or hard to grow.",
+      "highlight": "A technical SEO consultant and full-stack web developer based in France, helping small businesses and e-commerce teams improve websites that are difficult to find, slow or hard to grow.",
       "paragraph1": "I combine organic search strategy and web development in one service. I can identify what limits your visibility, fix the structure or code directly, and build the pages your potential customers actually need.",
       "paragraph2": "Originally from Morocco and now based in France, I studied at 1337 UM6P within the 42 Network and am currently continuing an RNCP-certified course at 42 Paris. I won first place at engineering competitions hosted by Al Akhawayn University and UM6P Ben Guerir, and second place at UM6P Rabat. These experiences strengthened my ability to solve complex problems, work with a team and deliver under tight deadlines.",
       "cta": "Read About My Background",
-      "secondaryCta": "Discuss Your Project"
+      "secondaryCta": "Discuss an opportunity",
+      "marketLink": {
+        "intro": "Growing a business in Morocco?",
+        "label": "Explore my web development and SEO services for Morocco",
+        "href": "/consultant-seo-developpeur-web-maroc"
+      }
     },
     "why_we_are_section": {
       "sectionLabel": "Why Work With Me on Your Website and SEO?",
@@ -145,22 +151,22 @@
           "linkLabel": "Explore the technical SEO audit"
         },
         {
-          "title": "Priorities Tied to Business Goals",
-          "description": "The plan reflects what the website needs to achieve: generate enquiries, sell products or make your services easier for qualified buyers to find.",
-          "href": "/portfolio",
-          "linkLabel": "View relevant project work"
+          "title": "Content Built to Be Found and Persuade",
+          "description": "I align search intent, keywords, evidence, internal links and CTAs to connect organic visibility, AI search and conversion.",
+          "href": "/services/seo-content-optimization",
+          "linkLabel": "Explore SEO content and AI search optimization"
         },
         {
-          "title": "One Technical Point of Contact",
-          "description": "You speak directly with the person auditing, planning and developing your website, without layers of account management or handoffs.",
-          "href": "/about",
-          "linkLabel": "Learn more about my background"
+          "title": "A Website Built as One Complete System",
+          "description": "I can combine full-stack development, technical SEO, content and CRO from the start, or improve only the layer holding an existing website back.",
+          "href": "/services/web-development",
+          "linkLabel": "Explore search-ready web development"
         },
         {
           "title": "A Foundation Built to Grow",
           "description": "Mobile performance, accessibility, security and search-friendly structure are built in so future pages, products, languages and campaigns are easier to add.",
-          "href": "/services/web-development",
-          "linkLabel": "Explore web development"
+          "href": "/services/ecommerce-development",
+          "linkLabel": "Explore e-commerce development"
         }
       ]
     },
@@ -211,8 +217,8 @@
       "extra": "I also work with TypeScript, Tailwind CSS, MySQL, MongoDB, Docker, GitHub Actions, and other modern tools to build fast, secure, and scalable digital solutions."
     },
     "contact_section": {
-      "sectionLabel": "Let's Talk About Your Project",
-      "description": "Need technical SEO fixes, a stronger website, an online store or a custom application? Describe the project and receive a free, detailed quote within 24 hours. Remote freelance projects, longer engagements and contract work are welcome.",
+      "sectionLabel": "Let's discuss an opportunity",
+      "description": "Need technical SEO, web development, e-commerce or custom application skills? Share the role or requirement and I will reply within 24 hours. I am open to student roles, fixed-term and permanent contracts.",
       "whatsapp": "WhatsApp",
       "whatsappCta": "Chat on WhatsApp",
       "email": "Email",
@@ -243,10 +249,10 @@
       "hub": {
         "seo": {
           "title": "Technical SEO & Web Development Services | Devsignpro",
-          "description": "Technical SEO audits, website optimization, web development, e-commerce and custom applications from a France-based freelance specialist.",
+          "description": "Technical SEO audits, website optimization, web development, e-commerce and custom applications from a France-based specialist.",
           "keywords": [
             "technical SEO and web development services",
-            "freelance technical SEO consultant",
+            "technical SEO consultant France",
             "website SEO optimization services",
             "SEO friendly web development",
             "ecommerce development services",
@@ -270,7 +276,7 @@
         },
         "servicesIntro": {
           "eyebrow": "Choose by need",
-          "heading": "Four services, each with a focused detail page",
+          "heading": "Five services, each with a focused detail page",
           "description": "Use this page to choose the right direction. Each service page then explains its scope, deliverables, process and project-specific questions.",
           "pricingNote": "Guide prices are negotiable and depend on scope, the existing platform and delivery requirements."
         },
@@ -290,6 +296,23 @@
             ],
             "href": "/services/technical-seo",
             "linkLabel": "Explore technical SEO audits",
+            "featured": true
+          },
+          {
+            "id": "seo-content-optimization",
+            "problem": "Your site is visible, but its pages do not persuade?",
+            "title": "SEO content optimization, AI search and CRO",
+            "description": "I align search intent, keywords, structure, internal links, evidence and calls to action to improve visibility and conversion.",
+            "image": "/cover/Designpro-cover.jpg",
+            "imageAlt": "SEO content strategy, AI search optimization, internal linking and conversion",
+            "price": "Custom quote",
+            "items": [
+              "Intent, keyword and page mapping",
+              "Extractable content and E-E-A-T signals",
+              "Internal links and conversion journeys"
+            ],
+            "href": "/services/seo-content-optimization",
+            "linkLabel": "Explore content optimization",
             "featured": true
           },
           {
@@ -353,6 +376,11 @@
               "need": "My site gets little organic traffic or shows errors in Search Console.",
               "answer": "Start with a technical SEO audit.",
               "href": "/services/technical-seo"
+            },
+            {
+              "need": "My pages are indexed, but the content misses search intent or generates few enquiries.",
+              "answer": "Optimize the content, internal links and conversion journey.",
+              "href": "/services/seo-content-optimization"
             },
             {
               "need": "My business needs a clear website to explain its offer and generate enquiries.",
@@ -452,10 +480,10 @@
           "image": "/images/services/secure-seo-optimized-website-development-responsive-design-business-growth.jpeg",
           "landing": {
             "seo": {
-              "title": "Freelance Web Developer for SEO-Friendly Websites | Devsignpro",
+              "title": "Web Developer for SEO-Friendly Websites | Devsignpro",
               "description": "Professional website design and development for small businesses worldwide. Fast, accessible, SEO-ready websites from €1,200.",
               "keywords": [
-                "freelance web developer",
+                "web developer France",
                 "professional website development",
                 "small business website developer",
                 "SEO friendly website development",
@@ -470,7 +498,7 @@
               "current": "Web development"
             },
             "hero": {
-              "eyebrow": "Freelance web developer · Remote worldwide",
+              "eyebrow": "Web developer and SEO specialist based in France",
               "heading": "Professional websites built for search visibility and enquiries",
               "description": "I design and develop fast business websites for small companies, independent professionals and agencies that need to explain their offer clearly, earn trust and turn more visits into qualified enquiries.",
               "primaryCta": "Get a Free Quote",
@@ -651,14 +679,14 @@
                   "label": "Technical SEO audit"
                 },
                 {
+                  "title": "Structure content, keywords and conversion journeys",
+                  "href": "/services/seo-content-optimization",
+                  "label": "SEO content, AI search and CRO"
+                },
+                {
                   "title": "Build a Shopify, WooCommerce or Next.js store",
                   "href": "/services/ecommerce-development",
                   "label": "Online store development"
-                },
-                {
-                  "title": "Compare all available services",
-                  "href": "/services",
-                  "label": "View all services"
                 }
               ]
             },
@@ -800,10 +828,10 @@
         "technical_seo": {
           "landing": {
             "seo": {
-              "title": "Freelance Technical SEO Consultant | Audits & Fixes",
+              "title": "Technical SEO Consultant | Audits & Fixes",
               "description": "Technical SEO audits from €450. Fix crawling, indexing, performance, architecture and schema issues with hands-on implementation available.",
               "keywords": [
-                "freelance technical SEO consultant",
+                "technical SEO consultant",
                 "technical SEO audit service",
                 "website SEO optimization service",
                 "technical SEO fixes",
@@ -820,7 +848,7 @@
               "current": "Technical SEO"
             },
             "hero": {
-              "eyebrow": "Freelance technical SEO consultant based in France",
+              "eyebrow": "Technical SEO consultant based in France",
               "heading": "Technical SEO audits and fixes for websites that should perform better",
               "description": "Is your website slow, poorly indexed or difficult to grow? I identify what is holding search engines and users back, prioritize the work that matters and can implement the fixes directly in the code.",
               "primaryCta": "Request a Technical SEO Audit",
@@ -1020,6 +1048,11 @@
               "heading": "Need more than an audit?",
               "items": [
                 {
+                  "title": "Align search intent, content and conversion journeys",
+                  "href": "/services/seo-content-optimization",
+                  "label": "SEO content, AI search and CRO"
+                },
+                {
                   "title": "Build or redesign a website with strong SEO foundations",
                   "href": "/services/web-development",
                   "label": "Explore web development"
@@ -1028,11 +1061,6 @@
                   "title": "Improve an online store or prepare a migration",
                   "href": "/services/ecommerce-development",
                   "label": "Explore e-commerce development"
-                },
-                {
-                  "title": "Compare every available service",
-                  "href": "/services",
-                  "label": "Return to the services hub"
                 }
               ]
             },
@@ -1189,7 +1217,7 @@
               "keywords": [
                 "online store development",
                 "ecommerce website developer",
-                "freelance ecommerce developer",
+                "ecommerce developer",
                 "Shopify store development",
                 "WooCommerce development",
                 "SEO friendly ecommerce website"
@@ -1202,7 +1230,7 @@
               "current": "Online store development"
             },
             "hero": {
-              "eyebrow": "Freelance e-commerce developer · Remote worldwide",
+              "eyebrow": "E-commerce developer based in France",
               "heading": "Online stores built for clear product discovery and confident checkout",
               "description": "I build and redesign Shopify, WooCommerce and Next.js stores for brands and retailers that need clear product pages, secure payments, a smooth mobile journey and a technical foundation ready for organic search.",
               "primaryCta": "Get a Free Quote",
@@ -1532,7 +1560,7 @@
                 "business dashboard development",
                 "custom internal tools",
                 "client portal development",
-                "freelance full stack developer",
+                "full stack developer",
                 "custom admin dashboard"
               ]
             },
@@ -1921,7 +1949,7 @@
           "Devsignpro",
           "Mohammed Elghandori SEO consultant",
           "technical SEO consultant and web developer",
-          "freelance technical SEO developer",
+          "technical SEO developer",
           "Next.js SEO consultant",
           "technical SEO consultant for agencies",
           "AI search optimization consultant"
@@ -1957,7 +1985,7 @@
         },
         {
           "label": "Availability",
-          "value": "Freelance, part-time or full-time"
+          "value": "Student role, fixed-term or permanent contract"
         }
       ],
       "approach": {
@@ -2033,7 +2061,7 @@
               "Entity and trust signals",
               "Visibility in ChatGPT, AI Overviews and Perplexity"
             ],
-            "href": "/services/technical-seo",
+            "href": "/services/seo-content-optimization",
             "linkLabel": "Explore SEO and AI search optimization"
           },
           {
@@ -2135,7 +2163,7 @@
         "items": [
           {
             "q": "How can we work together?",
-            "a": "On a freelance project, part-time or full-time. I work remotely from France, with the scope agreed before the work starts."
+            "a": "I am open to a student role, a fixed-term contract or a permanent position focused on technical SEO, web development or both."
           },
           {
             "q": "What does a technical SEO audit include?",
@@ -2170,7 +2198,7 @@
           },
           {
             "title": "Teams and longer engagements",
-            "text": "Remote collaboration for freelance projects, contracts or ongoing requirements combining technical SEO, development and production follow-up."
+            "text": "Joining a team through a student role, fixed-term contract or permanent position combining technical SEO, development and production support."
           }
         ]
       },
@@ -2181,7 +2209,7 @@
       },
       "schema": {
         "jobTitle": "Technical SEO consultant and web developer",
-        "description": "Freelance technical SEO consultant and web developer based in France, specializing in indexing, web performance, site architecture and AI search.",
+        "description": "Technical SEO consultant and web developer based in France, specializing in indexing, web performance, site architecture and AI search.",
         "currentEducation": "RNCP-certified course currently in progress at 42 Paris.",
         "knowsAbout": [
           "Technical SEO",
@@ -2199,10 +2227,11 @@
     },
     "portfolio_page": {
       "seo": {
-        "title": "Web Development, SEO & Custom App Portfolio | Devsignpro",
-        "description": "Explore selected websites, technical SEO work, online stores, custom applications and engineering projects by Devsignpro.",
+        "title": "Technical SEO & Web Development Portfolio | France",
+        "description": "Explore work by Mohammed Elghandori, a technical SEO consultant and web developer based in France: websites, ecommerce and custom applications.",
         "keywords": [
-          "freelance web developer portfolio",
+          "technical SEO consultant portfolio",
+          "web developer portfolio France",
           "web development case studies",
           "technical SEO case studies",
           "Next.js projects",
@@ -2211,8 +2240,8 @@
         ]
       },
       "subtitle": "Portfolio & case studies",
-      "heading": "Web projects built to solve a real problem",
-      "description": "Explore selected websites, online stores, custom applications and engineering projects. Each project page explains the need, implementation decisions and verified outcomes when reliable data is available.",
+      "heading": "Technical SEO and web development projects built to solve real problems",
+      "description": "Based in France, I present selected websites, online stores, custom applications and engineering projects. Each page explains the need, implementation decisions and verified outcomes when reliable data is available.",
       "viewCase": "View project",
       "cta": "Get a Free Quote",
       "cta_other": "Explore More Work",
@@ -2266,7 +2295,7 @@
         "collaborationTitle": "Planning a similar project?",
         "collaborationBody": "Tell me about your goal, current website or the application you need to build. I will reply within 24 hours with an initial direction and suitable next steps.",
         "technicalCollaborationTitle": "Looking for a developer who can solve problems below the surface?",
-        "technicalCollaborationBody": "These projects show how I reason, build and test. I am available for freelance work, contracts or collaboration with an engineering team.",
+        "technicalCollaborationBody": "These projects show how I reason, build and test. I am available for student roles, fixed-term or permanent contracts, and collaboration with an engineering team.",
         "technicalCtaLabel": "Discuss a role or project",
         "overviewHeading": "Context",
         "breadcrumbAria": "Breadcrumb",
@@ -2359,7 +2388,7 @@
               "description": "How I built nutritia.co, a Shopify supplements store: custom theme, product quiz, subscriptions and technical SEO with structured data.",
               "keywords": [
                 "Shopify store development",
-                "freelance Shopify developer",
+                "Shopify developer",
                 "SEO optimized Shopify store",
                 "Shopify ecommerce SEO",
                 "custom Shopify theme",
@@ -2913,18 +2942,18 @@
     "contact_page": {
       "seo": {
         "title": "Contact a Technical SEO & Web Consultant | Devsignpro",
-        "description": "Discuss your technical SEO, website, e-commerce or custom application project. Get a free quote and a response within 24 hours.",
+        "description": "Contact a technical SEO consultant and web developer based in France about a student role, fixed-term contract, permanent position or web requirement.",
         "keywords": [
           "contact technical SEO consultant",
           "request SEO quote",
           "website development quote",
-          "hire freelance web developer",
+          "hire web developer",
           "ecommerce development quote"
         ]
       },
-      "heading": "Let's discuss your visibility and web project",
-      "description": "Tell me what is holding you back or what you need to build: a technical SEO audit, website improvements, an online store or a custom application. I will reply within 24 hours with a clear initial direction.",
-      "heroCta": "Request my free quote",
+      "heading": "Let's discuss a role or web requirement",
+      "description": "Are you hiring for technical SEO or web development, or do you have a website that needs improvement? Share the context and objective. I will reply within 24 hours with a clear next step.",
+      "heroCta": "Contact me",
       "benefitsLabel": "Contact information",
       "formEyebrow": "Your request",
       "subtitle": "Tell me what you want to improve",
@@ -2934,15 +2963,15 @@
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "location": "France (CET)",
-      "sendMessage": "Request my free quote",
+      "sendMessage": "Send my request",
       "orWrite": "Prefer email?",
       "chooseWay": "Choose your preferred way",
       "getInTouch": "Get in touch",
       "quickResponses": {
         "items": [
           "Response within 24 hours",
-          "Free, no-obligation quote",
-          "France and remote projects"
+          "Technical SEO and web development",
+          "Student, fixed-term or permanent roles in France"
         ]
       },
       "channels": {
@@ -2981,12 +3010,12 @@
           "website": "Website creation or redesign",
           "ecommerce": "Online store",
           "dashboard": "Custom web application or dashboard",
-          "collaboration": "Freelance mission or contract",
+          "collaboration": "Student role, fixed-term or permanent contract",
           "other": "Other / Not sure yet"
         },
         "copy": "Copy",
         "copied": "Copied!",
-        "availability": "Available for new projects",
+        "availability": "Open to student, fixed-term or permanent roles",
         "message": "What do you need?",
         "messagePlaceholder": "Example: my website receives little visibility from Google. I need to identify technical issues and receive a prioritized correction plan. Here is the URL...",
         "successMessage": "Your request has been sent. I will reply within 24 hours.",
@@ -3016,8 +3045,8 @@
             "text": "You receive any necessary questions, an initial recommendation and the proposed next step."
           },
           {
-            "title": "We define the scope",
-            "text": "If the requirement matches my services, I prepare a clear quote covering deliverables, timeline and price."
+            "title": "We define the next step",
+            "text": "Depending on the requirement, we arrange an interview or clarify the scope, deliverables and timeline."
           }
         ]
       },
@@ -3044,8 +3073,8 @@
         ]
       },
       "whyReachOut": {
-        "title": "Why Work With Me",
-        "subtitle": "What you can expect from our collaboration",
+        "title": "Why contact me",
+        "subtitle": "What I can contribute to your team or project",
         "reasons": [
           {
             "title": "SEO and development together",
@@ -3219,12 +3248,12 @@
   "SEO_content": {
     "layout_page": {
       "generateMetadata": {
-        "title": "Freelance Technical SEO & AI Search Consultant | Devsignpro",
-        "description": "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide fix indexing, performance and visibility. Free quote.",
+        "title": "Technical SEO & AI Search Consultant | Devsignpro",
+        "description": "Technical SEO and AI search consultant based in France, helping businesses improve indexing, performance and visibility.",
         "keywords": [
-          "freelance technical seo consultant",
+          "technical seo consultant France",
           "technical seo consultant",
-          "technical seo freelancer",
+          "technical seo specialist",
           "technical seo audit",
           "website seo optimization",
           "technical seo fixes",

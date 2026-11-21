@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import type { Locale } from "@/i18n-config";
 
 interface ServiceCard {
@@ -32,15 +32,10 @@ export default function ServicesGrid({
   locale,
   headingId = "services-heading",
 }: ServicesGridProps) {
-  const isRtl = locale === "ar";
-  const Arrow = isRtl ? ArrowLeft : ArrowRight;
   const cards = sectionData.cards ?? [];
 
   return (
-    <div
-      className="px-4 pb-8 pt-14 sm:px-6 sm:pb-10 sm:pt-16 lg:pt-20"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <div className="px-4 pb-8 pt-14 sm:px-6 sm:pb-10 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
           <h2
@@ -96,9 +91,9 @@ export default function ServicesGrid({
                     aria-hidden="true"
                   >
                     {sectionData.cta}
-                    <Arrow
+                    <ArrowRight
                       size={16}
-                      className="transition-transform duration-300 group-hover:translate-x-1 rtl:group-hover:-translate-x-1"
+                      className="transition-transform duration-300 group-hover:translate-x-1"
                     />
                   </span>
                 </div>

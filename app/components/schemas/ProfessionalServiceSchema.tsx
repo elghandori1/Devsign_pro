@@ -2,7 +2,7 @@
 import infos from "@/app/dictionaries/global.json";
 import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
 
-type SchemaLocale = "en" | "fr" | "ar";
+type SchemaLocale = "en" | "fr";
 
 interface Props {
   baseUrl: string;
@@ -22,7 +22,6 @@ const SERVICES: {
     name: {
       en: "Website development (WordPress or Next.js)",
       fr: "Création de site internet (WordPress ou Next.js)",
-      ar: "تطوير المواقع (WordPress أو Next.js)",
     },
   },
   {
@@ -31,7 +30,6 @@ const SERVICES: {
     name: {
       en: "E-commerce development (Shopify, WooCommerce or Next.js)",
       fr: "Création de boutique en ligne (Shopify, WooCommerce ou Next.js)",
-      ar: "تطوير المتاجر الإلكترونية (Shopify أو WooCommerce أو Next.js)",
     },
   },
   {
@@ -40,7 +38,13 @@ const SERVICES: {
     name: {
       en: "Technical SEO audit and optimization",
       fr: "Audit et optimisation SEO technique",
-      ar: "تدقيق وتحسين SEO التقني",
+    },
+  },
+  {
+    path: "/services/seo-content-optimization",
+    name: {
+      en: "SEO content optimization, AI search and CRO",
+      fr: "Optimisation de contenu SEO, GEO et CRO",
     },
   },
   {
@@ -48,7 +52,6 @@ const SERVICES: {
     name: {
       en: "Custom web applications and business dashboards",
       fr: "Applications web et tableaux de bord sur mesure",
-      ar: "لوحات تحكم وأتمتة مخصصة للأعمال",
     },
   },
 ];
@@ -58,8 +61,7 @@ export function ProfessionalServiceSchema({
   locale,
   description,
 }: Props) {
-  const lang: SchemaLocale =
-    locale === "fr" || locale === "ar" ? locale : "en";
+  const lang: SchemaLocale = locale === "fr" ? "fr" : "en";
 
   const schema = {
     "@context": "https://schema.org",
@@ -68,7 +70,7 @@ export function ProfessionalServiceSchema({
     name: "Devsignpro",
     url: `${baseUrl}/${lang}`,
     description,
-    inLanguage: lang === "fr" ? "fr-FR" : lang === "ar" ? "ar" : "en",
+    inLanguage: lang === "fr" ? "fr-FR" : "en",
     logo: `${baseUrl}/logo/devsignpro-logo.jpg`,
     image: `${baseUrl}/cover/Designpro-cover.jpg`,
     founder: { "@id": `${baseUrl}/#person` },
@@ -113,8 +115,7 @@ export function ProfessionalServiceSchema({
           "@type": "Service",
           name: service.name[lang],
           url: `${baseUrl}/${lang}${service.path}`,
-          inLanguage:
-            lang === "fr" ? "fr-FR" : lang === "ar" ? "ar" : "en",
+          inLanguage: lang === "fr" ? "fr-FR" : "en",
           provider: { "@id": `${baseUrl}/#business` },
         },
         ...(service.minPrice

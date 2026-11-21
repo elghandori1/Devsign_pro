@@ -43,6 +43,18 @@ const nextConfig: NextConfig = {
 	// crawled/indexed — consolidates all SEO signals on the new URLs.
 	async redirects() {
 		return [
+			// The Morocco market page has French and English equivalents. Bare
+			// requests resolve to the French page; the retired Arabic URL does too.
+			{
+				source: "/consultant-seo-developpeur-web-maroc",
+				destination: "/fr/consultant-seo-developpeur-web-maroc",
+				permanent: true,
+			},
+			{
+				source: "/ar/consultant-seo-developpeur-web-maroc",
+				destination: "/en/consultant-seo-developpeur-web-maroc",
+				permanent: true,
+			},
 			// Both retired guides were consolidated into the buying and inspection guide.
 			...["best-laptop-guide-2026", "how-to-check-used-laptop-2026"].flatMap(
 				(slug) => [

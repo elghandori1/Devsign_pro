@@ -8,7 +8,6 @@ import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 const localeLabels: Record<Locale, string> = {
   en: "EN",
   fr: "FR",
-  ar: "AR",
 };
 
 function localePath(pathname: string | null, locale: Locale) {

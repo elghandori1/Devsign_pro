@@ -29,6 +29,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			priority: 0.7,
 		},
 		{
+			path: "/services/seo-content-optimization",
+			changeFrequency: "monthly" as const,
+			priority: 0.7,
+		},
+		{
 			path: "/services/ecommerce-development",
 			changeFrequency: "monthly" as const,
 			priority: 0.7,
@@ -79,6 +84,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			})),
 	);
 
+	const moroccoMarketPath = "/consultant-seo-developpeur-web-maroc";
+	const moroccoFrenchUrl = `${baseUrl}/fr${moroccoMarketPath}`;
+	const moroccoEnglishUrl = `${baseUrl}/en${moroccoMarketPath}`;
+	const moroccoMarketEntries: MetadataRoute.Sitemap = [moroccoFrenchUrl, moroccoEnglishUrl].map((url) => ({
+		url,
+		alternates: {
+			languages: {
+				"fr-MA": moroccoFrenchUrl,
+				"en-MA": moroccoEnglishUrl,
+				"x-default": moroccoEnglishUrl,
+			},
+		},
+		changeFrequency: "monthly" as const,
+		priority: 0.8,
+	}));
+
 	const dict = await getDictionary(i18n.defaultLocale);
 	const portfolioProjects = flattenPortfolioProjects<{ href?: string }>(
 		dict.pages?.portfolio_page?.projects,
@@ -99,5 +120,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		},
 	);
 
-	return [...staticEntries, ...articleEntries, ...portfolioEntries];
+	return [...staticEntries, ...articleEntries, ...moroccoMarketEntries, ...portfolioEntries];
 }

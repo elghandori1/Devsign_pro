@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, CalendarDays, Clock3, Tag } from "lucide-react";
+import { ArrowRight, CalendarDays, Clock3, Tag } from "lucide-react";
 import { Locale } from "@/i18n-config";
 
 export type ArticleCardItem = {
@@ -24,19 +24,12 @@ export default function ArticlesSection({
   articles,
   locale,
 }: ArticlesSectionProps) {
-  const isRtl = locale === "ar";
-  const Arr = isRtl ? ArrowLeft : ArrowRight;
-
   if (!articles.length) {
     return null;
   }
 
   return (
-    <section
-      id="articles"
-      className="pb-2 transition-colors duration-300"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <section id="articles" className="pb-2 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8 sm:mb-10">
           <p className="mt-3 text-sm sm:text-base text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -91,12 +84,10 @@ export default function ArticlesSection({
 
                   <div>
                     <span className="inline-flex items-center gap-1.5 text-primary font-medium">
-                      {locale === "ar"
-                        ? "إكتشف المزيد"
-                        : locale === "fr"
-                          ? "Découvrir cet article"
-                          : "Explore This Articles"}
-                      <Arr size={16} aria-hidden="true" />
+                      {locale === "fr"
+                        ? "Découvrir cet article"
+                        : "Explore This Article"}
+                      <ArrowRight size={16} aria-hidden="true" />
                     </span>
                   </div>
                 </div>

@@ -1,6 +1,6 @@
 # Devsignpro
 
-> Freelance Technical SEO and AI Search Optimization consultant based in France, working remotely with businesses worldwide. Originally from Morocco and operating under the Devsignpro brand. Combines hands-on Technical SEO with WordPress, Next.js, Shopify, WooCommerce and custom web development.
+> Technical SEO and AI Search Optimization consultant based in France. Originally from Morocco and operating under the Devsignpro brand. Combines hands-on Technical SEO with WordPress, Next.js, Shopify, WooCommerce and custom web development, and is open to student roles, fixed-term contracts and permanent positions.
 
 Mohammed Elghandori (Devsignpro) helps small businesses and e-commerce teams fix crawling, indexing, structure and performance issues, then improve or rebuild the website when its technical foundation limits results. Work can also prepare content and site structure for retrieval by ChatGPT, Google AI Overviews, Perplexity and other AI search systems.
 
@@ -16,11 +16,14 @@ Contact: devsignprofessional@gmail.com | Phone: +33 7 53 23 67 69 | WhatsApp: +2
 - [Services](https://devsignpro.com/en/services): Full service catalog with FAQs for AEO
 - [Web Development](https://devsignpro.com/en/services/web-development): Custom Next.js websites and landing pages
 - [Technical SEO](https://devsignpro.com/en/services/technical-seo): Technical audits, Core Web Vitals, and indexability
+- [SEO Content Optimization](https://devsignpro.com/en/services/seo-content-optimization): Search intent, keyword mapping, internal linking, E-E-A-T signals, AI-search retrieval and CRO
 - [E-commerce Development](https://devsignpro.com/en/services/ecommerce-development): Online stores built with Shopify, WooCommerce or custom Next.js
 - [Business Dashboards](https://devsignpro.com/en/services/business-dashboards): Custom dashboards and business applications
 - [Portfolio](https://devsignpro.com/en/portfolio): Selected client and personal projects
 - [Contact](https://devsignpro.com/en/contact): Hire / project inquiry
 - [Articles](https://devsignpro.com/en/articles): Technical guides and practical insights
+- [Services for Morocco (French)](https://devsignpro.com/fr/consultant-seo-developpeur-web-maroc): Technical SEO, websites, e-commerce and custom web applications for Moroccan businesses
+- [Services for Morocco (English)](https://devsignpro.com/en/consultant-seo-developpeur-web-maroc): English-language web development and SEO services for businesses in Morocco
 
 ## Locales
 

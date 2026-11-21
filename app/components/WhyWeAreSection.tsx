@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Locale } from "@/i18n-config";
 
 interface Reason {
@@ -27,14 +27,8 @@ export default function WhyWeAreSection({
   headingId = "why-us-heading",
 }: WhyWeAreSectionProps) {
   if (!translations?.reasons?.length) return null;
-  const isRtl = locale === "ar";
-  const Arrow = isRtl ? ArrowLeft : ArrowRight;
-
   return (
-    <div
-      className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20"
-      dir={isRtl ? "rtl" : "ltr"}
-    >
+    <div className="px-4 pb-10 pt-14 sm:px-6 sm:pb-14 sm:pt-16 lg:pt-20">
       <div className="mx-auto max-w-7xl">
         <header className="mx-auto mb-10 max-w-4xl text-center sm:mb-12">
           <h2
@@ -74,7 +68,7 @@ export default function WhyWeAreSection({
                       className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
                     >
                       {reason.linkLabel}
-                      <Arrow size={16} aria-hidden="true" />
+                      <ArrowRight size={16} aria-hidden="true" />
                     </Link>
                   ) : null}
                 </div>

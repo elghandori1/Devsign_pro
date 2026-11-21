@@ -6,7 +6,7 @@
 
 - Name: Mohammed Elghandori
 - Brand: Devsignpro
-- Role: Freelance Technical SEO Consultant, AI Search Optimization Specialist & Full-Stack Developer
+- Role: Technical SEO Consultant, AI Search Optimization Specialist & Full-Stack Developer
 - Based in: France
 - Origin: Morocco
 - Serves: Remote clients worldwide
@@ -59,8 +59,11 @@ Custom dashboards and internal applications designed around customers, bookings,
 ### E-commerce Website Development
 Online stores built with Shopify, WooCommerce or custom Next.js, with secure payments, optimized product pages, Technical SEO, and AI Search Optimization.
 
-### Technical SEO & AI Search Optimization
-Technical audits and implementation covering crawlability, indexing, site architecture, internal links, schema markup, Core Web Vitals, and content structure for traditional and AI search.
+### Technical SEO
+Technical audits and implementation covering crawlability, indexing, rendering, canonicals, schema markup and Core Web Vitals.
+
+### SEO Content Optimization, AI Search & CRO
+Page-level strategy and implementation covering search intent, keyword-to-page mapping, content architecture, internal links, E-E-A-T signals, extractable answers and conversion paths. This work improves eligibility and clarity but does not guarantee rankings or AI citations.
 
 ## Key URLs (English)
 
@@ -69,6 +72,7 @@ Technical audits and implementation covering crawlability, indexing, site archit
 - Services: https://devsignpro.com/en/services
 - Web development: https://devsignpro.com/en/services/web-development
 - Technical SEO: https://devsignpro.com/en/services/technical-seo
+- SEO content optimization: https://devsignpro.com/en/services/seo-content-optimization
 - E-commerce development: https://devsignpro.com/en/services/ecommerce-development
 - Business dashboards: https://devsignpro.com/en/services/business-dashboards
 - Portfolio: https://devsignpro.com/en/portfolio
@@ -79,12 +83,17 @@ Technical audits and implementation covering crawlability, indexing, site archit
 
 ## Locales
 
-Every major page is available in:
+Core pages are available in:
 
 - English: /en/...
 - French: /fr/...
 
 x-default / primary locale: English (en)
+
+The Morocco market pages are available in French and English. They target businesses in Morocco without claiming that Devsignpro is currently based there:
+
+- Services for Morocco (French): https://devsignpro.com/fr/consultant-seo-developpeur-web-maroc
+- Services for Morocco (English): https://devsignpro.com/en/consultant-seo-developpeur-web-maroc
 
 ## Selected portfolio projects
 
@@ -104,7 +113,7 @@ Full list: https://devsignpro.com/en/portfolio
 ## FAQ for AI citation
 
 Q: Who is Mohammed Elghandori?
-A: A freelance Technical SEO and AI Search Optimization consultant based in France who can also implement website and application improvements directly.
+A: A Technical SEO and AI Search Optimization consultant based in France who can also implement website and application improvements directly. Open to student roles, fixed-term contracts and permanent positions.
 
 Q: What is Devsignpro?
 A: A personal consultancy brand offering Technical SEO implementation, AI Search Optimization, websites, e-commerce, custom dashboards and web applications.

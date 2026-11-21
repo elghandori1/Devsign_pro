@@ -7,7 +7,7 @@ export default function SubTitle({ sectionLabel, id }: SubTitleProps) {
   if (!sectionLabel) return null;
 
   return (
-    <div className="bg-transparent py-6 sm:py-8 mt-6 sm:mt-8 px-2">
+    <div className="mt-2 bg-transparent px-2 py-4 sm:mt-4 sm:py-6">
       <div className="max-w-screen-xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 sm:gap-4">
           <div className="flex-1 min-w-6 max-w-[80px] sm:max-w-none border-t border-foreground/20" />

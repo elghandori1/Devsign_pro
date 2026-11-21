@@ -173,7 +173,7 @@ export default async function ServicesPage({ params }: Props) {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/services#faq`,
         "inLanguage": localeToBcp47(locale),
-        "mainEntity": hub.faq.items.map((item) => ({
+        "mainEntity": hub.faq.items.slice(0, 3).map((item) => ({
           "@type": "Question",
           "name": item.q,
           "acceptedAnswer": { "@type": "Answer", "text": item.a },
@@ -467,7 +467,7 @@ export default async function ServicesPage({ params }: Props) {
             <h2 id="faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{hub.faq.heading}</h2>
           </header>
           <div>
-            {hub.faq.items.map((item, index) => (
+            {hub.faq.items.slice(0, 3).map((item, index) => (
               <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0">
                 <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden">
                   <h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3>

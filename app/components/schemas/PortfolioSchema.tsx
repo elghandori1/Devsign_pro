@@ -70,7 +70,7 @@ export default function PortfolioSchema({
       {
         "@type": "ListItem",
         "position": 2,
-        "name": locale === "ar" ? "معرض الأعمال" : "Portfolio",
+        "name": "Portfolio",
         "item": `${baseUrl}/${locale}/portfolio`,
       },
     ],

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  ArrowLeft,
   ArrowRight,
   Bot,
   Gauge,
@@ -23,6 +22,7 @@ interface CustomerProblemsContent {
   solutionTitle: string;
   solutionDescription: string;
   cta: string;
+  secondaryCta: string;
 }
 
 interface CustomerProblemsSectionProps {
@@ -36,14 +36,10 @@ export default function CustomerProblemsSection({
   content,
   locale,
 }: CustomerProblemsSectionProps) {
-  const isRtl = locale === "ar";
-  const Arrow = isRtl ? ArrowLeft : ArrowRight;
-
   return (
     <section
       className="relative isolate overflow-hidden border-b border-border/70 py-16 sm:py-20 lg:py-24"
       aria-labelledby="customer-problems-heading"
-      dir={isRtl ? "rtl" : "ltr"}
     >
       <div
         className="absolute left-1/2 top-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl"
@@ -102,13 +98,22 @@ export default function CustomerProblemsSection({
               {content.solutionDescription}
             </p>
           </div>
-          <Link
-            href={`/${locale}/services/technical-seo`}
-            className="inline-flex min-h-11 shrink-0 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-          >
-            {content.cta}
-            <Arrow size={17} aria-hidden="true" />
-          </Link>
+          <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+            <Link
+              href={`/${locale}/services/technical-seo`}
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              {content.cta}
+              <ArrowRight size={17} aria-hidden="true" />
+            </Link>
+            <Link
+              href={`/${locale}/services/seo-content-optimization`}
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary/25 bg-background px-5 py-3 text-sm font-semibold text-primary transition-colors hover:border-primary/50 hover:bg-primary/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+            >
+              {content.secondaryCta}
+              <ArrowRight size={17} aria-hidden="true" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { getDictionary } from "@/app/lib/dictionary";
 import { Locale, i18n } from "@/i18n-config";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
@@ -39,25 +39,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : i18n.defaultLocale;
 
   const isEnglish = locale === "en";
-  const isArabic = locale === "ar";
-
   const title = isEnglish
-    ? "Freelance Technical SEO & AI Search Consultant | Devsignpro"
-    : isArabic
-      ? "مطور ويب وخبير SEO في المغرب | مستقل"
-      : "Consultant SEO Freelance en France | Devsignpro";
+    ? "Technical SEO & AI Search Consultant | Devsignpro"
+    : "Consultant SEO Technique en France | Devsignpro";
 
   const description = isEnglish
-    ? "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide fix indexing, performance and visibility. Free quote."
-    : isArabic
-      ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
-      : "Consultant SEO technique et GEO freelance en France. J’optimise sites web et boutiques en ligne pour Google, ChatGPT et Perplexity. Devis sous 24h.";
+    ? "Technical SEO and AI search consultant based in France, helping businesses improve indexing, performance and search visibility."
+    : "Consultant SEO technique et GEO en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT et Perplexity.";
 
   const keywords = isEnglish
     ? [
-        "freelance technical seo consultant",
         "technical seo consultant",
-        "technical seo freelancer",
+        "technical seo consultant France",
         "technical seo audit",
         "website seo optimization",
         "technical seo fixes",
@@ -67,21 +60,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "core web vitals optimization",
         "international seo consultant",
       ]
-    : isArabic
-      ? [
-          "مطور ناكست المغرب",
-          "مطور ويب متكامل المغرب",
-          "مطور ويب المغرب",
-          "خبير سيو المغرب",
-          "تحسين محركات الذكاء الاصطناعي",
-          "تحسين البحث بالذكاء الاصطناعي",
-          "مطور ويب مستقل",
-          "أتمتة الأعمال",
-          "تصميم سوشيال ميديا",
-          "تحسين المواقع",
-        ]
-      : [
-          "consultant seo freelance france",
+    : [
+          "consultant seo france",
           "consultant seo technique",
           "consultant geo france",
           "audit seo technique",
@@ -116,20 +96,20 @@ export default async function Home({ params }: Props) {
   const baseUrl = getBaseUrl();
   const jobTitle =
     locale === "en"
-      ? "Freelance Technical SEO and AI Search Consultant"
-      : locale === "ar"
-        ? "مطور ويب وخبير تحسين محركات البحث"
-        : "Consultant SEO et GEO en France";
+      ? "Technical SEO and AI Search Consultant"
+      : "Consultant SEO et GEO en France";
 
   const isEnglish = locale === "en";
-  const isArabic = locale === "ar";
   const description = isEnglish
-    ? "Freelance technical SEO and AI search consultant based in France, helping businesses worldwide improve website indexing, performance and search visibility."
-    : isArabic
-      ? "مطور ويب مستقل وخبير SEO في المغرب. أصمم مواقع سريعة وعالية الأداء مع تحسين تقني لمحركات البحث والذكاء الاصطناعي لتعزيز ظهور أعمالك."
-      : "Consultant SEO technique et GEO freelance en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT, Google AI Overviews et Perplexity.";
+    ? "Technical SEO and AI search consultant based in France, helping businesses improve website indexing, performance and search visibility."
+    : "Consultant SEO technique et GEO en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT, Google AI Overviews et Perplexity.";
   const faqs = isEnglish
     ? [
+        {
+          question: "Can you improve an existing website without rebuilding it?",
+          answer:
+            "Yes. I first review crawling, indexing, structure, content, performance and conversion paths. If the foundation is sound, I prioritize targeted improvements. I only recommend a rebuild when the current platform prevents reliable progress.",
+        },
         {
           question:
             "What is AI Search Optimization and how is it different from SEO?",
@@ -142,50 +122,18 @@ export default async function Home({ params }: Props) {
             "WordPress is a practical choice when your team wants to manage pages and content through a familiar dashboard. Next.js is better suited to highly customized experiences, advanced performance requirements, and web applications. I recommend the solution that fits your content, budget, and maintenance needs.",
         },
         {
-          question: "Should I use Shopify, WooCommerce or Next.js for my online store?",
+          question: "What types of opportunities are you open to in France?",
           answer:
-            "Shopify is ideal for launching quickly with a reliable commerce back office. WooCommerce is useful when you want a WordPress store with flexible content management. A custom Next.js store fits unique workflows, performance goals, or specific features. I recommend the right option for your budget and operations.",
-        },
-        {
-          question: "How long does it take to build a website?",
-          answer:
-            "A business website usually takes 2 to 4 weeks, and an online store 4 to 8 weeks, depending on the number of pages, the content and the features. You get a clear schedule with your quote before the project starts.",
-        },
-        {
-        question: "How much does a website cost with a freelance web developer?",
-          answer:
-            "It depends on the scope. As a guide, a business website starts from €1,200, an online store from €2,500, and a technical SEO audit from €450. Custom web applications and dashboards are quoted per project. These prices are a guide and can be adapted to your budget. Every request gets a free, detailed quote within 24 hours.",
-        },
-        {
-          question: "Do you work with international clients?",
-          answer:
-            "Yes. I am based in France and work remotely with businesses in Europe and worldwide. A project can include multilingual architecture, hreflang and international SEO when the website needs to reach customers in several countries.",
+            "I am open to student roles, fixed-term contracts and permanent positions in France, focused on technical SEO, web development or a role combining both. My portfolio is designed to help recruiters and technical teams evaluate how I analyze, build and verify solutions.",
         },
       ]
-    : isArabic
-      ? [
+    : [
           {
-            question: "ما هو تحسين البحث بالذكاء الاصطناعي وكيف يختلف عن SEO؟",
+            question:
+              "Pouvez-vous améliorer un site existant sans le reconstruire ?",
             answer:
-              "تحسين البحث بالذكاء الاصطناعي يضمن ظهور موقعك في محركات البحث المدعومة بالذكاء الاصطناعي مثل ChatGPT وGoogle AI Overviews وPerplexity. بينما يركز SEO التقليدي على الترتيب في بحث Google، يقوم AIO بتنظيم محتواك بحيث يمكن لمحركات الذكاء الاصطناعي فهمه والاستشهاد به والتوصية بعملك كمصدر موثوق.",
+              "Oui. Je commence par analyser l’exploration, l’indexation, la structure, le contenu, les performances et les parcours de conversion. Si la base est saine, je privilégie des corrections ciblées. Je recommande une refonte uniquement lorsque la plateforme actuelle empêche une progression fiable.",
           },
-          {
-            question: "هل أختار WordPress أم Next.js لموقع شركتي؟",
-            answer:
-              "WordPress مناسب عندما تريد إدارة الصفحات والمحتوى من لوحة تحكم مألوفة، بينما يناسب Next.js التجارب المخصصة ومتطلبات الأداء المتقدمة وتطبيقات الويب. أختار التقنية وفق محتوى المشروع وميزانيته واحتياجات صيانته.",
-          },
-          {
-            question: "كم تكلفة توظيف مطور ويب في المغرب؟",
-            answer:
-              "تعتمد الأسعار على نطاق المشروع وتعقيده. عادةً ما يبدأ سعر موقع الأعمال الاحترافي من 8000 درهم مغربي، بينما يتم تقديم عروض أسعار للتطبيقات الكاملة ولوحات التحكم المدمجة بالذكاء الاصطناعي بناءً على المتطلبات المحددة. اتصل بي للحصول على استشارة مجانية وتقدير مفصل.",
-          },
-          {
-            question: "هل تعمل مع عملاء دوليين أم فقط في المغرب؟",
-            answer:
-              "على الرغم من أنني مقيم في المغرب، إلا أنني أعمل مع الشركات الناشئة والأعمال التجارية على مستوى العالم. يتم بناء مواقعي مع تحسين محركات البحث الدولية، ودعم متعدد اللغات، ومعايير الأداء العالمية — جاهزة لخدمة العملاء في أي مكان في العالم.",
-          },
-        ]
-      : [
           {
             question:
               "Qu'est-ce que l'Optimisation de Recherche par IA et en quoi est-elle différente du SEO ?",
@@ -199,26 +147,9 @@ export default async function Home({ params }: Props) {
               "WordPress convient si vous souhaitez gérer facilement vos pages et vos contenus depuis une interface connue. Next.js est adapté aux expériences très personnalisées, aux exigences de performance avancées et aux applications web. Je recommande la solution selon vos contenus, votre budget et vos besoins de maintenance.",
           },
           {
-            question: "Shopify, WooCommerce ou Next.js : que choisir pour ma boutique en ligne ?",
+            question: "Quelles opportunités recherchez-vous en France ?",
             answer:
-              "Shopify permet de lancer rapidement une boutique avec un back-office e-commerce fiable. WooCommerce convient si vous souhaitez vendre avec WordPress et gérer librement vos contenus. Une boutique Next.js répond aux parcours, performances ou fonctionnalités très spécifiques. Je recommande la solution adaptée à votre budget et à votre organisation.",
-          },
-          {
-            question: "Combien de temps faut-il pour créer un site internet ?",
-            answer:
-              "Un site vitrine demande en général 2 à 4 semaines, et une boutique en ligne 4 à 8 semaines, selon le nombre de pages, les contenus et les fonctionnalités. Vous recevez un planning clair avec votre devis avant le démarrage du projet.",
-          },
-          {
-          question:
-          "Combien coûte la création d'un site internet avec un développeur freelance ?",
-            answer:
-              "Tout dépend du projet. À titre indicatif, un site vitrine démarre à partir de 1 200 €, une boutique en ligne à partir de 2 500 € et un audit SEO technique à partir de 450 €. Les applications web et tableaux de bord sur mesure sont chiffrés au cas par cas. Ces tarifs sont indicatifs et s'adaptent à votre budget. Chaque demande reçoit un devis gratuit et détaillé sous 24h.",
-          },
-          {
-            question:
-              "Travaillez-vous avec des clients hors de France, notamment au Maroc ?",
-            answer:
-              "Oui. Basé en France et originaire du Maroc, je travaille à distance avec des entreprises en France, en Europe et au Maroc. Selon le projet, je peux construire un site multilingue avec un SEO international pour toucher des clients dans plusieurs pays.",
+              "Je suis disponible pour un poste étudiant, un CDD ou un CDI en France, centré sur le SEO technique, le développement web ou un rôle réunissant les deux. Mon portfolio permet aux recruteurs et aux équipes techniques d’évaluer ma façon d’analyser, de construire et de vérifier une solution.",
           },
         ];
 
@@ -282,29 +213,14 @@ export default async function Home({ params }: Props) {
                 id="hero-heading"
                 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold tracking-tight leading-[1.2]"
               >
-                {isArabic ? (
-                  <>
-                    <span
-                      className="text-transparent bg-clip-text bg-gradient-to-r
-                       from-foreground to-muted-foreground
-                       dark:from-foreground dark:to-muted"
-                    >
-                      {t.hero.title_line1}{" "}
-                    </span>
-                    {t.hero.title_highlight}
-                  </>
-                ) : (
-                  <>
-                    {t.hero.title_line1}{" "}
-                    <span
-                      className="text-transparent bg-clip-text bg-gradient-to-r
-                       from-foreground to-muted-foreground
-                       dark:from-foreground dark:to-muted"
-                    >
-                      {t.hero.title_highlight}
-                    </span>
-                  </>
-                )}
+                {t.hero.title_line1}{" "}
+                <span
+                  className="text-transparent bg-clip-text bg-gradient-to-r
+                   from-foreground to-muted-foreground
+                   dark:from-foreground dark:to-muted"
+                >
+                  {t.hero.title_highlight}
+                </span>
               </h1>
 
               {/* description */}
@@ -341,11 +257,7 @@ export default async function Home({ params }: Props) {
                transition-all"
                 >
                   {t.hero.cta_secondary}
-                  {isArabic ? (
-                    <ArrowLeft size={16} aria-hidden="true" />
-                  ) : (
-                    <ArrowRight size={16} aria-hidden="true" />
-                  )}
+                  <ArrowRight size={16} aria-hidden="true" />
                 </Link>
               </div>
 
@@ -354,13 +266,7 @@ export default async function Home({ params }: Props) {
               </p>
             </div>
 
-            <div
-              className={`flex h-full justify-center ${
-                isArabic
-                  ? "lg:order-1 lg:justify-start"
-                  : "lg:order-2 lg:justify-end"
-              }`}
-            >
+            <div className="flex h-full justify-center lg:order-2 lg:justify-end">
               <div className="relative w-full max-w-[320px] sm:max-w-[380px] lg:h-full lg:max-w-[440px] xl:max-w-[480px]">
                 <div
                   className="absolute -inset-4 rounded-3xl border border-primary/10"
@@ -377,11 +283,9 @@ export default async function Home({ params }: Props) {
                       src="/images/mohammed-profile.png"
                       alt={
                         t.hero.profile_name +
-                        (locale === "ar"
-                          ? " — صورة الملف الشخصي"
-                          : locale === "fr"
-                            ? " — photo de profil"
-                            : " — profile picture")
+                        (locale === "fr"
+                          ? " — photo de profil"
+                          : " — profile picture")
                       }
                       width={420}
                       height={525}
@@ -480,25 +384,23 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="faq-heading">
-        <ScrollReveal delay={0.05}>
-          <SubTitle
-            sectionLabel={
-              isArabic ? "الأسئلة الشائعة" : locale === "fr" ? "FAQ" : "FAQ"
-            }
-            id="faq-heading"
-          />
-          <FAQSection faqs={faqs} locale={locale} />
-        </ScrollReveal>
-      </section>
-
-      <section aria-labelledby="contact-heading">
+     <section aria-labelledby="contact-heading">
         <ScrollReveal delay={0.05}>
           <SubTitle
             sectionLabel={t.contact_section.sectionLabel}
             id="contact-heading"
           />
           <ContactSection translations={t.contact_section} locale={locale} />
+        </ScrollReveal>
+      </section>
+
+      <section aria-labelledby="faq-heading">
+        <ScrollReveal delay={0.05}>
+          <SubTitle
+            sectionLabel="FAQ"
+            id="faq-heading"
+          />
+          <FAQSection faqs={faqs} locale={locale} />
         </ScrollReveal>
       </section>
 

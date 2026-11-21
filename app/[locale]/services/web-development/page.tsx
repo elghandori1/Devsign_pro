@@ -115,7 +115,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
       {
         "@type": "FAQPage",
         "@id": `${pageUrl}#faq`,
-        mainEntity: landing.faq.items.map((item) => ({
+        mainEntity: landing.faq.items.slice(0, 3).map((item) => ({
           "@type": "Question",
           name: item.q,
           acceptedAnswer: { "@type": "Answer", text: item.a },
@@ -222,7 +222,17 @@ export default async function WebDevelopmentPage({ params }: Props) {
           <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.seoBridge.eyebrow}</p><h2 id="seo-bridge-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.seoBridge.heading}</h2><p className="mt-5 leading-relaxed text-muted-foreground">{landing.seoBridge.description}</p></header>
           <div className="grid gap-5">
             <div className="rounded-2xl border border-border bg-background p-6"><h3 className="text-lg font-semibold">{landing.seoBridge.includedTitle}</h3><ul className="mt-4 space-y-3">{landing.seoBridge.included.map((item) => <li key={item} className="flex gap-3 text-sm leading-relaxed"><CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />{item}</li>)}</ul></div>
-            <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6"><h3 className="text-lg font-semibold">{landing.seoBridge.auditTitle}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground">{landing.seoBridge.auditText}</p><Link href={`/${locale}/services/technical-seo`} className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{landing.seoBridge.auditLabel}<ArrowRight size={16} aria-hidden="true" /></Link></div>
+            <div className="rounded-2xl border border-primary/25 bg-primary/5 p-6">
+              <h3 className="text-lg font-semibold">{landing.seoBridge.auditTitle}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{landing.seoBridge.auditText}</p>
+              <div className="mt-4 flex flex-col items-start gap-2 sm:flex-row sm:gap-5">
+                <Link href={`/${locale}/services/technical-seo`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{landing.seoBridge.auditLabel}<ArrowRight size={16} aria-hidden="true" /></Link>
+                <Link href={`/${locale}/services/seo-content-optimization`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">
+                  {locale === "fr" ? "Optimiser le contenu, le GEO et les conversions" : "Optimize content, AI search and conversions"}
+                  <ArrowRight size={16} aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -243,7 +253,7 @@ export default async function WebDevelopmentPage({ params }: Props) {
       <section aria-labelledby="faq-heading" className="border-b border-border">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
           <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.faq.eyebrow}</p><h2 id="faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.faq.heading}</h2></header>
-          <div>{landing.faq.items.map((item, index) => <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0"><summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden"><h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3><ChevronDown className="size-5 shrink-0 text-primary transition-transform group-open:rotate-180" aria-hidden="true" /></summary><p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p></details>)}</div>
+          <div>{landing.faq.items.slice(0, 3).map((item, index) => <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0"><summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden"><h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3><ChevronDown className="size-5 shrink-0 text-primary transition-transform group-open:rotate-180" aria-hidden="true" /></summary><p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p></details>)}</div>
         </div>
       </section>
 
