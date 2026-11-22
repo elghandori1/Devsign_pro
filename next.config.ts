@@ -35,10 +35,6 @@ const nextConfig: NextConfig = {
 	images: {
 		formats: ["image/avif", "image/webp"],
 	},
-	experimental: {
-		// Inline the small critical stylesheet instead of a render-blocking request.
-		inlineCss: true,
-	},
 	// 308 permanent redirects for legacy slugs that were already
 	// crawled/indexed — consolidates all SEO signals on the new URLs.
 	async redirects() {
@@ -52,7 +48,23 @@ const nextConfig: NextConfig = {
 			},
 			{
 				source: "/ar/consultant-seo-developpeur-web-maroc",
-				destination: "/en/consultant-seo-developpeur-web-maroc",
+				destination: "/en/seo-consultant-web-developer-morocco",
+				permanent: true,
+			},
+			// The English page moved to an English slug that matches English searches.
+			{
+				source: "/en/consultant-seo-developpeur-web-maroc",
+				destination: "/en/seo-consultant-web-developer-morocco",
+				permanent: true,
+			},
+			{
+				source: "/seo-consultant-web-developer-morocco",
+				destination: "/en/seo-consultant-web-developer-morocco",
+				permanent: true,
+			},
+			{
+				source: "/fr/seo-consultant-web-developer-morocco",
+				destination: "/fr/consultant-seo-developpeur-web-maroc",
 				permanent: true,
 			},
 			// Both retired guides were consolidated into the buying and inspection guide.

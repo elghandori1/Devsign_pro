@@ -4,7 +4,6 @@ import Link from "next/link";
 import {
   ArrowRight,
   CheckCircle2,
-  ChevronDown,
   Code2,
   Gauge,
   LayoutTemplate,
@@ -19,8 +18,7 @@ import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
 import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
 
 type Props = { params: Promise<{ locale: string }> };
-type TextCard = { title: string; text: string };
-type FAQ = { q: string; a: string };
+type TextCard = { title: string; text: string; link?: { href: string; label: string } };
 type Landing = {
   seo: { title: string; description: string; keywords: string[] };
   breadcrumb: { label: string; home: string; services: string; current: string };
@@ -32,14 +30,13 @@ type Landing = {
   process: { eyebrow: string; heading: string; description: string; steps: TextCard[] };
   seoBridge: { eyebrow: string; heading: string; description: string; includedTitle: string; included: string[]; auditTitle: string; auditText: string; auditLabel: string };
   fit: { eyebrow: string; heading: string; items: TextCard[] };
-  faq: { eyebrow: string; heading: string; items: FAQ[] };
   related: { heading: string; items: { title: string; href: string; label: string }[] };
   cta: { heading: string; description: string; button: string };
 };
 type CaseStudy = { badge: string; title: string; description: string; results: { value: string; label: string }[]; image: string; imageAlt: string; link: { href: string; label: string } };
 
 const INCLUDED_ICONS = [LayoutTemplate, Smartphone, Search, Gauge, ShieldCheck, Code2] as const;
-const PAGE_UPDATED = "2026-11-15";
+const PAGE_UPDATED = "2026-11-22";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -101,6 +98,11 @@ export default async function WebDevelopmentPage({ params }: Props) {
         image: `${baseUrl}${service.image}`,
         serviceType: locale === "fr" ? "Création et refonte de site internet professionnel" : "Professional website design and development",
         provider: { "@id": `${baseUrl}/#person` },
+        brand: { "@id": `${baseUrl}/#business` },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: locale === "fr" ? "TPE, PME, commerçants et indépendants" : "Small businesses, shops and independent professionals",
+        },
         areaServed: locale === "fr"
           ? [{ "@type": "Country", name: "France" }, { "@type": "Place", name: "Europe" }]
           : { "@type": "Place", name: "Worldwide" },
@@ -111,15 +113,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
           availability: "https://schema.org/InStock",
           priceSpecification: { "@type": "UnitPriceSpecification", minPrice: 1200, priceCurrency: "EUR" },
         },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${pageUrl}#faq`,
-        mainEntity: landing.faq.items.slice(0, 3).map((item) => ({
-          "@type": "Question",
-          name: item.q,
-          acceptedAnswer: { "@type": "Answer", text: item.a },
-        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -196,7 +189,19 @@ export default async function WebDevelopmentPage({ params }: Props) {
           <ul className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {landing.included.items.map((item, index) => {
               const Icon = INCLUDED_ICONS[index] ?? Code2;
-              return <li key={item.title} className="rounded-2xl border border-border bg-card p-6 sm:p-7"><span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true"><Icon size={21} /></span><h3 className="mt-5 text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.text}</p></li>;
+              return (
+                <li key={item.title} className="flex flex-col rounded-2xl border border-border bg-card p-6 sm:p-7">
+                  <span className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true"><Icon size={21} /></span>
+                  <h3 className="mt-5 text-xl font-semibold">{item.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.text}</p>
+                  {item.link ? (
+                    <Link href={`/${locale}${item.link.href}`} className="mt-auto inline-flex min-h-11 items-center gap-2 pt-3 text-sm font-semibold text-primary hover:underline">
+                      {item.link.label}
+                      <ArrowRight size={16} aria-hidden="true" />
+                    </Link>
+                  ) : null}
+                </li>
+              );
             })}
           </ul>
         </div>
@@ -226,8 +231,8 @@ export default async function WebDevelopmentPage({ params }: Props) {
               <h3 className="text-lg font-semibold">{landing.seoBridge.auditTitle}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{landing.seoBridge.auditText}</p>
               <div className="mt-4 flex flex-col items-start gap-2 sm:flex-row sm:gap-5">
-                <Link href={`/${locale}/services/technical-seo`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{landing.seoBridge.auditLabel}<ArrowRight size={16} aria-hidden="true" /></Link>
-                <Link href={`/${locale}/services/seo-content-optimization`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">
+                <Link href={`/${locale}/services/technical-seo`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary">{landing.seoBridge.auditLabel}<ArrowRight size={16} aria-hidden="true" /></Link>
+                <Link href={`/${locale}/services/seo-content-optimization`} className="inline-flex min-h-11 items-center gap-2 font-semibold text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary">
                   {locale === "fr" ? "Optimiser le contenu, le GEO et les conversions" : "Optimize content, AI search and conversions"}
                   <ArrowRight size={16} aria-hidden="true" />
                 </Link>
@@ -248,13 +253,6 @@ export default async function WebDevelopmentPage({ params }: Props) {
 
       <section aria-labelledby="fit-heading" className="border-b border-border bg-card">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20"><header className="max-w-4xl"><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.fit.eyebrow}</p><h2 id="fit-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.fit.heading}</h2></header><ul className="mt-9 grid gap-5 md:grid-cols-3">{landing.fit.items.map((item) => <li key={item.title} className="rounded-2xl border border-border bg-background p-6 sm:p-7"><h3 className="text-xl font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.text}</p></li>)}</ul></div>
-      </section>
-
-      <section aria-labelledby="faq-heading" className="border-b border-border">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
-          <header><p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.faq.eyebrow}</p><h2 id="faq-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.faq.heading}</h2></header>
-          <div>{landing.faq.items.slice(0, 3).map((item, index) => <details key={item.q} open={index === 0} className="group border-t border-border first:border-t-0"><summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 py-4 [&::-webkit-details-marker]:hidden"><h3 className="text-base font-semibold leading-snug sm:text-lg">{item.q}</h3><ChevronDown className="size-5 shrink-0 text-primary transition-transform group-open:rotate-180" aria-hidden="true" /></summary><p className="pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base">{item.a}</p></details>)}</div>
-        </div>
       </section>
 
       <section aria-labelledby="related-heading" className="border-b border-border bg-card">

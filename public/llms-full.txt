@@ -93,7 +93,7 @@ x-default / primary locale: English (en)
 The Morocco market pages are available in French and English. They target businesses in Morocco without claiming that Devsignpro is currently based there:
 
 - Services for Morocco (French): https://devsignpro.com/fr/consultant-seo-developpeur-web-maroc
-- Services for Morocco (English): https://devsignpro.com/en/consultant-seo-developpeur-web-maroc
+- Services for Morocco (English): https://devsignpro.com/en/seo-consultant-web-developer-morocco
 
 ## Selected portfolio projects
 
@@ -113,7 +113,7 @@ Full list: https://devsignpro.com/en/portfolio
 ## FAQ for AI citation
 
 Q: Who is Mohammed Elghandori?
-A: A Technical SEO and AI Search Optimization consultant based in France who can also implement website and application improvements directly. Open to student roles, fixed-term contracts and permanent positions.
+A: An SEO and GEO consultant based in France for websites and online stores, who can also implement improvements directly in the code. Available for new projects.
 
 Q: What is Devsignpro?
 A: A personal consultancy brand offering Technical SEO implementation, AI Search Optimization, websites, e-commerce, custom dashboards and web applications.

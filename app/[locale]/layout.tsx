@@ -1,8 +1,8 @@
 // app/[locale]/layout.tsx
 import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
-import Script from "next/script";
 import "@/app/globals.css";
+import DeferredAnalytics from "@/app/components/DeferredAnalytics";
 
 import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 import Navbar from "@/app/components/Navbar";
@@ -13,7 +13,8 @@ import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { WebSiteSchema } from "@/app/components/schemas";
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  // No `weight`: loads Roboto as one variable font, so the 600 (semibold)
+  // weight used across the site is real instead of synthesized, with fewer files.
   display: "swap",
   variable: "--font-roboto",
 });
@@ -135,22 +136,7 @@ export default async function RootLayout({
   return (
     <html lang={localeToBcp47(locale)} dir="ltr" suppressHydrationWarning>
       <body className={`${roboto.className} antialiased`}>
-        {gaMeasurementId ? (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
-              strategy="lazyOnload"
-            />
-            <Script id="google-analytics" strategy="lazyOnload">
-              {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '${gaMeasurementId}');
-              `}
-            </Script>
-          </>
-        ) : null}
+        {gaMeasurementId ? <DeferredAnalytics measurementId={gaMeasurementId} /> : null}
           <ThemeProvider attribute="class" defaultTheme="white" enableSystem>
             <WebSiteSchema
               baseUrl={baseUrl}

@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "tailwindcss/theme.css" layer(theme);
 
+/* dark: utilities follow the site's theme class (next-themes), not the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --breakpoint-xs: 30rem;
   --color-background: var(--background);
@@ -27,7 +30,7 @@
   --muted-foreground: #5b5b66;
   --input: #e4e4e7;
   --border: #e4e4e7;
-  --primary: #2563eb;
+  --primary: #225ce2;
   --primary-foreground: #ffffff;
 }
 
@@ -281,4 +284,11 @@ body {
       --reveal-distance: 16px;
     }
   }
+}
+
+/* Portfolio filters: every project is in the HTML; the filter only hides cards. */
+#portfolio-grid[data-filter="professional"] > [data-type]:not([data-type="professional"]),
+#portfolio-grid[data-filter="personal"] > [data-type]:not([data-type="personal"]),
+#portfolio-grid[data-filter="academic"] > [data-type]:not([data-type="academic"]) {
+  display: none;
 }

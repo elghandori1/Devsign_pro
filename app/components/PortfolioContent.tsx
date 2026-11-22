@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import type { Locale } from "@/i18n-config";
 import { parseTechList } from "@/app/lib/portfolio";
+import PortfolioFilters from "./PortfolioFilters";
 
 type ProjectType = "professional" | "personal" | "academic";
 type FilterKey = "all" | ProjectType;
@@ -64,8 +65,6 @@ type Props = {
   locale: Locale;
   isRtl: boolean;
   allProjects: Project[];
-  filteredProjects: Project[];
-  activeFilter: FilterKey;
 };
 
 const PROOF_ICONS = [Search, Code2, CheckCircle2] as const;
@@ -80,8 +79,6 @@ export default function PortfolioContent({
   locale,
   isRtl,
   allProjects,
-  filteredProjects,
-  activeFilter,
 }: Props) {
   const ui = data.ui ?? {};
   const filters: { id: FilterKey; label: string }[] = [
@@ -176,37 +173,10 @@ export default function PortfolioContent({
         className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur-md"
       >
         <div className="mx-auto max-w-7xl px-4 py-3 sm:px-6">
-          <div className="flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            {filters.map((filter) => {
-              const isActive = activeFilter === filter.id;
-              const href =
-                filter.id === "all"
-                  ? `/${locale}/portfolio`
-                  : `/${locale}/portfolio?filter=${filter.id}`;
-              return (
-                <Link
-                  key={filter.id}
-                  href={href}
-                  scroll={false}
-                  aria-current={isActive ? "page" : undefined}
-                  className={`inline-flex min-h-11 shrink-0 items-center gap-2 rounded-xl border px-4 py-2 text-sm font-semibold transition ${
-                    isActive
-                      ? "border-primary bg-primary text-primary-foreground"
-                      : "border-border bg-card text-muted-foreground hover:border-primary/30 hover:text-foreground"
-                  }`}
-                >
-                  <span>{filter.label}</span>
-                  <span
-                    className={`rounded-md px-1.5 py-0.5 text-[11px] tabular-nums ${
-                      isActive ? "bg-white/15" : "bg-muted text-foreground"
-                    }`}
-                  >
-                    {counts[filter.id]}
-                  </span>
-                </Link>
-              );
-            })}
-          </div>
+          <PortfolioFilters
+            gridId="portfolio-grid"
+            filters={filters.map((filter) => ({ ...filter, count: counts[filter.id] }))}
+          />
         </div>
       </nav>
 
@@ -214,17 +184,9 @@ export default function PortfolioContent({
         className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-16"
         aria-label={ui.showcaseLabel ?? "Project showcase"}
       >
-        {filteredProjects.length === 0 ? (
-          <div className="rounded-2xl border border-border bg-card px-6 py-20 text-center">
-            <h2 className="text-xl font-semibold">{ui.emptyStateTitle ?? "No projects found"}</h2>
-            <p className="mt-2 text-muted-foreground">{ui.emptyStateText ?? "Try another filter."}</p>
-            <Link href={`/${locale}/portfolio`} className="mt-5 inline-flex min-h-11 items-center font-semibold text-primary hover:underline">
-              {ui.showAll ?? "Show all"}
-            </Link>
-          </div>
-        ) : (
-          <div className="grid gap-6 md:grid-cols-2" role="list">
-            {filteredProjects.map((project, index) => {
+        {(
+          <div id="portfolio-grid" data-filter="all" className="grid gap-6 md:grid-cols-2" role="list">
+            {allProjects.map((project, index) => {
               const tech = parseTechList(project.tech).slice(0, 5);
               const label = project.linkLabel || data.viewCase;
               return (
@@ -232,11 +194,11 @@ export default function PortfolioContent({
                   key={project.href}
                   className="group overflow-hidden rounded-2xl border border-border bg-card transition duration-300 hover:-translate-y-1 hover:border-primary/35 hover:shadow-xl hover:shadow-black/10"
                   role="listitem"
+                  data-type={project.type}
                 >
                   <Link
                     href={`/${locale}${project.href}`}
                     className="flex h-full flex-col rounded-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
-                    aria-label={`${label}: ${project.title}`}
                   >
                     <div className="relative aspect-[16/10] overflow-hidden border-b border-border bg-muted">
                       <Image

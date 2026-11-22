@@ -74,7 +74,7 @@ const typeBadgeClass = (type: string) =>
   type === "professional"
     ? "border-sky-500/25 bg-sky-500/10 text-sky-700 dark:text-sky-300"
     : type === "academic"
-      ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"
+      ? "border-emerald-500/25 bg-emerald-500/10 text-emerald-800 dark:text-emerald-300"
       : "border-violet-500/25 bg-violet-500/10 text-violet-700 dark:text-violet-300";
 
 export default function PortfolioProjectDetail({
@@ -131,37 +131,35 @@ export default function PortfolioProjectDetail({
           {caseStudyUi.backToPortfolio}
         </Link>
 
-        <header className="mt-7 sm:mt-10">
-          <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_340px] lg:items-end">
-            <div>
-              <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.14em] text-primary">
-                <Sparkles className="size-4" aria-hidden="true" />
-                {project.category}
-              </p>
-              <h1 className="mt-4 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">{project.title}</h1>
-              <p className="mt-5 max-w-4xl text-base leading-relaxed text-muted-foreground sm:text-lg">{project.description}</p>
-            </div>
+        <header className="mt-7 grid items-center gap-8 sm:mt-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.85fr)] lg:gap-14">
+          <div>
+            <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.14em] text-primary">
+              <Sparkles className="size-4" aria-hidden="true" />
+              {project.category}
+            </p>
+            <h1 className="mt-4 text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-[2.75rem]">{project.title}</h1>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">{project.description}</p>
 
-            <div className="rounded-2xl border border-border bg-card p-5">
+            <div className="mt-7">
               <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">
                 <Layers3 className="size-4 text-primary" aria-hidden="true" />
                 {caseStudyUi.techHeading}
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <ul className="mt-3 flex list-none flex-wrap gap-2 p-0">
                 {techItems.map((tech) => (
-                  <span key={tech} className="rounded-lg border border-primary/20 bg-primary/8 px-3 py-1.5 text-xs font-semibold text-primary">{tech}</span>
+                  <li key={tech} className="rounded-lg border border-primary/20 bg-primary/8 px-3 py-1.5 text-xs font-semibold text-primary">{tech}</li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
 
-          <div className="relative mt-8 aspect-[16/10] w-full overflow-hidden rounded-2xl border border-border bg-[#080b10] shadow-2xl shadow-black/10 sm:rounded-3xl lg:aspect-[16/8]">
+          <div className="relative mx-auto aspect-square w-full max-w-[520px] overflow-hidden rounded-3xl border border-border bg-card shadow-2xl shadow-black/10">
             <Image
               src={project.image}
               alt={project.title}
               fill
-              className="object-contain p-2 sm:p-4"
-              sizes="(max-width: 1280px) 100vw, 1216px"
+              className="object-contain p-3 sm:p-4"
+              sizes="(max-width: 1024px) 92vw, 520px"
               priority
             />
           </div>
@@ -204,13 +202,14 @@ export default function PortfolioProjectDetail({
               <section aria-labelledby="gallery-heading">
                 <h2 id="gallery-heading" className="text-2xl font-bold tracking-tight sm:text-3xl">{caseStudyUi.galleryHeading}</h2>
                 {caseStudyUi.galleryDescription ? <p className="mt-3 max-w-3xl text-muted-foreground">{caseStudyUi.galleryDescription}</p> : null}
-                <div className="mt-6 grid gap-5">
-                  {detail.gallery.map((image, index) => (
-                    <figure key={`${image.src}-${index}`} className="overflow-hidden rounded-2xl border border-border bg-muted/35">
-                      <div className="relative aspect-[16/10] w-full sm:aspect-[16/9]">
-                        <Image src={image.src} alt={image.alt} fill className="object-contain" sizes="(max-width: 1024px) 100vw, 850px" />
+                {/* Two images, side by side from the sm breakpoint, stacked on phones. */}
+                <div className="mt-6 grid gap-5 sm:grid-cols-2">
+                  {detail.gallery.slice(0, 2).map((image, index) => (
+                    <figure key={`${image.src}-${index}`} className="w-full overflow-hidden rounded-2xl border border-border bg-card shadow-lg shadow-black/5">
+                      <div className="relative aspect-square w-full">
+                        <Image src={image.src} alt={image.alt} fill className="object-contain p-3" sizes="(max-width: 640px) 92vw, 420px" />
                       </div>
-                      <figcaption className="border-t border-border px-4 py-3 text-sm leading-relaxed text-muted-foreground">{image.alt}</figcaption>
+                      <figcaption className="border-t border-border px-4 py-3 text-sm leading-relaxed text-foreground/80">{image.alt}</figcaption>
                     </figure>
                   ))}
                 </div>
@@ -260,7 +259,13 @@ export default function PortfolioProjectDetail({
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted-foreground">{caseStudyUi.linksHeading}</p>
                 <div className="mt-4 space-y-2">
                   {detail.links.map((link) => (
-                    <Link key={link.url} href={link.url} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 w-full items-center justify-between gap-3 rounded-xl border border-border px-4 py-2.5 text-sm font-semibold transition hover:border-primary/40 hover:text-primary">
+                    <Link
+  key={link.url}
+  href={link.url}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex min-h-11 w-full items-center justify-between gap-3 rounded-xl border border-border px-4 py-2.5 text-sm font-semibold text-primary transition hover:border-primary/40 hover:text-primary/70"
+>
                       {link.label}
                       <ExternalLink className="size-4 shrink-0" aria-hidden="true" />
                     </Link>

@@ -28,7 +28,7 @@ interface SEOProps {
   keywords: string[];
   route?: string;
   ogImagePath?: string;
-  type?: "website" | "article";
+  type?: "website" | "article" | "profile";
 }
 
 export function buildPageMetadata({
@@ -84,7 +84,9 @@ export function buildPageMetadata({
       ],
       locale: ogLocale,
       alternateLocale: ogLocaleAlternate,
-      type,
+      ...(type === "profile"
+        ? { type, firstName: "Mohammed", lastName: "Elghandori", username: "devsign_pro" }
+        : { type }),
     },
     twitter: {
       card: "summary_large_image",

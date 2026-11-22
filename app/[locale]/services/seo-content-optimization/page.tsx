@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -12,6 +13,7 @@ import {
   ShieldCheck,
   Target,
 } from "lucide-react";
+import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
 import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
@@ -30,346 +32,21 @@ type Content = {
     primaryCta: string;
     secondaryCta: string;
     promise: string[];
+    imageAlt: string;
   };
   problems: { eyebrow: string; heading: string; description: string; items: string[] };
   definition: { eyebrow: string; heading: string; answer: string; note: string };
   scope: { eyebrow: string; heading: string; description: string; items: Card[] };
-  transformation: {
-    eyebrow: string;
-    heading: string;
-    description: string;
-    before: { label: string; items: string[] };
-    after: { label: string; items: string[] };
-  };
   deliverables: { eyebrow: string; heading: string; description: string; items: Card[] };
   process: { eyebrow: string; heading: string; steps: Card[] };
-  measurement: { eyebrow: string; heading: string; description: string; items: string[]; note: string };
-  fit: { eyebrow: string; heading: string; items: Card[] };
   related: { heading: string; items: { title: string; href: string; label: string }[] };
   faq: { eyebrow: string; heading: string; items: FAQ[] };
   cta: { heading: string; description: string; button: string };
 };
 
-const CONTENT: Record<Locale, Content> = {
-  fr: {
-    seo: {
-      title: "Optimisation de contenu SEO, GEO et CRO | Devsignpro",
-      description:
-        "Optimisation de contenu SEO, GEO et CRO en France : intentions de recherche, mots-clés, architecture, maillage interne, E-E-A-T et conversion.",
-      keywords: [
-        "optimisation contenu SEO",
-        "stratégie de contenu SEO France",
-        "consultant GEO France",
-        "optimisation recherche IA",
-        "référencement ChatGPT",
-        "maillage interne SEO",
-        "intention de recherche SEO",
-        "optimisation CRO site web",
-      ],
-    },
-    breadcrumb: {
-      label: "Fil d’Ariane",
-      home: "Accueil",
-      services: "Services",
-      current: "Optimisation de contenu SEO, GEO et CRO",
-    },
-    hero: {
-      eyebrow: "Contenu, visibilité et conversion",
-      heading: "Optimisation de contenu SEO, GEO et CRO",
-      description:
-        "J’améliore les pages d’un site pour qu’elles répondent clairement aux recherches de vos prospects, soient plus faciles à comprendre par Google et les moteurs IA, et conduisent davantage de visiteurs vers une prise de contact ou un achat.",
-      primaryCta: "Demander un devis gratuit",
-      secondaryCta: "Voir la méthode",
-      promise: [
-        "Réponse sous 24h",
-        "Recommandations reliées à vos objectifs",
-        "Contenu, maillage et conversion traités ensemble",
-      ],
-    },
-    problems: {
-      eyebrow: "Problèmes fréquents",
-      heading: "Votre site est indexé, mais ses pages ne convainquent pas",
-      description:
-        "La technique peut être saine sans que le contenu corresponde aux recherches, démontre votre valeur ou aide le visiteur à avancer.",
-      items: [
-        "Les pages ciblent plusieurs intentions et se concurrencent entre elles.",
-        "Les titres et textes décrivent l’entreprise sans répondre aux questions des clients.",
-        "Google comprend mal quelle page doit se positionner sur quel sujet.",
-        "Le contenu reste difficile à extraire ou à citer dans les réponses générées par IA.",
-        "Les preuves, l’auteur, l’expérience et les informations de confiance sont insuffisants.",
-        "Le trafic existe, mais les demandes de devis, appels ou ventes restent faibles.",
-      ],
-    },
-    definition: {
-      eyebrow: "Réponse claire",
-      heading: "Qu’est-ce que l’optimisation SEO, GEO et CRO du contenu ?",
-      answer:
-        "C’est l’amélioration coordonnée de l’intention de recherche, des informations, de la structure des pages, du maillage interne et des appels à l’action. Le SEO aide la page à être trouvée et comprise, le GEO facilite sa récupération par les moteurs IA, et le CRO aide le visiteur à passer à l’étape suivante.",
-      note:
-        "Cette prestation ne remplace pas un audit SEO technique. Elle intervient sur ce que vos pages disent, prouvent et font faire après que les problèmes de crawl, d’indexation ou de rendu ont été écartés ou corrigés.",
-    },
-    scope: {
-      eyebrow: "Périmètre",
-      heading: "Une stratégie page par page, sans bourrage de mots-clés",
-      description:
-        "Chaque page reçoit un rôle précis afin d’éviter la cannibalisation et de créer un parcours cohérent entre découverte, comparaison et conversion.",
-      items: [
-        {
-          title: "Intentions et mots-clés",
-          text: "Regrouper les requêtes par besoin réel, étape d’achat et type de page, puis attribuer un sujet principal à chaque URL.",
-        },
-        {
-          title: "Architecture éditoriale",
-          text: "Décider quelles pages conserver, fusionner ou créer, avec une hiérarchie claire entre pages piliers, services, études de cas et articles.",
-        },
-        {
-          title: "Contenu utile et extractible",
-          text: "Réécrire les réponses, titres et sections dans un format clair pour les lecteurs, Google, ChatGPT, AI Overviews et Perplexity.",
-        },
-        {
-          title: "E-E-A-T et confiance",
-          text: "Renforcer les preuves visibles : auteur, expérience, méthode, sources, réalisations, informations de contact et cohérence de l’entité.",
-        },
-        {
-          title: "Maillage interne",
-          text: "Relier les pages selon leur rôle et leur proximité sémantique avec des ancres utiles, sans multiplier les liens artificiels.",
-        },
-        {
-          title: "CRO et parcours",
-          text: "Clarifier la proposition de valeur, les objections, les preuves et les appels à l’action selon le niveau de décision du visiteur.",
-        },
-      ],
-    },
-    transformation: {
-      eyebrow: "Avant et après",
-      heading: "Transformer une page descriptive en page qui aide à décider",
-      description:
-        "L’objectif n’est pas d’allonger le texte. Il est de supprimer l’ambiguïté et de placer la bonne information au bon moment.",
-      before: {
-        label: "Avant",
-        items: [
-          "Une page qui mélange plusieurs services",
-          "Des expressions génériques répétées",
-          "Peu de preuves ou de réponses concrètes",
-          "Un seul bouton sans contexte",
-        ],
-      },
-      after: {
-        label: "Après optimisation",
-        items: [
-          "Une intention et un objectif de conversion précis",
-          "Des réponses structurées et faciles à extraire",
-          "Des preuves et signaux de confiance vérifiables",
-          "Des liens et CTA adaptés au parcours du visiteur",
-        ],
-      },
-    },
-    deliverables: {
-      eyebrow: "Livrables",
-      heading: "Ce que vous recevez",
-      description:
-        "Le périmètre dépend du nombre de pages, de vos données disponibles et du niveau de réécriture ou d’intégration nécessaire.",
-      items: [
-        { title: "Carte intentions–pages", text: "Les sujets, intentions, mots-clés et objectifs attribués à chaque URL prioritaire." },
-        { title: "Plan de contenu", text: "La structure recommandée, les questions à traiter, les preuves nécessaires et les liens internes." },
-        { title: "Optimisations ou réécriture", text: "Des contenus directement exploitables, adaptés à votre ton et validés avec vos informations réelles." },
-        { title: "Parcours de conversion", text: "Une hiérarchie de CTA et de liens vers les services, preuves et prises de contact pertinentes." },
-        { title: "Recommandations GEO", text: "Des réponses autonomes, données structurées pertinentes et signaux d’entité cohérents, sans promesse de citation." },
-        { title: "Mesure et priorités", text: "Les indicateurs à suivre et une liste d’actions classées par impact et effort." },
-      ],
-    },
-    process: {
-      eyebrow: "Méthode",
-      heading: "De la recherche à la mesure",
-      steps: [
-        { title: "Comprendre", text: "Clarifier vos offres, audiences, preuves, objectifs commerciaux et pages prioritaires." },
-        { title: "Rechercher", text: "Étudier les requêtes, les résultats de recherche, les questions clients et les contenus déjà visibles." },
-        { title: "Structurer", text: "Définir le rôle de chaque page, le maillage et le contenu nécessaire à la décision." },
-        { title: "Optimiser", text: "Réécrire ou intégrer les améliorations SEO, GEO, sémantiques et CRO validées." },
-        { title: "Vérifier", text: "Contrôler le rendu, les liens, les métadonnées, les données structurées et les événements de conversion." },
-      ],
-    },
-    measurement: {
-      eyebrow: "Mesure",
-      heading: "Des résultats suivis avec des indicateurs utiles",
-      description:
-        "Le succès dépend du point de départ, de la concurrence, de l’autorité du site et de la mise en œuvre. Aucun positionnement ni aucune citation IA ne peut être garanti.",
-      items: [
-        "Impressions, clics, CTR et requêtes dans Search Console",
-        "Pages d’entrée et progression des groupes de requêtes",
-        "Clics vers les contacts, formulaires envoyés et demandes qualifiées",
-        "Engagement sur les sections importantes et abandons du parcours",
-      ],
-      note: "Le trafic n’est pas la seule finalité : la qualité des demandes et la compréhension de votre offre comptent aussi.",
-    },
-    fit: {
-      eyebrow: "Projets adaptés",
-      heading: "Quand choisir cette prestation ?",
-      items: [
-        { title: "Site existant sans stratégie claire", text: "Vos pages sont en ligne, mais les sujets, mots-clés et objectifs se chevauchent." },
-        { title: "Refonte ou lancement", text: "Vous voulez définir l’architecture et le contenu avant de concevoir les écrans ou développer les gabarits." },
-        { title: "Trafic qui convertit peu", text: "Des visiteurs arrivent, mais la valeur, les preuves ou la prochaine étape restent peu claires." },
-      ],
-    },
-    related: {
-      heading: "Services complémentaires",
-      items: [
-        { title: "Vérifier l’exploration, l’indexation et la performance", href: "/services/technical-seo", label: "Audit SEO technique" },
-        { title: "Créer ou refondre la plateforme qui porte le contenu", href: "/services/web-development", label: "Développement web" },
-        { title: "Comparer toutes les prestations", href: "/services", label: "Voir les services" },
-      ],
-    },
-    faq: {
-      eyebrow: "Questions fréquentes",
-      heading: "Avant d’optimiser vos contenus",
-      items: [
-        { q: "Quelle différence avec un audit SEO technique ?", a: "L’audit technique vérifie notamment le crawl, l’indexation, le rendu, les canonicals, la performance et les données structurées. Cette prestation travaille surtout l’intention, les réponses, les preuves, le maillage éditorial et la conversion. Les deux peuvent être combinés lorsqu’un site cumule les deux types de problèmes." },
-        { q: "Pouvez-vous réécrire les pages existantes ?", a: "Oui. Je peux fournir les recommandations, réécrire les pages prioritaires ou intégrer les changements selon la plateforme et le périmètre convenu." },
-        { q: "Le GEO garantit-il une présence dans ChatGPT ou Google AI Overviews ?", a: "Non. Il améliore la clarté, l’extractibilité et les signaux de confiance qui peuvent aider les systèmes à comprendre et récupérer le contenu, mais aucun prestataire ne peut garantir une citation ou une visibilité permanente." },
-        { q: "Faut-il créer beaucoup de nouvelles pages ?", a: "Pas nécessairement. Je commence par vérifier si les pages existantes peuvent être clarifiées, regroupées ou mieux reliées. Une nouvelle page est justifiée seulement lorsqu’elle répond à une intention distincte et apporte une information utile." },
-      ],
-    },
-    cta: {
-      heading: "Vos pages doivent être trouvées, comprises et convaincantes",
-      description: "Envoyez-moi l’URL du site, les pages prioritaires et l’objectif commercial. Je vous réponds sous 24h avec les informations nécessaires pour cadrer la prestation.",
-      button: "Demander un devis gratuit",
-    },
-  },
-  en: {
-    seo: {
-      title: "SEO Content Optimization, AI Search & CRO | Devsignpro",
-      description:
-        "SEO content optimization for search and AI discovery: search intent, keyword mapping, content architecture, internal links, E-E-A-T signals and CRO.",
-      keywords: [
-        "SEO content optimization service",
-        "SEO content strategy consultant",
-        "AI search optimization consultant",
-        "GEO consultant",
-        "search intent optimization",
-        "internal linking strategy",
-        "E-E-A-T content optimization",
-        "website conversion optimization",
-      ],
-    },
-    breadcrumb: { label: "Breadcrumb", home: "Home", services: "Services", current: "SEO content optimization, AI search and CRO" },
-    hero: {
-      eyebrow: "Content, visibility and conversion",
-      heading: "SEO content optimization for search, AI answers and conversions",
-      description:
-        "I improve website pages so they answer what prospects are searching for, are easier for Google and AI search systems to understand, and guide more qualified visitors toward an enquiry or purchase.",
-      primaryCta: "Get a Free Quote",
-      secondaryCta: "See the process",
-      promise: ["Response within 24 hours", "Recommendations tied to business goals", "Content, internal links and CRO handled together"],
-    },
-    problems: {
-      eyebrow: "Common problems",
-      heading: "Your website is indexed, but its pages do not help people decide",
-      description: "A technically sound website can still miss the search intent, fail to demonstrate value or leave the next step unclear.",
-      items: [
-        "Pages target several intents and compete with one another.",
-        "Headings and copy describe the company without answering customer questions.",
-        "Search engines cannot clearly identify which page should rank for each topic.",
-        "Important information is difficult for AI search systems to retrieve or cite.",
-        "Experience, authorship, evidence and trust information are too weak or unclear.",
-        "Traffic arrives, but enquiries, calls or purchases remain low.",
-      ],
-    },
-    definition: {
-      eyebrow: "Clear answer",
-      heading: "What is SEO, AI search and CRO content optimization?",
-      answer:
-        "It is the coordinated improvement of search intent, page information, content structure, internal linking and calls to action. SEO helps a page get found and understood, AI search optimization improves retrievability, and CRO helps visitors take the next useful step.",
-      note:
-        "This does not replace a technical SEO audit. It focuses on what pages say, prove and ask visitors to do after crawling, indexing and rendering blockers have been ruled out or fixed.",
-    },
-    scope: {
-      eyebrow: "Scope",
-      heading: "A page-by-page strategy without keyword stuffing",
-      description: "Each page receives a distinct role to reduce cannibalization and create a coherent path from discovery to comparison and conversion.",
-      items: [
-        { title: "Search intent and keywords", text: "Group queries by real need, buying stage and page type, then assign one primary subject to each URL." },
-        { title: "Content architecture", text: "Decide what to retain, merge or create, with a clear hierarchy across hubs, services, case studies and articles." },
-        { title: "Useful, extractable answers", text: "Rewrite headings, sections and answers clearly for readers, Google, ChatGPT, AI Overviews and Perplexity." },
-        { title: "E-E-A-T and trust", text: "Strengthen visible evidence such as authorship, experience, methods, sources, projects, contact details and entity consistency." },
-        { title: "Internal linking", text: "Connect pages according to their purpose and semantic relationship using helpful anchors rather than artificial link volume." },
-        { title: "CRO and user journeys", text: "Clarify the value proposition, objections, proof and calls to action for each visitor’s decision stage." },
-      ],
-    },
-    transformation: {
-      eyebrow: "Before and after",
-      heading: "Turn a descriptive page into a page that supports a decision",
-      description: "The goal is not to make pages longer. It is to remove ambiguity and provide the right information at the right moment.",
-      before: { label: "Before", items: ["One page mixing several services", "Repeated generic phrases", "Little evidence or specific answers", "One button without decision context"] },
-      after: { label: "After optimization", items: ["One clear intent and conversion goal", "Structured, extractable answers", "Verifiable evidence and trust signals", "Links and CTAs matched to the journey"] },
-    },
-    deliverables: {
-      eyebrow: "Deliverables",
-      heading: "What you receive",
-      description: "Scope depends on the number of pages, available evidence and whether you need recommendations, rewriting or direct implementation.",
-      items: [
-        { title: "Intent-to-page map", text: "Topics, intents, keywords and goals assigned to each priority URL." },
-        { title: "Content plan", text: "Recommended page structure, questions to answer, evidence to add and internal links." },
-        { title: "Optimization or rewriting", text: "Usable content aligned with your tone and validated against real business information." },
-        { title: "Conversion path", text: "A CTA and internal-link hierarchy leading to the right services, evidence and contact points." },
-        { title: "AI search recommendations", text: "Standalone answers, relevant structured data and consistent entity signals, without promising citations." },
-        { title: "Measurement plan", text: "The metrics to monitor and a prioritized action list based on expected impact and effort." },
-      ],
-    },
-    process: {
-      eyebrow: "Process",
-      heading: "From research to measurement",
-      steps: [
-        { title: "Understand", text: "Clarify your offers, audiences, evidence, commercial goals and priority pages." },
-        { title: "Research", text: "Review queries, search results, customer questions and content already earning visibility." },
-        { title: "Structure", text: "Define each page’s purpose, internal links and the information needed for a decision." },
-        { title: "Optimize", text: "Write or implement the approved SEO, AI-search, semantic and CRO improvements." },
-        { title: "Verify", text: "Check rendering, links, metadata, structured data and meaningful conversion events." },
-      ],
-    },
-    measurement: {
-      eyebrow: "Measurement",
-      heading: "Track outcomes with useful indicators",
-      description: "Results depend on the starting point, competition, site authority and implementation. Rankings and AI citations cannot be guaranteed.",
-      items: ["Search Console impressions, clicks, CTR and queries", "Landing pages and query-cluster progress", "Contact clicks, submitted forms and qualified enquiries", "Engagement with key sections and journey drop-offs"],
-      note: "Traffic is not the only goal: the quality of enquiries and how clearly prospects understand the offer also matter.",
-    },
-    fit: {
-      eyebrow: "Suitable projects",
-      heading: "When should you choose this service?",
-      items: [
-        { title: "Existing website without a clear strategy", text: "Pages are live, but their topics, keywords and goals overlap." },
-        { title: "Launch or redesign", text: "You want to define architecture and content before designing screens or building templates." },
-        { title: "Traffic that converts poorly", text: "Visitors arrive, but the value, evidence or next step remains unclear." },
-      ],
-    },
-    related: {
-      heading: "Related services",
-      items: [
-        { title: "Check crawling, indexing and performance", href: "/services/technical-seo", label: "Technical SEO audit" },
-        { title: "Build or redesign the platform carrying the content", href: "/services/web-development", label: "Web development" },
-        { title: "Compare every service", href: "/services", label: "View all services" },
-      ],
-    },
-    faq: {
-      eyebrow: "Frequently asked questions",
-      heading: "Before optimizing your content",
-      items: [
-        { q: "How is this different from a technical SEO audit?", a: "A technical audit checks crawling, indexing, rendering, canonicals, performance and structured data. This service focuses on intent, answers, evidence, editorial internal links and conversion. They can be combined when a website has both kinds of problem." },
-        { q: "Can you rewrite existing pages?", a: "Yes. I can provide recommendations, rewrite priority pages or implement changes depending on the platform and agreed scope." },
-        { q: "Does AI search optimization guarantee visibility in ChatGPT or Google AI Overviews?", a: "No. It improves clarity, retrievability and trust signals that may help systems understand and retrieve the content, but no provider can guarantee a citation or permanent visibility." },
-        { q: "Do we need to create many new pages?", a: "Not necessarily. I first check whether existing pages can be clarified, consolidated or linked more effectively. A new page is justified only when it serves a distinct intent and provides useful information." },
-      ],
-    },
-    cta: {
-      heading: "Your pages should be found, understood and persuasive",
-      description: "Send me the website URL, priority pages and commercial goal. I will reply within 24 hours with what I need to scope the work.",
-      button: "Get a Free Quote",
-    },
-  },
-};
-
 const SCOPE_ICONS = [Target, FileText, MessageSquareText, ShieldCheck, Link2, BarChart3] as const;
-const PAGE_UPDATED = "2026-11-21";
+const PAGE_UPDATED = "2026-11-22";
+const HERO_IMAGE = "/images/services/seo-geo-content-optimization-search-visibility.png";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -384,7 +61,8 @@ function resolveLocale(rawLocale: string): Locale {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale: rawLocale } = await params;
   const locale = resolveLocale(rawLocale);
-  const content = CONTENT[locale];
+  const dict = await getDictionary(locale);
+  const content = dict.pages.services_page.services.seo_content_optimization.landing as Content;
 
   return buildPageMetadata({
     locale,
@@ -400,7 +78,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function SeoContentOptimizationPage({ params }: Props) {
   const { locale: rawLocale } = await params;
   const locale = resolveLocale(rawLocale);
-  const content = CONTENT[locale];
+  const dict = await getDictionary(locale);
+  const content = dict.pages.services_page.services.seo_content_optimization.landing as Content;
   const baseUrl = getBaseUrl();
   const pageUrl = `${baseUrl}/${locale}/services/seo-content-optimization`;
 
@@ -427,9 +106,14 @@ export default async function SeoContentOptimizationPage({ params }: Props) {
         url: pageUrl,
         serviceType:
           locale === "fr"
-            ? "Optimisation de contenu SEO, GEO et CRO"
-            : "SEO content optimization, AI search and CRO",
+            ? "Optimisation de contenu SEO et GEO"
+            : "SEO and GEO content optimization",
         provider: { "@id": `${baseUrl}/#person` },
+        brand: { "@id": `${baseUrl}/#business` },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: locale === "fr" ? "TPE, PME, e-commerçants et agences web" : "Small businesses, ecommerce brands and web agencies",
+        },
         areaServed:
           locale === "fr"
             ? [{ "@type": "Country", name: "France" }, { "@type": "Place", name: "Europe" }]
@@ -496,20 +180,20 @@ export default async function SeoContentOptimizationPage({ params }: Props) {
               </ul>
             </header>
 
-            <div className="rounded-3xl border border-border bg-card p-5 shadow-xl sm:p-7" aria-label={content.transformation.heading}>
-              <div className="rounded-2xl border border-border bg-background p-5">
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">{content.transformation.before.label}</span>
-                <p className="mt-3 text-lg font-semibold text-muted-foreground line-through decoration-primary/60">{content.transformation.before.items[0]}</p>
+            {/* Replace the file at HERO_IMAGE to change this picture; keep the same name. */}
+            <figure className="mx-auto w-full max-w-lg">
+              <div className="relative aspect-[3/2] overflow-hidden rounded-3xl border border-border bg-card shadow-2xl shadow-black/10">
+                <Image
+                  src={HERO_IMAGE}
+                  alt={content.hero.imageAlt}
+                  fill
+                  preload
+                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 92vw, 38vw"
+                  className="object-cover"
+                />
               </div>
-              <div className="flex justify-center py-3 text-primary" aria-hidden="true"><ArrowRight className="rotate-90" /></div>
-              <div className="rounded-2xl border border-primary/25 bg-primary/5 p-5">
-                <span className="text-xs font-semibold uppercase tracking-[0.16em] text-primary">{content.transformation.after.label}</span>
-                <p className="mt-3 text-lg font-semibold">{content.transformation.after.items[0]}</p>
-                <div className="mt-5 grid grid-cols-3 gap-2" aria-hidden="true">
-                  <span className="h-2 rounded-full bg-primary" /><span className="h-2 rounded-full bg-primary/55" /><span className="h-2 rounded-full bg-primary/25" />
-                </div>
-              </div>
-            </div>
+            </figure>
           </div>
         </div>
       </section>

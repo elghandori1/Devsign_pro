@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -15,21 +16,23 @@ import { FAQPageSchema } from "@/app/components/schemas";
 import FAQSection from "@/app/components/FAQSection";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { serializeJsonLd } from "@/app/lib/serializeJsonLd";
+import { MOROCCO_PAGE_PATHS } from "@/app/lib/moroccoPage";
 
 type Props = { params: Promise<{ locale: string }> };
 
-const route = "/consultant-seo-developpeur-web-maroc";
+const HERO_IMAGE = "/images/about/mohammed-elghandori-presentation-projet-web.jpg";
+const PAGE_UPDATED = "2026-11-21";
 
 const frenchFaqs = [
   {
     question: "Êtes-vous basé au Maroc ?",
     answer:
-      "Je suis basé en France et originaire du Maroc. J’accompagne les entreprises marocaines à distance avec un contact direct, un périmètre défini et des livrables adaptés au projet.",
+      "Je suis originaire du Maroc et je travaille aujourd’hui en France. J’accompagne les entreprises marocaines à distance, avec un contact direct, un périmètre défini et les standards de qualité attendus sur le marché européen.",
   },
   {
     question: "Quels services proposez-vous aux entreprises au Maroc ?",
     answer:
-      "Je réalise des audits et corrections SEO techniques, des créations ou refontes de sites web, des boutiques en ligne et des applications web ou tableaux de bord sur mesure.",
+      "Je réalise des audits et corrections SEO techniques, l’optimisation de contenu pour Google et les moteurs IA, la création ou la refonte de sites web et des boutiques en ligne Shopify, WooCommerce ou Next.js.",
   },
   {
     question: "Pouvez-vous améliorer un site qui existe déjà ?",
@@ -50,24 +53,24 @@ const frenchFaqs = [
 
 const englishFaqs = [
   {
-    question: "Are you based in Morocco?",
+    question: "Can I hire you as a freelance web developer from Morocco?",
     answer:
-      "I am based in France and originally from Morocco. I work remotely with Moroccan businesses through direct communication, a defined scope and clear project deliverables.",
+      "Yes. I’m a Moroccan web developer and SEO consultant now based in France, and I work remotely on projects for businesses in Morocco and abroad. You deal directly with me, with a defined scope, clear stages and a reply within 24 hours.",
+  },
+  {
+    question: "Do you work with international companies and tourism businesses in Morocco?",
+    answer:
+      "Yes. Hotels, riads, tour operators, exporters and international companies in Morocco often need a website in several languages. I build sites and online stores that work in English and French, with the technical SEO each market needs.",
   },
   {
     question: "What services do you provide for businesses in Morocco?",
     answer:
-      "I provide technical SEO audits and fixes, website creation and redesign, ecommerce development, and custom web applications or business dashboards.",
+      "I provide technical SEO audits and fixes, content optimization for Google and AI search, website creation and redesign, and Shopify, WooCommerce or Next.js online stores.",
   },
   {
     question: "Can you improve an existing website?",
     answer:
       "Yes. I first identify what is limiting crawling, indexing, performance, content or conversions. I can then improve the existing website or recommend a focused rebuild when necessary.",
-  },
-  {
-    question: "Do you work with companies across Morocco?",
-    answer:
-      "Yes. I work remotely with businesses in Casablanca, Rabat, Marrakech and other cities. Reviews, approvals and delivery are organized online through clear project stages.",
   },
   {
     question: "How can I request a quote for a project in Morocco?",
@@ -76,8 +79,12 @@ const englishFaqs = [
   },
 ];
 
+// French URL: serves the French page only. The English page lives at
+// /en/seo-consultant-web-developer-morocco (see that route's page.tsx).
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return [{ locale: "fr" }, { locale: "en" }];
+  return [{ locale: "fr" }];
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -87,17 +94,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const baseUrl = getBaseUrl();
-  const url = `${baseUrl}/${locale}${route}`;
-  const frenchUrl = `${baseUrl}/fr${route}`;
-  const englishUrl = `${baseUrl}/en${route}`;
+  const url = `${baseUrl}/${locale}${MOROCCO_PAGE_PATHS[locale]}`;
+  const frenchUrl = `${baseUrl}/fr${MOROCCO_PAGE_PATHS.fr}`;
+  const englishUrl = `${baseUrl}/en${MOROCCO_PAGE_PATHS.en}`;
   const isFrench = locale === "fr";
   const title = isFrench
-    ? "Consultant SEO & Développeur Web pour le Maroc | Devsignpro"
-    : "Web Developer & SEO Consultant for Morocco | Devsignpro";
+    ? "Consultant SEO et Développeur Web Maroc | Devis gratuit"
+    : "SEO Consultant & Web Developer from Morocco | Free Quote";
   const description = isFrench
-    ? "Originaire du Maroc et basé en France, j’accompagne les entreprises marocaines en SEO technique, création de sites, e-commerce et applications web."
-    : "Moroccan-born and based in France, I help businesses in Morocco with technical SEO, websites, ecommerce and custom web applications.";
-  const image = `${baseUrl}/cover/Designpro-cover.jpg`;
+    ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h."
+    : "Moroccan SEO consultant and web developer based in France: SEO audits, content, websites and online stores for businesses in Morocco and abroad.";
+  const image = `${baseUrl}${HERO_IMAGE}`;
 
   return {
     metadataBase: new URL(baseUrl),
@@ -106,6 +113,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: isFrench
       ? [
           "consultant SEO Maroc",
+          "consultant SEO et GEO Maroc",
           "développeur web pour entreprise Maroc",
           "développeur web Maroc",
           "expert SEO Maroc",
@@ -115,12 +123,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           "développement e-commerce Maroc",
         ]
       : [
-          "web developer Morocco",
-          "website developer Morocco",
           "SEO consultant Morocco",
           "SEO expert Morocco",
+          "SEO specialist Morocco",
+          "web developer Morocco",
+          "freelance web developer Morocco",
+          "hire web developer Morocco",
           "web developer and SEO expert from Morocco",
-          "technical SEO audit Morocco",
+          "Moroccan web developer",
           "ecommerce developer Morocco",
         ],
     alternates: {
@@ -134,7 +144,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       siteName: "Devsignpro",
       locale: isFrench ? "fr_MA" : "en_MA",
       type: "website",
-      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      images: [{ url: image, width: 800, height: 800, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
@@ -164,7 +174,7 @@ export default async function MoroccoMarketPage({ params }: Props) {
   const isFrench = locale === "fr";
   const faqs = isFrench ? frenchFaqs : englishFaqs;
   const baseUrl = getBaseUrl();
-  const pageUrl = `${baseUrl}/${locale}${route}`;
+  const pageUrl = `${baseUrl}/${locale}${MOROCCO_PAGE_PATHS[locale]}`;
   const schema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -172,15 +182,14 @@ export default async function MoroccoMarketPage({ params }: Props) {
         "@type": "WebPage",
         "@id": `${pageUrl}#webpage`,
         url: pageUrl,
-        name: isFrench
-          ? "Consultant SEO et développeur web pour le Maroc"
-          : "Web developer and SEO consultant for Morocco",
-        description: isFrench
-          ? "Services de SEO technique, développement web, e-commerce et applications sur mesure pour les entreprises au Maroc."
-          : "Technical SEO, web development, ecommerce and custom application services for businesses in Morocco.",
+        name: isFrench ? "Consultant SEO et Développeur Web Maroc | Devis gratuit" : "SEO Consultant & Web Developer from Morocco | Free Quote",
+        description: isFrench ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h." : "Moroccan SEO consultant and web developer based in France: SEO audits, content, websites and online stores for businesses in Morocco and abroad.",
         inLanguage: isFrench ? "fr-MA" : "en-MA",
+        dateModified: PAGE_UPDATED,
+        primaryImageOfPage: { "@id": `${pageUrl}#primaryimage` },
         isPartOf: { "@id": `${baseUrl}/#website` },
         about: { "@id": `${pageUrl}#service` },
+        mainEntity: { "@id": `${pageUrl}#service` },
         breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
       },
       {
@@ -190,14 +199,28 @@ export default async function MoroccoMarketPage({ params }: Props) {
           ? "Services SEO et développement web pour le Maroc"
           : "SEO and web development services for Morocco",
         serviceType: isFrench
-          ? ["Audit SEO technique", "Développement web", "Développement e-commerce", "Applications web sur mesure"]
-          : ["Technical SEO audit", "Web development", "Ecommerce development", "Custom web applications"],
+          ? ["Audit SEO technique", "Optimisation de contenu SEO et GEO", "Création de site web", "Création de boutique en ligne"]
+          : ["Technical SEO audit", "SEO and GEO content optimization", "Website development", "Online store development"],
+        description: isFrench ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h." : "Moroccan-born, France-based SEO consultant and web developer: SEO audits, content, websites and online stores for businesses in Morocco. Reply in 24h.",
+        image: { "@id": `${pageUrl}#primaryimage` },
         provider: { "@id": `${baseUrl}/#person` },
+        brand: { "@id": `${baseUrl}/#business` },
         areaServed: { "@type": "Country", name: "Morocco" },
+        audience: { "@type": "BusinessAudience", audienceType: isFrench ? "TPE, PME, e-commerçants et agences au Maroc" : "Small businesses, ecommerce brands and agencies in Morocco" },
         availableChannel: {
           "@type": "ServiceChannel",
           serviceLocation: { "@type": "VirtualLocation", url: pageUrl },
         },
+      },
+      {
+        "@type": "ImageObject",
+        "@id": `${pageUrl}#primaryimage`,
+        url: `${baseUrl}${HERO_IMAGE}`,
+        contentUrl: `${baseUrl}${HERO_IMAGE}`,
+        width: 800,
+        height: 800,
+        caption: isFrench ? "Présentation d’un projet web devant une équipe technique" : "Presenting a web project to a technical team",
+        creator: { "@id": `${baseUrl}/#person` },
       },
       {
         "@type": "BreadcrumbList",
@@ -244,10 +267,10 @@ export default async function MoroccoMarketPage({ params }: Props) {
     },
     {
       icon: Wrench,
-      title: "Applications et tableaux de bord",
-      text: "Développer un outil métier, un espace client ou un dashboard sur mesure lorsque les solutions standards ne répondent pas à votre fonctionnement.",
-      href: "/fr/services/business-dashboards",
-      label: "Voir les applications sur mesure",
+      title: "Optimisation de contenu SEO et GEO",
+      text: "Aligner vos pages sur ce que vos clients recherchent au Maroc, renforcer le maillage interne et préparer votre contenu à être cité par Google et les moteurs IA.",
+      href: "/fr/services/seo-content-optimization",
+      label: "Voir l’optimisation de contenu",
     },
   ] : [
     {
@@ -273,10 +296,10 @@ export default async function MoroccoMarketPage({ params }: Props) {
     },
     {
       icon: Wrench,
-      title: "Custom applications and dashboards",
-      text: "Develop an internal tool, customer portal or custom dashboard when standard software does not fit your business processes.",
-      href: "/en/services/business-dashboards",
-      label: "Explore custom applications",
+      title: "SEO and GEO content optimization",
+      text: "Align your pages with what your customers search for in Morocco, strengthen internal linking and prepare your content to be cited by Google and AI search.",
+      href: "/en/services/seo-content-optimization",
+      label: "Explore content optimization",
     },
   ];
 
@@ -324,24 +347,27 @@ export default async function MoroccoMarketPage({ params }: Props) {
             </ol>
           </nav>
 
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(300px,0.7fr)] lg:gap-16">
-            <header>
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(300px,0.8fr)_minmax(0,1.2fr)] lg:gap-16">
+            <header className="lg:order-2">
               <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.15em] text-primary">
                 <MapPinned className="size-4" aria-hidden="true" />
-                {isFrench ? "Originaire du Maroc · Basé en France · Collaboration à distance" : "Originally from Morocco · Based in France · Remote collaboration"}
+                {isFrench ? "Originaire du Maroc · Expérience en France" : "Moroccan-born · Based in France · Remote worldwide"}
               </p>
-              <h1 id="morocco-heading" className="mt-5 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl">
-                {isFrench ? "Consultant SEO et développeur web pour les entreprises au Maroc" : "Web developer and SEO consultant for businesses in Morocco"}
+              <h1 id="morocco-heading" className="mt-5 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+                {isFrench ? "Consultant SEO et développeur web marocain pour les entreprises au Maroc" : "SEO Consultant and Web Developer from Morocco"}
               </h1>
               <p className="mt-6 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
                 {isFrench
-                  ? "J’aide les TPE, PME, e-commerçants et agences marocaines à améliorer leur visibilité sur Google, corriger leur site et construire des expériences web rapides qui facilitent la prise de contact ou la vente."
-                  : "I help Moroccan small businesses, ecommerce brands and agencies improve their Google visibility, fix website problems and build fast web experiences that support enquiries and sales."}
+                  ? "Consultant SEO et GEO et développeur web originaire du Maroc, je travaille aujourd’hui en France selon les standards du marché européen. J’aide les TPE, PME, e-commerçants et agences au Maroc à être visibles sur Google et dans les réponses IA : audit SEO technique, optimisation du contenu, création de sites web et de boutiques en ligne."
+                  : "I’m a Moroccan SEO and GEO consultant and web developer, now based in France. I help businesses in Morocco, and companies abroad looking for a developer from Morocco, get found on Google and in AI answers: technical SEO audits, content optimization, websites and online stores."}
               </p>
               <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted-foreground sm:text-base">
                 {isFrench
-                  ? "Devsignpro réunit SEO technique et développement web dans une même intervention. Vous échangez directement avec la personne qui analyse, recommande et réalise les corrections."
-                  : "Devsignpro combines technical SEO and web development in one service. You work directly with the person who audits, recommends and implements the improvements."}
+                  ? "Vous échangez directement avec la personne qui analyse, recommande et réalise les corrections, à distance et avec des étapes claires."
+                  : "You work directly with the person who audits, recommends and implements the improvements, remotely and through clear stages."}{" "}
+                <Link href={`/${locale}/about`} className="inline-flex min-h-11 items-center font-semibold text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary">
+                  {isFrench ? "Découvrir mon parcours en France" : "Read about my background in France"}
+                </Link>
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link href={`/${locale}/contact`} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-primary px-6 py-3 font-semibold text-primary-foreground transition hover:brightness-110">
@@ -354,27 +380,61 @@ export default async function MoroccoMarketPage({ params }: Props) {
               </div>
             </header>
 
-            <aside className="rounded-3xl border border-border bg-card p-6 shadow-xl shadow-black/5 sm:p-8" aria-label={isFrench ? "Positionnement Devsignpro pour le Maroc" : "Devsignpro positioning for Morocco"}>
-              <Sparkles className="size-6 text-primary" aria-hidden="true" />
-              <h2 className="mt-5 text-xl font-bold">{isFrench ? "Un lien réel avec le marché marocain" : "A genuine connection to the Moroccan market"}</h2>
-              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                {isFrench
-                  ? "Je suis originaire du Maroc, formé à 1337 UM6P au sein du réseau 42, et actuellement installé en France. Cette double perspective me permet de comprendre les attentes locales tout en appliquant des standards techniques adaptés aux projets internationaux."
-                  : "I am originally from Morocco, trained at 1337 UM6P within the 42 Network, and currently based in France. This perspective helps me understand local expectations while applying technical standards suited to international projects."}
-              </p>
-              <ul className="mt-6 space-y-3 text-sm">
-                {(isFrench
-                  ? ["Interlocuteur direct", "SEO et code dans la même prestation", "Projet suivi à distance avec des étapes claires"]
-                  : ["Direct communication", "SEO and development in one service", "Remote delivery through clear project stages"]
-                ).map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-primary" aria-hidden="true" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </aside>
+            <figure className="mx-auto w-full max-w-md lg:order-1">
+              <div className="relative aspect-square overflow-hidden rounded-3xl border border-border bg-card shadow-2xl shadow-black/10">
+                <Image
+                  src={HERO_IMAGE}
+                  alt={isFrench
+                    ? "Mohammed Elghandori, consultant SEO et développeur web, présentant un projet web devant une équipe technique"
+                    : "Mohammed Elghandori, SEO consultant and web developer, presenting a web project to a technical team"}
+                  fill
+                  preload
+                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 92vw, 36vw"
+                  className="object-cover"
+                />
+              </div>
+              <figcaption className="mt-3 text-center text-sm text-muted-foreground">
+                {isFrench ? "Présentation d’un projet web devant une équipe technique" : "Presenting a web project to a technical team"}
+              </figcaption>
+            </figure>
           </div>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-card" aria-labelledby="morocco-france-heading">
+        <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20">
+          <header className="max-w-3xl">
+            <Sparkles className="size-6 text-primary" aria-hidden="true" />
+            <h2 id="morocco-france-heading" className="mt-4 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {isFrench ? "Une vision des deux marchés : le Maroc et la France" : "Two markets, one perspective: Morocco and France"}
+            </h2>
+            <p className="mt-5 leading-relaxed text-muted-foreground">
+              {isFrench
+                ? "Originaire du Maroc, je comprends les attentes de vos clients. Installé en France, j’applique les méthodes et le niveau d’exigence du marché européen à votre site."
+                : "Being from Morocco, I understand your customers’ expectations. Being based in France, I bring European methods and quality standards to your website."}
+            </p>
+          </header>
+          <ul className="mt-10 grid gap-5 md:grid-cols-3">
+            {(isFrench
+              ? [
+                  ["Des standards du marché européen", "Vitesse, accessibilité, données structurées et respect du RGPD : votre site suit le niveau d’exigence attendu en France, où la concurrence sur Google est forte."],
+                  ["Une connaissance du marché marocain", "Vos clients, leurs habitudes d’achat et leurs recherches au Maroc sont pris en compte dès la structure du site et le choix des mots-clés."],
+                  ["Un site prêt pour l’international", "Si vous visez aussi des clients en France ou en Europe, votre site est pensé dès le départ pour plusieurs langues et plusieurs marchés."],
+                ]
+              : [
+                  ["European market standards", "Speed, accessibility, structured data and GDPR compliance: your website meets the level expected in France, where Google competition is strong."],
+                  ["Knowledge of the Moroccan market", "Your customers, their buying habits and their searches in Morocco shape the site structure and keyword choices from the start."],
+                  ["A website ready for international growth", "If you also target customers in France or Europe, your website is planned from day one for several languages and markets."],
+                ]
+            ).map(([title, text]) => (
+              <li key={title} className="rounded-2xl border border-border bg-background p-6">
+                <CheckCircle2 className="size-5 text-primary" aria-hidden="true" />
+                <h3 className="mt-4 text-lg font-bold">{title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">{text}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -387,7 +447,7 @@ export default async function MoroccoMarketPage({ params }: Props) {
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               {isFrench
-                ? "La page d’accueil présente l’offre globale. Chaque service ci-dessous mène vers une page détaillée pour comprendre les livrables, les cas d’usage et la méthode de travail."
+                ? "Choisissez le service qui correspond à votre problème. Chaque lien mène vers une page détaillée : livrables, cas d’usage et méthode de travail."
                 : "Choose the service that matches your problem. Each link opens a detailed page explaining the deliverables, relevant use cases and working method."}
             </p>
           </header>
@@ -442,17 +502,17 @@ export default async function MoroccoMarketPage({ params }: Props) {
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.15em] text-primary">{isFrench ? "Compétences et preuves" : "Skills and evidence"}</p>
             <h2 id="morocco-proof-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
-              {isFrench ? "Une expertise web et SEO au service du marché marocain" : "A web developer and SEO specialist from Morocco"}
+              {isFrench ? "Des résultats concrets sur Google" : "Proven results on Google"}
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               {isFrench
-                ? "Basé en France et originaire du Maroc, j’interviens à distance sur la technique, le contenu, la performance et l’architecture des sites. Cette expérience me permet d’accompagner des entreprises marocaines avec une méthode claire et des standards adaptés aux projets internationaux."
-                : "I am a Moroccan-born web developer and SEO specialist currently based in France. I work remotely with businesses in Morocco on technical SEO, content structure, performance and website architecture."}
+                ? "Pour un site d’entreprise, la refonte et le SEO technique ont apporté plus de 2 900 nouveaux utilisateurs en deux mois et la première position sur Google pour son mot-clé principal. J’applique la même méthode aux entreprises marocaines : diagnostic, corrections, puis mesure dans Search Console."
+                : "For a business website, the rebuild and technical SEO brought more than 2,900 new users in two months and first place on Google for its main keyword. I apply the same method to businesses in Morocco: diagnosis, fixes, then measurement in Search Console."}
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               {isFrench
-                ? "Les études de cas montrent le contexte, les choix de réalisation et les résultats vérifiables lorsqu’ils sont disponibles. Les projets académiques démontrent aussi ma maîtrise des systèmes, réseaux, architectures temps réel et environnements conteneurisés."
-                : "My case studies explain the project context, implementation decisions and verifiable outcomes when data is available. Academic projects also demonstrate experience with systems, networks, real-time architecture and containerized environments."}
+                ? "Formé à 1337 UM6P au sein du réseau 42 au Maroc, puis à 42 Paris, j’ai aussi remporté plusieurs hackathons d’ingénierie au Maroc."
+                : "Trained at 1337 UM6P within the 42 Network in Morocco, then at 42 Paris, I have also won several engineering hackathons in Morocco."}
             </p>
           </div>
           <div className="rounded-2xl border border-border bg-card p-6 sm:p-8">

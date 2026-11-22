@@ -12,7 +12,6 @@ import PortfolioContent from "../../components/PortfolioContent";
 
 type Props = {
   params: Promise<{ locale: string }>;
-  searchParams: Promise<{ filter?: string }>;
 };
 
 type ProjectType = "professional" | "personal" | "academic";
@@ -66,20 +65,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   });
 }
 
-export default async function PortfolioPage({ params, searchParams }: Props) {
+export default async function PortfolioPage({ params }: Props) {
   const { locale: rawLocale } = await params;
-  const { filter: rawFilter } = await searchParams;
 
   const locale: Locale = i18n.locales.includes(rawLocale as Locale)
     ? (rawLocale as Locale)
     : i18n.defaultLocale;
-
-  const validFilters = ["all", "professional", "personal", "academic"] as const;
-  type FilterKey = (typeof validFilters)[number];
-
-  const activeFilter = validFilters.includes(rawFilter as FilterKey)
-    ? (rawFilter as FilterKey)
-    : "all";
 
   const dict = await getDictionary(locale);
   const data = dict.pages?.portfolio_page;
@@ -102,11 +93,6 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
     linkLabel: p.linkLabel,
   }));
 
-  const filteredProjects =
-    activeFilter === "all"
-      ? allProjects
-      : allProjects.filter((p) => p.type === activeFilter);
-
   return (
     <>
       <PortfolioSchema
@@ -124,8 +110,6 @@ export default async function PortfolioPage({ params, searchParams }: Props) {
         locale={locale}
         isRtl={isRtl}
         allProjects={allProjects}
-        filteredProjects={filteredProjects}
-        activeFilter={activeFilter}
       />
     </>
   );

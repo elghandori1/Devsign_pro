@@ -43,8 +43,8 @@ const SERVICES: {
   {
     path: "/services/seo-content-optimization",
     name: {
-      en: "SEO content optimization, AI search and CRO",
-      fr: "Optimisation de contenu SEO, GEO et CRO",
+      en: "SEO and GEO content optimization",
+      fr: "Optimisation de contenu SEO et GEO",
     },
   },
   {

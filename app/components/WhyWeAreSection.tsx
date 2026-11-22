@@ -42,36 +42,36 @@ export default function WhyWeAreSection({
           </p>
         </header>
 
-        <ul className="m-0 grid list-none gap-4 p-0 sm:grid-cols-2 sm:gap-6">
+        <ul className="m-0 grid list-none gap-4 p-0 sm:gap-6 lg:grid-cols-3">
           {translations.reasons.map((reason, index) => (
             <li key={reason.title} className="flex">
-              <article className="group flex w-full gap-4 rounded-2xl border border-border bg-card p-5 transition-colors hover:border-primary/30 sm:p-6">
-                <div
-                  className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary"
-                  aria-hidden="true"
-                >
-                  <CheckCircle2 size={22} />
-                </div>
-                <div className="min-w-0">
-                  <p className="mb-2 text-xs font-semibold tracking-[0.16em] text-primary">
+              <article className="group flex w-full flex-col rounded-2xl border border-border bg-card p-6 transition duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10 sm:p-7">
+                <div className="flex items-center justify-between">
+                  <div
+                    className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground"
+                    aria-hidden="true"
+                  >
+                    <CheckCircle2 size={24} />
+                  </div>
+                  <span className="text-sm font-semibold tracking-[0.16em] text-primary" aria-hidden="true">
                     {String(index + 1).padStart(2, "0")}
-                  </p>
-                  <h3 className="text-lg font-bold leading-snug text-foreground sm:text-xl">
-                    {reason.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
-                    {reason.description}
-                  </p>
-                  {reason.href && reason.linkLabel ? (
-                    <Link
-                      href={`/${locale}${reason.href}`}
-                      className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
-                    >
-                      {reason.linkLabel}
-                      <ArrowRight size={16} aria-hidden="true" />
-                    </Link>
-                  ) : null}
+                  </span>
                 </div>
+                <h3 className="mt-5 text-lg font-bold leading-snug text-foreground sm:text-xl">
+                  {reason.title}
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-muted-foreground sm:text-base">
+                  {reason.description}
+                </p>
+                {reason.href && reason.linkLabel ? (
+                  <Link
+                    href={`/${locale}${reason.href}`}
+                    className="mt-auto inline-flex min-h-11 items-center gap-2 pt-4 text-sm font-semibold text-primary underline-offset-4 hover:underline"
+                  >
+                    {reason.linkLabel}
+                    <ArrowRight size={16} aria-hidden="true" />
+                  </Link>
+                ) : null}
               </article>
             </li>
           ))}

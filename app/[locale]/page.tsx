@@ -40,17 +40,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const isEnglish = locale === "en";
   const title = isEnglish
-    ? "Technical SEO & AI Search Consultant | Devsignpro"
-    : "Consultant SEO Technique en France | Devsignpro";
+    ? "SEO & GEO Consultant | Free Quote Within 24 Hours"
+    : "Consultant SEO et GEO en France | Devis gratuit sous 24 h";
 
   const description = isEnglish
-    ? "Technical SEO and AI search consultant based in France, helping businesses improve indexing, performance and search visibility."
-    : "Consultant SEO technique et GEO en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT et Perplexity.";
+    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, and websites and online stores that bring you customers."
+    : "Votre site est invisible sur Google ou ChatGPT ? Audit SEO dès 450 €, contenus optimisés, sites et boutiques en ligne qui attirent des clients.";
 
   const keywords = isEnglish
     ? [
+        "seo and geo consultant",
+        "geo consultant",
         "technical seo consultant",
-        "technical seo consultant France",
         "technical seo audit",
         "website seo optimization",
         "technical seo fixes",
@@ -61,6 +62,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "international seo consultant",
       ]
     : [
+          "consultant seo et geo",
           "consultant seo france",
           "consultant seo technique",
           "consultant geo france",
@@ -96,13 +98,13 @@ export default async function Home({ params }: Props) {
   const baseUrl = getBaseUrl();
   const jobTitle =
     locale === "en"
-      ? "Technical SEO and AI Search Consultant"
+      ? "SEO and GEO Consultant"
       : "Consultant SEO et GEO en France";
 
   const isEnglish = locale === "en";
   const description = isEnglish
-    ? "Technical SEO and AI search consultant based in France, helping businesses improve website indexing, performance and search visibility."
-    : "Consultant SEO technique et GEO en France. J’optimise les sites web et boutiques en ligne pour Google, ChatGPT, Google AI Overviews et Perplexity.";
+    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, and websites and online stores that bring you customers."
+    : "Votre site est invisible sur Google ou ChatGPT ? Audit SEO dès 450 €, contenus optimisés, sites et boutiques en ligne qui attirent des clients.";
   const faqs = isEnglish
     ? [
         {
@@ -122,9 +124,9 @@ export default async function Home({ params }: Props) {
             "WordPress is a practical choice when your team wants to manage pages and content through a familiar dashboard. Next.js is better suited to highly customized experiences, advanced performance requirements, and web applications. I recommend the solution that fits your content, budget, and maintenance needs.",
         },
         {
-          question: "What types of opportunities are you open to in France?",
+          question: "How does a first collaboration work?",
           answer:
-            "I am open to student roles, fixed-term contracts and permanent positions in France, focused on technical SEO, web development or a role combining both. My portfolio is designed to help recruiters and technical teams evaluate how I analyze, build and verify solutions.",
+            "You share your website and your goal. I reply within 24 hours, then we talk to define the scope: SEO audit, content optimization, a website or an online store. You then receive a clear, no-obligation quote.",
         },
       ]
     : [
@@ -147,9 +149,9 @@ export default async function Home({ params }: Props) {
               "WordPress convient si vous souhaitez gérer facilement vos pages et vos contenus depuis une interface connue. Next.js est adapté aux expériences très personnalisées, aux exigences de performance avancées et aux applications web. Je recommande la solution selon vos contenus, votre budget et vos besoins de maintenance.",
           },
           {
-            question: "Quelles opportunités recherchez-vous en France ?",
+            question: "Comment se passe une première collaboration ?",
             answer:
-              "Je suis disponible pour un poste étudiant, un CDD ou un CDI en France, centré sur le SEO technique, le développement web ou un rôle réunissant les deux. Mon portfolio permet aux recruteurs et aux équipes techniques d’évaluer ma façon d’analyser, de construire et de vérifier une solution.",
+              "Vous me présentez votre site et votre objectif. Je vous réponds sous 24 h, puis nous échangeons pour définir le périmètre : audit SEO, optimisation du contenu, création de site ou de boutique en ligne. Vous recevez ensuite un devis clair et sans engagement.",
           },
         ];
 

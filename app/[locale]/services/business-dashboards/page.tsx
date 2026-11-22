@@ -10,7 +10,7 @@ type Props = { params: Promise<{ locale: string }> };
 type Landing = ServiceLandingContent & {
   seo: { title: string; description: string; keywords: string[] };
 };
-const PAGE_UPDATED = "2026-11-16";
+const PAGE_UPDATED = "2026-11-22";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -69,11 +69,16 @@ export default async function BusinessDashboardsPage({ params }: Props) {
         description: landing.seo.description,
         serviceType:
           locale === "fr"
-            ? "Développement d'application web et tableau de bord sur mesure"
-            : "Custom web application and dashboard development",
+            ? "Tableau de bord de gestion et d’analyse sur mesure"
+            : "Custom management and analytics dashboard",
         url: pageUrl,
         image: `${baseUrl}${service.image}`,
         provider: { "@id": `${baseUrl}/#person` },
+        brand: { "@id": `${baseUrl}/#business` },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: locale === "fr" ? "TPE, PME, e-commerçants et équipes" : "Small businesses, ecommerce brands and teams",
+        },
         areaServed:
           locale === "fr"
             ? [

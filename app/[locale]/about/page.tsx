@@ -25,7 +25,7 @@ import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
 type Props = { params: Promise<{ locale: string }> };
 
 /** Date of the last meaningful content update. Change it when the page copy changes. */
-const PAGE_UPDATED = "2026-11-15";
+const PAGE_UPDATED = "2026-11-21";
 
 /**
  * Card lists become a horizontal swipe row on phones (the next card peeks in
@@ -90,7 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: seo.keywords,
     route: "/about",
     ogImagePath: "/cover/Designpro-mohammed-cover.jpg",
-    type: "website",
+    type: "profile",
   });
 }
 
@@ -120,6 +120,7 @@ export default async function AboutPage({ params }: Props) {
         "name": t.seo.title,
         "description": t.seo.description,
         "inLanguage": localeToBcp47(locale),
+        "primaryImageOfPage": `${baseUrl}/images/about/profile1.png`,
         "isPartOf": { "@id": `${baseUrl}/#website` },
         "dateModified": PAGE_UPDATED,
         "mainEntity": { "@id": `${baseUrl}/#person` },
@@ -144,6 +145,13 @@ export default async function AboutPage({ params }: Props) {
         "image": `${baseUrl}/images/about/profile1.png`,
         "jobTitle": t.schema.jobTitle,
         "description": t.schema.description,
+        "mainEntityOfPage": { "@id": `${baseUrl}/${locale}/about#profile-page` },
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": t.schema.jobTitle,
+          "occupationLocation": { "@type": "Country", "name": "France" },
+          "skills": t.schema.knowsAbout.join(", "),
+        },
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "FR",
@@ -391,7 +399,7 @@ export default async function AboutPage({ params }: Props) {
                 </p>
                 <Link
                   href="/fr/consultant-seo-developpeur-web-maroc"
-                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline"
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary"
                 >
                   Découvrir les services web et SEO pour le Maroc
                   <ArrowRight size={16} aria-hidden="true" />
@@ -404,8 +412,8 @@ export default async function AboutPage({ params }: Props) {
                   My Moroccan background and current base in France allow me to support businesses remotely through one point of contact for technical SEO and web development.
                 </p>
                 <Link
-                  href="/en/consultant-seo-developpeur-web-maroc"
-                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline"
+                  href="/en/seo-consultant-web-developer-morocco"
+                  className="mt-4 inline-flex min-h-11 items-center gap-2 font-semibold text-foreground underline decoration-primary/50 underline-offset-4 hover:text-primary"
                 >
                   Explore web development and SEO services for Morocco
                   <ArrowRight size={16} aria-hidden="true" />
@@ -431,6 +439,33 @@ export default async function AboutPage({ params }: Props) {
               ))}
             </ol>
           </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="credentials-heading" className="border-b border-border">
+        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
+          <header>
+            <div className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
+              <Trophy size={22} />
+            </div>
+            <h2 id="credentials-heading" className="mt-5 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
+              {t.credentials.heading}
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.credentials.intro}</p>
+          </header>
+
+          <ol className="grid gap-x-8 gap-y-0 sm:grid-cols-2">
+            {t.credentials.items.map((item) => (
+              <li key={`${item.year}-${item.name}`} className="border-t border-border py-5">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="font-semibold leading-snug">{item.name}</h3>
+                  <time className="shrink-0 text-sm font-semibold text-foreground" dateTime={item.year}>{item.year}</time>
+                </div>
+                <p className="mt-2 text-sm text-muted-foreground">{item.location}</p>
+                <p className="mt-1 text-sm font-medium">{item.result}</p>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 
@@ -555,33 +590,6 @@ export default async function AboutPage({ params }: Props) {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <section aria-labelledby="credentials-heading" className="border-y border-border bg-card">
-        <div className="mx-auto grid max-w-7xl gap-7 px-4 py-10 sm:px-6 sm:py-20 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16">
-          <header>
-            <div className="inline-flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary" aria-hidden="true">
-              <Trophy size={22} />
-            </div>
-            <h2 id="credentials-heading" className="mt-5 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">
-              {t.credentials.heading}
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{t.credentials.intro}</p>
-          </header>
-
-          <ol className="grid gap-x-8 gap-y-0 sm:grid-cols-2">
-            {t.credentials.items.map((item) => (
-              <li key={`${item.year}-${item.name}`} className="border-t border-border py-5">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-semibold leading-snug">{item.name}</h3>
-                  <time className="shrink-0 text-sm font-semibold text-foreground" dateTime={item.year}>{item.year}</time>
-                </div>
-                <p className="mt-2 text-sm text-muted-foreground">{item.location}</p>
-                <p className="mt-1 text-sm font-medium">{item.result}</p>
-              </li>
-            ))}
-          </ol>
         </div>
       </section>
 

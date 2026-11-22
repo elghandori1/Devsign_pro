@@ -96,19 +96,9 @@ type Landing = {
   cta: { heading: string; description: string; button: string };
 };
 
-type CaseStudy = {
-  badge: string;
-  title: string;
-  description: string;
-  results: { value: string; label: string }[];
-  image: string;
-  imageAlt: string;
-  link: { href: string; label: string };
-};
-
 const COVERAGE_ICONS = [Search, Code2, Network, Gauge, FileSearch, GitBranch] as const;
 const FIT_ICONS = [Globe2, Search, ShieldCheck] as const;
-const PAGE_UPDATED = "2026-11-15";
+const PAGE_UPDATED = "2026-11-21";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -143,7 +133,6 @@ export default async function TechnicalSEOPage({ params }: Props) {
   const dict = await getDictionary(locale);
   const service = dict.pages.services_page.services.technical_seo;
   const landing = service.landing as Landing;
-  const caseStudy = service.caseStudy as CaseStudy;
   const baseUrl = getBaseUrl();
   const pageUrl = `${baseUrl}/${locale}/services/technical-seo`;
 
@@ -171,6 +160,11 @@ export default async function TechnicalSEOPage({ params }: Props) {
         "image": `${baseUrl}${service.image}`,
         "serviceType": locale === "fr" ? "Audit SEO technique et corrections" : "Technical SEO audit and implementation",
         "provider": { "@id": `${baseUrl}/#person` },
+        "brand": { "@id": `${baseUrl}/#business` },
+        "audience": {
+          "@type": "BusinessAudience",
+          "audienceType": locale === "fr" ? "TPE, PME, e-commerçants et agences web" : "Small businesses, ecommerce brands and web agencies",
+        },
         "areaServed": locale === "fr"
           ? [{ "@type": "Country", "name": "France" }, { "@type": "Place", "name": "Europe" }]
           : { "@type": "Place", "name": "Worldwide" },
@@ -405,40 +399,6 @@ export default async function TechnicalSEOPage({ params }: Props) {
             <h3 className="mt-7 font-semibold">{landing.implementation.toolsLabel}</h3>
             <ul className="mt-4 flex flex-wrap gap-2">{landing.implementation.tools.map((item) => <li key={item} className="rounded-full border border-primary/20 bg-primary/5 px-3 py-1.5 text-sm font-medium text-primary">{item}</li>)}</ul>
           </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="proof-heading" className="border-b border-border">
-        <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20">
-          <div className="grid overflow-hidden rounded-3xl border border-border bg-card lg:grid-cols-[0.95fr_1.05fr]">
-            <div className="relative min-h-64 border-b border-border lg:min-h-full lg:border-b-0 lg:border-r">
-              <Image src={caseStudy.image} alt={caseStudy.imageAlt} fill sizes="(max-width: 1024px) 100vw, 48vw" className="object-cover" />
-            </div>
-            <div className="p-6 sm:p-8 lg:p-10">
-              <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{caseStudy.badge}</p>
-              <h2 id="proof-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl">{caseStudy.title}</h2>
-              <p className="mt-5 text-base leading-relaxed text-muted-foreground">{caseStudy.description}</p>
-              <dl className="mt-7 grid gap-4 sm:grid-cols-3">
-                {caseStudy.results.map((result) => (
-                  <div key={result.label} className="border-t border-border pt-4"><dt className="text-2xl font-bold text-primary">{result.value}</dt><dd className="mt-1 text-sm leading-relaxed text-muted-foreground">{result.label}</dd></div>
-                ))}
-              </dl>
-              <Link href={`/${locale}${caseStudy.link.href}`} className="mt-7 inline-flex min-h-11 items-center gap-2 font-semibold text-primary hover:underline">{caseStudy.link.label}<ArrowRight size={16} aria-hidden="true" /></Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="ai-search-heading" className="border-b border-border bg-card">
-        <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 sm:py-20 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
-          <header>
-            <p className="text-sm font-semibold uppercase tracking-[0.16em] text-primary">{landing.aiSearch.eyebrow}</p>
-            <h2 id="ai-search-heading" className="mt-3 text-2xl font-bold tracking-tight sm:text-3xl lg:text-4xl">{landing.aiSearch.heading}</h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">{landing.aiSearch.description}</p>
-          </header>
-          <ul className="divide-y divide-border border-y border-border">
-            {landing.aiSearch.items.map((item) => <li key={item} className="flex gap-3 py-5"><CheckCircle2 className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" /><span className="font-medium leading-relaxed">{item}</span></li>)}
-          </ul>
         </div>
       </section>
 

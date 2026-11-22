@@ -61,9 +61,9 @@ for (const url of urls) {
     assert.equal(canonicals.length, 1, "Expected exactly one canonical");
     assert.equal(canonicals[0].href, url, "Incorrect canonical");
     assert.ok(!tags.some((tag) => /^(robots|googlebot)$/i.test(tag.name || "") && /noindex/i.test(tag.content || "")));
-    if (page.pathname.endsWith("/consultant-seo-developpeur-web-maroc")) {
+    if (page.pathname.endsWith("/consultant-seo-developpeur-web-maroc") || page.pathname.endsWith("/seo-consultant-web-developer-morocco")) {
       const frenchUrl = `${canonicalOrigin}/fr/consultant-seo-developpeur-web-maroc`;
-      const englishUrl = `${canonicalOrigin}/en/consultant-seo-developpeur-web-maroc`;
+      const englishUrl = `${canonicalOrigin}/en/seo-consultant-web-developer-morocco`;
       for (const [hreflang, href] of [["fr-MA", frenchUrl], ["en-MA", englishUrl], ["x-default", englishUrl]]) {
         assert.ok(tags.some((tag) => tag.hreflang === hreflang && tag.href === href), `Missing Morocco alternate: ${hreflang}`);
         assert.ok(urls.includes(href), "Morocco language alternate absent from sitemap");
@@ -84,7 +84,10 @@ for (const url of urls) {
 const redirects = [["/", "/en"], ["/about", "/en/about"]];
 redirects.push(
   ["/consultant-seo-developpeur-web-maroc", "/fr/consultant-seo-developpeur-web-maroc"],
-  ["/ar/consultant-seo-developpeur-web-maroc", "/en/consultant-seo-developpeur-web-maroc"],
+  ["/ar/consultant-seo-developpeur-web-maroc", "/en/seo-consultant-web-developer-morocco"],
+  ["/en/consultant-seo-developpeur-web-maroc", "/en/seo-consultant-web-developer-morocco"],
+  ["/seo-consultant-web-developer-morocco", "/en/seo-consultant-web-developer-morocco"],
+  ["/fr/seo-consultant-web-developer-morocco", "/fr/consultant-seo-developpeur-web-maroc"],
 );
 const replacements = [
   ["articles/best-laptop-guide-2026", "articles/laptop-buying-guide-2026"],

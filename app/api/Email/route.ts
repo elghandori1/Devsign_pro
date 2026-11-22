@@ -42,7 +42,7 @@ export async function POST(request: Request) {
       "website",
       "ecommerce",
       "dashboard",
-      "collaboration",
+      "content",
       "other",
     ]);
 

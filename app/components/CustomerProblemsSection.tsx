@@ -98,22 +98,22 @@ export default function CustomerProblemsSection({
               {content.solutionDescription}
             </p>
           </div>
-          <div className="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
-            <Link
-              href={`/${locale}/services/technical-seo`}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              {content.cta}
-              <ArrowRight size={17} aria-hidden="true" />
-            </Link>
-            <Link
-              href={`/${locale}/services/seo-content-optimization`}
-              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary/25 bg-background px-5 py-3 text-sm font-semibold text-primary transition-colors hover:border-primary/50 hover:bg-primary/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-            >
-              {content.secondaryCta}
-              <ArrowRight size={17} aria-hidden="true" />
-            </Link>
-          </div>
+          <div className="flex shrink-0 flex-col gap-3 sm:min-w-64">
+  <Link
+    href={`/${locale}/services/technical-seo`}
+    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/20 transition-opacity hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+  >
+    {content.cta}
+    <ArrowRight size={17} aria-hidden="true" />
+  </Link>
+  <Link
+    href={`/${locale}/services/seo-content-optimization`}
+    className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl border border-primary/25 bg-background px-5 py-3 text-sm font-semibold text-primary transition-colors hover:border-primary/50 hover:bg-primary/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+  >
+    {content.secondaryCta}
+    <ArrowRight size={17} aria-hidden="true" />
+  </Link>
+</div>
         </div>
       </div>
     </section>

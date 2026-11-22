@@ -10,7 +10,7 @@ type Props = { params: Promise<{ locale: string }> };
 type Landing = ServiceLandingContent & {
   seo: { title: string; description: string; keywords: string[] };
 };
-const PAGE_UPDATED = "2026-11-16";
+const PAGE_UPDATED = "2026-11-22";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));
@@ -74,6 +74,11 @@ export default async function EcommerceDevelopmentPage({ params }: Props) {
         url: pageUrl,
         image: `${baseUrl}${service.image}`,
         provider: { "@id": `${baseUrl}/#person` },
+        brand: { "@id": `${baseUrl}/#business` },
+        audience: {
+          "@type": "BusinessAudience",
+          audienceType: locale === "fr" ? "Marques, commerçants et e-commerçants" : "Brands, retailers and ecommerce businesses",
+        },
         areaServed:
           locale === "fr"
             ? [

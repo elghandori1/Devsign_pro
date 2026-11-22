@@ -3,6 +3,7 @@ import { i18n, localeToBcp47 } from "@/i18n-config";
 import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { getDictionary } from "@/app/lib/dictionary";
 import { flattenPortfolioProjects, hrefToPortfolioSlug } from "@/app/lib/portfolio";
+import { MOROCCO_PAGE_PATHS } from "@/app/lib/moroccoPage";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = getBaseUrl();
@@ -84,9 +85,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 			})),
 	);
 
-	const moroccoMarketPath = "/consultant-seo-developpeur-web-maroc";
-	const moroccoFrenchUrl = `${baseUrl}/fr${moroccoMarketPath}`;
-	const moroccoEnglishUrl = `${baseUrl}/en${moroccoMarketPath}`;
+	const moroccoFrenchUrl = `${baseUrl}/fr${MOROCCO_PAGE_PATHS.fr}`;
+	const moroccoEnglishUrl = `${baseUrl}/en${MOROCCO_PAGE_PATHS.en}`;
 	const moroccoMarketEntries: MetadataRoute.Sitemap = [moroccoFrenchUrl, moroccoEnglishUrl].map((url) => ({
 		url,
 		alternates: {

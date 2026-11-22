@@ -17,7 +17,7 @@ type ContactFormData = {
     ecommerce: string;
     dashboard: string;
     seo: string;
-    collaboration: string;
+    content: string;
     other: string;
   };
   message: string;
@@ -188,10 +188,10 @@ export default function ContactForm({
             >
               <option value="">{formData.projectTypePlaceholder}</option>
               <option value="seo">{formData.projectTypes.seo}</option>
+              <option value="content">{formData.projectTypes.content}</option>
               <option value="website">{formData.projectTypes.website}</option>
               <option value="ecommerce">{formData.projectTypes.ecommerce}</option>
               <option value="dashboard">{formData.projectTypes.dashboard}</option>
-              <option value="collaboration">{formData.projectTypes.collaboration}</option>
               <option value="other">{formData.projectTypes.other}</option>
             </select>
             {fieldErrors.projectType && (
