@@ -10,25 +10,11 @@ const key = (
 	readFileSync(join(process.cwd(), "public", "indexnow-key.txt"), "utf8")
 ).trim();
 
-const locales = ["en", "fr"];
-const paths = [
-	"",
-	"/about",
-	"/services",
-	"/services/web-development",
-	"/services/technical-seo",
-	"/services/business-dashboards",
-	"/services/ecommerce-development",
-	"/portfolio",
-	"/contact",
-	"/articles",
-	"/articles/laptop-buying-guide-2026",
-	"/articles/nextjs-seo-framework-guide-2026",
-];
-
-const urlList = locales.flatMap((locale) =>
-	paths.map((path) => `${baseUrl}/${locale}${path}`),
-);
+// Submit every page in the live sitemap, so new pages are never forgotten.
+const sitemapResponse = await fetch(`${baseUrl}/sitemap.xml`);
+if (!sitemapResponse.ok) throw new Error(`Sitemap returned ${sitemapResponse.status}`);
+const urlList = [...(await sitemapResponse.text()).matchAll(/<loc>(.*?)<\/loc>/g)].map(([, url]) => url);
+if (!urlList.length) throw new Error("Sitemap contains no URLs");
 
 const host = new URL(baseUrl).host;
 const payload = {
