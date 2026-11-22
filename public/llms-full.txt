@@ -105,7 +105,7 @@ The Morocco market pages are available in French and English. They target busine
 - Math Practice Game
 - Minishell, Webserv, Inception, ft_transcendence (systems / 42 Network projects)
 - Currency Converter / money transfer tool
-- Nutritia: SEO-optimized Shopify store for a vegan supplements brand, custom theme (https://devsignpro.com/en/portfolio/nutritia-shopify-store)
+- Shopify supplements store: SEO-optimized Shopify store for a vegan supplements brand, custom theme (https://devsignpro.com/en/portfolio/shopify-supplements-store)
 - Hotel Technical Issue Manager
 
 Full list: https://devsignpro.com/en/portfolio

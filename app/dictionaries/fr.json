@@ -22,38 +22,6 @@
       "cta_download_cv": "Télécharger mon CV",
       "cv_popup_footer": "• Format PDF"
     },
-    "stats": {
-      "items": [
-        {
-          "value": 15,
-          "prefix": "+",
-          "suffix": "",
-          "text": "Projets livrés",
-          "subtext": "Sites, boutiques et tableaux de bord"
-        },
-        {
-          "value": 3,
-          "prefix": "+",
-          "suffix": "",
-          "text": "Ans d'expérience",
-          "subtext": "SEO et développement web"
-        },
-        {
-          "value": 4,
-          "prefix": "",
-          "suffix": "",
-          "text": "Expertises",
-          "subtext": "SEO, GEO, web, e-commerce"
-        },
-        {
-          "value": 24,
-          "prefix": "",
-          "suffix": "h",
-          "text": "Délai de réponse",
-          "subtext": "Devis gratuit et détaillé"
-        }
-      ]
-    },
     "customer_problems_section": {
       "eyebrow": "Votre visibilité en ligne",
       "heading": "Votre site existe, mais vous apporte-t-il vraiment des clients ?",
@@ -101,7 +69,7 @@
           "description": "J’aligne les intentions de recherche, les mots-clés, les contenus, le maillage interne et les CTA pour mieux répondre aux clients, à Google et aux moteurs IA.",
           "price": "Sur devis",
           "link": "/services/seo-content-optimization",
-          "image": "/cover/Designpro-cover.jpg",
+          "image": "/images/services/seo-geo-content-optimization-search-visibility.png",
           "imageAlt": "Optimisation de contenu SEO, GEO, maillage interne et conversion",
           "proof": "Contenu SEO · GEO · conversion"
         },
@@ -2544,7 +2512,7 @@
           }
         },
         {
-          "title": "Nutritia — Boutique Shopify de compléments alimentaires optimisée SEO",
+          "title": "Boutique Shopify de compléments alimentaires optimisée SEO",
           "description": "Création d'une boutique Shopify pour une marque de compléments alimentaires vegan : thème sur mesure, quiz produit, abonnements, multi-devises et base SEO technique complète avec données structurées.",
           "tech": "Shopify, Liquid, SEO technique, Schema.org",
           "image": "/images/projects/shopify-supplements-store-homepage-mockup.jpg",
@@ -2552,12 +2520,12 @@
           "category": "E-commerce & SEO",
           "type": "professional",
           "status": "online",
-          "href": "/portfolio/nutritia-shopify-store",
+          "href": "/portfolio/shopify-supplements-store",
           "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Étude de cas : boutique Shopify Nutritia optimisée SEO",
-              "description": "Création de nutritia.co, une boutique Shopify de compléments alimentaires : thème sur mesure, quiz, abonnements et SEO technique avec données structurées.",
+              "title": "Étude de cas : boutique Shopify optimisée SEO",
+              "description": "Création d'une boutique Shopify de compléments alimentaires : thème sur mesure, quiz, abonnements et SEO technique avec données structurées.",
               "keywords": [
                 "création boutique Shopify",
                 "développeur Shopify",
@@ -2567,7 +2535,7 @@
                 "étude de cas e-commerce"
               ]
             },
-            "intro": "Nutritia est une marque de compléments alimentaires vegan : gummies, gélules et poudres. L'objectif était de lancer une boutique en ligne claire, rapide et prête pour le référencement naturel dès le premier jour, sans dépendre d'un thème générique.",
+            "intro": "Le client est une marque de compléments alimentaires vegan : gummies, gélules et poudres. L'objectif était de lancer une boutique en ligne claire, rapide et prête pour le référencement naturel dès le premier jour, sans dépendre d'un thème générique.",
             "sections": [
               {
                 "title": "Défi & approche",
@@ -2579,7 +2547,7 @@
               },
               {
                 "title": "Fonctionnalités de vente",
-                "body": "La boutique comprend un quiz qui oriente le visiteur vers le bon produit, des abonnements avec remise (Subscribe & Save), les avis clients, le choix de la langue et de la devise, ainsi qu'une offre de lancement mise en avant dans le bandeau. Le site est en ligne sur nutritia.co."
+                "body": "La boutique comprend un quiz qui oriente le visiteur vers le bon produit, des abonnements avec remise (Subscribe & Save), les avis clients, le choix de la langue et de la devise, ainsi qu'une offre de lancement mise en avant dans le bandeau."
               }
             ],
             "highlights": [
@@ -2596,12 +2564,6 @@
               {
                 "src": "/images/projects/shopify-supplements-store-homepage.jpg",
                 "alt": "Page d'accueil de la boutique Shopify, avec ses gummies pour les cheveux, la peau et la digestion"
-              }
-            ],
-            "links": [
-              {
-                "url": "https://nutritia.co",
-                "label": "Voir la boutique en ligne"
               }
             ]
           }
@@ -3366,7 +3328,7 @@
   },
   "footer": {
     "brandName": "Devsignpro",
-    "brandTagline": "Développeur Full-Stack & Spécialiste SEO",
+    "brandTagline": "Consultant SEO & GEO · Développeur web",
     "phone": "+33 7 53 23 67 69",
     "address": "France (heure de Paris)",
     "ExplorerTitle": "Explorer",

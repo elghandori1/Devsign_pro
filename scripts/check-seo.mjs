@@ -71,7 +71,7 @@ for (const url of urls) {
     } else {
       const suffix = page.pathname.replace(/^\/(en|fr)(?=\/|$)/, "");
       for (const locale of [...locales, "x-default"]) {
-        const hrefLocale = locale === "x-default" ? "en" : locale;
+        const hrefLocale = locale === "x-default" ? "fr" : locale;
         const hreflang = locale === "x-default" ? "x-default" : hreflangByLocale[locale];
         const expected = `${canonicalOrigin}/${hrefLocale}${suffix}`;
         assert.ok(tags.some((tag) => tag.hreflang === hreflang && tag.href === expected), `Missing language alternate: ${hreflang}`);
@@ -81,7 +81,27 @@ for (const url of urls) {
   });
 }
 
-const redirects = [["/", "/en"], ["/about", "/en/about"]];
+// Links without a locale follow the browser language (French by default).
+for (const [path, language, target] of [
+  ["/", undefined, "/fr"],
+  ["/", "fr-FR,fr;q=0.9,en;q=0.8", "/fr"],
+  ["/", "en-GB,en;q=0.9", "/en"],
+  ["/about", "en-US,en;q=0.9,fr;q=0.5", "/en/about"],
+  ["/about", "de-DE,de;q=0.9", "/fr/about"],
+]) {
+  await check(`Language redirect ${path} (${language ?? "no header"})`, async () => {
+    const response = await fetch(new URL(path, origin), {
+      redirect: "manual",
+      headers: language ? { "accept-language": language } : {},
+      signal: AbortSignal.timeout(30000),
+    });
+    assert.equal(response.status, 307, "Expected temporary redirect");
+    assert.equal(new URL(response.headers.get("location"), origin).pathname, target);
+    assert.match(response.headers.get("vary") || "", /accept-language/i);
+  });
+}
+
+const redirects = [];
 redirects.push(
   ["/consultant-seo-developpeur-web-maroc", "/fr/consultant-seo-developpeur-web-maroc"],
   ["/ar/consultant-seo-developpeur-web-maroc", "/en/seo-consultant-web-developer-morocco"],
@@ -100,9 +120,10 @@ const replacements = [
   ["portfolio/money-transfer", "portfolio/currency-converter"],
   ["portfolio/calucature-utility-tool", "portfolio/currency-converter"],
   ["portfolio/ecommerce-platform", "portfolio/landing-page-ecommerce"],
+  ["portfolio/nutritia-shopify-store", "portfolio/shopify-supplements-store"],
 ];
 for (const [oldPath, newPath] of replacements) {
-  redirects.push([`/${oldPath}`, `/en/${newPath}`]);
+  redirects.push([`/${oldPath}`, `/fr/${newPath}`]);
   for (const locale of locales) redirects.push([`/${locale}/${oldPath}`, `/${locale}/${newPath}`]);
   redirects.push([`/ar/${oldPath}`, `/en/${newPath}`]);
 }

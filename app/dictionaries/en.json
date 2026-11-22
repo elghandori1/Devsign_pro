@@ -24,38 +24,6 @@
       "cv_web": "Web Development",
       "cv_web_desc": "MERN Stack & SEO Optimization"
     },
-    "stats": {
-      "items": [
-        {
-          "value": 15,
-          "prefix": "+",
-          "suffix": "",
-          "text": "Projects Delivered",
-          "subtext": "Websites, stores and dashboards"
-        },
-        {
-          "value": 3,
-          "prefix": "+",
-          "suffix": "",
-          "text": "Years Experience",
-          "subtext": "SEO and web development"
-        },
-        {
-          "value": 4,
-          "prefix": "",
-          "suffix": "",
-          "text": "Areas of Expertise",
-          "subtext": "SEO, GEO, web, e-commerce"
-        },
-        {
-          "value": 24,
-          "prefix": "",
-          "suffix": "h",
-          "text": "Response Time",
-          "subtext": "Free, detailed quote"
-        }
-      ]
-    },
     "customer_problems_section": {
       "eyebrow": "Your online visibility",
       "heading": "Your website exists, but does it actually bring you customers?",
@@ -103,7 +71,7 @@
           "description": "I align search intent, keywords, content, internal links and CTAs so pages answer customers, Google and AI search systems more clearly.",
           "price": "Custom quote",
           "link": "/services/seo-content-optimization",
-          "image": "/cover/Designpro-cover.jpg",
+          "image": "/images/services/seo-geo-content-optimization-search-visibility.png",
           "imageAlt": "SEO content optimization, AI search, internal linking and conversion",
           "proof": "SEO content · GEO · conversion"
         },
@@ -2545,7 +2513,7 @@
           }
         },
         {
-          "title": "Nutritia — SEO-Optimized Shopify Store for Wellness Supplements",
+          "title": "SEO-Optimized Shopify Store for Wellness Supplements",
           "description": "A Shopify store built for a vegan supplements brand: custom theme, product quiz, subscriptions, multi-currency and a complete technical SEO foundation with structured data.",
           "tech": "Shopify, Liquid, Technical SEO, Schema.org",
           "image": "/images/projects/shopify-supplements-store-homepage-mockup.jpg",
@@ -2553,12 +2521,12 @@
           "category": "E-commerce & SEO",
           "type": "professional",
           "status": "online",
-          "href": "/portfolio/nutritia-shopify-store",
+          "href": "/portfolio/shopify-supplements-store",
           "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "Case Study: Nutritia, an SEO-Optimized Shopify Store",
-              "description": "How I built nutritia.co, a Shopify supplements store: custom theme, product quiz, subscriptions and technical SEO with structured data.",
+              "title": "Case Study: SEO-Optimized Shopify Supplements Store",
+              "description": "How I built a Shopify supplements store: custom theme, product quiz, subscriptions and technical SEO with structured data.",
               "keywords": [
                 "Shopify store development",
                 "Shopify developer",
@@ -2568,7 +2536,7 @@
                 "ecommerce case study"
               ]
             },
-            "intro": "Nutritia is a vegan wellness supplements brand: gummies, capsules and powders. The goal was to launch an online store that is clear, fast and ready for organic search from day one, without depending on a generic theme.",
+            "intro": "The client is a vegan wellness supplements brand: gummies, capsules and powders. The goal was to launch an online store that is clear, fast and ready for organic search from day one, without depending on a generic theme.",
             "sections": [
               {
                 "title": "Challenge & approach",
@@ -2580,7 +2548,7 @@
               },
               {
                 "title": "Selling features",
-                "body": "The store includes a quiz that guides visitors to the right product, discounted subscriptions (Subscribe & Save), customer reviews, language and currency selection, and a launch offer highlighted in the announcement bar. The site is live at nutritia.co."
+                "body": "The store includes a quiz that guides visitors to the right product, discounted subscriptions (Subscribe & Save), customer reviews, language and currency selection, and a launch offer highlighted in the announcement bar."
               }
             ],
             "highlights": [
@@ -2597,12 +2565,6 @@
               {
                 "src": "/images/projects/shopify-supplements-store-homepage.jpg",
                 "alt": "Homepage of the Shopify store, showing its hair, skin and gut health gummies"
-              }
-            ],
-            "links": [
-              {
-                "url": "https://nutritia.co",
-                "label": "View the live store"
               }
             ]
           }
@@ -3367,7 +3329,7 @@
   },
   "footer": {
     "brandName": "Devsignpro",
-    "brandTagline": "Full-Stack Developer & SEO Specialist",
+    "brandTagline": "SEO & GEO Consultant · Web Developer",
     "phone": "+33 7 53 23 67 69",
     "address": "France",
     "ExplorerTitle": "Explore",

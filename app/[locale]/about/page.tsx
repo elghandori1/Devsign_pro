@@ -60,7 +60,7 @@ interface AboutProject {
 
 const FEATURED_PROJECTS = [
   "/portfolio/corporate-website",
-  "/portfolio/nutritia-shopify-store",
+  "/portfolio/shopify-supplements-store",
   "/portfolio/business-automation-dashboard",
 ];
 
