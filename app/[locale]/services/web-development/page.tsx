@@ -36,7 +36,7 @@ type Landing = {
 type CaseStudy = { badge: string; title: string; description: string; results: { value: string; label: string }[]; image: string; imageAlt: string; link: { href: string; label: string } };
 
 const INCLUDED_ICONS = [LayoutTemplate, Smartphone, Search, Gauge, ShieldCheck, Code2] as const;
-const PAGE_UPDATED = "2026-11-22";
+const PAGE_UPDATED = "2026-11-22T09:00:00+01:00"; // ISO 8601 date-time with timezone (required by Google)
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));

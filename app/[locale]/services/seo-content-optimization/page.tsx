@@ -45,7 +45,7 @@ type Content = {
 };
 
 const SCOPE_ICONS = [Target, FileText, MessageSquareText, ShieldCheck, Link2, BarChart3] as const;
-const PAGE_UPDATED = "2026-11-22";
+const PAGE_UPDATED = "2026-11-22T09:00:00+01:00"; // ISO 8601 date-time with timezone (required by Google)
 const HERO_IMAGE = "/images/services/seo-geo-content-optimization-search-visibility.png";
 
 export async function generateStaticParams() {

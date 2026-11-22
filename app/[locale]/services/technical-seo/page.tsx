@@ -98,7 +98,7 @@ type Landing = {
 
 const COVERAGE_ICONS = [Search, Code2, Network, Gauge, FileSearch, GitBranch] as const;
 const FIT_ICONS = [Globe2, Search, ShieldCheck] as const;
-const PAGE_UPDATED = "2026-11-21";
+const PAGE_UPDATED = "2026-11-21T09:00:00+01:00"; // ISO 8601 date-time with timezone (required by Google)
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ locale }));

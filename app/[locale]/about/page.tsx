@@ -25,7 +25,7 @@ import { i18n, localeToBcp47, type Locale } from "@/i18n-config";
 type Props = { params: Promise<{ locale: string }> };
 
 /** Date of the last meaningful content update. Change it when the page copy changes. */
-const PAGE_UPDATED = "2026-11-21";
+const PAGE_UPDATED = "2026-11-21T09:00:00+01:00"; // ISO 8601 date-time with timezone (required by Google)
 
 /**
  * Card lists become a horizontal swipe row on phones (the next card peeks in
