@@ -102,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ? "Consultant SEO et Développeur Web Maroc | Devis gratuit"
     : "SEO Consultant & Web Developer from Morocco | Free Quote";
   const description = isFrench
-    ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h."
+    ? "Originaire du Maroc, basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines."
     : "Moroccan SEO consultant and web developer based in France: SEO audits, content, websites and online stores for businesses in Morocco and abroad.";
   const image = `${baseUrl}${HERO_IMAGE}`;
 
@@ -183,7 +183,7 @@ export default async function MoroccoMarketPage({ params }: Props) {
         "@id": `${pageUrl}#webpage`,
         url: pageUrl,
         name: isFrench ? "Consultant SEO et Développeur Web Maroc | Devis gratuit" : "SEO Consultant & Web Developer from Morocco | Free Quote",
-        description: isFrench ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h." : "Moroccan SEO consultant and web developer based in France: SEO audits, content, websites and online stores for businesses in Morocco and abroad.",
+        description: isFrench ? "Originaire du Maroc, basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines." : "Moroccan SEO consultant and web developer based in France: SEO audits, content, websites and online stores for businesses in Morocco and abroad.",
         inLanguage: isFrench ? "fr-MA" : "en-MA",
         dateModified: PAGE_UPDATED,
         primaryImageOfPage: { "@id": `${pageUrl}#primaryimage` },
@@ -201,7 +201,7 @@ export default async function MoroccoMarketPage({ params }: Props) {
         serviceType: isFrench
           ? ["Audit SEO technique", "Optimisation de contenu SEO et GEO", "Création de site web", "Création de boutique en ligne"]
           : ["Technical SEO audit", "SEO and GEO content optimization", "Website development", "Online store development"],
-        description: isFrench ? "Originaire du Maroc et basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines. Réponse sous 24 h." : "Moroccan-born, France-based SEO consultant and web developer: SEO audits, content, websites and online stores for businesses in Morocco. Reply in 24h.",
+        description: isFrench ? "Originaire du Maroc, basé en France : audit SEO, contenu optimisé, sites web et boutiques en ligne pour les entreprises marocaines." : "Moroccan-born, France-based SEO consultant and web developer: SEO audits, content, websites and online stores for businesses in Morocco. Reply in 24h.",
         image: { "@id": `${pageUrl}#primaryimage` },
         provider: { "@id": `${baseUrl}/#person` },
         brand: { "@id": `${baseUrl}/#business` },

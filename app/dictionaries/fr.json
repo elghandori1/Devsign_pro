@@ -442,7 +442,7 @@
           "landing": {
             "seo": {
               "title": "Création de site internet et site vitrine dès 1 200 €",
-              "description": "Un site vitrine rapide, clair et optimisé pour le SEO, qui transforme vos visiteurs en demandes de devis. Création ou refonte dès 1 200 €, en 2 à 4 semaines.",
+              "description": "Site vitrine rapide et optimisé SEO qui transforme vos visiteurs en demandes de devis. Création ou refonte dès 1 200 €, en 2 à 4 semaines.",
               "keywords": [
                 "création site internet",
                 "création site vitrine",
@@ -790,8 +790,8 @@
         "technical_seo": {
           "landing": {
             "seo": {
-              "title": "Audit SEO Technique dès 450 € | Consultant SEO en France",
-              "description": "Site invisible sur Google, pages non indexées ou trafic en baisse ? Audit SEO technique dès 450 €, rapport priorisé et corrections possibles dans le code.",
+              "title": "Audit SEO Technique | Consultant SEO en France",
+              "description": "Site invisible sur Google ou pages non indexées ? Audit SEO technique dès 450 €, rapport priorisé et corrections possibles dans le code.",
               "keywords": [
                 "audit SEO technique",
                 "audit SEO",
@@ -1366,7 +1366,7 @@
           "landing": {
             "seo": {
               "title": "Création de boutique en ligne et site e-commerce dès 2 500 €",
-              "description": "Boutique Shopify, WooCommerce ou Next.js rapide, rassurante et optimisée pour Google, qui transforme vos visiteurs en acheteurs. Dès 2 500 €, devis sous 24 h.",
+              "description": "Boutique Shopify, WooCommerce ou Next.js rapide et optimisée pour Google, qui transforme vos visiteurs en acheteurs. Dès 2 500 €.",
               "keywords": [
                 "création boutique en ligne",
                 "création site e-commerce",
@@ -1708,7 +1708,7 @@
           "landing": {
             "seo": {
               "title": "Tableau de bord de gestion et d’analyse sur mesure",
-              "description": "Création de tableaux de bord de gestion et d’analyse sur mesure en France : ventes, clients, stocks et indicateurs réunis dans une interface claire.",
+              "description": "Tableaux de bord de gestion et d’analyse sur mesure en France : ventes, clients, stocks et indicateurs réunis dans une interface claire.",
               "keywords": [
                 "tableau de bord sur mesure",
                 "tableau de bord de gestion",
@@ -2372,7 +2372,7 @@
     "portfolio_page": {
       "seo": {
         "title": "Portfolio SEO Technique & Développement Web | France",
-        "description": "Découvrez les réalisations de Mohammed Elghandori, consultant SEO technique et développeur web basé en France : sites, e-commerce et applications.",
+        "description": "Réalisations d'un consultant SEO technique et développeur web basé en France : sites vitrines, boutiques en ligne et tableaux de bord.",
         "keywords": [
           "portfolio consultant SEO France",
           "portfolio développeur web France",
@@ -2466,7 +2466,7 @@
           "detail": {
             "seo": {
               "title": "Site Corporate & Moteur de Croissance SEO",
-              "description": "Étude de cas d'un site vitrine Next.js avec SEO technique et optimisation des performances, ayant atteint plus de 2 900 nouveaux utilisateurs en deux mois.",
+              "description": "Étude de cas : site vitrine Next.js avec SEO technique et optimisation des performances, plus de 2 900 nouveaux utilisateurs en deux mois.",
               "keywords": [
                 "site vitrine optimisé",
                 "étude de cas SEO Next.js",
@@ -2582,7 +2582,7 @@
           "detail": {
             "seo": {
               "title": "Landing Page E-commerce — Rapide & Optimisée SEO",
-              "description": "Une landing page à forte conversion conçue pour le retail moderne. Axée sur la performance, le responsive mobile et une structure SEO-friendly pour maximiser",
+              "description": "Landing page à forte conversion pour le retail moderne : performance rapide, responsive mobile et structure optimisée pour le SEO.",
               "keywords": [
                 "landing page ecommerce",
                 "landing page haute conversion",
@@ -2624,7 +2624,7 @@
           "detail": {
             "seo": {
               "title": "Dashboard d'Automatisation avec React & Express",
-              "description": "Portail client et dashboard opérationnel sur mesure : abonnements, stock, tarifs et alertes d'expiration — développé avec React, Express et des API REST pour",
+              "description": "Portail client et tableau de bord sur mesure : abonnements, stock, tarifs et alertes d'expiration, avec React, Express et des API REST.",
               "keywords": [
                 "dashboard automatisation entreprise",
                 "logiciel gestion abonnements",
@@ -2680,7 +2680,7 @@
           "detail": {
             "seo": {
               "title": "Plateforme de Maintenance & Gestion Hôtelière",
-              "description": "Plateforme interne de maintenance hôtelière avec signalement structuré des incidents, alertes automatisées via PHPMailer, enregistrements MySQL et rapports",
+              "description": "Plateforme de maintenance hôtelière : signalement des incidents, alertes automatiques via PHPMailer, données MySQL et rapports de suivi.",
               "keywords": [
                 "logiciel maintenance hôtelière",
                 "système de tickets PHP",
@@ -2719,7 +2719,7 @@
           "detail": {
             "seo": {
               "title": "Pesscore — Suivi de Matchs eFootball",
-              "description": "Plateforme communautaire eFootball full-stack avec résultats vérifiés, statistiques face-à-face et notifications temps réel — développée avec React, Express",
+              "description": "Plateforme eFootball full-stack : résultats vérifiés, statistiques face-à-face et notifications en temps réel, avec React et Express.",
               "keywords": [
                 "suivi matchs eFootball",
                 "application React Express MySQL",
@@ -2773,7 +2773,7 @@
           "detail": {
             "seo": {
               "title": "Jeu de Maths — Addition, Soustraction & Plus",
-              "description": "Jeu d'entraînement mathématique interactif pour enfants et élèves : quatre opérations plus un mode mixte, difficulté adaptative et retour instantané ",
+              "description": "Jeu de calcul interactif pour enfants : quatre opérations, mode mixte, difficulté adaptative et retour instantané, avec Next.js.",
               "keywords": [
                 "jeu de maths en ligne",
                 "application éducative web",
@@ -2818,7 +2818,7 @@
           "detail": {
             "seo": {
               "title": "Convertisseur de Devises Gratuit — Taux de Change en Direct",
-              "description": "Convertisseur de devises gratuit : taux de change mis à jour chaque heure pour des dizaines de devises. Développé avec Next.js, TypeScript et Tailwind CSS.",
+              "description": "Convertisseur de devises gratuit : taux mis à jour chaque heure pour des dizaines de devises. Avec Next.js, TypeScript et Tailwind CSS.",
               "keywords": [
                 "convertisseur de devises gratuit",
                 "taux de change en direct",
@@ -2911,7 +2911,7 @@
           "detail": {
             "seo": {
               "title": "Minishell — Shell de type Bash en C",
-              "description": "Shell Unix personnalisé construit de zéro en C : parsing de commandes façon Bash, pipes, redirections, variables d'environnement et gestion des signaux.",
+              "description": "Shell Unix construit de zéro en C : parsing façon Bash, pipes, redirections, variables d'environnement et gestion des signaux.",
               "keywords": [
                 "implémentation shell Unix",
                 "shell personnalisé C",
@@ -3080,7 +3080,7 @@
     "contact_page": {
       "seo": {
         "title": "Contact et devis gratuit | Consultant SEO et GEO en France",
-        "description": "Contactez un consultant SEO et GEO basé en France pour un audit, l’optimisation de vos contenus, un site web ou une boutique en ligne. Réponse sous 24 h.",
+        "description": "Contactez un consultant SEO et GEO basé en France : audit, contenu optimisé, site web ou boutique en ligne. Devis gratuit, réponse sous 24 h.",
         "keywords": [
           "contact consultant SEO",
           "demander devis SEO",

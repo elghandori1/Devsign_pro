@@ -78,8 +78,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const seoDescription =
     locale === "en"
-      ? "Discover why Next.js is the best framework for SEO in 2026. Learn how Server-Side Rendering, the App Router, and Metadata API boost your Google rankings."
-      : "Découvrez pourquoi Next.js est le meilleur framework SEO en 2026. Apprenez comment le SSR, l'App Router et l'API Metadata boostent votre classement Google.";
+      ? "Why Next.js is the best framework for SEO in 2026: how Server-Side Rendering, the App Router and the Metadata API boost your rankings."
+      : "Pourquoi Next.js est le meilleur framework SEO en 2026 : comment le SSR, l'App Router et l'API Metadata améliorent votre classement Google.";
 
   return buildPageMetadata({
     locale,

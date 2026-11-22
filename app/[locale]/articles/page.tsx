@@ -89,7 +89,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     locale === "en"
-      ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
+      ? "Practical articles on technical SEO, AI search optimization, Next.js and web development, written from real project experience."
       : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.";
 
   return buildPageMetadata({
@@ -132,7 +132,7 @@ export default async function ArticlesPage({ params }: Props) {
         name: data.heading,
         description:
           locale === "en"
-            ? "Practical articles on web development, Technical SEO, AI search optimization, Next.js, and modern technology tools written from real project experience."
+            ? "Practical articles on technical SEO, AI search optimization, Next.js and web development, written from real project experience."
             : "Articles pratiques sur le développement web, le SEO technique, Next.js et l'optimisation recherche IA, issus de projets réels.",
         inLanguage: langCode,
         isPartOf: { "@id": `${baseUrl}/#website` },

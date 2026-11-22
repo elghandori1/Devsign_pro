@@ -792,7 +792,7 @@
           "landing": {
             "seo": {
               "title": "Technical SEO Audit from €450 | SEO & GEO Consultant",
-              "description": "Website invisible on Google, pages not indexed or traffic dropping? Technical SEO audit from €450, prioritized report and fixes made directly in the code.",
+              "description": "Website invisible on Google or pages not indexed? Technical SEO audit from €450, prioritized report and fixes made directly in the code.",
               "keywords": [
                 "technical SEO audit",
                 "SEO audit service",
@@ -1367,7 +1367,7 @@
           "landing": {
             "seo": {
               "title": "Online Store Development from €2,500 | Shopify & SEO",
-              "description": "A fast, trustworthy Shopify, WooCommerce or Next.js store optimized for Google that turns visitors into buyers. From €2,500, quote within 24 hours.",
+              "description": "Fast Shopify, WooCommerce or Next.js store optimized for Google that turns visitors into buyers. From €2,500, quote within 24 hours.",
               "keywords": [
                 "online store development",
                 "ecommerce website development",
@@ -2467,7 +2467,7 @@
           "detail": {
             "seo": {
               "title": "Corporate Website & SEO Growth Engine",
-              "description": "Case study: a Next.js corporate website with technical SEO and performance tuning that reached 2,900+ new users in two months — built to convert and scale.",
+              "description": "Case study: a Next.js corporate website with technical SEO and performance tuning that reached 2,900+ new users in two months.",
               "keywords": [
                 "optimized corporate website",
                 "Next.js SEO case study",
@@ -2583,7 +2583,7 @@
           "detail": {
             "seo": {
               "title": "E-commerce Landing Page — Fast & SEO-Optimized",
-              "description": "A high-conversion landing page designed for modern retail. Focused on lightning-fast performance, mobile responsiveness, and SEO-friendly structure to",
+              "description": "High-conversion landing page for modern retail: fast performance, mobile-first responsive design and an SEO-friendly structure.",
               "keywords": [
                 "ecommerce landing page",
                 "high conversion landing page",
@@ -2625,7 +2625,7 @@
           "detail": {
             "seo": {
               "title": "Business Automation Dashboard with React & Express",
-              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing, and expiry alerts — built with React, Express, and REST APIs for a real",
+              "description": "Custom client portal and operations dashboard: subscriptions, stock, pricing and expiry alerts, built with React, Express and REST APIs.",
               "keywords": [
                 "business automation dashboard",
                 "subscription management software",
@@ -2720,7 +2720,7 @@
           "detail": {
             "seo": {
               "title": "Pesscore eFootball Match Tracker",
-              "description": "Full-stack eFootball community platform with verified match results, head-to-head stats, and real-time notifications — built with React, Express, and",
+              "description": "Full-stack eFootball platform with verified match results, head-to-head stats and real-time notifications, built with React and Express.",
               "keywords": [
                 "eFootball match tracker",
                 "React Express MySQL app",
@@ -2774,7 +2774,7 @@
           "detail": {
             "seo": {
               "title": "Math Practice Game — Addition, Subtraction & More",
-              "description": "Interactive math practice game for kids and students: four operations plus mixed mode, adaptive difficulty, and instant feedback — built with Next.js and",
+              "description": "Interactive math practice game for kids: four operations plus mixed mode, adaptive difficulty and instant feedback, built with Next.js.",
               "keywords": [
                 "math practice game",
                 "educational web app",
@@ -2819,7 +2819,7 @@
           "detail": {
             "seo": {
               "title": "Free Currency Converter — Live Exchange Rates",
-              "description": "Convert between dozens of world currencies with accurate, live mid-market rates updated every hour. Built with Next.js, TypeScript, and Tailwind CSS.",
+              "description": "Convert dozens of world currencies with live mid-market rates updated every hour. Built with Next.js, TypeScript and Tailwind CSS.",
               "keywords": [
                 "free currency converter",
                 "live exchange rates",
@@ -3392,7 +3392,7 @@
     "layout_page": {
       "generateMetadata": {
         "title": "SEO & GEO Consultant | Free Quote Within 24 Hours",
-        "description": "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, and websites and online stores that bring you customers.",
+        "description": "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, websites and online stores that bring customers.",
         "keywords": [
           "technical seo consultant France",
           "technical seo consultant",

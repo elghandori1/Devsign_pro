@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     : "Consultant SEO et GEO en France | Devis gratuit sous 24 h";
 
   const description = isEnglish
-    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, and websites and online stores that bring you customers."
+    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, websites and online stores that bring customers."
     : "Votre site est invisible sur Google ou ChatGPT ? Audit SEO dès 450 €, contenus optimisés, sites et boutiques en ligne qui attirent des clients.";
 
   const keywords = isEnglish
@@ -103,7 +103,7 @@ export default async function Home({ params }: Props) {
 
   const isEnglish = locale === "en";
   const description = isEnglish
-    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, and websites and online stores that bring you customers."
+    ? "Website invisible on Google or ChatGPT? Technical SEO audits from €450, optimized content, websites and online stores that bring customers."
     : "Votre site est invisible sur Google ou ChatGPT ? Audit SEO dès 450 €, contenus optimisés, sites et boutiques en ligne qui attirent des clients.";
   const faqs = isEnglish
     ? [
