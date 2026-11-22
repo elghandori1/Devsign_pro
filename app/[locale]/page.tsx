@@ -190,11 +190,11 @@ export default async function Home({ params }: Props) {
           aria-hidden="true"
         />
         <div
-          className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none"
+          className="absolute -top-32 -left-32 hidden lg:block w-[500px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
         <div
-          className="absolute -bottom-20 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"
+          className="absolute -bottom-20 right-0 hidden lg:block w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
@@ -275,7 +275,7 @@ export default async function Home({ params }: Props) {
                   aria-hidden="true"
                 />
                 <div
-                  className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"
+                  className="absolute -bottom-6 -right-6 hidden lg:block w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"
                   aria-hidden="true"
                 />
 
@@ -334,7 +334,7 @@ export default async function Home({ params }: Props) {
         locale={locale}
       />
 
-      <section aria-labelledby="services-heading">
+      <section className="cv-auto" aria-labelledby="services-heading">
         <ScrollReveal delay={0.04}>
           <ServicesGrid
             sectionData={t.services_section}
@@ -344,7 +344,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="projects-heading">
+      <section className="cv-auto" aria-labelledby="projects-heading">
         <ScrollReveal delay={0.05}>
           <ProjectsShowcase
             heading={t.projects_section.heading}
@@ -356,7 +356,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="about-heading">
+      <section className="cv-auto" aria-labelledby="about-heading">
         <ScrollReveal delay={0.05}>
           <AboutMeSection
             translations={t.about_section}
@@ -366,7 +366,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="why-us-heading">
+      <section className="cv-auto" aria-labelledby="why-us-heading">
         <ScrollReveal delay={0.05}>
           <WhyWeAreSection
             translations={t.why_we_are_section}
@@ -376,7 +376,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="tech-heading">
+      <section className="cv-auto" aria-labelledby="tech-heading">
         <ScrollReveal delay={0.05}>
           <TechStackSection
             data={t.techStack}
@@ -386,7 +386,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-     <section aria-labelledby="contact-heading">
+     <section className="cv-auto" aria-labelledby="contact-heading">
         <ScrollReveal delay={0.05}>
           <SubTitle
             sectionLabel={t.contact_section.sectionLabel}
@@ -396,7 +396,7 @@ export default async function Home({ params }: Props) {
         </ScrollReveal>
       </section>
 
-      <section aria-labelledby="faq-heading">
+      <section className="cv-auto" aria-labelledby="faq-heading">
         <ScrollReveal delay={0.05}>
           <SubTitle
             sectionLabel="FAQ"

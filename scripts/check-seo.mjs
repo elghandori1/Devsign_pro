@@ -120,7 +120,6 @@ const replacements = [
   ["portfolio/money-transfer", "portfolio/currency-converter"],
   ["portfolio/calucature-utility-tool", "portfolio/currency-converter"],
   ["portfolio/ecommerce-platform", "portfolio/landing-page-ecommerce"],
-  ["portfolio/nutritia-shopify-store", "portfolio/shopify-supplements-store"],
 ];
 for (const [oldPath, newPath] of replacements) {
   redirects.push([`/${oldPath}`, `/fr/${newPath}`]);

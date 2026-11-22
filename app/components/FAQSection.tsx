@@ -1,4 +1,5 @@
 // components/FAQSection.tsx
+import { ChevronDown } from "lucide-react";
 import { Locale } from "@/i18n-config";
 
 interface FAQItem {
@@ -28,7 +29,7 @@ export default function FAQSection({ faqs }: FAQSectionProps) {
                   className="flex size-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs text-primary transition-transform duration-200 group-open:rotate-180"
                   aria-hidden="true"
                 >
-                  ▼
+                  <ChevronDown className="size-4" />
                 </span>
               </summary>
               <div className="border-t border-border/50 px-4 pb-4 pt-3 text-sm leading-relaxed text-muted-foreground sm:px-5 sm:pb-5 sm:pt-4 sm:text-base">

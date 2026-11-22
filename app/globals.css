@@ -286,6 +286,13 @@ body {
   }
 }
 
+/* Below-the-fold sections: the browser skips their layout and paint until they
+   approach the viewport, so the hero (and its LCP image) renders sooner. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 /* Portfolio filters: every project is in the HTML; the filter only hides cards. */
 #portfolio-grid[data-filter="professional"] > [data-type]:not([data-type="professional"]),
 #portfolio-grid[data-filter="personal"] > [data-type]:not([data-type="personal"]),

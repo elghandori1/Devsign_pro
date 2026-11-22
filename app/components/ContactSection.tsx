@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Locale } from "@/i18n-config";
 import { MdEmail } from "react-icons/md";
+import { ArrowRight } from "lucide-react";
 import { BsWhatsapp, BsLinkedin } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
 import infos from "@/app/dictionaries/global.json";
@@ -133,7 +134,7 @@ export default function ContactSection({
                     className={`text-sm font-medium ${channel.colors.text} group-hover:underline mt-auto`}
                   >
                     {channel.cta}
-                    <span aria-hidden="true"> →</span>
+                    <ArrowRight className="ms-1 inline size-4 align-[-0.125em]" aria-hidden="true" />
                   </span>
                 </Link>
               </li>
