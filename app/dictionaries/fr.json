@@ -736,20 +736,16 @@
           ],
           "caseStudy": {
             "badge": "Projet client réel",
-            "title": "Un site corporate qui a triplé son trafic organique en deux mois",
-            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de soutenir sa visibilité dans les moteurs de recherche et de transformer les visiteurs en prospects. J'ai conçu et développé le site avec Next.js en mettant l'accent sur la performance, le SEO technique, les données structurées, le responsive design et une architecture de contenu évolutive.",
+            "title": "Un site vitrine B2B visible sur Google pour ses produits et services",
+            "description": "J’ai conçu et développé le site vitrine de Neodyn Group avec Next.js. Les captures de l’étude de cas montrent deux résultats naturels sur Google pour des recherches ciblées au Maroc.",
             "results": [
               {
-                "value": "2 900+",
-                "label": "nouveaux utilisateurs durant les deux premiers mois"
+                "value": "1er",
+                "label": "pour « LC300 transmetteur de niveau au Maroc », devant le site officiel de Siemens"
               },
               {
-                "value": "3×",
-                "label": "de croissance du trafic organique"
-              },
-              {
-                "value": "<1 s",
-                "label": "de temps de chargement moyen"
+                "value": "2e",
+                "label": "pour une recherche de prestataire SCADA à Casablanca, avec une mention dans l’Aperçu IA de Google"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
@@ -1115,20 +1111,16 @@
           ],
           "caseStudy": {
             "badge": "Projet client réel",
-            "title": "Un site corporate conçu pour la performance et la visibilité dans les moteurs de recherche",
-            "description": "Neodyne Group avait besoin d'un site corporate rapide et professionnel capable de soutenir sa visibilité dans les moteurs de recherche et de transformer les visiteurs en prospects. J'ai conçu et développé le site avec Next.js, en mettant l'accent sur la performance, le SEO technique, les données structurées, le responsive design et une architecture de contenu évolutive.",
+            "title": "Un site vitrine B2B visible sur Google pour ses produits et services",
+            "description": "J’ai conçu et développé le site vitrine de Neodyn Group avec Next.js. Les captures de l’étude de cas montrent deux résultats naturels sur Google pour des recherches ciblées au Maroc.",
             "results": [
               {
-                "value": "2 900+",
-                "label": "nouveaux utilisateurs durant les deux premiers mois"
+                "value": "1er",
+                "label": "pour « LC300 transmetteur de niveau au Maroc », devant le site officiel de Siemens"
               },
               {
-                "value": "3×",
-                "label": "de croissance du trafic organique"
-              },
-              {
-                "value": "<1 s",
-                "label": "de temps de chargement moyen"
+                "value": "2e",
+                "label": "pour une recherche de prestataire SCADA à Casablanca, avec une mention dans l’Aperçu IA de Google"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
@@ -2119,7 +2111,7 @@
         },
         {
           "label": "Résultat client",
-          "value": "1re position Google et +2 900 utilisateurs en 2 mois"
+          "value": "1er résultat naturel pour une recherche sur le transmetteur LC300 au Maroc"
         },
         {
           "label": "Spécialisation",
@@ -2453,8 +2445,8 @@
       },
       "projects": [
         {
-          "title": "Site Corporate & Moteur de Croissance SEO",
-          "description": "Conception et développement d'un site vitrine haute performance avec Next.js pour présenter services et produits. Optimisé pour le SEO technique, les Core Web Vitals, l'accessibilité et l'expérience utilisateur — avec 2 900+ nouveaux utilisateurs en deux mois et une première position sur Google.",
+          "title": "Site vitrine B2B et référencement naturel au Maroc",
+          "description": "Site vitrine Next.js pour une entreprise industrielle. Les captures Google montrent un 1er résultat naturel pour une recherche liée au transmetteur LC300 au Maroc et un 2e pour une recherche de prestataire SCADA à Casablanca.",
           "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "Voir l'étude de cas",
@@ -2465,8 +2457,8 @@
           "highlightsHeading": "Ce que j'ai livré",
           "detail": {
             "seo": {
-              "title": "Site Corporate & Moteur de Croissance SEO",
-              "description": "Étude de cas : site vitrine Next.js avec SEO technique et optimisation des performances, plus de 2 900 nouveaux utilisateurs en deux mois.",
+              "title": "Site vitrine B2B et référencement naturel au Maroc",
+              "description": "Étude de cas SEO technique : un site vitrine B2B classé premier devant Siemens sur une recherche LC300 et deuxième sur une recherche SCADA au Maroc.",
               "keywords": [
                 "site vitrine optimisé",
                 "étude de cas SEO Next.js",
@@ -2484,23 +2476,22 @@
               },
               {
                 "title": "Résultats & impact",
-                "body": "Dans les deux mois suivant le lancement, les analytics ont montré plus de 2 900 nouveaux utilisateurs — un signal fort que la visibilité et la performance travaillaient ensemble. Le site a atteint la première position sur Google pour son mot-clé cible (captures d'écran ci-dessous). Il continue de servir de base évolutive pour de nouveaux services et campagnes."
+                "body": "Sur la capture Google pour « LC300 transmetteur de niveau au Maroc », la page du client apparaît au 1er rang des résultats naturels, devant le site officiel de Siemens. Sur la recherche « prestataire de systèmes SCADA au casablanca maroc », sa page de service apparaît au 2e rang des résultats naturels et le client est cité dans l’Aperçu IA de Google. Les captures ci-dessous montrent ces positions au moment du relevé."
               }
             ],
             "highlights": [
               "Implémentation axée performance avec routing et métadonnées optimisés SEO",
               "Mise en page responsive testée sur les principaux breakpoints",
-              "Architecture de l'information claire pour les services, la confiance et la conversion",
-              "Traction mesurable : 2 900+ nouveaux utilisateurs en deux mois après lancement"
+              "Architecture de l'information claire pour les services, la confiance et la conversion"
             ],
             "gallery": [
               {
                 "src": "/images/Corporate-website/google-ai-overview-scada-integration-service-morocco.jpg",
-                "alt": "Recherche « prestataire de systèmes SCADA à Casablanca » : le site du client cité dans l’Aperçu IA de Google et parmi les premiers résultats"
+                "alt": "Recherche Google « prestataire de systèmes SCADA au casablanca maroc » : le client apparaît en 2e position dans les résultats naturels et dans l’Aperçu IA"
               },
               {
                 "src": "/images/Corporate-website/first-google-result-level-transmitter-product-morocco.jpg",
-                "alt": "Recherche « LC300 transmetteur de niveau au Maroc » : le site du client en première position, devant le site officiel du fabricant, et cité dans l’Aperçu IA"
+                "alt": "Recherche Google « LC300 transmetteur de niveau au Maroc » : la page du client apparaît en 1re position dans les résultats naturels, devant Siemens"
               }
             ],
             "links": [

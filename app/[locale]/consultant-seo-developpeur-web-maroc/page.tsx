@@ -506,8 +506,8 @@ export default async function MoroccoMarketPage({ params }: Props) {
             </h2>
             <p className="mt-5 leading-relaxed text-muted-foreground">
               {isFrench
-                ? "Pour un site d’entreprise, la refonte et le SEO technique ont apporté plus de 2 900 nouveaux utilisateurs en deux mois et la première position sur Google pour son mot-clé principal. J’applique la même méthode aux entreprises marocaines : diagnostic, corrections, puis mesure dans Search Console."
-                : "For a business website, the rebuild and technical SEO brought more than 2,900 new users in two months and first place on Google for its main keyword. I apply the same method to businesses in Morocco: diagnosis, fixes, then measurement in Search Console."}
+                ? "Les captures de l’étude de cas montrent le site d’un client en 1re position naturelle devant Siemens pour une recherche sur le transmetteur LC300 au Maroc, et en 2e position pour une recherche de prestataire SCADA à Casablanca."
+                : "The case study screenshots show a client site ranking first in organic results ahead of Siemens for an LC300 level transmitter search in Morocco, and second for a SCADA provider search in Casablanca."}
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               {isFrench

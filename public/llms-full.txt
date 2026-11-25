@@ -44,7 +44,7 @@ Sites are structured to support Core Web Vitals, Google Search visibility, and r
 ## Notable results & proof
 
 - 15+ projects delivered across Morocco and remote clients
-- Corporate website case: 2,900+ new users within two months after Next.js rebuild + Technical SEO
+- B2B website case study: Google screenshots show first place in organic results ahead of Siemens for an LC300 level transmitter search in Morocco and second place for a SCADA provider search in Casablanca.
 - Hackathon awards: 1st place at Al Akhawayn University and UM6P Ben Guerir; 2nd place at UM6P Rabat
 - Client work spans corporate sites, e-commerce, custom dashboards, and web applications
 
@@ -97,7 +97,7 @@ The Morocco market pages are available in French and English. They target busine
 
 ## Selected portfolio projects
 
-- Corporate Website & SEO Growth — Next.js + Technical SEO (+2,900 users in ~2 months)
+- B2B Website and Organic Search Visibility in Morocco — Next.js and technical SEO
 - Landing Page Ecommerce
 - Business Automation Dashboard
 - Social Media Design / campaign work

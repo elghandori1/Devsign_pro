@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { Locale, i18n, localeToBcp47 } from "@/i18n-config";
 import { moroccoPathFor } from "@/app/lib/moroccoPage";
+import { googleVisibilityArticle } from "@/app/lib/googleVisibilityArticle";
 
 const localeLabels: Record<Locale, string> = {
   en: "EN",
@@ -13,6 +14,9 @@ const localeLabels: Record<Locale, string> = {
 
 function localePath(pathname: string | null, locale: Locale) {
   const pathWithoutLocale = (pathname || "").replace(/^\/[a-z]{2}/, "");
+  if (locale === "en" && pathWithoutLocale === googleVisibilityArticle.href) {
+    return "/en/articles";
+  }
   // The Morocco page has a different slug in each language.
   const translated = moroccoPathFor(pathWithoutLocale, locale);
   return `/${locale}${translated ?? pathWithoutLocale}`;

@@ -737,20 +737,16 @@
           ],
           "caseStudy": {
             "badge": "Real Client Project",
-            "title": "A Corporate Website That Tripled Organic Traffic in Two Months",
-            "description": "Neodyne Group needed a fast, professional corporate website that could support search visibility and turn visitors into leads. I designed and built the website from scratch with Next.js, focusing on performance, technical SEO, structured data, responsive design and a scalable content architecture.",
+            "title": "A B2B Website Visible on Google for Its Products and Services",
+            "description": "I designed and built the Neodyn Group website with Next.js. The case study screenshots show two organic Google results for specific searches related to Morocco.",
             "results": [
               {
-                "value": "2,900+",
-                "label": "new users in the first two months"
+                "value": "1st",
+                "label": "for a search about the LC300 level transmitter in Morocco, ahead of Siemens’ official site"
               },
               {
-                "value": "3×",
-                "label": "organic traffic growth"
-              },
-              {
-                "value": "<1s",
-                "label": "average page load time"
+                "value": "2nd",
+                "label": "for a search for a SCADA provider in Casablanca, with a mention in Google’s AI Overview"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
@@ -1116,20 +1112,16 @@
           ],
           "caseStudy": {
             "badge": "Real Client Project",
-            "title": "A Corporate Website Built for Performance & Search Visibility",
-            "description": "Neodyne Group needed a fast, professional corporate website that could support search visibility and turn visitors into leads. I designed and built the website with Next.js, focusing on performance, technical SEO, structured data, responsive design and a scalable content architecture.",
+            "title": "A B2B Website Visible on Google for Its Products and Services",
+            "description": "I designed and built the Neodyn Group website with Next.js. The case study screenshots show two organic Google results for specific searches related to Morocco.",
             "results": [
               {
-                "value": "2,900+",
-                "label": "new users in the first two months"
+                "value": "1st",
+                "label": "for a search about the LC300 level transmitter in Morocco, ahead of Siemens’ official site"
               },
               {
-                "value": "3×",
-                "label": "organic traffic growth"
-              },
-              {
-                "value": "<1s",
-                "label": "average page load time"
+                "value": "2nd",
+                "label": "for a search for a SCADA provider in Casablanca, with a mention in Google’s AI Overview"
               }
             ],
             "image": "/images/projects/Corporate-Website.png",
@@ -2120,7 +2112,7 @@
         },
         {
           "label": "Client result",
-          "value": "#1 on Google and 2,900+ new users in 2 months"
+          "value": "First organic Google result for an LC300 level transmitter search in Morocco"
         },
         {
           "label": "Specialism",
@@ -2454,8 +2446,8 @@
       },
       "projects": [
         {
-          "title": "Corporate Website & SEO Growth Engine",
-          "description": "Designed and developed a high-performance website with Next.js to showcase services and products. Optimized for Technical SEO, Core Web Vitals, accessibility, and user experience — resulting in 2,900+ new users within two months and a first-position Google ranking.",
+          "title": "B2B Website and Organic Search Visibility in Morocco",
+          "description": "A Next.js website for an industrial business. Google screenshots show a first-place organic result for an LC300 level transmitter search in Morocco and second place for a SCADA provider search in Casablanca.",
           "tech": "Next.js, Technical SEO, MongoDB",
           "image": "/images/projects/Corporate-Website.png",
           "linkLabel": "View Case Study",
@@ -2466,8 +2458,8 @@
           "highlightsHeading": "What I delivered",
           "detail": {
             "seo": {
-              "title": "Corporate Website & SEO Growth Engine",
-              "description": "Case study: a Next.js corporate website with technical SEO and performance tuning that reached 2,900+ new users in two months.",
+              "title": "B2B Website and Organic Search Visibility in Morocco",
+              "description": "Technical SEO case study: a B2B website ranked first ahead of Siemens for an LC300 search and second for a SCADA provider search in Morocco.",
               "keywords": [
                 "optimized corporate website",
                 "Next.js SEO case study",
@@ -2485,23 +2477,22 @@
               },
               {
                 "title": "Results & impact",
-                "body": "Within the first two months after launch, analytics showed more than 2,900 new users — a strong signal that discoverability and performance were working together. The site reached the first position on Google for its target keyword (screenshots below). It continues to serve as a scalable foundation for new services and campaigns."
+                "body": "In the Google screenshot for “LC300 transmetteur de niveau au Maroc”, the client’s page appears first in organic results, ahead of Siemens’ official site. In the screenshot for “prestataire de systèmes SCADA au casablanca maroc”, the client’s service page appears second in organic results and the client is cited in Google’s AI Overview. The screenshots below show the positions at the time of capture."
               }
             ],
             "highlights": [
               "Performance-first implementation with SEO-friendly routing and metadata",
               "Mobile-responsive layout tested across common breakpoints",
-              "Clear information architecture for services, trust, and conversion paths",
-              "Measurable traction: 2,900+ new users in two months post-launch"
+              "Clear information architecture for services, trust, and conversion paths"
             ],
             "gallery": [
               {
                 "src": "/images/Corporate-website/google-ai-overview-scada-integration-service-morocco.jpg",
-                "alt": "Search for “SCADA systems provider in Casablanca”: the client’s website cited in Google’s AI Overview and among the top results"
+                "alt": "Google search for a SCADA provider in Casablanca: the client appears second in organic results and is cited in Google’s AI Overview"
               },
               {
                 "src": "/images/Corporate-website/first-google-result-level-transmitter-product-morocco.jpg",
-                "alt": "Search for “LC300 level transmitter in Morocco”: the client’s website ranked first, above the manufacturer’s official site, and cited in the AI Overview"
+                "alt": "Google search for the LC300 level transmitter in Morocco: the client’s page appears first in organic results, ahead of Siemens"
               }
             ],
             "links": [

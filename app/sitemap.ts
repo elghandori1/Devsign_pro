@@ -4,6 +4,7 @@ import { getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { getDictionary } from "@/app/lib/dictionary";
 import { flattenPortfolioProjects, hrefToPortfolioSlug } from "@/app/lib/portfolio";
 import { MOROCCO_PAGE_PATHS } from "@/app/lib/moroccoPage";
+import { googleVisibilityArticle } from "@/app/lib/googleVisibilityArticle";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = getBaseUrl();
@@ -120,5 +121,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 		},
 	);
 
-	return [...staticEntries, ...articleEntries, ...moroccoMarketEntries, ...portfolioEntries];
+	return [
+		...staticEntries,
+		...articleEntries,
+		{ url: `${baseUrl}/fr${googleVisibilityArticle.href}` },
+		...moroccoMarketEntries,
+		...portfolioEntries,
+	];
 }

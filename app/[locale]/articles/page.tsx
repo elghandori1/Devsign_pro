@@ -15,6 +15,7 @@ import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/app/lib/dictionary";
 import { buildPageMetadata, getBaseUrl } from "@/app/lib/buildPageMetadata";
 import { FAQPageSchema } from "@/app/components/schemas";
+import { googleVisibilityArticle } from "@/app/lib/googleVisibilityArticle";
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -116,7 +117,9 @@ export default async function ArticlesPage({ params }: Props) {
   if (!data) return null;
 
   const topics = data.topics ?? [];
-  const articles = data.articles ?? [];
+  const articles = locale === "fr"
+    ? [googleVisibilityArticle, ...(data.articles ?? [])]
+    : (data.articles ?? []);
   const categoryChips = data.categoryChips ?? [];
 
   const baseUrl = getBaseUrl();

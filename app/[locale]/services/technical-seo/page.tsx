@@ -315,6 +315,11 @@ export default async function TechnicalSEOPage({ params }: Props) {
                   ? "Si le site est techniquement accessible mais que ses pages répondent mal aux recherches ou convainquent peu, il faut aussi travailler les intentions, les contenus, le maillage interne et les CTA."
                   : "If the website is technically accessible but its pages miss search intent or fail to persuade, the next step is improving content, internal links and CTAs."}
               </p>
+              {locale === "fr" && (
+                <Link href="/fr/articles/pourquoi-mon-site-napparait-pas-sur-google" className="mt-3 inline-block font-medium text-primary underline underline-offset-4">
+                  Vérifier pourquoi votre site n’apparaît pas sur Google
+                </Link>
+              )}
             </div>
             <Link href={`/${locale}/services/seo-content-optimization`} className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-primary/30 bg-background px-5 py-3 font-semibold text-primary hover:border-primary/50 hover:bg-primary/5">
               {locale === "fr" ? "Voir l’optimisation de contenu SEO et GEO" : "Explore SEO content and AI search optimization"}
